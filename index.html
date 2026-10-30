@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Clay Jar Treasure Bible</title>
+  <meta name="description" content="Clay Jar Treasure Bible: the Bible in clear, everyday English. Free to read online, with no sign-up and no ads.">
+  <meta name="theme-color" content="#fff9eb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1d1410" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="icons/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Treasure Bible">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Apply saved reading settings before first paint (no flash of wrong theme).
+    (function () {
+      try {
+        var s = JSON.parse(localStorage.getItem('ctb-settings') || '{}');
+        var d = document.documentElement;
+        if (s.theme === 'dark' || s.theme === 'light') d.dataset.theme = s.theme;
+        if (s.size) d.style.setProperty('--read-size', s.size + 'px');
+        if (s.notes === false) d.classList.add('notes-off');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="bar" id="bar">
+    <a class="brand" href="#/" aria-label="Home">
+      <img src="icons/emblem-96.png" alt="" width="30" height="30">
+      <span>CTB</span>
+    </a>
+    <button class="bar-title" id="barTitle" type="button" hidden></button>
+    <nav class="bar-actions">
+      <a class="icon-btn" href="#/books" aria-label="Books" title="Books">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5zM4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg>
+      </a>
+      <a class="icon-btn" href="#/search" aria-label="Search" title="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </a>
+      <button class="icon-btn" id="settingsBtn" type="button" aria-label="Menu: reading settings, bookmarks, highlights" title="Menu and reading settings" aria-expanded="false" aria-controls="settings">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <div class="settings" id="settings" hidden>
+    <div class="setting">
+      <span class="setting-label">Text size</span>
+      <div class="stepper">
+        <button type="button" id="sizeDown" aria-label="Smaller text">A−</button>
+        <output id="sizeOut">19</output>
+        <button type="button" id="sizeUp" aria-label="Larger text">A+</button>
+      </div>
+    </div>
+    <div class="setting">
+      <span class="setting-label">Appearance</span>
+      <div class="seg" role="radiogroup" aria-label="Appearance">
+        <button type="button" role="radio" data-theme-opt="auto">Auto</button>
+        <button type="button" role="radio" data-theme-opt="light">Light</button>
+        <button type="button" role="radio" data-theme-opt="dark">Dark</button>
+      </div>
+    </div>
+    <div class="setting">
+      <label class="switch" for="notesToggle">
+        <span class="setting-label">Footnotes</span>
+        <input type="checkbox" id="notesToggle" role="switch">
+        <span class="track" aria-hidden="true"></span>
+      </label>
+    </div>
+    <div class="setting">
+      <label class="switch" for="resumeToggle">
+        <span class="setting-label">Open where I left off</span>
+        <input type="checkbox" id="resumeToggle" role="switch">
+        <span class="track" aria-hidden="true"></span>
+      </label>
+    </div>
+    <div class="setting setting-links">
+      <a class="btn" href="#/saved/bookmarks">Bookmarks</a>
+      <a class="btn" href="#/saved/highlights">Highlights</a>
+      <a class="btn" href="#/saved/backup">Backup</a>
+    </div>
+  </div>
+
+  <main id="main" tabindex="-1">
+    <p class="loading">Loading…</p>
+  </main>
+
+  <div class="sheet-backdrop" id="sheetBackdrop" hidden></div>
+  <aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetRef" hidden>
+    <div class="sheet-head">
+      <strong id="sheetRef"></strong>
+      <button type="button" class="icon-btn" id="sheetClose" aria-label="Close note">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <p id="sheetText"></p>
+  </aside>
+
+  <div class="hlbar" id="hlbar" role="toolbar" aria-label="Bookmark and highlight" hidden>
+    <span class="visually-hidden" id="tbLabel" aria-live="polite"></span>
+    <button type="button" class="tb-btn" id="tbBm" aria-pressed="false" aria-label="Bookmark this verse">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v18l-5-4-5 4z"/></svg>
+    </button>
+    <button type="button" class="tb-btn tb-color" data-color="yellow" aria-label="Highlight yellow"><i class="hl-yellow"></i></button>
+    <button type="button" class="tb-btn tb-color" data-color="green" aria-label="Highlight green"><i class="hl-green"></i></button>
+    <button type="button" class="tb-btn tb-color" data-color="blue" aria-label="Highlight blue"><i class="hl-blue"></i></button>
+    <button type="button" class="tb-btn tb-color" data-color="pink" aria-label="Highlight pink"><i class="hl-pink"></i></button>
+    <button type="button" class="tb-btn" id="tbClear" aria-label="Remove highlight">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <button type="button" class="tb-btn" id="tbListen" aria-label="Listen from this verse">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+    </button>
+  </div>
+
+  <section class="player" id="player" aria-label="Listening controls" hidden>
+    <div class="player-main">
+      <div class="player-now" id="plNow"></div>
+      <div class="player-btns">
+        <button type="button" class="pl-btn" id="plPrev" aria-label="Previous verse"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5v14M19 5v14L9 12z"/></svg></button>
+        <button type="button" class="pl-btn pl-play" id="plPlay" aria-label="Play" data-state="paused">
+          <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>
+        </button>
+        <button type="button" class="pl-btn" id="plNext" aria-label="Next verse"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 5v14M5 5v14l10-7z"/></svg></button>
+        <button type="button" class="pl-btn" id="plStop" aria-label="Stop listening"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="1.5"/></svg></button>
+        <button type="button" class="pl-btn" id="plOpts" aria-label="Speed and voice" aria-expanded="false" aria-controls="plOptions"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></button>
+      </div>
+    </div>
+    <div class="player-opts" id="plOptions" hidden>
+      <label>Speed
+        <select id="plRate">
+          <option value="0.75">0.75×</option><option value="0.9">0.9×</option><option value="1">1× (normal)</option>
+          <option value="1.1">1.1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option>
+        </select>
+      </label>
+      <label>Voice <select id="plVoice"><option value="">Automatic</option></select></label>
+      <label class="chk"><input type="checkbox" id="plAuto"> Keep going into the next chapter</label>
+    </div>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <footer class="foot">
+    <p><strong>Clay Jar Treasure Bible</strong><br>© 2026 Jose Santiago. All rights reserved.</p>
+    <p class="foot-small">Free to read online, with no sign-up and no ads. You may quote up to 500 verses with credit to the Clay Jar Treasure Bible. <a href="#/about/copyright">Copyright and quoting</a>.</p>
+    <p class="foot-small">Looking for a word-for-word, public-domain Bible? See the <a href="https://clayjartranslation.github.io/" rel="noopener">Clay Jar Translation</a>.</p>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

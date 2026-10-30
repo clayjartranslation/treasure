@@ -1,0 +1,371 @@
+{
+ "title": "The Clay Jar Treasure Bible",
+ "summary": "The Bible in clear, everyday English, written thought for thought so that anyone can understand it. This page tells you about the name, the copyright, how we write, and where the text comes from.",
+ "sections": [
+  {
+   "type": "section",
+   "heading": "About the name",
+   "id": "name",
+   "blocks": [
+    {
+     "type": "properties",
+     "items": [
+      {
+       "label": "Name",
+       "value": "Clay Jar Treasure Bible"
+      },
+      {
+       "label": "Short name",
+       "value": "CTB"
+      },
+      {
+       "label": "Edition",
+       "value": "Draft 0.1, begun 30 October 2026"
+      },
+      {
+       "label": "Copyright",
+       "value": "© 2026 Jose Santiago. All rights reserved"
+      },
+      {
+       "label": "Reading level",
+       "value": "About grades 5 and 6"
+      },
+      {
+       "label": "Style",
+       "value": "Thought for thought, in plain English"
+      },
+      {
+       "label": "Scope",
+       "value": "Old Testament, Apocrypha, New Testament, Pseudepigrapha"
+      },
+      {
+       "label": "Translators",
+       "value": "Jose Santiago, with AI assistance"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "text": "In a letter to the church in Corinth, the apostle Paul said that we carry a treasure in plain clay jars (2 Corinthians 4:7). The treasure is God’s message. The jar is just the container. This Bible tries to be a clear, simple jar, so that the treasure is easy to see and to understand."
+    },
+    {
+     "type": "text",
+     "text": "It is the family edition of the Clay Jar Translation, a separate word-for-word Bible that is in the public domain."
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "heading": "Copyright and quoting",
+   "id": "copyright",
+   "blocks": [
+    {
+     "type": "callout",
+     "lead": "© 2026 Jose Santiago. All rights reserved.",
+     "tone": "info",
+     "text": "The text, footnotes, headings, and introductions of the Clay Jar Treasure Bible are copyrighted. They were written fresh for this Bible and are not copied from any other copyrighted work."
+    },
+    {
+     "type": "text",
+     "text": "Free to read. You can read this Bible online and offline, with no sign-up, no ads, and no tracking."
+    },
+    {
+     "type": "text",
+     "text": "Quoting. You may quote up to 500 verses of the Clay Jar Treasure Bible in print, online, or in a talk or song, as long as you give credit, for example “Scripture quotations are from the Clay Jar Treasure Bible, © 2026 Jose Santiago. All rights reserved.” For anything more, please ask first."
+    },
+    {
+     "type": "text",
+     "text": "The Clay Jar Translation (CJT) is a different book. Its text is in the public domain, and you can find it at clayjartranslation.github.io."
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "heading": "A prayer before the work",
+   "id": "prayer",
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Holy God, Maker of heaven and earth, you spoke and light came into being, and you formed us from the dust and breathed your life into us. We come to you now as clay in the hands of the potter. We ask you to guide this work of translation. Open our eyes to see what your word truly says, and give us humility to set aside what we wish it said. Where the old manuscripts speak with one voice, help us to carry their words faithfully; where they differ, give us patience, honesty, and wisdom to weigh them well."
+    },
+    {
+     "type": "text",
+     "text": "Guard us from pride, from carelessness, and from adding to or taking away from your words. Send your Spirit, who first moved over the waters, to move over our minds and our hands as we work. Let every page we make be clear, true, and free, so that people who have never held a Bible, and people who have read it all their lives, may find you in it. Bless Jose and everyone who will read, check, correct, and share this translation. We offer it back to you, for it was always yours. In your holy name we pray. Amen."
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "heading": "How we write",
+   "id": "approach",
+   "blocks": [
+    {
+     "type": "steps",
+     "steps": [
+      {
+       "title": "Thought for thought",
+       "detail": "We ask what the Hebrew, Aramaic, or Greek author meant, and then we say that in clear English. We do not follow the word order of the old languages."
+      },
+      {
+       "title": "Short, common words",
+       "detail": "Short sentences and everyday words, so that a reader about ten or eleven years old can follow. Hard church words are explained instead of used as labels. For example, “made right with God” is used instead of “justified”, and the older word is in a footnote."
+      },
+      {
+       "title": "Faithful to the meaning",
+       "detail": "We do not add ideas or leave any out. Where the old manuscripts differ in an important way, a footnote says so."
+      },
+      {
+       "title": "Poetry stays poetry",
+       "detail": "Psalms, proverbs, and prophets are set in lines, and the headings over each section are written fresh for this Bible."
+      },
+      {
+       "title": "Names, measures, and times",
+       "detail": "God’s name YHWH is Yahweh. Names of God and of people are explained in a footnote. Distances, weights, money, months, and clock times are given in the way we use them today, with the original in a footnote."
+      },
+      {
+       "title": "Few, simple footnotes",
+       "detail": "Footnotes are kept for important manuscript differences and for the meanings of names."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "heading": "Source texts",
+   "id": "sources",
+   "blocks": [
+    {
+     "type": "text",
+     "text": "We start from the oldest witnesses we have: the Hebrew text with the Dead Sea Scrolls, the Septuagint (the early Greek Old Testament), the Samaritan Pentateuch, and the oldest Greek manuscripts and papyri of the New Testament. Our own word-for-word public-domain work, the Clay Jar Translation, helps us keep the meaning exact. We never copy wording from any copyrighted English Bible."
+    },
+    {
+     "type": "section",
+     "heading": "Old Testament (Hebrew and Aramaic)",
+     "blocks": [
+      {
+       "type": "table",
+       "columns": [
+        "Witness",
+        "Date",
+        "How we use it"
+       ],
+       "rows": [
+        [
+         "Ketef Hinnom silver amulets",
+         "c. 600 BC",
+         "Oldest known biblical text: the priestly blessing (Numbers 6:24–26)"
+        ],
+        [
+         "Dead Sea Scrolls (e.g., 1QIsa-a, 4QSam-a, 4QDeut-j, 4QGen-b)",
+         "3rd c. BC to 1st c. AD",
+         "Primary check on the Hebrew; adopted where clearly older and better"
+        ],
+        [
+         "Nash Papyrus",
+         "2nd to 1st c. BC",
+         "Ten Commandments and the Shema"
+        ],
+        [
+         "Septuagint (Old Greek)",
+         "Translated 3rd to 2nd c. BC",
+         "Witness to Hebrew texts older than the Masoretic; Swete’s edition (public domain)"
+        ],
+        [
+         "Samaritan Pentateuch",
+         "Text form c. 2nd c. BC",
+         "Independent witness to the Torah; von Gall’s edition (public domain)"
+        ],
+        [
+         "Aleppo Codex",
+         "c. AD 930",
+         "Most accurate Masoretic manuscript; checked from facsimile images"
+        ],
+        [
+         "Leningrad Codex (Westminster Leningrad Codex)",
+         "AD 1008",
+         "Base text: complete, public domain, verse-numbered"
+        ],
+        [
+         "Syriac Peshitta, Latin Vulgate, Aramaic Targums",
+         "1st to 5th c. AD",
+         "Secondary checks on meaning and variants"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "type": "section",
+     "heading": "New Testament (Greek)",
+     "blocks": [
+      {
+       "type": "table",
+       "columns": [
+        "Witness",
+        "Date",
+        "How we use it"
+       ],
+       "rows": [
+        [
+         "P52 (John 18)",
+         "c. AD 125 to 175",
+         "Oldest known New Testament fragment"
+        ],
+        [
+         "P46 (Paul’s letters)",
+         "c. AD 200",
+         "Earliest collection of Paul"
+        ],
+        [
+         "P66 and P75 (John; Luke and John)",
+         "c. AD 175 to 225",
+         "Early Gospel text; P75 closely matches Vaticanus"
+        ],
+        [
+         "P45, P47, P72 and other papyri",
+         "3rd to 4th c. AD",
+         "Gospels and Acts; Revelation; 1 and 2 Peter, Jude"
+        ],
+        [
+         "Codex Sinaiticus",
+         "4th c. AD",
+         "Complete New Testament; read from the public online images"
+        ],
+        [
+         "Codex Vaticanus",
+         "4th c. AD",
+         "Leading early witness for most books"
+        ],
+        [
+         "Codex Alexandrinus",
+         "5th c. AD",
+         "Strong witness, especially for Revelation"
+        ],
+        [
+         "Tischendorf (8th ed., 1869–72) and Westcott–Hort (1881)",
+         "Printed editions",
+         "Public-domain Greek base texts, corrected from the papyri"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "type": "section",
+     "heading": "Apocrypha (Deuterocanon)",
+     "blocks": [
+      {
+       "type": "table",
+       "columns": [
+        "Witness",
+        "Date",
+        "How we use it"
+       ],
+       "rows": [
+        [
+         "Septuagint codices (Vaticanus, Sinaiticus, Alexandrinus)",
+         "4th to 5th c. AD",
+         "Main text for most books, via Swete’s edition"
+        ],
+        [
+         "Ben Sira scroll from Masada",
+         "1st c. BC",
+         "Oldest Hebrew of Sirach (chapters 39–44)"
+        ],
+        [
+         "Hebrew Ben Sira from the Cairo Geniza",
+         "10th to 12th c. AD",
+         "About two thirds of Sirach in Hebrew; Schechter and Lévi editions"
+        ],
+        [
+         "Qumran Tobit (4Q196–200)",
+         "1st c. BC",
+         "Four Aramaic copies and one Hebrew; checks the longer Greek text"
+        ],
+        [
+         "Great Psalms Scroll (11QPs-a)",
+         "1st c. AD",
+         "Hebrew Psalm 151 and Sirach 51"
+        ],
+        [
+         "Latin, Syriac, and Ethiopic versions",
+         "Various",
+         "Needed for 2 Esdras (Latin) and as checks elsewhere"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "type": "section",
+     "heading": "Pseudepigrapha",
+     "blocks": [
+      {
+       "type": "table",
+       "columns": [
+        "Witness",
+        "Date",
+        "How we use it"
+       ],
+       "rows": [
+        [
+         "Aramaic Enoch fragments (4Q201–212)",
+         "3rd to 1st c. BC",
+         "Oldest witness to 1 Enoch; corrects the later text"
+        ],
+        [
+         "Ethiopic (Ge’ez) 1 Enoch",
+         "Manuscripts 15th c. AD onward",
+         "Only complete text; Dillmann (1851) and Charles (1906) editions"
+        ],
+        [
+         "Greek Enoch (Akhmim codex and others)",
+         "5th to 6th c. AD",
+         "Partial Greek text of chapters 1–32 and more"
+        ],
+        [
+         "Hebrew Jubilees from Qumran (about 15 copies)",
+         "2nd to 1st c. BC",
+         "Oldest witness to Jubilees"
+        ],
+        [
+         "Ethiopic and Latin Jubilees",
+         "Ethiopic complete; Latin 5th c. AD",
+         "Charles (1895) Ethiopic edition as base"
+        ],
+        [
+         "Syriac, Greek, and Slavonic witnesses",
+         "Various",
+         "2 Baruch (Syriac), Odes of Solomon (Syriac), 2 Enoch (Slavonic), Testaments (Greek)"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "heading": "Canon and progress",
+   "id": "canon",
+   "blocks": [
+    {
+     "type": "text",
+     "text": "This Bible is being written book by book, in the order of the Old Testament, the Apocrypha, the New Testament, and then the Pseudepigrapha. The home page shows which chapters are ready. Books are grouped by tradition, not by authority: the Apocrypha are accepted as Scripture by Catholic and Orthodox churches, and the Pseudepigrapha are included for study."
+    }
+   ]
+  },
+  {
+   "type": "section",
+   "heading": "An honest note on this draft",
+   "id": "draft",
+   "blocks": [
+    {
+     "type": "text",
+     "text": "This is a draft. It is written with AI assistance and has not yet been checked by scholars. Every chapter is compared with many modern Bibles by computer, and any wording that is too close to a copyrighted Bible is rewritten. Please tell us about any mistakes."
+    }
+   ]
+  }
+ ]
+}
