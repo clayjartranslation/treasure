@@ -12,7 +12,20 @@
    "name": "Genesis",
    "division": "Old Testament",
    "chapterCount": 50,
-   "translated": []
+   "translated": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "file": "data/books/genesis.json"
   },
   {
    "id": "exodus",
