@@ -1,0 +1,4089 @@
+{
+ "id": "joshua",
+ "name": "Joshua",
+ "division": "Old Testament",
+ "sourceNote": "Written freshly, thought for thought, from the oldest Hebrew, Greek, and Aramaic witnesses (the Masoretic Text with the Dead Sea Scrolls, the Septuagint, and the Samaritan Pentateuch). © 2026 Jose Santiago. All rights reserved.",
+ "chapters": [
+  {
+   "n": 1,
+   "paras": [
+    1,
+    10,
+    12,
+    16
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Moses, Yahweh’s servant, had died. Yahweh now spoke to Joshua{a} son of Nun,{b} who had served as Moses’ assistant."
+    },
+    {
+     "v": 2,
+     "text": "“Moses, my servant, has died. So rise up and get ready to cross the Jordan,{c} you and everyone with you, into the land I am giving to the Israelites."
+    },
+    {
+     "v": 3,
+     "text": "Wherever you set your foot, that ground is yours. I promised this to Moses."
+    },
+    {
+     "v": 4,
+     "text": "Your borders will run from the wilderness and Lebanon{d} in the north to the great Euphrates River, taking in the whole country of the Hittites, and over to the Mediterranean{e} in the west, where the sun sets."
+    },
+    {
+     "v": 5,
+     "text": "Nobody will withstand you as long as you live. I stood by Moses, and I will stand by you in the same way. You will find me faithful and present; I will not leave you."
+    },
+    {
+     "v": 6,
+     "text": "So be strong and brave. You will lead this people to take over the land I promised their ancestors with an oath."
+    },
+    {
+     "v": 7,
+     "text": "Only be strong and very courageous. Take care to obey all of the teaching my servant Moses gave you. Never turn from it, right or left, and you will succeed{f} in everything you do."
+    },
+    {
+     "v": 8,
+     "text": "Never let this book of teaching leave your lips. Think about it{g} day and night, so that you do everything written in it. Then your journey will go well, and you will have success."
+    },
+    {
+     "v": 9,
+     "text": "Remember, I am the one commanding you. Be strong and brave. Do not be afraid or lose heart, because Yahweh your God is with you wherever you go.”"
+    },
+    {
+     "v": 10,
+     "text": "Joshua then spoke to the officers of the people:"
+    },
+    {
+     "v": 11,
+     "text": "“Go through the camp and tell the people, ‘Pack your food supplies. In three days you will cross this Jordan and enter the land Yahweh your God is giving you to own.’”"
+    },
+    {
+     "v": 12,
+     "text": "To the Reubenites, the Gadites, and half of Manasseh’s tribe, Joshua said:"
+    },
+    {
+     "v": 13,
+     "text": "“Remember what Moses, Yahweh’s servant, told you: ‘Yahweh your God is giving you a place to rest, and he will give you this land.’"
+    },
+    {
+     "v": 14,
+     "text": "The women, children, and livestock among you may stay in the east-bank country Moses gave you, across the Jordan.{h} But every one of you who is a fighting man must cross ahead of your fellow Israelites, ready for battle,{i} and help them"
+    },
+    {
+     "v": 15,
+     "text": "until Yahweh gives them a place to rest, as he has given you. Then they too will own the land that Yahweh your God is giving them. Only afterward may you return to the land Moses, Yahweh’s servant, gave you on the Jordan’s eastern side.”"
+    },
+    {
+     "v": 16,
+     "text": "They answered Joshua, “Everything you have ordered, we will carry out. Wherever you send us, we are ready to go."
+    },
+    {
+     "v": 17,
+     "text": "We obeyed Moses in every matter, and we will obey you in the same way. May Yahweh your God be with you, as he was with Moses!"
+    },
+    {
+     "v": 18,
+     "text": "Whoever defies your orders or refuses to follow your commands will be put to death. You only need to be strong and brave!”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "1:1",
+     "text": "Hebrew Yehoshua, “Yahweh is salvation” (or “Yahweh saves”). His earlier name was Hoshea, “salvation” (Numbers 13:16). The Greek form of the name is Iesous, “Jesus.”"
+    },
+    {
+     "m": "b",
+     "ref": "1:1",
+     "text": "Nun may mean “fish.” The Greek Old Testament spells it Naue."
+    },
+    {
+     "m": "c",
+     "ref": "1:2",
+     "text": "Hebrew Yarden, probably “the one that goes down,” fitting the river’s steep drop to the Dead Sea."
+    },
+    {
+     "m": "d",
+     "ref": "1:4",
+     "text": "Lebanon means “white,” perhaps from its snowy peaks or limestone cliffs. The Greek Old Testament reads “Antilibanus.”"
+    },
+    {
+     "m": "e",
+     "ref": "1:4",
+     "text": "Hebrew “the Great Sea.”"
+    },
+    {
+     "m": "f",
+     "ref": "1:7",
+     "text": "Or “act wisely”; so also in verse 8."
+    },
+    {
+     "m": "g",
+     "ref": "1:8",
+     "text": "Hebrew hagah, to murmur or read in an undertone (compare Psalm 1:2)."
+    },
+    {
+     "m": "h",
+     "ref": "1:14",
+     "text": "That is, east of the Jordan."
+    },
+    {
+     "m": "i",
+     "ref": "1:14",
+     "text": "Or “in battle formation.” The Hebrew word is related to the word for “five,” perhaps describing an army in five divisions."
+    }
+   ],
+   "subheads": {
+    "1": "Yahweh Commissions Joshua",
+    "10": "Joshua Prepares the People"
+   }
+  },
+  {
+   "n": 2,
+   "paras": [
+    1,
+    8,
+    15,
+    22
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "From Shittim,{a} Joshua son of Nun quietly sent out two spies. “Go and scout the land,” he told them, “especially Jericho.”{b} They arrived at the home of a woman named Rahab,{d} a prostitute,{c} and lodged with her."
+    },
+    {
+     "v": 2,
+     "text": "The king of Jericho was told, “Men from Israel have come here tonight to spy out the country.”"
+    },
+    {
+     "v": 3,
+     "text": "So the king sent word to Rahab: “Hand over the men who came to you and are in your house now. They have come to spy on our whole country.”"
+    },
+    {
+     "v": 4,
+     "text": "But the woman had already taken the two men and hidden them. She answered, “Yes, some men did come to me, but I did not know where they were from."
+    },
+    {
+     "v": 5,
+     "text": "They left at dusk, as the gate was about to be shut. I have no idea where they went. Hurry after them and you may catch them.”"
+    },
+    {
+     "v": 6,
+     "text": "In fact, she had taken them up to her roof and covered them with stalks of flax laid out to dry."
+    },
+    {
+     "v": 7,
+     "text": "The king’s men set off down the road toward the Jordan crossings. As soon as they left, the town gate was closed behind them."
+    },
+    {
+     "v": 8,
+     "text": "Before the spies lay down for the night, Rahab went up to the roof"
+    },
+    {
+     "v": 9,
+     "text": "and told them, “I know Yahweh has given you this country. Terror of you has come over us, and everyone who lives here is losing their courage because of you."
+    },
+    {
+     "v": 10,
+     "text": "We have heard that Yahweh dried up the water of the Red Sea{e} ahead of you when you came out of Egypt. We have heard too about Sihon and Og, the Amorite kings across the Jordan, and how you wiped them out completely.{f}"
+    },
+    {
+     "v": 11,
+     "text": "When we heard this, our hearts melted. Nobody has any fight left because of you, for Yahweh your God is God in heaven above and on earth below."
+    },
+    {
+     "v": 12,
+     "text": "So since I have been kind to you, please swear to me by Yahweh that you will be kind to my family. Give me a sure sign"
+    },
+    {
+     "v": 13,
+     "text": "that you will spare the lives of my father and mother, my brothers and sisters, and everyone who belongs to them, and save us from death.”"
+    },
+    {
+     "v": 14,
+     "text": "The men told her, “We will give our own lives for yours!{g} Keep quiet about our business, and when Yahweh gives us this land, we will deal with you kindly and loyally.”"
+    },
+    {
+     "v": 15,
+     "text": "Her house was built into the town wall, so she lowered them through a window by a rope."
+    },
+    {
+     "v": 16,
+     "text": "She told them, “Go to the hills, so the men searching for you will not find you. Stay hidden up there three days, until they have returned. Then you can go on your way.”"
+    },
+    {
+     "v": 17,
+     "text": "The men said to her, “We can keep the oath you made us swear only on this condition:"
+    },
+    {
+     "v": 18,
+     "text": "when we enter the land, you must tie this red cord to the window you lowered us from. Bring your father, mother, brothers, and the rest of your family into your house."
+    },
+    {
+     "v": 19,
+     "text": "If any of them step out of your doors into the street, whatever happens to them is their own fault, and we are not to blame. But if anyone who stays inside with you is harmed, their blood is on us."
+    },
+    {
+     "v": 20,
+     "text": "And if you reveal what we are doing, we are free from the oath you made us swear.”"
+    },
+    {
+     "v": 21,
+     "text": "“Let it be as you say,” she answered. She sent them off, and they left. She then fastened the red cord to her window."
+    },
+    {
+     "v": 22,
+     "text": "The spies reached the hills and stayed there three days, until the pursuers gave up and headed back. Those pursuers had combed the whole road without finding a trace of them."
+    },
+    {
+     "v": 23,
+     "text": "After that, the two men descended from the hills, forded the river, and reported to Joshua son of Nun. They described all that had happened to them."
+    },
+    {
+     "v": 24,
+     "text": "“Yahweh has surely given the whole country to us,” they said. “Everyone who lives there is melting with fear because of us.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "2:1",
+     "text": "Shittim means “acacia trees” (Numbers 25:1)."
+    },
+    {
+     "m": "b",
+     "ref": "2:1",
+     "text": "Jericho may mean “moon city,” from yareah, “moon,” or “fragrant place,” from reah, “scent.” The meaning is uncertain."
+    },
+    {
+     "m": "c",
+     "ref": "2:1",
+     "text": "Hebrew zonah. Josephus and the Aramaic Targum understood her as an innkeeper, but the Hebrew word means “prostitute,” as the Greek Old Testament (pornē) and the New Testament (Hebrews 11:31; James 2:25) take it."
+    },
+    {
+     "m": "d",
+     "ref": "2:1",
+     "text": "Rahab means “broad” or “wide.” She appears in the family line of Jesus (Matthew 1:5)."
+    },
+    {
+     "m": "e",
+     "ref": "2:10",
+     "text": "Hebrew Yam Suph, “Sea of Reeds.”"
+    },
+    {
+     "m": "f",
+     "ref": "2:10",
+     "text": "Hebrew haram, to give something over completely to Yahweh, usually by destroying it. See the note at 6:17."
+    },
+    {
+     "m": "g",
+     "ref": "2:14",
+     "text": "Literally “Our life in place of yours, to die.”"
+    }
+   ],
+   "subheads": {
+    "1": "Rahab Hides the Spies",
+    "15": "The Spies Escape and Report"
+   }
+  },
+  {
+   "n": 3,
+   "paras": [
+    1,
+    7,
+    9,
+    14
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Joshua got up at dawn. With all the Israelites he left Shittim and traveled to the bank of the Jordan, where they set up camp and waited."
+    },
+    {
+     "v": 2,
+     "text": "When three days had passed, the officers went through the camp"
+    },
+    {
+     "v": 3,
+     "text": "and gave the people this command: “Watch for the chest of the covenant of Yahweh your God. When the Levite priests lift it, break camp and follow it."
+    },
+    {
+     "v": 4,
+     "text": "Keep a distance of about 3,000 feet{a} between you and the chest. Stay back so you can see which way to go, because you have never been this way before.”"
+    },
+    {
+     "v": 5,
+     "text": "Joshua told the people, “Make yourselves holy, because tomorrow Yahweh will perform wonders among you.”"
+    },
+    {
+     "v": 6,
+     "text": "Then he told the priests, “Lift the chest of the covenant and cross the river before the people.” They picked it up and walked in front of everyone."
+    },
+    {
+     "v": 7,
+     "text": "Yahweh said to Joshua, “Today I will start making you great in the eyes of all Israel. They will learn that Moses’ God is with you now, as he was with him."
+    },
+    {
+     "v": 8,
+     "text": "Give an order to the priests who carry the chest of the covenant: ‘When you reach the edge of the Jordan, stop and stand in the water.’”"
+    },
+    {
+     "v": 9,
+     "text": "Joshua told the Israelites, “Come close and hear what Yahweh your God says.”"
+    },
+    {
+     "v": 10,
+     "text": "He went on, “Here is how you will know that the living God is among you, and that he will certainly drive out the Canaanites, Hittites, Hivites, Perizzites, Girgashites, Amorites, and Jebusites ahead of you."
+    },
+    {
+     "v": 11,
+     "text": "See, the chest of the covenant of the Lord of the whole earth is going ahead of you into the Jordan."
+    },
+    {
+     "v": 12,
+     "text": "Now choose twelve men from the tribes of Israel, one from each tribe."
+    },
+    {
+     "v": 13,
+     "text": "The priests carry the chest of Yahweh, the Lord of the whole earth. When their feet touch the Jordan’s water, the water flowing down from upstream will stop and pile up in a heap.”"
+    },
+    {
+     "v": 14,
+     "text": "So the people broke camp to cross the Jordan. The priests carried the chest of the covenant ahead of them."
+    },
+    {
+     "v": 15,
+     "text": "It was the harvest season,{b} when the Jordan spills over its banks. The priests came to the river, and their feet touched the water at its edge."
+    },
+    {
+     "v": 16,
+     "text": "At that moment the water coming from upstream stopped and rose up in a single heap, far away at Adam,{c} a town near Zarethan.{d} The flow toward the Sea of the Arabah, the Salt Sea,{e} was completely cut off. The people crossed opposite Jericho."
+    },
+    {
+     "v": 17,
+     "text": "The priests carrying Yahweh’s chest of the covenant stood firm on dry ground in the middle of the Jordan, and all Israel passed by on dry ground until the whole nation had crossed."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "3:4",
+     "text": "Hebrew “two thousand cubits,” about 900 meters."
+    },
+    {
+     "m": "b",
+     "ref": "3:15",
+     "text": "That is, the barley and wheat harvest in spring (April-May), when the Jordan was swollen with rain and melting snow from Mount Hermon. Compare 4:19."
+    },
+    {
+     "m": "c",
+     "ref": "3:16",
+     "text": "Adam was a town on the Jordan."
+    },
+    {
+     "m": "d",
+     "ref": "3:16",
+     "text": "Zarethan was a town in the Jordan valley."
+    },
+    {
+     "m": "e",
+     "ref": "3:16",
+     "text": "The Sea of the Arabah is the Dead Sea."
+    }
+   ],
+   "subheads": {
+    "1": "Crossing the Jordan"
+   }
+  },
+  {
+   "n": 4,
+   "paras": [
+    1,
+    8,
+    10,
+    15,
+    19
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "After the whole nation had crossed the Jordan, Yahweh told Joshua,"
+    },
+    {
+     "v": 2,
+     "text": "“Choose twelve men from among the people, one from each tribe,"
+    },
+    {
+     "v": 3,
+     "text": "and give them this order: ‘Walk to the very center of the Jordan, where the priests are standing firm. Pick up twelve stones there, haul them across with you, and drop them at tonight’s campsite.’”"
+    },
+    {
+     "v": 4,
+     "text": "Joshua called in the twelve men he had selected from Israel, one per tribe."
+    },
+    {
+     "v": 5,
+     "text": "He told them, “Walk out in front of the chest of Yahweh your God, into the middle of the Jordan. Each of you is to hoist one stone onto his shoulder, making one for every tribe of Israel."
+    },
+    {
+     "v": 6,
+     "text": "They will be a sign among you. In the future, when your children ask, ‘Why are these stones here?’"
+    },
+    {
+     "v": 7,
+     "text": "tell them, ‘The Jordan’s water was cut off in front of the chest of Yahweh’s covenant. As it crossed the river, the river stopped flowing.’ These stones will remind the Israelites of that for all time.”"
+    },
+    {
+     "v": 8,
+     "text": "The Israelites obeyed Joshua. As Yahweh had directed him, they took twelve stones from the Jordan’s middle, one for each Israelite tribe, brought them to the camp, and left them there."
+    },
+    {
+     "v": 9,
+     "text": "Joshua also stacked up twelve stones in the Jordan’s riverbed,{a} right where the priests with the chest of the covenant had been standing. The stones remain there today."
+    },
+    {
+     "v": 10,
+     "text": "The priests carrying the chest stayed in the middle of the river until everything Yahweh had told Joshua to say to the people was finished, just as Moses had instructed Joshua. Meanwhile the people hurried across."
+    },
+    {
+     "v": 11,
+     "text": "After everyone was across, the chest of Yahweh and the priests moved to the front of the people."
+    },
+    {
+     "v": 12,
+     "text": "The men of Reuben, Gad, and half of Manasseh crossed over in battle gear ahead of the other Israelites, as Moses had told them to."
+    },
+    {
+     "v": 13,
+     "text": "About 40,000 men equipped for war passed in front of Yahweh toward the plains of Jericho."
+    },
+    {
+     "v": 14,
+     "text": "On that day Yahweh raised Joshua to greatness in the sight of all Israel. As long as Joshua lived, the people held him in awe, as they had held Moses."
+    },
+    {
+     "v": 15,
+     "text": "Yahweh then spoke to Joshua:"
+    },
+    {
+     "v": 16,
+     "text": "“Tell the priests who carry the chest of the testimony to climb out of the Jordan.”"
+    },
+    {
+     "v": 17,
+     "text": "So Joshua told the priests, “Come up out of the Jordan.”"
+    },
+    {
+     "v": 18,
+     "text": "The priests carrying the chest of Yahweh’s covenant walked up from the riverbed. As soon as their feet touched dry ground, the Jordan’s water came rushing back and flooded its banks as before."
+    },
+    {
+     "v": 19,
+     "text": "The people came up out of the Jordan on the tenth day of the first month (March-April){b} and camped at Gilgal,{c} on the eastern edge of Jericho."
+    },
+    {
+     "v": 20,
+     "text": "Gilgal was where Joshua set up the twelve stones they had taken from the Jordan."
+    },
+    {
+     "v": 21,
+     "text": "Joshua told the Israelites, “One day your descendants will ask their fathers, ‘What do these stones mean?’"
+    },
+    {
+     "v": 22,
+     "text": "Then explain to them, ‘Israel crossed this Jordan on dry ground.’"
+    },
+    {
+     "v": 23,
+     "text": "Yahweh your God held back the Jordan until you were all over, exactly as he held back the Red Sea for us until we had passed through."
+    },
+    {
+     "v": 24,
+     "text": "He did it so that every nation on earth would know how powerful Yahweh’s hand is, and so that you would always honor Yahweh your God.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "4:9",
+     "text": "Or “Joshua set up the twelve stones that had been in the middle of the Jordan.” The Greek Old Testament reads “other twelve stones,” and the Latin Vulgate also speaks of a second set in the riverbed."
+    },
+    {
+     "m": "b",
+     "ref": "4:19",
+     "text": "Hebrew “in the first month,” counted from the spring new year of Israel’s religious calendar (Exodus 12:2). It was called Abib and later Nisan. Because the Hebrew months followed the moon, it fell in March-April. The tenth day was the day the Passover lamb was chosen (Exodus 12:3)."
+    },
+    {
+     "m": "c",
+     "ref": "4:19",
+     "text": "Gilgal means “circle,” probably a circle of stones. Joshua 5:9 links the name with galal, “to roll away.”"
+    }
+   ],
+   "subheads": {
+    "1": "Twelve Memorial Stones",
+    "15": "Israel Camps at Gilgal"
+   }
+  },
+  {
+   "n": 5,
+   "paras": [
+    1,
+    2,
+    10,
+    13
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "When the Amorite kings on the west side of the Jordan and all the Canaanite kings by the Mediterranean heard that Yahweh had dried up the Jordan until we{a} had crossed, their hearts melted, and they lost all courage to face Israel."
+    },
+    {
+     "v": 2,
+     "text": "At that time{b} Yahweh told Joshua, “Make knives out of flint and circumcise the Israelites a second time.”"
+    },
+    {
+     "v": 3,
+     "text": "Joshua did make flint knives, and at Gibeath-haaraloth{c} he circumcised the Israelite men."
+    },
+    {
+     "v": 4,
+     "text": "This was why: every male who had left Egypt, every one old enough to fight, had died out in the wilderness while traveling after the exodus."
+    },
+    {
+     "v": 5,
+     "text": "Those who left Egypt had all been circumcised, but nobody born in the wilderness on the way from Egypt had been."
+    },
+    {
+     "v": 6,
+     "text": "For forty years Israel had wandered in the wilderness, until the whole nation of soldiers who had left Egypt was dead. They had not obeyed Yahweh, so he swore they would never see the land he had promised their ancestors, the land flowing with milk and honey,{d} which he would give to us."
+    },
+    {
+     "v": 7,
+     "text": "Joshua circumcised their sons, whom Yahweh had raised up in their place. These boys were uncircumcised, because nobody had circumcised them on the road."
+    },
+    {
+     "v": 8,
+     "text": "With all the men circumcised, they stayed in their tents until they healed."
+    },
+    {
+     "v": 9,
+     "text": "Yahweh told Joshua, “I have rolled{e} the disgrace of Egypt off you today.” That is how Gilgal got its name, and it is called that still."
+    },
+    {
+     "v": 10,
+     "text": "The Israelites camped at Gilgal, and on the evening of the fourteenth day of the month (March-April),{f} in the plains of Jericho, they celebrated the Passover."
+    },
+    {
+     "v": 11,
+     "text": "The day after Passover, they ate food from the land: bread made without yeast, and roasted grain.{g}"
+    },
+    {
+     "v": 12,
+     "text": "The manna stopped the next day, once they were eating the land’s food. The Israelites never had manna again. That year they lived on the crops of Canaan."
+    },
+    {
+     "v": 13,
+     "text": "One day, while Joshua was near Jericho, he looked up and saw a man standing opposite him, sword drawn. Joshua walked up to him and asked, “Whose side are you on, ours or our enemies’?”"
+    },
+    {
+     "v": 14,
+     "text": "“Neither,” he replied. “I have come as commander of Yahweh’s army.” Joshua dropped with his face to the ground and worshiped. Then he asked, “What does my lord want to tell his servant?”"
+    },
+    {
+     "v": 15,
+     "text": "The commander of Yahweh’s army answered, “Take your sandals off your feet, because the ground where you are standing is holy.” Joshua did."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "5:1",
+     "text": "This follows the Hebrew written text. The reading tradition, many Hebrew manuscripts, and the ancient versions read “they.”"
+    },
+    {
+     "m": "b",
+     "ref": "5:2",
+     "text": "The Qumran scroll 4QJosh-a (about 150-50 B.C.) is arranged differently here. In it, the end of the account of the reading of the teaching (8:34-35) comes right before this verse, joined by a transitional sentence not found in other witnesses. In that order, the covenant reading, and perhaps the building of the altar, took place at Gilgal right after the Jordan crossing. Josephus (Antiquities 5.16-20) also places an altar soon after the crossing. Compare the note at 8:30."
+    },
+    {
+     "m": "c",
+     "ref": "5:3",
+     "text": "Gibeath-haaraloth means “hill of the foreskins.”"
+    },
+    {
+     "m": "d",
+     "ref": "5:6",
+     "text": "In verses 4-6 the Greek Old Testament has a different text. It says that some of those who came out of Egypt had been uncircumcised, and that Israel wandered forty-two years in the wilderness."
+    },
+    {
+     "m": "e",
+     "ref": "5:9",
+     "text": "Hebrew galal, which sounds like Gilgal; see the note at 4:19."
+    },
+    {
+     "m": "f",
+     "ref": "5:10",
+     "text": "Hebrew “on the fourteenth day of the month,” that is, the first month of the spring-start religious calendar (4:19). It was called Abib or Nisan and fell in March-April. The exact match varies from year to year with the lunar calendar."
+    },
+    {
+     "m": "g",
+     "ref": "5:11",
+     "text": "The Greek Old Testament lacks “on the day after the Passover.”"
+    }
+   ],
+   "subheads": {
+    "1": "Circumcision and Passover at Gilgal",
+    "13": "The Commander of Yahweh’s Army"
+   }
+  },
+  {
+   "n": 6,
+   "paras": [
+    1,
+    6,
+    12,
+    15,
+    22,
+    26
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Jericho’s gates were sealed tight against the Israelites. Nobody could leave, and nobody could enter."
+    },
+    {
+     "v": 2,
+     "text": "Yahweh told Joshua, “Look, I have put Jericho in your power, together with its king and its warriors."
+    },
+    {
+     "v": 3,
+     "text": "Each day for six days, have all your soldiers walk once around the city."
+    },
+    {
+     "v": 4,
+     "text": "Seven priests will walk in front of the chest, each with a ram’s horn trumpet.{a} On the seventh day, you will go around seven times, and the priests will blow the trumpets."
+    },
+    {
+     "v": 5,
+     "text": "When the long blast of the ram’s horn sounds, the whole people must give a loud shout. The city wall will then collapse,{b} and the people will charge in, each one straight ahead.”"
+    },
+    {
+     "v": 6,
+     "text": "Joshua son of Nun summoned the priests. “Lift the chest of the covenant,” he told them. “Seven of you must carry ram’s horn trumpets in front of Yahweh’s chest.”"
+    },
+    {
+     "v": 7,
+     "text": "He{c} told the people, “Move out and circle the city. The armed men will go ahead of Yahweh’s chest.”"
+    },
+    {
+     "v": 8,
+     "text": "It happened as Joshua had told the people. The seven priests with the seven ram’s horn trumpets went ahead of Yahweh, blowing their trumpets, and the chest of Yahweh’s covenant followed them."
+    },
+    {
+     "v": 9,
+     "text": "Armed men marched in front of the trumpet-blowing priests, and a rear guard came behind the chest. The trumpets never stopped sounding."
+    },
+    {
+     "v": 10,
+     "text": "Joshua had ordered the people, “Do not shout. Do not even let your voice be heard or a word leave your mouth, until the day I say, ‘Shout!’ Then you will shout.”"
+    },
+    {
+     "v": 11,
+     "text": "He had Yahweh’s chest carried around the city one time. Then they returned to the camp and spent the night."
+    },
+    {
+     "v": 12,
+     "text": "Joshua got up early the next morning, and the priests lifted Yahweh’s chest again."
+    },
+    {
+     "v": 13,
+     "text": "The seven priests carried their seven ram’s horn trumpets ahead of Yahweh’s chest and blew them without a pause. The armed men marched in front of them, and the rear guard followed the chest, with the trumpets sounding constantly."
+    },
+    {
+     "v": 14,
+     "text": "On the second day they walked around the city once and went back to camp, and so it went for six days."
+    },
+    {
+     "v": 15,
+     "text": "On the seventh day they rose at dawn and marched around the city in the same way, but that day they went around seven times."
+    },
+    {
+     "v": 16,
+     "text": "On the seventh trip around, as the priests blew the trumpets, Joshua told the people, “Shout! Yahweh has given you the city."
+    },
+    {
+     "v": 17,
+     "text": "Everything in it is put under the ban{d} for Yahweh. Rahab the prostitute alone is to be spared, and so is everyone staying in her house. She hid the messengers we sent, and that is why."
+    },
+    {
+     "v": 18,
+     "text": "Keep far away, all of you, from anything under the ban. If you take some of it, you will bring the ban on yourselves and cause trouble{e} for Israel’s camp."
+    },
+    {
+     "v": 19,
+     "text": "All the silver, gold, bronze, and iron belongs to Yahweh. It must be put in Yahweh’s treasury.”"
+    },
+    {
+     "v": 20,
+     "text": "When the trumpets sounded, the people shouted. They heard the trumpet blast and let out a great roar, and the wall fell flat. The people rushed into the city, each going straight ahead, and captured it."
+    },
+    {
+     "v": 21,
+     "text": "With swords they destroyed every living thing in the city that was under the ban: men and women, the young and the old, plus oxen, sheep, and donkeys."
+    },
+    {
+     "v": 22,
+     "text": "Then Joshua told the two men who had spied out the land, “Go to the prostitute’s house. Bring her out, with everything she owns, as you swore you would.”"
+    },
+    {
+     "v": 23,
+     "text": "The young spies went in and brought out Rahab, along with her father, mother, brothers, and all her relatives. They placed them outside the Israelite camp."
+    },
+    {
+     "v": 24,
+     "text": "After that, they burned down the city and all it held. Only the silver, gold, bronze, and iron went into the treasury of Yahweh’s house."
+    },
+    {
+     "v": 25,
+     "text": "Joshua let Rahab the prostitute live, together with her father’s household and all who belonged to her. She has lived among the Israelites ever since, because she hid the messengers Joshua sent to scout Jericho."
+    },
+    {
+     "v": 26,
+     "text": "It was then that Joshua made them swear: “Cursed before Yahweh be anyone who rebuilds this city of Jericho. Laying its foundation will cost him his oldest son, and setting up its gates will cost him his youngest.”{f}"
+    },
+    {
+     "v": 27,
+     "text": "So Yahweh was with Joshua, and his reputation spread across the whole land."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "6:4",
+     "text": "Hebrew shofarot hayyovelim, “ram’s-horn trumpets”; the word yovel, “ram,” also gave its name to the Jubilee (Leviticus 25)."
+    },
+    {
+     "m": "b",
+     "ref": "6:5",
+     "text": "Literally “will fall in its place.”"
+    },
+    {
+     "m": "c",
+     "ref": "6:7",
+     "text": "This follows the reading tradition, the Greek Old Testament, and other witnesses. The Hebrew written text reads “They.”"
+    },
+    {
+     "m": "d",
+     "ref": "6:17",
+     "text": "Hebrew herem, something given over completely to Yahweh, which people could not use. In war this usually meant its total destruction; so throughout this book."
+    },
+    {
+     "m": "e",
+     "ref": "6:18",
+     "text": "Hebrew akhar, “trouble”; compare the Valley of Achor in 7:26."
+    },
+    {
+     "m": "f",
+     "ref": "6:26",
+     "text": "The Greek Old Testament adds, “And so did Hozan of Bethel. He laid its foundation with Abiron his oldest son, and set up its gates with his youngest surviving son.” Compare the fulfillment in 1 Kings 16:34, where the builder is Hiel of Bethel and his sons are Abiram and Segub."
+    }
+   ],
+   "subheads": {
+    "1": "The Fall of Jericho"
+   }
+  },
+  {
+   "n": 7,
+   "paras": [
+    1,
+    2,
+    6,
+    10,
+    16,
+    22
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "But the Israelites broke faith over the things under the ban. A man named Achan{a} took some of them. His father was Carmi, his grandfather Zabdi,{b} and his great-grandfather Zerah, of Judah’s tribe. Yahweh’s anger blazed against the Israelites."
+    },
+    {
+     "v": 2,
+     "text": "Joshua sent men from Jericho to Ai,{c} a town near Beth-aven,{d} east of Bethel.{e} “Go up and look the area over,” he told them. The men went and scouted Ai."
+    },
+    {
+     "v": 3,
+     "text": "When they came back, they reported to Joshua, “There is no need to send everyone. Two or three thousand men can go up and take Ai. Do not wear out the whole people. Ai has only a few defenders.”"
+    },
+    {
+     "v": 4,
+     "text": "About 3,000 men marched up, but the men of Ai drove them back in flight."
+    },
+    {
+     "v": 5,
+     "text": "Ai’s men killed about thirty-six of them. Pursuing the Israelites from the town gate, they went as far as Shebarim,{f} cutting them down on the slope. The people’s courage drained away like water."
+    },
+    {
+     "v": 6,
+     "text": "Joshua ripped his clothes. Along with Israel’s elders, he lay face down on the ground in front of Yahweh’s chest until evening, with dust thrown on their heads."
+    },
+    {
+     "v": 7,
+     "text": "“Oh, Lord Yahweh,” Joshua cried, “why did you ever bring this people over the Jordan, if you meant to put us in the Amorites’ power and let them destroy us? If only we had stayed content on the far side of the Jordan!"
+    },
+    {
+     "v": 8,
+     "text": "Lord, what can I say, now that Israel has run from its enemies?"
+    },
+    {
+     "v": 9,
+     "text": "The Canaanites and everyone else in the land will hear about this. They will close in on us and erase our name from the earth. And what will become of your own great name?”"
+    },
+    {
+     "v": 10,
+     "text": "Yahweh answered Joshua, “Stand up! Why are you lying on your face?"
+    },
+    {
+     "v": 11,
+     "text": "Israel has sinned. They have violated the covenant I commanded them to follow. They took some of what was put under the ban, and they have stolen it, lied about it, and hidden it among their own belongings."
+    },
+    {
+     "v": 12,
+     "text": "That is why Israel cannot face its enemies. The Israelites flee from them, because they have come under the ban themselves. I will not be with you any longer unless you get rid of what was put under the ban."
+    },
+    {
+     "v": 13,
+     "text": "Get up and make the people holy. Tell them, ‘Make yourselves holy for tomorrow. This is what Yahweh, the God of Israel, says: Israel, you have things under the ban in your midst. You cannot stand against your enemies until you throw them out."
+    },
+    {
+     "v": 14,
+     "text": "In the morning you must present yourselves tribe by tribe. The tribe Yahweh picks{g} will come forward clan by clan. The clan Yahweh picks will come forward household by household, and the household Yahweh picks will come forward one man at a time."
+    },
+    {
+     "v": 15,
+     "text": "The one found with the banned things will be burned in fire, along with everything he owns. He broke Yahweh’s covenant and committed an outrage{h} in Israel.’”"
+    },
+    {
+     "v": 16,
+     "text": "Joshua rose early the next morning and brought Israel forward tribe by tribe. The tribe of Judah was picked."
+    },
+    {
+     "v": 17,
+     "text": "He brought the clans of Judah forward, and the Zerah clan was picked. He brought the Zerah clan forward man by man,{i} and Zabdi was picked."
+    },
+    {
+     "v": 18,
+     "text": "He brought Zabdi’s household forward one man at a time, and the one picked was Achan, son of Carmi, son of Zabdi, son of Zerah, from Judah’s tribe."
+    },
+    {
+     "v": 19,
+     "text": "Joshua said to Achan, “My son, give honor to Yahweh, the God of Israel, and confess to him.{j} Tell me what you have done. Keep nothing back.”"
+    },
+    {
+     "v": 20,
+     "text": "Achan replied, “I did sin against Yahweh, the God of Israel. Here is what I did:"
+    },
+    {
+     "v": 21,
+     "text": "Among the plunder I noticed a beautiful robe from Shinar,{k} about five pounds of silver,{l} and a bar of gold weighing about twenty ounces.{m} Wanting them, I took them. Look inside my tent. All of it is buried in the ground, and the silver is at the bottom.”"
+    },
+    {
+     "v": 22,
+     "text": "Messengers ran at once to the tent, and sure enough, the goods lay hidden there, with the silver at the bottom."
+    },
+    {
+     "v": 23,
+     "text": "They carried the goods out of the tent, brought them to Joshua and all the Israelites, and spread them out in front of Yahweh."
+    },
+    {
+     "v": 24,
+     "text": "All Israel went with Joshua to seize Achan son of Zerah. They brought him to the Valley of Achor, together with his sons and daughters, his oxen, donkeys, and sheep, his tent, everything else he owned, and the stolen silver, robe, and gold bar."
+    },
+    {
+     "v": 25,
+     "text": "Joshua said, “What a disaster you brought on us! Today Yahweh will bring disaster on you.” Then all Israel stoned Achan. They burned the rest and covered them with stones."
+    },
+    {
+     "v": 26,
+     "text": "They heaped up a large pile of stones over him, and it is still there today. Then Yahweh’s burning anger died down. For this reason that place is called the Valley of Achor{n} to this day."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "7:1",
+     "text": "The Greek Old Testament and 1 Chronicles 2:7 call him Achar, “trouble,” which makes a wordplay with the Valley of Achor (verses 25-26)."
+    },
+    {
+     "m": "b",
+     "ref": "7:1",
+     "text": "The Greek Old Testament has Zambri; 1 Chronicles 2:6 has Zimri."
+    },
+    {
+     "m": "c",
+     "ref": "7:2",
+     "text": "Ai (Hebrew ha-ai, always with the article) means “the ruin” or “the heap.”"
+    },
+    {
+     "m": "d",
+     "ref": "7:2",
+     "text": "Beth-aven means “house of wickedness” (or “of nothingness”). Hosea 4:15 later uses the name mockingly for Bethel."
+    },
+    {
+     "m": "e",
+     "ref": "7:2",
+     "text": "Bethel means “house of God” (Genesis 28:19)."
+    },
+    {
+     "m": "f",
+     "ref": "7:5",
+     "text": "Or “the quarries”; the Hebrew word means “breakings.”"
+    },
+    {
+     "m": "g",
+     "ref": "7:14",
+     "text": "That is, the tribe that is selected, probably by casting the lot."
+    },
+    {
+     "m": "h",
+     "ref": "7:15",
+     "text": "Or “a disgraceful folly” (Hebrew nevalah)."
+    },
+    {
+     "m": "i",
+     "ref": "7:17",
+     "text": "Some Hebrew manuscripts, the Greek Old Testament, and the Syriac read “by households,” as in verse 14."
+    },
+    {
+     "m": "j",
+     "ref": "7:19",
+     "text": "Or “and make confession to him.” This was a formula calling someone to tell the truth under oath (compare John 9:24)."
+    },
+    {
+     "m": "k",
+     "ref": "7:21",
+     "text": "That is, Babylonia. The Greek Old Testament reads “an embroidered cloak.”"
+    },
+    {
+     "m": "l",
+     "ref": "7:21",
+     "text": "Hebrew “200 shekels,” about 5 pounds (2.3 kilograms)."
+    },
+    {
+     "m": "m",
+     "ref": "7:21",
+     "text": "Hebrew “50 shekels,” about 20 ounces (575 grams). Literally “a tongue of gold,” that is, a wedge-shaped ingot."
+    },
+    {
+     "m": "n",
+     "ref": "7:26",
+     "text": "Achor means “trouble.” Compare Hosea 2:15 and Isaiah 65:10, where the valley becomes a place of hope."
+    }
+   ],
+   "subheads": {
+    "1": "Achan’s Sin",
+    "2": "Defeat at Ai",
+    "10": "Achan Is Found Out"
+   }
+  },
+  {
+   "n": 8,
+   "paras": [
+    1,
+    3,
+    10,
+    18,
+    24,
+    30
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Yahweh told Joshua, “Do not be afraid or lose heart. Take every fighting man and march up to Ai. I have handed over to you its king, its people, its town, and its land."
+    },
+    {
+     "v": 2,
+     "text": "What happened to Jericho and its king will happen to Ai and its king. Only the plunder and the livestock will be different, because those you may keep. Place an ambush behind the town.”"
+    },
+    {
+     "v": 3,
+     "text": "Joshua and all the soldiers set out for Ai. He selected 30,000 of his best fighters and sent them off at night."
+    },
+    {
+     "v": 4,
+     "text": "He gave them these orders: “Hide behind the town, not far from it, and all of you stay alert."
+    },
+    {
+     "v": 5,
+     "text": "I and everyone with me will approach the town. When its men come out to fight us as before, we will turn and flee."
+    },
+    {
+     "v": 6,
+     "text": "They will pursue us until we have pulled them well away from the town. They will think, ‘They are running from us as they did last time.’ So we will keep running."
+    },
+    {
+     "v": 7,
+     "text": "Then you will jump up from your hiding place and take the town. Yahweh your God will put it in your hands."
+    },
+    {
+     "v": 8,
+     "text": "Once you have captured it, burn it down. Do what Yahweh has said. These are my orders to you.”"
+    },
+    {
+     "v": 9,
+     "text": "Joshua sent them off, and they took up their hiding place between Bethel and Ai, on the west side of Ai. Joshua himself stayed with the people that night."
+    },
+    {
+     "v": 10,
+     "text": "Joshua got up at dawn and mustered the people. Then he and Israel’s elders led them toward Ai."
+    },
+    {
+     "v": 11,
+     "text": "All the soldiers with him marched up and stopped in front of the town, camping north of Ai with a valley between them and it."
+    },
+    {
+     "v": 12,
+     "text": "Joshua had taken about 5,000 men and placed them in hiding between Bethel and Ai, west of the town."
+    },
+    {
+     "v": 13,
+     "text": "The people took up their positions, with the main camp north of the town and the rear guard to the west. Out in the valley, Joshua stayed the night.{a}"
+    },
+    {
+     "v": 14,
+     "text": "The king of Ai saw this. At first light he and all his people hurried out to meet Israel in battle at the agreed place,{b} facing the Arabah. He did not know that an ambush was waiting behind his town."
+    },
+    {
+     "v": 15,
+     "text": "Joshua and all Israel acted as if they had been beaten, and ran off along the wilderness road."
+    },
+    {
+     "v": 16,
+     "text": "Everyone in the town{c} was called out to chase them, and in chasing Joshua they were pulled away from it."
+    },
+    {
+     "v": 17,
+     "text": "Every man in Ai or Bethel{d} went out after Israel. They left the town wide open as they chased the Israelites."
+    },
+    {
+     "v": 18,
+     "text": "Then Yahweh told Joshua, “Point the javelin{e} in your hand toward Ai, because I am giving the town to you.” Joshua pointed his javelin at the town."
+    },
+    {
+     "v": 19,
+     "text": "The instant he stretched out his hand, the hidden men leaped up from their place and ran. They rushed in, captured the town, and set it ablaze."
+    },
+    {
+     "v": 20,
+     "text": "The men of Ai glanced back and saw smoke from their town climbing into the sky. They could not run in either direction, because the Israelites who had been fleeing toward the wilderness spun around to face their pursuers."
+    },
+    {
+     "v": 21,
+     "text": "Joshua and all Israel saw that the hidden men had taken the town and that smoke was rising from it. They wheeled around and attacked the men of Ai."
+    },
+    {
+     "v": 22,
+     "text": "The men from the town came out to meet them, which left Ai’s army trapped in the middle of the Israelites, with enemies on both sides. Israel struck them down until none were left alive and none escaped."
+    },
+    {
+     "v": 23,
+     "text": "They did take the king of Ai alive and brought him to Joshua."
+    },
+    {
+     "v": 24,
+     "text": "Israel finished killing everyone from Ai in the open country and wilderness where they had chased them, until every last one had fallen to the sword. Then all Israel went back to Ai and killed those who remained."
+    },
+    {
+     "v": 25,
+     "text": "That day twelve thousand people died, men and women alike. That was everyone who lived in Ai."
+    },
+    {
+     "v": 26,
+     "text": "Joshua kept his hand with the javelin stretched out until he had completely destroyed all the people of Ai.{f}"
+    },
+    {
+     "v": 27,
+     "text": "Israel kept only the livestock and the goods of that town as plunder, just as Yahweh had told Joshua."
+    },
+    {
+     "v": 28,
+     "text": "Joshua burned Ai and turned it into a ruined mound{g} that remains a wasteland to this day."
+    },
+    {
+     "v": 29,
+     "text": "He hung the king of Ai on a tree until evening. When the sun set, Joshua ordered the body taken down, and they threw it down at the entrance of the town gate. They heaped a great pile of stones over it, which is still there."
+    },
+    {
+     "v": 30,
+     "text": "Then Joshua built an altar{h} to Yahweh, the God of Israel, on Mount Ebal.{i}"
+    },
+    {
+     "v": 31,
+     "text": "He did it as Moses, Yahweh’s servant, had commanded the Israelites and as written in the book of Moses’ teaching: an altar of uncut stones, untouched by any iron tool. On it they presented burnt offerings and peace offerings to Yahweh."
+    },
+    {
+     "v": 32,
+     "text": "There, in front of the Israelites, Joshua copied onto the stones the teaching Moses had written."
+    },
+    {
+     "v": 33,
+     "text": "All Israel, foreigners and native-born alike, stood on both sides of the chest with their elders, officers, and judges. They faced the Levite priests who carried the chest of Yahweh’s covenant. Half stood toward Mount Gerizim{j} and half toward Mount Ebal, as Moses, Yahweh’s servant, had earlier commanded for blessing the people of Israel."
+    },
+    {
+     "v": 34,
+     "text": "After that, Joshua read aloud all the words of the teaching, both the blessing and the curse, exactly as written in the book of the teaching."
+    },
+    {
+     "v": 35,
+     "text": "Joshua read every command Moses had given, without leaving out a word, to the whole assembly of Israel, including the women, the small children, and the foreigners living among them."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "8:13",
+     "text": "Some Hebrew manuscripts read “spent that night” (compare verse 9). The Greek Old Testament lacks most of verses 11b-13; it does not mention the second ambush of 5,000 men."
+    },
+    {
+     "m": "b",
+     "ref": "8:14",
+     "text": "Hebrew moed; or, with a small change, “at the descent.” The Greek Old Testament lacks this phrase."
+    },
+    {
+     "m": "c",
+     "ref": "8:16",
+     "text": "The Hebrew written text reads “in the city”; the reading tradition reads “in Ai.”"
+    },
+    {
+     "m": "d",
+     "ref": "8:17",
+     "text": "The Greek Old Testament lacks “or Bethel.”"
+    },
+    {
+     "m": "e",
+     "ref": "8:18",
+     "text": "Or “scimitar” (Hebrew kidon); a curved sword is possible. The Greek Old Testament reads “spear.”"
+    },
+    {
+     "m": "f",
+     "ref": "8:26",
+     "text": "Literally “had set apart all who lived in Ai for destruction,” that is, put them under the ban. The Greek Old Testament lacks this verse."
+    },
+    {
+     "m": "g",
+     "ref": "8:28",
+     "text": "Hebrew tel, a mound of ruins, the word that gave its name to the archaeological “tell.” The name Ai means “the ruin” (see the note at 7:2)."
+    },
+    {
+     "m": "h",
+     "ref": "8:30",
+     "text": "The Hebrew text places the altar and the covenant reading on Mount Ebal (verses 30-35) here. The Greek Old Testament places them after 9:2. The Qumran scroll 4QJosh-a apparently placed at least the reading of the teaching (verses 34-35) right after the Jordan crossing, before 5:2 (see the note there). These different placements suggest that the passage was positioned differently in different early forms of the text. Compare Deuteronomy 11:29; 27:1-26."
+    },
+    {
+     "m": "i",
+     "ref": "8:30",
+     "text": "Ebal may mean “bare” or “stony.” Mount Ebal and Mount Gerizim stand on either side of Shechem."
+    },
+    {
+     "m": "j",
+     "ref": "8:33",
+     "text": "Gerizim may mean “those cut off.” The Samaritans later regarded it as the chosen place of worship (compare John 4:20)."
+    }
+   ],
+   "subheads": {
+    "1": "The Capture of Ai",
+    "30": "Reading the Teaching at Mount Ebal"
+   }
+  },
+  {
+   "n": 9,
+   "paras": [
+    1,
+    3,
+    16,
+    22
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "When the kings west of the Jordan heard what had happened, they took action. These were the Hittite, Amorite, Canaanite, Perizzite, Hivite, and Jebusite kings, in the hill country, in the foothills,{a} and along the Mediterranean coast up toward Lebanon."
+    },
+    {
+     "v": 2,
+     "text": "They joined forces to fight Joshua and Israel.{b}"
+    },
+    {
+     "v": 3,
+     "text": "But the people of Gibeon{c} heard what Joshua had done to Jericho and Ai,"
+    },
+    {
+     "v": 4,
+     "text": "and they came up with a trick of their own. They disguised themselves as ambassadors.{d} They loaded their donkeys with worn-out sacks and old wineskins that were cracked and patched,"
+    },
+    {
+     "v": 5,
+     "text": "and wore ragged, mended sandals and shabby clothes. Every loaf of bread they carried was dry and crumbly."
+    },
+    {
+     "v": 6,
+     "text": "At the camp in Gilgal they went to Joshua and told him and the men of Israel, “We have come from a faraway country. Make a covenant with us.”"
+    },
+    {
+     "v": 7,
+     "text": "The Israelites answered the Hivites, “You may live nearby. How could we make a covenant with you?”"
+    },
+    {
+     "v": 8,
+     "text": "“We are your servants,” they told Joshua. Joshua asked, “Who are you? Where do you come from?”"
+    },
+    {
+     "v": 9,
+     "text": "They replied, “Your servants have come from a land far away, for the fame of Yahweh your God has reached us. Word of him and of everything he did in Egypt came to us,"
+    },
+    {
+     "v": 10,
+     "text": "and also what he did to Sihon king of Heshbon and Og king of Bashan, the two Amorite kings east of the Jordan. Og lived at Ashtaroth."
+    },
+    {
+     "v": 11,
+     "text": "So our elders and all our people said, ‘Take food for the trip, go and meet them, and say: We are your servants. Make a covenant with us.’"
+    },
+    {
+     "v": 12,
+     "text": "Look at our bread. It was hot from the oven when we packed it at home on the day we left to come to you. Now it is dry and crumbling."
+    },
+    {
+     "v": 13,
+     "text": "These wineskins were new when we filled them, and now they are cracked. Our clothes and sandals are worn out from the very long trip.”"
+    },
+    {
+     "v": 14,
+     "text": "The Israelite men sampled their food, but they did not ask Yahweh for guidance."
+    },
+    {
+     "v": 15,
+     "text": "Joshua made peace with them and agreed to a covenant that would let them live. Israel’s leaders gave their solemn word."
+    },
+    {
+     "v": 16,
+     "text": "Three days after the covenant was made, the Israelites found out that these people were neighbors, living nearby."
+    },
+    {
+     "v": 17,
+     "text": "So the Israelites set out and, on the third day, reached their towns: Gibeon, Chephirah, Beeroth, and Kiriath-jearim.{e}"
+    },
+    {
+     "v": 18,
+     "text": "The Israelites held back from attacking, because the community’s leaders had sworn an oath to them by Yahweh, the God of Israel. The whole community grumbled against the leaders."
+    },
+    {
+     "v": 19,
+     "text": "But the leaders told the whole community, “We swore to them by Yahweh, the God of Israel. We cannot lay a hand on them now."
+    },
+    {
+     "v": 20,
+     "text": "This is our plan: we will let them live, so that God’s anger does not come on us because of our oath.”"
+    },
+    {
+     "v": 21,
+     "text": "The leaders went on, “Let them live, but they will be our wood cutters and water carriers, serving the whole community.” So the leaders’ decision stood."
+    },
+    {
+     "v": 22,
+     "text": "Joshua summoned the Gibeonites. “Why did you deceive us?” he asked. “You told us you live far away, and all along you live right here among us."
+    },
+    {
+     "v": 23,
+     "text": "Now you are under a curse. You will always be slaves, hauling water and chopping wood for the house of my God.”"
+    },
+    {
+     "v": 24,
+     "text": "They answered Joshua, “Your servants were told plainly that Yahweh your God had commanded his servant Moses to hand you the entire land and to wipe out everyone living in it. We were terrified for our lives because of you, and that is why we did it."
+    },
+    {
+     "v": 25,
+     "text": "Now we are in your hands. Do to us what you consider right and fair.”"
+    },
+    {
+     "v": 26,
+     "text": "And that is what Joshua did. He rescued them, and the Israelites did not kill them."
+    },
+    {
+     "v": 27,
+     "text": "That day Joshua assigned them to cut wood and carry water for the community and for Yahweh’s altar, at the place he would choose. They still do this work today."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "9:1",
+     "text": "Hebrew shephelah, the low foothills between the hill country of Judah and the coastal plain."
+    },
+    {
+     "m": "b",
+     "ref": "9:2",
+     "text": "Here the Greek Old Testament has the account of the altar on Mount Ebal and the reading of the teaching (Hebrew 8:30-35), as 9:2a-f. In it the passage begins, “Then Joshua built an altar to the Lord, the God of Israel, on Mount Gaibal.” See the note at 8:30."
+    },
+    {
+     "m": "c",
+     "ref": "9:3",
+     "text": "Gibeon means “hill” or “hilltop place” (from givah, “hill”). It is probably el-Jib, about 6 miles (10 kilometers) northwest of Jerusalem."
+    },
+    {
+     "m": "d",
+     "ref": "9:4",
+     "text": "The Hebrew word is uncertain. With a one-letter difference, some Hebrew manuscripts and the ancient versions read “they took provisions” (compare verse 12). The Greek Old Testament reads “they made provision and prepared themselves.”"
+    },
+    {
+     "m": "e",
+     "ref": "9:17",
+     "text": "Kiriath-jearim means “city of forests.” Beeroth means “wells,” and Chephirah may mean “village” or “lioness.”"
+    }
+   ],
+   "subheads": {
+    "1": "The Gibeonites Trick Israel"
+   }
+  },
+  {
+   "n": 10,
+   "paras": [
+    1,
+    6,
+    12,
+    15,
+    16,
+    22,
+    28,
+    29,
+    31,
+    33,
+    34,
+    36,
+    38,
+    40
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "King Adoni-zedek{a} of Jerusalem{b} got alarming news. Joshua had taken Ai and put it under the ban, doing to Ai and its king exactly what he had done to Jericho and its king. And the Gibeonites had made a peace treaty with Israel and now lived alongside them."
+    },
+    {
+     "v": 2,
+     "text": "He{c} was badly frightened. Gibeon was a big city, as important as the royal cities, and bigger than Ai. All its men were fighters."
+    },
+    {
+     "v": 3,
+     "text": "So Adoni-zedek of Jerusalem sent word to four other kings: Hoham of Hebron,{d} then Piram, who ruled Jarmuth, then Japhia of Lachish, and last Debir, king in Eglon.{e}"
+    },
+    {
+     "v": 4,
+     "text": "“Join me,” he urged. “Help me strike Gibeon, since the Gibeonites have made peace with Joshua and Israel.”"
+    },
+    {
+     "v": 5,
+     "text": "So five Amorite kings combined their forces: the kings of Jerusalem, Hebron, Jarmuth, Lachish, and Eglon. They advanced with all their armies, camped beside Gibeon, and fought against it."
+    },
+    {
+     "v": 6,
+     "text": "Messengers from Gibeon reached Joshua in his camp at Gilgal: “Do not turn away from your servants! Hurry up here, save us, and help us. Every Amorite king of the hill country has gathered against us.”"
+    },
+    {
+     "v": 7,
+     "text": "Joshua left Gilgal with his whole army, including all his bravest fighters."
+    },
+    {
+     "v": 8,
+     "text": "Yahweh said to Joshua, “Do not be afraid of them. I have put them in your power, and none of them will hold out against you.”"
+    },
+    {
+     "v": 9,
+     "text": "Joshua marched all night from Gilgal and fell on them by surprise."
+    },
+    {
+     "v": 10,
+     "text": "Panic came over them from Yahweh as Israel approached. Joshua{f} defeated them in a great slaughter at Gibeon, chased them up the road to Beth-horon,{g} and kept cutting them down as far as Azekah and Makkedah."
+    },
+    {
+     "v": 11,
+     "text": "While they were running from Israel down the slope of Beth-horon, Yahweh dropped huge hailstones on them from the sky all the way to Azekah. More men died from the hailstones than the Israelites killed with swords."
+    },
+    {
+     "v": 12,
+     "text": "On the day Yahweh handed the Amorites over to Israel, Joshua spoke to Yahweh. In front of all Israel{h} he said:\n“Sun, stop{i} over Gibeon,\nand moon, over the Valley of Aijalon.”{j}"
+    },
+    {
+     "v": 13,
+     "text": "So the sun stood still\nand the moon stopped\nuntil the nation had paid back its enemies.\nIs this not written in the Book of Jashar?{k} The sun hung in the middle of the sky and held off setting for almost a whole day.{l}"
+    },
+    {
+     "v": 14,
+     "text": "No other day has ever been like it, before or since, when Yahweh obeyed a human voice. Yahweh was fighting for Israel!"
+    },
+    {
+     "v": 15,
+     "text": "Joshua returned to the camp at Gilgal, and all Israel went with him.{m}"
+    },
+    {
+     "v": 16,
+     "text": "The five kings, meanwhile, had fled and hidden in the cave at Makkedah."
+    },
+    {
+     "v": 17,
+     "text": "Someone told Joshua, “We have found the five kings hiding in the cave at Makkedah.”"
+    },
+    {
+     "v": 18,
+     "text": "Joshua said, “Roll large stones against the cave’s opening, and set guards in front of it."
+    },
+    {
+     "v": 19,
+     "text": "But the rest of you must not stay. Go after your enemies and strike them from behind. Do not let them get back to their towns, because Yahweh your God has put them in your power.”"
+    },
+    {
+     "v": 20,
+     "text": "Joshua and the Israelites killed huge numbers of them, until almost all were dead. A few survivors escaped into their walled cities."
+    },
+    {
+     "v": 21,
+     "text": "The whole army returned to Joshua at the camp in Makkedah, safe and sound. No one dared to speak against the Israelites."
+    },
+    {
+     "v": 22,
+     "text": "Joshua said, “Open the cave. Bring those five kings out to me.”"
+    },
+    {
+     "v": 23,
+     "text": "They did that. They brought out the five kings: the kings of Jerusalem, Hebron, Jarmuth, Lachish, and Eglon."
+    },
+    {
+     "v": 24,
+     "text": "When the kings were brought out, Joshua summoned every man of Israel. He told the officers who had marched with him, “Step forward and put your feet on these kings’ necks.” They stepped forward and did it."
+    },
+    {
+     "v": 25,
+     "text": "Joshua told them, “Never be afraid or discouraged. Be strong and brave. This is what Yahweh will do to all the enemies you fight.”"
+    },
+    {
+     "v": 26,
+     "text": "Then Joshua struck the kings dead and hung their bodies on five trees, where they stayed until evening."
+    },
+    {
+     "v": 27,
+     "text": "At sunset Joshua gave an order, and the bodies were taken down and thrown into the cave where the kings had hidden. They piled big stones across its mouth, and those stones are still there today."
+    },
+    {
+     "v": 28,
+     "text": "That same day Joshua captured Makkedah. He put the town and its king to the sword and put everyone in it under the ban. No one survived. The king of Makkedah met the same end as the king of Jericho."
+    },
+    {
+     "v": 29,
+     "text": "Joshua and all Israel left Makkedah and marched on Libnah, where they attacked."
+    },
+    {
+     "v": 30,
+     "text": "Yahweh also put this town and its king in Israel’s power. Joshua put everyone there to the sword and let no one live. Its king met the same end as the king of Jericho."
+    },
+    {
+     "v": 31,
+     "text": "Joshua and all Israel then moved on from Libnah to Lachish. They set up camp near it and attacked."
+    },
+    {
+     "v": 32,
+     "text": "Yahweh gave Lachish to Israel. They took it on the second day and put everyone in it to the sword, as they had done at Libnah."
+    },
+    {
+     "v": 33,
+     "text": "Horam, king of Gezer, marched up about then to help Lachish. Joshua struck him down along with his army, until no one remained alive."
+    },
+    {
+     "v": 34,
+     "text": "From Lachish the whole army went on to Eglon, camped nearby, and attacked."
+    },
+    {
+     "v": 35,
+     "text": "They took the town that same day and put everyone in it to the sword. Just as at Lachish, Joshua put all its people under the ban that day."
+    },
+    {
+     "v": 36,
+     "text": "Leaving Eglon, Joshua and all Israel climbed to Hebron and fought against it."
+    },
+    {
+     "v": 37,
+     "text": "They captured it. Its king, its villages, and every person in it fell to the sword. As at Eglon, he let no one live. He put the town and all its people under the ban."
+    },
+    {
+     "v": 38,
+     "text": "Joshua and all Israel then swung back and attacked Debir.{n}"
+    },
+    {
+     "v": 39,
+     "text": "Joshua took the town, its king, and all its villages. They killed everyone with the sword and put them under the ban, leaving no survivor. Debir and its king got the same treatment that Hebron, and Libnah and its king, had received."
+    },
+    {
+     "v": 40,
+     "text": "So Joshua conquered the whole region: the hill country, the Negev,{o} the foothills in the west, and the slopes, along with all their kings. He left no survivors. He put under the ban everything that breathed, as Yahweh, the God of Israel, had commanded."
+    },
+    {
+     "v": 41,
+     "text": "Kadesh-barnea{p} to Gaza marked one edge of what Joshua conquered, and all of Goshen up to Gibeon marked the other."
+    },
+    {
+     "v": 42,
+     "text": "Joshua took all these kings and their lands in one sweep. It was Yahweh, the God of Israel, who was fighting for Israel."
+    },
+    {
+     "v": 43,
+     "text": "After that, Joshua and the entire army of Israel returned to Gilgal and its camp."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "10:1",
+     "text": "Adoni-zedek means “my lord is righteous” (or “my lord is Zedek,” a god’s name). Compare Melchizedek, king of Salem (Genesis 14:18). The Greek Old Testament reads Adonibezek (compare Judges 1:5-7)."
+    },
+    {
+     "m": "b",
+     "ref": "10:1",
+     "text": "The meaning of Jerusalem is not certain. It may mean “foundation of Shalem,” Shalem being a god’s name, though it was later understood as “city of peace.”"
+    },
+    {
+     "m": "c",
+     "ref": "10:2",
+     "text": "Hebrew “they.”"
+    },
+    {
+     "m": "d",
+     "ref": "10:3",
+     "text": "Hebron may mean “alliance.” It was earlier called Kiriath-arba (14:15)."
+    },
+    {
+     "m": "e",
+     "ref": "10:3",
+     "text": "The Greek Old Testament reads “Debir king of Adullam” here and in verses 5 and 23, but has Eglon in verses 34-37."
+    },
+    {
+     "m": "f",
+     "ref": "10:10",
+     "text": "Hebrew “he”; that is, Joshua (or Yahweh or Israel)."
+    },
+    {
+     "m": "g",
+     "ref": "10:10",
+     "text": "Beth-horon probably means “house of Horon,” a Canaanite god, or perhaps “house of the hollow.” The road climbed from the coastal plain through Upper and Lower Beth-horon."
+    },
+    {
+     "m": "h",
+     "ref": "10:12",
+     "text": "The Hebrew can also be read “and he said in the sight of Israel.” The Greek Old Testament says only “and Joshua said.”"
+    },
+    {
+     "m": "i",
+     "ref": "10:12",
+     "text": "Hebrew dom means “be still, be silent,” or “stop.” Some readers think the poem asks the sun to stop shining (stop its heat, or be hidden by the storm of verse 11) rather than to stop moving. The lines are poetry, but the prose after them takes them literally."
+    },
+    {
+     "m": "j",
+     "ref": "10:12",
+     "text": "Aijalon means “place of deer.” The valley lies west of Gibeon, so the sun stood to the east over Gibeon and the moon to the west over Aijalon. That may point to early morning."
+    },
+    {
+     "m": "k",
+     "ref": "10:13",
+     "text": "Jashar means “the upright one.” The Book of Jashar was an early collection of poetry, now lost. It is also cited in 2 Samuel 1:18, in David’s lament. The Greek Old Testament lacks the question about the Book of Jashar here. In 1 Kings 8:53 it cites a “book of song,” which may be the same work."
+    },
+    {
+     "m": "l",
+     "ref": "10:13",
+     "text": "Literally “like a complete day” (Hebrew keyom tamim). It gives no number of hours."
+    },
+    {
+     "m": "m",
+     "ref": "10:15",
+     "text": "The Greek Old Testament lacks this verse, which looks ahead to verse 43. Verse 21 puts the camp at Makkedah."
+    },
+    {
+     "m": "n",
+     "ref": "10:38",
+     "text": "Debir means “back room” or “inner shrine.” It was earlier called Kiriath-sepher, “city of the book” (15:15)."
+    },
+    {
+     "m": "o",
+     "ref": "10:40",
+     "text": "Negev means “dry land.” It is the dry country in the south of Judah."
+    },
+    {
+     "m": "p",
+     "ref": "10:41",
+     "text": "Kadesh-barnea means “holy place of Barnea.” It was the main oasis during the wilderness years (Numbers 13:26; 32:8)."
+    }
+   ],
+   "subheads": {
+    "1": "The Sun Stands Still",
+    "16": "Five Kings Hang",
+    "28": "The Southern Campaign"
+   }
+  },
+  {
+   "n": 11,
+   "paras": [
+    1,
+    6,
+    10,
+    16,
+    21
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Jabin{a} was the king of Hazor.{b} When he heard the news, he sent messages to Jobab king of Madon, to the kings of Shimron and Achshaph,"
+    },
+    {
+     "v": 2,
+     "text": "to the kings in the northern hill country, in the Arabah south of Chinneroth,{c} in the foothills to the west, and in the heights of Dor{d} by the sea,"
+    },
+    {
+     "v": 3,
+     "text": "to the Canaanites east and west, the Amorites, Hittites, Perizzites, and Jebusites of the hill country, and the Hivites below Mount Hermon in the land of Mizpah.{e}"
+    },
+    {
+     "v": 4,
+     "text": "They all marched out with their armies, a huge force as countless as the sand on the seashore, with a great many horses and chariots."
+    },
+    {
+     "v": 5,
+     "text": "These kings set a date and place. They arrived together and made camp by the waters of Merom{f} to fight Israel."
+    },
+    {
+     "v": 6,
+     "text": "Yahweh said to Joshua, “Have no fear of them. At this time tomorrow I will have handed every one of them over to Israel, dead. You must cut the leg tendons of their horses and burn their chariots.”"
+    },
+    {
+     "v": 7,
+     "text": "Joshua and his entire army fell on them suddenly at the waters of Merom."
+    },
+    {
+     "v": 8,
+     "text": "Yahweh put them in Israel’s power. The Israelites beat them and chased them to Great Sidon, to Misrephoth-maim,{g} and east into the Valley of Mizpeh. They struck them down until no one was left."
+    },
+    {
+     "v": 9,
+     "text": "Joshua did just as Yahweh had told him. He cut the tendons of their horses and set their chariots on fire."
+    },
+    {
+     "v": 10,
+     "text": "Then Joshua turned back, captured Hazor, and killed its king with a sword. In earlier days Hazor had been the leader of all those kingdoms."
+    },
+    {
+     "v": 11,
+     "text": "They put to the sword everyone in the town and put them under the ban. Nothing that breathed was left alive, and Joshua burned Hazor itself."
+    },
+    {
+     "v": 12,
+     "text": "Joshua captured all the cities of those kings and killed their kings, putting everyone under the ban, as Moses, Yahweh’s servant, had ordered."
+    },
+    {
+     "v": 13,
+     "text": "Israel did not burn the towns that stood on their mounds,{h} with one exception. Joshua burned Hazor alone."
+    },
+    {
+     "v": 14,
+     "text": "The Israelites kept the plunder and livestock of these towns for themselves. But they killed every person with the sword until all were gone, leaving nobody alive."
+    },
+    {
+     "v": 15,
+     "text": "Yahweh had commanded his servant Moses, Moses had commanded Joshua, and Joshua did it. He left out nothing of what Yahweh had commanded Moses."
+    },
+    {
+     "v": 16,
+     "text": "In this way Joshua took the whole land: the hill country, the whole Negev, all the region of Goshen, the western foothills, the Arabah, and the hill country and foothills of Israel."
+    },
+    {
+     "v": 17,
+     "text": "The land reached from Mount Halak,{i} which rises toward Seir, up to Baal-gad{j} in the Valley of Lebanon at the foot of Mount Hermon. He caught all their kings and put them to death."
+    },
+    {
+     "v": 18,
+     "text": "Joshua was at war with all these kings for a long time."
+    },
+    {
+     "v": 19,
+     "text": "Gibeon, home of the Hivites, was the only city that made peace with the Israelites. Israel took every other city in battle."
+    },
+    {
+     "v": 20,
+     "text": "Yahweh himself made their hearts stubborn so that they would go to war against Israel. Then they would be put under the ban without mercy and wiped out, just as Yahweh had commanded Moses."
+    },
+    {
+     "v": 21,
+     "text": "At that time Joshua also went and destroyed the Anakim{k} of the hill country, in Hebron, Debir, and Anab, and in all the hill country of Judah and of Israel. He put them and their towns under the ban."
+    },
+    {
+     "v": 22,
+     "text": "Not a single Anakim remained in Israelite country. Some stayed on only in Gaza, Gath, and Ashdod."
+    },
+    {
+     "v": 23,
+     "text": "In this way Joshua took the entire land, as Yahweh had told Moses. He gave it to Israel as their inheritance and divided it among their tribes. And the land had rest from war."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "11:1",
+     "text": "Jabin may mean “he understands” or “he discerns.” Another Jabin, also king of Hazor, appears in Judges 4."
+    },
+    {
+     "m": "b",
+     "ref": "11:1",
+     "text": "Hazor probably means “enclosure.” It was the largest city in Canaan, north of the Sea of Galilee."
+    },
+    {
+     "m": "c",
+     "ref": "11:2",
+     "text": "That is, the Sea of Galilee. Chinnereth may mean “harp-shaped.”"
+    },
+    {
+     "m": "d",
+     "ref": "11:2",
+     "text": "Or “the heights of Dor,” a coastal town south of Mount Carmel."
+    },
+    {
+     "m": "e",
+     "ref": "11:3",
+     "text": "Mizpah means “watchtower” or “lookout.” The same word gives Mizpeh in verse 8."
+    },
+    {
+     "m": "f",
+     "ref": "11:5",
+     "text": "Merom means “height.”"
+    },
+    {
+     "m": "g",
+     "ref": "11:8",
+     "text": "Misrephoth-maim may mean “burnings by the water,” perhaps lime kilns or salt pans, or it may mean “hot springs.”"
+    },
+    {
+     "m": "h",
+     "ref": "11:13",
+     "text": "Hebrew tel; see the note at 8:28."
+    },
+    {
+     "m": "i",
+     "ref": "11:17",
+     "text": "Halak means “smooth” or “bare.”"
+    },
+    {
+     "m": "j",
+     "ref": "11:17",
+     "text": "Baal-gad means “lord of fortune,” or “Baal of Gad,” a god of luck."
+    },
+    {
+     "m": "k",
+     "ref": "11:21",
+     "text": "Anakim probably means “people of the neck,” that is, long-necked or tall. They were remembered as giants (Numbers 13:33; Deuteronomy 2:10-11)."
+    }
+   ],
+   "subheads": {
+    "1": "The Northern Kings",
+    "16": "Summary of the Conquest"
+   }
+  },
+  {
+   "n": 12,
+   "paras": [
+    1,
+    7
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "These are the kings the Israelites beat. They took over the territory east of the Jordan, from the Arnon Gorge up to Mount Hermon, together with the whole eastern Arabah:"
+    },
+    {
+     "v": 2,
+     "text": "First came Sihon, king of the Amorites, who lived in Heshbon. He ruled from Aroer, at the rim of the Arnon Gorge, and from the middle of the gorge, over half of Gilead as far as the Jabbok River, where Ammon’s border began."
+    },
+    {
+     "v": 3,
+     "text": "He also ruled the Arabah east to the Sea of Chinneroth and to the Sea of the Arabah, the Dead Sea, toward Beth-jeshimoth. In the south he held land below the slopes of Pisgah.{a}"
+    },
+    {
+     "v": 4,
+     "text": "Second came Og, king of Bashan, whose people were among the last Rephaim.{b} His towns were Ashtaroth and Edrei."
+    },
+    {
+     "v": 5,
+     "text": "His realm took in Mount Hermon, Salecah, and all of Bashan, up to the border of the Geshurites and Maacathites, and also the other half of Gilead, up to the border of Sihon king of Heshbon."
+    },
+    {
+     "v": 6,
+     "text": "Moses, Yahweh’s servant, and the Israelites defeated both kings. Then Moses gave their land as property to the Reubenites, the Gadites, and the half-tribe of Manasseh."
+    },
+    {
+     "v": 7,
+     "text": "Here are the kings that Joshua and the Israelites beat on the west side of the Jordan. Their lands lay between Baal-gad in the Valley of Lebanon and Mount Halak, which climbs toward Seir. Joshua handed this land over to the tribes of Israel, divided by shares."
+    },
+    {
+     "v": 8,
+     "text": "It included the hill country, the foothills, the Arabah, the slopes, the wilderness, and the Negev. Six peoples had lived there: Hittites, Amorites, Canaanites, Perizzites, Hivites, and Jebusites."
+    },
+    {
+     "v": 9,
+     "text": "The king of Jericho was one. The king of Ai, near Bethel, was another."
+    },
+    {
+     "v": 10,
+     "text": "The king of Jerusalem was one. The king of Hebron was another."
+    },
+    {
+     "v": 11,
+     "text": "The king of Jarmuth was one. The king of Lachish was another."
+    },
+    {
+     "v": 12,
+     "text": "The king of Eglon was one. The king of Gezer was another."
+    },
+    {
+     "v": 13,
+     "text": "The king of Debir was one. The king of Geder was another."
+    },
+    {
+     "v": 14,
+     "text": "The king of Hormah{c} was one. The king of Arad was another."
+    },
+    {
+     "v": 15,
+     "text": "The king of Libnah was one. The king of Adullam was another."
+    },
+    {
+     "v": 16,
+     "text": "The king of Makkedah was one. The king of Bethel was another."
+    },
+    {
+     "v": 17,
+     "text": "The king of Tappuah was one. The king of Hepher was another."
+    },
+    {
+     "v": 18,
+     "text": "The king of Aphek was one. The king of Lasharon{d} was another."
+    },
+    {
+     "v": 19,
+     "text": "The king of Madon was one. The king of Hazor was another."
+    },
+    {
+     "v": 20,
+     "text": "The king of Shimron-meron was one. The king of Achshaph was another."
+    },
+    {
+     "v": 21,
+     "text": "The king of Taanach was one. The king of Megiddo was another."
+    },
+    {
+     "v": 22,
+     "text": "The king of Kedesh was one. The king of Jokneam in Carmel was another."
+    },
+    {
+     "v": 23,
+     "text": "The king of Dor in Naphath-dor was one. The king of Goiim{e} in Gilgal was another."
+    },
+    {
+     "v": 24,
+     "text": "The king of Tirzah was one. In all there were thirty-one kings.{f}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "12:3",
+     "text": "Pisgah means “cleft” or “peak.” Moses viewed the land from its top (Deuteronomy 34:1)."
+    },
+    {
+     "m": "b",
+     "ref": "12:4",
+     "text": "The Rephaim were an ancient people remembered as giants (Deuteronomy 3:11). The word is also used for the shades of the dead."
+    },
+    {
+     "m": "c",
+     "ref": "12:14",
+     "text": "Hormah means “set apart for destruction” (from the same root as the ban; Numbers 21:3)."
+    },
+    {
+     "m": "d",
+     "ref": "12:18",
+     "text": "Or “the king of Aphek in Sharon.” The Greek Old Testament reads “the king of Ophek of Aroc.”"
+    },
+    {
+     "m": "e",
+     "ref": "12:23",
+     "text": "Goiim means “nations.” The Greek Old Testament reads “Gei of Galilee,” which fits the northern setting (compare Isaiah 9:1)."
+    },
+    {
+     "m": "f",
+     "ref": "12:24",
+     "text": "The Greek Old Testament lists twenty-nine kings, with differences in several names."
+    }
+   ],
+   "subheads": {
+    "1": "Lists of Defeated Kings"
+   }
+  },
+  {
+   "n": 13,
+   "paras": [
+    1,
+    8,
+    15,
+    24,
+    29,
+    32
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Joshua was very old by now. Yahweh told him, “You are old and far along in years, and a large part of the country has still not been taken."
+    },
+    {
+     "v": 2,
+     "text": "Here is what remains: all the Philistine districts and all of Geshur."
+    },
+    {
+     "v": 3,
+     "text": "(The strip runs from the Shihor,{a} east of Egypt, north to the border of Ekron, which counts as Canaanite. The Philistines were led by five rulers,{b} based in Gaza, Ashdod, Ashkelon, Gath, and Ekron.) The Avvites also live in the south."
+    },
+    {
+     "v": 4,
+     "text": "Also left are all the Canaanite land, Mearah, which belongs to Sidon, and the land up to Aphek and the Amorite border."
+    },
+    {
+     "v": 5,
+     "text": "The land of the Gebalites{c} remains too, and all of Lebanon to the east, from Baal-gad below Mount Hermon to Lebo-hamath.{d}"
+    },
+    {
+     "v": 6,
+     "text": "I myself will push out the people of the hill country, from Lebanon to Misrephoth-maim, and every Sidonian, as the Israelites advance. You only need to hand out this land to Israel as their share, as I have ordered you."
+    },
+    {
+     "v": 7,
+     "text": "Now split this land up among nine tribes and half of Manasseh.”"
+    },
+    {
+     "v": 8,
+     "text": "The other half of Manasseh{e} had already received its share, along with the Reubenites and the Gadites. Moses, Yahweh’s servant, had given them land east of the Jordan:"
+    },
+    {
+     "v": 9,
+     "text": "it began at Aroer, on the edge of the Arnon Gorge, took in the town in the gorge’s center, and covered the entire plateau{f} from Medeba as far as Dibon."
+    },
+    {
+     "v": 10,
+     "text": "It also held every town of Sihon, the Amorite king who had ruled in Heshbon, up to the Ammonite border,"
+    },
+    {
+     "v": 11,
+     "text": "and also Gilead, the land of the Geshurites and Maacathites, all of Mount Hermon, and all of Bashan up to Salecah."
+    },
+    {
+     "v": 12,
+     "text": "It took in the whole kingdom of Og in Bashan. His capitals had been Ashtaroth and Edrei, and he was the last survivor of the Rephaim. Moses had defeated these peoples and pushed them out."
+    },
+    {
+     "v": 13,
+     "text": "Still, the Israelites never drove out the Geshurites and Maacathites. Both peoples live among the Israelites even now."
+    },
+    {
+     "v": 14,
+     "text": "Moses gave the tribe of Levi no land. As Yahweh had promised them,{g} their share is the food offerings burned for Yahweh, the God of Israel."
+    },
+    {
+     "v": 15,
+     "text": "Moses gave the tribe of Reuben land for its clans."
+    },
+    {
+     "v": 16,
+     "text": "The land started at Aroer on the Arnon Gorge’s edge, took in the town in the gorge’s center, and spread over the plateau near Medeba."
+    },
+    {
+     "v": 17,
+     "text": "It held Heshbon and all the other towns on the plateau: Dibon, Bamoth-baal,{h} Beth-baal-meon,"
+    },
+    {
+     "v": 18,
+     "text": "Jahaz, Kedemoth, Mephaath,"
+    },
+    {
+     "v": 19,
+     "text": "Kiriathaim, Sibmah, and Zereth-shahar, which sits on a hill in the valley,"
+    },
+    {
+     "v": 20,
+     "text": "Beth-peor, the slopes of Pisgah, and Beth-jeshimoth."
+    },
+    {
+     "v": 21,
+     "text": "It took in every town on the plateau and all the kingdom of Sihon the Amorite king, who ruled in Heshbon. Moses had defeated him together with five Midianite leaders: Evi, Rekem, Zur, Hur, and Reba. These men were Sihon’s vassal princes in the country."
+    },
+    {
+     "v": 22,
+     "text": "The Israelites also killed Balaam son of Beor, the fortune-teller, with the sword along with others who were slain."
+    },
+    {
+     "v": 23,
+     "text": "Reuben’s border was the Jordan and the land beside it.{i} This was the share of the Reubenites, by clan, with their towns and villages."
+    },
+    {
+     "v": 24,
+     "text": "Moses gave land to the tribe of Gad, for the clans of the Gadites."
+    },
+    {
+     "v": 25,
+     "text": "Their land held Jazer and all the towns of Gilead, plus half of the Ammonite country up to Aroer, near Rabbah."
+    },
+    {
+     "v": 26,
+     "text": "It ran from Heshbon to Ramath-mizpeh and Betonim, and from Mahanaim{j} to the border of Debir.{k}"
+    },
+    {
+     "v": 27,
+     "text": "In the valley it held Beth-haram, Beth-nimrah, Succoth,{l} and Zaphon, and whatever else was left of Sihon’s kingdom, the king in Heshbon. The Jordan formed its border, up to the tip of the Sea of Chinnereth, on its eastern bank."
+    },
+    {
+     "v": 28,
+     "text": "That was the share of the Gadites by clan, with their towns and villages."
+    },
+    {
+     "v": 29,
+     "text": "Moses gave land to half the tribe of Manasseh, for the clans in that half-tribe."
+    },
+    {
+     "v": 30,
+     "text": "It reached from Mahanaim through all of Bashan, the whole realm of Og king of Bashan, and all of Havvoth-jair,{m} sixty towns in Bashan."
+    },
+    {
+     "v": 31,
+     "text": "It also held half of Gilead, with Ashtaroth and Edrei, towns in Og’s kingdom in Bashan. These were given to the descendants of Machir son of Manasseh, to half of Machir’s family, by clan."
+    },
+    {
+     "v": 32,
+     "text": "Moses handed out these shares on the plains of Moab, east of Jericho and across the Jordan."
+    },
+    {
+     "v": 33,
+     "text": "But Moses gave the tribe of Levi no land. Yahweh, the God of Israel, himself is their share, as he promised.{n}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "13:3",
+     "text": "Shihor means “black” or “the pool of Horus.” It was probably an eastern branch of the Nile or a stream on Egypt’s border."
+    },
+    {
+     "m": "b",
+     "ref": "13:3",
+     "text": "Hebrew seren, a Philistine word for the rulers of their five cities. It may be related to the Greek word tyrannos."
+    },
+    {
+     "m": "c",
+     "ref": "13:5",
+     "text": "That is, the people of Gebal (Byblos), on the coast north of Beirut."
+    },
+    {
+     "m": "d",
+     "ref": "13:5",
+     "text": "Or “to the entrance of Hamath.”"
+    },
+    {
+     "m": "e",
+     "ref": "13:8",
+     "text": "Hebrew “With it,” pointing back to the half-tribe of Manasseh in verse 7."
+    },
+    {
+     "m": "f",
+     "ref": "13:9",
+     "text": "Hebrew mishor, “level land,” the plateau east of the Dead Sea. The same word is used all through this chapter."
+    },
+    {
+     "m": "g",
+     "ref": "13:14",
+     "text": "The Greek Old Testament adds, “This is the division Moses made for the Israelites on the plains of Moab, across the Jordan from Jericho” (compare verse 32)."
+    },
+    {
+     "m": "h",
+     "ref": "13:17",
+     "text": "Bamoth-baal means “high places of Baal.”"
+    },
+    {
+     "m": "i",
+     "ref": "13:23",
+     "text": "Or “Reuben’s border was the Jordan, as a boundary.”"
+    },
+    {
+     "m": "j",
+     "ref": "13:26",
+     "text": "Mahanaim means “two camps” (Genesis 32:2)."
+    },
+    {
+     "m": "k",
+     "ref": "13:26",
+     "text": "Hebrew Lidbir, perhaps the same place as Lo-debar (2 Samuel 9:4)."
+    },
+    {
+     "m": "l",
+     "ref": "13:27",
+     "text": "Succoth means “booths” (Genesis 33:17)."
+    },
+    {
+     "m": "m",
+     "ref": "13:30",
+     "text": "Havvoth-jair means “tent villages of Jair” (Numbers 32:41)."
+    },
+    {
+     "m": "n",
+     "ref": "13:33",
+     "text": "The Greek Old Testament lacks this verse."
+    }
+   ],
+   "subheads": {
+    "1": "Land Still to Be Taken",
+    "8": "Land East of the Jordan",
+    "15": "Reuben’s Share",
+    "24": "Gad’s Share",
+    "29": "Eastern Manasseh’s Share"
+   }
+  },
+  {
+   "n": 14,
+   "paras": [
+    1,
+    6,
+    13
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "These are the shares the Israelites received in Canaan. Eleazar{a} the priest handed them out, along with Joshua son of Nun and the heads of the clans in Israel’s tribes."
+    },
+    {
+     "v": 2,
+     "text": "Yahweh had ordered through Moses that the shares of the nine and a half tribes be decided by lot."
+    },
+    {
+     "v": 3,
+     "text": "Moses had earlier given land east of the Jordan to the other two and a half tribes. He gave the Levites no land among them."
+    },
+    {
+     "v": 4,
+     "text": "Joseph’s descendants made up two tribes, Manasseh and Ephraim. The Levites got no part of the land, only towns to live in, with pastures for their livestock and property."
+    },
+    {
+     "v": 5,
+     "text": "The Israelites divided the land exactly as Yahweh had ordered Moses."
+    },
+    {
+     "v": 6,
+     "text": "Some men of Judah approached Joshua at Gilgal. Caleb{b} son of Jephunneh, a Kenizzite,{c} said to him, “You remember what Yahweh told Moses, God’s servant, concerning you and me at Kadesh-barnea."
+    },
+    {
+     "v": 7,
+     "text": "Moses, Yahweh’s servant, sent me from Kadesh-barnea to spy out the land. At that time I was forty. I came back and gave him an honest report of what I thought."
+    },
+    {
+     "v": 8,
+     "text": "The brothers who went with me scared the people half to death. But for my part, I followed Yahweh my God with all my heart."
+    },
+    {
+     "v": 9,
+     "text": "That day Moses made me a promise with an oath: ‘The ground your feet have walked on will belong to you and your children for good, because you followed Yahweh my God completely.’"
+    },
+    {
+     "v": 10,
+     "text": "Now look. Yahweh has kept me alive as he promised for forty-five years, ever since he said this to Moses while Israel wandered in the wilderness. I am eighty-five years old today,"
+    },
+    {
+     "v": 11,
+     "text": "and I am as strong this very day as I was when Moses sent me. I have the same strength now for battle and for daily work."
+    },
+    {
+     "v": 12,
+     "text": "So give me this hill country that Yahweh promised me then. You heard at the time that the Anakim lived there in great walled cities. Maybe Yahweh will be with me. If so, I will drive them out, as Yahweh said.”"
+    },
+    {
+     "v": 13,
+     "text": "Joshua blessed Caleb son of Jephunneh and gave him Hebron as his share."
+    },
+    {
+     "v": 14,
+     "text": "That is why Hebron still belongs to Caleb, the Kenizzite son of Jephunneh. He had followed Yahweh, the God of Israel, wholeheartedly."
+    },
+    {
+     "v": 15,
+     "text": "Hebron used to be named Kiriath-arba.{d} Arba{e} had been the greatest man among the Anakim. Then the land finally had rest from war."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "14:1",
+     "text": "Eleazar means “God has helped.”"
+    },
+    {
+     "m": "b",
+     "ref": "14:6",
+     "text": "Caleb means “dog,” perhaps in the sense of a loyal servant. Some link the name to kol-lev, “whole heart,” because of verses 8-9 and 14."
+    },
+    {
+     "m": "c",
+     "ref": "14:6",
+     "text": "The Kenizzites were a clan related to Edom (Genesis 15:19; 36:11). Caleb’s family had joined the tribe of Judah."
+    },
+    {
+     "m": "d",
+     "ref": "14:15",
+     "text": "Kiriath-arba means “city of four” or “city of Arba.”"
+    },
+    {
+     "m": "e",
+     "ref": "14:15",
+     "text": "The Greek Old Testament reads, “The name of Hebron before was the city of Argob; it is the mother city of the Anakim.”"
+    }
+   ],
+   "subheads": {
+    "1": "Dividing the Land West of the Jordan",
+    "6": "Caleb Asks for Hebron"
+   }
+  },
+  {
+   "n": 15,
+   "paras": [
+    1,
+    13,
+    20,
+    33,
+    37,
+    42,
+    45,
+    48,
+    52,
+    55,
+    58,
+    60,
+    61,
+    63
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "The share for the tribe of Judah, by clans, reached south to the Edomite border and the Wilderness of Zin at the far south."
+    },
+    {
+     "v": 2,
+     "text": "Their southern border began at the south end of the Dead Sea, at the bay facing south."
+    },
+    {
+     "v": 3,
+     "text": "It went south of the Scorpion Pass,{a} on to Zin, up south of Kadesh-barnea, past Hezron, up to Addar, and around to Karka."
+    },
+    {
+     "v": 4,
+     "text": "It continued to Azmon, came out at the Brook of Egypt,{b} and ended at the sea. That is to be your southern border."
+    },
+    {
+     "v": 5,
+     "text": "The eastern border was the Dead Sea, up to where the Jordan flows into it. The northern border started at the bay where the Jordan enters the sea."
+    },
+    {
+     "v": 6,
+     "text": "From that bay the border climbed to Beth-hoglah and passed north of Beth-arabah. It went on up to the Stone of Bohan, Reuben’s son."
+    },
+    {
+     "v": 7,
+     "text": "From the Valley of Achor it went up to Debir and turned north toward Gilgal, which faces the Red Pass{c} south of the valley. It continued to the waters of En-shemesh{d} and ended at En-rogel.{e}"
+    },
+    {
+     "v": 8,
+     "text": "Next the border climbed through the Valley of Ben-Hinnom{f} along the southern shoulder of the Jebusite town, which is Jerusalem. It rose to a hilltop beyond the Hinnom Valley on the west, where the Valley of Rephaim ends in the north."
+    },
+    {
+     "v": 9,
+     "text": "From the hilltop the border bent toward the spring of Nephtoah{g} and ran out to the towns of Mount Ephron. After that it turned to Baalah, also called Kiriath-jearim."
+    },
+    {
+     "v": 10,
+     "text": "From Baalah it curved west to Mount Seir, along the north side of Mount Jearim (that is, Chesalon), down to Beth-shemesh,{h} and on past Timnah."
+    },
+    {
+     "v": 11,
+     "text": "It reached the hillside north of Ekron, turned toward Shikkeron, crossed Mount Baalah, and arrived at Jabneel. It ended at the sea."
+    },
+    {
+     "v": 12,
+     "text": "The Mediterranean coast formed the western border. That is the full border around the clans of Judah."
+    },
+    {
+     "v": 13,
+     "text": "By Yahweh’s command to Joshua, Caleb son of Jephunneh received a portion inside Judah: Kiriath-arba, which is Hebron. (Arba was Anak’s father.)"
+    },
+    {
+     "v": 14,
+     "text": "Caleb drove out the three Anakites who lived there, Sheshai, Ahiman, and Talmai, Anak’s descendants."
+    },
+    {
+     "v": 15,
+     "text": "From there he marched on the people of Debir. Debir had once been called Kiriath-sepher.{i}"
+    },
+    {
+     "v": 16,
+     "text": "Caleb announced, “Whoever attacks Kiriath-sepher and captures it will marry my daughter Achsah.”{j}"
+    },
+    {
+     "v": 17,
+     "text": "Othniel{k} son of Kenaz, Caleb’s brother, captured it, and as a result Caleb gave Othniel his daughter Achsah as a wife."
+    },
+    {
+     "v": 18,
+     "text": "When Achsah came to him, she pushed Othniel to ask her father for a field. She climbed down from her donkey, and Caleb asked, “What is it you want?”"
+    },
+    {
+     "v": 19,
+     "text": "She said, “Please give me a special gift.{l} The land you gave me is dry, in the Negev. Give me some springs too.” So Caleb gave her springs in the upper ground and in the lower ground."
+    },
+    {
+     "v": 20,
+     "text": "This is the share of the tribe of Judah, by clans."
+    },
+    {
+     "v": 21,
+     "text": "The towns at the far edge of Judah’s land, near the Edomite border in the Negev, were Kabzeel, Eder, Jagur,"
+    },
+    {
+     "v": 22,
+     "text": "Kinah, Dimonah, Adadah,"
+    },
+    {
+     "v": 23,
+     "text": "Kedesh, Hazor, Ithnan,"
+    },
+    {
+     "v": 24,
+     "text": "Next came Ziph and Telem, then Bealoth,"
+    },
+    {
+     "v": 25,
+     "text": "and after those Hazor-hadattah and Kerioth-hezron (which is Hazor),"
+    },
+    {
+     "v": 26,
+     "text": "Amam, Shema, Moladah,"
+    },
+    {
+     "v": 27,
+     "text": "Hazar-gaddah, Heshmon, Beth-pelet,"
+    },
+    {
+     "v": 28,
+     "text": "Hazar-shual, Beersheba,{m} Biziothiah,"
+    },
+    {
+     "v": 29,
+     "text": "Baalah, Iim, Ezem,"
+    },
+    {
+     "v": 30,
+     "text": "Eltolad, Chesil, Hormah,"
+    },
+    {
+     "v": 31,
+     "text": "Ziklag, Madmannah, Sansannah,"
+    },
+    {
+     "v": 32,
+     "text": "Lebaoth, Shilhim, Ain, and Rimmon. That makes twenty-nine towns with their villages.{n}"
+    },
+    {
+     "v": 33,
+     "text": "Down in the western foothills lay Eshtaol, Zorah, Ashnah,"
+    },
+    {
+     "v": 34,
+     "text": "Zanoah, En-gannim, Tappuah, Enam,"
+    },
+    {
+     "v": 35,
+     "text": "Jarmuth, Adullam, Socoh, Azekah,"
+    },
+    {
+     "v": 36,
+     "text": "Shaaraim, Adithaim, Gederah, and Gederothaim. That makes fourteen towns with their villages."
+    },
+    {
+     "v": 37,
+     "text": "In the next group were Zenan and Hadashah, then Migdal-gad,"
+    },
+    {
+     "v": 38,
+     "text": "Dilean and Mizpeh, then Joktheel,"
+    },
+    {
+     "v": 39,
+     "text": "Lachish, Bozkath, Eglon,"
+    },
+    {
+     "v": 40,
+     "text": "Cabbon, Lahmam, Chitlish,"
+    },
+    {
+     "v": 41,
+     "text": "Gederoth, Beth-dagon, Naamah, and Makkedah. That makes sixteen towns with their villages."
+    },
+    {
+     "v": 42,
+     "text": "Libnah, Ether, Ashan,"
+    },
+    {
+     "v": 43,
+     "text": "Iphtah, Ashnah, Nezib,"
+    },
+    {
+     "v": 44,
+     "text": "Keilah, Achzib, and Mareshah. That makes nine towns with their villages."
+    },
+    {
+     "v": 45,
+     "text": "Ekron, with its dependent towns{o} and villages."
+    },
+    {
+     "v": 46,
+     "text": "West of Ekron to the sea, everything near Ashdod, with its villages."
+    },
+    {
+     "v": 47,
+     "text": "Ashdod with its towns and villages, Gaza with its towns and villages up to the Brook of Egypt, and the shore of the Mediterranean."
+    },
+    {
+     "v": 48,
+     "text": "Up in the hill country lay Shamir, Jattir, Socoh,"
+    },
+    {
+     "v": 49,
+     "text": "Dannah, Kiriath-sannah (which is Debir),"
+    },
+    {
+     "v": 50,
+     "text": "Anab, Eshtemoh, Anim,"
+    },
+    {
+     "v": 51,
+     "text": "Goshen, Holon, and Giloh. That makes eleven towns with their villages."
+    },
+    {
+     "v": 52,
+     "text": "Arab, Dumah, Eshan,"
+    },
+    {
+     "v": 53,
+     "text": "Janim, Beth-tappuah, Aphekah,"
+    },
+    {
+     "v": 54,
+     "text": "Humtah, Kiriath-arba (which is Hebron), and Zior. That makes nine towns with their villages."
+    },
+    {
+     "v": 55,
+     "text": "Maon, Carmel, Ziph, Juttah,"
+    },
+    {
+     "v": 56,
+     "text": "Jezreel, Jokdeam, Zanoah,"
+    },
+    {
+     "v": 57,
+     "text": "Kain, Gibeah, and Timnah. That makes ten towns with their villages."
+    },
+    {
+     "v": 58,
+     "text": "Halhul, Beth-zur, Gedor,"
+    },
+    {
+     "v": 59,
+     "text": "Maarath, Beth-anoth, and Eltekon. That makes six towns with their villages.{p}"
+    },
+    {
+     "v": 60,
+     "text": "Kiriath-baal (which is Kiriath-jearim) and Rabbah. That makes two towns with their villages."
+    },
+    {
+     "v": 61,
+     "text": "Out in the wilderness lay Beth-arabah, Middin, Secacah,"
+    },
+    {
+     "v": 62,
+     "text": "Nibshan, the Town of Salt,{q} and En-gedi.{r} That makes six towns with their villages."
+    },
+    {
+     "v": 63,
+     "text": "The people of Judah could not drive out the Jebusites living in Jerusalem. To this day the Jebusites live in Jerusalem alongside the people of Judah."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "15:3",
+     "text": "Akrabbim means “scorpions.”"
+    },
+    {
+     "m": "b",
+     "ref": "15:4",
+     "text": "Hebrew nahal Mitsrayim, the Wadi el-Arish in northern Sinai."
+    },
+    {
+     "m": "c",
+     "ref": "15:7",
+     "text": "Adummim means “red places,” probably from the red rock along the road from Jericho to Jerusalem."
+    },
+    {
+     "m": "d",
+     "ref": "15:7",
+     "text": "En-shemesh means “spring of the sun.”"
+    },
+    {
+     "m": "e",
+     "ref": "15:7",
+     "text": "En-rogel may mean “spring of the fuller” or “spring of the foot.”"
+    },
+    {
+     "m": "f",
+     "ref": "15:8",
+     "text": "Hebrew Ge ben-Hinnom. The Hebrew Ge-Hinnom later became the Greek Gehenna, a name for the place of judgment (Matthew 5:22)."
+    },
+    {
+     "m": "g",
+     "ref": "15:9",
+     "text": "Or “the spring of Me-nephtoah.” Nephtoah may mean “opening.”"
+    },
+    {
+     "m": "h",
+     "ref": "15:10",
+     "text": "Beth-shemesh means “house of the sun.”"
+    },
+    {
+     "m": "i",
+     "ref": "15:15",
+     "text": "Kiriath-sepher means “city of the book” (or “city of the scribe”). The Greek Old Testament reads “city of letters.” Verse 49 calls it Kiriath-sannah."
+    },
+    {
+     "m": "j",
+     "ref": "15:16",
+     "text": "Achsah means “anklet.”"
+    },
+    {
+     "m": "k",
+     "ref": "15:17",
+     "text": "Othniel may mean “God is my strength” (or “lion of God”). He became Israel’s first judge (Judges 3:9-11)."
+    },
+    {
+     "m": "l",
+     "ref": "15:19",
+     "text": "Hebrew “a blessing,” that is, a gift."
+    },
+    {
+     "m": "m",
+     "ref": "15:28",
+     "text": "Beersheba means “well of seven” or “well of the oath” (Genesis 21:31)."
+    },
+    {
+     "m": "n",
+     "ref": "15:32",
+     "text": "The names in verses 21-32 add up to more than twenty-nine. Some may be combined (for example, Ain and Rimmon are one place, En-rimmon, in Nehemiah 11:29), or some may have been added to the list later."
+    },
+    {
+     "m": "o",
+     "ref": "15:45",
+     "text": "Hebrew “daughters,” that is, dependent towns. The same word is used all through these lists."
+    },
+    {
+     "m": "p",
+     "ref": "15:59",
+     "text": "The Greek Old Testament adds another district of eleven towns here: Tekoa, Ephrathah (that is, Bethlehem), Peor, Etam, Culon, Tatam, Thobes, Carem, Gallim, Bether, and Manocho, “eleven towns with their villages.” The Hebrew text lacks this district, probably because a copyist’s eye jumped from one “with their villages” to the next."
+    },
+    {
+     "m": "q",
+     "ref": "15:62",
+     "text": "Hebrew Ir-hammelah."
+    },
+    {
+     "m": "r",
+     "ref": "15:62",
+     "text": "En-gedi means “spring of the young goat.”"
+    }
+   ],
+   "subheads": {
+    "1": "Judah’s Share",
+    "13": "Caleb Takes Hebron and Debir",
+    "20": "Towns of Judah"
+   }
+  },
+  {
+   "n": 16,
+   "paras": [
+    1,
+    5
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "The lot for Joseph’s descendants started at the Jordan by Jericho, where the springs lie east of the town. The line crossed the wilderness and rose from Jericho toward the Bethel hills."
+    },
+    {
+     "v": 2,
+     "text": "Out of Bethel it ran to Luz{a} and then Ataroth, home of the Archites."
+    },
+    {
+     "v": 3,
+     "text": "Then it dropped westward to Japhletite country, down to Lower Beth-horon and Gezer, and met the sea."
+    },
+    {
+     "v": 4,
+     "text": "This was the share received by Joseph’s descendants, Manasseh and Ephraim."
+    },
+    {
+     "v": 5,
+     "text": "This is the land of the Ephraimite{b} clans. Their eastern border ran from Ataroth-addar to Upper Beth-horon,"
+    },
+    {
+     "v": 6,
+     "text": "and reached the sea. Michmethath lay on the north. The border then curved east to Taanath-shiloh and went past it on the east side to Janoah."
+    },
+    {
+     "v": 7,
+     "text": "From Janoah it fell away to Ataroth and Naarah, brushed Jericho, and reached the Jordan."
+    },
+    {
+     "v": 8,
+     "text": "Starting at Tappuah, the line went westward along the Kanah Brook{c} and met the sea. This was the share of the tribe of Ephraim, by clan."
+    },
+    {
+     "v": 9,
+     "text": "It also included some towns and villages set apart for the Ephraimites inside the land that belonged to Manasseh."
+    },
+    {
+     "v": 10,
+     "text": "The Canaanites living in Gezer were never driven out. So they still live among the Ephraimites, doing forced labor for them.{d}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "16:2",
+     "text": "Luz means “almond tree.” It was the older name of Bethel (Genesis 28:19), but here the two places seem to be told apart."
+    },
+    {
+     "m": "b",
+     "ref": "16:5",
+     "text": "Ephraim means “doubly fruitful” (Genesis 41:52)."
+    },
+    {
+     "m": "c",
+     "ref": "16:8",
+     "text": "Kanah means “reed.”"
+    },
+    {
+     "m": "d",
+     "ref": "16:10",
+     "text": "The Greek Old Testament lacks “and they have become forced laborers.” Instead it adds, “until Pharaoh king of Egypt went up and took it and burned it with fire. He destroyed the Canaanites, the Perizzites, and those living in Gaza, and gave the land as a dowry to his daughter.” Compare 1 Kings 9:16."
+    }
+   ],
+   "subheads": {
+    "1": "Ephraim’s Share"
+   }
+  },
+  {
+   "n": 17,
+   "paras": [
+    1,
+    3,
+    7,
+    14
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "This was the share for the tribe of Manasseh,{a} Joseph’s firstborn. Machir was Manasseh’s firstborn and the father of Gilead. Machir was a warrior, so Gilead and Bashan were given to him."
+    },
+    {
+     "v": 2,
+     "text": "The rest of Manasseh’s descendants received shares too, clan by clan. These clans were named for Abiezer, Helek, Asriel, Shechem, Hepher, and Shemida, all sons of Manasseh son of Joseph."
+    },
+    {
+     "v": 3,
+     "text": "Zelophehad had no sons, only daughters. His father was Hepher, his grandfather Gilead, his great-grandfather Machir, and his great-great-grandfather Manasseh. He had five daughters: Mahlah, Noah, Hoglah, Milcah, and Tirzah."
+    },
+    {
+     "v": 4,
+     "text": "The sisters approached Eleazar the priest, Joshua son of Nun, and the leaders. “Yahweh ordered Moses to give us land among our relatives,” they said. So Joshua obeyed Yahweh’s order and gave them land among their father’s brothers."
+    },
+    {
+     "v": 5,
+     "text": "That brought Manasseh ten shares, apart from Gilead and Bashan across the Jordan,"
+    },
+    {
+     "v": 6,
+     "text": "because Manasseh’s daughters received land along with his sons. The land of Gilead went to the rest of Manasseh’s descendants."
+    },
+    {
+     "v": 7,
+     "text": "Manasseh’s border ran from Asher to Michmethath, east of Shechem. It then turned south toward the people of En-tappuah."
+    },
+    {
+     "v": 8,
+     "text": "Manasseh held the countryside around Tappuah,{b} but the town itself, on Manasseh’s border, went to Ephraim."
+    },
+    {
+     "v": 9,
+     "text": "The border then dropped to the Kanah Brook. The towns south of the brook belonged to Ephraim, although they stood among Manasseh’s towns. Manasseh’s land lay north of the brook, and its border met the sea."
+    },
+    {
+     "v": 10,
+     "text": "The land to the south was Ephraim’s, and the land to the north was Manasseh’s. The sea was their western border. Manasseh touched Asher on the north and Issachar on the east."
+    },
+    {
+     "v": 11,
+     "text": "Within Issachar and Asher, Manasseh also owned Beth-shean, Ibleam, and their towns. It owned the people of Dor, En-dor, Taanach, and Megiddo and their towns. The third one was Naphath.{c}"
+    },
+    {
+     "v": 12,
+     "text": "But the Manassites could not take those towns, because the Canaanites were set on staying in that land."
+    },
+    {
+     "v": 13,
+     "text": "When Israel became strong enough, the Israelites made the Canaanites work as forced laborers, though they never fully drove them out."
+    },
+    {
+     "v": 14,
+     "text": "Joseph’s descendants complained to Joshua, “Why did you give us just one lot and one share? We are a large people, and Yahweh has blessed us until now.”"
+    },
+    {
+     "v": 15,
+     "text": "Joshua answered, “If your people are so many, go up to the forest. Clear some land for yourselves there, in the country of the Perizzites and Rephaim, because the hill country of Ephraim is too small for you.”"
+    },
+    {
+     "v": 16,
+     "text": "Joseph’s descendants said, “The hill country is not enough for us. Besides, every Canaanite in the lowlands, at Beth-shean and its towns and in the Valley of Jezreel,{d} owns iron chariots.”"
+    },
+    {
+     "v": 17,
+     "text": "Joshua then told the house of Joseph, Ephraim and Manasseh, “You are many and powerful. You will not get just one lot."
+    },
+    {
+     "v": 18,
+     "text": "The hill country will be yours too. It is forested, but you will clear it and own it to its farthest edge. The Canaanites are strong and have iron chariots, yet you will drive them out.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "17:1",
+     "text": "Manasseh means “making forget” (Genesis 41:51). Parts of this chapter (verses 1-5 and 11-15) survive in the Qumran scroll 4QJosh-b (about 50 B.C.), which closely matches the Hebrew text."
+    },
+    {
+     "m": "b",
+     "ref": "17:8",
+     "text": "Tappuah means “apple” (or another fruit tree). The same goes for En-tappuah, “apple spring,” in verse 7."
+    },
+    {
+     "m": "c",
+     "ref": "17:11",
+     "text": "Or “the three heights.” The Hebrew is uncertain. The Greek Old Testament lacks Ibleam and En-dor here and reads “the third part of Napheth.”"
+    },
+    {
+     "m": "d",
+     "ref": "17:16",
+     "text": "Jezreel means “God sows.”"
+    }
+   ],
+   "subheads": {
+    "1": "Manasseh’s Share",
+    "14": "Joseph’s Descendants Want More Land"
+   }
+  },
+  {
+   "n": 18,
+   "paras": [
+    1,
+    2,
+    8,
+    11,
+    21
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "All Israel assembled at Shiloh{a} and put up the meeting tent there. By now the country lay under their control."
+    },
+    {
+     "v": 2,
+     "text": "Seven of the tribes had still not received their shares."
+    },
+    {
+     "v": 3,
+     "text": "So Joshua asked the Israelites, “Why do you wait? Yahweh, the God of your ancestors, gave you this land, yet you have not gone in to take it."
+    },
+    {
+     "v": 4,
+     "text": "Choose three men from every tribe. I will send them out to survey the land and write down how it should be divided. Then they must return to me."
+    },
+    {
+     "v": 5,
+     "text": "They will split it into seven parts. Judah will stay in its own land in the south, and the house of Joseph will stay in its own land in the north."
+    },
+    {
+     "v": 6,
+     "text": "Write the land up in seven parts and bring the report back to me here. Here in front of Yahweh our God I will throw lots for you."
+    },
+    {
+     "v": 7,
+     "text": "The Levites will not get a share among you, because serving Yahweh as priests is their share. Gad, Reuben, and half of Manasseh have already taken their land east of the Jordan, the land that Moses, Yahweh’s servant, gave them.”"
+    },
+    {
+     "v": 8,
+     "text": "The men started out. Joshua gave the surveyors these orders: “Go and tour the country, put down on paper what you see, and then report to me. After that I will throw lots for you at Shiloh in front of Yahweh.”"
+    },
+    {
+     "v": 9,
+     "text": "The men went out and toured the country. They recorded it on a scroll, listing the towns, in seven parts. Then they returned to Joshua at the Shiloh camp."
+    },
+    {
+     "v": 10,
+     "text": "Joshua threw lots for them at Shiloh in front of Yahweh. There he gave the Israelites their shares of the land, tribe by tribe."
+    },
+    {
+     "v": 11,
+     "text": "The first lot came up for the clans of the tribe of Benjamin.{b} Their land lay between Judah’s and Joseph’s."
+    },
+    {
+     "v": 12,
+     "text": "On the north the border began at the Jordan, climbed the slope north of Jericho, went west up through the hill country, and finished in the Wilderness of Beth-aven."
+    },
+    {
+     "v": 13,
+     "text": "From there it turned south toward Luz, along Luz’s ridge (that is, Bethel), and down to Ataroth-addar, on the hill south of Lower Beth-horon."
+    },
+    {
+     "v": 14,
+     "text": "There the border bent and curved south along the west side, from the hill facing Beth-horon on the south, and ended at Kiriath-baal (that is, Kiriath-jearim), a town of Judah. That was the western side."
+    },
+    {
+     "v": 15,
+     "text": "On the south the border began at the outskirts of Kiriath-jearim and ran west{c} to the spring of Nephtoah."
+    },
+    {
+     "v": 16,
+     "text": "It dropped to the foot of the mountain that faces the Valley of Ben-Hinnom, where the Valley of Rephaim ends in the north. Then it went down the Hinnom Valley, along the Jebusite town’s southern flank, and reached En-rogel."
+    },
+    {
+     "v": 17,
+     "text": "It then bent north to En-shemesh and Geliloth, which faces the Red Pass. From there it went down to the Stone of Bohan, Reuben’s son,"
+    },
+    {
+     "v": 18,
+     "text": "passed north of the shoulder of Beth-arabah,{d} and went down into the Arabah."
+    },
+    {
+     "v": 19,
+     "text": "It continued past the slope of Beth-hoglah on the north and finished at the north bay of the Dead Sea, where the Jordan enters from the south. That was the southern border."
+    },
+    {
+     "v": 20,
+     "text": "The Jordan formed the eastern border. This was the share of the clans of Benjamin, with its borders on every side."
+    },
+    {
+     "v": 21,
+     "text": "Benjamin’s clans owned these towns: Jericho, Beth-hoglah, Emek-keziz,"
+    },
+    {
+     "v": 22,
+     "text": "Beth-arabah, Zemaraim, Bethel,"
+    },
+    {
+     "v": 23,
+     "text": "Avvim, Parah, Ophrah,"
+    },
+    {
+     "v": 24,
+     "text": "Chephar-ammoni, Ophni, and Geba. That makes twelve towns with their villages."
+    },
+    {
+     "v": 25,
+     "text": "Gibeon, Ramah,{e} Beeroth,"
+    },
+    {
+     "v": 26,
+     "text": "Mizpeh, Chephirah, and Mozah,"
+    },
+    {
+     "v": 27,
+     "text": "then Rekem, Irpeel, and Taralah,"
+    },
+    {
+     "v": 28,
+     "text": "Zela, Haeleph, the Jebusite town (which is Jerusalem), Gibeath,{f} and Kiriath.{g} That makes fourteen towns with their villages. This was the share of the clans of Benjamin."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "18:1",
+     "text": "Shiloh may mean “place of rest” or “tranquility.” It became the site of the sanctuary during the time of the judges (1 Samuel 1-4)."
+    },
+    {
+     "m": "b",
+     "ref": "18:11",
+     "text": "Benjamin means “son of the right hand” or “son of the south” (Genesis 35:18)."
+    },
+    {
+     "m": "c",
+     "ref": "18:15",
+     "text": "Or “to the sea.” The text is hard. The Greek Old Testament reads “to Gasin.”"
+    },
+    {
+     "m": "d",
+     "ref": "18:18",
+     "text": "The Hebrew reads “to the shoulder opposite the Arabah.” Some ancient witnesses read “Beth-arabah,” as in 15:6."
+    },
+    {
+     "m": "e",
+     "ref": "18:25",
+     "text": "Ramah means “height.”"
+    },
+    {
+     "m": "f",
+     "ref": "18:28",
+     "text": "Gibeath means “hill.” It is probably Gibeah, Saul’s town (1 Samuel 10:26)."
+    },
+    {
+     "m": "g",
+     "ref": "18:28",
+     "text": "Hebrew Qiryat, “city.” Some suggest reading Kiriath-jearim, but 18:14 gives that town to Judah."
+    }
+   ],
+   "subheads": {
+    "1": "Seven Tribes Still Need Land",
+    "11": "Benjamin’s Share"
+   }
+  },
+  {
+   "n": 19,
+   "paras": [
+    1,
+    10,
+    17,
+    24,
+    32,
+    40,
+    49,
+    51
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "The second lot came out for Simeon,{a} for the clans of the tribe of Simeon. Their land lay inside the land of Judah."
+    },
+    {
+     "v": 2,
+     "text": "They received Beersheba, Sheba,{b} Moladah,"
+    },
+    {
+     "v": 3,
+     "text": "Hazar-shual, Balah, Ezem,"
+    },
+    {
+     "v": 4,
+     "text": "Eltolad, Bethul, Hormah,"
+    },
+    {
+     "v": 5,
+     "text": "Ziklag, Beth-marcaboth, Hazar-susah,"
+    },
+    {
+     "v": 6,
+     "text": "Beth-lebaoth, and Sharuhen. That was thirteen towns with their villages."
+    },
+    {
+     "v": 7,
+     "text": "Ain, Rimmon, Ether, and Ashan made four more towns with their villages,"
+    },
+    {
+     "v": 8,
+     "text": "plus all the villages around those towns as far as Baalath-beer, which is Ramah of the Negev. This was the share of the tribe of Simeon, by clan."
+    },
+    {
+     "v": 9,
+     "text": "Simeon’s share was cut out of Judah’s land, because Judah’s portion was too big for Judah. So the Simeonites received their land inside Judah’s."
+    },
+    {
+     "v": 10,
+     "text": "The third lot came out for the clans of Zebulun.{c} Their territory reached as far as Sarid."
+    },
+    {
+     "v": 11,
+     "text": "Its border went west and up to Maralah, touched Dabbesheth, and reached the brook near Jokneam."
+    },
+    {
+     "v": 12,
+     "text": "From Sarid it turned the other way, east toward the sunrise, to the edge of Chisloth-tabor. Then it passed Daberath and climbed to Japhia."
+    },
+    {
+     "v": 13,
+     "text": "From there it crossed east to Gath-hepher and Eth-kazin, continued to Rimmon, and bent toward Neah."
+    },
+    {
+     "v": 14,
+     "text": "On the north the border circled to Hannathon and ended at the Valley of Iphtahel."
+    },
+    {
+     "v": 15,
+     "text": "The land also held Kattath, Nahalal, Shimron, Idalah, and Bethlehem.{d} That was twelve towns with their villages."
+    },
+    {
+     "v": 16,
+     "text": "These towns and villages were the share of the clans of Zebulun."
+    },
+    {
+     "v": 17,
+     "text": "The fourth lot came out for Issachar,{e} for the clans of Issachar."
+    },
+    {
+     "v": 18,
+     "text": "Their land took in Jezreel, Chesulloth, Shunem,"
+    },
+    {
+     "v": 19,
+     "text": "Hapharaim, Shion, Anaharath,"
+    },
+    {
+     "v": 20,
+     "text": "Rabbith, Kishion, Ebez,"
+    },
+    {
+     "v": 21,
+     "text": "Remeth, En-gannim, En-haddah, and Beth-pazzez."
+    },
+    {
+     "v": 22,
+     "text": "It also touched Tabor, Shahazumah, and Beth-shemesh before it ended at the Jordan. That was sixteen towns with their villages."
+    },
+    {
+     "v": 23,
+     "text": "These towns and villages were the share of the tribe of Issachar, by clan."
+    },
+    {
+     "v": 24,
+     "text": "The fifth lot came out for the clans of the tribe of Asher.{f}"
+    },
+    {
+     "v": 25,
+     "text": "Their land took in Helkath, Hali, Beten, Achshaph,"
+    },
+    {
+     "v": 26,
+     "text": "Allammelech, Amad, and Mishal were also there. At the west end the border reached Carmel{g} and Shihor-libnath."
+    },
+    {
+     "v": 27,
+     "text": "There it swung east toward Beth-dagon, met Zebulun and the Valley of Iphtahel, then ran north to Beth-emek and Neiel. Past those it went on to Cabul,"
+    },
+    {
+     "v": 28,
+     "text": "Ebron,{h} Rehob, Hammon, and Kanah. Its farthest point was Great Sidon."
+    },
+    {
+     "v": 29,
+     "text": "The border then turned to Ramah and to the walled city of Tyre.{i} It bent toward Hosah and ended at the sea. The share also held Mahalab,{j} Achzib,"
+    },
+    {
+     "v": 30,
+     "text": "Ummah, Aphek, and Rehob. That was twenty-two towns with their villages."
+    },
+    {
+     "v": 31,
+     "text": "These towns and villages were the share of the tribe of Asher, by clan."
+    },
+    {
+     "v": 32,
+     "text": "Naphtali{k} received the sixth lot, for its clans."
+    },
+    {
+     "v": 33,
+     "text": "Their line began at Heleph and the oak at Zaanannim, passed Adami-nekeb and Jabneel, and went on to Lakkum. The Jordan was its end."
+    },
+    {
+     "v": 34,
+     "text": "It turned west to Aznoth-tabor and ran from there to Hukkok. Zebulun lay on its south, Asher on its west, and Judah{l} at the Jordan on its east."
+    },
+    {
+     "v": 35,
+     "text": "The walled towns were Ziddim, Zer, Hammath, Rakkath, Chinnereth,"
+    },
+    {
+     "v": 36,
+     "text": "Adamah, Ramah, Hazor,"
+    },
+    {
+     "v": 37,
+     "text": "Kedesh, Edrei, and En-hazor,"
+    },
+    {
+     "v": 38,
+     "text": "along with Yiron, Migdal-el, Horem, Beth-anath, and Beth-shemesh. Together there were nineteen towns, each with villages."
+    },
+    {
+     "v": 39,
+     "text": "These towns and villages were the share of the tribe of Naphtali, by clan."
+    },
+    {
+     "v": 40,
+     "text": "The seventh lot came out for the tribe of Dan,{m} for its clans."
+    },
+    {
+     "v": 41,
+     "text": "Their land took in Zorah, Eshtaol, Ir-shemesh,"
+    },
+    {
+     "v": 42,
+     "text": "Shaalabbin, Aijalon, Ithlah,"
+    },
+    {
+     "v": 43,
+     "text": "Elon, Timnah, Ekron,"
+    },
+    {
+     "v": 44,
+     "text": "Eltekeh, Gibbethon, Baalath,"
+    },
+    {
+     "v": 45,
+     "text": "Jehud, Bene-berak, Gath-rimmon,"
+    },
+    {
+     "v": 46,
+     "text": "Me-jarkon, and Rakkon, with the land facing Joppa."
+    },
+    {
+     "v": 47,
+     "text": "Later the Danites lost their land.{n} They went up, attacked Leshem, captured it, and killed its people with the sword. They moved in and settled there. They renamed Leshem “Dan,” after their ancestor Dan."
+    },
+    {
+     "v": 48,
+     "text": "These towns and villages were the share of the tribe of Dan, by clan."
+    },
+    {
+     "v": 49,
+     "text": "When the Israelites had finished dividing the land, they gave Joshua son of Nun a share among them."
+    },
+    {
+     "v": 50,
+     "text": "Yahweh had given an order, so they gave him the town he had asked for. It was Timnath-serah{o}, in Ephraim’s hills. Joshua built it up again and made his home there."
+    },
+    {
+     "v": 51,
+     "text": "These are the shares that Eleazar the priest, Joshua, and the family heads of the tribes handed out by lot at Shiloh, in front of Yahweh, at the entrance to the meeting tent. That is how they finished dividing the land."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "19:1",
+     "text": "Simeon means “heard” (Genesis 29:33)."
+    },
+    {
+     "m": "b",
+     "ref": "19:2",
+     "text": "Or “Shema,” as in 15:26 and 1 Chronicles 4:28. The list adds up to thirteen only if Sheba repeats Beersheba."
+    },
+    {
+     "m": "c",
+     "ref": "19:10",
+     "text": "Zebulun may mean “honor” or “dwelling” (Genesis 30:20)."
+    },
+    {
+     "m": "d",
+     "ref": "19:15",
+     "text": "This is a Bethlehem in Galilee, about 7 miles (11 kilometers) northwest of Nazareth, not Bethlehem of Judah."
+    },
+    {
+     "m": "e",
+     "ref": "19:17",
+     "text": "Issachar sounds like the Hebrew for “there is a reward” (Genesis 30:18)."
+    },
+    {
+     "m": "f",
+     "ref": "19:24",
+     "text": "Asher means “happy” or “blessed” (Genesis 30:13)."
+    },
+    {
+     "m": "g",
+     "ref": "19:26",
+     "text": "Carmel means “garden land” or “orchard.”"
+    },
+    {
+     "m": "h",
+     "ref": "19:28",
+     "text": "Some Hebrew manuscripts read Abdon (compare 21:30)."
+    },
+    {
+     "m": "i",
+     "ref": "19:29",
+     "text": "Tyre (Hebrew Tsor) means “rock.”"
+    },
+    {
+     "m": "j",
+     "ref": "19:29",
+     "text": "Hebrew “from Hebel.” The reading Mahalab, a town known from Assyrian records, takes a small change."
+    },
+    {
+     "m": "k",
+     "ref": "19:32",
+     "text": "Naphtali means “my wrestling” (Genesis 30:8)."
+    },
+    {
+     "m": "l",
+     "ref": "19:34",
+     "text": "That is how the Hebrew reads. The Greek Old Testament lacks “and Judah.” The phrase may refer to Jair’s towns east of the Jordan (1 Chronicles 2:21-23), or the text may be damaged."
+    },
+    {
+     "m": "m",
+     "ref": "19:40",
+     "text": "Dan means “he judged” or “judge” (Genesis 30:6)."
+    },
+    {
+     "m": "n",
+     "ref": "19:47",
+     "text": "Literally “went out from them.” The Greek Old Testament has a different text in verses 47-48. It says the Amorites pushed the Danites into the hill country and would not let them come down to the plain, that the Danites took Lachish (the Hebrew has Leshem) and named it Lasendan, and that the Amorites stayed in Edom and Shaalbim until Ephraim made them pay tribute. Compare Judges 1:34-35; 18:27-29."
+    },
+    {
+     "m": "o",
+     "ref": "19:50",
+     "text": "Timnath-serah means “portion that remains” (or “extra portion”). Judges 2:9 calls it Timnath-heres, “portion of the sun,” and Serah may be a deliberate reversal of the letters. The Greek Old Testament spells it Thamnasarach."
+    }
+   ],
+   "subheads": {
+    "1": "Simeon’s Share",
+    "10": "Zebulun’s Share",
+    "17": "Issachar’s Share",
+    "24": "Asher’s Share",
+    "32": "Naphtali’s Share",
+    "40": "Dan’s Share",
+    "49": "Joshua’s Own Town"
+   }
+  },
+  {
+   "n": 20,
+   "paras": [
+    1,
+    7
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Yahweh said to Joshua,"
+    },
+    {
+     "v": 2,
+     "text": "“Tell the people of Israel to pick the towns of safety. I described them to you through Moses."
+    },
+    {
+     "v": 3,
+     "text": "A person who kills someone by accident, without meaning to, can run to one of them. In these towns you will be safe from the family avenger.{a}"
+    },
+    {
+     "v": 4,
+     "text": "The killer must flee to one of these towns, stop at the gate, and tell the town’s elders his story. They must bring him inside, give him a home, and let him stay with them.{b}"
+    },
+    {
+     "v": 5,
+     "text": "If the family avenger comes after him, the people must not hand the killer over. He killed his neighbor by accident and had no earlier hatred for him."
+    },
+    {
+     "v": 6,
+     "text": "He must stay there until the assembly has judged his case, and until the high priest of that time has died. After that, the killer may return to the home in the town he ran from.”"
+    },
+    {
+     "v": 7,
+     "text": "So they set apart Kedesh{c} in Galilee,{d} in Naphtali’s hills, Shechem{e} in Ephraim’s hills, and Kiriath-arba (that is, Hebron) in Judah’s hills."
+    },
+    {
+     "v": 8,
+     "text": "On the other side of the Jordan, across from Jericho, they chose Bezer on the desert plateau, from Reuben’s land, Ramoth in Gilead, from Gad’s land, and Golan in Bashan, from Manasseh’s land."
+    },
+    {
+     "v": 9,
+     "text": "These towns were meant for every Israelite and for the foreigners living among them. Anyone who killed by accident could flee there. The family avenger could not kill him before he stood trial in front of the community."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "20:3",
+     "text": "Hebrew go’el haddam, the nearest relative, whose duty was to take responsibility when a family member was killed. The same word go’el means “redeemer” in other places (Ruth 4:1-6)."
+    },
+    {
+     "m": "b",
+     "ref": "20:4",
+     "text": "The Greek Old Testament lacks verses 4-6 and the phrase “without knowing it” in verse 3. In verse 3 it reads instead, “until he stands before the community for judgment.” The longer Hebrew text echoes Deuteronomy 19:1-13, and the shorter Greek text echoes Numbers 35:9-28."
+    },
+    {
+     "m": "c",
+     "ref": "20:7",
+     "text": "Kedesh means “holy place.”"
+    },
+    {
+     "m": "d",
+     "ref": "20:7",
+     "text": "Galilee (Hebrew galil) means “circle” or “district.”"
+    },
+    {
+     "m": "e",
+     "ref": "20:7",
+     "text": "Shechem means “shoulder” or “ridge,” perhaps from its place on the saddle between Mount Ebal and Mount Gerizim."
+    }
+   ],
+   "subheads": {
+    "1": "Towns of Safety"
+   }
+  },
+  {
+   "n": 21,
+   "paras": [
+    1,
+    4,
+    9,
+    13,
+    20,
+    27,
+    34,
+    41,
+    43
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "The Levites’ family heads stepped forward. Eleazar the priest, Joshua, and the leaders of the other tribes’ families were waiting."
+    },
+    {
+     "v": 2,
+     "text": "At Shiloh, in the land of Canaan, they spoke up. “Yahweh gave a command through Moses,” they said. “He told you to give us towns for living in, with pastures for our livestock.”"
+    },
+    {
+     "v": 3,
+     "text": "So the Israelites obeyed Yahweh’s order and gave the Levites these towns and pastures out of their own land."
+    },
+    {
+     "v": 4,
+     "text": "The first lot came out for the Kohathite clans. The Levites descended from Aaron the priest received thirteen towns by lot from the tribes of Judah, Simeon, and Benjamin."
+    },
+    {
+     "v": 5,
+     "text": "The other Kohathites received ten towns by lot from the clans of Ephraim, from Dan, and from half of Manasseh."
+    },
+    {
+     "v": 6,
+     "text": "The Gershonites received thirteen towns by lot from the clans of Issachar, Asher, Naphtali, and the half-tribe of Manasseh in Bashan."
+    },
+    {
+     "v": 7,
+     "text": "The Merarites, by clan, received twelve towns from Reuben, Gad, and Zebulun."
+    },
+    {
+     "v": 8,
+     "text": "By lot, the Israelites gave the Levites these towns and their pastures, as Yahweh had ordered through Moses."
+    },
+    {
+     "v": 9,
+     "text": "From the tribes of Judah and Simeon they gave the towns named here."
+    },
+    {
+     "v": 10,
+     "text": "They went to the descendants of Aaron from the Kohathite clans of Levi, because theirs was the first lot."
+    },
+    {
+     "v": 11,
+     "text": "They gave them Kiriath-arba (Arba was Anak’s father), which is Hebron, in the hill country of Judah, together with the pastures around it."
+    },
+    {
+     "v": 12,
+     "text": "But the fields and villages belonging to the town had been given to Caleb son of Jephunneh as his own."
+    },
+    {
+     "v": 13,
+     "text": "To the descendants of Aaron the priest they gave Hebron, a town of safety for killers, with its pastures, and also Libnah with its pastures,"
+    },
+    {
+     "v": 14,
+     "text": "Jattir and Eshtemoa with their pastures,"
+    },
+    {
+     "v": 15,
+     "text": "Holon and Debir with their pastures,"
+    },
+    {
+     "v": 16,
+     "text": "Ain,{a} Juttah, and Beth-shemesh, each with its pastures. These two tribes gave nine towns."
+    },
+    {
+     "v": 17,
+     "text": "From the tribe of Benjamin they gave Gibeon and Geba with their pastures,"
+    },
+    {
+     "v": 18,
+     "text": "and Anathoth{b} and Almon with their pastures. That made four towns."
+    },
+    {
+     "v": 19,
+     "text": "The priests, Aaron’s descendants, received thirteen towns in all, with their pastures."
+    },
+    {
+     "v": 20,
+     "text": "The remaining Kohathite clans of the Levites were given towns from the tribe of Ephraim."
+    },
+    {
+     "v": 21,
+     "text": "They received Shechem, a town of safety for killers, in the hill country of Ephraim, with its pastures, and also Gezer with its pastures,"
+    },
+    {
+     "v": 22,
+     "text": "Kibzaim and Beth-horon with their pastures. That made four towns."
+    },
+    {
+     "v": 23,
+     "text": "From the tribe of Dan they received Elteke and Gibbethon,"
+    },
+    {
+     "v": 24,
+     "text": "then Aijalon and Gath-rimmon, each with its pastures. That made four towns."
+    },
+    {
+     "v": 25,
+     "text": "Half of Manasseh’s tribe gave them Taanach and Gath-rimmon,{c} each with its pastures. That made two towns."
+    },
+    {
+     "v": 26,
+     "text": "So the remaining Kohathite clans received ten towns with their pastures."
+    },
+    {
+     "v": 27,
+     "text": "The Gershonite clans of the Levites received two towns from half of Manasseh’s tribe: Golan in Bashan, a town of safety for killers, and Be-eshterah,{d} each with its pastures."
+    },
+    {
+     "v": 28,
+     "text": "Issachar gave them Kishion and Daberath,"
+    },
+    {
+     "v": 29,
+     "text": "then Jarmuth and En-gannim, each with its pastures. That made four towns."
+    },
+    {
+     "v": 30,
+     "text": "Asher gave them Mishal and Abdon,"
+    },
+    {
+     "v": 31,
+     "text": "then Helkath and Rehob, each with its pastures. That made four towns."
+    },
+    {
+     "v": 32,
+     "text": "Naphtali gave them Kedesh in Galilee, a town of safety for killers, plus Hammoth-dor and Kartan, each with its pastures. That made three towns."
+    },
+    {
+     "v": 33,
+     "text": "All told, the Gershonite clans received thirteen towns with their pastures."
+    },
+    {
+     "v": 34,
+     "text": "The last of the Levites, the Merarite clans, received towns too. Zebulun gave Jokneam and Kartah,"
+    },
+    {
+     "v": 35,
+     "text": "then Dimnah and Nahalal, each with its pastures. That made four towns."
+    },
+    {
+     "v": 36,
+     "text": "Reuben{e} gave Bezer and Jahaz,"
+    },
+    {
+     "v": 37,
+     "text": "then Kedemoth and Mephaath, each with its pastures. That made four towns."
+    },
+    {
+     "v": 38,
+     "text": "Gad gave Ramoth in Gilead, a town of safety for killers, and Mahanaim,"
+    },
+    {
+     "v": 39,
+     "text": "then Heshbon and Jazer, each with its pastures. That made four towns in all."
+    },
+    {
+     "v": 40,
+     "text": "The Merarite clans, the last of the Levite families, were given twelve towns in all."
+    },
+    {
+     "v": 41,
+     "text": "In all, the Levites held forty-eight towns, with their pastures, inside the land of the Israelites."
+    },
+    {
+     "v": 42,
+     "text": "Every one of these towns had pastureland around it.{f}"
+    },
+    {
+     "v": 43,
+     "text": "So Yahweh gave Israel all the land he had promised with an oath to their ancestors. They took it and settled in it."
+    },
+    {
+     "v": 44,
+     "text": "On every side Yahweh gave them peace, just as he had sworn to their ancestors. No enemy could stand up to them, for Yahweh put every enemy in their power."
+    },
+    {
+     "v": 45,
+     "text": "Of all the good promises Yahweh made to Israel’s people, not one was left unkept. Every one came true."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "21:16",
+     "text": "Ain means “spring.” The Greek Old Testament and 1 Chronicles 6:59 read Ashan."
+    },
+    {
+     "m": "b",
+     "ref": "21:18",
+     "text": "Anathoth was later the hometown of the prophet Jeremiah (Jeremiah 1:1)."
+    },
+    {
+     "m": "c",
+     "ref": "21:25",
+     "text": "Repeating Gath-rimmon from verse 24 is probably a copying mistake. 1 Chronicles 6:70 has Bileam (that is, Ibleam), and the Greek Old Testament reads Iebatha."
+    },
+    {
+     "m": "d",
+     "ref": "21:27",
+     "text": "Be-eshterah is probably a short form of Beth-ashtarah, “house of Astarte.” 1 Chronicles 6:71 has Ashtaroth."
+    },
+    {
+     "m": "e",
+     "ref": "21:36",
+     "text": "Many Hebrew manuscripts and some printed editions of the Hebrew Bible lack verses 36-37, though the text followed here has them. They are in the Greek Old Testament and in 1 Chronicles 6:78-79, and the totals in verses 7 and 40 (twelve towns) need them."
+    },
+    {
+     "m": "f",
+     "ref": "21:42",
+     "text": "The Greek Old Testament adds, “Joshua finished dividing the land by its borders. The Israelites gave Joshua a share by the Lord’s command. They gave him the town he asked for, Thamnasachar in the hill country of Ephraim. Joshua built the town and lived in it. Then Joshua took the flint knives he had used to circumcise the Israelites born in the wilderness on the way, and put them in Thamnasachar.” Compare 19:49-50 and 24:31 (Greek Old Testament)."
+    }
+   ],
+   "subheads": {
+    "1": "Towns for the Levites",
+    "4": "Shares by Clan",
+    "9": "Towns of the Priests",
+    "20": "Other Kohathite Towns",
+    "27": "Gershonite Towns",
+    "34": "Merarite Towns",
+    "41": "Rest from War"
+   }
+  },
+  {
+   "n": 22,
+   "paras": [
+    1,
+    7,
+    9,
+    10,
+    13,
+    21,
+    30,
+    32
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Joshua now called for the Reubenites, the Gadites, and Manasseh’s eastern half."
+    },
+    {
+     "v": 2,
+     "text": "“You have done all that Moses, Yahweh’s servant, ordered,” he told them. “And you have listened to me every time I gave an order."
+    },
+    {
+     "v": 3,
+     "text": "For a long time, right up to today, you have not left your brothers. You have kept the duty Yahweh your God gave you."
+    },
+    {
+     "v": 4,
+     "text": "Now Yahweh your God has given your brothers rest, as he promised. So go back to your tents, to the land that is yours. Moses, Yahweh’s servant, gave it to you east of the Jordan."
+    },
+    {
+     "v": 5,
+     "text": "Only be very careful to keep the command and the teaching that Moses, Yahweh’s servant, handed down. Love Yahweh your God. Walk his whole road. Obey his commands. Hold on to him. Give him every bit of your heart and soul in service.”"
+    },
+    {
+     "v": 6,
+     "text": "With a blessing, Joshua let them go, and they returned to their tents."
+    },
+    {
+     "v": 7,
+     "text": "Moses had given Bashan to one half of Manasseh’s tribe. To the other half, Joshua gave a place beside their brothers on the west bank of the Jordan. Joshua blessed these men too, and as he sent them home to their tents,"
+    },
+    {
+     "v": 8,
+     "text": "he said, “Go back to your tents with great riches. Take huge herds, silver, gold, bronze, iron, and piles of clothing. Share the goods you took from your enemies with your brothers.”"
+    },
+    {
+     "v": 9,
+     "text": "So the Reubenites, the Gadites, and the half-tribe of Manasseh left the Israelites at Shiloh in Canaan. They headed home to Gilead, the land that was theirs by Yahweh’s order through Moses."
+    },
+    {
+     "v": 10,
+     "text": "They came to the region{a} by the Jordan, still in Canaan. There the Reubenites, the Gadites, and the half-tribe of Manasseh built an altar beside the river. It was a huge, impressive altar."
+    },
+    {
+     "v": 11,
+     "text": "Then people told the Israelites, “Look! The tribes of Reuben and Gad and half of Manasseh have set up an altar at Canaan’s edge, in the Jordan region, facing Israel.”"
+    },
+    {
+     "v": 12,
+     "text": "When the Israelites heard it, their whole community gathered at Shiloh to march out and fight them."
+    },
+    {
+     "v": 13,
+     "text": "But first the Israelites chose Phinehas,{b} the son of Eleazar the priest, and sent him to Reuben, Gad, and the half of Manasseh living in Gilead."
+    },
+    {
+     "v": 14,
+     "text": "Ten leaders went with him, one for each tribe of Israel. Each one headed a family in his tribe’s clans.{c}"
+    },
+    {
+     "v": 15,
+     "text": "They came to the Reubenites, the Gadites, and the half-tribe of Manasseh in Gilead and said,"
+    },
+    {
+     "v": 16,
+     "text": "“All of Yahweh’s people ask you: Why have you been unfaithful to the God of Israel? Today you have turned away from Yahweh. You built yourselves an altar and rose up against him!"
+    },
+    {
+     "v": 17,
+     "text": "Was the sin at Peor{d} not bad enough? We are still not clean from it, though a plague hit Yahweh’s people."
+    },
+    {
+     "v": 18,
+     "text": "And now you are turning from Yahweh too! Rebel against him today, and tomorrow his anger will fall on every Israelite."
+    },
+    {
+     "v": 19,
+     "text": "If you think the land you hold is unclean, cross over to Yahweh’s land, where his dwelling stands, and live among us. But do not rebel against Yahweh, and do not make us rebels, by building an altar of your own beside the altar of Yahweh our God."
+    },
+    {
+     "v": 20,
+     "text": "Think of Achan son of Zerah. He broke the ban on what was set apart for destruction, and anger fell on all Israel. Others died too, not only Achan, because of his sin.”"
+    },
+    {
+     "v": 21,
+     "text": "Then the men of Reuben, Gad, and half of Manasseh gave their answer to the heads of Israel’s families."
+    },
+    {
+     "v": 22,
+     "text": "“The Mighty One, God, Yahweh! The Mighty One, God, Yahweh!{e} He knows, and may Israel know too! If we rebelled or betrayed Yahweh, do not spare us today."
+    },
+    {
+     "v": 23,
+     "text": "If we built this altar to leave Yahweh, or to burn offerings on it, whether burnt, grain, or peace offerings, then let Yahweh himself punish us."
+    },
+    {
+     "v": 24,
+     "text": "No! We were afraid. We worried that one day your children would ask ours, ‘Why should you bother with Yahweh, the God of Israel?"
+    },
+    {
+     "v": 25,
+     "text": "Yahweh set the Jordan as a border between your people and ours. Reuben and Gad, you have no share in Yahweh.’ Then your children might cause ours to stop fearing Yahweh."
+    },
+    {
+     "v": 26,
+     "text": "That is why we decided to build an altar. We did not plan to burn offerings or make sacrifices on it."
+    },
+    {
+     "v": 27,
+     "text": "It will be a witness between you and us, and between the children who come after us. It will show that we do serve Yahweh in his presence with our burnt offerings, sacrifices, and peace offerings. Then your children could never tell ours later, “You have no share in Yahweh.”’"
+    },
+    {
+     "v": 28,
+     "text": "We also thought, ‘Suppose people say this to us or our children someday. Then we will answer, “Look at the copy of Yahweh’s altar that our ancestors built. It was never meant for burnt offerings or sacrifices. It stands as a witness between us and you.”’"
+    },
+    {
+     "v": 29,
+     "text": "We would never rebel against Yahweh or turn away from him today by building an altar for burnt offerings, grain offerings, or sacrifices, besides the altar of Yahweh our God that stands in front of his dwelling!”"
+    },
+    {
+     "v": 30,
+     "text": "The priest Phinehas and the community leaders with him, the heads of Israel’s families, heard what the Reubenites, the Gadites, and the Manassites said. They were pleased."
+    },
+    {
+     "v": 31,
+     "text": "Phinehas son of Eleazar the priest said, “At last we know that Yahweh lives among us. You did not turn on him in this matter. You have kept Israel from Yahweh’s hand.”"
+    },
+    {
+     "v": 32,
+     "text": "So Phinehas, Eleazar’s son the priest, and the leaders left Gilead and the men of Reuben and Gad. They went back to Canaan and gave the Israelites their report."
+    },
+    {
+     "v": 33,
+     "text": "The Israelites were glad to hear it, and they praised God. They never spoke again of marching out to destroy the land where the Reubenites and the Gadites lived."
+    },
+    {
+     "v": 34,
+     "text": "The Reubenites and the Gadites named the altar Witness,{f} for they said, “It is a witness between us that Yahweh is God.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "22:10",
+     "text": "Hebrew gelilot, “circles” or “districts,” possibly a place name, Geliloth. The same word is used in verse 11. The Greek Old Testament reads “Galaad” (Gilead)."
+    },
+    {
+     "m": "b",
+     "ref": "22:13",
+     "text": "Phinehas is an Egyptian name, probably meaning “the Nubian” (Numbers 25:7)."
+    },
+    {
+     "m": "c",
+     "ref": "22:14",
+     "text": "Hebrew “thousands,” a word for clan divisions. The same word is used in verses 21 and 30."
+    },
+    {
+     "m": "d",
+     "ref": "22:17",
+     "text": "See Numbers 25:1-9."
+    },
+    {
+     "m": "e",
+     "ref": "22:22",
+     "text": "Hebrew El Elohim Yahweh, three names for God, repeated as a solemn oath."
+    },
+    {
+     "m": "f",
+     "ref": "22:34",
+     "text": "Hebrew ‘ed, “witness.” The name is not in the usual Hebrew text, which reads, “called the altar, ‘For it is a witness...’” Some Hebrew manuscripts and the Syriac supply it. The Greek Old Testament reads, “Joshua gave a name to the altar... and said, ‘It is a witness among them.’”"
+    }
+   ],
+   "subheads": {
+    "1": "Joshua Sends the Eastern Tribes Home",
+    "10": "The Altar by the Jordan",
+    "13": "Israel Sends a Warning",
+    "21": "The Eastern Tribes Answer",
+    "30": "Peace Is Restored"
+   }
+  },
+  {
+   "n": 23,
+   "paras": [
+    1,
+    14
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "A long time passed. Yahweh had given Israel rest from the enemies around them, and Joshua was now very old."
+    },
+    {
+     "v": 2,
+     "text": "He called all Israel together, with its elders, heads, judges, and officers. He told them, “I am old, and my years are nearly done."
+    },
+    {
+     "v": 3,
+     "text": "You have seen everything Yahweh your God did to these nations for you. Yahweh your God was the one who fought for you."
+    },
+    {
+     "v": 4,
+     "text": "Listen. I have given you the nations that are left as land for your tribes. I have also given you the nations I wiped out, from the Jordan west to the Great Sea."
+    },
+    {
+     "v": 5,
+     "text": "Yahweh your God will shove them out and drive them off as you move forward. Their land will be yours, as Yahweh your God promised."
+    },
+    {
+     "v": 6,
+     "text": "So be strong. Keep and obey everything written in the book of the teaching of Moses. Never turn aside, whether right or left."
+    },
+    {
+     "v": 7,
+     "text": "Do not mix with the nations still among you. Do not speak the names of their gods, swear by them, serve them, or bow to them."
+    },
+    {
+     "v": 8,
+     "text": "Hold tight to Yahweh your God, as you have done until now."
+    },
+    {
+     "v": 9,
+     "text": "Yahweh has driven great and strong nations out of your way. Until today nobody has beaten you."
+    },
+    {
+     "v": 10,
+     "text": "One of you can make a thousand run away, because Yahweh your God fights on your side, just as he promised."
+    },
+    {
+     "v": 11,
+     "text": "So take great care to love Yahweh your God."
+    },
+    {
+     "v": 12,
+     "text": "If you turn away and cling to what is left of these nations, or if you marry their people and mingle with them,"
+    },
+    {
+     "v": 13,
+     "text": "Then be sure of this: Yahweh your God will stop driving these nations out ahead of you. They will turn into traps and snares. They will lash your backs like whips and stab your eyes like thorns, until you have vanished from this good land Yahweh your God gave you."
+    },
+    {
+     "v": 14,
+     "text": "“Soon I will go the way everyone on earth must go. You know deep inside that not one of the good things Yahweh your God promised you has failed. All of it came true for you. Not one promise failed."
+    },
+    {
+     "v": 15,
+     "text": "But every good thing Yahweh promised has come to you. In the same way, Yahweh will bring every bad thing on you, until he has wiped you out of this good land he gave you."
+    },
+    {
+     "v": 16,
+     "text": "This will happen if you break the covenant Yahweh your God commanded, serve other gods, and bow down to them. Then Yahweh’s anger will blaze up, and you will soon be gone from the good land he gave you.”{a}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "23:16",
+     "text": "The Greek Old Testament lacks the last sentence of this verse (“Yahweh’s anger will blaze...”)."
+    }
+   ],
+   "subheads": {
+    "1": "Joshua’s Farewell Speech"
+   }
+  },
+  {
+   "n": 24,
+   "paras": [
+    1,
+    14,
+    16,
+    19,
+    29,
+    32,
+    33
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Joshua called every tribe of Israel to Shechem.{a} He summoned the elders, heads, judges, and officers of Israel, and they took their places in front of God."
+    },
+    {
+     "v": 2,
+     "text": "Then Joshua spoke to all the people. “Yahweh, the God of Israel, says this,” he began. “‘A long time ago your ancestors lived across the River.{b} They served other gods. One of them was Terah, who had two sons, Abraham and Nahor."
+    },
+    {
+     "v": 3,
+     "text": "Then I brought Abraham, your ancestor, from across the River. I walked him through all of Canaan and gave him a large family. Isaac was his son."
+    },
+    {
+     "v": 4,
+     "text": "To Isaac I gave Jacob and Esau. Esau received the hills of Seir as his own land, while Jacob and his sons went down into Egypt."
+    },
+    {
+     "v": 5,
+     "text": "After that I sent Moses and Aaron, and I struck Egypt with the troubles I brought there. And so you came out.{c}"
+    },
+    {
+     "v": 6,
+     "text": "Your ancestors came out of Egypt and reached the sea. Egyptian chariots and horsemen chased them all the way to the Red Sea."
+    },
+    {
+     "v": 7,
+     "text": "Your ancestors cried out to Yahweh. He set a wall of darkness between you and Egypt’s army, and he pulled the sea over the Egyptians until it buried them. You watched what I did to Egypt. After that you spent a long time in the wilderness."
+    },
+    {
+     "v": 8,
+     "text": "I brought you to the Amorites’ land, east of the Jordan. They attacked you, but I put them in your hands. You took over their land, and I destroyed them as you came."
+    },
+    {
+     "v": 9,
+     "text": "Next, Balak son of Zippor, king of Moab, prepared to attack Israel. He sent messengers to Balaam son of Beor, asking him to curse you."
+    },
+    {
+     "v": 10,
+     "text": "I refused to listen to Balaam. Instead he blessed you again and again, and I kept you safe from him."
+    },
+    {
+     "v": 11,
+     "text": "When you passed over the Jordan and reached Jericho, the lords{d} of that town fought you. So did the Amorites, Perizzites, Canaanites, Hittites, Girgashites, Hivites, and Jebusites. Yet I put each of them in your hands."
+    },
+    {
+     "v": 12,
+     "text": "I sent the hornet{e} ahead of you. It chased out the two Amorite kings{f} for you. Neither sword nor bow won that fight."
+    },
+    {
+     "v": 13,
+     "text": "I handed you a country you never plowed and towns you never built, and you live in them today. You eat grapes and olives from trees you never planted.’"
+    },
+    {
+     "v": 14,
+     "text": "“Now, then, honor Yahweh. Serve him honestly and faithfully. Get rid of the gods that your ancestors worshiped east of the River and in Egypt, and serve Yahweh alone."
+    },
+    {
+     "v": 15,
+     "text": "Maybe you think it is wrong to serve Yahweh. Then choose this very day who you will serve. Will it be the gods your ancestors had across the River? Or will it be the gods of the Amorites, whose country you now live in? My family and I will serve Yahweh.”"
+    },
+    {
+     "v": 16,
+     "text": "The people replied, “Never! We will not leave Yahweh to serve other gods!"
+    },
+    {
+     "v": 17,
+     "text": "Yahweh is our God. He rescued us and our ancestors from slavery in Egypt. He performed those mighty signs while we watched. All along our travels, and among every people we passed, he protected us."
+    },
+    {
+     "v": 18,
+     "text": "Yahweh pushed out every nation ahead of us, even the Amorites who held this land. We will serve Yahweh as well, for he is our God.”"
+    },
+    {
+     "v": 19,
+     "text": "Joshua answered them, “You are not able to serve Yahweh. He is holy. He is a God who guards what is his. He will not pardon your rebellion or your sins."
+    },
+    {
+     "v": 20,
+     "text": "Suppose you abandon Yahweh and follow foreign gods. He will then turn on you, bring disaster, and destroy you, though he once treated you well.”"
+    },
+    {
+     "v": 21,
+     "text": "But the people said again, “No! We will serve Yahweh.”"
+    },
+    {
+     "v": 22,
+     "text": "Joshua replied, “You are your own witnesses. You have picked Yahweh and promised to serve him.” “Yes, we are witnesses,” they said."
+    },
+    {
+     "v": 23,
+     "text": "“Then throw out the foreign gods you have,” he said. “Give your hearts to Yahweh, the God of Israel.”"
+    },
+    {
+     "v": 24,
+     "text": "The people said, “Yahweh our God is the one we will serve. His voice is the one we will obey.”"
+    },
+    {
+     "v": 25,
+     "text": "On that day Joshua made a covenant with the people. There at Shechem{g} he set out rules and laws for them."
+    },
+    {
+     "v": 26,
+     "text": "Joshua recorded these words in the Book of the Teaching of God. Then he picked up a large stone and stood it beneath the oak{h} beside Yahweh’s holy place."
+    },
+    {
+     "v": 27,
+     "text": "“Look at this stone,” he told everyone. “It has heard all that Yahweh told us. If you ever lie to your God, it will speak against you.”"
+    },
+    {
+     "v": 28,
+     "text": "Then Joshua dismissed the people, and each person went to his own share of land."
+    },
+    {
+     "v": 29,
+     "text": "Some time later Joshua son of Nun, the servant of Yahweh, died. He was 110 years old.{i}"
+    },
+    {
+     "v": 30,
+     "text": "His people buried him in the land that was his, at Timnath-serah in Ephraim’s hills, north of Mount Gaash.{j}"
+    },
+    {
+     "v": 31,
+     "text": "All through Joshua’s life, Israel served Yahweh. They kept on serving him through the lives of the elders who lived on after Joshua and had seen everything Yahweh did for Israel.{k}"
+    },
+    {
+     "v": 32,
+     "text": "Joseph’s bones had been brought up from Egypt by the Israelites. They laid them to rest at Shechem, in the field Jacob had bought for a hundred pieces of money.{l} He bought it from the sons of Hamor, Shechem’s father. That field became Joseph’s family’s land."
+    },
+    {
+     "v": 33,
+     "text": "Eleazar son of Aaron died as well. His people buried him at Gibeah,{m} a hill town that belonged to his son Phinehas and lay in Ephraim’s hills.{n}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "24:1",
+     "text": "The Greek Old Testament reads Shiloh here and in verse 25. Shechem was the place of Abraham’s first altar in the land (Genesis 12:6-7) and of Jacob’s burial of foreign gods (Genesis 35:4)."
+    },
+    {
+     "m": "b",
+     "ref": "24:2",
+     "text": "That is, the Euphrates. The same is meant in verses 3, 14, and 15."
+    },
+    {
+     "m": "c",
+     "ref": "24:5",
+     "text": "The Greek Old Testament has a shorter text in verses 5-7. It lacks “I sent Moses and Aaron” and some other phrases."
+    },
+    {
+     "m": "d",
+     "ref": "24:11",
+     "text": "Hebrew ba’ale, “the lords” or “citizens.”"
+    },
+    {
+     "m": "e",
+     "ref": "24:12",
+     "text": "Or “panic” or “terror” (Hebrew tsir’ah). Compare Exodus 23:28 and Deuteronomy 7:20."
+    },
+    {
+     "m": "f",
+     "ref": "24:12",
+     "text": "The Greek Old Testament reads “twelve kings of the Amorites.” The Hebrew “two kings” means Sihon and Og (2:10)."
+    },
+    {
+     "m": "g",
+     "ref": "24:25",
+     "text": "The Greek Old Testament reads “at Shiloh, in front of the tent of the God of Israel.”"
+    },
+    {
+     "m": "h",
+     "ref": "24:26",
+     "text": "Or “terebinth,” a large tree. Compare Genesis 35:4, where Jacob hid foreign gods under the oak near Shechem."
+    },
+    {
+     "m": "i",
+     "ref": "24:29",
+     "text": "An age of 110 years was seen as the ideal life span in Egypt. Joseph died at the same age (Genesis 50:26)."
+    },
+    {
+     "m": "j",
+     "ref": "24:30",
+     "text": "Gaash may mean “quaking” or “shaking.”"
+    },
+    {
+     "m": "k",
+     "ref": "24:31",
+     "text": "The Greek Old Testament places this verse before Joshua’s death (as verse 29). After the burial it adds that the flint knives Joshua used to circumcise the Israelites at Gilgal, after he led them out of Egypt, were laid beside him in his grave, as the Lord had commanded, and that they are still there today. Compare the Greek Old Testament addition at 21:42."
+    },
+    {
+     "m": "l",
+     "ref": "24:32",
+     "text": "Hebrew “for a hundred qesitah,” a unit of uncertain value, perhaps a weight of silver. It appears elsewhere only in Genesis 33:19 and Job 42:11. The Greek Old Testament reads “for a hundred ewe-lambs.” Compare Genesis 33:19; Acts 7:16."
+    },
+    {
+     "m": "m",
+     "ref": "24:33",
+     "text": "Gibeah means “hill.” The Greek Old Testament reads Gabaar."
+    },
+    {
+     "m": "n",
+     "ref": "24:33",
+     "text": "The Greek Old Testament adds a longer ending: “On that day the Israelites took the ark of God and carried it around among them. Phinehas served as priest in place of his father Eleazar until he died, and he was buried in his own place, Gabaar. The Israelites went away, each to his own place and his own town. Then the Israelites worshiped Astarte and Ashtaroth and the gods of the nations around them. And the Lord gave them into the hands of Eglon king of Moab, and he ruled over them eighteen years.” This addition links the book to Judges 2:6-13 and 3:12-14."
+    }
+   ],
+   "subheads": {
+    "1": "The Covenant at Shechem",
+    "14": "Choose Whom You Will Serve",
+    "29": "Joshua Dies"
+   }
+  }
+ ]
+}
