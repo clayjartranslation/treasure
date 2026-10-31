@@ -307,7 +307,13 @@
    "name": "Ruth",
    "division": "Old Testament",
    "chapterCount": 4,
-   "translated": []
+   "translated": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "file": "data/books/ruth.json"
   },
   {
    "id": "1-samuel",

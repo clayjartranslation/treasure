@@ -1,0 +1,587 @@
+{
+ "id": "ruth",
+ "name": "Ruth",
+ "division": "Old Testament",
+ "sourceNote": "Written freshly, thought for thought, from the oldest Hebrew, Greek, and Aramaic witnesses (the Masoretic Text with the Dead Sea Scrolls, the Septuagint, and the Samaritan Pentateuch). © 2026 Jose Santiago. All rights reserved.",
+ "chapters": [
+  {
+   "n": 1,
+   "paras": [
+    1,
+    6,
+    15,
+    19,
+    22
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Back when judges led Israel, food ran short across the land. One family left Bethlehem{a} in Judah to wait out the famine in the hill country of Moab: a husband, his wife, and their two boys."
+    },
+    {
+     "v": 2,
+     "text": "The father was Elimelech.{b} The mother was Naomi.{c} The two boys had the names Mahlon{d} and Chilion.{e} All four were Ephrathites from Bethlehem of Judah. In Moab they unpacked and made a home."
+    },
+    {
+     "v": 3,
+     "text": "Elimelech died there. Naomi had only her two boys left."
+    },
+    {
+     "v": 4,
+     "text": "Both grew up and married Moabite girls. Orpah{f} was the name of the first bride; Ruth{g} was the second. Nearly ten years passed in Moab."
+    },
+    {
+     "v": 5,
+     "text": "Then Mahlon and Chilion died as well. Naomi now had no husband and no sons."
+    },
+    {
+     "v": 6,
+     "text": "News reached Naomi in Moab: Yahweh had come to help his people by giving them a good crop.{h} She stood up to go home, and her two daughters-in-law went with her."
+    },
+    {
+     "v": 7,
+     "text": "The three of them set out from the village and took the road toward Judah."
+    },
+    {
+     "v": 8,
+     "text": "On the way Naomi spoke to the younger women. “Turn around,” she said, “and each go to your own mother’s home. You were good to your late husbands and to me. May Yahweh show the same goodness{i} to you."
+    },
+    {
+     "v": 9,
+     "text": "May Yahweh grant each of you a safe home with another husband.” She kissed them. They broke into loud weeping"
+    },
+    {
+     "v": 10,
+     "text": "and told her, “No. We are coming back with you to your own people.”"
+    },
+    {
+     "v": 11,
+     "text": "“Go home, my daughters,” Naomi said. “Why follow me? I have no more sons in my womb to become your husbands."
+    },
+    {
+     "v": 12,
+     "text": "Go home! I am far too old to marry again. Say I still had hope. Say I married tonight and had sons."
+    },
+    {
+     "v": 13,
+     "text": "Would you really wait till they were grown? Would you shut yourselves away from other husbands for that? No, my daughters. My grief is greater than yours, because Yahweh’s hand has come down on me.”"
+    },
+    {
+     "v": 14,
+     "text": "Again they wept loudly. Orpah kissed Naomi good-bye, but Ruth would not let go of her."
+    },
+    {
+     "v": 15,
+     "text": "“Look,” said Naomi, “your husband’s brother’s widow has gone back to her family and her own gods. You should follow her.”"
+    },
+    {
+     "v": 16,
+     "text": "Ruth answered, “Please do not urge me to leave you and turn away. I will go wherever you go and spend the night wherever you do. Your family will be my family. Your God will be my God."
+    },
+    {
+     "v": 17,
+     "text": "Where death takes you, it will take me, and there I will be laid to rest. Let Yahweh strike me down, again and again, if anything except death ever parts us.”"
+    },
+    {
+     "v": 18,
+     "text": "Naomi could see that Ruth was set on going with her, so she stopped arguing."
+    },
+    {
+     "v": 19,
+     "text": "So the pair kept walking until Bethlehem came into view. When they entered, the entire town buzzed. “Can that be Naomi?” the women asked."
+    },
+    {
+     "v": 20,
+     "text": "“Do not use that name,” she told them. “Call me Mara,{j} for the Almighty{k} has filled my life with bitterness."
+    },
+    {
+     "v": 21,
+     "text": "I left with a full house. Yahweh has sent me back with nothing. Why still call me Naomi, when Yahweh has testified against me{l} and the Almighty has done me harm?”"
+    },
+    {
+     "v": 22,
+     "text": "So Naomi came back from Moab, and Ruth, her Moabite daughter-in-law, came along. The barley harvest was just beginning when they reached Bethlehem (in March-April).{m}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "1:1",
+     "text": "Bethlehem means “house of bread.”"
+    },
+    {
+     "m": "b",
+     "ref": "1:2",
+     "text": "Elimelech means “my God is king.”"
+    },
+    {
+     "m": "c",
+     "ref": "1:2",
+     "text": "Naomi means “pleasant.”"
+    },
+    {
+     "m": "d",
+     "ref": "1:2",
+     "text": "The meaning of Mahlon is unclear. It may mean “sickly.”"
+    },
+    {
+     "m": "e",
+     "ref": "1:2",
+     "text": "Chilion may mean “failing” or “finished.”"
+    },
+    {
+     "m": "f",
+     "ref": "1:4",
+     "text": "The meaning of Orpah is unclear. It may be linked to the Hebrew word for “back of the neck,” since she turned back (verse 14)."
+    },
+    {
+     "m": "g",
+     "ref": "1:4",
+     "text": "The meaning of Ruth is unclear. It may mean “friend” or “refreshment.”"
+    },
+    {
+     "m": "h",
+     "ref": "1:6",
+     "text": "Hebrew lehem, “bread.” The word sounds like the name Bethlehem."
+    },
+    {
+     "m": "i",
+     "ref": "1:8",
+     "text": "Hebrew hesed, “faithful love.” It is a key word in Ruth (2:20; 3:10)."
+    },
+    {
+     "m": "j",
+     "ref": "1:20",
+     "text": "Mara means “bitter.”"
+    },
+    {
+     "m": "k",
+     "ref": "1:20",
+     "text": "A name for God, often translated “the Almighty.” Its first meaning is unclear. It also appears in verse 21. The Greek Old Testament reads “the Mighty One.”"
+    },
+    {
+     "m": "l",
+     "ref": "1:21",
+     "text": "So the standard Hebrew text. The Greek Old Testament and some other old versions read “has made me low.”"
+    },
+    {
+     "m": "m",
+     "ref": "1:22",
+     "text": "Barley was ready to cut around Passover and the harvest went on for about seven weeks, until the wheat was in at the Feast of Weeks (2:23)."
+    }
+   ],
+   "subheads": {
+    "1": "A Family Leaves Bethlehem",
+    "6": "Naomi Heads Home",
+    "15": "Ruth Stays with Naomi",
+    "19": "Naomi Returns"
+   }
+  },
+  {
+   "n": 2,
+   "paras": [
+    1,
+    8,
+    14,
+    17,
+    19
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Naomi had a relative through her late husband, a rich and respected man{a} named Boaz.{b} He belonged to Elimelech’s clan."
+    },
+    {
+     "v": 2,
+     "text": "Ruth the Moabite told Naomi, “I would like to walk out to the barley fields and glean. I will follow behind whoever allows it.” “Off you go, my daughter,” Naomi said."
+    },
+    {
+     "v": 3,
+     "text": "She left, reached a field, and started picking up stalks after the reapers. It turned out that the field was Boaz’s. He was of Elimelech’s clan."
+    },
+    {
+     "v": 4,
+     "text": "Boaz himself came out from Bethlehem just then and called to the reapers, “Yahweh be with you!” “And Yahweh bless you,” they said."
+    },
+    {
+     "v": 5,
+     "text": "Boaz turned to the overseer of the reapers. “Whose girl is that young woman over there?”"
+    },
+    {
+     "v": 6,
+     "text": "The overseer replied, “That is the Moabite girl who returned with Naomi from Moab’s country."
+    },
+    {
+     "v": 7,
+     "text": "She begged, ‘Please let me glean and collect grain from the sheaves after the reapers.’ Since she arrived she has worked from dawn until now, taking only a short rest in the hut.”{c}"
+    },
+    {
+     "v": 8,
+     "text": "Boaz said to Ruth, “Hear me, daughter. Stay here to glean. Do not go to anyone else’s field. Keep right beside the women who work for me."
+    },
+    {
+     "v": 9,
+     "text": "Watch for the field where the men are reaping, and walk behind the women. I have warned the men to leave you alone. If you get thirsty, help yourself to the water jars the men have filled.”"
+    },
+    {
+     "v": 10,
+     "text": "She fell on her face and bowed to the ground. “Why are you so kind as to notice me?” she asked. “I am only a foreigner.”{d}"
+    },
+    {
+     "v": 11,
+     "text": "Boaz said, “People have told me all that you have done for your mother-in-law since your husband’s death. They told me how you gave up your father, your mother, and your own country and came to live among strangers."
+    },
+    {
+     "v": 12,
+     "text": "May Yahweh reward you for it. May the God of Israel, under whose wings{e} you have taken shelter, give you a full wage.”"
+    },
+    {
+     "v": 13,
+     "text": "“You are very good to me, sir,” she said. “You have calmed my fears and spoken gently to me. And I rank below even your maids.”"
+    },
+    {
+     "v": 14,
+     "text": "At mealtime Boaz called to her, “Come over and take some bread. Dip your piece in the sour wine.” She took a seat by the reapers. Boaz held out roasted grain. She ate until satisfied and still saved some."
+    },
+    {
+     "v": 15,
+     "text": "As she rose to glean again, Boaz commanded his young men, “She may glean even among the sheaves. Do not make her feel ashamed."
+    },
+    {
+     "v": 16,
+     "text": "Tug some stalks loose from the bundles too, and let them drop where she can find them. Let her pick them up, and say nothing harsh.”"
+    },
+    {
+     "v": 17,
+     "text": "Ruth gleaned until sundown. When she threshed the stalks, she had close to half a bushel{f} of barley."
+    },
+    {
+     "v": 18,
+     "text": "She hoisted it and went to town, where Naomi saw what she had brought. Ruth then took out the lunch she had saved and gave it to Naomi."
+    },
+    {
+     "v": 19,
+     "text": "“Where did you glean today?” Naomi said. “Whose field was it? A blessing on the man who noticed you!” Ruth explained whose field it was. “The owner’s name,” she said, “is Boaz.”"
+    },
+    {
+     "v": 20,
+     "text": "“Yahweh bless him!” Naomi cried. “He still shows loyalty to the living and the dead.” She went on, “This man is a near relative. He is one of those who can buy our family back.”{g}"
+    },
+    {
+     "v": 21,
+     "text": "Ruth the Moabite added, “He also said I should stay with his workers until they finish bringing in his whole crop.”"
+    },
+    {
+     "v": 22,
+     "text": "“That is best, daughter,” Naomi answered. “Go with his young women. In another man’s field someone might attack you.”"
+    },
+    {
+     "v": 23,
+     "text": "So Ruth kept close to Boaz’s young women and gleaned until the barley and wheat were both in (in May-June).{h} She lived at home with her mother-in-law."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "2:1",
+     "text": "Or “a man of standing.” Hebrew gibbor hayil. Compare “a woman of worth” in 3:11."
+    },
+    {
+     "m": "b",
+     "ref": "2:1",
+     "text": "The meaning of Boaz is unclear. It may mean “strength is in him.” Boaz is also the name of one of the two bronze pillars in Solomon’s temple (1 Kings 7:21)."
+    },
+    {
+     "m": "c",
+     "ref": "2:7",
+     "text": "The Hebrew of the last part of this verse is unclear. The Greek Old Testament reads “and she stood from morning until evening and did not rest in the field even a little.”"
+    },
+    {
+     "m": "d",
+     "ref": "2:10",
+     "text": "In Hebrew the words for “notice” and “foreigner” sound alike."
+    },
+    {
+     "m": "e",
+     "ref": "2:12",
+     "text": "Hebrew kanaf, “wing.” It can also mean “the corner of a garment.” Compare 3:9."
+    },
+    {
+     "m": "f",
+     "ref": "2:17",
+     "text": "Hebrew “about an ephah,” which is about 6 gallons (22 liters). Barley that has been beaten out would weigh about 30 pounds (14 kilograms), a huge load for one day of gathering."
+    },
+    {
+     "m": "g",
+     "ref": "2:20",
+     "text": "Hebrew go’el, a close relative who had the duty to buy back family land, to buy back a relative who was sold as a slave, and in Ruth, to give a dead man an heir (Leviticus 25:25-55; Deuteronomy 25:5-10). It also appears in 3:9, 12-13 and 4:1-8, 14."
+    },
+    {
+     "m": "h",
+     "ref": "2:23",
+     "text": "Barley harvest began in March-April and wheat harvest ended about seven weeks later, in May-June."
+    }
+   ],
+   "subheads": {
+    "1": "Ruth Gathers Grain in Boaz’s Field",
+    "8": "Boaz Is Kind to Ruth",
+    "14": "Lunch in the Field",
+    "19": "Ruth Tells Naomi"
+   }
+  },
+  {
+   "n": 3,
+   "paras": [
+    1,
+    6,
+    14
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "One day Naomi said to Ruth, “My daughter, I want to find you a settled home, a place where you will be well cared for."
+    },
+    {
+     "v": 2,
+     "text": "Think of Boaz. You worked beside his young women, and he is our relative. Tonight he is out on the threshing floor, tossing his barley in the wind."
+    },
+    {
+     "v": 3,
+     "text": "Take a bath, rub on some perfume, and put on your best dress.{a} Then head down to the threshing floor, but keep out of sight until he has had his supper and drink."
+    },
+    {
+     "v": 4,
+     "text": "Notice the spot where he lies down. Then slip in, lift the blanket off his feet, and lie there. He will tell you what to do next.”"
+    },
+    {
+     "v": 5,
+     "text": "“All that you say, I will do,”{b} Ruth answered."
+    },
+    {
+     "v": 6,
+     "text": "She went down to the threshing floor and did all that her husband’s mother had planned."
+    },
+    {
+     "v": 7,
+     "text": "Boaz finished his meal, felt cheerful, and went off to sleep beside the pile of grain. Ruth tiptoed up, lifted the blanket from his feet, and lay down."
+    },
+    {
+     "v": 8,
+     "text": "About midnight the man gave a start and rolled over. A woman was lying at his feet!"
+    },
+    {
+     "v": 9,
+     "text": "“Who is there?” he asked. “Ruth, your servant,” she answered. “Spread the edge of your cloak{c} over me. You are one of the relatives who may rescue our family.”"
+    },
+    {
+     "v": 10,
+     "text": "“May Yahweh bless you, my daughter,” he said. “This last kindness of yours is better than the first. You did not chase after the young men, rich or poor."
+    },
+    {
+     "v": 11,
+     "text": "So do not be afraid, my daughter. I will do all you ask. Everyone at the gate of my town{d} knows what a fine woman you are."
+    },
+    {
+     "v": 12,
+     "text": "I am indeed a near relative of yours. But there is another man whose claim is even closer than mine."
+    },
+    {
+     "v": 13,
+     "text": "Stay the night. In the morning, if he is willing to rescue you, good. Let him. If he refuses, then as Yahweh lives, I will do it myself. Now lie down until morning.”"
+    },
+    {
+     "v": 14,
+     "text": "She stayed at his feet until it was nearly daylight, then got up before anyone could tell who was who. Boaz said, “Nobody should hear that a woman came to the threshing floor.”"
+    },
+    {
+     "v": 15,
+     "text": "He said, “Bring the shawl you are wearing and hold it out.” She did, and he poured in six measures{e} of barley and lifted it onto her. Then he{f} went back into town."
+    },
+    {
+     "v": 16,
+     "text": "Ruth came to her mother-in-law’s door. “Who is it, my daughter?” Naomi called. Ruth told her all that Boaz had done for her."
+    },
+    {
+     "v": 17,
+     "text": "She said, “He gave me these six measures of barley. He told me,{g} ‘Do not go back to your mother-in-law with nothing in your hands.’”"
+    },
+    {
+     "v": 18,
+     "text": "Naomi said, “Wait quietly, my daughter, until you see how this turns out. That man will not rest until he settles it today.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "3:3",
+     "text": "Hebrew “your cloak.” Some Hebrew copies read “I will go down.” Verse 4 has a similar difference."
+    },
+    {
+     "m": "b",
+     "ref": "3:5",
+     "text": "Some Hebrew copies add “to me.”"
+    },
+    {
+     "m": "c",
+     "ref": "3:9",
+     "text": "Hebrew kanaf, “wing” or “corner of a garment.” It was a way of asking for marriage and protection. Compare 2:12 and Ezekiel 16:8."
+    },
+    {
+     "m": "d",
+     "ref": "3:11",
+     "text": "Hebrew “all the gate of my people.”"
+    },
+    {
+     "m": "e",
+     "ref": "3:15",
+     "text": "The Hebrew does not say what the measure was. Six ephahs would be far too heavy to carry. Six seahs would be about 4 bushels (140 liters), and six omers would be much less. The Greek Old Testament reads “six measures.”"
+    },
+    {
+     "m": "f",
+     "ref": "3:15",
+     "text": "So most Hebrew copies. Some Hebrew copies, the Syriac, and the Latin Vulgate read “she.”"
+    },
+    {
+     "m": "g",
+     "ref": "3:17",
+     "text": "Some Hebrew copies add “to me.” The standard Hebrew text leaves it out."
+    }
+   ],
+   "subheads": {
+    "1": "Naomi’s Plan",
+    "6": "Ruth at the Threshing Floor"
+   }
+  },
+  {
+   "n": 4,
+   "paras": [
+    1,
+    7,
+    13,
+    18
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Meanwhile Boaz walked up to the town gate and took a seat. Soon the close relative he had spoken of passed by. “Friend,{a} turn aside and sit here with me,” Boaz said, and the man did."
+    },
+    {
+     "v": 2,
+     "text": "Boaz then gathered ten of the town’s elders. “Please sit down here,” he said, and they did."
+    },
+    {
+     "v": 3,
+     "text": "He said to the relative, “Naomi, who came home from Moab, is selling the plot of ground that was our relative Elimelech’s."
+    },
+    {
+     "v": 4,
+     "text": "I wanted you to hear it from me. Buy it with these men watching, and with the elders of my people looking on. If you want to buy it back, do so. If not,{b} say that to me now, so I will know. No one else may do it before you, and I am second in line.” “I will buy it back,” he said."
+    },
+    {
+     "v": 5,
+     "text": "Boaz went on, “At the moment you purchase the field from Naomi, you take{c} Ruth the Moabite as well, the widow of the man who died. That way his name will live on with his land.”"
+    },
+    {
+     "v": 6,
+     "text": "The relative answered, “Then I cannot buy it back. I might ruin my own property. Take my right yourself. I cannot use it.”"
+    },
+    {
+     "v": 7,
+     "text": "Long ago in Israel there was a custom for settling a buy-back or a trade. A man would slip off his sandal and hand it over to the other party. That was how a deal was made binding in Israel."
+    },
+    {
+     "v": 8,
+     "text": "So when the relative said to Boaz, “You do the buying,” he pulled off his sandal."
+    },
+    {
+     "v": 9,
+     "text": "Then Boaz turned to the elders and the crowd. “You are my witnesses this day. From Naomi I have acquired all the property of Elimelech, Chilion, and Mahlon."
+    },
+    {
+     "v": 10,
+     "text": "Ruth the Moabite, who was Mahlon’s wife, I have also made my own wife. This keeps the dead man’s name alive with his land. His name will not vanish from his family or from the gate of his hometown. This day you are my witnesses.”"
+    },
+    {
+     "v": 11,
+     "text": "The people at the gate and the elders answered, “We are. May Yahweh make the bride who is entering your home as Rachel and Leah were, the two women who built up the nation of Israel. May you grow rich in Ephrathah and have a famous name in Bethlehem."
+    },
+    {
+     "v": 12,
+     "text": "May the children Yahweh gives you by this young woman make your family as great as that of Perez, the son whom Tamar bore to Judah.”"
+    },
+    {
+     "v": 13,
+     "text": "So Boaz married Ruth, and she became his wife. They lay together, Yahweh let her conceive, and she gave birth to a son."
+    },
+    {
+     "v": 14,
+     "text": "The town women said to Naomi, “Praise Yahweh! Today he has given you a protector for your family. May the boy’s name be known all through Israel."
+    },
+    {
+     "v": 15,
+     "text": "He will renew your strength and support you in old age. He is the child of your own daughter-in-law, who loves you and who has been worth more to you than seven sons.”"
+    },
+    {
+     "v": 16,
+     "text": "Naomi lifted the child onto her lap and became his nurse."
+    },
+    {
+     "v": 17,
+     "text": "The neighbor women named him. “A son has been born to Naomi!” they said. They called him Obed.{d} He grew up and had a son named Jesse, and Jesse had a son named David."
+    },
+    {
+     "v": 18,
+     "text": "The line of Perez goes like this: Perez had a son Hezron."
+    },
+    {
+     "v": 19,
+     "text": "Hezron was the father of Ram, and Ram of Amminadab."
+    },
+    {
+     "v": 20,
+     "text": "Amminadab had a son Nahshon, and Nahshon had a son Salmah.{e}"
+    },
+    {
+     "v": 21,
+     "text": "Salmon was the father of Boaz, and Boaz of Obed."
+    },
+    {
+     "v": 22,
+     "text": "Obed was the father of Jesse, and Jesse of David."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "4:1",
+     "text": "Hebrew peloni almoni, “so-and-so.” This phrase is used when a name is left out."
+    },
+    {
+     "m": "b",
+     "ref": "4:4",
+     "text": "So many Hebrew copies, the Greek Old Testament, the Syriac, and the Latin Vulgate. The standard Hebrew text reads “if he will not.”"
+    },
+    {
+     "m": "c",
+     "ref": "4:5",
+     "text": "So the traditional reading, the Greek Old Testament, and the Latin Vulgate (“you buy”). The written Hebrew text reads “I buy.” The Hebrew also reads “and from Ruth.” This translation follows a common correction, “also Ruth” (compare verse 10)."
+    },
+    {
+     "m": "d",
+     "ref": "4:17",
+     "text": "Obed means “servant” or “worshiper.” It may be short for Obadiah, “servant of Yahweh.”"
+    },
+    {
+     "m": "e",
+     "ref": "4:20",
+     "text": "Hebrew Salmah. Verse 21 has Salmon. The Greek Old Testament has “Salmon” in both verses."
+    }
+   ],
+   "subheads": {
+    "1": "Boaz Settles the Matter",
+    "13": "A Son Is Born",
+    "18": "The Family of David"
+   }
+  }
+ ]
+}
