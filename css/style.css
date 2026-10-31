@@ -341,6 +341,7 @@ td:first-child { font-weight: 600; min-width: 8rem; }
 .player-opts select { font: inherit; font-weight: 400; max-width: 62%; min-height: 2.5rem; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink); padding: .3rem .5rem; }
 .player-opts .chk { justify-content: flex-start; font-weight: 400; min-height: 2.5rem; }
 .player-opts .chk input { width: 1.2rem; height: 1.2rem; accent-color: var(--clay); }
+.player-opts .pl-help { margin: .2rem 0 0; font-size: .82rem; line-height: 1.45; color: var(--ink-soft); }
 body.has-player { padding-bottom: 5rem; }
 body.has-player .offline-badge { bottom: calc(5.5rem + env(safe-area-inset-bottom)); }
 

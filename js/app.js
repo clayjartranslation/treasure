@@ -708,25 +708,58 @@
     const en = all.filter((v) => /^en([-_]|$)/i.test(v.lang));
     return en.length ? en : all;
   }
-  function bestVoice(list) {
-    const score = (v) => (/premium|enhanced|siri|natural|neural/i.test(v.name) ? 3 : 0) + (/^en[-_]US/i.test(v.lang) ? 2 : 0) + (v.localService ? 1 : 0) + (v.default ? 1 : 0);
-    return list.slice().sort((a, b) => score(b) - score(a))[0] || null;
+  // Rank voices: Premium / Enhanced / Natural / Neural / Siri / Google / Microsoft Online first, novelty and robotic voices last.
+  const NOVELTY = /^(albert|bad news|bahh|bells|boing|bubbles|cellos|good news|jester|organ|superstar|trinoids|whisper|wobble|zarvox|fred|junior|ralph|kathy|eddy|flo|grandma|grandpa|reed|rocko|sandy|shelley)\b/i;
+  const FAMILIAR = /\b(ava|zoe|evan|nathan|allison|susan|samantha|alex|daniel|karen|moira|serena|tessa|tom|nicky|aaron|jenny|aria|guy|davis|libby|ryan|sonia)\b/i;
+  function voiceTier(v) {
+    const t = (v.name || '') + ' ' + (v.voiceURI || '');
+    if (/premium/i.test(t)) return 'Premium';
+    if (/enhanced/i.test(t)) return 'Enhanced';
+    if (/natural|neural/i.test(t)) return 'Natural';
+    if (/siri/i.test(t)) return 'Siri';
+    if (/^microsoft.*online/i.test(v.name || '') || /online/i.test(v.name || '')) return 'Online';
+    if (/^google/i.test(v.name || '')) return 'Google';
+    return '';
   }
+  function voiceScore(v) {
+    const tier = voiceTier(v), n = v.name || '';
+    let s = { Premium: 60, Enhanced: 52, Natural: 58, Siri: 54, Online: 46, Google: 36 }[tier] || 0;
+    if (FAMILIAR.test(n)) s += 12;
+    if (/espeak|compact|robot/i.test(n + ' ' + (v.voiceURI || ''))) s -= 25;
+    if (NOVELTY.test(n)) s -= 80;
+    const lg = (v.lang || '').replace('_', '-');
+    s += /^en-US$/i.test(lg) ? 8 : /^en-(GB|AU|CA|IE|IN)$/i.test(lg) ? 5 : /^en/i.test(lg) ? 2 : 0;
+    if (v.localService) s += 2;
+    if (v.default) s += 1;
+    return s;
+  }
+  function rankVoices(list) { return list.slice().sort((a, b) => voiceScore(b) - voiceScore(a) || String(a.name).localeCompare(String(b.name))); }
+  function bestVoice(list) { return rankVoices(list)[0] || null; }
   function pickVoice() {
     const list = voiceList();
-    if (settings.voice) { const v = list.find((x) => x.voiceURI === settings.voice); if (v) return v; }
+    if (settings.voice) {
+      const v = list.find((x) => x.voiceURI === settings.voice) || (settings.voiceName && list.find((x) => x.name === settings.voiceName));
+      if (v) return v;
+    }
     return bestVoice(list);
   }
   function fillVoices() {
     const sel = $('#plVoice'); if (!sel) return;
-    const list = voiceList();
-    const best = bestVoice(list);
-    sel.innerHTML = `<option value="">Automatic${best ? ' (' + esc(best.name) + ')' : ''}</option>` + list.map((v) => `<option value="${esc(v.voiceURI)}">${esc(v.name)} (${esc(v.lang)})</option>`).join('');
+    const list = rankVoices(voiceList());
+    const best = list[0] || null;
+    const label = (v) => `${v.name}${voiceTier(v) && !new RegExp(voiceTier(v), 'i').test(v.name) ? ' · ' + voiceTier(v) : ''} (${v.lang})`;
+    sel.innerHTML = `<option value="">Automatic${best ? ' (' + esc(best.name) + ')' : ''}</option>` + list.map((v) => `<option value="${esc(v.voiceURI)}">${esc(label(v))}</option>`).join('');
     sel.value = list.some((v) => v.voiceURI === settings.voice) ? settings.voice : '';
+    const cur = pickVoice(), hq = cur && voiceScore(cur) >= 46 && voiceTier(cur);
+    const hint = $('#plHq');
+    if (hint) hint.textContent = !cur ? 'No voices found yet.' : hq ? `Using ${cur.name} (${voiceTier(cur)}).` : `Only basic voices found. Using ${cur.name}.`;
   }
   if (SPEECH) {
     fillVoices();
     if (synth.addEventListener) synth.addEventListener('voiceschanged', fillVoices); else synth.onvoiceschanged = fillVoices;
+    // Safari on iPhone often loads voices late and may never send "voiceschanged": look a few more times.
+    let tries = 0;
+    const poll = setInterval(() => { tries++; if (synth.getVoices().length || tries > 20) { fillVoices(); clearInterval(poll); } }, 400);
   }
 
   function speakNow() {
@@ -842,7 +875,7 @@
   $('#plRate').value = String(settings.rate);
   if ($('#plRate').value === '') $('#plRate').value = '1';
   $('#plRate').addEventListener('change', (e) => { settings.rate = parseFloat(e.target.value) || 1; saveSettings(); if (au.active && au.playing) restartSoon(); });
-  $('#plVoice').addEventListener('change', (e) => { settings.voice = e.target.value; saveSettings(); if (au.active && au.playing) restartSoon(); });
+  $('#plVoice').addEventListener('change', (e) => { settings.voice = e.target.value; const pv = voiceList().find((x) => x.voiceURI === settings.voice); settings.voiceName = pv ? pv.name : ''; fillVoices(); saveSettings(); if (au.active && au.playing) restartSoon(); });
   $('#plAuto').checked = settings.autoNext !== false;
   $('#plAuto').addEventListener('change', (e) => { settings.autoNext = e.target.checked; saveSettings(); });
   main.addEventListener('click', (e) => { if (e.target.closest('#listenBtn')) togglePlay(); });
