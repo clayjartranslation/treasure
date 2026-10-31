@@ -1,0 +1,1720 @@
+{
+ "id": "exodus",
+ "name": "Exodus",
+ "division": "Old Testament",
+ "sourceNote": "Written freshly, thought for thought, from the oldest Hebrew, Greek, and Aramaic witnesses (the Masoretic Text with the Dead Sea Scrolls, the Septuagint, and the Samaritan Pentateuch). © 2026 Jose Santiago. All rights reserved.",
+ "chapters": [
+  {
+   "n": 1,
+   "paras": [
+    1,
+    6,
+    8,
+    15
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Here are the names of Israel’s sons who traveled to Egypt with Jacob, each bringing his own family:"
+    },
+    {
+     "v": 2,
+     "text": "They were Reuben, Simeon, Levi, and Judah,"
+    },
+    {
+     "v": 3,
+     "text": "along with Issachar, Zebulun, and Benjamin,"
+    },
+    {
+     "v": 4,
+     "text": "and also Dan, Naphtali, Gad, and Asher."
+    },
+    {
+     "v": 5,
+     "text": "Jacob’s own descendants numbered seventy people.{a} Joseph was in Egypt already."
+    },
+    {
+     "v": 6,
+     "text": "In time Joseph died, and so did all of his brothers and everyone else of that generation."
+    },
+    {
+     "v": 7,
+     "text": "The Israelites, though, kept having children. They swarmed{b} across the land and grew so powerful that the whole region was crowded with them."
+    },
+    {
+     "v": 8,
+     "text": "Then a new king took the throne of Egypt, one who had never known Joseph."
+    },
+    {
+     "v": 9,
+     "text": "He told his people, “These Israelites are becoming too many and too strong for us."
+    },
+    {
+     "v": 10,
+     "text": "We need a clever plan. If they keep multiplying, they might side with our enemies in a war, fight against us, and leave the country.”"
+    },
+    {
+     "v": 11,
+     "text": "So the Egyptians appointed slave drivers to crush the Israelites with hard labor. The Israelites built two cities, Pithom and Rameses,{c} to store the supplies of Pharaoh.{d}"
+    },
+    {
+     "v": 12,
+     "text": "But the harder the Egyptians pushed them, the faster the Israelites grew and spread out, and the Egyptians began to dread them."
+    },
+    {
+     "v": 13,
+     "text": "They drove the Israelites mercilessly in their work."
+    },
+    {
+     "v": 14,
+     "text": "Life turned bitter for God’s people. They mixed mortar, made bricks, and did all kinds of farm labor, and the Egyptians showed no mercy in any of it."
+    },
+    {
+     "v": 15,
+     "text": "Next the king of Egypt gave orders to two Hebrew midwives, whose names were Shiphrah and Puah.{e}"
+    },
+    {
+     "v": 16,
+     "text": "“When you attend a Hebrew mother at the birthing stones,{f}” he told them, “check the newborn. A boy must be killed, but a girl may live.”"
+    },
+    {
+     "v": 17,
+     "text": "The midwives respected God too much to obey the king of Egypt, so they let the boys live."
+    },
+    {
+     "v": 18,
+     "text": "The king called them in and demanded, “Why have you done this? Why are the boys still alive?”"
+    },
+    {
+     "v": 19,
+     "text": "The midwives told Pharaoh, “Hebrew women are stronger{g} than Egyptian women. By the time a midwife arrives, the baby is already born.”"
+    },
+    {
+     "v": 20,
+     "text": "God was good to the midwives, and the people kept growing in number and strength."
+    },
+    {
+     "v": 21,
+     "text": "Because the midwives honored God, he gave them families of their own.{h}"
+    },
+    {
+     "v": 22,
+     "text": "Then Pharaoh gave a command to his whole nation: “Every boy born to the Hebrews{i} must be drowned in the Nile. Let the girls live.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "1:5",
+     "text": "Some ancient copies, including a Dead Sea Scroll and the Septuagint, say “seventy-five.” That is the number Stephen gives in Acts 7:14."
+    },
+    {
+     "m": "b",
+     "ref": "1:7",
+     "text": "Or “teemed.” These words remind us of God’s blessing in Genesis 1:28."
+    },
+    {
+     "m": "c",
+     "ref": "1:11",
+     "text": "Pithom probably means “house of Atum” (an Egyptian god). Rameses was named for the Egyptian kings of that name."
+    },
+    {
+     "m": "d",
+     "ref": "1:11",
+     "text": "“Pharaoh” is a title that means “great house,” or the royal palace. Exodus never gives this king’s personal name."
+    },
+    {
+     "m": "e",
+     "ref": "1:15",
+     "text": "Shiphrah probably means “beautiful,” and Puah may mean “splendid.” Both meanings are uncertain."
+    },
+    {
+     "m": "f",
+     "ref": "1:16",
+     "text": "Hebrew “on the two stones,” most likely a seat or pair of stones a woman used while giving birth."
+    },
+    {
+     "m": "g",
+     "ref": "1:19",
+     "text": "The Hebrew word is rare. It may mean “lively,” or it may mean they give birth as easily as animals do."
+    },
+    {
+     "m": "h",
+     "ref": "1:21",
+     "text": "Literally “he made houses for them.”"
+    },
+    {
+     "m": "i",
+     "ref": "1:22",
+     "text": "Some ancient copies, including the Septuagint, add “to the Hebrews.” The Hebrew text leaves it out, but the sense is the same."
+    }
+   ],
+   "subheads": {
+    "1": "Jacob’s family in Egypt",
+    "8": "A king who forgot Joseph",
+    "15": "Two brave midwives"
+   }
+  },
+  {
+   "n": 2,
+   "paras": [
+    1,
+    5,
+    11,
+    16,
+    23
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "One man from the house of Levi took a wife from that same tribe.{a}"
+    },
+    {
+     "v": 2,
+     "text": "She conceived and bore a son. Seeing that he was a fine child,{b} she kept him out of sight for three months."
+    },
+    {
+     "v": 3,
+     "text": "After that she could hide him no longer. So she wove a basket{c} from papyrus, waterproofed it with tar and pitch, laid the baby inside, and left it in the tall reeds beside the Nile."
+    },
+    {
+     "v": 4,
+     "text": "The baby’s sister stood a little way off to see what would become of him."
+    },
+    {
+     "v": 5,
+     "text": "Pharaoh’s daughter came down to the river to bathe, and her attendants strolled along the bank. She noticed the basket among the reeds and sent a slave girl to fetch it."
+    },
+    {
+     "v": 6,
+     "text": "When she lifted the lid, she saw a baby boy, and he was crying. Her heart went out to him. “This is one of the Hebrews’ babies,” she said."
+    },
+    {
+     "v": 7,
+     "text": "Then the baby’s sister approached her. “Shall I go find a Hebrew woman to nurse him for you?” she asked."
+    },
+    {
+     "v": 8,
+     "text": "“Please do,” Pharaoh’s daughter said, and the girl ran off to get the child’s mother."
+    },
+    {
+     "v": 9,
+     "text": "“Take him with you and nurse him,” Pharaoh’s daughter said to the woman. “I will pay your wages.” So the mother took the baby and fed him herself."
+    },
+    {
+     "v": 10,
+     "text": "As he grew, she took him to Pharaoh’s daughter, and he became that woman’s son. She gave him the name Moses{d} because, she said, “I drew him up out of the water.”"
+    },
+    {
+     "v": 11,
+     "text": "After Moses was grown, he visited his own people one day and saw how hard they were made to work. There he watched an Egyptian beat a Hebrew, one of his own people."
+    },
+    {
+     "v": 12,
+     "text": "Moses looked all around, saw nobody, struck the Egyptian dead, and buried him in the sand."
+    },
+    {
+     "v": 13,
+     "text": "When he went out the following day, two Hebrews were in a fight. “Why do you hit your own countryman?” he asked the man who was at fault."
+    },
+    {
+     "v": 14,
+     "text": "The man shot back, “Who made you our ruler and judge? Are you planning to kill me the way you killed that Egyptian?” Moses became afraid. “Everybody must know what I did,” he thought."
+    },
+    {
+     "v": 15,
+     "text": "When Pharaoh learned of this, he looked for a way to kill Moses. But Moses fled from him to the land of Midian,{e} where he stopped at a well."
+    },
+    {
+     "v": 16,
+     "text": "The priest of Midian had seven daughters. They arrived at the well, drew water, and filled the troughs for the flock their father owned."
+    },
+    {
+     "v": 17,
+     "text": "Some shepherds came and chased them off, but Moses jumped up, defended the girls, and watered their animals."
+    },
+    {
+     "v": 18,
+     "text": "When the girls came home to their father Reuel,{f} he asked, “How did you get back so early today?”"
+    },
+    {
+     "v": 19,
+     "text": "“An Egyptian saved us from the shepherds,” they said. “He even drew water for us and watered the flock.”"
+    },
+    {
+     "v": 20,
+     "text": "“So where is he?” Reuel asked. “Why did you leave him there? Go and invite him to a meal.”"
+    },
+    {
+     "v": 21,
+     "text": "Moses agreed to live with Reuel, and Reuel gave him his daughter Zipporah{g} in marriage."
+    },
+    {
+     "v": 22,
+     "text": "She had a son, and Moses named him Gershom,{h} saying, “I am a foreigner living in a foreign land.”{i}"
+    },
+    {
+     "v": 23,
+     "text": "Years went by, and Egypt’s king died. The Israelites were still moaning in their slavery. They cried for help, and the sound of it climbed up to God."
+    },
+    {
+     "v": 24,
+     "text": "God heard their groaning and called to mind his covenant promise to Abraham, Isaac, and Jacob.{j}"
+    },
+    {
+     "v": 25,
+     "text": "and he looked on the Israelites and understood their need.{k}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "2:1",
+     "text": "Her name was Jochebed, and her husband was Amram (see 6:20)."
+    },
+    {
+     "m": "b",
+     "ref": "2:2",
+     "text": "The Hebrew word is “good,” the same word used in Genesis 1 when God saw that his work was good."
+    },
+    {
+     "m": "c",
+     "ref": "2:3",
+     "text": "The Hebrew word for this basket is used only here and for Noah’s ark."
+    },
+    {
+     "m": "d",
+     "ref": "2:10",
+     "text": "Moses sounds like a Hebrew word meaning “pull out.” It also resembles an Egyptian word for “child” or “born.”"
+    },
+    {
+     "m": "e",
+     "ref": "2:15",
+     "text": "Midian was a land in northwest Arabia. Its people came from Abraham’s son by Keturah (Genesis 25:2)."
+    },
+    {
+     "m": "f",
+     "ref": "2:18",
+     "text": "Reuel means “friend of God.” He is also called Jethro (3:1)."
+    },
+    {
+     "m": "g",
+     "ref": "2:21",
+     "text": "Zipporah means “bird.”"
+    },
+    {
+     "m": "h",
+     "ref": "2:22",
+     "text": "Gershom sounds like the Hebrew for “a foreigner there.”"
+    },
+    {
+     "m": "i",
+     "ref": "2:22",
+     "text": "Some ancient copies add that Moses had a second son, Eliezer, whose name means “my God is my helper” (see 18:4)."
+    },
+    {
+     "m": "j",
+     "ref": "2:24",
+     "text": "Hebrew “his covenant” with them. A covenant is a binding promise."
+    },
+    {
+     "m": "k",
+     "ref": "2:25",
+     "text": "Literally “God knew.” Some ancient copies say “God made himself known to them.”"
+    }
+   ],
+   "subheads": {
+    "1": "A baby in the reeds",
+    "11": "Moses runs away",
+    "23": "God hears Israel’s cry"
+   }
+  },
+  {
+   "n": 3,
+   "paras": [
+    1,
+    7,
+    11,
+    13,
+    16
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Moses was tending the sheep and goats of Jethro,{a} his father-in-law and the priest of Midian. He led them to the far side of the desert and came to Horeb,{b} God’s mountain."
+    },
+    {
+     "v": 2,
+     "text": "The angel of Yahweh{c} appeared to him as a blazing flame inside a bush.{d} Moses stared. The bush was burning, yet it was not turning to ashes."
+    },
+    {
+     "v": 3,
+     "text": "“I will go over and look at this amazing sight,” Moses said to himself. “Why doesn’t the bush burn up?”"
+    },
+    {
+     "v": 4,
+     "text": "Yahweh saw Moses step closer for a better look, and God called out from the bush, “Moses! Moses!” Moses answered, “Yes, I am here.”"
+    },
+    {
+     "v": 5,
+     "text": "“Stay back,” God said. “Remove your sandals, for the ground under your feet is holy.”"
+    },
+    {
+     "v": 6,
+     "text": "“I am the God of your father,{e}” he said. “Abraham, Isaac, and Jacob worshiped me.” Afraid to look at God, Moses covered his face."
+    },
+    {
+     "v": 7,
+     "text": "Yahweh said, “I have indeed seen my people suffer in Egypt, and I have heard how they cry to be freed from their slave drivers. Their pain is known to me."
+    },
+    {
+     "v": 8,
+     "text": "I have come down to save them from the Egyptians’ power and to bring them out of that land into a good, spacious land, one flowing with milk and honey.{f} It belongs now to the Canaanites, Hittites, Amorites, Perizzites, Hivites, and Jebusites.{g}"
+    },
+    {
+     "v": 9,
+     "text": "Now the Israelites’ cry has reached me, and I have watched the Egyptians crush them."
+    },
+    {
+     "v": 10,
+     "text": "Go! I am sending you to Pharaoh to bring my people the Israelites out of Egypt.”"
+    },
+    {
+     "v": 11,
+     "text": "Moses asked God, “Who am I, that Pharaoh should see me and that I should lead the Israelites out of Egypt?”"
+    },
+    {
+     "v": 12,
+     "text": "“I will be with you,{h}” God said. “As proof that I am the one sending you, know this: you will lead the people out of Egypt, and then you will worship me right here on this mountain.”"
+    },
+    {
+     "v": 13,
+     "text": "Moses said, “Suppose I arrive among the Israelites and announce, ‘Your ancestors’ God has sent me.’ They will ask me his name. What should I tell them?”"
+    },
+    {
+     "v": 14,
+     "text": "God said to Moses, “I am who I am.{i} Tell the Israelites this: ‘I am{j} sent me to you.’”"
+    },
+    {
+     "v": 15,
+     "text": "God said more to Moses: “Tell the Israelites that Yahweh{k} sent you, the God of their ancestors Abraham, Isaac, and Jacob. This is my name for all time, and it is how all generations will call on me."
+    },
+    {
+     "v": 16,
+     "text": "Now go and assemble Israel’s elders. Tell them that Yahweh, the God their ancestors worshiped, has appeared to you. Say that he told you, ‘I have been watching over you{l} and have seen how Egypt treats you."
+    },
+    {
+     "v": 17,
+     "text": "I have decided to bring you out of Egypt’s misery and into the land of the Canaanites, Hittites, Amorites, Perizzites, Hivites, and Jebusites, a land flowing with milk and honey.’"
+    },
+    {
+     "v": 18,
+     "text": "The elders will pay attention to you. After that, you and they will go before the king of Egypt and say, ‘Yahweh, the God of the Hebrews, has met with us. Allow us a journey of three days into the desert, where we may sacrifice to Yahweh our God.’"
+    },
+    {
+     "v": 19,
+     "text": "I know, though, that the king of Egypt will refuse to let you leave unless a mighty hand forces him.{m}"
+    },
+    {
+     "v": 20,
+     "text": "So I will reach out and strike Egypt with every wonder I will perform there, and after that he will send you away."
+    },
+    {
+     "v": 21,
+     "text": "I will also make the Egyptians kind to my people, so you will not leave with empty hands."
+    },
+    {
+     "v": 22,
+     "text": "Every woman will ask her neighbor, and any foreigner staying in her neighbor’s home, for gold and silver ornaments and for garments. Your sons and daughters will wear them. In this way you will strip the Egyptians of their wealth.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "3:1",
+     "text": "Jethro probably means “abundance.” He is the same man as Reuel (2:18)."
+    },
+    {
+     "m": "b",
+     "ref": "3:1",
+     "text": "Horeb means “dry” or “bare.” It is another name for Mount Sinai."
+    },
+    {
+     "m": "c",
+     "ref": "3:2",
+     "text": "Yahweh is God’s personal name, written in Hebrew with the four letters YHWH. See the note at verse 15. Verse 4 shows that the angel of Yahweh is Yahweh himself speaking."
+    },
+    {
+     "m": "d",
+     "ref": "3:2",
+     "text": "This was a thorny bush. The Hebrew word for it sounds like “Sinai.”"
+    },
+    {
+     "m": "e",
+     "ref": "3:6",
+     "text": "Some ancient copies say “fathers,” as in verses 13 and 15."
+    },
+    {
+     "m": "f",
+     "ref": "3:8",
+     "text": "This means a rich land with good pasture for flocks, and with fruit and bees."
+    },
+    {
+     "m": "g",
+     "ref": "3:8",
+     "text": "Some ancient copies add the Girgashites, to make a list of seven peoples (see Deuteronomy 7:1)."
+    },
+    {
+     "m": "h",
+     "ref": "3:12",
+     "text": "The Hebrew word for “I will be” prepares us for the name God gives in verse 14."
+    },
+    {
+     "m": "i",
+     "ref": "3:14",
+     "text": "The Hebrew words can also mean “I will be who I will be.” The name speaks of God’s own life, and of his faithful presence with his people."
+    },
+    {
+     "m": "j",
+     "ref": "3:14",
+     "text": "Or “I will be.” The Septuagint says “The one who is.”"
+    },
+    {
+     "m": "k",
+     "ref": "3:15",
+     "text": "Yahweh comes from the same Hebrew verb as “I am.” In God’s own mouth the name is “I am,” and when others say it, it is “he is.” Out of respect, Jewish readers long ago stopped saying the name aloud and read “Lord” instead. Many English Bibles print “the LORD.”"
+    },
+    {
+     "m": "l",
+     "ref": "3:16",
+     "text": "Or “I have come to your aid.” Joseph used the same words in Genesis 50:24."
+    },
+    {
+     "m": "m",
+     "ref": "3:19",
+     "text": "So the Hebrew. The Septuagint says “except by a mighty hand.”"
+    }
+   ],
+   "subheads": {
+    "1": "A bush that burns",
+    "7": "God’s plan to rescue",
+    "13": "God tells his name"
+   }
+  },
+  {
+   "n": 4,
+   "paras": [
+    1,
+    6,
+    10,
+    18,
+    21,
+    24,
+    27
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“But suppose they do not believe me,” Moses objected. “Suppose they refuse to listen and say, ‘Yahweh never appeared to you.’”"
+    },
+    {
+     "v": 2,
+     "text": "“What is in your hand?” Yahweh asked. “A walking stick,” Moses answered."
+    },
+    {
+     "v": 3,
+     "text": "“Drop it on the ground,” Yahweh said. When Moses dropped it, it became a snake, and he backed away."
+    },
+    {
+     "v": 4,
+     "text": "Yahweh told him, “Stretch out your hand and take it by the tail.” Moses reached out and grabbed it, and it was a stick in his hand again."
+    },
+    {
+     "v": 5,
+     "text": "“That is how they will come to believe,” Yahweh said, “that Yahweh, their ancestors’ God, the God of Abraham, Isaac, and Jacob, has appeared to you.”"
+    },
+    {
+     "v": 6,
+     "text": "Yahweh gave another command: “Slip your hand inside your robe.” Moses put it in, and when he pulled it out, the skin was covered with a disease{a} and as white as snow."
+    },
+    {
+     "v": 7,
+     "text": "“Put it back inside,” Yahweh said. Moses did so, and when he drew it out, the hand was as healthy as the rest of him."
+    },
+    {
+     "v": 8,
+     "text": "Yahweh went on, “If they do not believe you after the first sign, the second sign may convince them."
+    },
+    {
+     "v": 9,
+     "text": "If even these two signs fail to convince them, scoop some water from the Nile and pour it on dry ground. On the ground the water will turn to blood.”"
+    },
+    {
+     "v": 10,
+     "text": "“Lord,{b} please,” Moses said to Yahweh. “Speaking has never been my gift, not in the past and not since you started talking to me. My mouth and tongue are slow.”"
+    },
+    {
+     "v": 11,
+     "text": "Yahweh said, “Who gave people their mouths? Who makes someone unable to speak or to hear, or gives someone sight or blindness? Is it not I, Yahweh?"
+    },
+    {
+     "v": 12,
+     "text": "“Go,” said Yahweh. “I will help your mouth, and I will teach you your words.”"
+    },
+    {
+     "v": 13,
+     "text": "“Please, Lord,” Moses said, “send somebody else. Anyone at all.”{c}"
+    },
+    {
+     "v": 14,
+     "text": "Then Yahweh’s anger flared against Moses. “Is there not Aaron,{d} your Levite brother?” he asked. “He is a fine speaker, I know. In fact, he is on his way out to meet you now, and seeing you will make him glad."
+    },
+    {
+     "v": 15,
+     "text": "You will give him the words to say, putting them in his mouth. I will help the two of you speak and will show each of you what to do."
+    },
+    {
+     "v": 16,
+     "text": "He will be your spokesman to the people, and to him you will stand in the place of God.{e}"
+    },
+    {
+     "v": 17,
+     "text": "With this stick in your hand you will perform the signs.”"
+    },
+    {
+     "v": 18,
+     "text": "Moses returned to the home of his father-in-law, Jethro.{f} “May I return to my relatives in Egypt and see whether any are still alive?” he asked. Jethro said, “Go in peace.”"
+    },
+    {
+     "v": 19,
+     "text": "In Midian, Yahweh told Moses, “Go back to Egypt. Every man who wanted to kill you is dead.”"
+    },
+    {
+     "v": 20,
+     "text": "So Moses put his wife and sons on a donkey and started for Egypt, carrying the stick of God in his hand."
+    },
+    {
+     "v": 21,
+     "text": "Yahweh said to Moses, “As you go back to Egypt, make sure that you perform before Pharaoh every wonder I have put in your power. Pharaoh’s heart, however, I will make stubborn,{g} and he will refuse to release the people."
+    },
+    {
+     "v": 22,
+     "text": "Then tell Pharaoh that this is Yahweh’s message: ‘Israel is my own firstborn son."
+    },
+    {
+     "v": 23,
+     "text": "My command to you was, “Release my son so that he may worship me.” Since you refused, I will now kill your firstborn son.’”"
+    },
+    {
+     "v": 24,
+     "text": "Along the way, at a place where they camped for the night, Yahweh met Moses{h} and was about to kill him."
+    },
+    {
+     "v": 25,
+     "text": "Then Zipporah took a sharp flint and cut her son’s foreskin off. She touched it to his feet{i} and said, “To me you are a bridegroom of blood!”"
+    },
+    {
+     "v": 26,
+     "text": "So Yahweh left him alone. That was when she said “bridegroom of blood,” speaking of the circumcision.{j}"
+    },
+    {
+     "v": 27,
+     "text": "Yahweh said to Aaron, “Go meet Moses in the desert.” Aaron went, found Moses at the mountain of God, and gave him a kiss."
+    },
+    {
+     "v": 28,
+     "text": "Moses told Aaron everything Yahweh had said when he sent him, and every sign Yahweh had ordered him to do."
+    },
+    {
+     "v": 29,
+     "text": "Then Moses and Aaron went and called together all the elders of Israel."
+    },
+    {
+     "v": 30,
+     "text": "Aaron repeated everything Yahweh had told Moses, and he did the signs as the people watched."
+    },
+    {
+     "v": 31,
+     "text": "The people believed. They heard that Yahweh had taken notice of the Israelites and had seen their misery, and they bowed down and worshiped."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "4:6",
+     "text": "The Hebrew word covers many skin diseases, not only leprosy as we know it today."
+    },
+    {
+     "m": "b",
+     "ref": "4:10",
+     "text": "Hebrew Adonai, which means “Lord.” It is a respectful title, not God’s name. It is used again in verse 13."
+    },
+    {
+     "m": "c",
+     "ref": "4:13",
+     "text": "Literally “send by the hand of whomever you will send.”"
+    },
+    {
+     "m": "d",
+     "ref": "4:14",
+     "text": "The meaning of Aaron’s name is not certain. It may be an Egyptian name."
+    },
+    {
+     "m": "e",
+     "ref": "4:16",
+     "text": "Moses would give Aaron God’s words the way God gives his words to a prophet (see 7:1)."
+    },
+    {
+     "m": "f",
+     "ref": "4:18",
+     "text": "Hebrew has “Jether,” a short form of Jethro. The Samaritan Pentateuch and a few Hebrew copies say “Jethro.”"
+    },
+    {
+     "m": "g",
+     "ref": "4:21",
+     "text": "Hebrew “make strong.” Exodus uses three different verbs for Pharaoh’s hard heart: “make strong,” “make heavy,” and “make hard.” Sometimes God does it, sometimes Pharaoh does, and sometimes the text only says his heart was hard."
+    },
+    {
+     "m": "h",
+     "ref": "4:24",
+     "text": "The Hebrew says only “met him.” It is not clear if “him” means Moses or his son. The Septuagint says “an angel of the Lord met him.”"
+    },
+    {
+     "m": "i",
+     "ref": "4:25",
+     "text": "The Hebrew says “his feet.” It does not say whose feet they were. This old story is brief, and its details are uncertain."
+    },
+    {
+     "m": "j",
+     "ref": "4:26",
+     "text": "Zipporah’s act seems to make up for a circumcision that had been skipped, and so to turn away the danger."
+    }
+   ],
+   "subheads": {
+    "1": "Three signs",
+    "10": "Moses makes excuses",
+    "18": "Back to Egypt",
+    "27": "Aaron meets Moses"
+   }
+  },
+  {
+   "n": 5,
+   "paras": [
+    1,
+    6,
+    10,
+    15,
+    20,
+    22
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Moses and Aaron went to Pharaoh with this message: “Yahweh, the God of Israel, says, ‘Let my people go so they can hold a festival in my honor in the desert.’”"
+    },
+    {
+     "v": 2,
+     "text": "Pharaoh replied, “Who is Yahweh? Why would I obey him and release Israel? I have never heard of Yahweh, and I will not let Israel go.”"
+    },
+    {
+     "v": 3,
+     "text": "They said, “The God of the Hebrews has met with us. Let us walk three days into the desert and offer sacrifices to Yahweh our God. Otherwise he may strike us with sickness or the sword.”"
+    },
+    {
+     "v": 4,
+     "text": "Egypt’s king told them, “Moses and Aaron, why do you draw these people away from their work? Get back to your jobs!”"
+    },
+    {
+     "v": 5,
+     "text": "“There are so many of them now,” he said, “and you want them to rest!”"
+    },
+    {
+     "v": 6,
+     "text": "On that very day Pharaoh gave this order to the people’s slave drivers and to the Israelite foremen:{a}"
+    },
+    {
+     "v": 7,
+     "text": "“No longer supply the people with straw for their bricks. They must go out and collect it on their own,"
+    },
+    {
+     "v": 8,
+     "text": "but the daily brick count must stay as high as before. Do not lower the quota. They are lazy, and that explains why they plead, ‘We must go and make sacrifices to our God!’"
+    },
+    {
+     "v": 9,
+     "text": "Pile more work on the men and keep them busy, so they will not listen to lies.”"
+    },
+    {
+     "v": 10,
+     "text": "The slave drivers and foremen went out to the people with this message: “Pharaoh says, ‘I will not give you straw."
+    },
+    {
+     "v": 11,
+     "text": "Find it yourselves, wherever you can, but you will make just as many bricks as before.’”"
+    },
+    {
+     "v": 12,
+     "text": "So the people scattered all across Egypt to collect stubble in place of straw."
+    },
+    {
+     "v": 13,
+     "text": "The slave drivers pushed them constantly. “Finish your daily number of bricks,” they said, “just as you did when you had straw.”"
+    },
+    {
+     "v": 14,
+     "text": "The Israelite foremen, who had been appointed by Pharaoh’s slave drivers, were beaten and asked, “Why didn’t you make the full number of bricks yesterday or today, as you did before?”"
+    },
+    {
+     "v": 15,
+     "text": "The Israelite foremen then went to Pharaoh and pleaded, “Why are you treating your servants like this?"
+    },
+    {
+     "v": 16,
+     "text": "No straw is handed to your servants, but we hear, ‘Make bricks!’ We are the ones beaten, though the fault lies with your own people.”{b}"
+    },
+    {
+     "v": 17,
+     "text": "“You are lazy!” Pharaoh answered. “Lazy! That is why you keep saying, ‘Let us go and sacrifice to Yahweh.’"
+    },
+    {
+     "v": 18,
+     "text": "Get back to work. You will get no straw, but you must still hand in the full number of bricks.”"
+    },
+    {
+     "v": 19,
+     "text": "The Israelite foremen realized they were in serious trouble when they heard, “You must not make fewer bricks each day.”"
+    },
+    {
+     "v": 20,
+     "text": "Moses and Aaron were standing in their path as the foremen came away from Pharaoh."
+    },
+    {
+     "v": 21,
+     "text": "“May Yahweh see what you have done and judge you,” they said. “You have made us hateful to Pharaoh and his officials. You have handed them a sword to kill us.”"
+    },
+    {
+     "v": 22,
+     "text": "Moses went back to Yahweh and said, “Lord,{c} why have you made things worse for these people? Why did you send me at all?"
+    },
+    {
+     "v": 23,
+     "text": "From the moment I went to Pharaoh to speak in your name, he has made things worse for these people, and you have not rescued them at all.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "5:6",
+     "text": "These were Israelite officials, set over their own people by the Egyptian slave drivers (see verse 14)."
+    },
+    {
+     "m": "b",
+     "ref": "5:16",
+     "text": "The Hebrew is hard to understand. It says literally “and your people sin.” The Septuagint says “you wrong your people.”"
+    },
+    {
+     "m": "c",
+     "ref": "5:22",
+     "text": "Hebrew Adonai, “Lord.”"
+    }
+   ],
+   "subheads": {
+    "1": "Pharaoh says no",
+    "6": "No more straw",
+    "15": "The foremen complain",
+    "22": "Moses questions God"
+   }
+  },
+  {
+   "n": 6,
+   "paras": [
+    1,
+    2,
+    10,
+    14,
+    26,
+    28
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Yahweh told Moses, “Now you will watch what I do to Pharaoh. Forced by a strong hand, he will let them go. Forced by a strong hand, he will drive them out of his land.”"
+    },
+    {
+     "v": 2,
+     "text": "God spoke to Moses again. “I am Yahweh,” he said."
+    },
+    {
+     "v": 3,
+     "text": "“Abraham, Isaac, and Jacob knew me as El Shaddai,{a} but they were not told my name, Yahweh.{b}"
+    },
+    {
+     "v": 4,
+     "text": "I also made a promise{c} to them to give them Canaan, the land where they lived as outsiders."
+    },
+    {
+     "v": 5,
+     "text": "Now I have heard the Israelites groaning under the Egyptians who enslave them, and I have remembered my promise."
+    },
+    {
+     "v": 6,
+     "text": "Tell the Israelites this: ‘I am Yahweh. I will lift the Egyptians’ heavy loads from you and set you free from slavery. I will redeem{d} you with my arm stretched out and with great acts of judgment."
+    },
+    {
+     "v": 7,
+     "text": "I will take you for my own people and be your God. Then you will realize that I, Yahweh your God, am the one who freed you from the Egyptians’ heavy loads."
+    },
+    {
+     "v": 8,
+     "text": "The land that I swore{e} to give to Abraham, Isaac, and Jacob is where I will take you, and I will hand it over to you as your own possession. I am Yahweh.’”"
+    },
+    {
+     "v": 9,
+     "text": "Moses gave the Israelites this message, but they paid no attention. Discouragement{f} and brutal slavery had worn them down."
+    },
+    {
+     "v": 10,
+     "text": "Then Yahweh said to Moses,"
+    },
+    {
+     "v": 11,
+     "text": "“Go in and order Pharaoh, Egypt’s king, to release the Israelites from his country.”"
+    },
+    {
+     "v": 12,
+     "text": "“The Israelites would not even hear me,” Moses said to Yahweh. “How will Pharaoh hear me? I am a poor speaker.”{g}"
+    },
+    {
+     "v": 13,
+     "text": "Yahweh now gave Moses and Aaron their orders about the Israelites and about Pharaoh, king of Egypt. They were to lead Israel out of the country."
+    },
+    {
+     "v": 14,
+     "text": "These were the heads of their family groups. Reuben, Israel’s oldest son, had sons named Hanoch, Pallu, Hezron, and Carmi. Those are the clans of Reuben."
+    },
+    {
+     "v": 15,
+     "text": "Simeon’s sons were Jemuel, Jamin, Ohad, Jachin, Zohar, and Shaul, whose mother was a Canaanite. Those are the clans of Simeon."
+    },
+    {
+     "v": 16,
+     "text": "Levi’s sons, in the order of their birth, were Gershon,{h} Kohath, and Merari. Levi lived 137 years."
+    },
+    {
+     "v": 17,
+     "text": "Gershon’s sons, by clan, were Libni and Shimei."
+    },
+    {
+     "v": 18,
+     "text": "Amram, Izhar, Hebron, and Uzziel were the sons of Kohath, who lived 133 years."
+    },
+    {
+     "v": 19,
+     "text": "Merari’s sons were Mahli and Mushi. These are the Levite clans by their birth order."
+    },
+    {
+     "v": 20,
+     "text": "Amram took his father’s sister Jochebed{i} as his wife, and their children were Aaron and Moses.{j} Amram’s life lasted 137 years.{k}"
+    },
+    {
+     "v": 21,
+     "text": "Korah, Nepheg, and Zichri were the sons of Izhar."
+    },
+    {
+     "v": 22,
+     "text": "Uzziel had sons named Mishael, Elzaphan, and Sithri."
+    },
+    {
+     "v": 23,
+     "text": "Elisheba{l} became Aaron’s wife. She was Amminadab’s daughter and Nahshon’s sister, and the children she bore him were Nadab, Abihu, Eleazar,{m} and Ithamar."
+    },
+    {
+     "v": 24,
+     "text": "Assir, Elkanah, and Abiasaph were the three sons of Korah, and they are the Korahite clans."
+    },
+    {
+     "v": 25,
+     "text": "Aaron’s son Eleazar married a daughter of Putiel, and she bore him Phinehas.{n} These are the heads of the Levite family groups, by clan."
+    },
+    {
+     "v": 26,
+     "text": "These are the very same Aaron and Moses whom Yahweh told, “Bring the Israelites out of Egypt, division by division.”{o}"
+    },
+    {
+     "v": 27,
+     "text": "They were the men who spoke to Pharaoh, king of Egypt, to demand that he release the Israelites. It was this same Moses and Aaron."
+    },
+    {
+     "v": 28,
+     "text": "On the day Yahweh spoke to Moses in Egypt,"
+    },
+    {
+     "v": 29,
+     "text": "“I am Yahweh,” he said. “Take to Pharaoh, king of Egypt, every word I give you.”"
+    },
+    {
+     "v": 30,
+     "text": "Moses said to Yahweh, “I speak poorly. How can I expect Pharaoh to listen?”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "6:3",
+     "text": "El Shaddai is often translated “God Almighty.” Its exact meaning is uncertain. It may mean “God of the mountain” or “the God who is enough.” God used this name with Abraham in Genesis 17:1."
+    },
+    {
+     "m": "b",
+     "ref": "6:3",
+     "text": "Or as a question: “Did I not tell them my name, Yahweh?” The name is used often in Genesis, so the point is probably that the fathers had not yet seen all that the name means: a God who keeps his promises by rescuing his people."
+    },
+    {
+     "m": "c",
+     "ref": "6:4",
+     "text": "Hebrew “covenant,” a binding promise."
+    },
+    {
+     "m": "d",
+     "ref": "6:6",
+     "text": "Redeem means to buy back a relative from slavery, as a family member would do."
+    },
+    {
+     "m": "e",
+     "ref": "6:8",
+     "text": "Literally “I lifted my hand,” which was a way of making an oath."
+    },
+    {
+     "m": "f",
+     "ref": "6:9",
+     "text": "Hebrew “shortness of spirit,” meaning they were discouraged or had no patience left."
+    },
+    {
+     "m": "g",
+     "ref": "6:12",
+     "text": "Hebrew “I am uncircumcised of lips,” which means his lips were not ready for speaking. Compare 4:10."
+    },
+    {
+     "m": "h",
+     "ref": "6:16",
+     "text": "Gershon is a different person from Moses’ son Gershom (2:22)."
+    },
+    {
+     "m": "i",
+     "ref": "6:20",
+     "text": "Jochebed probably means “Yahweh is glory.” The Septuagint and the Latin Vulgate say Jochebed was Amram’s cousin instead of his aunt."
+    },
+    {
+     "m": "j",
+     "ref": "6:20",
+     "text": "The Samaritan Pentateuch and the Septuagint add “and their sister Miriam.”"
+    },
+    {
+     "m": "k",
+     "ref": "6:20",
+     "text": "The Septuagint has a different number, 132 or 136 in some copies."
+    },
+    {
+     "m": "l",
+     "ref": "6:23",
+     "text": "Elisheba probably means “my God has promised.” It is the same name as Elizabeth in the New Testament."
+    },
+    {
+     "m": "m",
+     "ref": "6:23",
+     "text": "Eleazar means “God has helped.”"
+    },
+    {
+     "m": "n",
+     "ref": "6:25",
+     "text": "Phinehas is an Egyptian name that probably means “the Nubian.”"
+    },
+    {
+     "m": "o",
+     "ref": "6:26",
+     "text": "The Hebrew word means “armies.” Israel left Egypt in order, like an army."
+    }
+   ],
+   "subheads": {
+    "1": "Yahweh’s promise renewed",
+    "14": "Heads of the families",
+    "28": "Moses doubts again"
+   }
+  },
+  {
+   "n": 7,
+   "paras": [
+    1,
+    8,
+    14
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Yahweh told Moses, “I am making you like God{a} to Pharaoh, and your brother Aaron will be your spokesman."
+    },
+    {
+     "v": 2,
+     "text": "You will say all that I order you to say, and Aaron will tell Pharaoh to send the Israelites away from his land."
+    },
+    {
+     "v": 3,
+     "text": "I will make Pharaoh stubborn,{b} though, and I will pile up my signs and wonders in Egypt."
+    },
+    {
+     "v": 4,
+     "text": "Pharaoh will not obey you. Then I will bring my hand down on Egypt and lead out my armies, the people of Israel, with terrible judgments."
+    },
+    {
+     "v": 5,
+     "text": "When I reach out my hand against Egypt and bring the Israelites away from it, the Egyptians will know that I am Yahweh.”"
+    },
+    {
+     "v": 6,
+     "text": "Moses and Aaron obeyed Yahweh to the letter."
+    },
+    {
+     "v": 7,
+     "text": "At the time of their talks with Pharaoh, Moses was eighty years old and Aaron was eighty-three."
+    },
+    {
+     "v": 8,
+     "text": "Yahweh said to Moses and Aaron,"
+    },
+    {
+     "v": 9,
+     "text": "“If Pharaoh says to you, ‘Prove yourselves with a wonder,’ have Aaron throw his stick down in front of him, and it will change into a large snake.”{c}"
+    },
+    {
+     "v": 10,
+     "text": "Moses and Aaron entered Pharaoh’s court and did what Yahweh had commanded. There, with Pharaoh and his officials watching, Aaron threw down the stick, and it became a snake."
+    },
+    {
+     "v": 11,
+     "text": "Pharaoh summoned his own wise men and sorcerers, and the magicians{d} of Egypt used their secret arts to do the same thing."
+    },
+    {
+     "v": 12,
+     "text": "Every one of them threw down a stick, and every stick became a snake. Aaron’s stick, however, swallowed theirs."
+    },
+    {
+     "v": 13,
+     "text": "Still, Pharaoh’s heart stayed hard. He would not listen to them, as Yahweh had said he would not."
+    },
+    {
+     "v": 14,
+     "text": "Yahweh told Moses, “Pharaoh’s heart is stubborn,{e} and he refuses to free the people."
+    },
+    {
+     "v": 15,
+     "text": "Meet him in the morning, when he walks out to the water. Wait for him on the bank of the Nile, with the stick that turned into a snake in your hand."
+    },
+    {
+     "v": 16,
+     "text": "Tell him, ‘Yahweh, the God of the Hebrews, sent me to you. His order is this: “Free my people, and they will serve me in the desert.” So far you have not obeyed."
+    },
+    {
+     "v": 17,
+     "text": "So Yahweh says, “Here is how you will learn that I am Yahweh: with the stick in my hand I will strike the Nile, and its water will become blood."
+    },
+    {
+     "v": 18,
+     "text": "The Nile’s fish will die, the water will smell foul, and the Egyptians will be unable to drink from the river.”’”{f}"
+    },
+    {
+     "v": 19,
+     "text": "Yahweh told Moses, “Have Aaron take his stick and stretch his hand over every water source in Egypt: rivers, canals, ponds, and every pool. All of it will become blood. Throughout Egypt there will be blood, even in wooden buckets and stone jars.”"
+    },
+    {
+     "v": 20,
+     "text": "Moses and Aaron obeyed Yahweh. Aaron lifted the stick and struck the Nile while Pharaoh and his officials watched, and all the river water turned to blood."
+    },
+    {
+     "v": 21,
+     "text": "The fish in the Nile died, and the river smelled so bad that the Egyptians could not drink from it. Blood covered the whole land of Egypt."
+    },
+    {
+     "v": 22,
+     "text": "The magicians of Egypt, however, used their secret arts to do the same. Pharaoh’s heart stayed hard, and he would not listen to Moses and Aaron, as Yahweh had said."
+    },
+    {
+     "v": 23,
+     "text": "Pharaoh turned around and walked into his palace. Not even this made him think."
+    },
+    {
+     "v": 24,
+     "text": "All the Egyptians dug along the Nile for drinking water, because the river water was undrinkable."
+    },
+    {
+     "v": 25,
+     "text": "A full week went by after Yahweh struck the Nile."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "7:1",
+     "text": "The Hebrew word is “God” (or “a god”). Moses would speak with God’s authority, and Aaron would speak for him as a prophet speaks for God (see 4:16)."
+    },
+    {
+     "m": "b",
+     "ref": "7:3",
+     "text": "Hebrew “make hard.” See the note at 4:21."
+    },
+    {
+     "m": "c",
+     "ref": "7:9",
+     "text": "This Hebrew word is different from the one for “snake” in 4:3. It can mean a big serpent or a sea creature such as a crocodile."
+    },
+    {
+     "m": "d",
+     "ref": "7:11",
+     "text": "The Hebrew word comes from Egyptian. It means priests who knew sacred writings and magic. Jewish tradition names two of them, Jannes and Jambres (2 Timothy 3:8)."
+    },
+    {
+     "m": "e",
+     "ref": "7:14",
+     "text": "Hebrew “heavy.” See the note at 4:21."
+    },
+    {
+     "m": "f",
+     "ref": "7:18",
+     "text": "In the plague stories (chapters 7 to 11), the Samaritan Pentateuch and a Dead Sea Scroll add passages that repeat God’s words as Moses and Aaron carry them out. This translation follows the shorter Hebrew text."
+    }
+   ],
+   "subheads": {
+    "1": "God sends Moses and Aaron",
+    "8": "Aaron’s stick becomes a snake",
+    "14": "The Nile turns to blood"
+   }
+  },
+  {
+   "n": 8,
+   "paras": [
+    1,
+    5,
+    8,
+    16,
+    20,
+    25
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Yahweh told Moses,{a} “Go to Pharaoh and give him this message: ‘This is what Yahweh says: Set my people free, and they will worship me."
+    },
+    {
+     "v": 2,
+     "text": "If you refuse, I will plague your whole country with frogs."
+    },
+    {
+     "v": 3,
+     "text": "The Nile will teem with them. They will crawl into your palace, your bedroom, and even onto your bed. They will get into your officials’ houses, into your people’s homes, into your ovens, and into your bowls for kneading dough."
+    },
+    {
+     "v": 4,
+     "text": "Frogs will leap onto you, your people, and all your officials.’”"
+    },
+    {
+     "v": 5,
+     "text": "Yahweh told Moses, “Tell Aaron to hold his stick over the rivers, canals, and ponds and make frogs come up all over Egypt.”"
+    },
+    {
+     "v": 6,
+     "text": "Aaron held out his hand over the waters of Egypt, and the frogs{b} came up and covered the land."
+    },
+    {
+     "v": 7,
+     "text": "The magicians used their secret arts to do the same, and they too made frogs come up over Egypt."
+    },
+    {
+     "v": 8,
+     "text": "Pharaoh summoned Moses and Aaron. “Ask Yahweh to remove the frogs from me and from my people,” he said. “Then I will release your people to offer sacrifices to Yahweh.”"
+    },
+    {
+     "v": 9,
+     "text": "“You may decide when,{c}” Moses said. “At what time should I pray for you, for your officials, and for your people, so that the frogs are taken away from you and your homes and stay only in the Nile?”"
+    },
+    {
+     "v": 10,
+     "text": "“Tomorrow,” said Pharaoh. “It will be as you say,” Moses replied, “so that you may know no one compares to Yahweh our God."
+    },
+    {
+     "v": 11,
+     "text": "Your officials, your people, and your houses will all be free of frogs. Only the Nile will keep them.”"
+    },
+    {
+     "v": 12,
+     "text": "Moses and Aaron left Pharaoh, and Moses begged Yahweh about the frogs he had sent against Pharaoh."
+    },
+    {
+     "v": 13,
+     "text": "Yahweh carried out Moses’ request. Frogs lay dead throughout the houses, courtyards, and fields."
+    },
+    {
+     "v": 14,
+     "text": "The Egyptians piled them into heaps, and the land reeked."
+    },
+    {
+     "v": 15,
+     "text": "But when Pharaoh saw that the trouble was over, he made his heart stubborn again and would not listen to Moses and Aaron, just as Yahweh had said."
+    },
+    {
+     "v": 16,
+     "text": "Yahweh said to Moses, “Tell Aaron to strike the soil with his stick, and across all Egypt the dust will become gnats.”{d}"
+    },
+    {
+     "v": 17,
+     "text": "They did it. Aaron held out his hand with the stick and struck the dust, and gnats landed on people and animals. All the dust in Egypt turned to gnats."
+    },
+    {
+     "v": 18,
+     "text": "The magicians tried to make gnats with their secret arts, but they could not. Gnats covered people and animals."
+    },
+    {
+     "v": 19,
+     "text": "The magicians said to Pharaoh, “This is the finger of God.” Still, Pharaoh’s heart stayed hard, and he refused to listen to them, as Yahweh had predicted."
+    },
+    {
+     "v": 20,
+     "text": "Yahweh told Moses, “Rise early and stand where Pharaoh will pass as he goes down to the water. Tell him, ‘Yahweh says: Send my people out so they may serve me."
+    },
+    {
+     "v": 21,
+     "text": "Otherwise swarms of flies{e} will come from me against Pharaoh, his officials, his people, and all their houses. Egyptian homes will fill with flies, and even the ground will be black with them."
+    },
+    {
+     "v": 22,
+     "text": "That day, though, I will set apart Goshen, where my people live. No swarm will enter it, and you will know that I, Yahweh, am present in this land.{f}"
+    },
+    {
+     "v": 23,
+     "text": "I will set my people apart{g} from your people. This sign will happen tomorrow.’”"
+    },
+    {
+     "v": 24,
+     "text": "Yahweh did it. Thick swarms of flies poured into Pharaoh’s palace and into his officials’ houses, and the whole country was ruined by them."
+    },
+    {
+     "v": 25,
+     "text": "Pharaoh summoned Moses and Aaron. “Offer your sacrifices to your God,” he said, “but you must stay in this country to do it.”"
+    },
+    {
+     "v": 26,
+     "text": "“That would not be right,” Moses said. “The Egyptians find the sacrifices we make to Yahweh our God disgusting. If they saw us make those sacrifices, would they not stone us?"
+    },
+    {
+     "v": 27,
+     "text": "We need to make a three-day trip into the desert to sacrifice to Yahweh our God, just as he has told us.”"
+    },
+    {
+     "v": 28,
+     "text": "Pharaoh answered, “You may sacrifice to Yahweh your God in the desert, but you cannot travel far. And ask Yahweh to help me too.”"
+    },
+    {
+     "v": 29,
+     "text": "“Once I have left your presence,” Moses said, “I will ask Yahweh, and tomorrow the flies will go away from Pharaoh, his officials, and his people. But Pharaoh must stop playing tricks and release the people to sacrifice to Yahweh.”"
+    },
+    {
+     "v": 30,
+     "text": "Moses left Pharaoh and prayed to Yahweh."
+    },
+    {
+     "v": 31,
+     "text": "Yahweh granted Moses’ request, and every fly went away from the king, his officials, and his people. None were left."
+    },
+    {
+     "v": 32,
+     "text": "Yet this time too Pharaoh made his heart stubborn, and he did not let the people go."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "8:1",
+     "text": "In the Hebrew text, 8:1-4 are numbered 7:26-29, and 8:5-32 are numbered 8:1-28."
+    },
+    {
+     "m": "b",
+     "ref": "8:6",
+     "text": "The Hebrew says “the frog,” which means frogs in general."
+    },
+    {
+     "m": "c",
+     "ref": "8:9",
+     "text": "Literally “have the glory over me,” a polite way of letting Pharaoh pick the time."
+    },
+    {
+     "m": "d",
+     "ref": "8:16",
+     "text": "Or “lice.” The exact insect is uncertain."
+    },
+    {
+     "m": "e",
+     "ref": "8:21",
+     "text": "Hebrew “swarm” or “mixture.” The Septuagint says “dog flies.” Some Jewish teachers thought it meant a mixture of wild animals."
+    },
+    {
+     "m": "f",
+     "ref": "8:22",
+     "text": "Or “I, Yahweh, am in the middle of the land.”"
+    },
+    {
+     "m": "g",
+     "ref": "8:23",
+     "text": "So the Septuagint and the Latin Vulgate. The Hebrew says “redemption,” which may be a copying mistake for “separation.”"
+    }
+   ],
+   "subheads": {
+    "1": "Frogs everywhere",
+    "16": "Gnats from the dust",
+    "20": "Swarms of flies"
+   }
+  },
+  {
+   "n": 9,
+   "paras": [
+    1,
+    8,
+    13,
+    22,
+    27
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Yahweh said to Moses, “Go before Pharaoh and give him this word from Yahweh, the God of the Hebrews: ‘Send my people away so that they may worship me."
+    },
+    {
+     "v": 2,
+     "text": "If you still refuse to release them and keep holding them back,"
+    },
+    {
+     "v": 3,
+     "text": "the hand of Yahweh will strike your animals in the fields with a terrible disease. It will hit the horses, donkeys, camels, cattle, sheep, and goats."
+    },
+    {
+     "v": 4,
+     "text": "But Yahweh will treat Israel’s animals differently from Egypt’s, and nothing that belongs to the Israelites will die.’”"
+    },
+    {
+     "v": 5,
+     "text": "Yahweh fixed the time. “Tomorrow,” he said, “Yahweh will carry this out in the land.”"
+    },
+    {
+     "v": 6,
+     "text": "The following day Yahweh did it. Egypt’s animals died,{a} yet of the Israelites’ animals not one was lost."
+    },
+    {
+     "v": 7,
+     "text": "Pharaoh sent men to check and learned that none of Israel’s animals had died. Even so, his heart stayed stubborn, and he did not release the people."
+    },
+    {
+     "v": 8,
+     "text": "Yahweh told Moses and Aaron, “Take two fistfuls of furnace ash. Moses is to throw it toward the sky as Pharaoh watches."
+    },
+    {
+     "v": 9,
+     "text": "They will turn into fine dust that spreads over the whole land of Egypt, and it will make painful sores break out on people and animals everywhere in Egypt.”"
+    },
+    {
+     "v": 10,
+     "text": "They took ashes from the furnace and presented themselves to Pharaoh. Moses flung them skyward, and festering sores appeared on people and on animals."
+    },
+    {
+     "v": 11,
+     "text": "The magicians could not even stand in front of Moses, because they, like all the Egyptians, were covered with sores."
+    },
+    {
+     "v": 12,
+     "text": "But Yahweh made Pharaoh’s heart hard, and he would not listen to Moses and Aaron, exactly as Yahweh had told Moses."
+    },
+    {
+     "v": 13,
+     "text": "Yahweh told Moses, “Rise early in the morning, go before Pharaoh, and give him this word: ‘Yahweh, the God of the Hebrews, says, Allow my people to leave and worship me."
+    },
+    {
+     "v": 14,
+     "text": "This time I am sending every one of my plagues at you,{b} at your officials, and at your people. Then you will learn that there is nobody like me anywhere on earth."
+    },
+    {
+     "v": 15,
+     "text": "I could have reached out my hand already and wiped you and your people off the earth with a disease."
+    },
+    {
+     "v": 16,
+     "text": "Yet I have let you remain{c} for a purpose. By you I will display my power, and my name will be proclaimed across the whole earth."
+    },
+    {
+     "v": 17,
+     "text": "You continue to stand in the way of my people and will not let them leave."
+    },
+    {
+     "v": 18,
+     "text": "At this time tomorrow I will send down the heaviest hail Egypt has seen since the day it became a nation."
+    },
+    {
+     "v": 19,
+     "text": "Order your animals and everything you have in the open to be brought under cover. Every person or animal still outside when the hail falls will die.’”"
+    },
+    {
+     "v": 20,
+     "text": "Those among Pharaoh’s officials who respected Yahweh’s word hurried their servants and animals indoors."
+    },
+    {
+     "v": 21,
+     "text": "Those who ignored Yahweh’s word left their servants and animals out in the fields."
+    },
+    {
+     "v": 22,
+     "text": "Yahweh said to Moses, “Hold your hand up toward the sky. Hail will fall on all of Egypt, on people, on animals, and on every plant in the fields.”"
+    },
+    {
+     "v": 23,
+     "text": "Moses held his stick toward the sky, and Yahweh sent thunder{d} and hail, with lightning striking the ground. Yahweh rained hail down on Egypt."
+    },
+    {
+     "v": 24,
+     "text": "Hail fell, and lightning flashed through it without a break. It was the worst storm in the whole history of Egypt as a nation."
+    },
+    {
+     "v": 25,
+     "text": "Across Egypt the hail beat down everything in the open, people and animals alike. It flattened every plant in the fields and splintered every tree."
+    },
+    {
+     "v": 26,
+     "text": "Goshen, where the Israelites lived, was the one place that had no hail."
+    },
+    {
+     "v": 27,
+     "text": "Pharaoh called Moses and Aaron in. “I have sinned this time,” he said. “Yahweh is the righteous one. My people and I are the guilty ones."
+    },
+    {
+     "v": 28,
+     "text": "Ask Yahweh to stop this thunder{e} and hail, because it is more than we can bear. I will let you leave; you need not stay here a moment longer.”"
+    },
+    {
+     "v": 29,
+     "text": "“As soon as I am out of the city,” Moses told him, “I will spread my hands toward Yahweh. The thunder will cease and the hail will end, and you will see that the earth belongs to Yahweh."
+    },
+    {
+     "v": 30,
+     "text": "But you and your officials, I know, do not yet fear Yahweh God.”{f}"
+    },
+    {
+     "v": 31,
+     "text": "(The flax and barley were ruined, since barley had its heads formed and flax was in bloom."
+    },
+    {
+     "v": 32,
+     "text": "The wheat and spelt{g} were not ruined, since they come up later.)"
+    },
+    {
+     "v": 33,
+     "text": "Moses walked out of the city, away from Pharaoh, and spread his hands toward Yahweh. The thunder and the hail ceased, and the downpour ended."
+    },
+    {
+     "v": 34,
+     "text": "When the downpour, the hail, and the thunder were over, Pharaoh saw it and went on sinning. He and his officials hardened their hearts."
+    },
+    {
+     "v": 35,
+     "text": "Pharaoh’s heart stayed hard, and he did not release the Israelites, just as Yahweh had said through Moses."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "9:6",
+     "text": "This means all the animals that were out in the fields (verse 3). Animals show up again in verses 19 to 25, probably ones that had been kept indoors or were bought later."
+    },
+    {
+     "m": "b",
+     "ref": "9:14",
+     "text": "Or “against you yourself.” It may mean the plagues would be aimed at Pharaoh’s own will."
+    },
+    {
+     "m": "c",
+     "ref": "9:16",
+     "text": "Or “I have raised you up.” Paul quotes this verse in Romans 9:17."
+    },
+    {
+     "m": "d",
+     "ref": "9:23",
+     "text": "Hebrew “voices,” a common way of saying thunder. The same word is used in verses 28, 29, 33, and 34."
+    },
+    {
+     "m": "e",
+     "ref": "9:28",
+     "text": "Hebrew “voices of God,” or “mighty thunder.”"
+    },
+    {
+     "m": "f",
+     "ref": "9:30",
+     "text": "The title “Yahweh God” is rare in the first five books outside Genesis 2 and 3. The Septuagint says “the Lord.”"
+    },
+    {
+     "m": "g",
+     "ref": "9:32",
+     "text": "Or “emmer,” an old kind of wheat."
+    }
+   ],
+   "subheads": {
+    "1": "A plague on the animals",
+    "8": "Sores on everyone",
+    "13": "A warning about hail",
+    "22": "The hailstorm"
+   }
+  },
+  {
+   "n": 10,
+   "paras": [
+    1,
+    3,
+    7,
+    12,
+    16,
+    21
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Yahweh said to Moses, “Go in to Pharaoh. His heart, and the hearts of his officials, I have made stubborn, so that I can show these signs of mine among them."
+    },
+    {
+     "v": 2,
+     "text": "You will also be able to tell your children and grandchildren how harshly I dealt with Egypt and about the signs I showed there. That is how you will all know that I am Yahweh.”"
+    },
+    {
+     "v": 3,
+     "text": "Moses and Aaron went to Pharaoh with this message: “Yahweh, the God of the Hebrews, asks, ‘How long will you refuse to humble yourself before me? Release my people to serve me."
+    },
+    {
+     "v": 4,
+     "text": "Refuse, and tomorrow I will bring locusts into your land."
+    },
+    {
+     "v": 5,
+     "text": "They will cover the ground until nobody can see it. They will eat what the hail left you, and they will strip every tree growing in your fields."
+    },
+    {
+     "v": 6,
+     "text": "They will fill your houses, the houses of your officials, and the houses of every Egyptian. Neither your parents nor your grandparents ever saw such a thing since they were born.’” Then Moses turned and left Pharaoh."
+    },
+    {
+     "v": 7,
+     "text": "Pharaoh’s officials protested, “How long is this man going to be a snare for us? Let the men go and worship Yahweh their God. Can you not see that Egypt is ruined?”"
+    },
+    {
+     "v": 8,
+     "text": "Moses and Aaron were brought back to Pharaoh. “Go and worship Yahweh your God,” he said. “But exactly who will be going?”"
+    },
+    {
+     "v": 9,
+     "text": "“All of us will go,” Moses said, “young and old. Our sons and daughters will go, and so will our sheep, goats, and cattle, since we have a festival of Yahweh to observe.”"
+    },
+    {
+     "v": 10,
+     "text": "Pharaoh said, “Yahweh will be with you, all right, if I ever let your little ones go with you!{a} Look, you are plotting something evil."
+    },
+    {
+     "v": 11,
+     "text": "Not at all! Just the men may go and worship Yahweh, since that is what you were asking.” Then Moses and Aaron were driven away from Pharaoh."
+    },
+    {
+     "v": 12,
+     "text": "Yahweh said to Moses, “Hold your hand out over Egypt to bring the locusts. They will swarm over the land and eat every plant the hail left.”"
+    },
+    {
+     "v": 13,
+     "text": "Moses held out his stick over Egypt, and Yahweh drove an east wind across the land through that whole day and night. By dawn the wind had brought the locusts in."
+    },
+    {
+     "v": 14,
+     "text": "The locusts flew over all Egypt and landed throughout the country in swarms so thick that nothing like them had come before or ever will again."
+    },
+    {
+     "v": 15,
+     "text": "They hid the ground until the land turned dark. Every plant was eaten, and so was all the fruit on the trees that the hail had spared. Nothing green was left in the whole land of Egypt, on tree or in field."
+    },
+    {
+     "v": 16,
+     "text": "Pharaoh quickly called for Moses and Aaron. “I have sinned against Yahweh your God and against you,” he said."
+    },
+    {
+     "v": 17,
+     "text": "Forgive my sin one more time, I beg you. Ask Yahweh your God to take this deadly thing away from me.”"
+    },
+    {
+     "v": 18,
+     "text": "Moses left Pharaoh and prayed to Yahweh."
+    },
+    {
+     "v": 19,
+     "text": "Then Yahweh turned the wind around. A very powerful west wind{b} lifted the locusts and swept them into the Red Sea,{c} until not one was left in all the land of Egypt."
+    },
+    {
+     "v": 20,
+     "text": "Yahweh, however, made Pharaoh stubborn, and he would not release the Israelites."
+    },
+    {
+     "v": 21,
+     "text": "Yahweh said to Moses, “Hold your hand up toward the sky, and darkness will cover Egypt, a darkness so thick it can be felt.”"
+    },
+    {
+     "v": 22,
+     "text": "Moses held his hand up toward the sky, and total darkness settled over Egypt for three days."
+    },
+    {
+     "v": 23,
+     "text": "Nobody could see anyone else, and nobody left his place for three days. Where the Israelites lived, though, there was light."
+    },
+    {
+     "v": 24,
+     "text": "Again Pharaoh summoned Moses. “Go and worship Yahweh,” he said. “Leave your sheep, goats, and cattle here. Your children may go with you.”"
+    },
+    {
+     "v": 25,
+     "text": "“No,” said Moses. “You will have to supply sacrifices and burnt offerings for us to give to Yahweh our God."
+    },
+    {
+     "v": 26,
+     "text": "Our animals must go with us. Not a hoof can stay behind, because we will use some of them to worship Yahweh our God, and we will not know which ones until we get there.”"
+    },
+    {
+     "v": 27,
+     "text": "But Yahweh made Pharaoh’s heart hard, and he refused to let them go."
+    },
+    {
+     "v": 28,
+     "text": "“Get out of my sight!” Pharaoh told him. “Make sure you never see my face again. The day you do, you will die.”"
+    },
+    {
+     "v": 29,
+     "text": "“You have spoken well,” Moses said. “I will never see your face again.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "10:10",
+     "text": "Pharaoh is being sarcastic. He means “Yahweh will be with you only if I let your children go, and I never will.”"
+    },
+    {
+     "m": "b",
+     "ref": "10:19",
+     "text": "Hebrew “a sea wind,” meaning a wind from the Mediterranean Sea to the west of Egypt."
+    },
+    {
+     "m": "c",
+     "ref": "10:19",
+     "text": "Hebrew “Sea of Reeds.” The same name is used in the Bible for the Gulf of Suez, the Gulf of Aqaba, and perhaps marshy lakes near the Isthmus of Suez. Where Israel crossed (chapter 14) is uncertain."
+    }
+   ],
+   "subheads": {
+    "1": "Locusts are coming",
+    "12": "The locust swarm",
+    "21": "Darkness over Egypt"
+   }
+  }
+ ]
+}
