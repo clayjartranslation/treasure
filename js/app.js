@@ -242,7 +242,7 @@
         <header class="reader-head">
           <p class="eyebrow">${esc(book.division)}</p>
           <h1 id="chTitle">${esc(book.name)} <span class="chapter-num">Chapter ${ch.n}</span></h1>
-          ${SPEECH ? '<button type="button" class="btn listen-btn" id="listenBtn"></button>' : '<p class="muted listen-na">Listening is not available in this browser.</p>'}
+          ${(SPEECH || window.Audio) ? '<button type="button" class="btn listen-btn" id="listenBtn"></button>' : '<p class="muted listen-na">Listening is not available in this browser.</p>'}
         </header>
         <div class="scripture">${pre}${paras}</div>
         <section class="notes" aria-labelledby="notesTitle">
@@ -665,7 +665,7 @@
   // ---------- Listening (Web Speech API) ----------
   const SPEECH = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
   const synth = SPEECH ? window.speechSynthesis : null;
-  const au = { active: false, playing: false, items: [], i: 0, c: 0, token: 0, advancing: false, utt: null, t0: 0, book: null, ch: null, voices: [], rt: 0, lastEl: null };
+  const au = { active: false, playing: false, items: [], i: 0, c: 0, token: 0, advancing: false, utt: null, t0: 0, book: null, ch: null, voices: [], rt: 0, lastEl: null, mode: 'tts', rec: null, times: [], switching: false };
   const player = $('#player');
 
   function chunkText(text) {
@@ -797,30 +797,36 @@
     if (au.playing) au.rt = setTimeout(speakNow, 90);
   }
   function startAudio(fromVerse) {
-    const ctx = readerCtx; if (!SPEECH || !ctx) return;
+    const ctx = readerCtx; if (!ctx) return;
     clearTimeout(au.rt);
-    if (synth.speaking || synth.pending) { try { synth.cancel(); } catch (e) {} }
+    if (SPEECH && (synth.speaking || synth.pending)) { try { synth.cancel(); } catch (e) {} }
     au.items = buildItems({ name: ctx.name }, ctx.ch);
     au.book = ctx.id; au.ch = ctx.ch.n; au.c = 0;
     au.i = 0;
     if (fromVerse) { const k = au.items.findIndex((it) => it.kind === 'verse' && it.v === fromVerse); if (k >= 0) au.i = k; }
     au.active = true; au.playing = true;
     player.hidden = false; document.body.classList.add('has-player');
+    if (startNarration(ctx, fromVerse)) return;   // a recording, when there is one for this chapter
+    if (!SPEECH) { stopAudio(); toast('Listening is not available for this chapter on this browser.'); return; }
+    au.mode = 'tts';
     speakNow();                        // called straight from the tap, as iOS requires
   }
   function listenFrom(v) { startAudio(v); }
   function pauseAudio() {
     if (!au.active) return;
+    if (au.mode === 'rec') return pauseRec();
     au.playing = false; au.token++; clearTimeout(au.rt);
     try { synth.cancel(); } catch (e) {}
     updatePlayer();
   }
   function resumeAudio() {            // starts the current sentence again: more dependable on iOS than synth.resume()
     if (!au.active) return;
+    if (au.mode === 'rec') return resumeRec();
     au.playing = true; speakNow();
   }
   function stopAudio() {
     au.active = false; au.playing = false; au.token++; clearTimeout(au.rt);
+    stopRec();
     if (SPEECH) { try { synth.cancel(); } catch (e) {} }
     player.hidden = true; document.body.classList.remove('has-player');
     main.querySelectorAll('.speaking').forEach((x) => x.classList.remove('speaking'));
@@ -829,6 +835,7 @@
   function togglePlay() { if (!au.active) startAudio(); else if (au.playing) pauseAudio(); else resumeAudio(); }
   function skipVerse(dir) {
     if (!au.active) return;
+    if (au.mode === 'rec') return skipRec(dir);
     let k = au.i + dir;
     while (k >= 0 && k < au.items.length && au.items[k].kind !== 'verse') k += dir;
     if (k < 0 || k >= au.items.length) { if (dir > 0) return finishChapter(); k = 0; }
@@ -849,6 +856,7 @@
     const nxt = settings.autoNext ? nextTarget() : null;
     if (!nxt) { stopAudio(); toast('Finished the chapter.'); return; }
     au.advancing = true; au.token++;
+    chainRec(nxt);                      // recordings roll straight into the next chapter, even with the screen locked
     location.hash = nxt;                // reader() starts the new chapter when it has drawn it
   }
   function updatePlayer() {
@@ -874,22 +882,209 @@
   $('#plOpts').addEventListener('click', () => { const o = $('#plOptions'); o.hidden = !o.hidden; $('#plOpts').setAttribute('aria-expanded', String(!o.hidden)); });
   $('#plRate').value = String(settings.rate);
   if ($('#plRate').value === '') $('#plRate').value = '1';
-  $('#plRate').addEventListener('change', (e) => { settings.rate = parseFloat(e.target.value) || 1; saveSettings(); if (au.active && au.playing) restartSoon(); });
-  $('#plVoice').addEventListener('change', (e) => { settings.voice = e.target.value; const pv = voiceList().find((x) => x.voiceURI === settings.voice); settings.voiceName = pv ? pv.name : ''; fillVoices(); saveSettings(); if (au.active && au.playing) restartSoon(); });
+  $('#plRate').addEventListener('change', (e) => { settings.rate = parseFloat(e.target.value) || 1; saveSettings(); if (au.mode === 'rec') audioEl.playbackRate = settings.rate; else if (au.active && au.playing) restartSoon(); });
+  $('#plVoice').addEventListener('change', (e) => { settings.voice = e.target.value; const pv = voiceList().find((x) => x.voiceURI === settings.voice); settings.voiceName = pv ? pv.name : ''; fillVoices(); saveSettings(); if (au.active && au.playing && au.mode !== 'rec') restartSoon(); });
   $('#plAuto').checked = settings.autoNext !== false;
   $('#plAuto').addEventListener('change', (e) => { settings.autoNext = e.target.checked; saveSettings(); });
   main.addEventListener('click', (e) => { if (e.target.closest('#listenBtn')) togglePlay(); });
   // If the phone silently stopped speaking (screen lock, a call, Siri), show Play instead of pretending to play.
   document.addEventListener('visibilitychange', () => {
-    if (!SPEECH || !au.active || document.hidden || !au.playing) return;
+    if (!SPEECH || au.mode === 'rec' || !au.active || document.hidden || !au.playing) return;
     setTimeout(() => { if (au.playing && !synth.speaking && !synth.pending) pauseAudio(); }, 400);
   });
   window.addEventListener('pagehide', () => { if (SPEECH) try { synth.cancel(); } catch (e) {} });
   // Safety net: some browsers never send "end" for a sentence. If nothing is speaking for a while, move on.
   setInterval(() => {
-    if (!SPEECH || !au.active || !au.playing || document.hidden) return;
+    if (!SPEECH || au.mode === 'rec' || !au.active || !au.playing || document.hidden) return;
     if (!synth.speaking && !synth.pending && Date.now() - au.t0 > 2500) { au.token++; stepForward(); }
   }, 1500);
+
+  // ---------- Recorded narration (Hugging Face) ----------
+  // Natural recordings (Kokoro-82M, Apache-2.0) live in a public dataset. A chapter plays from its recording only when the
+  // recording's source-text hash matches the text on screen; otherwise the device voice reads it (see /audio README).
+  const REC_BASE = 'https://huggingface.co/datasets/pdoggjoe/clay-jar-treasure-audio/resolve/main/';
+  const REC_VOICES = { af_heart: 'Recorded voice, female', am_michael: 'Recorded voice, male' };
+  const audioEl = document.createElement('audio');
+  audioEl.id = 'plAudio'; audioEl.preload = 'auto'; audioEl.setAttribute('playsinline', ''); audioEl.hidden = true;
+  player.appendChild(audioEl);
+  let recIndex = null; const recCache = new Map();
+  function loadRecIndex() {
+    return fetch(REC_BASE + 'index.json').then((r) => (r.ok ? r.json() : null))
+      .then((j) => { if (j && j.voices && Object.keys(j.voices).length) { recIndex = j; fillNarr(); } return recIndex; }).catch(() => null);
+  }
+  const recIndexP = loadRecIndex();
+  function narrVoice() {
+    if (!recIndex) return '';
+    const c = settings.narr;
+    if (c === 'device') return '';
+    if (c && recIndex.voices[c]) return c;
+    return recIndex.voices.af_heart ? 'af_heart' : recIndex.voices.am_michael ? 'am_michael' : '';
+  }
+  function fillNarr() {
+    const sel = $('#plNarr'), wrap = $('#plNarrWrap'); if (!sel || !wrap) return;
+    const vs = Object.keys(REC_VOICES).filter((v) => recIndex && recIndex.voices[v]);
+    if (!vs.length) { wrap.hidden = true; return; }
+    sel.innerHTML = vs.map((v) => `<option value="${v}">${REC_VOICES[v]}</option>`).join('') + '<option value="device">Device voice</option>';
+    sel.value = narrVoice() || 'device'; wrap.hidden = false; $('#plNarrNote').hidden = false; updateNarrNote();
+  }
+  async function sha12(str) {
+    const d = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+    return Array.from(new Uint8Array(d)).slice(0, 6).map((b) => b.toString(16).padStart(2, '0')).join('');
+  }
+  const chapterHash = (ch) => sha12(ch.verses.map((v) => v.text).join('\n') + (ch.title ? '\n' + ch.title : ''));
+  function recFor(bookId, ch, voice) {
+    voice = voice || narrVoice(); if (!voice) return null;
+    const key = voice + '/' + bookId + '/' + ch.n;
+    if (recCache.has(key)) return recCache.get(key);
+    const ent = { done: false, info: null, promise: null };
+    const idx = recIndex && recIndex.voices[voice] && recIndex.voices[voice][bookId];
+    const want = idx && idx[String(ch.n)];
+    if (!want || !(window.crypto && crypto.subtle)) { ent.done = true; ent.promise = Promise.resolve(null); }
+    else ent.promise = (async () => {
+      try {
+        if ((await chapterHash(ch)) !== want) return null;            // text changed since it was recorded: use the device voice
+        const base = REC_BASE + voice + '/' + bookId + '/' + ch.n;
+        const r = await fetch(base + '.json'); if (!r.ok) return null;
+        const meta = await r.json(); if (meta.h !== want) return null;
+        ent.info = { url: base + '.opus', meta, book: bookId, ch: ch.n, voice };
+        return ent.info;
+      } catch (e) { return null; }
+    })().then((i) => { ent.done = true; return i; });
+    recCache.set(key, ent); return ent;
+  }
+  function nextFor(id, n) {
+    if (!catalog) return null;
+    const b = catalog.books.find((x) => x.id === id); if (!b) return null;
+    const later = b.translated.filter((m) => m > n).sort((x, y) => x - y)[0];
+    if (later) return { id, n: later };
+    const k = catalog.books.findIndex((x) => x.id === id);
+    const nb = catalog.books.slice(k + 1).find((x) => x.translated.length && x.file);
+    return nb ? { id: nb.id, n: nb.translated[0] } : null;
+  }
+  function prefetchNext(id, n) {
+    if (!settings.autoNext || !recIndex) return;
+    const nx = nextFor(id, n); if (!nx) return;
+    loadBook(nx.id).then((bk) => { const c = bk && bk.chapters.find((x) => x.n === nx.n); if (c) recFor(nx.id, c); }).catch(() => {});
+  }
+  async function prepNarration(book, ch) {
+    try {
+      await recIndexP;
+      const e = recFor(book.id, ch);
+      if (e) await e.promise;
+      updateNarrNote();
+      if (e && e.info) prefetchNext(book.id, ch.n);
+    } catch (err) {}
+  }
+  function updateNarrNote() {
+    const n = $('#plNarrNote'); if (!n || !recIndex) return;
+    const v = narrVoice();
+    if (!v) { n.textContent = 'Reading with your device voice.'; return; }
+    if (!readerCtx) { n.textContent = ''; return; }
+    const e = recCache.get(v + '/' + readerCtx.id + '/' + readerCtx.ch.n);
+    n.textContent = e && e.done ? (e.info ? 'A recording is ready for this chapter.' : 'There is no recording of this chapter yet, so your device voice reads it.') : '';
+  }
+  function startNarration(ctx, fromVerse) {
+    const e = recFor(ctx.id, ctx.ch);
+    if (!e || (e.done && !e.info)) { au.mode = 'tts'; return false; }
+    au.mode = 'rec';
+    if (e.info) { playRec(e.info, fromVerse); return true; }
+    const tok = ++au.token;                                             // still checking the recording: wait for it
+    e.promise.then((info) => {
+      if (tok !== au.token || !au.active) return;
+      if (info) playRec(info, fromVerse); else { au.mode = 'tts'; if (SPEECH) speakNow(); else stopAudio(); }
+    });
+    return true;
+  }
+  const recTimes = (info) => au.items.map((it) => (it.kind === 'verse' ? info.meta.v[String(it.v)] : info.meta[it.kind]));
+  function playRec(info, fromVerse) {
+    au.rec = info; au.times = recTimes(info); au.i = 0;
+    let start = 0;
+    if (fromVerse) { const k = au.items.findIndex((it) => it.kind === 'verse' && it.v === fromVerse); if (k >= 0 && au.times[k] != null) { au.i = k; start = au.times[k]; } }
+    au.switching = true; au.mode = 'rec';
+    if (audioEl.getAttribute('data-src') !== info.url) { audioEl.src = info.url; audioEl.setAttribute('data-src', info.url); }
+    audioEl.playbackRate = Number(settings.rate) || 1;
+    const seek = () => { try { audioEl.currentTime = start; } catch (e) {} };
+    if (audioEl.readyState >= 1) seek(); else audioEl.addEventListener('loadedmetadata', seek, { once: true });
+    au.playing = true;
+    const pr = audioEl.play();
+    if (pr && pr.catch) pr.catch((err) => { if (au.mode === 'rec' && au.active && err && err.name !== 'AbortError') { pauseRec(); toast('The recording could not start. Tap play to try again.'); } });
+    au.switching = false;
+    setMediaSession(); markSpeaking(); updatePlayer();
+    prefetchNext(info.book, info.ch);
+  }
+  function pauseRec() { au.playing = false; au.token++; try { audioEl.pause(); } catch (e) {} updatePlayer(); if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused'; }
+  function resumeRec() {
+    au.playing = true; updatePlayer();
+    const pr = audioEl.play();
+    if (pr && pr.catch) pr.catch(() => { pauseRec(); toast('The recording could not start. Tap play to try again.'); });
+    if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing';
+  }
+  function stopRec() {
+    if (au.mode !== 'rec' && !au.rec) return;
+    try { audioEl.pause(); } catch (e) {}
+    au.mode = 'tts'; au.rec = null; au.times = [];
+    if ('mediaSession' in navigator) { try { navigator.mediaSession.playbackState = 'none'; } catch (e) {} }
+  }
+  function skipRec(dir) {
+    let k = au.i + dir;
+    const cur = au.items[au.i];
+    if (dir < 0 && cur && cur.kind === 'verse' && au.times[au.i] != null && audioEl.currentTime - au.times[au.i] > 2.5) k = au.i;   // first tap goes back to the start of this verse
+    else while (k >= 0 && k < au.items.length && (au.items[k].kind !== 'verse' || au.times[k] == null)) k += dir;
+    if (k >= au.items.length) return finishChapter();
+    if (k < 0) { try { audioEl.currentTime = 0; } catch (e) {} au.i = 0; }
+    else { try { audioEl.currentTime = au.times[k]; } catch (e) {} au.i = k; }
+    markSpeaking(); updatePlayer();
+  }
+  function chainRec(nxt) {
+    if (au.mode !== 'rec' || !au.rec) return;
+    const m = /^#\/read\/([^/]+)\/(\d+)/.exec(nxt); if (!m) return;
+    const e = recCache.get(au.rec.voice + '/' + m[1] + '/' + m[2]);
+    if (!e || !e.info) return;
+    au.book = m[1]; au.ch = +m[2]; au.items = []; au.i = 0;
+    playRec(e.info);
+  }
+  function syncRecItems(ch) {
+    au.items = buildItems({ name: readerCtx.name }, ch); au.times = recTimes(au.rec); au.i = 0;
+    markSpeaking(); updatePlayer();
+  }
+  function setMediaSession() {
+    if (!('mediaSession' in navigator) || !au.rec) return;
+    try {
+      const bk = catalog && catalog.books.find((x) => x.id === au.book);
+      const ms = navigator.mediaSession;
+      ms.metadata = new MediaMetadata({ title: `${bk ? bk.name : ''} ${au.ch}`, artist: NAME, album: NAME, artwork: [{ src: new URL('icons/icon-512.png', location.href).href, sizes: '512x512', type: 'image/png' }] });
+      ms.playbackState = 'playing';
+      ms.setActionHandler('play', () => { if (au.active) resumeAudio(); });
+      ms.setActionHandler('pause', () => pauseAudio());
+      ms.setActionHandler('previoustrack', () => skipVerse(-1));
+      ms.setActionHandler('nexttrack', () => skipVerse(1));
+    } catch (e) {}
+  }
+  audioEl.addEventListener('timeupdate', () => {
+    if (au.mode !== 'rec' || !au.active || !au.times.length) return;
+    const t = audioEl.currentTime + 0.05; let k = -1;
+    for (let i = 0; i < au.times.length; i++) if (au.times[i] != null && au.times[i] <= t) k = i;
+    if (k >= 0 && k !== au.i) { au.i = k; markSpeaking(); updatePlayer(); }
+  });
+  audioEl.addEventListener('ended', () => { if (au.mode === 'rec' && au.active && au.playing) finishChapter(); });
+  audioEl.addEventListener('pause', () => {            // lock screen, headphones, a phone call
+    if (au.mode === 'rec' && au.active && au.playing && !audioEl.ended && !au.switching) { au.playing = false; updatePlayer(); }
+  });
+  audioEl.addEventListener('play', () => { if (au.mode === 'rec' && au.active && !au.playing) { au.playing = true; updatePlayer(); } });
+  audioEl.addEventListener('error', () => {            // the recording is unreachable: carry on with the device voice
+    if (au.mode !== 'rec' || !au.active) return;
+    const was = au.playing; au.mode = 'tts'; au.rec = null; au.times = [];
+    if (SPEECH && was) { au.items = au.items.length ? au.items : buildItems({ name: readerCtx.name }, readerCtx.ch); speakNow(); }
+    else { stopAudio(); toast('The recording could not be loaded.'); }
+  });
+  $('#plNarr').addEventListener('change', (e) => {
+    settings.narr = e.target.value; saveSettings();
+    if (au.active) {
+      const it = au.items[au.i], v = it && it.kind === 'verse' ? it.v : 0, was = au.playing;
+      stopAudio(); if (was) startAudio(v || undefined);
+    }
+    updateNarrNote();
+  });
 
   // Called by reader() after it draws a chapter.
   function afterReaderRender(book, ch, idx, verse) {
@@ -897,10 +1092,12 @@
     // Leaving the chapter that is being read aloud stops the voice, unless this is the automatic move to the next chapter.
     if (au.active && !au.advancing && !(au.book === book.id && au.ch === ch.n)) stopAudio();
     updatePlayer();
+    prepNarration(book, ch);
     if (au.active && au.book === book.id && au.ch === ch.n) markSpeaking();
     if (au.advancing) {
       au.advancing = false;
-      if (au.active) { au.playing = true; startAudio(); }
+      if (au.active && au.mode === 'rec' && au.rec && au.book === book.id && au.ch === ch.n && au.playing) syncRecItems(ch);
+      else if (au.active) { au.playing = true; startAudio(); }
     }
     trackPosition();
   }

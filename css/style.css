@@ -387,3 +387,6 @@ body.has-player .toast { bottom: calc(5.75rem + env(safe-area-inset-bottom)); }
 label.btn { cursor: pointer; }
 input[type="file"]:focus-visible + * { outline: 2px solid var(--clay); }
 @media print { .hlbar, .player, .toast, .listen-btn { display: none !important; } }
+
+/* Recorded narration menu: the hidden attribute must win over the flex label style */
+.player-opts [hidden], #plNarrWrap[hidden], #plNarrNote[hidden] { display: none !important; }
