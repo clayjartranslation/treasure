@@ -872,7 +872,7 @@
     const now = $('#plNow');
     if (now && au.active) {
       const bk = catalog && catalog.books.find((x) => x.id === au.book);
-      now.textContent = `${bk ? bk.name : ''} ${au.ch}${it && it.kind === 'verse' ? ':' + it.v : ''}${au.playing ? '' : ' (paused)'}`;
+      now.textContent = `${bk ? bk.name : ''} ${au.ch}${it && it.kind === 'verse' ? ':' + it.v : ''}${au.playing ? '' : ' (paused)'}${au.spk && au.mode === 'rec' ? ' · ' + au.spk : ''}`;
     }
   }
   $('#plPlay').addEventListener('click', togglePlay);
@@ -903,7 +903,9 @@
   // Natural recordings (Kokoro-82M, Apache-2.0) live in a public dataset. A chapter plays from its recording only when the
   // recording's source-text hash matches the text on screen; otherwise the device voice reads it (see /audio README).
   const REC_BASE = 'https://huggingface.co/datasets/pdoggjoe/clay-jar-treasure-audio/resolve/main/';
-  const REC_VOICES = { af_heart: 'Recorded voice, female', am_michael: 'Recorded voice, male' };
+  const REC_VOICES = { af_heart: 'Recorded voice, female', am_michael: 'Recorded voice, male', drama_f: 'Dramatized (cast, music, sounds), female narrator', drama_m: 'Dramatized (cast, music, sounds), male narrator' };
+  // A dramatized chapter that is not recorded yet plays in the matching plain recorded voice (and that falls back to the device voice).
+  const REC_FALLBACK = { drama_f: 'af_heart', drama_m: 'am_michael' };
   const audioEl = document.createElement('audio');
   audioEl.id = 'plAudio'; audioEl.preload = 'auto'; audioEl.setAttribute('playsinline', ''); audioEl.hidden = true;
   player.appendChild(audioEl);
@@ -935,6 +937,16 @@
   function recFor(bookId, ch, voice) {
     voice = voice || narrVoice(); if (!voice) return null;
     const key = voice + '/' + bookId + '/' + ch.n;
+    if (recCache.has(key)) return recCache.get(key);
+    const first = recOne(bookId, ch, voice), fb = REC_FALLBACK[voice];
+    if (!fb) { recCache.set(key, first); return first; }
+    const ent = { done: false, info: null, promise: null, fellBack: false };
+    const fin = (info, fell) => { ent.info = info ? Object.assign({}, info, { sel: voice }) : null; ent.fellBack = !!(info && fell); ent.done = true; return ent.info; };
+    ent.promise = first.promise.then((i) => (i ? fin(i, false) : recOne(bookId, ch, fb).promise.then((j) => fin(j, true)))).catch(() => fin(null, false));
+    recCache.set(key, ent); return ent;
+  }
+  function recOne(bookId, ch, voice) {
+    const key = 'r/' + voice + '/' + bookId + '/' + ch.n;
     if (recCache.has(key)) return recCache.get(key);
     const ent = { done: false, info: null, promise: null };
     const idx = recIndex && recIndex.voices[voice] && recIndex.voices[voice][bookId];
@@ -981,7 +993,7 @@
     if (!v) { n.textContent = 'Reading with your device voice.'; return; }
     if (!readerCtx) { n.textContent = ''; return; }
     const e = recCache.get(v + '/' + readerCtx.id + '/' + readerCtx.ch.n);
-    n.textContent = e && e.done ? (e.info ? 'A recording is ready for this chapter.' : 'There is no recording of this chapter yet, so your device voice reads it.') : '';
+    n.textContent = e && e.done ? (e.info ? (e.fellBack ? 'There is no dramatized recording of this chapter yet, so the regular recorded voice reads it.' : 'A recording is ready for this chapter.') : 'There is no recording of this chapter yet, so your device voice reads it.') : '';
   }
   function startNarration(ctx, fromVerse) {
     const e = recFor(ctx.id, ctx.ch);
@@ -1022,7 +1034,7 @@
   function stopRec() {
     if (au.mode !== 'rec' && !au.rec) return;
     try { audioEl.pause(); } catch (e) {}
-    au.mode = 'tts'; au.rec = null; au.times = [];
+    au.mode = 'tts'; au.rec = null; au.times = []; au.spk = '';
     if ('mediaSession' in navigator) { try { navigator.mediaSession.playbackState = 'none'; } catch (e) {} }
   }
   function skipRec(dir) {
@@ -1038,7 +1050,7 @@
   function chainRec(nxt) {
     if (au.mode !== 'rec' || !au.rec) return;
     const m = /^#\/read\/([^/]+)\/(\d+)/.exec(nxt); if (!m) return;
-    const e = recCache.get(au.rec.voice + '/' + m[1] + '/' + m[2]);
+    const e = recCache.get((au.rec.sel || au.rec.voice) + '/' + m[1] + '/' + m[2]);
     if (!e || !e.info) return;
     au.book = m[1]; au.ch = +m[2]; au.items = []; au.i = 0;
     playRec(e.info);
@@ -1060,7 +1072,15 @@
       ms.setActionHandler('nexttrack', () => skipVerse(1));
     } catch (e) {}
   }
+  // Dramatized recordings carry meta.sp = [[seconds, speaker name or ''], ...]; the name of the voice speaking is shown next to the verse.
+  function updateSpeaker() {
+    const sp = au.mode === 'rec' && au.active && au.rec && au.rec.meta && au.rec.meta.sp;
+    let n = '';
+    if (sp) { const t = audioEl.currentTime + 0.05; for (let i = 0; i < sp.length; i++) { if (sp[i][0] <= t) n = sp[i][1] || ''; else break; } }
+    if (n !== (au.spk || '')) { au.spk = n; updatePlayer(); }
+  }
   audioEl.addEventListener('timeupdate', () => {
+    updateSpeaker();
     if (au.mode !== 'rec' || !au.active || !au.times.length) return;
     const t = audioEl.currentTime + 0.05; let k = -1;
     for (let i = 0; i < au.times.length; i++) if (au.times[i] != null && au.times[i] <= t) k = i;
