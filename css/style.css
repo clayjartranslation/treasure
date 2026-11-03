@@ -390,3 +390,14 @@ input[type="file"]:focus-visible + * { outline: 2px solid var(--clay); }
 
 /* Recorded narration menu: the hidden attribute must win over the flex label style */
 .player-opts [hidden], #plNarrWrap[hidden], #plNarrNote[hidden] { display: none !important; }
+
+/* Sleep timer (listening options) */
+.pl-sleep { display: grid; gap: .5rem; border-top: 1px solid var(--line); padding-top: .5rem; }
+.pl-sleep[hidden], .pl-sleep-custom[hidden], .pl-sleep-err[hidden] { display: none !important; }
+.pl-sleep-custom { display: flex; align-items: center; justify-content: space-between; gap: .75rem; font-size: .92rem; font-weight: 600; }
+.pl-sleep-custom label { font-weight: 600; }
+.pl-sleep-custom input { font: inherit; font-size: 1rem; font-weight: 400; width: 6rem; min-height: 2.5rem; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink); padding: .3rem .5rem; text-align: right; }
+.pl-sleep-row { display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
+.pl-sleep-left { font-size: .92rem; font-variant-numeric: tabular-nums; color: var(--ink); }
+.pl-sleep-go { min-height: 2.5rem; padding: .3rem .9rem; }
+.pl-sleep-err { color: #b3261e; margin: 0; }

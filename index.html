@@ -144,6 +144,25 @@
       <p class="pl-help" id="plNarrNote" hidden></p>
       <label>Voice <select id="plVoice"><option value="">Automatic</option></select></label>
       <label class="chk"><input type="checkbox" id="plAuto"> Keep going into the next chapter</label>
+      <div class="pl-sleep" id="plSleepBox">
+        <label>Sleep timer
+          <select id="plSleep" aria-label="Sleep timer">
+            <option value="off">Off</option><option value="5">5 minutes</option><option value="10">10 minutes</option><option value="15">15 minutes</option>
+            <option value="30">30 minutes</option><option value="45">45 minutes</option><option value="60">60 minutes</option><option value="90">90 minutes</option>
+            <option value="eoc">End of chapter</option><option value="custom">Custom…</option>
+          </select>
+        </label>
+        <div class="pl-sleep-custom" id="plSleepCustom" hidden>
+          <label for="plSleepMin">Minutes (1 to 600)</label>
+          <input type="number" id="plSleepMin" inputmode="numeric" pattern="[0-9]*" min="1" max="600" step="1" autocomplete="off" enterkeyhint="done">
+        </div>
+        <p class="pl-help pl-sleep-err" id="plSleepErr" role="alert" hidden></p>
+        <div class="pl-sleep-row">
+          <span class="pl-sleep-left" id="plSleepLeft" aria-live="off">Sleep timer is off.</span>
+          <button type="button" class="btn pl-sleep-go" id="plSleepGo">Start timer</button>
+        </div>
+        <p class="pl-help">Audio fades out and pauses when the timer ends. On an iPhone the volume cannot be faded by a web page, so it simply pauses.</p>
+      </div>
       <p class="pl-help"><strong id="plHq"></strong> Device voices come from your phone or computer. On an iPhone or iPad, for a more natural voice: open <em>Settings &gt; Accessibility &gt; Spoken Content &gt; Voices &gt; English</em>, download a <em>Premium</em> or <em>Enhanced</em> voice (such as Ava or Zoe), then come back and pick it above.</p>
     </div>
   </section>

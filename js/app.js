@@ -9,7 +9,7 @@
   const TM = '';
 
   // ---------- Settings ----------
-  const settings = Object.assign({ theme: 'auto', size: 19, notes: true, resume: false, rate: 1, voice: '', autoNext: true }, readJSON('ctb-settings'));
+  const settings = Object.assign({ theme: 'auto', size: 19, notes: true, resume: false, rate: 1, voice: '', autoNext: true, sleepChoice: 'off', sleepCustom: 20 }, readJSON('ctb-settings'));
   function readJSON(k) { try { return JSON.parse(localStorage.getItem(k) || '{}'); } catch (e) { return {}; } }
   function saveSettings() { try { localStorage.setItem('ctb-settings', JSON.stringify(settings)); } catch (e) {} }
   function applySettings() {
@@ -665,6 +665,7 @@
   // ---------- Listening (Web Speech API) ----------
   const SPEECH = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
   const synth = SPEECH ? window.speechSynthesis : null;
+  const sl = { endAt: 0, eoc: false, fading: false, iv: 0, volOk: null };   // sleep timer state
   const au = { active: false, playing: false, items: [], i: 0, c: 0, token: 0, advancing: false, utt: null, t0: 0, book: null, ch: null, voices: [], rt: 0, lastEl: null, mode: 'tts', rec: null, times: [], switching: false };
   const player = $('#player');
 
@@ -853,6 +854,7 @@
     return nb ? `#/read/${nb.id}/${nb.translated[0]}` : null;
   }
   function finishChapter() {
+    if (sl.eoc) { sleepReset(); stopAudio(); toast('Sleep timer: stopped at the end of the chapter.'); return; }
     const nxt = settings.autoNext ? nextTarget() : null;
     if (!nxt) { stopAudio(); toast('Finished the chapter.'); return; }
     au.advancing = true; au.token++;
@@ -872,7 +874,7 @@
     const now = $('#plNow');
     if (now && au.active) {
       const bk = catalog && catalog.books.find((x) => x.id === au.book);
-      now.textContent = `${bk ? bk.name : ''} ${au.ch}${it && it.kind === 'verse' ? ':' + it.v : ''}${au.playing ? '' : ' (paused)'}${au.spk && au.mode === 'rec' ? ' · ' + au.spk : ''}`;
+      now.textContent = `${bk ? bk.name : ''} ${au.ch}${it && it.kind === 'verse' ? ':' + it.v : ''}${au.playing ? '' : ' (paused)'}${au.spk && au.mode === 'rec' ? ' · ' + au.spk : ''}${sleepSuffix()}`;
     }
   }
   $('#plPlay').addEventListener('click', togglePlay);
@@ -909,6 +911,88 @@
   const audioEl = document.createElement('audio');
   audioEl.id = 'plAudio'; audioEl.preload = 'auto'; audioEl.setAttribute('playsinline', ''); audioEl.hidden = true;
   player.appendChild(audioEl);
+  // ---- Sleep timer: counts down by the clock (Date.now), so it stays right if the screen locks.
+  // Fades the recording's volume over the last few seconds where the browser allows it (not iPhone), then pauses.
+  const SLEEP_FADE_MS = 8000;
+  const sleepActive = () => sl.endAt > 0 || sl.eoc;
+  function sleepFmt(ms) {
+    const t = Math.max(0, Math.ceil(ms / 1000)), h = Math.floor(t / 3600), m = Math.floor((t % 3600) / 60), s = t % 60;
+    return (h ? h + ':' + String(m).padStart(2, '0') : m) + ':' + String(s).padStart(2, '0');
+  }
+  function sleepSuffix() { return sl.eoc ? ' · Sleep: end of chapter' : sl.endAt ? ' · Sleep ' + sleepFmt(sl.endAt - Date.now()) : ''; }
+  function volumeAdjustable() {                        // iPhone and iPad ignore element.volume
+    if (sl.volOk == null) { try { const v = audioEl.volume; audioEl.volume = 0.5; sl.volOk = Math.abs(audioEl.volume - 0.5) < 0.01; audioEl.volume = v; } catch (e) { sl.volOk = false; } }
+    return sl.volOk;
+  }
+  function sleepRestoreVolume() { sl.fading = false; try { audioEl.volume = 1; } catch (e) {} }
+  function sleepRender() {
+    const go = $('#plSleepGo'), left = $('#plSleepLeft'); if (!go || !left) return;
+    const on = sleepActive();
+    go.textContent = on ? 'Cancel timer' : 'Start timer';
+    left.textContent = sl.eoc ? 'Stops at the end of this chapter.' : sl.endAt ? 'Stops in ' + sleepFmt(sl.endAt - Date.now()) : 'Sleep timer is off.';
+    const c = $('#plSleep').value === 'custom'; $('#plSleepCustom').hidden = !c;
+    if (au.active) updatePlayer();
+  }
+  function sleepReset() {                              // forget the running timer; keeps the remembered choice
+    sl.endAt = 0; sl.eoc = false; clearInterval(sl.iv); sl.iv = 0;
+    if (sl.fading) sleepRestoreVolume();
+    sleepRender();
+  }
+  function sleepCancel() {
+    const was = sleepActive(); sleepReset();
+    if (was) toast('Sleep timer cancelled.');
+  }
+  function sleepFire() {
+    sleepReset();
+    if (au.active && au.playing) pauseAudio();
+    sleepRestoreVolume();
+    toast('Sleep timer ended. Playback paused.');
+  }
+  function sleepCheck() {
+    if (!sl.endAt) return;
+    const left = sl.endAt - Date.now();
+    if (left <= 0) return sleepFire();
+    if (left <= SLEEP_FADE_MS && au.active && au.playing && au.mode === 'rec' && volumeAdjustable()) {
+      sl.fading = true;
+      try { audioEl.volume = Math.max(0, Math.min(1, left / SLEEP_FADE_MS)); } catch (e) {}
+    }
+    sleepRender();
+  }
+  function sleepStartMs(ms) {
+    sleepReset();
+    sl.endAt = Date.now() + ms;
+    sl.iv = setInterval(sleepCheck, 500);
+    sleepRender();
+  }
+  function sleepShowErr(msg) { const e = $('#plSleepErr'); e.textContent = msg || ''; e.hidden = !msg; }
+  function sleepChoose(start) {                        // read the select (and custom box), then start or cancel
+    const v = $('#plSleep').value; sleepShowErr('');
+    settings.sleepChoice = v; saveSettings();
+    if (v === 'off') { sleepCancel(); return; }
+    if (v === 'eoc') { sleepReset(); sl.eoc = true; sleepRender(); toast('Sleep timer: stops at the end of this chapter.'); return; }
+    let min;
+    if (v === 'custom') {
+      if (!start) { sleepRender(); return; }
+      const raw = $('#plSleepMin').value.trim();
+      min = /^\d+$/.test(raw) ? parseInt(raw, 10) : NaN;
+      if (!(min >= 1 && min <= 600)) { sleepShowErr('Enter a whole number of minutes from 1 to 600.'); return; }
+      settings.sleepCustom = min; saveSettings();
+    } else min = parseInt(v, 10);
+    sleepStartMs(min * 60000);
+    toast(`Sleep timer set for ${min} minute${min === 1 ? '' : 's'}.`);
+  }
+  (function initSleep() {
+    const sel = $('#plSleep'); if (!sel) return;
+    sel.value = [...sel.options].some((o) => o.value === settings.sleepChoice) ? settings.sleepChoice : 'off';
+    $('#plSleepMin').value = String(settings.sleepCustom || 20);
+    sel.addEventListener('change', () => { sleepChoose(sleepActive() && sel.value !== 'custom'); });
+    $('#plSleepGo').addEventListener('click', () => { if (sleepActive()) sleepCancel(); else if (sel.value === 'off') sleepShowErr('Pick a time first.'); else sleepChoose(true); });
+    $('#plSleepMin').addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); e.target.blur(); sleepChoose(true); } });
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) sleepCheck(); });
+    audioEl.addEventListener('timeupdate', sleepCheck);         // keeps firing in the background while audio plays
+    audioEl.addEventListener('play', () => { if (!sl.fading) try { audioEl.volume = 1; } catch (e) {} });
+    sleepRender();
+  })();
   let recIndex = null; const recCache = new Map();
   function loadRecIndex() {
     return fetch(REC_BASE + 'index.json').then((r) => (r.ok ? r.json() : null))
