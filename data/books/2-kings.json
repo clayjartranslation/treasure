@@ -1,0 +1,4640 @@
+{
+ "id": "2-kings",
+ "name": "2 Kings",
+ "division": "Old Testament",
+ "sourceNote": "Written freshly, thought for thought, from the oldest Hebrew, Greek, and Aramaic witnesses (the Masoretic Text with the Dead Sea Scrolls, the Septuagint, and the Samaritan Pentateuch). © 2026 Jose Santiago. All rights reserved.",
+ "chapters": [
+  {
+   "n": 1,
+   "paras": [
+    1,
+    2,
+    9,
+    17
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Once Ahab was dead, the land of Moab{a} broke away from Israel’s rule."
+    },
+    {
+     "v": 2,
+     "text": "In Samaria, King Ahaziah fell through the wooden screen of his upstairs room and was badly hurt. So he sent men off with this message: “Go to Ekron{c} and ask Baal-zebub,{b} its god, if I am going to get better.”"
+    },
+    {
+     "v": 3,
+     "text": "Then the angel of Yahweh spoke to Elijah from Tishbe. “Get going,” he said. “Go out on the road and stop the messengers sent by Samaria’s king. Ask them, ‘Has Israel run out of God? Is that why you are on your way to ask Baal-zebub, Ekron’s god?’"
+    },
+    {
+     "v": 4,
+     "text": "So here is Yahweh’s message for the king: ‘You climbed into that bed, and you will never climb out of it. Death is coming for you.’” Then Elijah left."
+    },
+    {
+     "v": 5,
+     "text": "The king’s men came back early. “What are you doing here?” he asked."
+    },
+    {
+     "v": 6,
+     "text": "They said, “A man met us on the road. He told us to turn around and give you a message: ‘Yahweh says, “Is there no God in Israel, that you send men to ask Baal-zebub, Ekron’s god? Since you did that, the bed under you now is the bed you will die in. You will not rise from it.”’”"
+    },
+    {
+     "v": 7,
+     "text": "The king asked, “This man who stopped you and said all this, what did he look like?”"
+    },
+    {
+     "v": 8,
+     "text": "They answered, “He wore a coat of hair{d} and had a leather belt around his middle.” “Elijah from Tishbe!” said the king. “It was him.”"
+    },
+    {
+     "v": 9,
+     "text": "The king sent an officer with his company of fifty soldiers to bring Elijah back. They found the prophet seated on a hilltop. The officer called up to him, “Man of God! The king orders you down here.”"
+    },
+    {
+     "v": 10,
+     "text": "Elijah answered the officer, “If I really am a man of God, then may fire drop out of heaven and eat you up, along with all fifty of your soldiers!” Down came the fire. It burned up the officer and his company."
+    },
+    {
+     "v": 11,
+     "text": "So the king sent a second officer, again with fifty soldiers. This one shouted, “Man of God, these are the king’s orders: come down right now!”"
+    },
+    {
+     "v": 12,
+     "text": "Elijah said, “If I am truly God’s man, let fire come from the sky and destroy you and your fifty.” Again God’s fire fell. It burned up that officer and his whole company too."
+    },
+    {
+     "v": 13,
+     "text": "Then the king sent a third officer with fifty men. This officer climbed the hill and dropped to his knees before Elijah. He begged, “Man of God, please think of my life, and the lives of these fifty men who serve you, as worth something."
+    },
+    {
+     "v": 14,
+     "text": "Twice fire has come from the sky and wiped out the officers who came before me and all their men. But please, spare my life.”"
+    },
+    {
+     "v": 15,
+     "text": "The angel of Yahweh said to Elijah, “Go with him. You do not need to be afraid of him.” So Elijah stood up and went with the officer to the king."
+    },
+    {
+     "v": 16,
+     "text": "Elijah told the king, “Here is what Yahweh says: ‘You sent men off to Ekron to ask its god Baal-zebub, as though Israel had no God who could answer you. Because of that, you will never leave the bed you are in. You will die.’”"
+    },
+    {
+     "v": 17,
+     "text": "And Ahaziah died, just as Yahweh had said through Elijah. He had no son, so Jehoram{e} became king next. At that time Jehoram son of Jehoshaphat was in his second year as Judah’s king.{f}"
+    },
+    {
+     "v": 18,
+     "text": "Everything else Ahaziah did is recorded in the official history of Israel’s kings.{g}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "1:1",
+     "text": "Moab was the land east of the Dead Sea. People explained the name as “from father” (Genesis 19:37)."
+    },
+    {
+     "m": "b",
+     "ref": "1:2",
+     "text": "Baal-zebub means “lord of flies.” It was probably a mocking change of Baal-zebul, “Baal the prince.” The Septuagint calls him “Baal Fly.”"
+    },
+    {
+     "m": "c",
+     "ref": "1:2",
+     "text": "Ekron was one of the five Philistine cities. Its name means “uprooting” or “barren place.”"
+    },
+    {
+     "m": "d",
+     "ref": "1:8",
+     "text": "Or “he was a hairy man.” The Hebrew says “a lord of hair.”"
+    },
+    {
+     "m": "e",
+     "ref": "1:17",
+     "text": "Jehoram (also spelled Joram) means “Yahweh is lifted up.”"
+    },
+    {
+     "m": "f",
+     "ref": "1:17",
+     "text": "The Septuagint does not have the words in this verse after “as Yahweh had said through Elijah.” Compare 3:1, which says Jehoram of Israel began to rule in Jehoshaphat’s eighteenth year."
+    },
+    {
+     "m": "g",
+     "ref": "1:18",
+     "text": "The Hebrew says “the Book of the Annals of the Kings of Israel.” The Septuagint adds a short summary of Jehoram’s rule here: he ruled twelve years, did evil but not as much as his mother, removed Baal’s stone pillars, but kept the sins of Jeroboam."
+    }
+   ],
+   "subheads": {
+    "1": "King Ahaziah Asks the Wrong God",
+    "9": "Fire on the Hilltop",
+    "17": "Ahaziah Dies"
+   }
+  },
+  {
+   "n": 2,
+   "paras": [
+    1,
+    9,
+    13,
+    19,
+    23
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "The time came when Yahweh was going to lift Elijah up to heaven in a whirlwind. Elijah and Elisha were leaving Gilgal.{a}"
+    },
+    {
+     "v": 2,
+     "text": "Elijah said, “Stay here, Elisha. Yahweh is sending me to Bethel.”{b} But Elisha said, “As surely as Yahweh lives, and as surely as you live, I will not leave your side.” So both of them went down to Bethel."
+    },
+    {
+     "v": 3,
+     "text": "Bethel was home to a group of prophets. They came out and asked Elisha, “Did you know that Yahweh will take your master away from you today?”{c} “I know,” he said. “Do not talk about it.”"
+    },
+    {
+     "v": 4,
+     "text": "Then Elijah said, “Elisha, wait here. Yahweh is sending me to Jericho.” Elisha answered, “I promise by Yahweh’s life and yours, I will not leave you.” So they went on to Jericho."
+    },
+    {
+     "v": 5,
+     "text": "The group of prophets in Jericho came up to Elisha. “Your master will be taken from you today. Yahweh is going to do it,” they said. “Did you know?” He said, “Yes, I know. Be quiet about it.”"
+    },
+    {
+     "v": 6,
+     "text": "Elijah said again, “Please stay here. Now Yahweh wants me at the Jordan.” Elisha replied, “By the life of Yahweh, and by your life too, I will stay with you.” So the two kept walking together."
+    },
+    {
+     "v": 7,
+     "text": "Fifty men from the group of prophets went along. They stood and watched from far off while Elijah and Elisha stopped at the Jordan."
+    },
+    {
+     "v": 8,
+     "text": "Elijah rolled up his coat and hit the river with it. The water split apart, part to the right and part to the left. The ground under the river was dry, and they crossed on it."
+    },
+    {
+     "v": 9,
+     "text": "On the other side, Elijah spoke. “Soon I will be taken from you. What would you like me to do for you first?” Elisha answered, “I ask for a double share{d} of your spirit.”"
+    },
+    {
+     "v": 10,
+     "text": "“That is a hard thing to ask,” Elijah said. “But if you see me as I am taken from you, it will be yours. If you do not see me, it will not.”"
+    },
+    {
+     "v": 11,
+     "text": "They kept walking along and talking. All of a sudden a fiery chariot and fiery horses rushed between the two men. And a whirlwind carried Elijah up to heaven."
+    },
+    {
+     "v": 12,
+     "text": "Elisha watched it happen. He kept shouting, “My father! My father! You were Israel’s chariots and horsemen!” Then Elijah was gone from sight. Elisha grabbed his own clothes and ripped them in two pieces."
+    },
+    {
+     "v": 13,
+     "text": "Elijah’s coat had fallen off him. Elisha picked it up, went back to the Jordan, and stood at the edge of the water."
+    },
+    {
+     "v": 14,
+     "text": "He hit the water with the coat that had fallen from Elijah. “Where is Yahweh, Elijah’s God?” he cried. As he struck the water, it split to the right and the left, and Elisha walked across.{e}"
+    },
+    {
+     "v": 15,
+     "text": "The prophets from Jericho were watching from the other side.{f} “The spirit that was on Elijah now rests on Elisha!” they said. They hurried out to him and bowed with their faces to the ground."
+    },
+    {
+     "v": 16,
+     "text": "“Sir,” they said, “we have fifty strong men here who serve you. Please send them out to search. The Spirit of Yahweh may have carried your master off and dropped him on a mountaintop or down in a valley.” Elisha told them, “Do not send them.”"
+    },
+    {
+     "v": 17,
+     "text": "But they kept begging until he felt too embarrassed to keep saying no. “All right, send them,” he said. So fifty men searched for three days. They could not find Elijah."
+    },
+    {
+     "v": 18,
+     "text": "Elisha was still in Jericho when they came back. He said, “I told you not to go, didn’t I?”"
+    },
+    {
+     "v": 19,
+     "text": "Some men from Jericho came to Elisha. “Sir,” they said, “this city sits in a fine place, as you can tell. Yet the water is bad, and the land makes babies die before birth.”{g}"
+    },
+    {
+     "v": 20,
+     "text": "“Bring me a new bowl,” Elisha said. “Fill it with salt.” They did."
+    },
+    {
+     "v": 21,
+     "text": "Elisha went out to the spring where the water came from and tossed in the salt. He said, “Yahweh says, ‘I have made this water healthy. It will not bring death anymore, and babies will not be lost because of it.’”"
+    },
+    {
+     "v": 22,
+     "text": "The water has stayed good ever since, as Elisha had said."
+    },
+    {
+     "v": 23,
+     "text": "From Jericho, Elisha went up the road toward Bethel. A crowd of young boys{h} ran out of the town and started mocking him. “Go away, baldy!” they shouted. “Go on up, bald head!”"
+    },
+    {
+     "v": 24,
+     "text": "Elisha turned and looked at them. Then he called down a curse on them in Yahweh’s name. Two mother bears charged out of the forest. They mauled forty-two of those boys."
+    },
+    {
+     "v": 25,
+     "text": "Elisha went on to Mount Carmel. Later he went back to Samaria."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "2:1",
+     "text": "Gilgal means “circle (of stones).” This Gilgal was probably in the hills north of Bethel, not the one near Jericho."
+    },
+    {
+     "m": "b",
+     "ref": "2:2",
+     "text": "Bethel means “house of God.”"
+    },
+    {
+     "m": "c",
+     "ref": "2:3",
+     "text": "The Hebrew says “from over your head,” meaning from being your master. The same is true in verse 5."
+    },
+    {
+     "m": "d",
+     "ref": "2:9",
+     "text": "The Hebrew says “a mouth of two.” This was the share an oldest son received from his father (Deuteronomy 21:17)."
+    },
+    {
+     "m": "e",
+     "ref": "2:14",
+     "text": "Some readers join the Hebrew words for “he too” with the question: “Where is Yahweh, the God of Elijah, indeed?”"
+    },
+    {
+     "m": "f",
+     "ref": "2:15",
+     "text": "The Hebrew says “from opposite.”"
+    },
+    {
+     "m": "g",
+     "ref": "2:19",
+     "text": "Or “the land is barren.” The same Hebrew word is in verse 21."
+    },
+    {
+     "m": "h",
+     "ref": "2:23",
+     "text": "The Hebrew words can mean young boys or young men."
+    }
+   ],
+   "subheads": {
+    "1": "Elijah Is Taken Up",
+    "13": "Elisha Takes Elijah’s Place",
+    "19": "Elisha Heals the Water",
+    "23": "Boys Mock Elisha"
+   }
+  },
+  {
+   "n": 3,
+   "paras": [
+    1,
+    4,
+    9,
+    21
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Ahab’s son Jehoram took the throne of Israel in Samaria when Jehoshaphat had been ruling Judah for eighteen years. Jehoram stayed king for twelve years."
+    },
+    {
+     "v": 2,
+     "text": "Yahweh saw the evil that Jehoram did. Yet his parents had done worse than he did. He removed the stone pillar for Baal that his father had set up."
+    },
+    {
+     "v": 3,
+     "text": "But Jeroboam son of Nebat had led Israel into sin, and Jehoram held tight to those same sins. He never gave them up."
+    },
+    {
+     "v": 4,
+     "text": "Mesha,{a} Moab’s king, kept large flocks of sheep. He owed Israel’s king a yearly payment of 100,000 lambs, plus the wool from 100,000 rams."
+    },
+    {
+     "v": 5,
+     "text": "After Ahab died, though, Moab’s king refused to obey Israel’s king any longer."
+    },
+    {
+     "v": 6,
+     "text": "So King Jehoram left Samaria and gathered the whole army of Israel for war."
+    },
+    {
+     "v": 7,
+     "text": "He sent word to Jehoshaphat, who ruled Judah: “Moab’s king is in revolt and will not obey me. Would you march out with me to fight Moab?” Jehoshaphat sent back, “Yes, I will come. Count me as one with you. My soldiers and my horses are yours to use.”"
+    },
+    {
+     "v": 8,
+     "text": "Jehoshaphat asked, “Which way should we attack?” Jehoram said, “We will take the road through the desert of Edom.”{b}"
+    },
+    {
+     "v": 9,
+     "text": "So Israel’s king set out, with Judah’s king and Edom’s king beside him. They took a long, roundabout way. After seven days of marching, there was no water left for the soldiers or for the animals that came with them."
+    },
+    {
+     "v": 10,
+     "text": "Israel’s king cried out, “This is terrible! Yahweh has brought us three kings out here just to let Moab capture us!”"
+    },
+    {
+     "v": 11,
+     "text": "But Jehoshaphat said, “Surely one of Yahweh’s prophets is around here. Then we could ask Yahweh through him.” One of Israel’s officers spoke up. “Elisha son of Shaphat is here. He was Elijah’s helper. He used to pour water on Elijah’s hands for washing.”"
+    },
+    {
+     "v": 12,
+     "text": "“He speaks Yahweh’s word,” Jehoshaphat said. So the three kings, of Israel, Judah and Edom, went down to the prophet."
+    },
+    {
+     "v": 13,
+     "text": "Elisha said to the king of Israel, “Why should I help you?{c} Go ask the prophets your father and mother listened to!” Israel’s king answered, “No! It is Yahweh who brought the three of us here, to give us to Moab.”"
+    },
+    {
+     "v": 14,
+     "text": "Elisha said, “I serve Yahweh of Armies, and as surely as he lives, I would not even glance at you if it were not for Jehoshaphat, Judah’s king. I respect him."
+    },
+    {
+     "v": 15,
+     "text": "Now someone bring me a man who plays the harp.” As the music played, Yahweh’s power came on Elisha."
+    },
+    {
+     "v": 16,
+     "text": "He said, “Yahweh says to dig this dry valley full of pools.{d}"
+    },
+    {
+     "v": 17,
+     "text": "Yahweh tells you, ‘You will not feel any wind, and you will not see any rain. Even so, water will pour into this dry valley until it is full. Then you can drink, and so can your cattle and your other animals.’"
+    },
+    {
+     "v": 18,
+     "text": "For Yahweh, that is a small matter. He is going to put Moab in your power as well."
+    },
+    {
+     "v": 19,
+     "text": "You will conquer each city with a wall and each fine town. You will chop down each good tree. You will stop up each spring, and you will ruin each good field by throwing rocks on it.”"
+    },
+    {
+     "v": 20,
+     "text": "The next morning, about the time the morning grain offering{e} was given, water came flowing from the direction of Edom. Soon water covered the land."
+    },
+    {
+     "v": 21,
+     "text": "Word reached Moab that the kings were marching against them. So every man who could carry weapons, young and old, was called up. They took their places along the border."
+    },
+    {
+     "v": 22,
+     "text": "They rose early. The sun was shining on the water, and to the Moabites across the valley it looked as red as blood."
+    },
+    {
+     "v": 23,
+     "text": "“That is blood!” they said. “Those kings must have fought each other with swords{f} and killed one another. Come on, Moab, let’s go grab what they left!”"
+    },
+    {
+     "v": 24,
+     "text": "But when the Moabites reached Israel’s camp, the Israelites jumped up and attacked them, and the Moabites ran away. Israel’s army chased them into Moab and kept on killing them.{g}"
+    },
+    {
+     "v": 25,
+     "text": "They tore down the towns. Each soldier threw a rock onto every good field, until the fields were full of rocks. They stopped up every spring and cut down every good tree. At last only Kir-hareseth{h} was left with its stone walls. Soldiers with slings formed a ring around the city and struck at it."
+    },
+    {
+     "v": 26,
+     "text": "The battle was going against him, and Moab’s king could see it. Taking 700 men armed with swords, he tried to cut a path through to Edom’s king. They could not do it."
+    },
+    {
+     "v": 27,
+     "text": "So he took his oldest son, the one who was to become king after him. He offered the boy as a burnt sacrifice on top of the city wall. Then great anger{i} came against Israel. They left Moab’s king and went back to their own land."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "3:4",
+     "text": "Mesha may mean “salvation.” His own carved stone, the Moabite Stone (about 840 B.C.), tells of Moab breaking away, from Moab’s side."
+    },
+    {
+     "m": "b",
+     "ref": "3:8",
+     "text": "Edom means “red.” It was the land south of the Dead Sea."
+    },
+    {
+     "m": "c",
+     "ref": "3:13",
+     "text": "The Hebrew says “What to me and to you?”"
+    },
+    {
+     "m": "d",
+     "ref": "3:16",
+     "text": "Or “trenches.” The Hebrew says “Make this valley pits, pits.”"
+    },
+    {
+     "m": "e",
+     "ref": "3:20",
+     "text": "The Hebrew says “at the going up of the minchah,” the morning grain offering."
+    },
+    {
+     "m": "f",
+     "ref": "3:23",
+     "text": "The meaning of the Hebrew is not certain. It may mean “they have surely killed each other with the sword.”"
+    },
+    {
+     "m": "g",
+     "ref": "3:24",
+     "text": "The meaning of the Hebrew is not certain. Some ancient copies say “they went on striking.”"
+    },
+    {
+     "m": "h",
+     "ref": "3:25",
+     "text": "Kir-hareseth means “city of broken pottery” or “wall of broken pottery.” It is probably modern Kerak in Jordan."
+    },
+    {
+     "m": "i",
+     "ref": "3:27",
+     "text": "The Hebrew word qetseph means “anger” or “fury.” It does not say whose anger it was."
+    }
+   ],
+   "subheads": {
+    "1": "Jehoram Rules Israel",
+    "4": "Moab Breaks Away",
+    "9": "Elisha Promises Water",
+    "21": "Moab Is Beaten"
+   }
+  },
+  {
+   "n": 4,
+   "paras": [
+    1,
+    8,
+    11,
+    18,
+    32,
+    38,
+    42
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "One of the prophets in Elisha’s group had died. His wife came crying to Elisha. “My husband served you,” she said, “and you know how he honored Yahweh. He left a debt behind. Now the lender wants my two boys. He says they must work for him as slaves to pay it.”"
+    },
+    {
+     "v": 2,
+     "text": "“How can I help you?” Elisha asked. “What do you have at home?” She said, “Sir, there is nothing in my house but one small jar of olive oil.”"
+    },
+    {
+     "v": 3,
+     "text": "Elisha said, “Go to all your neighbors. Ask each one to lend you empty jars. Get lots of them."
+    },
+    {
+     "v": 4,
+     "text": "Next, take your sons inside with you and close the door tight. Pour oil from your little jar into each big one. Put each full jar off to the side.”"
+    },
+    {
+     "v": 5,
+     "text": "She left him and did it. She shut herself and her sons inside. They kept handing her jars, and she kept pouring."
+    },
+    {
+     "v": 6,
+     "text": "Finally every jar was full. “Hand me another,” she told one son. “There aren’t any more,” he said. At that moment the oil stopped flowing."
+    },
+    {
+     "v": 7,
+     "text": "She went back and told Elisha, God’s man. He said, “Now sell the oil and pay off what you owe. You and your sons can live on the money left over.”"
+    },
+    {
+     "v": 8,
+     "text": "One day Elisha came to Shunem.{a} A rich woman of that town invited him in and would not take no for an answer. He had to stay for a meal. From then on, whenever he traveled that way, he stopped at her house to eat."
+    },
+    {
+     "v": 9,
+     "text": "She said to her husband, “This man who keeps coming by is a holy man. He belongs to God. I am sure of it."
+    },
+    {
+     "v": 10,
+     "text": "Let’s build a little room with walls up on our roof for him. We can put a bed in there, with a table, a chair and a lamp. When he visits, he can use it.”"
+    },
+    {
+     "v": 11,
+     "text": "Some time later, Elisha arrived and went up to that room to lie down."
+    },
+    {
+     "v": 12,
+     "text": "“Ask the woman from Shunem to come,” he told Gehazi,{b} his helper. Gehazi called her, and she came up to Elisha’s room."
+    },
+    {
+     "v": 13,
+     "text": "Elisha told Gehazi, “Say to her, ‘You have taken such good care of us. What can we do for you? Should we speak to the king about you, or to the army’s commander?’” She answered, “My own family is all around me here. I am fine.”"
+    },
+    {
+     "v": 14,
+     "text": "Later Elisha talked it over with Gehazi. “Then what is there that we could do for her?” Gehazi said, “Well, she has no son. And her husband is an old man.”"
+    },
+    {
+     "v": 15,
+     "text": "“Bring her here,” Elisha said. So Gehazi called her again, and she waited in the doorway."
+    },
+    {
+     "v": 16,
+     "text": "Elisha told her, “When this season comes around again, a son of your own will be in your arms.” “Please, sir,” she said, “you are God’s man. Do not fool me like that.”"
+    },
+    {
+     "v": 17,
+     "text": "But she became pregnant. A year later, at the very time Elisha had named, she gave birth to a son."
+    },
+    {
+     "v": 18,
+     "text": "The boy grew older. One day he went out to his father, who was out in the fields with the workers cutting grain."
+    },
+    {
+     "v": 19,
+     "text": "Suddenly the boy cried to his father, “My head hurts! My head!” His father told a servant, “Take him home to his mother.”"
+    },
+    {
+     "v": 20,
+     "text": "The servant lifted him up and carried him home. His mother held him on her lap until noon. Then he died."
+    },
+    {
+     "v": 21,
+     "text": "She carried him upstairs and laid him on the bed of God’s man. She closed the door and went out."
+    },
+    {
+     "v": 22,
+     "text": "She called out to her husband, “I need a donkey and one of the young workers. I must rush to God’s man, and I will be right back.”"
+    },
+    {
+     "v": 23,
+     "text": "“Why go today?” he asked. “It is not a new moon festival or a Sabbath.” “It will be fine,” she said.{c}"
+    },
+    {
+     "v": 24,
+     "text": "She put a saddle on the donkey. Then she told her servant, “Hurry, drive the donkey! Keep going fast unless I say to slow down.”"
+    },
+    {
+     "v": 25,
+     "text": "So she left and came to Mount Carmel, where God’s man was. Elisha saw her coming in the distance. “Look,” he told Gehazi, “it is the woman from Shunem."
+    },
+    {
+     "v": 26,
+     "text": "Run out to her. Ask her, ‘Are you all right? Is your husband all right? Is your boy all right?’” She told Gehazi, “Everything is fine.”"
+    },
+    {
+     "v": 27,
+     "text": "But when she got up the mountain to God’s man, she threw herself down and held on to his feet. Gehazi stepped in to pull her off. But God’s man said, “Leave her alone! Something has made her very sad. Yahweh has hidden it from me. He has not let me know.”"
+    },
+    {
+     "v": 28,
+     "text": "Then she spoke. “Sir, was it my idea to ask you for a son? I begged you not to fool me with hope.”{d}"
+    },
+    {
+     "v": 29,
+     "text": "Elisha told Gehazi, “Tie up your long robe so you can run. Take my walking stick and go. If someone greets you, do not greet him back. If someone says hello, do not answer. Lay my walking stick across the child’s face.”"
+    },
+    {
+     "v": 30,
+     "text": "The mother said, “I promise by Yahweh’s life, and by yours, I am not leaving without you.” So Elisha rose and went along with her."
+    },
+    {
+     "v": 31,
+     "text": "Gehazi went on ahead. He placed the stick on the boy’s face, but the boy made no sound, and nothing showed he was alive. So Gehazi went back to meet Elisha. “The boy is still dead,” he said. “He did not wake up.”"
+    },
+    {
+     "v": 32,
+     "text": "Elisha reached the house. The boy was there, stretched out dead on Elisha’s bed."
+    },
+    {
+     "v": 33,
+     "text": "Elisha entered and closed the door behind him. Now he and the child were alone. Then he prayed to Yahweh."
+    },
+    {
+     "v": 34,
+     "text": "He climbed up and lay stretched out over the boy. Mouth to mouth, eye to eye, palm to palm, he covered him. As he lay there, the child’s body began to warm up."
+    },
+    {
+     "v": 35,
+     "text": "Elisha got off the bed. He walked back and forth across the room one time. Then he climbed up again and stretched out on the boy. The boy sneezed seven times and opened his eyes."
+    },
+    {
+     "v": 36,
+     "text": "Elisha called Gehazi. “Go get the woman from Shunem,” he said. So Gehazi did. When she came in, Elisha told her, “Here is your son. Take him.”"
+    },
+    {
+     "v": 37,
+     "text": "The mother came in and dropped down at Elisha’s feet with her face to the floor. Then she picked up her son and carried him out."
+    },
+    {
+     "v": 38,
+     "text": "Elisha went back to Gilgal. There was no food in that area at that time. One day the prophets were sitting with him, and he told his servant, “Set the big pot on the fire. Cook up a stew for this group of prophets.”"
+    },
+    {
+     "v": 39,
+     "text": "One man went out into the open country looking for plants to eat. He came across a wild vine and picked its wild gourds.{e} He gathered up as many as his coat would hold. When he came back, he cut them up and dropped them into the pot. Nobody knew what they were."
+    },
+    {
+     "v": 40,
+     "text": "They dished out the stew and handed it around. But as soon as they tasted it, they cried out, “Man of God, this pot will kill us!” They could not eat it."
+    },
+    {
+     "v": 41,
+     "text": "“Fetch some flour,” said Elisha. He tossed it in and told them, “Now serve it to the men.” And the stew did them no harm."
+    },
+    {
+     "v": 42,
+     "text": "A man came from Baal-shalishah.{f} He brought God’s man twenty loaves of barley bread, baked from the first grain of the harvest. He also brought a sack{g} of fresh grain. “Let the people have it,” Elisha said. “They can eat it.”"
+    },
+    {
+     "v": 43,
+     "text": "“How can this feed a hundred men?” his servant asked. But Elisha said again, “Give it to them. Yahweh says, ‘They will eat, and some will be left.’”"
+    },
+    {
+     "v": 44,
+     "text": "So the servant served the food. The men ate, and there was some left over, just as Yahweh had said."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "4:8",
+     "text": "Shunem was in the Jezreel Valley, near modern Sulam. The meaning of the name is uncertain."
+    },
+    {
+     "m": "b",
+     "ref": "4:12",
+     "text": "Gehazi may mean “valley of vision.”"
+    },
+    {
+     "m": "c",
+     "ref": "4:23",
+     "text": "The Hebrew says “Shalom,” meaning “peace.” The same word is in verse 26."
+    },
+    {
+     "m": "d",
+     "ref": "4:28",
+     "text": "Or “Do not lie to me.”"
+    },
+    {
+     "m": "e",
+     "ref": "4:39",
+     "text": "This was probably colocynth, a bitter wild gourd that makes people very sick."
+    },
+    {
+     "m": "f",
+     "ref": "4:42",
+     "text": "Baal-shalishah means “lord of Shalishah” (“the third”). It was near Gilgal in the hills of Ephraim."
+    },
+    {
+     "m": "g",
+     "ref": "4:42",
+     "text": "The meaning of the Hebrew word for “sack” is uncertain. The Septuagint says “and cakes of figs.”"
+    }
+   ],
+   "subheads": {
+    "1": "A Widow’s Oil Keeps Flowing",
+    "8": "A Woman of Shunem Gets a Son",
+    "18": "The Boy Dies",
+    "32": "Elisha Brings the Boy Back",
+    "38": "Poison in the Stew",
+    "42": "Bread for a Hundred Men"
+   }
+  },
+  {
+   "n": 5,
+   "paras": [
+    1,
+    8,
+    15
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Naaman{a} was in charge of the army of Aram’s king. His master thought very highly of him, because Yahweh had used Naaman to give Aram victory. He was a brave soldier, but he had a terrible skin disease.{b}"
+    },
+    {
+     "v": 2,
+     "text": "Bands of soldiers from Aram had gone on raids into Israel. One of the people they took was a young girl. Now she worked for Naaman’s wife."
+    },
+    {
+     "v": 3,
+     "text": "One day the girl said to the woman she served, “If only my master would visit the prophet who lives in Samaria! That prophet could heal his skin.”"
+    },
+    {
+     "v": 4,
+     "text": "Naaman went to the king and told him everything the Israelite girl had said."
+    },
+    {
+     "v": 5,
+     "text": "“Go ahead,” said Aram’s king. “I will write a letter for you to take to Israel’s king.” So Naaman set out. He took along about 750 pounds of silver,{c} about 150 pounds of gold,{d} and ten sets of fancy robes."
+    },
+    {
+     "v": 6,
+     "text": "He brought Israel’s king the letter, which said, “The man who hands you this letter is Naaman, my servant. I have sent him so you can cure his skin disease.”"
+    },
+    {
+     "v": 7,
+     "text": "Israel’s king read it and tore his robes. “Do I have God’s power over life and death?” he cried. “This man wants me to cure someone of a skin disease! You can all see it: he is looking for an excuse to go to war.”"
+    },
+    {
+     "v": 8,
+     "text": "Elisha, God’s man, heard about the king tearing his robes. So he sent the king a message. “Why did you tear your robes?” he asked. “Have the man come to me. He will learn that Israel has a prophet.”"
+    },
+    {
+     "v": 9,
+     "text": "Naaman came with his horses and chariots. He stopped in front of the door of Elisha’s house."
+    },
+    {
+     "v": 10,
+     "text": "Elisha did not come out. He sent someone to tell Naaman, “Go to the Jordan River and wash yourself seven times. Then your body will be made new and clean.”"
+    },
+    {
+     "v": 11,
+     "text": "That made Naaman angry, and he left. “I was sure the prophet would come out to me himself,” he said. “I thought he would stand there and pray in the name of Yahweh his God. I pictured him waving his hand over the sore spot to heal it."
+    },
+    {
+     "v": 12,
+     "text": "Back home in Damascus we have the Abana{e} River and the Pharpar River. Aren’t they better than any water in Israel? Couldn’t I bathe in those and be made clean?” He turned around and stormed off, furious."
+    },
+    {
+     "v": 13,
+     "text": "Naaman’s servants came up to him. “Sir,”{f} they said, “suppose the prophet had told you to do something hard. Wouldn’t you have done it? He only asked you to wash and be clean. Surely you can do that!”"
+    },
+    {
+     "v": 14,
+     "text": "So Naaman went down to the Jordan. He dipped under the water seven times, as God’s man had said. His skin became fresh and smooth, like a young boy’s. He was healed."
+    },
+    {
+     "v": 15,
+     "text": "Then Naaman and all the people traveling with him went back to God’s man. Naaman stood before him and said, “Now I am sure of it. In all the world, there is no God except in Israel. Please, sir, let me give you a present.”{g}"
+    },
+    {
+     "v": 16,
+     "text": "Elisha answered, “I serve Yahweh. As surely as he lives, I will not take anything.” Naaman kept trying to make him take it, but Elisha would not."
+    },
+    {
+     "v": 17,
+     "text": "“Then please do one thing for me,” Naaman said. “Let me take home as much dirt as two mules can carry.{h} From now on I will never offer a burnt offering or any sacrifice to another god. I will offer them only to Yahweh."
+    },
+    {
+     "v": 18,
+     "text": "But there is one thing I pray Yahweh will forgive. My master goes into the temple of Rimmon{i} to worship, and I must go with him. He holds on to my arm for support, so I have to bow when he bows there. When I bow down in that temple, may Yahweh forgive me for it.”"
+    },
+    {
+     "v": 19,
+     "text": "“Go in peace,” Elisha told him. Naaman had traveled a short way{j}"
+    },
+    {
+     "v": 20,
+     "text": "when Gehazi, the servant of Elisha, God’s man, said to himself, “My master let this man from Aram off too easily. He did not take any of the gifts Naaman brought. By the life of Yahweh, I will chase him down and get some of it for myself.”"
+    },
+    {
+     "v": 21,
+     "text": "So Gehazi hurried after Naaman. Naaman looked back and saw a man running toward him. He stepped down off his chariot to greet him. “Is something wrong?” he asked."
+    },
+    {
+     "v": 22,
+     "text": "“No, nothing is wrong,” Gehazi said. “But my master sent me with a message. Just now two young prophets came to him from the hills of Ephraim. He asks if you would give them about 75 pounds of silver{k} and two sets of clothes.”"
+    },
+    {
+     "v": 23,
+     "text": "“Of course,” said Naaman. “Please take twice that, about 150 pounds.”{l} He kept urging Gehazi. He tied the silver up in two bags, along with two sets of clothes. Two of his servants loaded up the bags and walked ahead of Gehazi with them."
+    },
+    {
+     "v": 24,
+     "text": "When Gehazi reached the hill,{m} he took the bags from the servants. He hid them in the house and sent the men back."
+    },
+    {
+     "v": 25,
+     "text": "Then Gehazi went in and stood before his master. “Where have you been, Gehazi?” Elisha asked. “I have not been anywhere, sir,” Gehazi said."
+    },
+    {
+     "v": 26,
+     "text": "But Elisha said, “My spirit went with you. I was there when that man stepped off his chariot to meet you. This was no time to take silver and clothing. It was no time to get olive trees, vineyards, sheep, cattle and servants."
+    },
+    {
+     "v": 27,
+     "text": "Because of this, the disease Naaman had will stick to you and your family line for all time.” When Gehazi walked out, his skin was diseased, white like snow."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "5:1",
+     "text": "Naaman means “pleasant.”"
+    },
+    {
+     "m": "b",
+     "ref": "5:1",
+     "text": "The Hebrew word was traditionally translated “leprosy.” It covered many kinds of skin disease, not only the illness called leprosy today. The same is true in the rest of this chapter."
+    },
+    {
+     "m": "c",
+     "ref": "5:5",
+     "text": "The Hebrew says “ten talents of silver.” A talent was about 75 pounds (34 kilograms), so this was about 340 kilograms."
+    },
+    {
+     "m": "d",
+     "ref": "5:5",
+     "text": "The Hebrew says “six thousand of gold,” probably shekels. A shekel was about 0.4 ounce (11.5 grams), so this was about 69 kilograms. The Septuagint says “six thousand pieces of gold.”"
+    },
+    {
+     "m": "e",
+     "ref": "5:12",
+     "text": "The written Hebrew says Abana; the Hebrew read aloud says Amanah. Abana may mean “stony.” Pharpar may mean “swift.”"
+    },
+    {
+     "m": "f",
+     "ref": "5:13",
+     "text": "The Hebrew says “my father,” a respectful way to speak. Some read the same Hebrew letters as “if.”"
+    },
+    {
+     "m": "g",
+     "ref": "5:15",
+     "text": "The Hebrew word is berakah, “blessing.”"
+    },
+    {
+     "m": "h",
+     "ref": "5:17",
+     "text": "The Hebrew says “a load of a pair of mules.” The Septuagint adds “of the red earth.”"
+    },
+    {
+     "m": "i",
+     "ref": "5:18",
+     "text": "Rimmon was the storm god of Aram, also called Hadad-Rimmon. The name may mean “thunderer.” The Hebrew word rimmon also means “pomegranate.”"
+    },
+    {
+     "m": "j",
+     "ref": "5:19",
+     "text": "The Hebrew says “a stretch of land.” The distance is uncertain."
+    },
+    {
+     "m": "k",
+     "ref": "5:22",
+     "text": "The Hebrew says “a talent of silver.” A talent was about 75 pounds (34 kilograms)."
+    },
+    {
+     "m": "l",
+     "ref": "5:23",
+     "text": "The Hebrew says “two talents,” about 68 kilograms."
+    },
+    {
+     "m": "m",
+     "ref": "5:24",
+     "text": "The Hebrew word ophel can mean “the hill” or “the fort.” The Septuagint says “a secret place.”"
+    }
+   ],
+   "subheads": {
+    "1": "Naaman Is Healed",
+    "15": "Gehazi’s Greed"
+   }
+  },
+  {
+   "n": 6,
+   "paras": [
+    1,
+    8,
+    15,
+    20,
+    24,
+    32
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "One day the prophets in Elisha’s group told him, “Sir, the place where we meet with you has gotten too crowded for us."
+    },
+    {
+     "v": 2,
+     "text": "Why don’t we go down to the Jordan? Each of us can cut a log there, and we can put up a new building to live in.” “Go ahead,” Elisha said."
+    },
+    {
+     "v": 3,
+     "text": "One of them asked, “Won’t you please come along with us, your servants?” “Yes, I will come,” he answered."
+    },
+    {
+     "v": 4,
+     "text": "Elisha went along. At the Jordan they started chopping trees."
+    },
+    {
+     "v": 5,
+     "text": "One man was cutting through a log when his iron ax head flew off and dropped into the river. “Oh no, sir!” he shouted. “And I had only borrowed that ax!”{a}"
+    },
+    {
+     "v": 6,
+     "text": "“Where did it go in?” asked God’s man. The man pointed to the spot. Elisha cut a stick and tossed it there, and the iron came floating up to the top."
+    },
+    {
+     "v": 7,
+     "text": "“Pick it up,” Elisha said. So the man reached down and took hold of it."
+    },
+    {
+     "v": 8,
+     "text": "Once Aram’s king was at war with Israel. He made plans with his officers. “We will set up camp in this place and that place,” he told them."
+    },
+    {
+     "v": 9,
+     "text": "But God’s man sent word to Israel’s king. “Watch out! Do not go near that place. The Arameans are on their way down there.”"
+    },
+    {
+     "v": 10,
+     "text": "So the king of Israel sent men to check the place God’s man had named. Again and again Elisha warned him. Each time the king kept guard there. It happened many times."
+    },
+    {
+     "v": 11,
+     "text": "This made Aram’s king very upset. He called in his officers. “Who among us is a spy for Israel’s king?” he demanded. “Tell me!”"
+    },
+    {
+     "v": 12,
+     "text": "“No one, my lord and king,” one officer said. “It is Elisha, the prophet in Israel. He tells Israel’s king the very words you speak in your own bedroom.”"
+    },
+    {
+     "v": 13,
+     "text": "“Find out where this Elisha is staying,” the king ordered. “I will send men to catch him.” Someone reported, “He is staying in Dothan.”{b}"
+    },
+    {
+     "v": 14,
+     "text": "That night the king sent horses, chariots and a large fighting force. They came in the night and made a ring around the town."
+    },
+    {
+     "v": 15,
+     "text": "The next morning Elisha’s servant got up early and went out. Soldiers with horses and chariots were all around the town! “Master, this is awful!” the servant cried. “What can we do?”"
+    },
+    {
+     "v": 16,
+     "text": "“Do not be afraid,” Elisha said. “Our side has more fighters than their side does.”"
+    },
+    {
+     "v": 17,
+     "text": "Elisha prayed, “Please, Yahweh, let my servant’s eyes be opened so he can see.” Yahweh opened the young man’s eyes. Now he saw horses and chariots of fire filling the hills all around Elisha."
+    },
+    {
+     "v": 18,
+     "text": "The Arameans came down toward Elisha. He prayed, “Yahweh, make these people blind.”{c} And Yahweh did as Elisha asked. He struck them blind."
+    },
+    {
+     "v": 19,
+     "text": "Elisha called to them, “You have taken the wrong road. This town is not the one you want. Follow me. I will take you to the man you are hunting for.” Then he led them all the way to Samaria."
+    },
+    {
+     "v": 20,
+     "text": "They walked into Samaria. Then Elisha prayed, “Yahweh, open these men’s eyes now, so they can see.” Yahweh opened their eyes, and they looked around. Samaria’s walls were all around them!"
+    },
+    {
+     "v": 21,
+     "text": "Israel’s king saw them. “Father,” he asked Elisha, “should I kill them? Shall I strike them down?”"
+    },
+    {
+     "v": 22,
+     "text": "“No,” said Elisha. “You would not kill soldiers you captured in battle with your own sword and bow, would you?{d} Put bread and water before these men. When they have had their fill, send them back to the one they serve.”"
+    },
+    {
+     "v": 23,
+     "text": "So the king served them a grand meal. When they finished eating and drinking, the king let them leave, and they returned to their master. After that, raiders from Aram stayed out of Israel’s land."
+    },
+    {
+     "v": 24,
+     "text": "Later on, Ben-hadad, Aram’s king, called up his whole army. He marched to Samaria and surrounded it to starve it out."
+    },
+    {
+     "v": 25,
+     "text": "Food ran so short in Samaria that a donkey’s head cost about 2 pounds of silver.{e} Half a pint of dove’s dung{f} cost about 2 ounces of silver.{g}"
+    },
+    {
+     "v": 26,
+     "text": "One day the king of Israel was passing by on the wall. A woman cried up to him, “My lord the king, help me!”"
+    },
+    {
+     "v": 27,
+     "text": "He answered, “If Yahweh does not help you, how can I? I have no grain to give you from the threshing floor. I have no wine from the winepress.”"
+    },
+    {
+     "v": 28,
+     "text": "Then the king asked, “What is wrong?” She pointed to another woman. “She made a deal with me,” she said. “She said, ‘Hand over your son, and we will eat him today. Tomorrow we will eat my son.’"
+    },
+    {
+     "v": 29,
+     "text": "So we boiled my child and ate him. The next day I told her, ‘It is your turn. Give us your son to eat.’ But she has hidden her boy away.”"
+    },
+    {
+     "v": 30,
+     "text": "The king heard what she said, and he ripped his robes. He was walking on the wall, so everyone could see that he was wearing rough sackcloth under his robes, against his skin."
+    },
+    {
+     "v": 31,
+     "text": "He said, “May God punish me, and punish me even worse, if Elisha son of Shaphat still has his head before this day is over!”"
+    },
+    {
+     "v": 32,
+     "text": "Elisha was at home, and the city’s leaders sat there around him. The king sent a man on ahead. Before the messenger came, Elisha told the leaders, “Look! This son of a murderer has sent someone to chop off my head. When the man comes, shut the door. Hold it closed against him. His master is surely coming close behind. Listen for his steps.”"
+    },
+    {
+     "v": 33,
+     "text": "Elisha had not finished speaking when the messenger{h} came down to him. The king said, “Yahweh has sent this trouble on us. What is the use of waiting for Yahweh to do something?”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "6:5",
+     "text": "The Septuagint says “and it was hidden.”"
+    },
+    {
+     "m": "b",
+     "ref": "6:13",
+     "text": "Dothan means “two wells.”"
+    },
+    {
+     "m": "c",
+     "ref": "6:18",
+     "text": "The Hebrew word is sanwerim, a rare word for a dazzling or confusing blindness (compare Genesis 19:11)."
+    },
+    {
+     "m": "d",
+     "ref": "6:22",
+     "text": "Or “Do you kill people you have captured with your sword and bow?” Even prisoners of war were not killed."
+    },
+    {
+     "m": "e",
+     "ref": "6:25",
+     "text": "The Hebrew says “eighty of silver,” probably shekels. A shekel was about 0.4 ounce (11.5 grams), so this was about 920 grams. The Septuagint says “fifty pieces of silver.”"
+    },
+    {
+     "m": "f",
+     "ref": "6:25",
+     "text": "The Hebrew says “a quarter of a kab.” A kab was about 1 1/4 quarts (1.2 liters), so this was about a third of a liter. “Dove’s dung” may be a nickname for a cheap food, such as carob pods or wild bulbs."
+    },
+    {
+     "m": "g",
+     "ref": "6:25",
+     "text": "The Hebrew says “five of silver,” probably shekels, about 57 grams."
+    },
+    {
+     "m": "h",
+     "ref": "6:33",
+     "text": "The Hebrew and the Septuagint say “the messenger.” Many experts read “the king,” since the king seems to speak next (compare 7:2, 17)."
+    }
+   ],
+   "subheads": {
+    "1": "An Ax Head Floats",
+    "8": "Elisha Traps an Army",
+    "24": "Hunger in Samaria"
+   }
+  },
+  {
+   "n": 7,
+   "paras": [
+    1,
+    3,
+    9,
+    17
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Elisha said, “Listen to Yahweh’s word. Yahweh says, ‘By this time tomorrow, at Samaria’s gate, you will be able to buy 7 quarts of fine flour for about 2/5 ounce of silver. The same price will buy 14 quarts of barley.’”{a}"
+    },
+    {
+     "v": 2,
+     "text": "The king had an officer whose arm he leaned on. This officer told God’s man, “Even if Yahweh opened up windows in the sky, that could never happen!” Elisha answered, “You will see it with your own eyes. But you will not eat one bite of it.”"
+    },
+    {
+     "v": 3,
+     "text": "Just outside the city gate sat four men who had a skin disease.{b} They talked it over. “Why sit here waiting to die?” they said."
+    },
+    {
+     "v": 4,
+     "text": "“If we go into the city, we will starve, because there is no food in there. Staying here means death too. So let’s go over to the camp of the Arameans and give ourselves up. Maybe they will let us live. Maybe they will kill us. Either way, death is coming for us anyhow.”"
+    },
+    {
+     "v": 5,
+     "text": "When it got dark, they set off for the Aramean camp. They came to the edge of it, but there was nobody there!"
+    },
+    {
+     "v": 6,
+     "text": "The Lord{c} had made the Aramean army hear a noise like chariots and horses, the sound of a huge army. The soldiers had said to each other, “Israel’s king must have hired the Hittite kings and the kings of Egypt{d} to come fight against us!”"
+    },
+    {
+     "v": 7,
+     "text": "Then, as darkness fell, they ran. Tents, horses, donkeys, everything was left behind. They abandoned the whole camp as it stood and fled to save themselves."
+    },
+    {
+     "v": 8,
+     "text": "The four sick men came to the edge of the camp. Into a tent they went, where they had food and drink. They carried out silver, gold and clothes, and buried them out of sight. Then they came back, went into a second tent, took more things, and hid those too."
+    },
+    {
+     "v": 9,
+     "text": "But then they had second thoughts. “We are doing wrong,” they told each other. “Today there is good news to tell, and we are silent. If we sit on it until daylight, we will be found out and punished. Let’s go right now and report it to the king’s household.”"
+    },
+    {
+     "v": 10,
+     "text": "They went to the city and called up to the gatekeepers. “We went to the Aramean camp,” they said. “Not a single person was there! We heard no one. All we saw were horses and donkeys, still tied up, and the tents left the way they were.”"
+    },
+    {
+     "v": 11,
+     "text": "The gatekeepers shouted the news, and it was passed along until it reached the king’s household."
+    },
+    {
+     "v": 12,
+     "text": "In the middle of the night, the king rose from bed. He told his officers, “I know what the Arameans are doing. They know we are starving. So they have slipped out of their tents and are hiding out in the countryside. They think, ‘When the Israelites come out of the city, we will take them alive. Then the city will be ours.’”"
+    },
+    {
+     "v": 13,
+     "text": "One of the officers suggested, “We still have a few horses in the city. Let some men ride out on five of them. If they die, they are no worse off than the rest of the Israelites here. We are all going to die like the others before us.{e} Let’s send them out and see.”"
+    },
+    {
+     "v": 14,
+     "text": "They got two chariots with horses. The king sent them to chase after the army of Aram. “Go and find out,” he ordered."
+    },
+    {
+     "v": 15,
+     "text": "The men followed the Arameans all the way to the Jordan. Along the whole road they found clothes and equipment that the Arameans had tossed aside as they ran. The messengers came back and reported to the king."
+    },
+    {
+     "v": 16,
+     "text": "Then the people rushed out and took everything from the Aramean camp. Now 7 quarts of fine flour cost only 2/5 ounce of silver, and so did 14 quarts of barley. It was just as Yahweh had said."
+    },
+    {
+     "v": 17,
+     "text": "The king had put the officer who helped him walk in charge of the gate. But the people crushed him under their feet in the gateway, and he died. This was what God’s man had said when the king came to see him."
+    },
+    {
+     "v": 18,
+     "text": "God’s man had told the king, “By this time tomorrow, at Samaria’s gate, 2/5 ounce of silver will buy 14 quarts of barley or 7 quarts of fine flour.”"
+    },
+    {
+     "v": 19,
+     "text": "And the officer had said, “Even if Yahweh made windows in the sky, this could not happen!” Elisha had replied, “You will see it with your own eyes, but you will not eat any of it.”"
+    },
+    {
+     "v": 20,
+     "text": "It turned out just that way. The people stepped on him in the gateway, and he died."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "7:1",
+     "text": "The Hebrew says “a seah of fine flour for a shekel, and two seahs of barley for a shekel.” A seah was about 7 quarts (about 7.3 liters). A shekel was about 0.4 ounce (11.5 grams). These were low prices compared with 6:25. The same is true in verses 16 and 18."
+    },
+    {
+     "m": "b",
+     "ref": "7:3",
+     "text": "See the note at 5:1."
+    },
+    {
+     "m": "c",
+     "ref": "7:6",
+     "text": "The Hebrew word here is Adonai."
+    },
+    {
+     "m": "d",
+     "ref": "7:6",
+     "text": "Some experts think the Hebrew word for Egypt means Musri, a land in what is now Turkey, near the Hittite kings of northern Syria."
+    },
+    {
+     "m": "e",
+     "ref": "7:13",
+     "text": "The Hebrew of this verse repeats itself and is somewhat uncertain."
+    }
+   ],
+   "subheads": {
+    "1": "Elisha Promises Food",
+    "3": "Four Sick Men Find an Empty Camp",
+    "17": "The Officer Is Trampled"
+   }
+  },
+  {
+   "n": 8,
+   "paras": [
+    1,
+    7,
+    16,
+    25
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Elisha had once spoken to the woman whose son he brought back to life. “Take your family and leave,” he told her. “Go and live anywhere you can, in another land. Yahweh has called for a famine. For seven years there will be hunger here.”"
+    },
+    {
+     "v": 2,
+     "text": "The woman did as God’s man told her. She took her family and lived among the Philistines for seven years."
+    },
+    {
+     "v": 3,
+     "text": "When those seven years ended, she returned from Philistine country. She went to the king to beg him to give her house and land back to her."
+    },
+    {
+     "v": 4,
+     "text": "Just then the king was speaking with Gehazi, the servant of God’s man. “I want to hear about the wonders Elisha has done,” the king said. “Tell me all of them.”"
+    },
+    {
+     "v": 5,
+     "text": "Gehazi was in the middle of telling how Elisha had raised a boy who had died. At that very moment, the boy’s mother walked in. She had come to plead with the king for her house and field. “My lord the king,” Gehazi said, “this is the woman! And this is her son, the one Elisha raised from the dead!”"
+    },
+    {
+     "v": 6,
+     "text": "The king asked her questions, and she told him all that had happened. So the king put an official in charge of her case. “Give back everything that belonged to her,” he said. “Also give her the value of all the crops her fields have grown since she went away.”"
+    },
+    {
+     "v": 7,
+     "text": "Later Elisha traveled to Damascus. At that time, Ben-hadad, who ruled Aram, lay ill. Someone told the king, “God’s man has come here.”"
+    },
+    {
+     "v": 8,
+     "text": "Ben-hadad told Hazael, “Take a gift and go see God’s man. Have him ask Yahweh whether I will get well from this sickness.”"
+    },
+    {
+     "v": 9,
+     "text": "Hazael went to meet Elisha. He brought a gift of the best things Damascus had to offer, loaded on forty camels. He came and stood before Elisha. “Your son Ben-hadad, Aram’s king, has sent me,” he said. “He wants to know, ‘Will I get over this sickness?’”"
+    },
+    {
+     "v": 10,
+     "text": "Elisha answered, “Go tell him,{a} ‘You will surely get well.’ Yet Yahweh has let me see that death is coming for him.”"
+    },
+    {
+     "v": 11,
+     "text": "Elisha kept staring at Hazael until Hazael felt uneasy.{b} Then God’s man began to cry."
+    },
+    {
+     "v": 12,
+     "text": "“Sir, what makes you weep?” Hazael asked. Elisha said, “I can see the evil you will bring on Israel’s people. Their forts will go up in flames by your hand. Their young men will fall by your swords. You will dash their little ones to pieces and slit open their women who carry babies.”"
+    },
+    {
+     "v": 13,
+     "text": "Hazael said, “How could someone like me, no better than a dog, do such great things?” Elisha said, “Yahweh has let me see you as Aram’s king.”"
+    },
+    {
+     "v": 14,
+     "text": "Then Hazael went back to Ben-hadad. “What did Elisha tell you?” his master asked. “He told me you would surely get well,” said Hazael."
+    },
+    {
+     "v": 15,
+     "text": "But the next day Hazael took a thick cloth and soaked it in water. Then he pressed it down over Ben-hadad’s face, and the king died. Then Hazael became king in his place."
+    },
+    {
+     "v": 16,
+     "text": "Joram son of Ahab was in his fifth year as Israel’s king. Jehoshaphat had been king of Judah.{c} Then Jehoshaphat’s son Jehoram began to rule Judah."
+    },
+    {
+     "v": 17,
+     "text": "Jehoram was crowned at age 32. For eight years he ruled from Jerusalem."
+    },
+    {
+     "v": 18,
+     "text": "Like the kings of Israel, and like Ahab’s family, he went the wrong way, because Ahab’s daughter was his wife. Jehoram did what Yahweh saw as evil."
+    },
+    {
+     "v": 19,
+     "text": "But because of David, his servant, Yahweh did not want to destroy Judah. He had promised that a lamp would always burn for David and his children after him."
+    },
+    {
+     "v": 20,
+     "text": "While Jehoram was king, Edom broke free from Judah and chose its own king."
+    },
+    {
+     "v": 21,
+     "text": "So Joram took all his chariots and went over to Zair.{d} The Edomites had surrounded him and his chariot leaders. In the dark he rose and broke through their lines. But his soldiers scattered and fled home.{e}"
+    },
+    {
+     "v": 22,
+     "text": "Edom has been free from Judah’s rule from then until now. Libnah{f} broke away from Judah at that same time too."
+    },
+    {
+     "v": 23,
+     "text": "Everything else Joram did is written in the official history of Judah’s kings."
+    },
+    {
+     "v": 24,
+     "text": "Joram died and joined his ancestors. He was buried with them in David’s City. His son Ahaziah became king after him."
+    },
+    {
+     "v": 25,
+     "text": "Ahaziah son of Jehoram started to rule Judah in the twelfth year that Joram son of Ahab ruled Israel."
+    },
+    {
+     "v": 26,
+     "text": "Ahaziah was 22 when he took the throne, and his rule in Jerusalem lasted one year. Athaliah,{g} a granddaughter{h} of Omri, king of Israel, was his mother."
+    },
+    {
+     "v": 27,
+     "text": "Ahaziah copied the ways of Ahab’s family. Like them, he did what Yahweh saw as evil, because he was related to them by marriage."
+    },
+    {
+     "v": 28,
+     "text": "Together with Ahab’s son Joram, Ahaziah marched to Ramoth-gilead to battle against Hazael, king of Aram. There the Arameans wounded Joram."
+    },
+    {
+     "v": 29,
+     "text": "So King Joram went back to Jezreel to heal. He had been hurt by the Arameans at Ramah{i} while fighting Hazael, Aram’s king. Ahaziah son of Jehoram, Judah’s king, went down to Jezreel to visit Joram son of Ahab, who was hurt."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "8:10",
+     "text": "The Hebrew read aloud and many ancient copies say “Go tell him.” The written Hebrew says “Go and say, ‘You will surely not get well.’”"
+    },
+    {
+     "m": "b",
+     "ref": "8:11",
+     "text": "It is not clear who is doing what. Either Elisha stared at Hazael until Hazael was embarrassed, or the other way around."
+    },
+    {
+     "m": "c",
+     "ref": "8:16",
+     "text": "The words “Jehoshaphat had been king of Judah” are in both the Hebrew and the Septuagint, but many experts think they were copied by accident from the end of the verse."
+    },
+    {
+     "m": "d",
+     "ref": "8:21",
+     "text": "No one knows where Zair was. 2 Chronicles 21:9 does not name it."
+    },
+    {
+     "m": "e",
+     "ref": "8:21",
+     "text": "The Hebrew of this verse is hard to understand, and it is unclear how the battle ended."
+    },
+    {
+     "m": "f",
+     "ref": "8:22",
+     "text": "Libnah means “whiteness.” It was a town in the low hills of Judah."
+    },
+    {
+     "m": "g",
+     "ref": "8:26",
+     "text": "Athaliah may mean “Yahweh is lifted up.”"
+    },
+    {
+     "m": "h",
+     "ref": "8:26",
+     "text": "The Hebrew says “daughter,” meaning a female descendant. She was Ahab’s daughter (verse 18)."
+    },
+    {
+     "m": "i",
+     "ref": "8:29",
+     "text": "That is, Ramoth-gilead."
+    }
+   ],
+   "subheads": {
+    "1": "The Shunammite Gets Her Land Back",
+    "7": "Hazael Becomes King of Aram",
+    "16": "Jehoram Rules Judah",
+    "25": "Ahaziah Rules Judah"
+   }
+  },
+  {
+   "n": 9,
+   "paras": [
+    1,
+    4,
+    11,
+    14,
+    21,
+    27,
+    30
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Elisha the prophet called over a young man from the group of prophets. “Tie up your robe for travel,” he told him. “Carry this little jar of olive oil and hurry to Ramoth-gilead."
+    },
+    {
+     "v": 2,
+     "text": "Once there, find Jehu,{a} whose father was Jehoshaphat and whose grandfather was Nimshi. Call him away from the men he is with and take him to a back room."
+    },
+    {
+     "v": 3,
+     "text": "Pour the oil over his head. Tell him, ‘Yahweh says this: I am making you king of Israel by pouring oil on you.’ Then get out the door and run. Waste no time.”"
+    },
+    {
+     "v": 4,
+     "text": "So the young prophet set off for Ramoth-gilead."
+    },
+    {
+     "v": 5,
+     "text": "He found the army’s leaders sitting together in a meeting. “Commander, I have word to give you,” he said. Jehu asked, “Which of us do you mean?” “You, sir,” the young man said."
+    },
+    {
+     "v": 6,
+     "text": "Jehu rose and stepped indoors. There the prophet emptied the jar of oil over his head. Then he said, “Israel’s God, Yahweh, says this: ‘I am pouring oil on you to make you king of Yahweh’s people Israel."
+    },
+    {
+     "v": 7,
+     "text": "It is your task to wipe out the family of Ahab, the master you served. Through you I will punish Jezebel. She murdered my servants, the prophets, and many others who served Yahweh, and I will make her pay for their blood."
+    },
+    {
+     "v": 8,
+     "text": "Ahab’s whole family line will come to an end. I will remove every male in Ahab’s family in Israel, slave or free.{b}"
+    },
+    {
+     "v": 9,
+     "text": "I will deal with Ahab’s family the way I dealt with Jeroboam’s family. Jeroboam was Nebat’s son. I will treat it the way I treated the family of Baasha son of Ahijah."
+    },
+    {
+     "v": 10,
+     "text": "And Jezebel’s body will be food for dogs on the land at Jezreel, and she will have no grave.’” With that, the young prophet threw open the door and fled."
+    },
+    {
+     "v": 11,
+     "text": "Jehu stepped back out to where the other officers sat. “Is everything all right?” one of them asked. “Why did that madman come to see you?” Jehu said, “You know his type, and you know how such men talk.”"
+    },
+    {
+     "v": 12,
+     "text": "“You are not telling us the truth,” they said. “Tell us what he said.” Jehu answered, “He told me this and this. He said, ‘Yahweh says: I am pouring oil on you to make you king of Israel.’”"
+    },
+    {
+     "v": 13,
+     "text": "Right away each officer pulled off his coat and spread it under Jehu’s feet on the steps.{c} They blew a trumpet and cheered, “Jehu is king!”"
+    },
+    {
+     "v": 14,
+     "text": "So Jehu, Nimshi’s grandson and Jehoshaphat’s son, made plans to overthrow Joram. At that time, Joram and the army of Israel had been guarding Ramoth-gilead from Hazael, king of Aram."
+    },
+    {
+     "v": 15,
+     "text": "But King Joram had gone back to Jezreel to heal from wounds he got in his battle with Hazael, Aram’s king. Jehu told the officers, “If you agree with me, do not let anyone sneak out of the city. No one must get to Jezreel to warn them.”"
+    },
+    {
+     "v": 16,
+     "text": "Then Jehu climbed into his chariot and set off for Jezreel. Joram was lying there wounded, and King Ahaziah of Judah had come down to see him."
+    },
+    {
+     "v": 17,
+     "text": "Up on Jezreel’s tower a lookout was keeping watch. He spotted Jehu and his soldiers coming. “I see a crowd of soldiers!” he called. “Get a rider,” Joram ordered. “Send him out to meet them. He must find out if they are friends or enemies.”"
+    },
+    {
+     "v": 18,
+     "text": "The rider went out to meet Jehu. “The king asks whether this is a peaceful visit,” he said. “What does peace matter to you?” Jehu answered. “Turn and ride behind me.” The watchman called out, “The rider got to them, but he is not on his way back.”"
+    },
+    {
+     "v": 19,
+     "text": "So the king sent out a second rider. He reached them and said, “The king asks, ‘Is it peace?’” Jehu said, “Why do you care about peace? Come fall in behind me.”"
+    },
+    {
+     "v": 20,
+     "text": "The watchman reported again, “He reached them too, and he is not coming back either. And the man in that chariot must be Jehu son of Nimshi. He drives like a wild man!”"
+    },
+    {
+     "v": 21,
+     "text": "“Get my chariot ready,” Joram commanded. When the horses were hitched, the two kings set out, Joram of Israel and Ahaziah of Judah, riding side by side in separate chariots. They came face to face with Jehu on the land that had once been owned by Naboth from Jezreel."
+    },
+    {
+     "v": 22,
+     "text": "Joram saw Jehu and called out, “Do you come in peace, Jehu?” Jehu shouted back, “How can there be peace while your mother Jezebel goes on worshiping idols and doing all her witchcraft?”"
+    },
+    {
+     "v": 23,
+     "text": "Joram swung his chariot around{d} and raced off. “It is a trap, Ahaziah!” he yelled."
+    },
+    {
+     "v": 24,
+     "text": "Jehu pulled back his bow as hard as he could. His arrow struck Joram in the back, between his shoulders, and went through his heart. Joram dropped down dead in his chariot."
+    },
+    {
+     "v": 25,
+     "text": "Jehu told his officer Bidkar, “Pick up his body and throw it on the field that belonged to Naboth from Jezreel. You and I once rode together behind Ahab, this man’s father. Do you remember that? Back then Yahweh spoke this message{e} against him:"
+    },
+    {
+     "v": 26,
+     "text": "‘Yesterday I saw Naboth’s blood and the blood of his sons. That is what Yahweh says. On this very field I will make you pay for it. That is Yahweh’s promise.’ So now, pick Joram up and toss him onto that field. That is what Yahweh said would happen.”"
+    },
+    {
+     "v": 27,
+     "text": "Ahaziah, Judah’s king, saw what happened and ran off along the road to Beth-haggan.{f} Jehu raced after him. “Kill him too!” he shouted. They shot him{g} as he rode in his chariot up the hill toward Gur, near Ibleam. He got as far as Megiddo and died there."
+    },
+    {
+     "v": 28,
+     "text": "His servants laid Ahaziah’s body in a chariot and drove it home to Jerusalem. They buried him in his own grave beside his ancestors in David’s City."
+    },
+    {
+     "v": 29,
+     "text": "In Joram’s eleventh{h} year as Israel’s king, Ahaziah had begun to rule Judah."
+    },
+    {
+     "v": 30,
+     "text": "Next Jehu came to Jezreel. Jezebel heard he was coming. She painted around her eyes,{i} fixed her hair, and looked out from an upstairs window."
+    },
+    {
+     "v": 31,
+     "text": "Jehu rode in through the gate, and she shouted down, “Is this a peaceful visit, you Zimri? You murdered your master!”{j}"
+    },
+    {
+     "v": 32,
+     "text": "Jehu looked up at her window. “Who is with me?” he called. “Anyone?” Two or three palace officials leaned out and looked down at him."
+    },
+    {
+     "v": 33,
+     "text": "“Toss her out!” Jehu ordered. They threw her down. Her blood splashed onto the wall and onto the horses, and Jehu’s horses ran over her."
+    },
+    {
+     "v": 34,
+     "text": "Jehu went inside and had a meal. Then he said, “Take care of that cursed woman. Bury her. After all, a king’s daughter is what she was.”"
+    },
+    {
+     "v": 35,
+     "text": "But when they went out to bury her, almost nothing was left. A skull, two feet and the palms of her hands were all they could find."
+    },
+    {
+     "v": 36,
+     "text": "They returned and told Jehu. He said, “Yahweh spoke this through his servant Elijah from Tishbe: ‘On the land at Jezreel, dogs will eat Jezebel’s flesh."
+    },
+    {
+     "v": 37,
+     "text": "Her body will lie on the ground at Jezreel like manure scattered on a field. Nobody will look at it and know it was Jezebel.’”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "9:2",
+     "text": "Jehu means “Yahweh is he.”"
+    },
+    {
+     "m": "b",
+     "ref": "9:8",
+     "text": "The Hebrew words are hard to translate. See the note at 1 Kings 14:10."
+    },
+    {
+     "m": "c",
+     "ref": "9:13",
+     "text": "The meaning of the Hebrew words for “on the steps” is uncertain. It may mean “at the top of the stairs.”"
+    },
+    {
+     "m": "d",
+     "ref": "9:23",
+     "text": "The Hebrew says “turned his hands,” meaning he turned the chariot around by its reins."
+    },
+    {
+     "m": "e",
+     "ref": "9:25",
+     "text": "The Hebrew word is massa, “burden,” a word used for a serious message from a prophet."
+    },
+    {
+     "m": "f",
+     "ref": "9:27",
+     "text": "Beth-haggan means “house of the garden.” It is probably modern Jenin."
+    },
+    {
+     "m": "g",
+     "ref": "9:27",
+     "text": "The Septuagint and some other ancient copies say “They shot him.” The Hebrew does not have these words."
+    },
+    {
+     "m": "h",
+     "ref": "9:29",
+     "text": "8:25 says the twelfth year. The two numbers come from different ways of counting years, and both are left as they are."
+    },
+    {
+     "m": "i",
+     "ref": "9:30",
+     "text": "The Hebrew says “set her eyes in antimony,” a dark eye paint."
+    },
+    {
+     "m": "j",
+     "ref": "9:31",
+     "text": "Zimri killed his master, King Elah, and ruled for only seven days (1 Kings 16:9-18)."
+    }
+   ],
+   "subheads": {
+    "1": "Jehu Is Anointed King",
+    "14": "Jehu Kills Joram",
+    "27": "Ahaziah of Judah Dies",
+    "30": "The End of Jezebel"
+   }
+  },
+  {
+   "n": 10,
+   "paras": [
+    1,
+    12,
+    15,
+    18,
+    25,
+    32
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "There were seventy sons of Ahab living in Samaria. Jehu wrote letters and sent them to Samaria. They were addressed to the leaders of Jezreel,{a} to the elders, and to the men who were raising Ahab’s sons. The letters said,"
+    },
+    {
+     "v": 2,
+     "text": "“Your master’s sons are there with you. You also have chariots and horses, a city with strong walls, and weapons. So the moment you get this letter,"
+    },
+    {
+     "v": 3,
+     "text": "choose the best and most able of your master’s sons. Make him king in his father’s place. Then fight to defend your master’s family.”"
+    },
+    {
+     "v": 4,
+     "text": "But the men in Samaria were scared to death. “Jehu has beaten two kings already,” they said. “What hope do we have?”"
+    },
+    {
+     "v": 5,
+     "text": "So the man in charge of the palace, the city’s governor, the elders and the men raising the boys sent Jehu a reply. “We are your servants,” they said. “Whatever you command, we will do. None of the princes will be crowned by us. The choice is yours.”"
+    },
+    {
+     "v": 6,
+     "text": "Jehu wrote them another letter. “If you are on my side and will obey me,” he said, “then cut off the heads of your master’s sons. Bring them to me at Jezreel by this time tomorrow.” The seventy princes were in the homes of the city’s chief men, who were bringing them up."
+    },
+    {
+     "v": 7,
+     "text": "When the letter came, the leaders took the seventy princes and killed every one. They packed the heads in baskets and had them carried to Jezreel for Jehu."
+    },
+    {
+     "v": 8,
+     "text": "A messenger came to Jehu. “They have brought the princes’ heads,” he reported. Jehu said, “Make two heaps of them at the entrance of the gate. Leave them there until morning.”"
+    },
+    {
+     "v": 9,
+     "text": "At sunrise Jehu came out and stood before the whole crowd. “You are not guilty,” he said. “It was I who plotted against my master and took his life. But who struck down all these men?"
+    },
+    {
+     "v": 10,
+     "text": "So understand this: every word Yahweh spoke against Ahab’s family will come true. Not one will fail. Yahweh has done what he promised through his servant Elijah.”"
+    },
+    {
+     "v": 11,
+     "text": "Then Jehu killed everyone in Jezreel still left from Ahab’s family. He also killed Ahab’s important officials, his close friends and his priests. Not one of them lived."
+    },
+    {
+     "v": 12,
+     "text": "Then Jehu left Jezreel and headed toward Samaria. Along the road was Beth-eked of the Shepherds.{b}"
+    },
+    {
+     "v": 13,
+     "text": "At that spot Jehu came upon some relatives of Ahaziah, Judah’s king. He asked them, “Who might you be?” “We are relatives of Ahaziah,” they said. “We are traveling down to greet the royal family, the sons of the king and of the queen mother.”"
+    },
+    {
+     "v": 14,
+     "text": "“Seize them, but do not kill them yet!” Jehu ordered. His men grabbed them and killed them beside the well at Beth-eked, forty-two men in all. Jehu did not let even one of them live."
+    },
+    {
+     "v": 15,
+     "text": "Jehu went on from there. Along the way he met Jehonadab{c} son of Rechab, who was coming to meet him. Jehu greeted him and asked, “Is your heart loyal to me, the way mine is loyal to you?” “It is,” said Jehonadab. Jehu said,{d} “Then reach out your hand to me.” Jehonadab did, and Jehu pulled him up to ride beside him."
+    },
+    {
+     "v": 16,
+     "text": "“Come along,” Jehu said. “Watch how strongly I stand up for Yahweh.” So Jehonadab rode along with him."
+    },
+    {
+     "v": 17,
+     "text": "Jehu reached Samaria. There he killed all who were left of Ahab’s family, until none remained. This was what Yahweh had said through Elijah."
+    },
+    {
+     "v": 18,
+     "text": "Then Jehu called all the people together. “Ahab served Baal some,” he told them. “But Jehu is going to serve him much more."
+    },
+    {
+     "v": 19,
+     "text": "Now bring me all of Baal’s prophets, all his worshipers and all his priests. Make sure not one of them is missing. I am planning a huge sacrifice in Baal’s honor. If anyone stays away, he will die for it.” But it was a trick. Jehu planned to wipe out all who worshiped Baal."
+    },
+    {
+     "v": 20,
+     "text": "“Call a holy meeting to honor Baal,” Jehu commanded. So the announcement went out."
+    },
+    {
+     "v": 21,
+     "text": "Jehu sent messengers through all of Israel. Every worshiper of Baal came. No one stayed home. They crowded into Baal’s temple until it was packed from wall to wall."
+    },
+    {
+     "v": 22,
+     "text": "Jehu told the man in charge of the robes, “Get robes for everyone who worships Baal.” So the man handed out robes to them all."
+    },
+    {
+     "v": 23,
+     "text": "Jehu and Jehonadab son of Rechab then entered the temple of Baal. He told Baal’s worshipers, “Look around and be sure that no one who worships Yahweh is here. Only people who worship Baal may be in this place.”"
+    },
+    {
+     "v": 24,
+     "text": "Then they went in to offer sacrifices and burnt offerings. Outside, Jehu had placed eighty of his men with these orders: “I am putting these people into your hands. If even one of them gets away, the man who lets him escape will die in his place.”"
+    },
+    {
+     "v": 25,
+     "text": "Jehu finished offering the burnt offering. Then he told the guards and officers, “Go in and kill them! Let no one get out.” So they cut them down with swords and threw the bodies out. Then the guards and officers went into the inner room{e} of Baal’s temple."
+    },
+    {
+     "v": 26,
+     "text": "They dragged out the holy pillar{f} from Baal’s temple and burned it."
+    },
+    {
+     "v": 27,
+     "text": "They broke down Baal’s stone pillar and wrecked his temple. They turned the building into a toilet for the public, and it has stayed that way to this day.{g}"
+    },
+    {
+     "v": 28,
+     "text": "That is how Jehu removed Baal worship from Israel."
+    },
+    {
+     "v": 29,
+     "text": "But Jehu did not stop the sins that Jeroboam son of Nebat had brought on Israel. He let the golden calves at Bethel and Dan remain."
+    },
+    {
+     "v": 30,
+     "text": "Yahweh told Jehu, “You have done well. You did what I see as right, and you did to Ahab’s family all that I wanted done. So your sons will rule Israel after you, down to your great-great-grandsons.”"
+    },
+    {
+     "v": 31,
+     "text": "But Jehu did not carefully obey the Law of Yahweh, Israel’s God, with all his heart. He did not give up the sins of Jeroboam, which had led Israel into sin."
+    },
+    {
+     "v": 32,
+     "text": "At that time Yahweh began to cut away parts of Israel.{h} Hazael beat the Israelites everywhere along their borders."
+    },
+    {
+     "v": 33,
+     "text": "He took the land east of the Jordan, all of Gilead, where the tribes of Gad, Reuben and Manasseh lived. He took everything from Aroer near the Arnon Valley, both Gilead and Bashan."
+    },
+    {
+     "v": 34,
+     "text": "The other things Jehu did, all his deeds and all his power, are recorded in the official history of Israel’s kings."
+    },
+    {
+     "v": 35,
+     "text": "Then Jehu died and was laid to rest with his ancestors in Samaria. His son Jehoahaz{i} took his place as king."
+    },
+    {
+     "v": 36,
+     "text": "In all, Jehu was Israel’s king for twenty-eight years, ruling from Samaria."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "10:1",
+     "text": "The Hebrew says “Jezreel.” The Septuagint says “Samaria.” Some experts suggest “the city.”"
+    },
+    {
+     "m": "b",
+     "ref": "10:12",
+     "text": "Or “the shearing house of the shepherds.” Beth-eked means “house of tying,” perhaps a place where sheep were tied for shearing."
+    },
+    {
+     "m": "c",
+     "ref": "10:15",
+     "text": "Jehonadab means “Yahweh is generous.” His family, the Rechabites, appear in Jeremiah 35."
+    },
+    {
+     "m": "d",
+     "ref": "10:15",
+     "text": "The Septuagint has “Jehu said.” The Hebrew does not."
+    },
+    {
+     "m": "e",
+     "ref": "10:25",
+     "text": "The Hebrew says “to the city of the house of Baal.” The meaning is uncertain. It may be the inner holy room or a fortress."
+    },
+    {
+     "m": "f",
+     "ref": "10:26",
+     "text": "The Septuagint and some other ancient copies say “pillar.” The Hebrew says “pillars” but then “burned it.”"
+    },
+    {
+     "m": "g",
+     "ref": "10:27",
+     "text": "The Hebrew read aloud has this word. The written Hebrew has a cruder word for the same thing."
+    },
+    {
+     "m": "h",
+     "ref": "10:32",
+     "text": "Or “to make Israel smaller.”"
+    },
+    {
+     "m": "i",
+     "ref": "10:35",
+     "text": "Jehoahaz means “Yahweh has grasped.”"
+    }
+   ],
+   "subheads": {
+    "1": "Ahab’s Family Is Killed",
+    "12": "Ahaziah’s Relatives Are Killed",
+    "15": "Jehu Meets Jehonadab",
+    "18": "Jehu Destroys the Worship of Baal",
+    "32": "Jehu’s Last Years"
+   }
+  },
+  {
+   "n": 11,
+   "paras": [
+    1,
+    4,
+    9,
+    13,
+    17,
+    21
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Athaliah was Ahaziah’s mother. When she learned that her son was dead, she started killing off the whole royal family."
+    },
+    {
+     "v": 2,
+     "text": "But Jehosheba{a} saved one boy. Her father was King Joram, and Ahaziah was her brother. She took Ahaziah’s son Joash{b} and slipped him away from the other princes who were about to be killed. She hid him and his nurse in a bedroom where Athaliah could not find them. So Joash was not murdered."
+    },
+    {
+     "v": 3,
+     "text": "For six years he stayed hidden with Jehosheba at Yahweh’s temple. During those years, the country was under Athaliah’s rule."
+    },
+    {
+     "v": 4,
+     "text": "When the seventh year came, Jehoiada{c} called for the leaders of the Carites{d} and the palace guards, men who each led a hundred soldiers. He brought them to Yahweh’s temple. There he made an agreement with them and had them take an oath. After that, he let them see the young prince."
+    },
+    {
+     "v": 5,
+     "text": "Then he told them his plan. “Listen carefully,” he said. “Those of you who start your work on the Sabbath will split into three groups. One group will stand guard at the palace."
+    },
+    {
+     "v": 6,
+     "text": "The next group will watch the Sur Gate. The last group will be at the gate behind the guards. In this way you will guard the palace in shifts.{e}"
+    },
+    {
+     "v": 7,
+     "text": "The two groups of you who go off duty on the Sabbath will guard Yahweh’s temple to protect the king."
+    },
+    {
+     "v": 8,
+     "text": "Form a circle around the young king, each man with his weapons ready. Kill anyone who tries to get through your lines. Stay right beside the king wherever he goes.”"
+    },
+    {
+     "v": 9,
+     "text": "The leaders carried out all that Jehoiada the priest commanded. They came to him with their men, both the group starting work on the Sabbath and the group ending work that day."
+    },
+    {
+     "v": 10,
+     "text": "Then the priest gave the commanders the spears and small shields that had belonged to King David. They had been stored in Yahweh’s temple."
+    },
+    {
+     "v": 11,
+     "text": "Each guard stood at his post, weapon in hand. They made a wall of men around the king. It stretched across the front of the temple from one side to the other, by the altar and by the temple."
+    },
+    {
+     "v": 12,
+     "text": "Then Jehoiada brought out the king’s son. He placed the crown on the boy’s head and handed him a copy of God’s agreement.{f} They declared him king and poured oil on him. The people clapped their hands and cheered, “Long live the king!”"
+    },
+    {
+     "v": 13,
+     "text": "Athaliah could hear the shouting of the guards and the crowd. She went out to the crowd at Yahweh’s temple."
+    },
+    {
+     "v": 14,
+     "text": "There she saw the young king standing next to the pillar, as kings did at such times. The officers and trumpet players were beside him. All the people of the land were rejoicing and blowing trumpets. Athaliah tore her robes. “Traitors!” she screamed. “Traitors!”"
+    },
+    {
+     "v": 15,
+     "text": "Jehoiada the priest spoke to the commanders who led the troops. “March her out between your rows of men,” he said. “Kill anyone who follows her.” He had told them, “Do not put her to death inside Yahweh’s temple.”"
+    },
+    {
+     "v": 16,
+     "text": "So they took hold of her and led her out by the path where horses enter the palace grounds. That is where she was killed."
+    },
+    {
+     "v": 17,
+     "text": "Jehoiada then had the king and the people make a solemn promise to Yahweh. They agreed they would belong to Yahweh as his people. The king and the people made promises to each other as well."
+    },
+    {
+     "v": 18,
+     "text": "All the people of the land went to Baal’s temple and pulled it down. They broke up his altars and smashed his idols. They killed Mattan, Baal’s priest, in front of the altars. Then Jehoiada the priest put guards in charge of Yahweh’s temple."
+    },
+    {
+     "v": 19,
+     "text": "He took with him the commanders, the Carites, the guards and all the people of the land. Together they brought the king down from Yahweh’s temple. They went in through the Gate of the Guards to the palace. The boy took his seat on the king’s throne."
+    },
+    {
+     "v": 20,
+     "text": "Everyone in the land celebrated. The city was quiet now, because Athaliah had been killed with the sword at the palace."
+    },
+    {
+     "v": 21,
+     "text": "Jehoash{g} was only seven when he began to rule."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "11:2",
+     "text": "Jehosheba means “Yahweh is an oath.” 2 Chronicles 22:11 calls her Jehoshabeath and says she was the wife of Jehoiada the priest."
+    },
+    {
+     "m": "b",
+     "ref": "11:2",
+     "text": "Joash, also spelled Jehoash (verse 21), means “Yahweh has given.”"
+    },
+    {
+     "m": "c",
+     "ref": "11:4",
+     "text": "Jehoiada means “Yahweh knows.”"
+    },
+    {
+     "m": "d",
+     "ref": "11:4",
+     "text": "The Carites were probably hired foreign soldiers, perhaps from Caria in what is now Turkey."
+    },
+    {
+     "m": "e",
+     "ref": "11:6",
+     "text": "The meaning of the Hebrew word for “take turns” is uncertain."
+    },
+    {
+     "m": "f",
+     "ref": "11:12",
+     "text": "The Hebrew word is eduth. It was probably a written copy of the agreement law (compare Deuteronomy 17:18)."
+    },
+    {
+     "m": "g",
+     "ref": "11:21",
+     "text": "This is 12:1 in Hebrew. The Hebrew verse numbers in chapter 12 are one higher than the English."
+    }
+   ],
+   "subheads": {
+    "1": "Athaliah Seizes the Throne",
+    "4": "Joash Is Crowned",
+    "13": "Athaliah Is Killed",
+    "17": "Jehoiada’s Reforms"
+   }
+  },
+  {
+   "n": 12,
+   "paras": [
+    1,
+    4,
+    9,
+    17
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Jehoash began his reign in Jehu’s seventh year as Israel’s king. Jehoash ruled from Jerusalem for forty years. Zibiah{a} from Beersheba was his mother."
+    },
+    {
+     "v": 2,
+     "text": "All his life Jehoash did what pleased Yahweh, since Jehoiada the priest was there to teach him.{b}"
+    },
+    {
+     "v": 3,
+     "text": "But the hilltop shrines stayed in use. People went on offering sacrifices and burning incense at them."
+    },
+    {
+     "v": 4,
+     "text": "Jehoash gave the priests an order. “Money is brought to Yahweh’s temple as holy gifts,” he said. “There is money people pay when they are counted,{c} money paid to keep a vow, and money people give from the heart because they want to."
+    },
+    {
+     "v": 5,
+     "text": "Let each priest collect that money from the people he deals with.{d} Then use it to fix the temple wherever repairs are needed.”"
+    },
+    {
+     "v": 6,
+     "text": "But twenty-three years into the rule of King Jehoash, the priests had still not fixed the temple."
+    },
+    {
+     "v": 7,
+     "text": "So King Jehoash called in Jehoiada the priest and the other priests. “Why are the temple repairs not done?” he asked. “From now on, do not keep the money from the people you deal with. Turn it over to pay for fixing the temple.”"
+    },
+    {
+     "v": 8,
+     "text": "The priests agreed. They would collect no more money from the people. The repair work would not be their job anymore."
+    },
+    {
+     "v": 9,
+     "text": "Jehoiada the priest found a wooden chest and bored a hole through its lid. He set it beside the altar, to the right of the way in to Yahweh’s temple. Every gift brought to the temple was dropped into the chest by the priests who kept watch at the door."
+    },
+    {
+     "v": 10,
+     "text": "Whenever they saw that the chest was full of money, the king’s secretary and the high priest came. They tied up{e} the money from Yahweh’s temple in bags and counted it."
+    },
+    {
+     "v": 11,
+     "text": "Once they had weighed it, they handed it to the men who were overseeing the work at the temple. Those men paid it out to the woodworkers and builders working on Yahweh’s temple."
+    },
+    {
+     "v": 12,
+     "text": "They also paid the men who laid stone and the men who cut it. They bought wood and cut stone to repair Yahweh’s temple, and paid every other cost of fixing it."
+    },
+    {
+     "v": 13,
+     "text": "None of the money that came into Yahweh’s temple was used to make things for it. No silver bowls, wick trimmers, basins or trumpets were made, and nothing else of gold or silver."
+    },
+    {
+     "v": 14,
+     "text": "All the money went to the workers, and they used it to repair Yahweh’s temple."
+    },
+    {
+     "v": 15,
+     "text": "No one asked the overseers to report how they spent the money they gave the workers. Those men could be trusted."
+    },
+    {
+     "v": 16,
+     "text": "The money paid for guilt offerings and sin offerings did not go to Yahweh’s temple. It belonged to the priests."
+    },
+    {
+     "v": 17,
+     "text": "Around this time Hazael, Aram’s king, went to war against Gath and conquered it. Next he set his sights on Jerusalem and started toward it."
+    },
+    {
+     "v": 18,
+     "text": "So Jehoash, Judah’s king, gathered up the holy gifts given to Yahweh by the kings before him, Jehoshaphat, Jehoram and Ahaziah, along with his own. He took all the gold he could find in the storerooms of Yahweh’s temple and of the palace. All of it went as a payment to Hazael. So Aram’s king turned back from Jerusalem."
+    },
+    {
+     "v": 19,
+     "text": "Everything else that Joash did is written in the official history of Judah’s kings."
+    },
+    {
+     "v": 20,
+     "text": "His own officials made a secret plan against Joash. They murdered him at Beth-millo,{f} along the road down to Silla.{g}"
+    },
+    {
+     "v": 21,
+     "text": "The men who struck him down were his officials Jozacar{h} son of Shimeath and Jehozabad son of Shomer. Joash was buried in David’s City beside his ancestors. Amaziah,{i} his son, ruled after him."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "12:1",
+     "text": "Zibiah means “gazelle.” The verse numbers in this chapter follow the English. The Hebrew numbers are one higher."
+    },
+    {
+     "m": "b",
+     "ref": "12:2",
+     "text": "Or “All the days that Jehoiada the priest taught him, Jehoash did what pleased Yahweh.” Compare 2 Chronicles 24:2, 17-22."
+    },
+    {
+     "m": "c",
+     "ref": "12:4",
+     "text": "The meaning of the Hebrew is not clear. It may refer to the tax paid when people were counted (Exodus 30:13), or to money in common use."
+    },
+    {
+     "m": "d",
+     "ref": "12:5",
+     "text": "The meaning of the Hebrew word makkar is uncertain. It may mean a friend, a giver or a tax official. The Septuagint says “from his sale.” The same word is in verse 7."
+    },
+    {
+     "m": "e",
+     "ref": "12:10",
+     "text": "Or “melted down,” as some experts read it."
+    },
+    {
+     "m": "f",
+     "ref": "12:20",
+     "text": "Beth-millo means “house of the Millo.” It was probably a building on the raised land in Jerusalem (compare 1 Kings 9:15)."
+    },
+    {
+     "m": "g",
+     "ref": "12:20",
+     "text": "No one knows where Silla was. The Septuagint says “Sela.”"
+    },
+    {
+     "m": "h",
+     "ref": "12:21",
+     "text": "Jozacar means “Yahweh has remembered.” The Septuagint says “Jezirchar.” 2 Chronicles 24:26 names the men Zabad and Jehozabad."
+    },
+    {
+     "m": "i",
+     "ref": "12:21",
+     "text": "Amaziah means “Yahweh is strong.”"
+    }
+   ],
+   "subheads": {
+    "1": "Joash Repairs the Temple",
+    "17": "Hazael Threatens Jerusalem"
+   }
+  },
+  {
+   "n": 13,
+   "paras": [
+    1,
+    10,
+    14,
+    20,
+    22
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Joash son of Ahaziah had ruled Judah for twenty-three years when Jehu’s son Jehoahaz took the throne of Israel in Samaria. His reign lasted seventeen years."
+    },
+    {
+     "v": 2,
+     "text": "Jehoahaz did evil in Yahweh’s eyes. He kept on with the sins Jeroboam son of Nebat had taught Israel. He never let go of them."
+    },
+    {
+     "v": 3,
+     "text": "That made Yahweh very angry with Israel. All through those years he let Hazael, king of Aram, and Hazael’s son Ben-hadad defeat them again and again."
+    },
+    {
+     "v": 4,
+     "text": "Then Jehoahaz begged Yahweh for help. Yahweh heard him, because he saw how hard Aram’s king was crushing Israel."
+    },
+    {
+     "v": 5,
+     "text": "So Yahweh sent Israel someone to rescue them,{a} and they got free from Aram’s power. Then the Israelites could live safely at home{b} as they once had."
+    },
+    {
+     "v": 6,
+     "text": "Yet they kept on with the sins Jeroboam’s family had led Israel into. They did not stop. The Asherah pole{c} was left standing in Samaria too."
+    },
+    {
+     "v": 7,
+     "text": "Of Jehoahaz’s army only fifty horsemen, ten chariots and 10,000 foot soldiers were left. Aram’s king had destroyed the rest. He had crushed them like dust stamped on the ground where grain is beaten."
+    },
+    {
+     "v": 8,
+     "text": "The other things Jehoahaz did, all his deeds and his power, are recorded in the official history of Israel’s kings."
+    },
+    {
+     "v": 9,
+     "text": "When Jehoahaz died, he was laid to rest with his ancestors in Samaria. Joash his son ruled after him."
+    },
+    {
+     "v": 10,
+     "text": "In the thirty-seventh year that Joash ruled Judah, a son of Jehoahaz called Jehoash became Israel’s king in Samaria. He ruled sixteen years."
+    },
+    {
+     "v": 11,
+     "text": "Jehoash did evil in Yahweh’s eyes. Jeroboam son of Nebat had led Israel into sin, and Jehoash kept on doing all the same sins."
+    },
+    {
+     "v": 12,
+     "text": "The other things Joash did, including his battles against Amaziah, Judah’s king, and all his power, are recorded in the official history of Israel’s kings."
+    },
+    {
+     "v": 13,
+     "text": "Joash died and joined his ancestors, and Jeroboam{d} sat on his throne after him. Joash was buried in Samaria, in the tombs of Israel’s kings."
+    },
+    {
+     "v": 14,
+     "text": "Elisha became sick with the illness that would end his life. Joash, Israel’s king, came down to see him. He cried over him. “My father! My father!” he wept. “You were Israel’s chariots and horsemen!”"
+    },
+    {
+     "v": 15,
+     "text": "“Get a bow and some arrows,” Elisha told him. So the king got them."
+    },
+    {
+     "v": 16,
+     "text": "“Put your hand on the bow,” Elisha said to Israel’s king. When the king held it, Elisha placed his own hands over the king’s hands."
+    },
+    {
+     "v": 17,
+     "text": "“Now open the window that faces east,” Elisha said. When it was open, Elisha said, “Shoot!” So Joash let an arrow fly. Elisha said, “That is Yahweh’s arrow of victory, the arrow of victory over Aram! You will fight the Arameans at Aphek until you wipe them out.”"
+    },
+    {
+     "v": 18,
+     "text": "Next Elisha said, “Take the arrows.” The king took them. “Hit the ground with them,” Elisha told him. Three times the king beat the ground. Then he stopped."
+    },
+    {
+     "v": 19,
+     "text": "God’s man was angry with him. “Five or six blows were needed!” he said. “Then Aram would have been beaten by you until nothing was left of it. As it is, you will win against Aram just three times.”"
+    },
+    {
+     "v": 20,
+     "text": "Then Elisha died, and they buried him. Bands of raiders from Moab used to invade the land every spring.{e}"
+    },
+    {
+     "v": 21,
+     "text": "Once, while a funeral was taking place, the mourners caught sight of a raiding band. In a hurry they tossed the dead man into the tomb where Elisha lay. The body touched Elisha’s bones, and at once the man lived again and rose to his feet!"
+    },
+    {
+     "v": 22,
+     "text": "King Hazael of Aram made life hard for Israel as long as Jehoahaz lived."
+    },
+    {
+     "v": 23,
+     "text": "But Yahweh was kind to the Israelites. He felt sorry for them and cared for them. Long ago he had made a promise to Abraham, Isaac and Jacob, and he kept it in mind. He did not want to destroy them, and he has not sent them away from his presence even now."
+    },
+    {
+     "v": 24,
+     "text": "When Aram’s king Hazael died, Ben-hadad his son took over the throne."
+    },
+    {
+     "v": 25,
+     "text": "Then Jehoash son of Jehoahaz took back towns from Ben-hadad son of Hazael. Hazael had captured those towns from his father Jehoahaz in war. Three times Joash beat Ben-hadad, and he won back Israel’s towns."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "13:5",
+     "text": "The rescuer is not named. He may be Jeroboam II (14:27), or an Assyrian king who attacked Aram from the north."
+    },
+    {
+     "m": "b",
+     "ref": "13:5",
+     "text": "The Hebrew says “in their tents.”"
+    },
+    {
+     "m": "c",
+     "ref": "13:6",
+     "text": "The Hebrew word is asherah, a wooden pole or image of the goddess Asherah."
+    },
+    {
+     "m": "d",
+     "ref": "13:13",
+     "text": "This is Jeroboam II (14:23-29). Jeroboam probably means “may the people grow in number.”"
+    },
+    {
+     "m": "e",
+     "ref": "13:20",
+     "text": "The Hebrew says “at the coming of the year,” meaning in spring, the season for war (compare 1 Kings 20:22, 26)."
+    }
+   ],
+   "subheads": {
+    "1": "Jehoahaz Rules Israel",
+    "10": "Jehoash Rules Israel",
+    "14": "Elisha’s Last Words",
+    "20": "A Dead Man Comes Back to Life",
+    "22": "Israel Wins Back Its Towns"
+   }
+  },
+  {
+   "n": 14,
+   "paras": [
+    1,
+    8,
+    15,
+    17,
+    23,
+    28
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Amaziah son of Joash started to rule Judah when Joash son of Joahaz was in his second year as Israel’s king."
+    },
+    {
+     "v": 2,
+     "text": "Amaziah was crowned at twenty-five. For twenty-nine years he reigned in Jerusalem. Jehoaddin{a} from Jerusalem was his mother."
+    },
+    {
+     "v": 3,
+     "text": "Amaziah did what pleased Yahweh, though he did not match his ancestor David. He followed his father Joash’s example in every way."
+    },
+    {
+     "v": 4,
+     "text": "But the hilltop shrines stayed in use. People went on offering sacrifices and burning incense at them."
+    },
+    {
+     "v": 5,
+     "text": "As soon as his power as king was firm, Amaziah executed the officials who had murdered his father, the king."
+    },
+    {
+     "v": 6,
+     "text": "The murderers’ sons, though, he let live. In this he kept the rule in the Book of the Law of Moses. There Yahweh commanded, “Parents must not die for what their children do. Children must not die for what their parents do. Each one dies for his own sin.”{b}"
+    },
+    {
+     "v": 7,
+     "text": "Amaziah defeated 10,000 Edomites in the Valley of Salt. He took Sela{c} in battle and gave it a new name, Joktheel.{d} That is still its name now."
+    },
+    {
+     "v": 8,
+     "text": "Then Amaziah sent a challenge to Jehoash, the ruler of Israel. (Jehoash was Jehoahaz’s son and Jehu’s grandson.) “Come out,” he dared him. “Let us meet face to face in battle.”"
+    },
+    {
+     "v": 9,
+     "text": "Jehoash answered Amaziah with a story. “There was a thornbush up in Lebanon,” he said. “It sent a message to a tall cedar there: ‘Give my son your daughter for a wife.’ Then a wild beast of Lebanon walked over the thornbush and crushed it flat."
+    },
+    {
+     "v": 10,
+     "text": "It is true that you beat Edom. Now you think you are great. Enjoy your fame, then, but do it at home! Why ask for trouble? It will bring you down, and Judah too.”"
+    },
+    {
+     "v": 11,
+     "text": "Amaziah paid no attention. So King Jehoash of Israel marched out. He and King Amaziah of Judah met in battle at Beth-shemesh,{e} a town in Judah."
+    },
+    {
+     "v": 12,
+     "text": "Judah was beaten by Israel, and the men of Judah all ran home.{f}"
+    },
+    {
+     "v": 13,
+     "text": "King Jehoash of Israel took King Amaziah of Judah prisoner there at Beth-shemesh. (Amaziah’s father was Jehoash, and his grandfather was Ahaziah.) Then Jehoash went to Jerusalem. He tore down about 600 feet{g} of the city wall, from the Ephraim Gate to the Corner Gate."
+    },
+    {
+     "v": 14,
+     "text": "Every bit of gold and silver, and every valuable object in Yahweh’s temple and the palace storerooms, he took away. He also took people as prisoners to make sure Judah kept the peace. Then he went back to Samaria."
+    },
+    {
+     "v": 15,
+     "text": "Everything else Jehoash did, his power and his war with Amaziah, Judah’s king, is written down in the official history of Israel’s kings."
+    },
+    {
+     "v": 16,
+     "text": "Jehoash was laid to rest with his ancestors and buried among Israel’s kings in Samaria. His son Jeroboam then ruled."
+    },
+    {
+     "v": 17,
+     "text": "Amaziah son of Joash, Judah’s king, lived on for fifteen years after Israel’s King Jehoash son of Jehoahaz had died."
+    },
+    {
+     "v": 18,
+     "text": "The other things Amaziah did are recorded in the official history of Judah’s kings."
+    },
+    {
+     "v": 19,
+     "text": "Some people in Jerusalem made a plot against Amaziah. He escaped to Lachish, but they hunted him down and killed him there."
+    },
+    {
+     "v": 20,
+     "text": "His body was brought back on horses. He was buried with his ancestors in Jerusalem, in David’s City."
+    },
+    {
+     "v": 21,
+     "text": "Then all the people of Judah took Azariah,{h} who was sixteen, and made him king to replace his father Amaziah."
+    },
+    {
+     "v": 22,
+     "text": "After his father died and joined his ancestors, Azariah rebuilt Elath{i} and won it back for Judah."
+    },
+    {
+     "v": 23,
+     "text": "Jeroboam son of Joash became Israel’s king in Samaria in the fifteenth year that Amaziah son of Joash ruled Judah. Jeroboam was king for forty-one years."
+    },
+    {
+     "v": 24,
+     "text": "Jeroboam did evil in Yahweh’s eyes. Jeroboam son of Nebat had led Israel into sin, and this Jeroboam never gave up any of those sins."
+    },
+    {
+     "v": 25,
+     "text": "He won back land for Israel all the way from Lebo-hamath{j} at its north end down to the Sea of the Arabah.{k} Yahweh, Israel’s God, had said this would happen. He had spoken it through his servant Jonah{l} son of Amittai, a prophet from Gath-hepher.{m}"
+    },
+    {
+     "v": 26,
+     "text": "Yahweh had seen how bitterly the Israelites were suffering, slaves and free people alike.{n} No one was left to help Israel."
+    },
+    {
+     "v": 27,
+     "text": "But Yahweh had never said he would erase Israel’s name from under the sky. Instead he rescued them through Jeroboam son of Joash."
+    },
+    {
+     "v": 28,
+     "text": "The other things Jeroboam did, his deeds, his power and his wars, are recorded in the official history of Israel’s kings. It tells how he won back Damascus and Hamath, which had once belonged to Judah.{o}"
+    },
+    {
+     "v": 29,
+     "text": "Jeroboam rested with his ancestors, Israel’s kings. Zechariah,{p} his son, took the throne."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "14:2",
+     "text": "The written Hebrew says Jehoaddin. The Hebrew read aloud and 2 Chronicles 25:1 say “Jehoaddan.” The name may mean “Yahweh is delight.”"
+    },
+    {
+     "m": "b",
+     "ref": "14:6",
+     "text": "Deuteronomy 24:16."
+    },
+    {
+     "m": "c",
+     "ref": "14:7",
+     "text": "Sela means “rock.” It was a fortress of Edom."
+    },
+    {
+     "m": "d",
+     "ref": "14:7",
+     "text": "Joktheel may mean “God destroys” or “God feeds.” The meaning is uncertain."
+    },
+    {
+     "m": "e",
+     "ref": "14:11",
+     "text": "Beth-shemesh means “house of the sun.”"
+    },
+    {
+     "m": "f",
+     "ref": "14:12",
+     "text": "The Hebrew says “to his tent.”"
+    },
+    {
+     "m": "g",
+     "ref": "14:13",
+     "text": "The Hebrew says “four hundred cubits.” A cubit was about 18 inches (45 centimeters), so this was about 180 meters."
+    },
+    {
+     "m": "h",
+     "ref": "14:21",
+     "text": "Azariah means “Yahweh has helped.” He is also called Uzziah (15:13; 2 Chronicles 26:1)."
+    },
+    {
+     "m": "i",
+     "ref": "14:22",
+     "text": "Elath, at the top of the Gulf of Aqaba, means “large trees” or “palms.”"
+    },
+    {
+     "m": "j",
+     "ref": "14:25",
+     "text": "Or “the entrance of Hamath,” at the northern border."
+    },
+    {
+     "m": "k",
+     "ref": "14:25",
+     "text": "That is, the Dead Sea."
+    },
+    {
+     "m": "l",
+     "ref": "14:25",
+     "text": "Jonah means “dove.” He is the prophet in the book of Jonah."
+    },
+    {
+     "m": "m",
+     "ref": "14:25",
+     "text": "Gath-hepher means “winepress of the well.” It was a town in Zebulun."
+    },
+    {
+     "m": "n",
+     "ref": "14:26",
+     "text": "The Hebrew words are hard to translate. See the note at 1 Kings 14:10."
+    },
+    {
+     "m": "o",
+     "ref": "14:28",
+     "text": "The Hebrew here says “to Judah in Israel.” Its meaning is unclear."
+    },
+    {
+     "m": "p",
+     "ref": "14:29",
+     "text": "Zechariah means “Yahweh has remembered.”"
+    }
+   ],
+   "subheads": {
+    "1": "Amaziah Rules Judah",
+    "8": "Amaziah Fights Israel",
+    "17": "Amaziah Is Killed",
+    "23": "Jeroboam II Rules Israel"
+   }
+  },
+  {
+   "n": 15,
+   "paras": [
+    1,
+    8,
+    13,
+    17,
+    23,
+    27,
+    32
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "When Jeroboam had been Israel’s king for twenty-seven years, Amaziah’s son Azariah began to rule Judah."
+    },
+    {
+     "v": 2,
+     "text": "Azariah was only sixteen at his crowning, and his reign in Jerusalem went on for fifty-two years. Jecoliah{a} from Jerusalem was his mother."
+    },
+    {
+     "v": 3,
+     "text": "Azariah did what pleased Yahweh, the same as his father Amaziah had done in every way."
+    },
+    {
+     "v": 4,
+     "text": "But the hilltop shrines stayed in use. People went on offering sacrifices and burning incense at them."
+    },
+    {
+     "v": 5,
+     "text": "Yahweh struck the king with a skin disease{b} that stayed with him until his death. He had to live apart in a house of his own.{c} His son Jotham{d} ran the palace and governed the people of the land."
+    },
+    {
+     "v": 6,
+     "text": "The other things Azariah did are recorded in the official history of Judah’s kings."
+    },
+    {
+     "v": 7,
+     "text": "When Azariah died, they laid him in a grave close to his ancestors in David’s City. Jotham, his son, then ruled."
+    },
+    {
+     "v": 8,
+     "text": "Zechariah son of Jeroboam ruled Israel from Samaria for just six months. He became king in Azariah’s thirty-eighth year as Judah’s king."
+    },
+    {
+     "v": 9,
+     "text": "Like his ancestors, Zechariah did evil in Yahweh’s eyes. Jeroboam son of Nebat had led Israel into sin, and Zechariah held on to those sins."
+    },
+    {
+     "v": 10,
+     "text": "Shallum son of Jabesh made a plot against Zechariah. In front of the people{e} he attacked and killed him. Then Shallum made himself king."
+    },
+    {
+     "v": 11,
+     "text": "The other things Zechariah did are written in the official history of Israel’s kings."
+    },
+    {
+     "v": 12,
+     "text": "This is how Yahweh’s word to Jehu came true. He had said, “Four generations of your sons will sit on Israel’s throne.” Things turned out exactly that way."
+    },
+    {
+     "v": 13,
+     "text": "Uzziah{f} was in his thirty-ninth year as Judah’s king when Shallum son of Jabesh took Israel’s throne. He was king in Samaria for one month only."
+    },
+    {
+     "v": 14,
+     "text": "Then Menahem{g} son of Gadi came up to Samaria from Tirzah. He struck down Shallum, Jabesh’s son, and took his life. Then Menahem took over as king."
+    },
+    {
+     "v": 15,
+     "text": "The other things Shallum did, including his plot, are written in the official history of Israel’s kings."
+    },
+    {
+     "v": 16,
+     "text": "At that time Menahem went out from Tirzah and attacked Tiphsah{h} and the land around it. He struck everyone in the town, because they had refused to open their gates to him. He destroyed the town, and he cut open every woman there who was expecting a baby."
+    },
+    {
+     "v": 17,
+     "text": "Menahem son of Gadi took Israel’s throne in Azariah’s thirty-ninth year as king of Judah. From Samaria Menahem ruled for ten years."
+    },
+    {
+     "v": 18,
+     "text": "Menahem did evil in Yahweh’s eyes. His whole life long, he clung to the wrongs that Nebat’s son Jeroboam had brought into Israel."
+    },
+    {
+     "v": 19,
+     "text": "Then Pul,{i} king of Assyria, invaded the land. Menahem paid Pul about 37 tons of silver{j} to win his support and make his own hold on the kingdom stronger."
+    },
+    {
+     "v": 20,
+     "text": "Menahem got the money by making every rich man in Israel pay about 20 ounces of silver.{k} He gave it to Assyria’s king. So the Assyrian king went home and did not stay in Israel."
+    },
+    {
+     "v": 21,
+     "text": "The other things Menahem did are recorded in the official history of Israel’s kings."
+    },
+    {
+     "v": 22,
+     "text": "Menahem rested with his ancestors. His son Pekahiah{l} took his place as king."
+    },
+    {
+     "v": 23,
+     "text": "Pekahiah son of Menahem took Israel’s throne in Samaria in the fiftieth year of Azariah’s reign over Judah. Pekahiah ruled two years."
+    },
+    {
+     "v": 24,
+     "text": "Pekahiah did evil in Yahweh’s eyes. The sins started by Jeroboam son of Nebat went on under him too, and Israel kept sinning."
+    },
+    {
+     "v": 25,
+     "text": "Pekah{m} son of Remaliah, one of Pekahiah’s army officers, plotted against the king. Pekah took fifty men from Gilead with him. They killed Pekahiah in the strongest part of the palace at Samaria. Argob and Arieh{n} were killed along with him. Then Pekah made himself king."
+    },
+    {
+     "v": 26,
+     "text": "The other things Pekahiah did are written in the official history of Israel’s kings."
+    },
+    {
+     "v": 27,
+     "text": "In Azariah’s fifty-second year as Judah’s king, Pekah son of Remaliah became king of Israel in Samaria. His rule lasted twenty years."
+    },
+    {
+     "v": 28,
+     "text": "Pekah did evil in Yahweh’s eyes. Like the kings before him, he held to the false worship Jeroboam son of Nebat had set up for Israel."
+    },
+    {
+     "v": 29,
+     "text": "While Pekah was Israel’s king, Tiglath-pileser,{o} king of Assyria, invaded. One by one he captured Ijon, Abel-beth-maacah and Janoah, then Kedesh and Hazor. He captured the regions of Gilead and Galilee, the whole land of Naphtali. He took the people away as captives to Assyria."
+    },
+    {
+     "v": 30,
+     "text": "Then Hoshea{p} son of Elah made a secret plan to get rid of Pekah. He attacked and killed him and became king in his place. This was in Jotham son of Uzziah’s twentieth year."
+    },
+    {
+     "v": 31,
+     "text": "The other things Pekah did are written in the official history of Israel’s kings."
+    },
+    {
+     "v": 32,
+     "text": "Pekah son of Remaliah was in his second year as Israel’s king when Jotham son of Uzziah began to rule Judah."
+    },
+    {
+     "v": 33,
+     "text": "At twenty-five Jotham took the throne, and for sixteen years he ruled from Jerusalem. Jerusha, Zadok’s daughter, was his mother."
+    },
+    {
+     "v": 34,
+     "text": "Jotham did what pleased Yahweh. He lived the way his father Uzziah had lived."
+    },
+    {
+     "v": 35,
+     "text": "But the hilltop shrines stayed in use. People went on offering sacrifices and burning incense at them. Jotham built the Upper Gate of Yahweh’s temple."
+    },
+    {
+     "v": 36,
+     "text": "The other things Jotham did are recorded in the official history of Judah’s kings."
+    },
+    {
+     "v": 37,
+     "text": "In those days Yahweh began to send Rezin,{q} king of Aram, and Remaliah’s son Pekah to make war on Judah."
+    },
+    {
+     "v": 38,
+     "text": "When Jotham died, he was laid in the family tombs in the city of his ancestor David. Then his son Ahaz{r} became king."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "15:2",
+     "text": "Jecoliah means “Yahweh is able.”"
+    },
+    {
+     "m": "b",
+     "ref": "15:5",
+     "text": "See the note at 5:1."
+    },
+    {
+     "m": "c",
+     "ref": "15:5",
+     "text": "The Hebrew words may mean “a house of freedom,” that is, free from the work of a king. The exact meaning is uncertain."
+    },
+    {
+     "m": "d",
+     "ref": "15:5",
+     "text": "Jotham means “Yahweh is perfect.”"
+    },
+    {
+     "m": "e",
+     "ref": "15:10",
+     "text": "The Hebrew words for “in front of the people” are unusual. The Septuagint says “in Keblaam,” which some think means Ibleam (compare 9:27)."
+    },
+    {
+     "m": "f",
+     "ref": "15:13",
+     "text": "Uzziah is another name for Azariah. It means “Yahweh is my strength.”"
+    },
+    {
+     "m": "g",
+     "ref": "15:14",
+     "text": "Menahem means “comforter.”"
+    },
+    {
+     "m": "h",
+     "ref": "15:16",
+     "text": "The Hebrew says Tiphsah. Tiphsah was a town on the Euphrates River, far from Israel. Some ancient copies say “Tappuah,” and the Septuagint says “Tirzah.”"
+    },
+    {
+     "m": "i",
+     "ref": "15:19",
+     "text": "Pul was the Babylonian royal name of Tiglath-pileser III (verse 29)."
+    },
+    {
+     "m": "j",
+     "ref": "15:19",
+     "text": "The Hebrew says “a thousand talents of silver.” A talent was about 75 pounds (34 kilograms), so this was about 34,000 kilograms."
+    },
+    {
+     "m": "k",
+     "ref": "15:20",
+     "text": "The Hebrew says “fifty shekels of silver.” A shekel was about 0.4 ounce (11.5 grams), so this was about 575 grams."
+    },
+    {
+     "m": "l",
+     "ref": "15:22",
+     "text": "Pekahiah means “Yahweh has opened (the eyes).”"
+    },
+    {
+     "m": "m",
+     "ref": "15:25",
+     "text": "Pekah means “he has opened (the eyes).”"
+    },
+    {
+     "m": "n",
+     "ref": "15:25",
+     "text": "The Hebrew words “with Argob and Arieh” are hard to understand. They may be names of men killed with the king, or names of places, and may belong with verse 29."
+    },
+    {
+     "m": "o",
+     "ref": "15:29",
+     "text": "Tiglath-pileser III ruled Assyria from about 745 to 727 B.C."
+    },
+    {
+     "m": "p",
+     "ref": "15:30",
+     "text": "Hoshea means “salvation.”"
+    },
+    {
+     "m": "q",
+     "ref": "15:37",
+     "text": "Rezin is probably Aramaic for “pleasing” or “prince.”"
+    },
+    {
+     "m": "r",
+     "ref": "15:38",
+     "text": "Ahaz means “he has grasped.” It is a short form of Jehoahaz."
+    }
+   ],
+   "subheads": {
+    "1": "Azariah Rules Judah",
+    "8": "Zechariah Rules Israel",
+    "13": "Shallum Rules Israel",
+    "17": "Menahem Rules Israel",
+    "23": "Pekahiah Rules Israel",
+    "27": "Pekah Rules Israel",
+    "32": "Jotham Rules Judah"
+   }
+  },
+  {
+   "n": 16,
+   "paras": [
+    1,
+    5,
+    10,
+    17
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Ahaz son of Jotham began his rule over Judah when Pekah son of Remaliah had ruled Israel for seventeen years."
+    },
+    {
+     "v": 2,
+     "text": "Ahaz took the throne at twenty and ruled sixteen years from Jerusalem. His ancestor David had pleased Yahweh his God, but Ahaz did not."
+    },
+    {
+     "v": 3,
+     "text": "Instead he followed the ways of Israel’s kings. He even gave his own son to be burned as a sacrifice.{a} He copied the disgusting practices of the nations that Yahweh had pushed out ahead of the Israelites."
+    },
+    {
+     "v": 4,
+     "text": "At the hilltop shrines, on the hilltops, and in the shade of every leafy tree, he offered sacrifices and burned incense."
+    },
+    {
+     "v": 5,
+     "text": "Then Rezin, Aram’s king, and Pekah son of Remaliah, Israel’s king, came to fight against Jerusalem. They closed in around Ahaz there, but they could not beat him.{b}"
+    },
+    {
+     "v": 6,
+     "text": "At that time Rezin, Aram’s king,{c} won Elath back for Aram. He forced the people of Judah out of Elath. Edomites{d} came and settled in Elath, and it has been their home ever since."
+    },
+    {
+     "v": 7,
+     "text": "Ahaz sent messengers to Tiglath-pileser, the Assyrian king. “I am your servant,” he said. “I am like your son. Aram’s king and Israel’s king have come against me. Come and save me from their power.”"
+    },
+    {
+     "v": 8,
+     "text": "Ahaz took the silver and gold from Yahweh’s temple and from the palace storerooms. He sent it to Assyria’s king as a gift.{e}"
+    },
+    {
+     "v": 9,
+     "text": "The Assyrian king agreed to help. He attacked Damascus and took it. He sent its people away as captives to Kir,{f} and he killed Rezin."
+    },
+    {
+     "v": 10,
+     "text": "Then Ahaz went to Damascus for a meeting with Tiglath-pileser, Assyria’s king. While there, he saw an altar. He sent Uriah{g} the priest a drawing of it, with a careful plan of how it was made."
+    },
+    {
+     "v": 11,
+     "text": "So Uriah the priest followed every detail the king had sent him from Damascus, and he built the altar to match. Uriah had it ready before the king got home."
+    },
+    {
+     "v": 12,
+     "text": "Back from his trip, the king looked over the new altar. He went up to it and climbed its steps."
+    },
+    {
+     "v": 13,
+     "text": "He offered his burnt offering and his grain offering on it. He poured out his drink offering. He splashed the blood of his peace offerings on the altar."
+    },
+    {
+     "v": 14,
+     "text": "Then he moved the old bronze altar, which stood before Yahweh. It had been between the new altar and Yahweh’s temple. Ahaz had it moved to the north side of his new altar."
+    },
+    {
+     "v": 15,
+     "text": "Then the king commanded Uriah: “Use the big new altar for the morning burnt offering and the evening grain offering. Offer the king’s burnt offering and grain offering on it. Offer there the burnt offerings, grain offerings and drink offerings of all the people of the land. Throw the blood of every animal offered against this altar. But I will use the bronze altar to ask for guidance.”{h}"
+    },
+    {
+     "v": 16,
+     "text": "Uriah the priest did all King Ahaz told him to do."
+    },
+    {
+     "v": 17,
+     "text": "King Ahaz cut off the side panels from the movable stands and removed the washbasins from them. He lifted the huge bronze bowl called the Sea down from the twelve bronze bulls under it. He set it on a base of stone."
+    },
+    {
+     "v": 18,
+     "text": "To please the king of Assyria, he also took away from Yahweh’s temple the covered walkway used on the Sabbath.{i} He removed the king’s outside entrance too."
+    },
+    {
+     "v": 19,
+     "text": "The other things Ahaz did are recorded in the official history of Judah’s kings."
+    },
+    {
+     "v": 20,
+     "text": "Ahaz rested with his ancestors. He was laid in a grave among them in David’s City. His son Hezekiah{j} became king after him."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "16:3",
+     "text": "That is, he offered his son as a burnt sacrifice. Compare 3:27 and Deuteronomy 18:10."
+    },
+    {
+     "m": "b",
+     "ref": "16:5",
+     "text": "Compare Isaiah 7:1-9."
+    },
+    {
+     "m": "c",
+     "ref": "16:6",
+     "text": "Many experts think “Rezin, Aram’s king” was added later, and that “Aram” here should be “Edom,” because the two words look alike in Hebrew."
+    },
+    {
+     "m": "d",
+     "ref": "16:6",
+     "text": "The Hebrew read aloud and the Septuagint say “Edomites.” The written Hebrew says “Arameans.”"
+    },
+    {
+     "m": "e",
+     "ref": "16:8",
+     "text": "Or “a bribe.”"
+    },
+    {
+     "m": "f",
+     "ref": "16:9",
+     "text": "Kir was the land the Arameans first came from (Amos 9:7). No one knows where it was."
+    },
+    {
+     "m": "g",
+     "ref": "16:10",
+     "text": "Uriah means “Yahweh is my light.”"
+    },
+    {
+     "m": "h",
+     "ref": "16:15",
+     "text": "Or “for me to think about.” The meaning of the Hebrew is uncertain."
+    },
+    {
+     "m": "i",
+     "ref": "16:18",
+     "text": "This follows the Hebrew read aloud. The meaning of the Hebrew is uncertain. The Septuagint says “a base for the throne.”"
+    },
+    {
+     "m": "j",
+     "ref": "16:20",
+     "text": "Hezekiah means “Yahweh makes strong.”"
+    }
+   ],
+   "subheads": {
+    "1": "Ahaz Rules Judah",
+    "10": "Ahaz Builds a New Altar"
+   }
+  },
+  {
+   "n": 17,
+   "paras": [
+    1,
+    7,
+    19,
+    24,
+    29
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Hoshea son of Elah became Israel’s king in Samaria when Ahaz had ruled Judah for twelve years. Hoshea ruled for nine years."
+    },
+    {
+     "v": 2,
+     "text": "Yahweh saw that he did evil, though the kings of Israel before him had been worse."
+    },
+    {
+     "v": 3,
+     "text": "Shalmaneser,{a} king of Assyria, marched against Hoshea. Hoshea gave in. He became Shalmaneser’s servant and paid him a tax every year."
+    },
+    {
+     "v": 4,
+     "text": "But later the Assyrian king found out that Hoshea was plotting against him. Hoshea had sent messengers to So,{b} Egypt’s king, asking for help, and he had stopped paying the yearly tax to Assyria. So Assyria’s king arrested Hoshea and put him in prison."
+    },
+    {
+     "v": 5,
+     "text": "Then the Assyrian king marched through the whole country. Samaria was surrounded by his army, and for three years he kept it shut in."
+    },
+    {
+     "v": 6,
+     "text": "In the ninth year of Hoshea’s rule, Samaria fell to Assyria’s king. He carried the people of Israel off to his own land. He settled them in Halah, in Gozan by the Habor River, and in towns where the Medes{c} lived."
+    },
+    {
+     "v": 7,
+     "text": "All this happened because Israel’s people did wrong against Yahweh their God. He had brought them out of Egypt, setting them free from the power of Pharaoh, Egypt’s king. Yet they worshiped other gods."
+    },
+    {
+     "v": 8,
+     "text": "They followed the ways of the nations Yahweh had chased out ahead of them. They also followed the practices that Israel’s kings had started.{d}"
+    },
+    {
+     "v": 9,
+     "text": "The Israelites secretly{e} did things that Yahweh their God said were wrong. They built hilltop shrines for themselves in all their towns, everywhere from the smallest lookout tower to the biggest walled city."
+    },
+    {
+     "v": 10,
+     "text": "On every tall hill and under every green tree, they set up stone pillars and Asherah poles."
+    },
+    {
+     "v": 11,
+     "text": "They burned incense at all the hilltop shrines, as the nations had done that Yahweh had driven away before them. They did evil things that made Yahweh angry."
+    },
+    {
+     "v": 12,
+     "text": "They worshiped idols,{f} even though Yahweh had told them, “Do not do this.”"
+    },
+    {
+     "v": 13,
+     "text": "Through all his prophets and seers, Yahweh had given warnings to both Israel and Judah. “Turn away from your evil ways,” he said. “Keep my commands and my laws. Follow the whole Law that I gave to your ancestors, the Law I sent to you through my servants the prophets.”"
+    },
+    {
+     "v": 14,
+     "text": "They refused to hear. Like their ancestors, they were stiff-necked and stubborn. Those ancestors had not trusted Yahweh their God either."
+    },
+    {
+     "v": 15,
+     "text": "They threw away his laws and the solemn promise he had made with their fathers. They ignored his warnings. They chased after worthless idols and became worthless themselves.{g} They copied the nations around them, though Yahweh had told them not to act like those nations."
+    },
+    {
+     "v": 16,
+     "text": "They turned away from all the commands of Yahweh their God. They melted metal and made two calf idols. They made an Asherah pole. The sun, moon and stars received their worship. Baal became their master."
+    },
+    {
+     "v": 17,
+     "text": "They sacrificed their sons and daughters in the fire. They tried to learn the future by magic and signs. They gave themselves over to doing what Yahweh saw as evil, and they made him angry."
+    },
+    {
+     "v": 18,
+     "text": "Yahweh’s anger burned hot against Israel, and he sent them away from his presence. Only the tribe of Judah was left."
+    },
+    {
+     "v": 19,
+     "text": "Yet Judah too broke the commands of Yahweh, their God. They took up the customs Israel had begun."
+    },
+    {
+     "v": 20,
+     "text": "So Yahweh turned away from all of Israel’s people. He made them suffer and let robbers attack them. In the end he threw them out of his sight."
+    },
+    {
+     "v": 21,
+     "text": "Yahweh had torn Israel away from David’s family. The people then crowned Nebat’s son Jeroboam as their king. Jeroboam pulled Israel away from following Yahweh and led them into a terrible sin."
+    },
+    {
+     "v": 22,
+     "text": "The Israelites kept doing all the sins Jeroboam did. They did not stop."
+    },
+    {
+     "v": 23,
+     "text": "At last Yahweh removed Israel from his presence. He had warned them through all his servants the prophets that he would do this. So Israel was taken out of their own land as captives to Assyria, and they are still there today."
+    },
+    {
+     "v": 24,
+     "text": "The king of Assyria brought people from Babylon, Cuthah, Avva, Hamath and Sepharvaim.{h} He moved them into Samaria’s towns to replace the Israelites. Samaria became theirs, and they made its towns their home."
+    },
+    {
+     "v": 25,
+     "text": "At first these newcomers did not honor Yahweh. So Yahweh sent lions in among them, and some of them were killed."
+    },
+    {
+     "v": 26,
+     "text": "A message was sent to Assyria’s king: “You moved people into the towns of Samaria. But these people do not know what the god of that land requires.{i} So he has let lions loose on them, and people are dying. They do not know how that god wants to be worshiped.”"
+    },
+    {
+     "v": 27,
+     "text": "Then the Assyrian king gave an order. “One of the priests we carried off from there must go back. Let him live there again and show the people the way the god of that land must be worshiped.”"
+    },
+    {
+     "v": 28,
+     "text": "So a priest who had been taken from Samaria returned. He made his home in Bethel and showed the people how to honor Yahweh."
+    },
+    {
+     "v": 29,
+     "text": "But each group of people still made its own gods. They placed them in the shrines the Samarians had built on the hilltops. Every nation did this in its own towns."
+    },
+    {
+     "v": 30,
+     "text": "Those who came from Babylon made Succoth-benoth. Nergal was made by those from Cuth, and Ashima by those from Hamath."
+    },
+    {
+     "v": 31,
+     "text": "Nibhaz and Tartak were the gods of the Avvites. The Sepharvites even threw their sons and daughters into the fire for Adrammelech and Anammelech, the gods they had brought with them.{j}"
+    },
+    {
+     "v": 32,
+     "text": "They worshiped Yahweh too. But they chose all kinds of people from among themselves to be priests at the hilltop shrines. These priests offered sacrifices for them in the shrines."
+    },
+    {
+     "v": 33,
+     "text": "So they worshiped Yahweh, and at the same time they served their own gods. They kept the customs of the countries they had been taken away from."
+    },
+    {
+     "v": 34,
+     "text": "Even now they keep doing things the old way. They do not truly worship Yahweh. They do not obey the laws, rules, teachings and commands that Yahweh gave to the descendants of Jacob, whom he named Israel.{k}"
+    },
+    {
+     "v": 35,
+     "text": "Yahweh had made an agreement with them, and he had given them this command: “Other gods are not for you. You must never bow to them, serve them, or bring them sacrifices."
+    },
+    {
+     "v": 36,
+     "text": "Worship only Yahweh, who brought you up out of Egypt by his mighty power and his strong arm. Bow down to him, and offer sacrifices to him."
+    },
+    {
+     "v": 37,
+     "text": "Always be careful to obey the laws, rules, teachings and commands he wrote down for you. Do not worship other gods."
+    },
+    {
+     "v": 38,
+     "text": "Remember the agreement I made with you. Never worship other gods."
+    },
+    {
+     "v": 39,
+     "text": "Honor Yahweh your God alone. Then he will set you free from every enemy you have.”"
+    },
+    {
+     "v": 40,
+     "text": "But they would not listen. They kept doing things the old way."
+    },
+    {
+     "v": 41,
+     "text": "So these nations worshiped Yahweh, but they also served their idols. Even today their children and grandchildren do what their ancestors did."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "17:3",
+     "text": "Shalmaneser V ruled Assyria from about 727 to 722 B.C."
+    },
+    {
+     "m": "b",
+     "ref": "17:4",
+     "text": "So may be the name of a pharaoh, perhaps Osorkon IV. Or it may be a place name, Sais, in the Nile delta."
+    },
+    {
+     "m": "c",
+     "ref": "17:6",
+     "text": "The Septuagint says “the mountains of the Medes.”"
+    },
+    {
+     "m": "d",
+     "ref": "17:8",
+     "text": "The Hebrew here is awkward. It may mean “and the practices of the kings of Israel, which they followed.”"
+    },
+    {
+     "m": "e",
+     "ref": "17:9",
+     "text": "The meaning of the Hebrew word is uncertain. It may mean “said false things about.”"
+    },
+    {
+     "m": "f",
+     "ref": "17:12",
+     "text": "The Hebrew word is gillulim, an insulting word for idols, perhaps meaning “dung balls.”"
+    },
+    {
+     "m": "g",
+     "ref": "17:15",
+     "text": "The Hebrew word is hebel, “vapor” or “breath.” It is a play on the idea of being worthless."
+    },
+    {
+     "m": "h",
+     "ref": "17:24",
+     "text": "These were cities in Mesopotamia and Syria."
+    },
+    {
+     "m": "i",
+     "ref": "17:26",
+     "text": "The Hebrew word is mishpat, here meaning “custom” or “required worship.” The same word is in verses 27, 33, 34 and 40."
+    },
+    {
+     "m": "j",
+     "ref": "17:31",
+     "text": "Most of the gods named in verses 30-31 are not well known. Nergal was a Mesopotamian god of the underworld."
+    },
+    {
+     "m": "k",
+     "ref": "17:34",
+     "text": "Verse 34 seems to disagree with verses 32-33. It may mean that these people did not worship Yahweh the way the Law required. Jacob was given the name Israel in Genesis 32:28."
+    }
+   ],
+   "subheads": {
+    "1": "Hoshea, Israel’s Last King",
+    "7": "Why Israel Fell",
+    "24": "New People in Samaria"
+   }
+  },
+  {
+   "n": 18,
+   "paras": [
+    1,
+    9,
+    13,
+    17,
+    26
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Hezekiah son of Ahaz started to rule Judah in the third year of Hoshea son of Elah, who ruled Israel."
+    },
+    {
+     "v": 2,
+     "text": "At twenty-five Hezekiah was crowned, and he reigned in Jerusalem for twenty-nine years. Abi,{a} Zechariah’s daughter, was his mother."
+    },
+    {
+     "v": 3,
+     "text": "Hezekiah did what pleased Yahweh. In every way he lived as his ancestor David had."
+    },
+    {
+     "v": 4,
+     "text": "He got rid of the hilltop shrines. He broke the stone pillars to pieces and chopped down the Asherah pole. There was also a bronze snake that Moses had made long ago. Hezekiah smashed it, because the people of Israel had kept on offering incense to it up to that time. They called it Nehushtan.{b}"
+    },
+    {
+     "v": 5,
+     "text": "Hezekiah put his trust in Yahweh, Israel’s God. No king of Judah who came before him or after him was his equal."
+    },
+    {
+     "v": 6,
+     "text": "He clung to Yahweh and never stopped following him. Every command that Yahweh gave Moses, Hezekiah kept."
+    },
+    {
+     "v": 7,
+     "text": "Yahweh was with Hezekiah, and everything he set out to do went well. He refused to serve Assyria’s king and broke free from him."
+    },
+    {
+     "v": 8,
+     "text": "He beat the Philistines and pushed them back as far as Gaza and the land around it. He took everything from their lookout towers to their walled cities."
+    },
+    {
+     "v": 9,
+     "text": "In King Hezekiah’s fourth year, Shalmaneser, Assyria’s king, attacked Samaria and surrounded it. In Israel it was Hoshea’s seventh year as king."
+    },
+    {
+     "v": 10,
+     "text": "Three years later the Assyrians took the city. Samaria fell in Hezekiah’s sixth year, Hoshea’s ninth."
+    },
+    {
+     "v": 11,
+     "text": "Assyria’s king carried the Israelites off to his country. He sent them to live in Halah, in Gozan beside the Habor River, and among the Medes in their cities."
+    },
+    {
+     "v": 12,
+     "text": "All of this came on them for refusing to obey Yahweh their God. They broke his agreement and everything Moses, Yahweh’s servant, had commanded. They closed their ears and would not do what he said."
+    },
+    {
+     "v": 13,
+     "text": "In Hezekiah’s fourteenth year as king, Sennacherib,{c} king of Assyria, marched against all the walled cities of Judah and captured them."
+    },
+    {
+     "v": 14,
+     "text": "So Hezekiah sent word to Lachish, where Assyria’s king was camped. “I was wrong,” he said. “Please leave my land. Whatever price you set, I will pay.” Assyria’s king demanded about 11 tons of silver from Hezekiah and about 1 ton of gold.{d}"
+    },
+    {
+     "v": 15,
+     "text": "Hezekiah handed over every bit of silver in Yahweh’s temple and in the palace storerooms."
+    },
+    {
+     "v": 16,
+     "text": "Hezekiah had once covered the doors and doorposts of Yahweh’s temple with gold. Now he stripped off that gold and gave it to Assyria’s king."
+    },
+    {
+     "v": 17,
+     "text": "But from Lachish the Assyrian king sent three of his highest officers, the Tartan, the Rab-saris and the Rabshakeh,{e} to King Hezekiah in Jerusalem. A large army came with them. They marched up to Jerusalem and stopped beside the water channel from the Upper Pool, along the road to the field where cloth is washed."
+    },
+    {
+     "v": 18,
+     "text": "They called for the king. Three men came out to them. One was Eliakim son of Hilkiah, who managed the palace. Shebnah, the royal writer, and Joah son of Asaph, who kept the records, came with him."
+    },
+    {
+     "v": 19,
+     "text": "The Rabshakeh said to them, “Give Hezekiah this message from the great king, Assyria’s king: ‘What makes you feel so safe?"
+    },
+    {
+     "v": 20,
+     "text": "You claim to have good plans and a strong army. But your words mean nothing. Who are you counting on, now that you have turned against me?"
+    },
+    {
+     "v": 21,
+     "text": "Egypt? Egypt is like a broken reed. Lean on it like a walking stick, and it will cut your hand open. That is what Pharaoh, Egypt’s king, does to anyone who depends on him."
+    },
+    {
+     "v": 22,
+     "text": "Or maybe you will tell me, “We trust Yahweh our God.” But Hezekiah tore down his hilltop shrines and altars! He ordered Judah and Jerusalem to worship at one altar only, the one in Jerusalem."
+    },
+    {
+     "v": 23,
+     "text": "So come, make a bet with my master, Assyria’s king. I will hand over 2,000 horses to you. But I doubt you have 2,000 men who know how to ride!"
+    },
+    {
+     "v": 24,
+     "text": "You cannot drive back even one of my master’s lowest officers. So why depend on Egypt for chariots and horsemen?"
+    },
+    {
+     "v": 25,
+     "text": "And do not suppose that Yahweh is against my coming here to wipe this place out. Yahweh himself said to me, “Attack this land and destroy it.”’”"
+    },
+    {
+     "v": 26,
+     "text": "Eliakim son of Hilkiah, Shebnah and Joah spoke up. “Please speak to us, your servants, in Aramaic,” they said to the Rabshakeh. “We can understand it. Do not use our own language{f} where the people on the wall can hear you.”"
+    },
+    {
+     "v": 27,
+     "text": "But the Rabshakeh answered, “My master did not send me to say these things only to your master and to you. I am talking to those men sitting on the wall. They are trapped with you. Before long, hunger will drive them, and you too, to feed on their own filth and to swallow their own urine.”{g}"
+    },
+    {
+     "v": 28,
+     "text": "Then the Rabshakeh stood up and shouted at the top of his voice in the Judeans’ language: “Hear the words of Assyria’s king, the great king!"
+    },
+    {
+     "v": 29,
+     "text": "He says, ‘Do not be fooled by Hezekiah. He cannot rescue you from my power."
+    },
+    {
+     "v": 30,
+     "text": "Do not let Hezekiah talk you into trusting Yahweh. He says, “Yahweh will surely save us. Assyria’s king will never get this city.”"
+    },
+    {
+     "v": 31,
+     "text": "Do not listen to Hezekiah. Assyria’s king says this: “Make peace with me{h} and come out to me. Then each of you can eat grapes from his own vine and figs from his own tree. Each of you can drink water from his own well."
+    },
+    {
+     "v": 32,
+     "text": "Later I will move you to a country like your own. There you will find fields of grain, new wine, bread, vineyards, olive trees and honey. Choose life, not death! Do not listen to Hezekiah when he fools you, saying, ‘Yahweh will save us.’"
+    },
+    {
+     "v": 33,
+     "text": "Name one nation whose god kept its land safe from Assyria’s king."
+    },
+    {
+     "v": 34,
+     "text": "What became of the gods of Hamath and Arpad? Where are the gods of Sepharvaim, Hena and Ivvah? Did they save Samaria from me?"
+    },
+    {
+     "v": 35,
+     "text": "Not one god of any land has saved his people from me. How then could Yahweh save Jerusalem from me?”’”"
+    },
+    {
+     "v": 36,
+     "text": "But the people kept quiet. They did not say a single word in reply, because the king had ordered, “Do not answer him.”"
+    },
+    {
+     "v": 37,
+     "text": "The three officials tore their clothes and went to Hezekiah: Eliakim son of Hilkiah, the palace manager; Shebna, the royal writer; and Joah son of Asaph, the record keeper. They reported every word the Rabshakeh had spoken."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "18:2",
+     "text": "Abi is a short form of Abijah, “Yahweh is my father” (2 Chronicles 29:1)."
+    },
+    {
+     "m": "b",
+     "ref": "18:4",
+     "text": "Nehushtan sounds like the Hebrew words nehosheth, “bronze,” and nahash, “snake.” Compare Numbers 21:8-9."
+    },
+    {
+     "m": "c",
+     "ref": "18:13",
+     "text": "Sennacherib ruled Assyria from 705 to 681 B.C. He attacked Judah in 701 B.C."
+    },
+    {
+     "m": "d",
+     "ref": "18:14",
+     "text": "The Hebrew says “three hundred talents of silver and thirty talents of gold.” A talent was about 75 pounds (34 kilograms), so this was about 10,200 kilograms of silver and 1,020 kilograms of gold."
+    },
+    {
+     "m": "e",
+     "ref": "18:17",
+     "text": "These are Assyrian titles. Tartan means “top commander.” Rab-saris means “chief officer.” Rabshakeh means “chief cupbearer” or field commander."
+    },
+    {
+     "m": "f",
+     "ref": "18:26",
+     "text": "The Hebrew says “in Judean.” The same is true in verse 28."
+    },
+    {
+     "m": "g",
+     "ref": "18:27",
+     "text": "The Hebrew read aloud has these words. The written Hebrew uses cruder words."
+    },
+    {
+     "m": "h",
+     "ref": "18:31",
+     "text": "The Hebrew says “Make a blessing with me.”"
+    }
+   ],
+   "subheads": {
+    "1": "Hezekiah Rules Judah",
+    "9": "Samaria Falls",
+    "13": "Assyria Threatens Jerusalem",
+    "26": "The Field Commander Shouts to the People"
+   }
+  },
+  {
+   "n": 19,
+   "paras": [
+    1,
+    5,
+    8,
+    14,
+    20,
+    29,
+    35
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "King Hezekiah heard their report. He tore his clothes, put on rough sackcloth, and went into Yahweh’s temple."
+    },
+    {
+     "v": 2,
+     "text": "He sent Eliakim, the palace manager, and Shebna, the royal writer, with the older priests to see the prophet Isaiah{a} son of Amoz. All of them were wearing sackcloth."
+    },
+    {
+     "v": 3,
+     "text": "They gave Isaiah this message: “Hezekiah says, ‘Today is a day of pain and shame. God is correcting us. We are like a woman ready to give birth, who has no strength left to push the baby out."
+    },
+    {
+     "v": 4,
+     "text": "Assyria’s king sent his field commander to insult the living God. Maybe Yahweh your God has heard every word he said. Maybe Yahweh will punish him for those words. So please pray for the people who are still left here.’”"
+    },
+    {
+     "v": 5,
+     "text": "So King Hezekiah’s officials came to Isaiah,"
+    },
+    {
+     "v": 6,
+     "text": "and Isaiah told them, “Give your master this answer: ‘Yahweh says, “Do not let the words you heard frighten you. The servants of Assyria’s king have spoken against me, but do not be afraid."
+    },
+    {
+     "v": 7,
+     "text": "Listen! I will put a spirit in him. He will hear news that makes him go home. Then I will make him die by the sword in his own country.”’”"
+    },
+    {
+     "v": 8,
+     "text": "The field commander left Jerusalem. He heard that Assyria’s king had moved on from Lachish. He caught up with the king at Libnah, where he was fighting."
+    },
+    {
+     "v": 9,
+     "text": "Then news came to Sennacherib about Tirhakah,{b} the king of Cush.{c} “Tirhakah is marching out to fight you,” he was told. So Sennacherib sent messengers once more to Hezekiah."
+    },
+    {
+     "v": 10,
+     "text": "“Speak to Hezekiah, Judah’s king,” he said. “Tell him, ‘You trust in your God, but he is tricking you. He promises that Assyria’s king will never capture Jerusalem. Do not believe it."
+    },
+    {
+     "v": 11,
+     "text": "You know what the kings of Assyria have done to other countries. They wiped them out completely. Why would you be the only one to escape?"
+    },
+    {
+     "v": 12,
+     "text": "My fathers destroyed many peoples: Gozan, Haran and Rezeph, and Eden’s people in Telassar. Their gods did not save them, did they?"
+    },
+    {
+     "v": 13,
+     "text": "What has become of the kings of Hamath and Arpad? And the kings of Sepharvaim, of Hena, of Ivvah, where are they?’”"
+    },
+    {
+     "v": 14,
+     "text": "The messengers handed Hezekiah the letter, and he read it through. Then he went up to Yahweh’s temple. He opened the letter and laid it out in front of Yahweh."
+    },
+    {
+     "v": 15,
+     "text": "Then Hezekiah prayed to Yahweh. “Yahweh, Israel’s God,” he said, “you sit on your throne between the winged creatures. You alone are God over all the kingdoms of the earth. Heaven and earth are the work of your hands."
+    },
+    {
+     "v": 16,
+     "text": "Yahweh, turn your ear toward me and listen. Yahweh, open your eyes and look. Hear the message Sennacherib has sent to make fun of the living God."
+    },
+    {
+     "v": 17,
+     "text": "Yahweh, it is true that Assyria’s kings have destroyed these nations and their lands."
+    },
+    {
+     "v": 18,
+     "text": "They have tossed the gods of those nations into flames. But those were not gods. People made them out of wood and stone with their own hands. So the Assyrians were able to wipe them out."
+    },
+    {
+     "v": 19,
+     "text": "Yahweh our God, I beg you now to rescue us from his hand. Let all the kingdoms of the world learn that you alone, Yahweh, are God.”"
+    },
+    {
+     "v": 20,
+     "text": "A message then came to Hezekiah from Isaiah, Amoz’s son. “Yahweh, Israel’s God, says this: ‘You prayed to me about Sennacherib, Assyria’s king. I have heard you.’"
+    },
+    {
+     "v": 21,
+     "text": "Here is what Yahweh has said against Sennacherib:\n‘The young woman Zion looks down on you.\nShe laughs at you.\nThe daughter Jerusalem shakes her head\nat you as you run away."
+    },
+    {
+     "v": 22,
+     "text": "Who have you insulted? Who have you mocked?\nAgainst whom did you raise your voice?\nYou looked with proud eyes\nat the Holy One of Israel!"
+    },
+    {
+     "v": 23,
+     "text": "Through your messengers you poured scorn on the Lord.{d}\nYou said, “With my many chariots{e}\nI have climbed the high mountains,\nthe highest peaks of Lebanon.\nI cut down its tallest cedars,\nits finest pine trees.\nI reached its farthest corners,\nits thickest forests.{f}"
+    },
+    {
+     "v": 24,
+     "text": "I dug wells in foreign lands\nand drank their water.\nI marched through Egypt’s streams,\nand under my feet they all went dry.”{g}"
+    },
+    {
+     "v": 25,
+     "text": "Haven’t you heard?\nI planned it long ago.\nIn days long past I decided it.\nNow I have made it happen.\nThat is why you have turned strong cities\ninto piles of stones."
+    },
+    {
+     "v": 26,
+     "text": "Their people had no power left.\nThey were frightened and ashamed.\nThey were like plants in a field,\nlike new green shoots,\nlike grass growing on a roof,\ndried up before it can grow tall.{h}"
+    },
+    {
+     "v": 27,
+     "text": "I know when you sit down.\nI know when you go out and when you come in.\nI know all about your fury against me."
+    },
+    {
+     "v": 28,
+     "text": "Your fury and your pride\nhave reached my ears.\nSo I will put my hook in your nose\nand my bit in your mouth.\nI will turn you around\nand send you back on the road you came by.’"
+    },
+    {
+     "v": 29,
+     "text": "“Hezekiah, here is the sign for you. For the rest of this year, your food will be grain that sprouts on its own. The year after, you will live on what comes up from that. The third year, sow your seed and gather your harvest once more. Plant vineyards and eat their grapes."
+    },
+    {
+     "v": 30,
+     "text": "Those who are left alive in Judah will grow again like a plant. Their roots will go deep, and fruit will grow on their branches."
+    },
+    {
+     "v": 31,
+     "text": "A group of people who survive will come out of Jerusalem. Those who escape will come from Mount Zion. Yahweh’s{i} burning love for his people will make this happen."
+    },
+    {
+     "v": 32,
+     "text": "“Here then is Yahweh’s word about the king of Assyria:\n‘This city will never see him inside it.\nNot one of his arrows will fly into it.\nNo soldier with a shield will come near it.\nNo ramp of dirt will be piled up against it."
+    },
+    {
+     "v": 33,
+     "text": "He will return by the road he took to get here.\nHe will not come into this city,\nsays Yahweh."
+    },
+    {
+     "v": 34,
+     "text": "I will guard this city and save it,\nfor my own honor\nand for my servant David.’”"
+    },
+    {
+     "v": 35,
+     "text": "That same night, out went the angel of Yahweh to the camp of the Assyrians. He struck down 185,000 of their men. When the others{j} woke up early the next morning, dead bodies lay everywhere."
+    },
+    {
+     "v": 36,
+     "text": "So Sennacherib, Assyria’s king, packed up his camp and left. He went home and stayed in Nineveh."
+    },
+    {
+     "v": 37,
+     "text": "Sennacherib went to worship Nisroch,{k} his god, in his temple. While he was bowed down there, Adrammelech and Sharezer, two of his own sons, struck him dead with swords. The murderers fled to Ararat.{l} Esarhaddon,{m} another son, took the throne."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "19:2",
+     "text": "Isaiah means “Yahweh saves.”"
+    },
+    {
+     "m": "b",
+     "ref": "19:9",
+     "text": "Tirhakah (Taharqa) was a ruler from Cush who later became Egypt’s king. Here he was probably still commander of the army."
+    },
+    {
+     "m": "c",
+     "ref": "19:9",
+     "text": "That is, the upper Nile region (modern Sudan)."
+    },
+    {
+     "m": "d",
+     "ref": "19:23",
+     "text": "The Hebrew word here is Adonai."
+    },
+    {
+     "m": "e",
+     "ref": "19:23",
+     "text": "The Hebrew read aloud and the Septuagint say this. The written Hebrew says “With the chariot of my chariots.”"
+    },
+    {
+     "m": "f",
+     "ref": "19:23",
+     "text": "The Hebrew says “the forest of its Carmel,” meaning its garden land."
+    },
+    {
+     "m": "g",
+     "ref": "19:24",
+     "text": "The Hebrew word here is Matsor, a name for Egypt used in poetry. It can also mean “attack on a city.”"
+    },
+    {
+     "m": "h",
+     "ref": "19:26",
+     "text": "The Hebrew says this, but the meaning is uncertain. Isaiah 37:27 and some ancient copies say “like a field with terraces.”"
+    },
+    {
+     "m": "i",
+     "ref": "19:31",
+     "text": "The Septuagint says “Yahweh of Armies,” as in Isaiah 37:32."
+    },
+    {
+     "m": "j",
+     "ref": "19:35",
+     "text": "The Hebrew says “they.”"
+    },
+    {
+     "m": "k",
+     "ref": "19:37",
+     "text": "Nisroch is not known from any other place. The name may be a copying mistake for Nusku or Marduk."
+    },
+    {
+     "m": "l",
+     "ref": "19:37",
+     "text": "Ararat is Urartu, in the area of modern Armenia."
+    },
+    {
+     "m": "m",
+     "ref": "19:37",
+     "text": "Esarhaddon ruled Assyria from 681 to 669 B.C."
+    }
+   ],
+   "subheads": {
+    "1": "Hezekiah Asks Isaiah for Help",
+    "8": "Sennacherib Sends a Letter",
+    "14": "Hezekiah Prays",
+    "20": "Isaiah Gives God’s Answer",
+    "35": "The Assyrian Army Is Destroyed"
+   }
+  },
+  {
+   "n": 20,
+   "paras": [
+    1,
+    4,
+    8,
+    12,
+    14,
+    16,
+    20
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "About that time Hezekiah became very sick, so sick he was about to die. Isaiah, the prophet, Amoz’s son, came to see him. “Yahweh says, ‘Put your affairs in order,’” Isaiah told him. “‘Your life is ending. You will not get over this sickness.’”"
+    },
+    {
+     "v": 2,
+     "text": "Hezekiah turned his face to the wall. Then he prayed this prayer to Yahweh:"
+    },
+    {
+     "v": 3,
+     "text": "“Please, Yahweh,” he said, “remember how faithfully I have lived before you. My whole heart has been yours. My life has been spent doing what pleases you.” Then Hezekiah cried and cried."
+    },
+    {
+     "v": 4,
+     "text": "Isaiah was leaving. But before he had passed the middle courtyard,{a} Yahweh spoke to him."
+    },
+    {
+     "v": 5,
+     "text": "“Turn around,” he said. “Return to the palace and speak to my people’s ruler, Hezekiah. Say, ‘Yahweh, the God your ancestor David served, has a message for you. Your prayer has reached me, and I have seen you weep. I will make you well. On the third day from now you will go up to Yahweh’s temple."
+    },
+    {
+     "v": 6,
+     "text": "I will give you fifteen more years to live. Assyria’s king will not take you or this city, for I will set you both free. I will be this city’s shield, both because of my own name and because of David, who served me.’”"
+    },
+    {
+     "v": 7,
+     "text": "Then Isaiah said, “Make a paste out of figs.” They did, and spread it on the sore. Then Hezekiah got better."
+    },
+    {
+     "v": 8,
+     "text": "Earlier Hezekiah had asked Isaiah, “How can I be sure Yahweh will heal me? What sign will show me that I will be in his temple two days from now?”"
+    },
+    {
+     "v": 9,
+     "text": "Isaiah had answered, “Yahweh will give you a sign to prove he will keep his promise. Do you want the shadow on the stairs to go ahead ten steps,{b} or back ten steps?”"
+    },
+    {
+     "v": 10,
+     "text": "“A shadow moving forward ten steps is nothing unusual,” Hezekiah said. “Make it go backward ten steps instead.”"
+    },
+    {
+     "v": 11,
+     "text": "Then Isaiah the prophet cried out to Yahweh. And Yahweh pulled the shadow back ten steps, up the stairway of Ahaz, the way it had already come down."
+    },
+    {
+     "v": 12,
+     "text": "Around that time, Berodach-baladan{c} son of Baladan, Babylon’s king, heard that Hezekiah had been sick. He sent him letters and a gift."
+    },
+    {
+     "v": 13,
+     "text": "Hezekiah gladly received{d} the messengers. He gave them a tour of his storehouses. He showed them his silver and gold, his spices and his fine olive oil. He showed them where his weapons were kept and all his other treasures. In his whole palace and kingdom there was nothing Hezekiah did not let them see."
+    },
+    {
+     "v": 14,
+     "text": "Then Isaiah went to see the king. “Where did those men come from?” he asked. “What did they tell you?” Hezekiah said, “They came to me from a faraway country, from Babylon.”"
+    },
+    {
+     "v": 15,
+     "text": "Isaiah asked, “What did they look at in your palace?” “All of it,” Hezekiah said. “There is not one treasure of mine they did not see.”"
+    },
+    {
+     "v": 16,
+     "text": "Isaiah said to Hezekiah, “Now hear what Yahweh says."
+    },
+    {
+     "v": 17,
+     "text": "Someday soon, the whole wealth of your palace will be hauled away to Babylon. That includes all the treasures your ancestors have stored up to this day. Not a thing will be left. That is what Yahweh says."
+    },
+    {
+     "v": 18,
+     "text": "Some of the sons who will come from your own family line will be taken away too. They will become palace servants, and their bodies will be cut so they can have no children. Babylon’s king will make them work for him in his palace.”"
+    },
+    {
+     "v": 19,
+     "text": "“What Yahweh has told me through you is good,” Hezekiah said to Isaiah. He was thinking, “At least there will be peace and safety while I am alive.”"
+    },
+    {
+     "v": 20,
+     "text": "The other events of Hezekiah’s rule, all his great deeds, are written in the official history of Judah’s kings. It describes the pool he built, and the tunnel{e} he dug to carry water into Jerusalem."
+    },
+    {
+     "v": 21,
+     "text": "Then Hezekiah died and was laid to rest. Manasseh,{f} his son, ruled in his place."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "20:4",
+     "text": "The Hebrew read aloud and the Septuagint say “courtyard.” The written Hebrew says “the middle city.”"
+    },
+    {
+     "m": "b",
+     "ref": "20:9",
+     "text": "Or “degrees.” The Hebrew word maaloth means steps on a stairway that were used to tell time by the shadow."
+    },
+    {
+     "m": "c",
+     "ref": "20:12",
+     "text": "Isaiah 39:1 and the Septuagint say “Merodach-baladan.” The name is Babylonian Marduk-apla-iddina, “Marduk has given an heir.”"
+    },
+    {
+     "m": "d",
+     "ref": "20:13",
+     "text": "The Hebrew says “listened to.” The Septuagint and Isaiah 39:2 say “was glad about.”"
+    },
+    {
+     "m": "e",
+     "ref": "20:20",
+     "text": "This was the tunnel cut through rock to bring water from the Gihon spring into the city. Today it is called Hezekiah’s Tunnel."
+    },
+    {
+     "m": "f",
+     "ref": "20:21",
+     "text": "Manasseh means “making to forget.”"
+    }
+   ],
+   "subheads": {
+    "1": "Hezekiah Gets Sick",
+    "8": "The Shadow Goes Back",
+    "12": "Visitors from Babylon"
+   }
+  },
+  {
+   "n": 21,
+   "paras": [
+    1,
+    10,
+    16,
+    19,
+    23
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Manasseh was a boy of twelve when he was crowned. His reign in Jerusalem lasted fifty-five years. Hephzibah{a} was his mother."
+    },
+    {
+     "v": 2,
+     "text": "Manasseh did what Yahweh saw as evil. He copied the disgusting ways of the nations that Yahweh had pushed out of the land ahead of Israel."
+    },
+    {
+     "v": 3,
+     "text": "His father Hezekiah had wrecked the hilltop shrines, but Manasseh built them again. He set up altars for Baal and made an Asherah pole,{b} the same as Ahab, Israel’s king, had done. He bowed in worship to the sun, moon and stars and served them."
+    },
+    {
+     "v": 4,
+     "text": "He even built altars inside Yahweh’s temple. Yet this was the place Yahweh had chosen when he said, “Jerusalem is where I will put my name.”"
+    },
+    {
+     "v": 5,
+     "text": "In the two courtyards of Yahweh’s temple he built altars to worship the stars of the sky."
+    },
+    {
+     "v": 6,
+     "text": "Even his own son he offered up in the fire.{c} He used magic and looked for signs to learn the future. He went to people who talked with the spirits of the dead. Again and again he did what Yahweh hated, stirring up his anger."
+    },
+    {
+     "v": 7,
+     "text": "Manasseh carved an image of Asherah. He put it in Yahweh’s temple. Yet Yahweh had told David and his son Solomon about this temple. He had said, “This house, and Jerusalem, is where my name will stay forever. I picked this city out of all Israel’s tribes."
+    },
+    {
+     "v": 8,
+     "text": "If the Israelites will be careful to do all I have commanded them, I will not make them leave this land again. I gave it to their ancestors. They must keep the whole Law my servant Moses gave them.”"
+    },
+    {
+     "v": 9,
+     "text": "But the people refused to listen. Manasseh led them astray. They did more evil than the nations Yahweh had destroyed as the Israelites came in."
+    },
+    {
+     "v": 10,
+     "text": "So Yahweh gave this message through his servants the prophets:"
+    },
+    {
+     "v": 11,
+     "text": "“Manasseh, Judah’s king, has done these disgusting things. He has done worse than the Amorites who lived here before him. His idols{d} have pulled Judah into sin along with him."
+    },
+    {
+     "v": 12,
+     "text": "So Yahweh, Israel’s God, says this: ‘Listen! I am sending a disaster on Jerusalem and Judah so terrible that anyone who hears the news will be shocked, as if both ears were ringing."
+    },
+    {
+     "v": 13,
+     "text": "I will judge Jerusalem by the same measuring line I used on Samaria. I will test it with the plumb line I used on Ahab’s family.{e} I will wipe Jerusalem out the way someone wipes a bowl clean and then turns it upside down."
+    },
+    {
+     "v": 14,
+     "text": "I will give up the people who are left of my own nation. Their enemies will take them, and every foe will loot and plunder them."
+    },
+    {
+     "v": 15,
+     "text": "They have done what I see as evil. Ever since their ancestors left Egypt, right up to this day, they have kept on making me angry.’”"
+    },
+    {
+     "v": 16,
+     "text": "Manasseh also killed so many innocent people that their blood filled Jerusalem from one end to the other. On top of that, he caused Judah to sin and do what Yahweh saw as evil."
+    },
+    {
+     "v": 17,
+     "text": "The other events of Manasseh’s rule, everything he did, including his sin, are written down in the official history of Judah’s kings."
+    },
+    {
+     "v": 18,
+     "text": "Manasseh was laid to rest with his ancestors. They buried him in Uzza’s garden, which belonged to his palace. His son Amon{f} took the throne after him."
+    },
+    {
+     "v": 19,
+     "text": "Amon was crowned at twenty-two. He ruled from Jerusalem for only two years. Meshullemeth,{g} Haruz’s daughter, was his mother. She came from Jotbah."
+    },
+    {
+     "v": 20,
+     "text": "Amon did what Yahweh saw as evil, the same as his father Manasseh."
+    },
+    {
+     "v": 21,
+     "text": "He lived just like his father in every way. The idols his father served, Amon served too, and he bowed low before them."
+    },
+    {
+     "v": 22,
+     "text": "He walked away from Yahweh, the God of his ancestors. He would not live the way Yahweh wanted."
+    },
+    {
+     "v": 23,
+     "text": "Some of Amon’s officials made a plot against him. Inside his own house they took his life."
+    },
+    {
+     "v": 24,
+     "text": "The people of the land then executed everyone who had taken part in the plot against King Amon. Then they made his son Josiah{h} king in his place."
+    },
+    {
+     "v": 25,
+     "text": "The other things Amon did are recorded in the official history of Judah’s kings."
+    },
+    {
+     "v": 26,
+     "text": "Amon was laid in his tomb in the garden of Uzza. Josiah, his son, then ruled."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "21:1",
+     "text": "Hephzibah means “my delight is in her.”"
+    },
+    {
+     "m": "b",
+     "ref": "21:3",
+     "text": "This was a wooden object used in the worship of the goddess Asherah."
+    },
+    {
+     "m": "c",
+     "ref": "21:6",
+     "text": "Some ancient copies, including the Septuagint, say “his sons.” The Hebrew says “made his son pass through the fire,” which probably means child sacrifice."
+    },
+    {
+     "m": "d",
+     "ref": "21:11",
+     "text": "The Hebrew word gillulim is an insulting word for idols, perhaps meaning “dung balls.”"
+    },
+    {
+     "m": "e",
+     "ref": "21:13",
+     "text": "The measuring line and plumb line are builders’ tools. They are a picture of judging Jerusalem by the same standard used for Samaria and Ahab’s family."
+    },
+    {
+     "m": "f",
+     "ref": "21:18",
+     "text": "Amon means “faithful” or “master builder.”"
+    },
+    {
+     "m": "g",
+     "ref": "21:19",
+     "text": "Meshullemeth means “one repaid” or “one at peace.”"
+    },
+    {
+     "m": "h",
+     "ref": "21:24",
+     "text": "Josiah means “Yahweh supports.”"
+    }
+   ],
+   "subheads": {
+    "1": "Manasseh Rules Judah",
+    "10": "Yahweh Warns of Disaster",
+    "19": "Amon Rules Judah"
+   }
+  },
+  {
+   "n": 22,
+   "paras": [
+    1,
+    3,
+    8,
+    11,
+    14
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Josiah was eight years old when he was crowned, and he reigned thirty-one years in Jerusalem. His mother was Jedidah,{a} whose father was Adaiah from Bozkath."
+    },
+    {
+     "v": 2,
+     "text": "Josiah did what pleased Yahweh. He followed in his ancestor David’s footsteps. He never turned off that path, to one side or the other."
+    },
+    {
+     "v": 3,
+     "text": "When Josiah had been king for eighteen years,{b} he sent Shaphan{c} to Yahweh’s temple. Shaphan was the royal secretary. His father was Azaliah, and his grandfather was Meshullam. The king told him,"
+    },
+    {
+     "v": 4,
+     "text": "“Go see Hilkiah{d} the high priest. Have him add up all the silver that people have given at Yahweh’s temple. The doorkeepers have been taking it in from the worshipers."
+    },
+    {
+     "v": 5,
+     "text": "Then the silver must go to the men who oversee the repair work. They are to pay it out to the workers who are fixing Yahweh’s temple."
+    },
+    {
+     "v": 6,
+     "text": "That means the woodworkers, the builders and the stone workers. Also have them buy wood and cut stones to repair the temple."
+    },
+    {
+     "v": 7,
+     "text": "The men in charge do not have to report how they spend the silver. They are honest men.”"
+    },
+    {
+     "v": 8,
+     "text": "Hilkiah the high priest told Shaphan the secretary, “In Yahweh’s temple I came across the Book of the Law!” He passed it to Shaphan, who read it through."
+    },
+    {
+     "v": 9,
+     "text": "Next Shaphan went to the king with news. “Your servants have taken the silver out of the temple,” he said. “They have turned it over to the men who are in charge of the work on Yahweh’s temple.”"
+    },
+    {
+     "v": 10,
+     "text": "Shaphan went on, “And Hilkiah the priest handed me a book.” Then Shaphan read it out loud in front of the king."
+    },
+    {
+     "v": 11,
+     "text": "The king heard what the Book of the Law said. When he heard it, he tore his clothes."
+    },
+    {
+     "v": 12,
+     "text": "Then the king called in Hilkiah the priest and Shaphan the secretary, along with Ahikam, Achbor{e} and Asaiah. (Ahikam’s father was Shaphan, Achbor’s father was Micaiah, and Asaiah was the king’s servant.) He told them,"
+    },
+    {
+     "v": 13,
+     "text": "“Go to Yahweh and ask him about the words in this book that was found. Ask on my behalf and on behalf of the people of Judah. Yahweh is very angry with us. Those who came before us paid no attention to what this book says. They failed to keep its commands, which were written for us.”"
+    },
+    {
+     "v": 14,
+     "text": "Off went Hilkiah, Ahikam, Achbor, Shaphan and Asaiah to see a woman named Huldah,{f} who was a prophet. Her husband was Shallum son of Tikvah and grandson of Harhas. Shallum looked after the royal robes. Her home was in Jerusalem’s newer section.{g} The men went and spoke with her there."
+    },
+    {
+     "v": 15,
+     "text": "She said to them, “Yahweh, Israel’s God, says this: Go back to the man who sent you here. Tell him,"
+    },
+    {
+     "v": 16,
+     "text": "‘Yahweh says: Disaster is coming on this place and all who live in it. Everything written in the book that Judah’s king has read will happen."
+    },
+    {
+     "v": 17,
+     "text": "They have left me behind. They have burned incense to other gods. All the idols they have made have stirred up my anger. So my anger will burn against this place like a fire that no one can put out.’"
+    },
+    {
+     "v": 18,
+     "text": "But the king of Judah sent you here to ask Yahweh what to do. Tell him, ‘Yahweh, Israel’s God, has this to say about the words you heard:"
+    },
+    {
+     "v": 19,
+     "text": "You heard me speak against this place and those living in it. I warned that they would be cursed and become a horror to others. Your heart was soft, and you made yourself humble before Yahweh. In sorrow you tore your robes, and your tears fell in my presence. So I have listened to you. That is what Yahweh says."
+    },
+    {
+     "v": 20,
+     "text": "Because of that, you will join your ancestors in death and be buried in peace. You will not live to see the ruin I am going to bring here.’” So the men took her answer back to the king."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "22:1",
+     "text": "Jedidah means “loved one.”"
+    },
+    {
+     "m": "b",
+     "ref": "22:3",
+     "text": "That is, in 622 B.C. The Septuagint adds “in the eighth month.”"
+    },
+    {
+     "m": "c",
+     "ref": "22:3",
+     "text": "Shaphan means “rock badger.”"
+    },
+    {
+     "m": "d",
+     "ref": "22:4",
+     "text": "Hilkiah means “Yahweh is my share.”"
+    },
+    {
+     "m": "e",
+     "ref": "22:12",
+     "text": "Achbor means “mouse.”"
+    },
+    {
+     "m": "f",
+     "ref": "22:14",
+     "text": "Huldah means “mole” or “weasel.”"
+    },
+    {
+     "m": "g",
+     "ref": "22:14",
+     "text": "The Hebrew word is Mishneh. It was a newer part of Jerusalem, probably on the western hill."
+    }
+   ],
+   "subheads": {
+    "1": "Josiah Rules Judah",
+    "3": "The Book of the Law Is Found",
+    "14": "Huldah’s Message"
+   }
+  },
+  {
+   "n": 23,
+   "paras": [
+    1,
+    4,
+    15,
+    21,
+    24,
+    26,
+    28,
+    31,
+    36
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "The king called for all the elders of Judah and Jerusalem to gather with him."
+    },
+    {
+     "v": 2,
+     "text": "Then he went up to Yahweh’s temple. All the people of Judah and Jerusalem went too, with the priests and the prophets. Everyone came, from the least important to the most important. The king read the whole Book of the Agreement to them, the book that had been found in Yahweh’s temple."
+    },
+    {
+     "v": 3,
+     "text": "The king stood beside the pillar. There, in front of Yahweh, he made a solemn promise. He would follow Yahweh. He would keep Yahweh’s commands, rules and laws with his whole heart and his whole being. He promised to do what this book said about the agreement. Every person there said yes to the agreement as well."
+    },
+    {
+     "v": 4,
+     "text": "The king gave orders to Hilkiah the high priest, to the priests who served under him, and to the doorkeepers. “Remove from Yahweh’s temple everything made for Baal, for Asherah, and for the stars of the sky,” he said. They did, and he burned it all outside Jerusalem in the Kidron fields. The ashes he carried away to Bethel."
+    },
+    {
+     "v": 5,
+     "text": "He got rid of the priests of false gods.{a} The kings of Judah had chosen these men to burn incense at the hilltop shrines in Judah’s towns and around Jerusalem. Josiah also got rid of the people who burned incense to Baal, to the sun and moon, to the star groups,{b} and to all the stars in the sky."
+    },
+    {
+     "v": 6,
+     "text": "He took the Asherah pole out of Yahweh’s temple. He carried it outside Jerusalem to the Kidron Valley and burned it there. He ground it into dust and threw the dust on the graves of common people."
+    },
+    {
+     "v": 7,
+     "text": "He tore down the rooms in Yahweh’s temple where the male shrine prostitutes{c} lived. Women had woven hangings{d} for Asherah in those rooms."
+    },
+    {
+     "v": 8,
+     "text": "From all over Judah, Josiah had the priests come to Jerusalem. He made the hilltop shrines unfit for worship, the places where those priests had burned incense, from Geba to Beersheba.{e} The gateway shrines{f} were torn down too. There was one at the entrance of the Gate of Joshua, the city governor. It stood on the left as you went through the city gate."
+    },
+    {
+     "v": 9,
+     "text": "The priests of the hilltop shrines were not allowed to serve at Yahweh’s altar in Jerusalem. But they did eat bread made without yeast with the other priests."
+    },
+    {
+     "v": 10,
+     "text": "Josiah made Topheth{g} unfit for worship. It lay in Ben-hinnom Valley. He did this so no one could ever again burn a son or daughter there as a sacrifice to Molech."
+    },
+    {
+     "v": 11,
+     "text": "He took away the horses that Judah’s kings had given to honor the sun. They were kept at the entrance of Yahweh’s temple, in the open court{h} near the room of an official named Nathan-melech. He also burned the chariots used to worship the sun."
+    },
+    {
+     "v": 12,
+     "text": "Judah’s kings had built altars on the roof near the upper room of Ahaz. Manasseh had built altars in the two courtyards of Yahweh’s temple. The king tore down all of them. He broke them up there{i} and dumped the rubble into the Kidron Valley."
+    },
+    {
+     "v": 13,
+     "text": "Long ago Solomon, Israel’s king, had built hilltop shrines east of Jerusalem, on the south side of the Hill of Ruin.{j} He built them for Ashtoreth, the disgusting goddess of the people of Sidon. He built them for Chemosh, the disgusting god of Moab, and for Milcom, the hateful god of Ammon. Now the king made those shrines unfit for worship."
+    },
+    {
+     "v": 14,
+     "text": "He broke the stone pillars to pieces and cut down the Asherah poles. He covered the places where they had stood with human bones."
+    },
+    {
+     "v": 15,
+     "text": "Next Josiah tore down the altar at Bethel. Jeroboam son of Nebat had built that hilltop shrine, and he had led Israel into sin. Josiah tore down both the altar and the shrine. He set fire to the shrine and crushed it into powder. He burned the Asherah pole too."
+    },
+    {
+     "v": 16,
+     "text": "Then Josiah turned and noticed tombs on the side of the hill. He sent men to take the bones out of the graves, and he burned them on the altar. That made the altar unfit for worship. This was what Yahweh had said would happen through a man of God long before.{k}"
+    },
+    {
+     "v": 17,
+     "text": "Josiah asked, “What is that stone I see there?” The people of the town said, “It marks the grave of the man of God from Judah. He spoke against the altar at Bethel and told about the very things you have done to it.”"
+    },
+    {
+     "v": 18,
+     "text": "“Let it stay as it is,” Josiah said. “Do not let anyone disturb his bones.” So they did not touch his bones, or the bones of the prophet who had come from Samaria."
+    },
+    {
+     "v": 19,
+     "text": "Israel’s kings had also put up hilltop shrines throughout the towns of Samaria. This had made Yahweh{l} angry. Josiah removed all those shrines too, as he had done at Bethel."
+    },
+    {
+     "v": 20,
+     "text": "The priests who served at those shrines were put to death on the altars where they had served. Josiah burned dead men’s bones on those altars. Afterward he returned to Jerusalem."
+    },
+    {
+     "v": 21,
+     "text": "Then the king ordered everyone, “Hold the Passover feast for Yahweh, your God. Do it the way this Book of the Agreement says.”"
+    },
+    {
+     "v": 22,
+     "text": "Such a Passover had not been held since the days when judges led Israel. None of the kings of Israel or Judah had held one like it."
+    },
+    {
+     "v": 23,
+     "text": "But this Passover was held for Yahweh in Jerusalem in the eighteenth year of King Josiah."
+    },
+    {
+     "v": 24,
+     "text": "Josiah also got rid of the people who talked with the dead and those who talked with spirits. He got rid of household gods,{m} idols and all the other disgusting things people worshiped in Judah and Jerusalem. In this way he carried out what the Law required. It was written in the book that Hilkiah the priest had found in Yahweh’s temple."
+    },
+    {
+     "v": 25,
+     "text": "No king before Josiah had been like him, and none came after him. He turned to Yahweh with all his heart, all his soul and all his strength. He obeyed the whole Law of Moses."
+    },
+    {
+     "v": 26,
+     "text": "Even so, Yahweh’s terrible anger against Judah did not cool. He was still angry because of everything Manasseh had done to stir him up."
+    },
+    {
+     "v": 27,
+     "text": "Yahweh said, “I will remove Judah from my sight, as I removed Israel. I will turn away from Jerusalem, the city I chose. I will turn away from the temple. I said about it, ‘My name will be there.’”"
+    },
+    {
+     "v": 28,
+     "text": "The other things Josiah did are recorded in the official history of Judah’s kings."
+    },
+    {
+     "v": 29,
+     "text": "While Josiah was king, Pharaoh Neco,{n} Egypt’s king, led his army up to the Euphrates River to meet the king of Assyria.{o} Josiah led his own troops out to block the way. But when Neco saw him at Megiddo, he killed him."
+    },
+    {
+     "v": 30,
+     "text": "Josiah’s servants carried his dead body by chariot from Megiddo back to Jerusalem. In his own tomb they laid him to rest. Then the people of the land chose Jehoahaz,{p} a son of Josiah. They anointed him with oil and crowned him as king in Josiah’s place."
+    },
+    {
+     "v": 31,
+     "text": "Jehoahaz became king when he was twenty-three, and his rule in Jerusalem lasted three months. Hamutal was his mother. Her father was Jeremiah, and her hometown was Libnah."
+    },
+    {
+     "v": 32,
+     "text": "Like his ancestors before him, Jehoahaz did evil in Yahweh’s eyes."
+    },
+    {
+     "v": 33,
+     "text": "Pharaoh Neco locked him up at Riblah in the land of Hamath, so he could not rule in Jerusalem.{q} Neco made Judah pay about 3 3/4 tons of silver and about 75 pounds of gold.{r}"
+    },
+    {
+     "v": 34,
+     "text": "Then Pharaoh Neco crowned another son of Josiah, named Eliakim, in his father’s place. Neco gave Eliakim a new name, Jehoiakim.{s} As for Jehoahaz, Neco carried him off to Egypt, and he died there."
+    },
+    {
+     "v": 35,
+     "text": "Jehoiakim gave Pharaoh all the silver and gold Pharaoh asked for. To get it, he taxed the land. He made each person pay silver and gold based on what they owned. Then he paid it to Pharaoh Neco."
+    },
+    {
+     "v": 36,
+     "text": "Jehoiakim became king when he was twenty-five, and his rule in Jerusalem lasted eleven years. Zebidah was his mother. Her father was Pedaiah, and her hometown was Rumah."
+    },
+    {
+     "v": 37,
+     "text": "Like his ancestors before him, Jehoiakim did evil in Yahweh’s eyes."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "23:5",
+     "text": "The Hebrew word is kemarim, a word used only for priests of foreign or false gods."
+    },
+    {
+     "m": "b",
+     "ref": "23:5",
+     "text": "Or “the signs of the zodiac.” The meaning of the Hebrew word mazzaloth is uncertain."
+    },
+    {
+     "m": "c",
+     "ref": "23:7",
+     "text": "The Hebrew word is qedeshim. Experts do not agree on exactly what these men did."
+    },
+    {
+     "m": "d",
+     "ref": "23:7",
+     "text": "The Hebrew says “houses.” The meaning is uncertain. It may mean woven curtains or clothing."
+    },
+    {
+     "m": "e",
+     "ref": "23:8",
+     "text": "That is, from the north edge of Judah to its south edge."
+    },
+    {
+     "m": "f",
+     "ref": "23:8",
+     "text": "The Hebrew is uncertain. With a small change it could mean “the shrines of the goat-demons.”"
+    },
+    {
+     "m": "g",
+     "ref": "23:10",
+     "text": "Topheth probably means “fireplace.” Its vowels may have been changed on purpose to sound like boshet, “shame.”"
+    },
+    {
+     "m": "h",
+     "ref": "23:11",
+     "text": "The meaning of the Hebrew word parwarim is uncertain."
+    },
+    {
+     "m": "i",
+     "ref": "23:12",
+     "text": "Or “He hurried from there.” The Hebrew is uncertain."
+    },
+    {
+     "m": "j",
+     "ref": "23:13",
+     "text": "The Hebrew says “Mount of Mashchith,” a play on Mishchah, “Anointing,” meaning the Mount of Olives."
+    },
+    {
+     "m": "k",
+     "ref": "23:16",
+     "text": "The Septuagint adds “when Jeroboam stood by the altar at the festival. And he turned and lifted his eyes to the grave of the man of God,” as in 1 Kings 13."
+    },
+    {
+     "m": "l",
+     "ref": "23:19",
+     "text": "The Septuagint has “Yahweh.” The Hebrew does not."
+    },
+    {
+     "m": "m",
+     "ref": "23:24",
+     "text": "These were small images of family gods."
+    },
+    {
+     "m": "n",
+     "ref": "23:29",
+     "text": "Neco II ruled Egypt from 610 to 595 B.C."
+    },
+    {
+     "m": "o",
+     "ref": "23:29",
+     "text": "Or “against the king of Assyria.” In fact Neco went to help Assyria fight Babylon in 609 B.C."
+    },
+    {
+     "m": "p",
+     "ref": "23:30",
+     "text": "Jehoahaz means “Yahweh has grasped.” He is also called Shallum (Jeremiah 22:11)."
+    },
+    {
+     "m": "q",
+     "ref": "23:33",
+     "text": "The Hebrew read aloud says this. The written Hebrew says “while he ruled in Jerusalem.”"
+    },
+    {
+     "m": "r",
+     "ref": "23:33",
+     "text": "The Hebrew says “100 talents of silver and a talent of gold,” about 3,400 kilograms of silver and 34 kilograms of gold. The Septuagint says “100 talents of gold.”"
+    },
+    {
+     "m": "s",
+     "ref": "23:34",
+     "text": "Jehoiakim means “Yahweh raises up.” Eliakim means “God raises up.”"
+    }
+   ],
+   "subheads": {
+    "1": "Josiah Renews the Agreement",
+    "4": "Josiah Cleans Up the Land",
+    "15": "The Altar at Bethel",
+    "21": "A Great Passover",
+    "26": "Judah Will Still Be Punished",
+    "28": "Josiah Dies",
+    "31": "Jehoahaz Rules Judah",
+    "36": "Jehoiakim Rules Judah"
+   }
+  },
+  {
+   "n": 24,
+   "paras": [
+    1,
+    5,
+    8,
+    10,
+    18
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "While Jehoiakim was king, Nebuchadnezzar,{a} Babylon’s king, invaded the land. For three years Jehoiakim had to serve him. Then Jehoiakim turned against him and broke free."
+    },
+    {
+     "v": 2,
+     "text": "So Yahweh sent bands of raiders against Jehoiakim. They came from Babylonia, Aram, Moab and Ammon. Yahweh sent them to wipe out Judah. He had said this would happen through his servants the prophets."
+    },
+    {
+     "v": 3,
+     "text": "Yes, this happened to Judah because Yahweh commanded it. He was removing them from his sight because of all the sins Manasseh had done."
+    },
+    {
+     "v": 4,
+     "text": "Manasseh had also killed innocent people, so many that Jerusalem was flooded with their blood. And Yahweh would not forgive that."
+    },
+    {
+     "v": 5,
+     "text": "The other things Jehoiakim did are recorded in the official history of Judah’s kings."
+    },
+    {
+     "v": 6,
+     "text": "Jehoiakim rested with his ancestors. His son Jehoiachin{b} took the throne."
+    },
+    {
+     "v": 7,
+     "text": "After this, Egypt’s king did not lead his army out of his own land again. Babylon’s king had taken over everything that had been his, all the way from the Brook of Egypt{c} to the Euphrates River."
+    },
+    {
+     "v": 8,
+     "text": "Jehoiachin was eighteen when he was crowned, and he lasted only three months as king in Jerusalem. Nehushta{d} was his mother. Her father was Elnathan, and she came from Jerusalem."
+    },
+    {
+     "v": 9,
+     "text": "Jehoiachin did evil in Yahweh’s eyes. He was just like his father in every way."
+    },
+    {
+     "v": 10,
+     "text": "At that time the soldiers of Nebuchadnezzar, Babylon’s king, marched on Jerusalem and surrounded the city."
+    },
+    {
+     "v": 11,
+     "text": "While his soldiers had the city closed in, Nebuchadnezzar himself arrived."
+    },
+    {
+     "v": 12,
+     "text": "Then Jehoiachin, Judah’s king, went out and gave himself up to Babylon’s king. His mother, his servants, his commanders and his palace officials gave themselves up too. Babylon’s king made Jehoiachin his prisoner. This was in Nebuchadnezzar’s eighth year as king.{e}"
+    },
+    {
+     "v": 13,
+     "text": "Yahweh had warned that it would happen, and it did. Nebuchadnezzar carried away all the treasures from Yahweh’s temple and from the palace. He cut apart all the gold objects that Solomon, Israel’s king, had made for Yahweh’s temple."
+    },
+    {
+     "v": 14,
+     "text": "He took away the people of Jerusalem as captives: every commander and every brave fighter, 10,000 people. He also took every skilled worker and metalworker.{f} Nobody stayed behind except the poorest of the poor."
+    },
+    {
+     "v": 15,
+     "text": "Nebuchadnezzar took Jehoiachin away to Babylon. He also took the king’s mother and his wives, his officials, and the most important men of the land. He led them all from Jerusalem into Babylon as captives."
+    },
+    {
+     "v": 16,
+     "text": "The king of Babylon also forced 7,000 strong soldiers to go to Babylon. He took 1,000 skilled workers and metalworkers too. All of them were strong men, able to fight in a war."
+    },
+    {
+     "v": 17,
+     "text": "Babylon’s king made Mattaniah, Jehoiachin’s uncle,{g} king in Jehoiachin’s place. He changed Mattaniah’s name to Zedekiah.{h}"
+    },
+    {
+     "v": 18,
+     "text": "Zedekiah was crowned at twenty-one and ruled eleven years in Jerusalem. Hamutal{i} was his mother. Her father was Jeremiah, and she came from Libnah."
+    },
+    {
+     "v": 19,
+     "text": "Zedekiah did evil in Yahweh’s eyes, just as Jehoiakim had done."
+    },
+    {
+     "v": 20,
+     "text": "All this happened to Jerusalem and Judah because Yahweh was angry. In the end he threw them out of his presence. Then Zedekiah turned against Babylon’s king."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "24:1",
+     "text": "His Babylonian name, Nabu-kudurri-usur, means “Nabu, protect the heir.” He ruled from 605 to 562 B.C."
+    },
+    {
+     "m": "b",
+     "ref": "24:6",
+     "text": "Jehoiachin means “Yahweh makes firm.” He is also called Jeconiah and Coniah."
+    },
+    {
+     "m": "c",
+     "ref": "24:7",
+     "text": "That is, Wadi el-Arish, on the border between Egypt and Canaan."
+    },
+    {
+     "m": "d",
+     "ref": "24:8",
+     "text": "Nehushta means “bronze.”"
+    },
+    {
+     "m": "e",
+     "ref": "24:12",
+     "text": "That is, 597 B.C."
+    },
+    {
+     "m": "f",
+     "ref": "24:14",
+     "text": "Or “smith.” The meaning of the Hebrew word masger is uncertain. It may mean “locksmith” or “builder of city walls.”"
+    },
+    {
+     "m": "g",
+     "ref": "24:17",
+     "text": "The Hebrew says “his father’s brother.” The Septuagint says “his son.”"
+    },
+    {
+     "m": "h",
+     "ref": "24:17",
+     "text": "Mattaniah means “gift of Yahweh.” Zedekiah means “Yahweh is righteous.”"
+    },
+    {
+     "m": "i",
+     "ref": "24:18",
+     "text": "The Hebrew read aloud says Hamutal. The written Hebrew says “Hamital.”"
+    }
+   ],
+   "subheads": {
+    "1": "Babylon Attacks Judah",
+    "8": "Jehoiachin Rules Judah",
+    "10": "Jehoiachin Is Taken to Babylon",
+    "18": "Zedekiah Rules Judah"
+   }
+  },
+  {
+   "n": 25,
+   "paras": [
+    1,
+    8,
+    13,
+    18,
+    22,
+    27
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "So Babylon’s king Nebuchadnezzar came against Jerusalem, bringing all his troops. Zedekiah had been king for nine years. It was the tenth month (December-January),{a} on its tenth day. They set up camp around the city and built ramps all around it for the attack."
+    },
+    {
+     "v": 2,
+     "text": "The army kept the city shut in until King Zedekiah had ruled eleven years."
+    },
+    {
+     "v": 3,
+     "text": "By the fourth month (June-July),{b} on day nine, the hunger in the city was terrible. The common people had no food at all."
+    },
+    {
+     "v": 4,
+     "text": "Then the enemy broke a hole in the city wall. All the soldiers ran away{c} at night, even though the Babylonians had surrounded the city. They slipped out by the gate that stood between the double walls, close to the royal garden. The king{d} fled toward the Jordan Valley.{e}"
+    },
+    {
+     "v": 5,
+     "text": "But the Babylonian army went after King Zedekiah. He was overtaken on the open plains of Jericho. All his soldiers had left him and scattered."
+    },
+    {
+     "v": 6,
+     "text": "So they captured the king. They brought him to Babylon’s king at Riblah, and there he was judged and sentenced."
+    },
+    {
+     "v": 7,
+     "text": "They made Zedekiah watch as his sons were put to death. Then they blinded Zedekiah, tied him up with bronze chains, and took him to Babylon."
+    },
+    {
+     "v": 8,
+     "text": "Nebuzaradan{g} arrived in Jerusalem on day seven of the fifth month (July-August).{f} He was the commander of the royal guard and an officer of Babylon’s king. That was the nineteenth year of King Nebuchadnezzar’s rule over Babylon."
+    },
+    {
+     "v": 9,
+     "text": "Nebuzaradan set Yahweh’s temple on fire. He also burned the palace and the homes of Jerusalem. All the great buildings burned to the ground."
+    },
+    {
+     "v": 10,
+     "text": "Then the Babylonian troops who came with the guard commander knocked down the walls that circled Jerusalem."
+    },
+    {
+     "v": 11,
+     "text": "Nebuzaradan, the guard commander, took away as captives the people still left in the city. He also took those who had gone over to Babylon’s side, along with all the rest of the people.{h}"
+    },
+    {
+     "v": 12,
+     "text": "But he let some of the poorest people stay. Their work would be to look after the grapevines and plow the fields."
+    },
+    {
+     "v": 13,
+     "text": "The Babylonians broke the bronze pillars of Yahweh’s temple into pieces. They did the same to the movable stands and the huge bronze bowl called the Sea.{i} They carried the bronze to Babylon."
+    },
+    {
+     "v": 14,
+     "text": "They took the bronze tools of temple worship as well: pots and shovels, dishes, and the trimmers for the lamp wicks."
+    },
+    {
+     "v": 15,
+     "text": "The guard commander took the fire pans and the bowls for sprinkling. He took everything made of pure gold or pure silver."
+    },
+    {
+     "v": 16,
+     "text": "Solomon had made the two pillars, the Sea and the movable stands for Yahweh’s temple. There was so much bronze in them that no one could weigh it."
+    },
+    {
+     "v": 17,
+     "text": "Each pillar was 27 feet{j} tall. On top of each was a bronze cap 4 1/2 feet{k} tall. A net of bronze chains with bronze pomegranates went around the cap. The other pillar matched it exactly, net and all."
+    },
+    {
+     "v": 18,
+     "text": "The guard commander also took prisoners. Among them were Seraiah, the chief priest, and Zephaniah, the priest next under him. He also took the three men who guarded the temple doors."
+    },
+    {
+     "v": 19,
+     "text": "Out of the city he also took the officer who led the fighting men, and five of the king’s closest advisers{l} who were found there. Next came the secretary of the army commander,{m} who called up the people of the land for war. Sixty more common men found in the city were added to the group."
+    },
+    {
+     "v": 20,
+     "text": "Nebuzaradan, the guard commander, led them all to Babylon’s king at Riblah."
+    },
+    {
+     "v": 21,
+     "text": "There at Riblah, in the land of Hamath, the king ordered them struck down, and they died. That is how Judah was carried away from its own land."
+    },
+    {
+     "v": 22,
+     "text": "Nebuchadnezzar, Babylon’s king, had left some people behind in Judah. He chose Gedaliah{n} to rule over them as governor. Gedaliah’s father was Ahikam, and his grandfather was Shaphan."
+    },
+    {
+     "v": 23,
+     "text": "All the army officers and their men heard that Babylon’s king had made Gedaliah governor. They came with their troops to meet him at Mizpah. Ishmael, Nethaniah’s son, was there. So were Johanan, Kareah’s son, and Seraiah, Tanhumeth’s son, from Netophah. Jaazaniah, the son of the Maacathite, came too."
+    },
+    {
+     "v": 24,
+     "text": "Gedaliah made a promise to the officers and their men. “You do not need to fear the Babylonian officials,” he said. “Stay here and live in this land. Serve Babylon’s king, and life will be good for you.”"
+    },
+    {
+     "v": 25,
+     "text": "The seventh month (September-October){o} brought a new disaster. Ishmael son of Nethaniah came with ten men. He was the grandson of Elishama and came from the royal family. They attacked Gedaliah and killed him. They also murdered everyone at Mizpah with him, both Judeans and Babylonians."
+    },
+    {
+     "v": 26,
+     "text": "Then the whole population, from the least to the greatest, fled to Egypt along with the army officers. They feared the Babylonians and what they might do."
+    },
+    {
+     "v": 27,
+     "text": "Jehoiachin, Judah’s king, had been a prisoner for thirty-seven years. In that year Evil-merodach{p} became Babylon’s king. On the twenty-seventh day of the twelfth month (February-March),{r} he set Jehoiachin free{q} from prison."
+    },
+    {
+     "v": 28,
+     "text": "He spoke kindly to Jehoiachin. He set his seat higher than the seats of the other kings who were with him in Babylon."
+    },
+    {
+     "v": 29,
+     "text": "So Jehoiachin took off his prison clothes. Each day, as long as he lived, he had his meals at the king’s table."
+    },
+    {
+     "v": 30,
+     "text": "The king also provided Jehoiachin with a fixed amount of food and supplies, day after day. This went on as long as Jehoiachin lived."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "25:1",
+     "text": "The Hebrew says “the tenth month,” later called Tebeth. It came in December-January. The exact modern dates changed from year to year with the moon. The year was 588 B.C."
+    },
+    {
+     "m": "b",
+     "ref": "25:3",
+     "text": "The Hebrew does not have “fourth.” It is added from Jeremiah 52:6. The fourth month, later called Tammuz, came in June-July. The year was 587 or 586 B.C."
+    },
+    {
+     "m": "c",
+     "ref": "25:4",
+     "text": "The Hebrew does not have “ran away.” Compare Jeremiah 52:7."
+    },
+    {
+     "m": "d",
+     "ref": "25:4",
+     "text": "The Hebrew says “he.”"
+    },
+    {
+     "m": "e",
+     "ref": "25:4",
+     "text": "The Hebrew says “the Arabah,” that is, the Jordan Valley."
+    },
+    {
+     "m": "f",
+     "ref": "25:8",
+     "text": "The Hebrew says “the fifth month,” later called Ab. It came in July-August. Jeremiah 52:12 says “the tenth day.”"
+    },
+    {
+     "m": "g",
+     "ref": "25:8",
+     "text": "Nebuzaradan is the Babylonian name Nabu-zer-iddin, “Nabu has given children.”"
+    },
+    {
+     "m": "h",
+     "ref": "25:11",
+     "text": "Or “the skilled workers,” changing one Hebrew letter (compare Jeremiah 52:15). The Hebrew says “the crowd.”"
+    },
+    {
+     "m": "i",
+     "ref": "25:13",
+     "text": "This was the great bronze basin of 1 Kings 7:23-26."
+    },
+    {
+     "m": "j",
+     "ref": "25:17",
+     "text": "The Hebrew says “18 cubits,” about 8.1 meters."
+    },
+    {
+     "m": "k",
+     "ref": "25:17",
+     "text": "The Hebrew says “3 cubits,” about 1.35 meters. 1 Kings 7:16 and Jeremiah 52:22 say the cap was 5 cubits (7 1/2 feet) tall."
+    },
+    {
+     "m": "l",
+     "ref": "25:19",
+     "text": "The Hebrew says “five men of those who saw the king’s face.” Jeremiah 52:25 says “seven.”"
+    },
+    {
+     "m": "m",
+     "ref": "25:19",
+     "text": "Or “the secretary, the commander of the army.”"
+    },
+    {
+     "m": "n",
+     "ref": "25:22",
+     "text": "Gedaliah means “Yahweh is great.”"
+    },
+    {
+     "m": "o",
+     "ref": "25:25",
+     "text": "The Hebrew says “the seventh month,” later called Tishri (called Ethanim in 1 Kings 8:2). It came in September-October."
+    },
+    {
+     "m": "p",
+     "ref": "25:27",
+     "text": "This is the Babylonian name Amel-Marduk, “man of Marduk.” He ruled from 562 to 560 B.C."
+    },
+    {
+     "m": "q",
+     "ref": "25:27",
+     "text": "The Hebrew says “lifted the head of.”"
+    },
+    {
+     "m": "r",
+     "ref": "25:27",
+     "text": "The Hebrew says “the twelfth month,” later called Adar. It came in February-March. Jeremiah 52:31 says “the twenty-fifth day.” The year was 561 B.C."
+    }
+   ],
+   "subheads": {
+    "1": "Jerusalem Falls",
+    "8": "The Temple Is Burned",
+    "18": "Leaders Are Killed",
+    "22": "Gedaliah Is Made Governor",
+    "27": "Jehoiachin Set Free"
+   }
+  }
+ ]
+}
