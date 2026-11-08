@@ -1,0 +1,1807 @@
+{
+ "id": "ezra",
+ "name": "Ezra",
+ "division": "Old Testament",
+ "sourceNote": "Written freshly, thought for thought, from the oldest Hebrew, Greek, and Aramaic witnesses (the Masoretic Text with the Dead Sea Scrolls, the Septuagint, and the Samaritan Pentateuch). © 2026 Jose Santiago. All rights reserved.",
+ "chapters": [
+  {
+   "n": 1,
+   "paras": [
+    1,
+    5,
+    7
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Long before, Yahweh had spoken through Jeremiah. To make that message come true, in the first year that Cyrus ruled as king of Persia, Yahweh stirred his heart. Cyrus sent out an announcement to every part of his kingdom, spoken aloud and also written down.{a}"
+    },
+    {
+     "v": 2,
+     "text": "It said: “Cyrus, king of Persia, declares: Yahweh, the God of heaven, has put every kingdom on earth into my hands. He has given me the task of building him a house of worship at Jerusalem, which is in Judah."
+    },
+    {
+     "v": 3,
+     "text": "Whoever belongs to his people may go, and may God be with you! Travel to Jerusalem in Judah. Rebuild the temple of Yahweh, Israel’s God, the God whose home is in Jerusalem."
+    },
+    {
+     "v": 4,
+     "text": "Some of his people still live scattered here and there as foreigners. Wherever they are, their neighbors must help them. Let them be given silver and gold, along with goods and animals. Also give gifts of your own choosing for God’s temple in Jerusalem.”"
+    },
+    {
+     "v": 5,
+     "text": "Then the heads of families from Judah and Benjamin prepared to go, and the priests and Levites with them. They were everyone whose heart God had stirred to go and build Yahweh’s temple in Jerusalem."
+    },
+    {
+     "v": 6,
+     "text": "All their neighbors gave them a hand. Silver objects and gold, supplies, animals, and costly gifts were given to them. This was in addition to all the gifts given freely for the temple."
+    },
+    {
+     "v": 7,
+     "text": "King Cyrus also handed back the objects that belonged in Yahweh’s temple. These were the things Nebuchadnezzar had carried off from Jerusalem long ago and placed in the house of his gods.{b}"
+    },
+    {
+     "v": 8,
+     "text": "The king had his treasurer, Mithredath, take them out of storage. Each one was counted and handed over to Sheshbazzar, who led Judah.{c}"
+    },
+    {
+     "v": 9,
+     "text": "Here is the count: 30 gold dishes, 1,000 silver dishes, 29 knives,{d}"
+    },
+    {
+     "v": 10,
+     "text": "30 gold bowls and 410 silver bowls of a second type. There were also 1,000 other items.{e}"
+    },
+    {
+     "v": 11,
+     "text": "The gold and silver objects came to 5,400 in all. Sheshbazzar brought every one of them along when the exiles traveled up from Babylon to Jerusalem.{f}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "1:1",
+     "text": "Cyrus was Cyrus the Great, who founded the Persian Empire and took Babylon in 539 BC. The meaning of his name is not known. His first year over Babylon was 539-538 BC. See Jeremiah 25:11-12; 29:10. Verses 1-3 repeat 2 Chronicles 36:22-23. In the Hebrew Bible, Ezra and Nehemiah were counted as one book."
+    },
+    {
+     "m": "b",
+     "ref": "1:7",
+     "text": "Nebuchadnezzar means “Nabu, protect the heir.” He was king of Babylon 605-562 BC (see 2 Kings 24:13; 25:13-15)."
+    },
+    {
+     "m": "c",
+     "ref": "1:8",
+     "text": "Mithredath is a Persian name meaning “given by Mithra.” Sheshbazzar is a Babylonian name. It may mean “Shamash, protect the father.” Some think he is the same person as Zerubbabel, but this is not certain."
+    },
+    {
+     "m": "d",
+     "ref": "1:9",
+     "text": "The Hebrew words for “dishes” and “knives” are not certain."
+    },
+    {
+     "m": "e",
+     "ref": "1:10",
+     "text": "The Hebrew may mean “of second quality” or “matching.” The meaning is not certain."
+    },
+    {
+     "m": "f",
+     "ref": "1:11",
+     "text": "The numbers in verses 9-10 add up to 2,499, not 5,400. Maybe only the main items are listed, or some numbers changed in copying."
+    }
+   ],
+   "subheads": {
+    "1": "Cyrus Sends the Exiles Home",
+    "5": "The People Get Ready",
+    "7": "The Temple Treasures Return"
+   }
+  },
+  {
+   "n": 2,
+   "paras": [
+    1,
+    36,
+    40,
+    41,
+    42,
+    43,
+    55,
+    59,
+    64,
+    68
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "This is a list of the people of Judah’s province who came home from captivity. Nebuchadnezzar, Babylon’s king, had taken them away to Babylon. Now they came back to Jerusalem and Judah, each to his own town.{a}"
+    },
+    {
+     "v": 2,
+     "text": "Coming home with them as leaders were Zerubbabel and Jeshua, Nehemiah and Seraiah, Reelaiah and Mordecai, Bilshan and Mispar, Bigvai and Rehum, and also Baanah. Here are the numbers of Israel’s men, family by family:{b}"
+    },
+    {
+     "v": 3,
+     "text": "Parosh’s family numbered 2,172."
+    },
+    {
+     "v": 4,
+     "text": "Shephatiah’s numbered 372."
+    },
+    {
+     "v": 5,
+     "text": "From Arah there were 775."
+    },
+    {
+     "v": 6,
+     "text": "Pahath-moab’s family, through Jeshua and Joab, had 2,812.{c}"
+    },
+    {
+     "v": 7,
+     "text": "Elam’s had 1,254."
+    },
+    {
+     "v": 8,
+     "text": "There were 945 from Zattu."
+    },
+    {
+     "v": 9,
+     "text": "There were 760 from Zaccai."
+    },
+    {
+     "v": 10,
+     "text": "Bani’s family counted 642."
+    },
+    {
+     "v": 11,
+     "text": "Bebai’s counted 623."
+    },
+    {
+     "v": 12,
+     "text": "Azgad’s counted 1,222."
+    },
+    {
+     "v": 13,
+     "text": "Adonikam had 666 descendants on the list.{d}"
+    },
+    {
+     "v": 14,
+     "text": "Bigvai had 2,056."
+    },
+    {
+     "v": 15,
+     "text": "Adin had 454."
+    },
+    {
+     "v": 16,
+     "text": "Ater, through Hezekiah, had 98."
+    },
+    {
+     "v": 17,
+     "text": "Bezai’s family was 323."
+    },
+    {
+     "v": 18,
+     "text": "Jorah’s was 112."
+    },
+    {
+     "v": 19,
+     "text": "Hashum’s was 223."
+    },
+    {
+     "v": 20,
+     "text": "Gibbar’s was 95."
+    },
+    {
+     "v": 21,
+     "text": "Next come the towns. Bethlehem sent 123 men.{e}"
+    },
+    {
+     "v": 22,
+     "text": "Netophah sent 56."
+    },
+    {
+     "v": 23,
+     "text": "Anathoth sent 128."
+    },
+    {
+     "v": 24,
+     "text": "From Azmaveth came 42."
+    },
+    {
+     "v": 25,
+     "text": "Kiriath-arim, Chephirah, and Beeroth together sent 743.{f}"
+    },
+    {
+     "v": 26,
+     "text": "Ramah and Geba sent 621."
+    },
+    {
+     "v": 27,
+     "text": "Michmas sent 122."
+    },
+    {
+     "v": 28,
+     "text": "Bethel and Ai sent 223."
+    },
+    {
+     "v": 29,
+     "text": "Nebo sent 52."
+    },
+    {
+     "v": 30,
+     "text": "Magbish sent 156."
+    },
+    {
+     "v": 31,
+     "text": "The other Elam had 1,254."
+    },
+    {
+     "v": 32,
+     "text": "Harim had 320."
+    },
+    {
+     "v": 33,
+     "text": "Lod, Hadid, and Ono sent 725."
+    },
+    {
+     "v": 34,
+     "text": "Jericho sent 345."
+    },
+    {
+     "v": 35,
+     "text": "Senaah sent 3,630."
+    },
+    {
+     "v": 36,
+     "text": "Next are the priests. Jedaiah’s family, from Jeshua’s line, numbered 973."
+    },
+    {
+     "v": 37,
+     "text": "Immer’s family numbered 1,052."
+    },
+    {
+     "v": 38,
+     "text": "Pashhur’s family numbered 1,247."
+    },
+    {
+     "v": 39,
+     "text": "Harim’s family numbered 1,017."
+    },
+    {
+     "v": 40,
+     "text": "The Levites were 74 men from the families of Jeshua and Kadmiel, Hodaviah’s descendants."
+    },
+    {
+     "v": 41,
+     "text": "The singers were 128 men from Asaph’s family."
+    },
+    {
+     "v": 42,
+     "text": "The gatekeepers came from six families: Shallum and Ater, Talmon and Akkub, Hatita and Shobai. There were 139 of them."
+    },
+    {
+     "v": 43,
+     "text": "These families of temple servants came back: Ziha, Hasupha, and Tabbaoth;{g}"
+    },
+    {
+     "v": 44,
+     "text": "then Keros, Siaha, and Padon;"
+    },
+    {
+     "v": 45,
+     "text": "then Lebanah, Hagabah, and Akkub;"
+    },
+    {
+     "v": 46,
+     "text": "then Hagab, Shalmai, and Hanan;{h}"
+    },
+    {
+     "v": 47,
+     "text": "then Giddel, Gahar, and Reaiah;"
+    },
+    {
+     "v": 48,
+     "text": "then Rezin, Nekoda, and Gazzam;"
+    },
+    {
+     "v": 49,
+     "text": "then Uzza, Paseah, and Besai;"
+    },
+    {
+     "v": 50,
+     "text": "then Asnah, Meunim, and Nephusim;"
+    },
+    {
+     "v": 51,
+     "text": "then Bakbuk, Hakupha, and Harhur;"
+    },
+    {
+     "v": 52,
+     "text": "then Bazluth, Mehida, and Harsha;"
+    },
+    {
+     "v": 53,
+     "text": "then Barkos, Sisera, and Temah;"
+    },
+    {
+     "v": 54,
+     "text": "and last, Neziah and Hatipha."
+    },
+    {
+     "v": 55,
+     "text": "Descendants of Solomon’s servants came too. Their families were Sotai, Hassophereth, and Peruda;{i}"
+    },
+    {
+     "v": 56,
+     "text": "then Jaalah, Darkon, and Giddel;"
+    },
+    {
+     "v": 57,
+     "text": "then Shephatiah, Hattil, Pochereth-hazzebaim, and Ami."
+    },
+    {
+     "v": 58,
+     "text": "When the temple servants were added to the families from Solomon’s servants, the total was 392."
+    },
+    {
+     "v": 59,
+     "text": "Another group traveled from Tel-melah and Tel-harsha, from Cherub, Addan, and Immer. These people had no records to show that their ancestors were Israelites."
+    },
+    {
+     "v": 60,
+     "text": "These were 652 people from the families of Delaiah, Tobiah, and Nekoda."
+    },
+    {
+     "v": 61,
+     "text": "Some priests had the same problem. They came from the families of Hobaiah, Hakkoz, and Barzillai. (That last man had taken as his wife one of the daughters of Barzillai the Gileadite, and he went by that family’s name.){j}"
+    },
+    {
+     "v": 62,
+     "text": "They searched the family lists for their names, but the names were not there. So they were not allowed to serve as priests, because they were counted as unclean."
+    },
+    {
+     "v": 63,
+     "text": "The governor ordered them not to eat the most holy food. They had to wait until a priest could ask God for an answer using the Urim and Thummim.{k}"
+    },
+    {
+     "v": 64,
+     "text": "Counting everyone together, the whole group came to 42,360.{l}"
+    },
+    {
+     "v": 65,
+     "text": "On top of that, they had 7,337 male and female servants, and 200 men and women who sang."
+    },
+    {
+     "v": 66,
+     "text": "They brought 736 horses and 245 mules,"
+    },
+    {
+     "v": 67,
+     "text": "435 camels, and 6,720 donkeys."
+    },
+    {
+     "v": 68,
+     "text": "The travelers reached Yahweh’s temple in Jerusalem. There some of the family leaders gave gifts of their own choosing to help put God’s temple back up where it had stood."
+    },
+    {
+     "v": 69,
+     "text": "Each gave what he was able to the building fund. Together they gave about 1,100 pounds of gold and about 3 tons of silver. They also gave 100 sets of priests’ clothing.{m}"
+    },
+    {
+     "v": 70,
+     "text": "So all of them made their homes in their own towns. That included the priests and Levites, the singers and gatekeepers, the temple servants, and others among the people. The rest of the Israelites did the same."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "2:1",
+     "text": "This list is repeated, with many small changes in names and numbers, in Nehemiah 7:6-73."
+    },
+    {
+     "m": "b",
+     "ref": "2:2",
+     "text": "Zerubbabel probably means “born in Babylon.” He was a grandson of King Jehoiachin (1 Chronicles 3:17-19). Jeshua is a later form of Joshua, “Yahweh saves.” He was the high priest (Haggai 1:1). This Nehemiah and this Mordecai are not the men in the books of Nehemiah and Esther."
+    },
+    {
+     "m": "c",
+     "ref": "2:6",
+     "text": "Pahath-moab means “governor of Moab.”"
+    },
+    {
+     "m": "d",
+     "ref": "2:13",
+     "text": "Adonikam means “my lord has risen.”"
+    },
+    {
+     "m": "e",
+     "ref": "2:21",
+     "text": "The Hebrew says “sons of Bethlehem.” In verses 21-35 “sons of” a town means people from that town."
+    },
+    {
+     "m": "f",
+     "ref": "2:25",
+     "text": "Kiriath-arim is probably Kiriath-jearim, “town of forests” (Nehemiah 7:29)."
+    },
+    {
+     "m": "g",
+     "ref": "2:43",
+     "text": "The Hebrew word is Nethinim, “those given.” They were given to serve in the temple."
+    },
+    {
+     "m": "h",
+     "ref": "2:46",
+     "text": "Some Hebrew copies say Shamlai."
+    },
+    {
+     "m": "i",
+     "ref": "2:55",
+     "text": "These may have come from foreigners whom Solomon forced to serve him (1 Kings 9:20-21)."
+    },
+    {
+     "m": "j",
+     "ref": "2:61",
+     "text": "See 2 Samuel 17:27; 19:31-39."
+    },
+    {
+     "m": "k",
+     "ref": "2:63",
+     "text": "The Hebrew word for governor is Tirshatha, a Persian title. The Urim and Thummim were objects kept by the high priest and used to learn God’s will (Exodus 28:30)."
+    },
+    {
+     "m": "l",
+     "ref": "2:64",
+     "text": "The numbers in verses 3-60 add up to 29,818. The rest may include women or groups not listed by family."
+    },
+    {
+     "m": "m",
+     "ref": "2:69",
+     "text": "The Hebrew says “61,000 darics” of gold and “5,000 minas” of silver. A daric was a gold coin of about 0.3 ounce (8.4 grams). A mina was about 1 1/4 pounds (575 grams)."
+    }
+   ],
+   "subheads": {
+    "1": "The List of Those Who Returned",
+    "36": "Priests",
+    "40": "Levites, Singers, and Gatekeepers",
+    "43": "Temple Servants",
+    "59": "Families Without Records",
+    "64": "The Total",
+    "68": "Gifts for the Temple"
+   }
+  },
+  {
+   "n": 3,
+   "paras": [
+    1,
+    8
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "By the seventh month (in September–October), the Israelites had settled in their towns. Then all the people came together in Jerusalem, united as if they were one person.{a}"
+    },
+    {
+     "v": 2,
+     "text": "Jeshua son of Jozadak and the other priests, along with Zerubbabel son of Shealtiel and his relatives, started building the altar of Israel’s God. They wanted to offer burnt offerings on it, as the Law of Moses, the man of God, required.{b}"
+    },
+    {
+     "v": 3,
+     "text": "Though they were afraid of the peoples living around them, they set the altar on its old base. Then every morning and every evening they offered burnt offerings to Yahweh on it.{c}"
+    },
+    {
+     "v": 4,
+     "text": "They kept the Festival of Shelters as the Law describes. Day after day they offered the burnt offerings set for that day, the exact number the rules called for.{d}"
+    },
+    {
+     "v": 5,
+     "text": "After that they offered the regular burnt offerings, and the offerings for each new moon, and those for all of Yahweh’s holy festivals. They also offered whatever gifts people chose to give Yahweh."
+    },
+    {
+     "v": 6,
+     "text": "Starting on the first day of the seventh month (in September–October) they offered burnt offerings to Yahweh. Yet no one had laid the foundation of Yahweh’s temple yet."
+    },
+    {
+     "v": 7,
+     "text": "They paid the stonecutters and woodworkers in money. Sidon’s and Tyre’s people received food, drink, and olive oil in trade. For that, they floated cedar logs from Lebanon down the coast to Joppa. All this was done with the approval of Cyrus, Persia’s king."
+    },
+    {
+     "v": 8,
+     "text": "In the second month (in April–May) of their second year back at God’s temple in Jerusalem, the work began. Zerubbabel son of Shealtiel and Jeshua son of Jozadak led it, with the rest of their relatives: the priests, the Levites, and everyone who had come home from captivity. They put Levites age twenty and up in charge of building Yahweh’s temple.{e}"
+    },
+    {
+     "v": 9,
+     "text": "Jeshua, his sons, and his relatives worked side by side with Kadmiel and Kadmiel’s sons, all from Judah’s line. Together they supervised the workers on God’s temple. Henadad’s sons and their sons and relatives, who were Levites, helped them.{f}"
+    },
+    {
+     "v": 10,
+     "text": "The builders laid the foundation of Yahweh’s temple. Then the priests, wearing their robes, stood ready with trumpets. The Levites who came from Asaph stood with cymbals. They took their places to praise Yahweh, following the plan of David, king of Israel."
+    },
+    {
+     "v": 11,
+     "text": "Taking turns, they sang to Yahweh, praising him and thanking him: “He is good! His faithful love for Israel never ends!” Then everyone gave a loud shout of praise to Yahweh, because now the foundation of his temple was in place.{g}"
+    },
+    {
+     "v": 12,
+     "text": "But many older priests, Levites, and family leaders had seen the first temple. When they saw the foundation for this one, they cried out loud. At the same time, many others shouted with joy."
+    },
+    {
+     "v": 13,
+     "text": "No one could tell which sound was the joyful shouting and which was the crying. The people made such a loud noise that it could be heard far away."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "3:1",
+     "text": "The seventh month was Tishri. This was probably the fall of 538 or 537 BC."
+    },
+    {
+     "m": "b",
+     "ref": "3:2",
+     "text": "Jozadak means “Yahweh is right.” Shealtiel means “I asked God for him.”"
+    },
+    {
+     "m": "c",
+     "ref": "3:3",
+     "text": "Some Hebrew copies say “he offered.”"
+    },
+    {
+     "m": "d",
+     "ref": "3:4",
+     "text": "The Hebrew word is sukkot, “shelters” or “booths.” The festival lasted from the fifteenth to the twenty-first day of the seventh month (Leviticus 23:33-43)."
+    },
+    {
+     "m": "e",
+     "ref": "3:8",
+     "text": "The second month was Iyyar, earlier called Ziv. Solomon also began his temple in the second month (1 Kings 6:1)."
+    },
+    {
+     "m": "f",
+     "ref": "3:9",
+     "text": "“Judah” may be another spelling of Hodaviah (2:40). Kadmiel means “God is ahead.” Henadad means “favor of Hadad.”"
+    },
+    {
+     "m": "g",
+     "ref": "3:11",
+     "text": "The Hebrew word for “faithful love” is hesed, loyal love that keeps a promise."
+    }
+   ],
+   "subheads": {
+    "1": "The Altar Is Rebuilt",
+    "8": "Laying the Temple’s Foundation"
+   }
+  },
+  {
+   "n": 4,
+   "paras": [
+    1,
+    6,
+    17,
+    23
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Judah and Benjamin had enemies. These enemies learned that the people back from exile were building a temple for Yahweh, Israel’s God.{a}"
+    },
+    {
+     "v": 2,
+     "text": "They came to Zerubbabel and to the family heads with an offer. “Let us build alongside you,” they said. “Your God is the God we worship too. We have been offering him sacrifices since the days of Esarhaddon, Assyria’s king, who brought us to live here.”{b}"
+    },
+    {
+     "v": 3,
+     "text": "Zerubbabel and Jeshua refused, and so did Israel’s other family heads. “Building a house for our God is not your work,” they said. “It is ours alone. We will do the building for Yahweh, Israel’s God, by ourselves. That is what Cyrus, Persia’s king, commanded.”"
+    },
+    {
+     "v": 4,
+     "text": "After that, the people who already lived in the land tried to make Judah’s people lose heart. They kept scaring them so they would stop building.{c}"
+    },
+    {
+     "v": 5,
+     "text": "They paid advisers to work against them and ruin their plans. They kept this up the whole time Cyrus ruled Persia, and they were still at it when Darius came to the Persian throne.{d}"
+    },
+    {
+     "v": 6,
+     "text": "Later, at the start of the reign of Ahasuerus, they wrote out charges against the people of Judah and Jerusalem.{e}"
+    },
+    {
+     "v": 7,
+     "text": "Still later, while Artaxerxes was king of Persia, another letter was sent to him. The writers were Bishlam, Mithredath, and Tabeel, and others who sided with them. It used the Aramaic alphabet and was in the Aramaic language.{f}"
+    },
+    {
+     "v": 8,
+     "text": "Rehum, the chief officer, and Shimshai, the royal writer, also wrote to King Artaxerxes against Jerusalem. Their letter went like this:{g}"
+    },
+    {
+     "v": 9,
+     "text": "It came from Rehum the chief officer and Shimshai the writer, and from their fellow officials. With them were the judges, the officers, the Persians, and people from Erech, Babylon, and Susa (the Elamites).{h}"
+    },
+    {
+     "v": 10,
+     "text": "Others joined them too: peoples whom the great and famous Osnappar had forced from their homes and settled in the towns of Samaria and elsewhere across the Euphrates.{i}"
+    },
+    {
+     "v": 11,
+     "text": "This is what their letter said: “To Artaxerxes our king. This letter comes from your servants in the province beyond the river."
+    },
+    {
+     "v": 12,
+     "text": "Our king, we want you to know about the Jews who left your land and came here to Jerusalem. They are rebuilding that wicked city, a city that always rebels. They are finishing its walls and fixing its foundations."
+    },
+    {
+     "v": 13,
+     "text": "Please understand this, your majesty. If the city is built again and its walls are done, those people will stop paying taxes of every kind. In the end, the royal treasury will lose money."
+    },
+    {
+     "v": 14,
+     "text": "We owe our living to the palace. It would not be right for us to stand by while the king is shamed. That is why we are sending you this report."
+    },
+    {
+     "v": 15,
+     "text": "Have someone look through the record books of the kings before you. You will find out that this city has always rebelled. It has caused trouble for kings and provinces. Since long ago its people have stirred up revolts. That is why it was destroyed."
+    },
+    {
+     "v": 16,
+     "text": "We are warning you, our king. If this city is rebuilt and its walls finished, you will lose control of everything west of the Euphrates.”"
+    },
+    {
+     "v": 17,
+     "text": "The king wrote back: “To Rehum the chief officer, Shimshai the writer, and the rest of your fellow officials living in Samaria and elsewhere west of the Euphrates. Greetings."
+    },
+    {
+     "v": 18,
+     "text": "The letter you sent has been read out to me and explained.{j}"
+    },
+    {
+     "v": 19,
+     "text": "At my order, the records were searched. They show that from long ago this city has risen up against kings. Rebellion and revolt have been common there."
+    },
+    {
+     "v": 20,
+     "text": "Strong kings once ruled from Jerusalem. They controlled all the land west of the Euphrates. People paid them taxes of every kind."
+    },
+    {
+     "v": 21,
+     "text": "So give an order to make those men stop working. The city must not be rebuilt unless I give the order."
+    },
+    {
+     "v": 22,
+     "text": "Be careful to do this right away. Why let the trouble grow and harm the royal house?”"
+    },
+    {
+     "v": 23,
+     "text": "A copy of King Artaxerxes’ letter was read aloud to Rehum, Shimshai the writer, and their fellow officials. Right away they rushed to the Jews in Jerusalem and used force to make them stop."
+    },
+    {
+     "v": 24,
+     "text": "So the work on God’s temple in Jerusalem came to a halt. It stayed that way until Darius had been Persia’s king for two years.{k}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "4:1",
+     "text": "The Hebrew says “the sons of the exile.”"
+    },
+    {
+     "m": "b",
+     "ref": "4:2",
+     "text": "Esarhaddon means “Ashur has given a brother.” He was king of Assyria 681-669 BC. See 2 Kings 17:24-41. Some Hebrew copies say “we have not been offering sacrifices.”"
+    },
+    {
+     "m": "c",
+     "ref": "4:4",
+     "text": "Or “made their hands weak.”"
+    },
+    {
+     "m": "d",
+     "ref": "4:5",
+     "text": "Darius I was king of Persia 522-486 BC. His name probably means “he who holds on to good.”"
+    },
+    {
+     "m": "e",
+     "ref": "4:6",
+     "text": "Ahasuerus is the Persian king known in Greek as Xerxes. He ruled 486-465 BC (see Esther 1:1). Verses 6-23 tell about later troubles under Xerxes and Artaxerxes. The story of the temple picks up again in verse 24."
+    },
+    {
+     "m": "f",
+     "ref": "4:7",
+     "text": "Artaxerxes I was king of Persia 465-424 BC. Bishlam may be a name, or it may mean “in peace.” Tabeel means “God is good.”"
+    },
+    {
+     "m": "g",
+     "ref": "4:8",
+     "text": "From here through 6:18, the book is written in Aramaic instead of Hebrew. Aramaic was the language the Persian government used. The Aramaic title for Rehum’s office means “lord of orders.”"
+    },
+    {
+     "m": "h",
+     "ref": "4:9",
+     "text": "Several of these Aramaic words are uncertain. They may be titles or the names of peoples. Erech was the old city of Uruk in Babylonia."
+    },
+    {
+     "m": "i",
+     "ref": "4:10",
+     "text": "Osnappar is probably Ashurbanipal, king of Assyria 668-627 BC. The province west of the Euphrates included Syria and the land of Israel."
+    },
+    {
+     "m": "j",
+     "ref": "4:18",
+     "text": "Or “read to me in translation.”"
+    },
+    {
+     "m": "k",
+     "ref": "4:24",
+     "text": "This was in 520 BC (see Haggai 1:1; Zechariah 1:1)."
+    }
+   ],
+   "subheads": {
+    "1": "Enemies Try to Stop the Work",
+    "6": "Letters Against Jerusalem",
+    "17": "The King Orders a Halt",
+    "23": "The Work Stops"
+   }
+  },
+  {
+   "n": 5,
+   "paras": [
+    1,
+    3,
+    6
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "In those days two prophets brought God’s word to the Jews of Judah and Jerusalem: Haggai, and Zechariah, Iddo’s descendant. The God of Israel, who was over them, sent the messages they spoke.{a}"
+    },
+    {
+     "v": 2,
+     "text": "So Zerubbabel son of Shealtiel and Jeshua son of Jozadak went to work again on God’s temple in Jerusalem. God’s prophets stood with them and helped them."
+    },
+    {
+     "v": 3,
+     "text": "Before long, the official over the whole province beyond the Euphrates arrived. His name was Tattenai. Shethar-bozenai came with him, along with others who served with them. They asked, “Who said you could build this temple and finish its walls?”{b}"
+    },
+    {
+     "v": 4,
+     "text": "They also demanded the names of the men doing the building.{c}"
+    },
+    {
+     "v": 5,
+     "text": "But God’s eye was on the elders of the Jews. So the work was not stopped while a report went to Darius and an answer came back in writing."
+    },
+    {
+     "v": 6,
+     "text": "Tattenai, governor beyond the Euphrates, sent a letter to King Darius together with Shethar-bozenai and his fellow officials of the province. This is a copy of what they wrote.{d}"
+    },
+    {
+     "v": 7,
+     "text": "Their report said: “To King Darius. We wish you all peace."
+    },
+    {
+     "v": 8,
+     "text": "Your majesty should know that we traveled to Judah’s province and visited the house of the great God. Huge stones are going up, and wooden beams are being set into its walls. The builders are working hard, and the work is moving ahead well.{e}"
+    },
+    {
+     "v": 9,
+     "text": "We questioned their leaders. ‘Who gave you permission to build this temple and finish its walls?’ we asked."
+    },
+    {
+     "v": 10,
+     "text": "We also asked them their names. That way we could write down the names of their leaders for you."
+    },
+    {
+     "v": 11,
+     "text": "This is how they answered: ‘The God we serve is Lord of heaven and earth. The house we are building again stood here for many years. A powerful king of Israel once built it and finished it.{f}"
+    },
+    {
+     "v": 12,
+     "text": "But our ancestors stirred up the anger of heaven’s God. So he let Nebuchadnezzar, Babylon’s king from Chaldea, defeat them. Nebuchadnezzar tore down this temple and took the people as captives to Babylon.{g}"
+    },
+    {
+     "v": 13,
+     "text": "Later, though, Cyrus took the throne of Babylon. During his first year on that throne he commanded that this house of God be built again."
+    },
+    {
+     "v": 14,
+     "text": "Nebuchadnezzar had taken the gold and silver objects of God’s house from the temple in Jerusalem. He had carried them off to Babylon’s temple. King Cyrus brought them out of there. He handed them over to Sheshbazzar, the man he had chosen as governor."
+    },
+    {
+     "v": 15,
+     "text": "Cyrus told him, “Take these objects back. Put them in the temple at Jerusalem. Let God’s house be built again where it used to be.”"
+    },
+    {
+     "v": 16,
+     "text": "So Sheshbazzar came and laid the foundation of God’s temple in Jerusalem. The building has gone on from that day to this, but it is still not done.’"
+    },
+    {
+     "v": 17,
+     "text": "Now, if it pleases the king, have the royal records in Babylon searched. See if King Cyrus truly ordered that God’s house be built in Jerusalem. After that, please let us know what you decide.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "5:1",
+     "text": "Haggai means “festive.” Zechariah means “Yahweh remembers.” In Zechariah 1:1 he is the son of Berechiah and grandson of Iddo."
+    },
+    {
+     "m": "b",
+     "ref": "5:3",
+     "text": "A record from the reign of Darius names a governor called Tattannu, probably the same man. The meaning of Shethar-bozenai is uncertain. The Aramaic word for “walls” is uncertain. It may mean the woodwork or the whole building (also in verse 9)."
+    },
+    {
+     "m": "c",
+     "ref": "5:4",
+     "text": "The Aramaic says “Then we told them.” The Septuagint says “They said to them.”"
+    },
+    {
+     "m": "d",
+     "ref": "5:6",
+     "text": "The Aramaic word for “officials” is uncertain. It may mean “inspectors.”"
+    },
+    {
+     "m": "e",
+     "ref": "5:8",
+     "text": "The Aramaic says “stones of rolling,” stones so big they had to be rolled into place."
+    },
+    {
+     "m": "f",
+     "ref": "5:11",
+     "text": "This was Solomon (1 Kings 6)."
+    },
+    {
+     "m": "g",
+     "ref": "5:12",
+     "text": "The Chaldeans were the people of southern Babylonia."
+    }
+   ],
+   "subheads": {
+    "1": "The Building Starts Again",
+    "3": "Tattenai Asks Questions",
+    "6": "Tattenai’s Letter to Darius"
+   }
+  },
+  {
+   "n": 6,
+   "paras": [
+    1,
+    6,
+    13,
+    19
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "So King Darius gave an order. His men searched the records in Babylon, in the building where treasures were stored.{a}"
+    },
+    {
+     "v": 2,
+     "text": "In the fortress at Ecbatana, in Media’s province, they found a scroll. It contained this record:{b}"
+    },
+    {
+     "v": 3,
+     "text": "In his first year as king, Cyrus gave an order about God’s house in Jerusalem. The house is to be built again, a place where sacrifices will be made. Keep its foundations. It is to be about 90 feet high and about 90 feet wide.{c}"
+    },
+    {
+     "v": 4,
+     "text": "Build the walls with three rows of huge stones topped by a row of timber. The king’s treasury will pay the cost.{d}"
+    },
+    {
+     "v": 5,
+     "text": "Nebuchadnezzar took gold and silver objects from God’s house in Jerusalem and carried them to Babylon. Send them back to the Jerusalem temple and set each one where it belongs. Put them in God’s house.”"
+    },
+    {
+     "v": 6,
+     "text": "Darius then wrote: “So now, Tattenai, governor beyond the Euphrates, and Shethar-bozenai, and all you officials who serve with them there, stay away from that place."
+    },
+    {
+     "v": 7,
+     "text": "Do not get in the way of the building of God’s house. Let the Jews’ governor and their leaders rebuild God’s house where it stood before."
+    },
+    {
+     "v": 8,
+     "text": "Here is my order about how you must help these Jewish leaders build God’s house. Their costs must be paid in full from the royal money, from the taxes of the land west of the Euphrates. Pay them promptly so the work does not stop."
+    },
+    {
+     "v": 9,
+     "text": "Give the priests in Jerusalem whatever they need, every day, without fail. If they want young bulls, rams, or lambs to burn as offerings to heaven’s God, give them. If they need wheat, salt, wine, or olive oil, give them that too."
+    },
+    {
+     "v": 10,
+     "text": "That way they can bring the God of heaven sacrifices that he finds pleasing. They can also ask him to give long life to the king and his sons."
+    },
+    {
+     "v": 11,
+     "text": "I also give this order. If anyone changes this command, a beam will be pulled out of his house. He will be lifted up and nailed to it, and his house will be turned into a pile of rubble.{e}"
+    },
+    {
+     "v": 12,
+     "text": "God chose that place as the home of his Name. May he bring down any king or nation that tries to change this order or destroy his house in Jerusalem. I, Darius, have given this command. Carry it out with care.”"
+    },
+    {
+     "v": 13,
+     "text": "Tattenai, the governor west of the Euphrates, Shethar-bozenai, and their officials did exactly as King Darius had ordered, and they did it with care."
+    },
+    {
+     "v": 14,
+     "text": "So the Jewish leaders kept building, and the work went well. The prophets Haggai and Zechariah, Iddo’s descendant, encouraged them with God’s messages. The God of Israel had commanded this temple, and the Persian kings Cyrus, Darius, and Artaxerxes had ordered it. Now it was done.{f}"
+    },
+    {
+     "v": 15,
+     "text": "The temple was completed on the third day of the month of Adar (in February–March), in King Darius’s sixth year.{g}"
+    },
+    {
+     "v": 16,
+     "text": "Then the people of Israel celebrated with joy as they gave this house of God to him. The priests, the Levites, and all the others back from exile took part."
+    },
+    {
+     "v": 17,
+     "text": "For that celebration they offered 100 bulls and 200 rams, with 400 lambs as well. They also offered 12 male goats to take away the sins of all Israel, one goat for every tribe.{h}"
+    },
+    {
+     "v": 18,
+     "text": "They divided the priests into their groups and the Levites into their teams to serve God in Jerusalem. They did this as the book of Moses directs.{i}"
+    },
+    {
+     "v": 19,
+     "text": "The people who had come back from exile kept the Passover on the fourteenth day of the first month (in March–April).{j}"
+    },
+    {
+     "v": 20,
+     "text": "All the priests and Levites had gone through the cleansing ceremony as one group. Not one of them was unclean. The Levites killed the Passover lambs for all the returned exiles, for the priests, their relatives, and for themselves."
+    },
+    {
+     "v": 21,
+     "text": "The Israelites back from exile ate the Passover meal. So did all who had turned away from the unclean ways of the other peoples in the land and joined them in worshiping Yahweh, Israel’s God."
+    },
+    {
+     "v": 22,
+     "text": "For seven days they joyfully held the Festival of Bread Without Yeast. Yahweh had filled them with joy. He had turned the heart of Assyria’s king to favor them, so the king helped them with the work on the house of Israel’s God.{k}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "6:1",
+     "text": "The Aramaic says “the house of the books.”"
+    },
+    {
+     "m": "b",
+     "ref": "6:2",
+     "text": "Ecbatana is modern Hamadan in Iran. The Persian kings stayed there in summer."
+    },
+    {
+     "m": "c",
+     "ref": "6:3",
+     "text": "The Aramaic says “60 cubits” for each. That is about 27 meters. The length is not given. Solomon’s temple was 30 cubits high and 20 wide (1 Kings 6:2)."
+    },
+    {
+     "m": "d",
+     "ref": "6:4",
+     "text": "The Septuagint says “one layer of wood.” The Aramaic says “a layer of new wood.”"
+    },
+    {
+     "m": "e",
+     "ref": "6:11",
+     "text": "Or “tied to it.” The exact punishment is not certain."
+    },
+    {
+     "m": "f",
+     "ref": "6:14",
+     "text": "Artaxerxes did not rule until after the temple was finished. He is probably named because he later helped the temple (7:15-24)."
+    },
+    {
+     "m": "g",
+     "ref": "6:15",
+     "text": "Adar was the twelfth month. This was probably in March 515 BC."
+    },
+    {
+     "m": "h",
+     "ref": "6:17",
+     "text": "These were offerings to take away sin (often called sin offerings)."
+    },
+    {
+     "m": "i",
+     "ref": "6:18",
+     "text": "The Aramaic part that began at 4:8 ends here. From verse 19 the book is in Hebrew again."
+    },
+    {
+     "m": "j",
+     "ref": "6:19",
+     "text": "The first month was called Nisan after the exile. This was the spring of 515 BC."
+    },
+    {
+     "m": "k",
+     "ref": "6:22",
+     "text": "This means the king of Persia, Darius, who now ruled the lands that Assyria once ruled."
+    }
+   ],
+   "subheads": {
+    "1": "Cyrus’s Order Is Found",
+    "6": "Darius Gives His Orders",
+    "13": "The Temple Is Finished",
+    "19": "Passover"
+   }
+  },
+  {
+   "n": 7,
+   "paras": [
+    1,
+    11,
+    27
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Many years later, during the rule of Artaxerxes over Persia, there was a man named Ezra. His father was Seraiah. Going back in his family line, before Seraiah came Azariah, and before him Hilkiah.{a}"
+    },
+    {
+     "v": 2,
+     "text": "Earlier still were Shallum, then Zadok, then Ahitub."
+    },
+    {
+     "v": 3,
+     "text": "Before them came Amariah, then Azariah, then Meraioth."
+    },
+    {
+     "v": 4,
+     "text": "Earlier than these were Zerahiah, Uzzi, and Bukki."
+    },
+    {
+     "v": 5,
+     "text": "And at the start of the line were Abishua, Phinehas, Eleazar, and Aaron, the first high priest.{b}"
+    },
+    {
+     "v": 6,
+     "text": "Ezra came up out of Babylon. He had trained as a scholar of Moses’s Law, which Yahweh, Israel’s God, gave to his people, and he understood it deeply. Because Yahweh his God was helping him, Ezra received from the king every request he made."
+    },
+    {
+     "v": 7,
+     "text": "Others made the trip to Jerusalem with him in Artaxerxes’s seventh year as king. Some were ordinary Israelites. Others were priests and Levites, singers and gatekeepers, and servants of the temple."
+    },
+    {
+     "v": 8,
+     "text": "Ezra arrived in Jerusalem in the fifth month (in July–August) of the king’s seventh year.{c}"
+    },
+    {
+     "v": 9,
+     "text": "He had started out from Babylon on the first day of the first month (in March–April). On the first day of the fifth month he reached Jerusalem, because his God’s kind hand was on him.{d}"
+    },
+    {
+     "v": 10,
+     "text": "Ezra had made up his mind to study Yahweh’s Law and to live by it. He was also determined to teach its rules and laws in Israel."
+    },
+    {
+     "v": 11,
+     "text": "King Artaxerxes gave a letter to Ezra the priest and teacher, who was an expert in the commands and rules Yahweh gave Israel. This is a copy of it:"
+    },
+    {
+     "v": 12,
+     "text": "“Artaxerxes, the greatest of kings, writes to Ezra. You are a priest and a scholar of what heaven’s God has commanded. Greetings to you.{e}"
+    },
+    {
+     "v": 13,
+     "text": "This is my decree. Throughout my kingdom, any of Israel’s people who choose to travel with you to Jerusalem are free to do so. That includes their priests and Levites."
+    },
+    {
+     "v": 14,
+     "text": "The king and his seven counselors have chosen you for a task. Find out whether Judah and Jerusalem are keeping the Law of your God, the Law you hold in your hand."
+    },
+    {
+     "v": 15,
+     "text": "Take along the silver and gold that I and my advisers are freely giving to Israel’s God, whose home is in Jerusalem."
+    },
+    {
+     "v": 16,
+     "text": "Take too any silver and gold you receive anywhere in the province of Babylon. Add the gifts the people and priests freely give for their God’s temple in Jerusalem."
+    },
+    {
+     "v": 17,
+     "text": "Use this money with care. Buy bulls, rams, and lambs, and the grain and drink offerings that go with them. Offer them on the altar of your God’s temple in Jerusalem."
+    },
+    {
+     "v": 18,
+     "text": "If any silver and gold is left over, you and your fellow Jews may use it as you think best, in keeping with what your God wants."
+    },
+    {
+     "v": 19,
+     "text": "Some objects have been given to you for the service of your God’s temple. Hand every one of them over to the God of Jerusalem."
+    },
+    {
+     "v": 20,
+     "text": "Your God’s temple may need other things that are your duty to supply. You may pay for them from the royal storehouse."
+    },
+    {
+     "v": 21,
+     "text": "Now I, King Artaxerxes, command every treasurer in the province beyond the Euphrates: Ezra, the priest who teaches the Law of heaven’s God, may ask you for things. Give them to him quickly and fully,"
+    },
+    {
+     "v": 22,
+     "text": "up to these limits: about 3 3/4 tons of silver, about 600 bushels of wheat, about 580 gallons of wine, and about 580 gallons of olive oil. There is no limit on salt.{f}"
+    },
+    {
+     "v": 23,
+     "text": "Whatever the God of heaven requires for his temple, do it with care. Why should his anger fall on the kingdom of the king and his sons?"
+    },
+    {
+     "v": 24,
+     "text": "Also know this: You have no right to make the priests pay taxes of any kind. The same goes for the Levites, singers, gatekeepers, temple servants, and all other workers at this house of God."
+    },
+    {
+     "v": 25,
+     "text": "You, Ezra, have wisdom from your God. With it, appoint officials and judges to rule all the people beyond the Euphrates, everyone who knows your God’s laws. Anyone who does not know those laws, you must teach."
+    },
+    {
+     "v": 26,
+     "text": "Whoever refuses to obey your God’s law and the king’s law must be punished right away. The punishment may be death, being sent away, losing property, or prison.”{g}"
+    },
+    {
+     "v": 27,
+     "text": "Praise Yahweh, the God of our ancestors! He moved the king to make Yahweh’s temple in Jerusalem beautiful and honored like this."
+    },
+    {
+     "v": 28,
+     "text": "He showed me his faithful love in front of the king, the king’s advisers, and all his powerful officials. Yahweh my God was with me, so I took courage. I gathered leaders from Israel to go back with me.{h}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "7:1",
+     "text": "Ezra means “help.” It is probably short for Azariah, “Yahweh has helped.” If this king is Artaxerxes I, Ezra came to Jerusalem in 458 BC (verse 7). Some think the king was Artaxerxes II, which would mean 398 BC."
+    },
+    {
+     "m": "b",
+     "ref": "7:5",
+     "text": "The family line is shortened. See 1 Chronicles 6:3-15, which lists more people."
+    },
+    {
+     "m": "c",
+     "ref": "7:8",
+     "text": "The fifth month was Av."
+    },
+    {
+     "m": "d",
+     "ref": "7:9",
+     "text": "The first month was Nisan. The trip of about 900 miles (1,450 kilometers) took four months."
+    },
+    {
+     "m": "e",
+     "ref": "7:12",
+     "text": "Verses 12-26 are in Aramaic, like 4:8-6:18. “King of kings” was a title of the Persian kings."
+    },
+    {
+     "m": "f",
+     "ref": "7:22",
+     "text": "The Aramaic says “100 talents of silver, 100 cors of wheat, 100 baths of wine, and 100 baths of oil.” A talent was about 75 pounds (34 kilograms). A cor was about 6 bushels (220 liters). A bath was about 5.8 gallons (22 liters)."
+    },
+    {
+     "m": "g",
+     "ref": "7:26",
+     "text": "The Aramaic word for “being sent away” may also mean “being beaten.” From verse 27 the book is in Hebrew again."
+    },
+    {
+     "m": "h",
+     "ref": "7:28",
+     "text": "From 7:27 through 9:15 Ezra tells the story himself."
+    }
+   ],
+   "subheads": {
+    "1": "Ezra Comes to Jerusalem",
+    "11": "Artaxerxes’ Letter to Ezra",
+    "27": "Ezra Praises Yahweh"
+   }
+  },
+  {
+   "n": 8,
+   "paras": [
+    1,
+    15,
+    21,
+    24,
+    31,
+    35
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Here is a list of the family leaders who came up with me from Babylon while King Artaxerxes ruled, and the families they belonged to."
+    },
+    {
+     "v": 2,
+     "text": "From Phinehas’s line came Gershom. From Ithamar’s came Daniel. From David’s came Hattush,"
+    },
+    {
+     "v": 3,
+     "text": "who was from Shecaniah’s family. Zechariah came from Parosh’s family, and 150 men were listed with him.{a}"
+    },
+    {
+     "v": 4,
+     "text": "Eliehoenai son of Zerahiah came from Pahath-moab’s family, with 200 men."
+    },
+    {
+     "v": 5,
+     "text": "From Zattu’s family came Shecaniah son of Jahaziel, and 300 men.{b}"
+    },
+    {
+     "v": 6,
+     "text": "Ebed son of Jonathan led Adin’s family, with 50 men."
+    },
+    {
+     "v": 7,
+     "text": "Jeshaiah son of Athaliah represented Elam’s family, with 70 men."
+    },
+    {
+     "v": 8,
+     "text": "Shephatiah’s family sent Zebadiah son of Michael and 80 men."
+    },
+    {
+     "v": 9,
+     "text": "Joab’s family sent Obadiah son of Jehiel and 218 men."
+    },
+    {
+     "v": 10,
+     "text": "Bani’s family sent Shelomith son of Josiphiah and 160 men.{c}"
+    },
+    {
+     "v": 11,
+     "text": "For Bebai’s family there was Zechariah son of Bebai, with 28 men."
+    },
+    {
+     "v": 12,
+     "text": "For Azgad’s family there was Johanan son of Hakkatan, with 110 men."
+    },
+    {
+     "v": 13,
+     "text": "The last ones from Adonikam’s family were Eliphelet, Jeuel, and Shemaiah, with 60 men."
+    },
+    {
+     "v": 14,
+     "text": "From Bigvai’s family came Uthai and Zaccur, with 70 men.{d}"
+    },
+    {
+     "v": 15,
+     "text": "I brought them all together by the canal that flows toward Ahava. We set up camp there for three days. As I looked over the people and the priests, I saw that no Levites had come.{e}"
+    },
+    {
+     "v": 16,
+     "text": "So I called for some leaders: Eliezer, Ariel, Shemaiah, Elnathan, Jarib, another Elnathan, Nathan, Zechariah, and Meshullam. Joiarib and Elnathan, men with deep understanding, were called as well."
+    },
+    {
+     "v": 17,
+     "text": "Then I gave them orders to go to Iddo, the leader at the place named Casiphia. I put into their mouths the message for Iddo and his kinsmen, the temple servants living there. They were to bring us men to serve in our God’s house.{f}"
+    },
+    {
+     "v": 18,
+     "text": "Our God’s kind hand was on us, and they brought us a man with good sense named Sherebiah. He came from the family of Mahli, a son of Levi, Israel’s son. With him came his sons and his relatives, eighteen men.{g}"
+    },
+    {
+     "v": 19,
+     "text": "They also brought Hashabiah, and with him Jeshaiah from Merari’s family, and their relatives and sons, twenty men."
+    },
+    {
+     "v": 20,
+     "text": "They brought 220 temple servants as well. David and his officials had first given the temple servants to help the Levites. Each of these men was listed by name."
+    },
+    {
+     "v": 21,
+     "text": "There beside the Ahava canal I announced a fast. We would humble ourselves before our God and pray that he would lead us safely, with our little ones and everything we had.{h}"
+    },
+    {
+     "v": 22,
+     "text": "Asking the king for an army escort of foot soldiers and riders to guard us on the way would have shamed me. After all, we had told him, “Our God is good to everyone who looks to him. Those who abandon him face his mighty anger.”"
+    },
+    {
+     "v": 23,
+     "text": "So we went without food and begged our God to keep us safe, and he answered us."
+    },
+    {
+     "v": 24,
+     "text": "Then I picked out twelve leaders of the priests. Along with them I chose Sherebiah and Hashabiah, plus ten of their relatives.{i}"
+    },
+    {
+     "v": 25,
+     "text": "Into their care I weighed the silver, gold, and objects given for our God’s house. These were gifts from the king and those who advised and served him, and from every Israelite who was there."
+    },
+    {
+     "v": 26,
+     "text": "Here is what I weighed out and put in their care: about 24 tons of silver, silver objects weighing about 3 3/4 tons, and about 3 3/4 tons of gold.{j}"
+    },
+    {
+     "v": 27,
+     "text": "There were also 20 gold bowls worth about 18 1/2 pounds of gold, and two objects of fine shining bronze, as valuable as gold.{k}"
+    },
+    {
+     "v": 28,
+     "text": "I told them, “You belong to Yahweh, and so do these objects. This silver and gold is a gift freely given to Yahweh, the God of your ancestors."
+    },
+    {
+     "v": 29,
+     "text": "Watch over it closely until you reach Jerusalem. There you must weigh it again in the storerooms of Yahweh’s house. Do it in front of the leading priests, the Levites, and Israel’s family leaders.”"
+    },
+    {
+     "v": 30,
+     "text": "So the priests and Levites took charge of the weighed silver and gold and the objects. They would carry them to our God’s house in Jerusalem."
+    },
+    {
+     "v": 31,
+     "text": "On the twelfth day of the first month (in March–April) we left the Ahava canal and started for Jerusalem. Our God was with us. He kept us safe from enemies and from robbers hiding along the way.{l}"
+    },
+    {
+     "v": 32,
+     "text": "We arrived in Jerusalem, and for three days we stayed there and rested."
+    },
+    {
+     "v": 33,
+     "text": "Next day, the fourth, at our God’s house, everything was weighed: the silver, the gold, and the objects. It was all given into the care of Meremoth, a priest and the son of Uriah. Eleazar, Phinehas’s son, was there too. So were the Levites Jozabad, whose father was Jeshua, and Noadiah, whose father was Binnui."
+    },
+    {
+     "v": 34,
+     "text": "Every item was counted and weighed. Right then the total weight was written down."
+    },
+    {
+     "v": 35,
+     "text": "Then the people who had come home from exile gave burnt offerings to Israel’s God. They offered twelve bulls for all of Israel, ninety-six rams, and seventy-seven lambs. They also offered twelve male goats to take away sin. All of these were burned up completely as an offering to Yahweh."
+    },
+    {
+     "v": 36,
+     "text": "They gave the king’s orders to his regional rulers and to the governors beyond the Euphrates. With that, those officials helped the people and the work on God’s house.{m}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "8:3",
+     "text": "Hattush came from Shecaniah’s family (1 Chronicles 3:22). Some divide these verses differently."
+    },
+    {
+     "m": "b",
+     "ref": "8:5",
+     "text": "“Zattu’s family” is in the Septuagint. The Hebrew does not have it."
+    },
+    {
+     "m": "c",
+     "ref": "8:10",
+     "text": "“Bani’s family” is in the Septuagint. The Hebrew does not have it."
+    },
+    {
+     "m": "d",
+     "ref": "8:14",
+     "text": "Some Hebrew copies say Zabbud."
+    },
+    {
+     "m": "e",
+     "ref": "8:15",
+     "text": "No one knows where Ahava and its canal were in Babylonia."
+    },
+    {
+     "m": "f",
+     "ref": "8:17",
+     "text": "The Hebrew may also mean “his relatives and the temple servants.”"
+    },
+    {
+     "m": "g",
+     "ref": "8:18",
+     "text": "The Hebrew words for “a man with good sense” might also be a name, Ish-sechel."
+    },
+    {
+     "m": "h",
+     "ref": "8:21",
+     "text": "The Hebrew says “a straight road.”"
+    },
+    {
+     "m": "i",
+     "ref": "8:24",
+     "text": "Sherebiah and Hashabiah were Levites (verses 18-19), not priests."
+    },
+    {
+     "m": "j",
+     "ref": "8:26",
+     "text": "The Hebrew says “650 talents of silver, silver objects of 100 talents, and 100 talents of gold.” A talent was about 75 pounds (34 kilograms)."
+    },
+    {
+     "m": "k",
+     "ref": "8:27",
+     "text": "The Hebrew says “1,000 darics.” A daric was a Persian gold coin of about 0.3 ounce (8.4 grams)."
+    },
+    {
+     "m": "l",
+     "ref": "8:31",
+     "text": "The first month was Nisan. The trip had first been set to start on the first day of the month (7:9)."
+    },
+    {
+     "m": "m",
+     "ref": "8:36",
+     "text": "The Hebrew word for “regional rulers” is a Persian title, often written “satraps.”"
+    }
+   ],
+   "subheads": {
+    "1": "The Families Who Went With Ezra",
+    "15": "Finding Levites",
+    "21": "Fasting and Prayer",
+    "24": "Guarding the Gifts",
+    "31": "Safe in Jerusalem",
+    "35": "Offerings and the King’s Orders"
+   }
+  },
+  {
+   "n": 9,
+   "paras": [
+    1,
+    10
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Once all this was done, the leaders came to me with a report. “Israel’s people have mixed with the nations around them instead of staying separate,” they said. “So have the priests and the Levites. They are taking part in the disgusting ways of the Canaanites, Hittites, Perizzites, Jebusites, Ammonites, Moabites, Egyptians, and Amorites."
+    },
+    {
+     "v": 2,
+     "text": "Israelite men have married women from these peoples. Their sons have done the same. So the holy family of God’s people has become mixed with the nations around them. The leaders and officials were the first to be unfaithful in this way.”{a}"
+    },
+    {
+     "v": 3,
+     "text": "The news hit me hard. I ripped my shirt and my robe. I pulled hair from my head and my beard. Then I sat down, stunned."
+    },
+    {
+     "v": 4,
+     "text": "Some people trembled at what Israel’s God had said about the unfaithfulness of those who came back from exile. All of them came and gathered around me. I sat there in shock until it was time for the late-afternoon offering.{b}"
+    },
+    {
+     "v": 5,
+     "text": "When that hour came, I rose from my grief, with my shirt and robe still torn. Kneeling down, I spread out my hands toward Yahweh my God.{c}"
+    },
+    {
+     "v": 6,
+     "text": "“My God,” I prayed, “I am too ashamed and embarrassed to look up at you. Our sins have risen like a flood over our heads. Our guilt reaches up to the sky."
+    },
+    {
+     "v": 7,
+     "text": "Ever since our ancestors’ time, our guilt has been huge, and it still is today. Because of our sins, we and our kings and priests were handed over to foreign kings. We were killed in war, carried away as captives, robbed, and disgraced. That is how things still are today.{d}"
+    },
+    {
+     "v": 8,
+     "text": "But now, just for a little while, Yahweh our God has shown us his kindness. A few of us are still alive because of him. He has given us a secure foothold in his holy place. He has brightened our eyes and given us a little new life while we are still slaves.{e}"
+    },
+    {
+     "v": 9,
+     "text": "Yes, we are slaves. Yet our God has not left us alone in our slavery. He has made the kings of Persia treat us with kindness. He has given us new life so we could rebuild our God’s house and repair its ruins. In Judah and Jerusalem he has put a wall around us to keep us safe.{f}"
+    },
+    {
+     "v": 10,
+     "text": "“So now, our God, how can we answer you after this? We have turned away from your commands."
+    },
+    {
+     "v": 11,
+     "text": "You gave those commands through the prophets who served you. This is what they told us: ‘The land you will take over is filthy. The people who live there have made it unclean with their disgusting ways. Every corner of it is full of their filth."
+    },
+    {
+     "v": 12,
+     "text": "Your daughters must not become wives for their sons. Their daughters must not become wives for your sons. Never try to help them have peace or success. That way you will grow strong. You will enjoy the best that the land grows and hand it down to your children to keep forever.’{g}"
+    },
+    {
+     "v": 13,
+     "text": "We have suffered because of our evil acts and our great guilt. Yet you, our God, have punished us less than our sins deserved. You have let some of us survive like this.{h}"
+    },
+    {
+     "v": 14,
+     "text": "So should we break your commands again? Should we marry into these peoples who do such disgusting things? Surely you would be angry enough to wipe us out, until no one was left and no one escaped!"
+    },
+    {
+     "v": 15,
+     "text": "Yahweh, God of Israel, you are always fair. You have let a few of us live, as we are today. Here we stand before you with our guilt. Because of it, none of us deserves to stand in your presence.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "9:2",
+     "text": "The Hebrew says “the holy seed” (see Isaiah 6:13)."
+    },
+    {
+     "m": "b",
+     "ref": "9:4",
+     "text": "The evening offering was a grain offering made in the late afternoon. Later it was offered at about three in the afternoon (see Acts 3:1)."
+    },
+    {
+     "m": "c",
+     "ref": "9:5",
+     "text": "Or “from my fasting.”"
+    },
+    {
+     "m": "d",
+     "ref": "9:7",
+     "text": "The Hebrew says “to shame of face.”"
+    },
+    {
+     "m": "e",
+     "ref": "9:8",
+     "text": "The Hebrew says “a tent peg,” meaning a firm and safe place."
+    },
+    {
+     "m": "f",
+     "ref": "9:9",
+     "text": "The Hebrew word means a stone wall or fence. Here it is a picture of protection."
+    },
+    {
+     "m": "g",
+     "ref": "9:12",
+     "text": "See Deuteronomy 7:1-3; 23:6."
+    },
+    {
+     "m": "h",
+     "ref": "9:13",
+     "text": "The Hebrew says “have held back below our sins.”"
+    }
+   ],
+   "subheads": {
+    "1": "Bad News About Marriages",
+    "10": "Ezra’s Prayer"
+   }
+  },
+  {
+   "n": 10,
+   "paras": [
+    1,
+    6,
+    18,
+    25
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Ezra lay face down in front of God’s house, crying and confessing Israel’s sins as he prayed. While he did, a huge crowd of Israelites gathered around him, from grown men and women to little children. They too were crying hard."
+    },
+    {
+     "v": 2,
+     "text": "Then Shecaniah son of Jehiel, from Elam’s family, spoke up. “Ezra, we have been unfaithful to our God,” he said. “We married foreign women from the peoples around us. But this does not mean Israel’s hope is gone.{a}"
+    },
+    {
+     "v": 3,
+     "text": "Let us make a solemn agreement with our God now. These wives must go, and the children born to them as well. We will do what you advise, sir, and what those who fear God’s commands advise. Let it be done the way the Law says.{b}"
+    },
+    {
+     "v": 4,
+     "text": "Stand up. It is your job to lead this, and we will support you. Be brave, and do it.”"
+    },
+    {
+     "v": 5,
+     "text": "So Ezra stood. He made the priests’ leaders, the Levites, and every Israelite swear to do what had been said, and they swore."
+    },
+    {
+     "v": 6,
+     "text": "Ezra got up from where he had been praying before God’s house. He walked to a room that belonged to Jehohanan, Eliashib’s son. While there he ate no food and drank no water. He was still grieving over the unfaithfulness of those who had come back from exile.{c}"
+    },
+    {
+     "v": 7,
+     "text": "Then word went out through Judah and Jerusalem. Every former exile was ordered to come to Jerusalem."
+    },
+    {
+     "v": 8,
+     "text": "The officials and elders had decided that anyone who failed to come within three days would lose everything he owned. He would also be cut off from the community of returned exiles.{d}"
+    },
+    {
+     "v": 9,
+     "text": "Within three days, every man from Judah and Benjamin had gathered in Jerusalem. The date was the ninth month (in November–December), on its twentieth day. They all sat in the open square near God’s house. They were shaking, both because of why they had met and because of the heavy rain.{e}"
+    },
+    {
+     "v": 10,
+     "text": "Then Ezra the priest rose to his feet and addressed them. “You have broken faith with God,” he said. “You married foreign women and made Israel’s guilt even worse."
+    },
+    {
+     "v": 11,
+     "text": "So confess to Yahweh, your ancestors’ God, and do what pleases him. Separate yourselves from the peoples of the land and from your foreign wives.”"
+    },
+    {
+     "v": 12,
+     "text": "The whole crowd shouted back, “Yes! We must do what you say!{f}"
+    },
+    {
+     "v": 13,
+     "text": "Still, the crowd is huge, and this is the season of rain. We cannot stand out here in the open. And a matter like this will take more than a day or two. Our sin here is great."
+    },
+    {
+     "v": 14,
+     "text": "Our officials can stand in for everyone. Then, at a set time, each man from our towns who has a foreign wife must come. The elders and judges of each town can come with them. We must do this until our God’s terrible anger over this is turned away from us.”"
+    },
+    {
+     "v": 15,
+     "text": "Only two men stood against this plan: Jonathan, Asahel’s son, and Jahzeiah, Tikvah’s son. Meshullam and Shabbethai the Levite took their side.{g}"
+    },
+    {
+     "v": 16,
+     "text": "But the returned exiles did as they had agreed. Ezra the priest chose men who led their families, one from each family group, and wrote down each name. On the first day of the tenth month (in December–January) they sat down to look into each case.{h}"
+    },
+    {
+     "v": 17,
+     "text": "By the first day of the first month (in March–April), they had dealt with every man who had married a foreign woman.{i}"
+    },
+    {
+     "v": 18,
+     "text": "Some of the priests’ descendants had married foreign women. Four of them, Maaseiah, Eliezer, Jarib, and Gedaliah, belonged to the family of Jeshua, Jozadak’s son, and his brothers."
+    },
+    {
+     "v": 19,
+     "text": "The four promised with a handshake that their wives would leave. Since they were guilty, each offered a ram from the flock to pay for his guilt.{j}"
+    },
+    {
+     "v": 20,
+     "text": "Immer’s family: Hanani and Zebadiah."
+    },
+    {
+     "v": 21,
+     "text": "Harim’s family: Maaseiah and Elijah, Shemaiah and Jehiel, and Uzziah."
+    },
+    {
+     "v": 22,
+     "text": "Pashhur’s family: Elioenai and Maaseiah, Ishmael and Nethanel, Jozabad and Elasah."
+    },
+    {
+     "v": 23,
+     "text": "Among the Levites were Jozabad and Shimei, Kelaiah (also called Kelita), Pethahiah, Judah, and Eliezer."
+    },
+    {
+     "v": 24,
+     "text": "One singer was on the list, Eliashib. Three gatekeepers were too: Shallum, Telem, and Uri."
+    },
+    {
+     "v": 25,
+     "text": "Next are the other Israelites. Parosh’s family: Ramiah and Izziah, Malchijah and Mijamin, Eleazar, another Malchijah, and Benaiah.{k}"
+    },
+    {
+     "v": 26,
+     "text": "Elam’s family: Mattaniah and Zechariah, Jehiel and Abdi, Jeremoth and Elijah."
+    },
+    {
+     "v": 27,
+     "text": "Zattu’s family: Elioenai and Eliashib, Mattaniah and Jeremoth, Zabad and Aziza."
+    },
+    {
+     "v": 28,
+     "text": "Bebai’s family: Jehohanan and Hananiah, Zabbai and Athlai."
+    },
+    {
+     "v": 29,
+     "text": "Bani’s family: Meshullam and Malluch, Adaiah and Jashub, Sheal and Jeremoth.{l}"
+    },
+    {
+     "v": 30,
+     "text": "Pahath-moab’s family: Adna and Chelal, Benaiah and Maaseiah, Mattaniah and Bezalel, Binnui and Manasseh."
+    },
+    {
+     "v": 31,
+     "text": "Harim’s family: Eliezer and Isshijah, Malchijah and Shemaiah, Shimeon,"
+    },
+    {
+     "v": 32,
+     "text": "Benjamin, Malluch, and Shemariah."
+    },
+    {
+     "v": 33,
+     "text": "Hashum’s family: Mattenai and Mattattah, Zabad and Eliphelet, Jeremai and Manasseh, and Shimei."
+    },
+    {
+     "v": 34,
+     "text": "Bani’s family: Maadai and Amram, Uel,"
+    },
+    {
+     "v": 35,
+     "text": "Benaiah and Bedeiah, Cheluhu,"
+    },
+    {
+     "v": 36,
+     "text": "Vaniah and Meremoth, Eliashib,"
+    },
+    {
+     "v": 37,
+     "text": "Mattaniah and Mattenai, Jaasai,"
+    },
+    {
+     "v": 38,
+     "text": "Bani and Binnui, Shimei,{m}"
+    },
+    {
+     "v": 39,
+     "text": "Shelemiah and Nathan, Adaiah,"
+    },
+    {
+     "v": 40,
+     "text": "Machnadebai and Shashai, Sharai,"
+    },
+    {
+     "v": 41,
+     "text": "Azarel and Shelemiah, Shemariah,"
+    },
+    {
+     "v": 42,
+     "text": "Shallum and Amariah, and Joseph."
+    },
+    {
+     "v": 43,
+     "text": "Nebo’s family: Jeiel and Mattithiah, Zabad and Zebina, Jaddai and Joel, and Benaiah."
+    },
+    {
+     "v": 44,
+     "text": "Every man named here had married a foreign woman. A number of those wives had children by them.{n}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "10:2",
+     "text": "Some Hebrew copies have a slip that reads “forever” instead of “Elam.”"
+    },
+    {
+     "m": "b",
+     "ref": "10:3",
+     "text": "The Hebrew word can be read “my lord,” meaning Ezra, or with other vowels “the Lord.”"
+    },
+    {
+     "m": "c",
+     "ref": "10:6",
+     "text": "Some read “he spent the night there” (as in 1 Esdras 9:2)."
+    },
+    {
+     "m": "d",
+     "ref": "10:8",
+     "text": "The Hebrew says it would be “devoted,” taken from its owner and given over to God."
+    },
+    {
+     "m": "e",
+     "ref": "10:9",
+     "text": "The ninth month was Kislev, the season of winter rains."
+    },
+    {
+     "m": "f",
+     "ref": "10:12",
+     "text": "Some Hebrew copies say “your words.”"
+    },
+    {
+     "m": "g",
+     "ref": "10:15",
+     "text": "Some take this to mean they were put in charge of this, not that they were against it."
+    },
+    {
+     "m": "h",
+     "ref": "10:16",
+     "text": "The tenth month was Tevet."
+    },
+    {
+     "m": "i",
+     "ref": "10:17",
+     "text": "The first month was Nisan of the next year."
+    },
+    {
+     "m": "j",
+     "ref": "10:19",
+     "text": "The Hebrew says “they gave their hand.”"
+    },
+    {
+     "m": "k",
+     "ref": "10:25",
+     "text": "The Septuagint has Hashabiah for the second Malchijah."
+    },
+    {
+     "m": "l",
+     "ref": "10:29",
+     "text": "Some Hebrew copies say “Ramoth.”"
+    },
+    {
+     "m": "m",
+     "ref": "10:38",
+     "text": "The Septuagint reads differently. Many think the Hebrew should read “From Binnui’s family: Shimei.”"
+    },
+    {
+     "m": "n",
+     "ref": "10:44",
+     "text": "The Hebrew of this sentence is hard to understand. First Esdras 9:36 says “and they sent them away with their children.”"
+    }
+   ],
+   "subheads": {
+    "1": "The People Confess",
+    "6": "The Meeting in the Rain",
+    "18": "Those Who Had Married Foreign Women",
+    "25": "Other Israelites on the List"
+   }
+  }
+ ]
+}
