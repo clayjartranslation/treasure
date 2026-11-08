@@ -560,7 +560,22 @@
    "name": "Nehemiah",
    "division": "Old Testament",
    "chapterCount": 13,
-   "translated": []
+   "translated": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "file": "data/books/nehemiah.json"
   },
   {
    "id": "esther",
