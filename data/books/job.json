@@ -1,0 +1,6460 @@
+{
+ "id": "job",
+ "name": "Job",
+ "division": "Old Testament",
+ "sourceNote": "Written freshly, thought for thought, from the oldest Hebrew, Greek, and Aramaic witnesses (the Masoretic Text with the Dead Sea Scrolls, the Septuagint, and the Samaritan Pentateuch). © 2026 Jose Santiago. All rights reserved.",
+ "chapters": [
+  {
+   "n": 1,
+   "paras": [
+    1,
+    6,
+    13,
+    20
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "In the land of Uz{b} lived Job.{a} Nothing in his life was crooked. He respected God and wanted nothing to do with evil."
+    },
+    {
+     "v": 2,
+     "text": "He had seven sons and three daughters."
+    },
+    {
+     "v": 3,
+     "text": "Job’s wealth was 3,000 camels, 7,000 sheep, 500 female donkeys, and 500 teams of oxen,{c} plus a great crowd of servants. In all the east, no one had more than Job.{d}"
+    },
+    {
+     "v": 4,
+     "text": "Job’s sons took turns holding a feast, each in his own home on his own day. They always invited their three sisters to come and eat and drink with them."
+    },
+    {
+     "v": 5,
+     "text": "When a round of feasts was over, Job would call his children to him and set them apart for God. Early the next morning he would give a burnt offering for each child. He thought, “Maybe my children sinned and turned against God{e} in their hearts.” Job did this every time."
+    },
+    {
+     "v": 6,
+     "text": "One day the heavenly beings{f} came to stand before Yahweh. The Adversary{g} came with them."
+    },
+    {
+     "v": 7,
+     "text": "Yahweh asked the Adversary, “Where have you been?” The Adversary answered, “I have been wandering all over the earth, going back and forth.”"
+    },
+    {
+     "v": 8,
+     "text": "Then Yahweh said, “Did you notice my servant Job? There is nobody like him in the world. His life is straight and good. He respects God and avoids evil.”"
+    },
+    {
+     "v": 9,
+     "text": "The Adversary replied, “Does Job honor God for nothing?"
+    },
+    {
+     "v": 10,
+     "text": "You have put a fence around him, around his family, and around everything he owns. You have made all his work succeed, and his animals cover the land."
+    },
+    {
+     "v": 11,
+     "text": "But reach out and take away all that he has. I promise you, he will curse{h} you to your face.”"
+    },
+    {
+     "v": 12,
+     "text": "Yahweh said to the Adversary, “All right. Everything he owns is in your hands. Only do not touch Job himself.” So the Adversary left Yahweh’s presence."
+    },
+    {
+     "v": 13,
+     "text": "One day Job’s sons and daughters were feasting at the home of the oldest brother."
+    },
+    {
+     "v": 14,
+     "text": "A messenger ran to Job and said, “Your oxen were plowing, and the donkeys were eating close by."
+    },
+    {
+     "v": 15,
+     "text": "Sabean{i} raiders swooped in and took every animal. They struck the servants down with swords. Only I escaped, and I came to tell you.”"
+    },
+    {
+     "v": 16,
+     "text": "He had not finished when a second man arrived. “Fire from God{j} fell out of the sky,” he said. “Sheep and servants burned up together. I alone escaped to bring you word.”"
+    },
+    {
+     "v": 17,
+     "text": "He had not finished when a third man arrived. “Chaldean raiders came in three groups,” he said. “They rushed the camels and seized them. They killed the servants with swords. Only I escaped to bring you word.”"
+    },
+    {
+     "v": 18,
+     "text": "He had not finished when a fourth man arrived. “Your sons and daughters were feasting at their oldest brother’s house."
+    },
+    {
+     "v": 19,
+     "text": "Out of the desert a strong wind rushed in. It hit the house at all four corners, and the walls came down on the young people. They have died. Only I escaped to bring you word.”"
+    },
+    {
+     "v": 20,
+     "text": "Job got up and ripped his robe apart. He shaved his head. Then he dropped to the ground in worship."
+    },
+    {
+     "v": 21,
+     "text": "He said,\n“I came out of my mother with nothing,\nand I will go back with nothing.{k}\nYahweh gave, and Yahweh has taken away.\nMay Yahweh’s name be praised.”"
+    },
+    {
+     "v": 22,
+     "text": "Even then, Job did not sin. He never blamed God for any wrong."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "1:1",
+     "text": "The meaning of the name Job is uncertain. Some suggest “Where is my father?” and others “one who is hated.”"
+    },
+    {
+     "m": "b",
+     "ref": "1:1",
+     "text": "The place called Uz is not certain. It was probably east or southeast of Israel, near Edom."
+    },
+    {
+     "m": "c",
+     "ref": "1:3",
+     "text": "Original: “five hundred yoke of oxen.” A yoke is a pair of oxen joined for plowing."
+    },
+    {
+     "m": "d",
+     "ref": "1:3",
+     "text": "Original: “the greatest of all the sons of the east,” that is, the peoples living in the desert east of Israel."
+    },
+    {
+     "m": "e",
+     "ref": "1:5",
+     "text": "The Hebrew says “blessed God” here and in verse 11. It is a polite way of saying “cursed,” which scribes did not want to write."
+    },
+    {
+     "m": "f",
+     "ref": "1:6",
+     "text": "Original: “sons of God” (Hebrew bene ha-elohim), the heavenly beings who serve God. The Septuagint says “angels of God.”"
+    },
+    {
+     "m": "g",
+     "ref": "1:6",
+     "text": "Original: “the satan” (Hebrew ha-satan), meaning “the accuser” or “the opponent.” In chapters 1 and 2 it is a title, not yet a personal name. The Septuagint says “the devil.”"
+    },
+    {
+     "m": "h",
+     "ref": "1:11",
+     "text": "Original: “bless.” See the note at verse 5."
+    },
+    {
+     "m": "i",
+     "ref": "1:15",
+     "text": "The Sabeans were probably raiders from Sheba in southern Arabia. The Septuagint says “robbers.”"
+    },
+    {
+     "m": "j",
+     "ref": "1:16",
+     "text": "Probably lightning. Original: “fire of God” (or “a terrible fire”)."
+    },
+    {
+     "m": "k",
+     "ref": "1:21",
+     "text": "“Go back” probably means to the earth, the mother of all, or to the grave."
+    }
+   ],
+   "subheads": {
+    "1": "A Good Man in Uz",
+    "6": "The Adversary Speaks",
+    "13": "Four Messengers of Ruin",
+    "20": "Job Worships"
+   }
+  },
+  {
+   "n": 2,
+   "paras": [
+    1,
+    7,
+    9,
+    11
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Another day came when the heavenly beings{a} stood before Yahweh. The Adversary came with them to stand before Yahweh."
+    },
+    {
+     "v": 2,
+     "text": "Yahweh asked the Adversary, “Where have you been?” He answered, “I have been wandering all over the earth, going back and forth.”"
+    },
+    {
+     "v": 3,
+     "text": "Yahweh said, “Did you notice my servant Job? Nobody on earth compares with him. His life is straight and good. He respects God and avoids evil. Even now he holds on to his goodness, though you stirred me up to destroy him without cause.”"
+    },
+    {
+     "v": 4,
+     "text": "“Skin for skin!”{b} the Adversary answered. “People will pay anything to keep their lives."
+    },
+    {
+     "v": 5,
+     "text": "Now reach out and hurt his body, his flesh and his bones. I promise you, he will curse{c} you right to your face.”"
+    },
+    {
+     "v": 6,
+     "text": "“Go ahead,” Yahweh said to the Adversary. “He is yours to hurt. But you must not take his life.”"
+    },
+    {
+     "v": 7,
+     "text": "The Adversary left Yahweh’s presence and struck Job with painful sores,{d} covering him from his feet to the top of his head."
+    },
+    {
+     "v": 8,
+     "text": "Sitting in the ashes,{e} Job scraped his skin with a broken piece of pottery."
+    },
+    {
+     "v": 9,
+     "text": "His wife asked, “Will you keep on holding to your goodness? Curse{f} God, and die!”{g}"
+    },
+    {
+     "v": 10,
+     "text": "But Job told her, “That is how a senseless woman talks. We take good from God’s hand. Shall we not take bad too?” In all of this, Job’s lips did not sin."
+    },
+    {
+     "v": 11,
+     "text": "Three friends of Job heard about all his troubles. They came from different places: Eliphaz from Teman, then Bildad from Shuah, then Zophar from Naamah.{h} They set a time to meet, and they went to give him sympathy and comfort."
+    },
+    {
+     "v": 12,
+     "text": "They saw him from far off and could not tell who he was. They began to sob loudly. Each one ripped his robe and tossed dust into the air so it fell on his head."
+    },
+    {
+     "v": 13,
+     "text": "Seven days and seven nights they sat on the ground beside Job. No one spoke to him, because they could see how deep his pain was."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "2:1",
+     "text": "Original: “sons of God.” See the note at 1:6."
+    },
+    {
+     "m": "b",
+     "ref": "2:4",
+     "text": "This saying is probably from trading: you give up one skin to keep another. Its exact meaning is uncertain."
+    },
+    {
+     "m": "c",
+     "ref": "2:5",
+     "text": "Original: “bless.” See the note at 1:5."
+    },
+    {
+     "m": "d",
+     "ref": "2:7",
+     "text": "The Hebrew does not say what the illness was. It may have been boils or another skin disease."
+    },
+    {
+     "m": "e",
+     "ref": "2:8",
+     "text": "The Septuagint says he sat on a heap of trash outside the city."
+    },
+    {
+     "m": "f",
+     "ref": "2:9",
+     "text": "Original: “bless.” See the note at 1:5."
+    },
+    {
+     "m": "g",
+     "ref": "2:9",
+     "text": "The Septuagint has a much longer speech here. In it Job’s wife grieves for their lost children and her own hard wandering, and she ends by telling him to speak against the Lord and die."
+    },
+    {
+     "m": "h",
+     "ref": "2:11",
+     "text": "Eliphaz may mean “God is pure gold” (uncertain). Teman was a region of Edom. Bildad is uncertain; it may mean “Bel has loved.” Shuah was a son of Abraham (Genesis 25:2). Zophar may mean “sparrow” (uncertain). The place Naamah is not known. The Septuagint calls the three men kings of Teman, Shuah, and the Minaeans."
+    }
+   ],
+   "subheads": {
+    "1": "The Second Test",
+    "9": "A Wife’s Despair",
+    "11": "Three Friends Arrive"
+   }
+  },
+  {
+   "n": 3,
+   "paras": [
+    1,
+    3,
+    11,
+    20
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Finally Job broke the silence. He put a curse on the day of his birth."
+    },
+    {
+     "v": 2,
+     "text": "These were his words:"
+    },
+    {
+     "v": 3,
+     "text": "“Let the day I was born disappear,\nand the night that cried, ‘A boy has been conceived!’"
+    },
+    {
+     "v": 4,
+     "text": "Make that day black as night.\nMay God above forget it.\nMay no light shine on it."
+    },
+    {
+     "v": 5,
+     "text": "Let gloom and deep darkness{a} take it back.\nLet a cloud sit over it.\nLet whatever darkens a day{b} fill it with fear."
+    },
+    {
+     "v": 6,
+     "text": "Let darkness seize that night.\nDo not let it be added to the days of the year,\nor counted in any month."
+    },
+    {
+     "v": 7,
+     "text": "Let that night be empty and silent.\nMay no cheer be heard in it."
+    },
+    {
+     "v": 8,
+     "text": "Let people who put curses on days curse it,\nthose who are skilled at waking Leviathan.{c}"
+    },
+    {
+     "v": 9,
+     "text": "May its evening stars stay dark.\nMay it hope for dawn and get none.\nMay it never see the first blink of morning."
+    },
+    {
+     "v": 10,
+     "text": "That night never closed my mother’s womb.\nIt never kept trouble away from my eyes."
+    },
+    {
+     "v": 11,
+     "text": "“Why didn’t I die at birth?\nWhy didn’t I take one breath and die as I came out?"
+    },
+    {
+     "v": 12,
+     "text": "Why were there knees to hold me\nand breasts to feed me?"
+    },
+    {
+     "v": 13,
+     "text": "If I had died, I would be lying quiet now.\nI would be asleep and at peace,"
+    },
+    {
+     "v": 14,
+     "text": "They sat with kings and advisers of the earth,\nwho had ruins rebuilt for their own fame,{d}"
+    },
+    {
+     "v": 15,
+     "text": "or with rulers who owned gold\nand filled their houses with silver."
+    },
+    {
+     "v": 16,
+     "text": "Or why was I not buried like a baby born dead,\nlike infants who never saw the light?"
+    },
+    {
+     "v": 17,
+     "text": "In the grave the wicked stop their trouble-making,\nand worn-out people rest."
+    },
+    {
+     "v": 18,
+     "text": "Prisoners relax together there.\nThey no longer hear a guard shouting."
+    },
+    {
+     "v": 19,
+     "text": "Great and small are all the same there,\nand the slave is free from his owner."
+    },
+    {
+     "v": 20,
+     "text": "“Why does God give light to those in pain,\nand life to those with bitter hearts?"
+    },
+    {
+     "v": 21,
+     "text": "They long for death, but it will not come.\nThey hunt for it harder than for hidden treasure."
+    },
+    {
+     "v": 22,
+     "text": "They would be thrilled\nand would cheer if they found the grave."
+    },
+    {
+     "v": 23,
+     "text": "Why give life to a man whose way is lost,\na man God has walled in?"
+    },
+    {
+     "v": 24,
+     "text": "Sighing is what I eat instead of bread.\nMy groans spill out like water from a jar."
+    },
+    {
+     "v": 25,
+     "text": "What I was most afraid of has happened to me.\nWhat I dreaded has found me."
+    },
+    {
+     "v": 26,
+     "text": "I have no peace and no quiet.\nI cannot rest, because trouble keeps coming.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "3:5",
+     "text": "The Hebrew word is tsalmawet, often translated “shadow of death.” Many scholars read it as “deep darkness.” The same word is used in other places in Job."
+    },
+    {
+     "m": "b",
+     "ref": "3:5",
+     "text": "The Hebrew phrase is rare and uncertain. It may mean eclipses or “things that darken the day.”"
+    },
+    {
+     "m": "c",
+     "ref": "3:8",
+     "text": "Leviathan was a sea monster in ancient stories, a picture of chaos (see 41:1; Psalm 74:14). Some scholars read “those who curse the sea” instead."
+    },
+    {
+     "m": "d",
+     "ref": "3:14",
+     "text": "Or “built tombs for themselves,” perhaps pyramids. The Hebrew is uncertain. The Septuagint says “who were proud of their swords.”"
+    }
+   ],
+   "subheads": {
+    "1": "Job Curses His Birthday",
+    "11": "Better Never to Have Lived",
+    "20": "Why Give Life to the Miserable?"
+   }
+  },
+  {
+   "n": 4,
+   "paras": [
+    1,
+    2,
+    7,
+    12
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Eliphaz from Teman answered:"
+    },
+    {
+     "v": 2,
+     "text": "“May I say something to you? Will it tire you out?\nI cannot keep quiet any longer."
+    },
+    {
+     "v": 3,
+     "text": "You have taught many people.\nYou have strengthened weak hands."
+    },
+    {
+     "v": 4,
+     "text": "Your words picked up those who stumbled.\nYou steadied knees that were giving way."
+    },
+    {
+     "v": 5,
+     "text": "Now trouble has come to you, and you fall apart.\nIt has touched you, and you are terrified."
+    },
+    {
+     "v": 6,
+     "text": "Surely your respect for God gave you courage,\nand your honest life gave you hope."
+    },
+    {
+     "v": 7,
+     "text": "Think back. Has an innocent person ever been destroyed?\nWhere were good people ever wiped out?"
+    },
+    {
+     "v": 8,
+     "text": "I have seen it myself: those who plow evil\nand plant trouble harvest the same."
+    },
+    {
+     "v": 9,
+     "text": "One breath from God destroys them.\nA blast of his anger finishes them."
+    },
+    {
+     "v": 10,
+     "text": "Lions may roar and snarl,\nyet the teeth of the young ones are smashed.{a}"
+    },
+    {
+     "v": 11,
+     "text": "The old lion dies with no prey to catch,\nand the lioness’s cubs scatter."
+    },
+    {
+     "v": 12,
+     "text": "“Quietly, a message came my way.\nMy ear picked up just a murmur."
+    },
+    {
+     "v": 13,
+     "text": "It came in disturbing thoughts at night,\nwhen deep sleep falls on people."
+    },
+    {
+     "v": 14,
+     "text": "Terror and shaking seized me.\nAll my bones trembled."
+    },
+    {
+     "v": 15,
+     "text": "A spirit{b} passed in front of my face,\nand the hair on my skin stood up."
+    },
+    {
+     "v": 16,
+     "text": "It stopped, but I could not tell what it looked like.\nA shape stood before my eyes.\nIt was quiet, and then I heard a voice:"
+    },
+    {
+     "v": 17,
+     "text": "‘Could any mortal be in the right before God?{c}\nCould any person be pure before his Maker?"
+    },
+    {
+     "v": 18,
+     "text": "God does not even trust his own servants.\nHe finds fault with his angels."
+    },
+    {
+     "v": 19,
+     "text": "Even weaker are those who live in clay houses,\nwhose footing is dust,\nand who are squashed like a moth!"
+    },
+    {
+     "v": 20,
+     "text": "Between sunrise and sunset they are smashed.\nNo one pays attention, and they are gone for good."
+    },
+    {
+     "v": 21,
+     "text": "The rope of their tent is pulled out.\nThey die without gaining wisdom.’”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "4:10",
+     "text": "Verses 10 and 11 use five different Hebrew words for lion. Their exact differences are uncertain."
+    },
+    {
+     "m": "b",
+     "ref": "4:15",
+     "text": "Or “a wind” or “a breath.”"
+    },
+    {
+     "m": "c",
+     "ref": "4:17",
+     "text": "Hebrew Eloah, a poetic form of the word for God. It appears about forty times in Job. Or “More right than his God? More clean than his Maker?”"
+    }
+   ],
+   "subheads": {
+    "1": "Eliphaz Speaks First",
+    "12": "A Whisper in the Night"
+   }
+  },
+  {
+   "n": 5,
+   "paras": [
+    1,
+    8,
+    17
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“Shout for help if you want. Will anyone reply?\nWhich of the holy ones{a} could you ask?"
+    },
+    {
+     "v": 2,
+     "text": "Anger kills a foolish man,\nand jealousy kills a simple one."
+    },
+    {
+     "v": 3,
+     "text": "I watched a fool put down roots,\nand soon I declared his house under a curse."
+    },
+    {
+     "v": 4,
+     "text": "His children are far from safe.\nThey are crushed in court, and no one rescues them."
+    },
+    {
+     "v": 5,
+     "text": "Hungry people eat his harvest,\neven taking grain from among the thorns.{b}\nThirsty ones{c} gasp for his wealth."
+    },
+    {
+     "v": 6,
+     "text": "Trouble does not come up out of the dust,\nand misery does not grow from the ground."
+    },
+    {
+     "v": 7,
+     "text": "Human beings are born to trouble,\njust as flames{d} shoot up from a fire."
+    },
+    {
+     "v": 8,
+     "text": "“As for me, I would go to God\nand place my cause in his hands."
+    },
+    {
+     "v": 9,
+     "text": "He does great things too deep to understand,\nand wonders too many to count."
+    },
+    {
+     "v": 10,
+     "text": "He sends rain on the land.\nHe pours water over the fields."
+    },
+    {
+     "v": 11,
+     "text": "He lifts the humble up high.\nHe raises those who mourn to safety."
+    },
+    {
+     "v": 12,
+     "text": "He ruins the schemes of the crafty,\nso their hands cannot finish what they plan.{e}"
+    },
+    {
+     "v": 13,
+     "text": "He traps the clever in their own cunning.{f}\nThe plots of crooked people rush to a quick end."
+    },
+    {
+     "v": 14,
+     "text": "They meet darkness in the day.\nAt midday they fumble about like those in the night."
+    },
+    {
+     "v": 15,
+     "text": "He rescues the poor from the sword in the cruel mouth,\nand out of the fists of the mighty."
+    },
+    {
+     "v": 16,
+     "text": "That gives the weak some hope,\nand wrong has to close its mouth."
+    },
+    {
+     "v": 17,
+     "text": "“Happy is the person God corrects!\nSo do not hate the training of Shaddai.{g}"
+    },
+    {
+     "v": 18,
+     "text": "He hurts, but he also bandages.\nHe wounds, and his hands heal."
+    },
+    {
+     "v": 19,
+     "text": "Six times he will pull you out of trouble.\nThe seventh time, harm still will not touch you."
+    },
+    {
+     "v": 20,
+     "text": "When hunger comes, he will buy you back from death.\nIn war, he will keep the sword from you."
+    },
+    {
+     "v": 21,
+     "text": "You will be hidden from slander,\nand not afraid when ruin comes."
+    },
+    {
+     "v": 22,
+     "text": "You will laugh at ruin and hunger.\nYou will not fear the wild animals."
+    },
+    {
+     "v": 23,
+     "text": "You will have an agreement with the field stones,\nand the wild beasts will live in peace with you."
+    },
+    {
+     "v": 24,
+     "text": "You will know your tent is safe.\nYou will check your flock and find none missing."
+    },
+    {
+     "v": 25,
+     "text": "You will see your children grow into many,\nyour descendants as many as blades of grass."
+    },
+    {
+     "v": 26,
+     "text": "You will reach the grave in old age,{h}\nlike a bundle of grain gathered in its season."
+    },
+    {
+     "v": 27,
+     "text": "We have looked into all this, and it holds true.\nListen, and learn it for yourself.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "5:1",
+     "text": "That is, heavenly beings."
+    },
+    {
+     "m": "b",
+     "ref": "5:5",
+     "text": "The Hebrew of this line is hard to understand."
+    },
+    {
+     "m": "c",
+     "ref": "5:5",
+     "text": "So several ancient versions. The Hebrew word is uncertain and is often read as “a trap.”"
+    },
+    {
+     "m": "d",
+     "ref": "5:7",
+     "text": "Original: “sons of Resheph.” Resheph was a Canaanite god of plague and fire. The phrase may mean sparks or birds of prey. The Septuagint says “the young of the vulture fly high.”"
+    },
+    {
+     "m": "e",
+     "ref": "5:12",
+     "text": "The Hebrew word for “what they plan” is rare. It may mean “success” or “anything lasting.”"
+    },
+    {
+     "m": "f",
+     "ref": "5:13",
+     "text": "Paul quotes this line in 1 Corinthians 3:19."
+    },
+    {
+     "m": "g",
+     "ref": "5:17",
+     "text": "Shaddai is an old name for God. It is often translated “the Almighty,” but its meaning is uncertain (see the note at Genesis 17:1). It appears 31 times in Job and is kept as a name."
+    },
+    {
+     "m": "h",
+     "ref": "5:26",
+     "text": "The Hebrew word is found only here and in 30:2. “Old age” is a guess from the setting."
+    }
+   ],
+   "subheads": {
+    "1": "Trouble Is Part of Life",
+    "8": "Turn to God",
+    "17": "The Blessing of Correction"
+   }
+  },
+  {
+   "n": 6,
+   "paras": [
+    1,
+    2,
+    8,
+    14,
+    24
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Job answered:"
+    },
+    {
+     "v": 2,
+     "text": "“If only my grief could be put on a scale,\nwith all my misery set on the other side!"
+    },
+    {
+     "v": 3,
+     "text": "It would outweigh the sand of the seas.\nNo wonder my words have come out wild.{a}"
+    },
+    {
+     "v": 4,
+     "text": "The arrows of Shaddai are stuck in my body.\nMy spirit drinks their venom.\nGod’s terrors are lined up to fight me."
+    },
+    {
+     "v": 5,
+     "text": "Does a wild donkey cry out while it grazes on green grass?\nDoes a bull bawl over a full trough?"
+    },
+    {
+     "v": 6,
+     "text": "Who eats bland food with no salt?\nWho enjoys the slimy juice of a plant?{b}"
+    },
+    {
+     "v": 7,
+     "text": "I refuse to touch such things.\nThey make me sick like spoiled food.{c}"
+    },
+    {
+     "v": 8,
+     "text": "“How I long for my request to be granted!\nHow I long for God to give me what I hope for!"
+    },
+    {
+     "v": 9,
+     "text": "Let God decide to crush me.\nLet him pull back his hand and finish me off."
+    },
+    {
+     "v": 10,
+     "text": "Then I would still find one comfort,\nand I would leap{d} with joy in spite of merciless pain:\nI never hid the words of the Holy One."
+    },
+    {
+     "v": 11,
+     "text": "What strength do I have, that I should keep waiting?\nWhat future do I have, that I should be patient?"
+    },
+    {
+     "v": 12,
+     "text": "Am I made of stone?\nIs my skin made of bronze?"
+    },
+    {
+     "v": 13,
+     "text": "I have no help left inside me.\nAny success{e} has been chased from me."
+    },
+    {
+     "v": 14,
+     "text": "“A friend should show loyalty to someone about to collapse,\neven if he has lost his respect for Shaddai.{f}"
+    },
+    {
+     "v": 15,
+     "text": "But my brothers have proved false, like a seasonal stream,\nlike streambeds that run dry."
+    },
+    {
+     "v": 16,
+     "text": "Dark ice covers them in winter,\nand melting snow flows into them."
+    },
+    {
+     "v": 17,
+     "text": "In the hot season they stop flowing and vanish.\nWhen the heat comes, they disappear from their beds."
+    },
+    {
+     "v": 18,
+     "text": "Travelers turn off their path to find water.\nThey walk into the empty desert and die."
+    },
+    {
+     "v": 19,
+     "text": "Caravans from Tema looked for water there.\nTraveling groups from Sheba counted on it."
+    },
+    {
+     "v": 20,
+     "text": "They were let down by their hope.\nThey arrived and were bitterly disappointed."
+    },
+    {
+     "v": 21,
+     "text": "You have turned out the same.{g}\nA terrible sight appears, and you run in fear."
+    },
+    {
+     "v": 22,
+     "text": "Have I begged you for a present?\nHave I asked you to pay out your savings for me?"
+    },
+    {
+     "v": 23,
+     "text": "Did I say, ‘Rescue me from my enemy’?\nOr, ‘Pay a price to free me from cruel men’?"
+    },
+    {
+     "v": 24,
+     "text": "“Teach me, and I will keep quiet.\nShow me where I went wrong."
+    },
+    {
+     "v": 25,
+     "text": "Honest words can be so strong!\nBut what does your arguing prove?"
+    },
+    {
+     "v": 26,
+     "text": "Do you plan to correct my words?\nA desperate man’s speech is only wind."
+    },
+    {
+     "v": 27,
+     "text": "You would even gamble over an orphan,\nand sell out your own friend."
+    },
+    {
+     "v": 28,
+     "text": "Now please, look at me.\nI would never lie to your faces."
+    },
+    {
+     "v": 29,
+     "text": "Think again. Do not be unfair.\nThink again, for I am still in the right."
+    },
+    {
+     "v": 30,
+     "text": "Is there any lie on my tongue?\nCan I not taste the bitterness of disaster?”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "6:3",
+     "text": "The Hebrew word is rare. It may mean “wild” or “stammering.”"
+    },
+    {
+     "m": "b",
+     "ref": "6:6",
+     "text": "The Hebrew word is found only here. It may mean the juice of a plant, or the white of an egg. This is uncertain."
+    },
+    {
+     "m": "c",
+     "ref": "6:7",
+     "text": "The Hebrew of this line is uncertain."
+    },
+    {
+     "m": "d",
+     "ref": "6:10",
+     "text": "The Hebrew word is found only here. “Jump” is a guess; it may mean “shrink back.”"
+    },
+    {
+     "m": "e",
+     "ref": "6:13",
+     "text": "The Hebrew word for “success” is the same as in 5:12."
+    },
+    {
+     "m": "f",
+     "ref": "6:14",
+     "text": "The Hebrew of this verse is uncertain."
+    },
+    {
+     "m": "g",
+     "ref": "6:21",
+     "text": "The Hebrew is hard. Some copies say “you have become nothing.” The Septuagint says “You too have come to me without pity.”"
+    }
+   ],
+   "subheads": {
+    "1": "Job Replies: My Pain Is Heavy",
+    "8": "Job Longs to Die",
+    "14": "Friends Who Fail Like a Dry Stream",
+    "24": "Show Me My Mistake"
+   }
+  },
+  {
+   "n": 7,
+   "paras": [
+    1,
+    7,
+    11,
+    17
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“Does anyone on earth have more than hard work to do?\nAre our days not like those of a paid worker?"
+    },
+    {
+     "v": 2,
+     "text": "Like a slave who longs for evening shade,\nlike a worker who waits for his wages,"
+    },
+    {
+     "v": 3,
+     "text": "I have been given empty months,\nand nights of misery were handed to me."
+    },
+    {
+     "v": 4,
+     "text": "Lying in bed, I wonder, ‘When will I be able to get up?’\nBut the evening drags on,{a}\nand I roll from side to side until sunrise."
+    },
+    {
+     "v": 5,
+     "text": "Worms and scabs cover my body.\nMy skin cracks open and oozes."
+    },
+    {
+     "v": 6,
+     "text": "My days race by, quicker than a weaver’s shuttle,\nand they run out with nothing to hope for.{b}"
+    },
+    {
+     "v": 7,
+     "text": "“Think of it, God: my life is a puff of air.\nGood days will not come to my eyes again."
+    },
+    {
+     "v": 8,
+     "text": "Whoever sees me now will not see me later.\nYou will look for me, and I will be gone."
+    },
+    {
+     "v": 9,
+     "text": "Clouds fade and drift off.\nSo anyone who goes down to the grave{c} will never climb out."
+    },
+    {
+     "v": 10,
+     "text": "He never goes back to his house.\nThe people of his town will forget him."
+    },
+    {
+     "v": 11,
+     "text": "“That is why I will not keep my lips sealed.\nMy spirit is in anguish, and I will say so.\nMy soul is bitter, and I will complain."
+    },
+    {
+     "v": 12,
+     "text": "Am I the Sea? Am I the Dragon?{d}\nWhy else would you put a guard on me?"
+    },
+    {
+     "v": 13,
+     "text": "I tell myself, ‘My bed will bring comfort.\nLying down will lighten my complaints.’"
+    },
+    {
+     "v": 14,
+     "text": "But then you frighten me with dreams,\nand scare me with visions."
+    },
+    {
+     "v": 15,
+     "text": "I would rather be choked,\nrather die than live in this body."
+    },
+    {
+     "v": 16,
+     "text": "I despise my life. I will not live on and on.\nLeave me be, for my days are empty."
+    },
+    {
+     "v": 17,
+     "text": "“What are people, that you pay them so much attention,\nthat you set your mind on them,"
+    },
+    {
+     "v": 18,
+     "text": "check on them every morning,\nand test them every minute?"
+    },
+    {
+     "v": 19,
+     "text": "Will you never glance away?\nCan you not leave me alone for even a moment?"
+    },
+    {
+     "v": 20,
+     "text": "If I did sin, how did that hurt you,\nyou who watch over people?\nWhy make me your target?\nWhy have I become a load to myself?{e}"
+    },
+    {
+     "v": 21,
+     "text": "Why will you not pardon my wrongdoing\nand sweep away my guilt?\nSoon I will be lying in the dirt.\nWhen you come looking, I will not be there.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "7:4",
+     "text": "The Hebrew word is uncertain. It may mean “the evening stretches out.”"
+    },
+    {
+     "m": "b",
+     "ref": "7:6",
+     "text": "The Hebrew word for “hope” can also mean “thread.” This is a play on words with the weaver’s shuttle."
+    },
+    {
+     "m": "c",
+     "ref": "7:9",
+     "text": "Original: Sheol, the Hebrew name for the place of the dead."
+    },
+    {
+     "m": "d",
+     "ref": "7:12",
+     "text": "The Sea and the Dragon were wild sea monsters in ancient stories. Compare 3:8."
+    },
+    {
+     "m": "e",
+     "ref": "7:20",
+     "text": "The Hebrew text says “a load to myself.” An old scribal tradition and the Septuagint say “a load to you.”"
+    }
+   ],
+   "subheads": {
+    "1": "Life Is Hard Labor",
+    "7": "My Life Is Only a Breath",
+    "11": "Job Will Not Stay Silent",
+    "17": "What Are People to You, God?"
+   }
+  },
+  {
+   "n": 8,
+   "paras": [
+    1,
+    2,
+    8,
+    20
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Bildad from Shuah answered:"
+    },
+    {
+     "v": 2,
+     "text": "“How long will you keep talking this way?\nYour words are a huffing, puffing wind."
+    },
+    {
+     "v": 3,
+     "text": "Does God twist what is fair?\nDoes Shaddai bend what is right?"
+    },
+    {
+     "v": 4,
+     "text": "Maybe your children sinned against him.\nThen he handed them over to the result of their sin."
+    },
+    {
+     "v": 5,
+     "text": "But if you search for God with all your heart\nand plead with Shaddai for mercy,"
+    },
+    {
+     "v": 6,
+     "text": "and if you are clean and honest,\nthen he will rise up for you\nand give you back your true home."
+    },
+    {
+     "v": 7,
+     "text": "Your first days were small,\nbut your last days will be very great."
+    },
+    {
+     "v": 8,
+     "text": "“Go ahead and ask the earlier generation.\nThink about what their parents found out."
+    },
+    {
+     "v": 9,
+     "text": "We arrived only yesterday and know little.\nOur time on earth is as short as a passing shadow."
+    },
+    {
+     "v": 10,
+     "text": "Will they not teach you and tell you?\nWill they not speak from what they understand?"
+    },
+    {
+     "v": 11,
+     "text": "Does papyrus{a} shoot up where no marsh exists?\nDo reeds grow tall with no water around them?"
+    },
+    {
+     "v": 12,
+     "text": "Even while they are green and uncut,\nthey dry up faster than any other plant."
+    },
+    {
+     "v": 13,
+     "text": "So it is with all who forget God.\nThe hope of the godless dies out."
+    },
+    {
+     "v": 14,
+     "text": "What they lean on snaps,{b}\nand what they trust is a spider’s house.{c}"
+    },
+    {
+     "v": 15,
+     "text": "They lean on their house, but it will not hold.\nThey grab it, but it will not last."
+    },
+    {
+     "v": 16,
+     "text": "Picture a well-watered plant in the sun,\nwith shoots spreading over its garden."
+    },
+    {
+     "v": 17,
+     "text": "Its roots coil around a heap of stones.\nIt searches for a home among the rocks.{d}"
+    },
+    {
+     "v": 18,
+     "text": "But if someone rips it from its place,\nthat place will say, ‘I have never seen you.’"
+    },
+    {
+     "v": 19,
+     "text": "That is the happy end of that road.{e}\nNew plants will sprout from the same soil."
+    },
+    {
+     "v": 20,
+     "text": "“Look, God does not turn away an honest person.\nHe does not take the hand of those who do evil."
+    },
+    {
+     "v": 21,
+     "text": "He will still fill your mouth with laughter,\nand your lips with cheers."
+    },
+    {
+     "v": 22,
+     "text": "Your haters will be dressed in shame,\nand the tent of the wicked will be gone.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "8:11",
+     "text": "The papyrus is a tall water plant that grows in the marshes along the Nile."
+    },
+    {
+     "m": "b",
+     "ref": "8:14",
+     "text": "The Hebrew word is found only here. It may mean “snaps” or “is a thin thread.”"
+    },
+    {
+     "m": "c",
+     "ref": "8:14",
+     "text": "That is, a spider’s web."
+    },
+    {
+     "m": "d",
+     "ref": "8:17",
+     "text": "Or “it lives among stones.” The Hebrew is uncertain."
+    },
+    {
+     "m": "e",
+     "ref": "8:19",
+     "text": "Bildad says this with irony: the plant’s “joy” is that it is replaced."
+    }
+   ],
+   "subheads": {
+    "1": "Bildad Speaks Up",
+    "8": "Learn from Earlier Generations",
+    "20": "God Will Not Reject the Honest"
+   }
+  },
+  {
+   "n": 9,
+   "paras": [
+    1,
+    2,
+    13,
+    25
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Job replied:"
+    },
+    {
+     "v": 2,
+     "text": "“Yes, I know this is true.\nBut how could a mortal ever be found right before God?"
+    },
+    {
+     "v": 3,
+     "text": "Suppose someone wished to argue with him.\nOut of a thousand charges, he could not answer even one."
+    },
+    {
+     "v": 4,
+     "text": "God is wise and powerful.\nWho has stood against him and stayed unhurt?"
+    },
+    {
+     "v": 5,
+     "text": "He moves mountains, and they never know it.\nIn his anger he flips them over."
+    },
+    {
+     "v": 6,
+     "text": "He jolts the earth out of its place,\nand its supports rattle."
+    },
+    {
+     "v": 7,
+     "text": "He speaks to the sun, and it stays down.\nHe locks the stars away."
+    },
+    {
+     "v": 8,
+     "text": "He alone unrolls the sky\nand strides across the sea’s high waves.{a}"
+    },
+    {
+     "v": 9,
+     "text": "He set the Bear in the sky, and Orion,\nthe Pleiades,{b} and the star groups of the south."
+    },
+    {
+     "v": 10,
+     "text": "He does great things too deep to understand,\nand wonders too many to count."
+    },
+    {
+     "v": 11,
+     "text": "He goes past me, yet I do not see him.\nHe moves on, yet I never notice."
+    },
+    {
+     "v": 12,
+     "text": "If he snatches something, who can make him return it?\nWho dares to ask him, ‘What is it you are doing?’"
+    },
+    {
+     "v": 13,
+     "text": "“God never calls back his anger.\nRahab’s{c} helpers crouched down beneath him."
+    },
+    {
+     "v": 14,
+     "text": "So how could I give him an answer?\nHow could I choose the words to debate him?"
+    },
+    {
+     "v": 15,
+     "text": "Though in the right, I would have no reply.\nI could only beg my judge for mercy."
+    },
+    {
+     "v": 16,
+     "text": "If I called him and he replied,\nI still would not believe he had listened."
+    },
+    {
+     "v": 17,
+     "text": "He batters me with a storm\nand adds to my wounds for no reason."
+    },
+    {
+     "v": 18,
+     "text": "He will not allow me a breath of rest.\nHe feeds me one bitter thing after another."
+    },
+    {
+     "v": 19,
+     "text": "If strength is the question, he is the mighty one!\nIf fairness is the question, who can summon him to court?{d}"
+    },
+    {
+     "v": 20,
+     "text": "Even if I were right, my mouth would find me guilty.\nEven if I were blameless, it would show me to be crooked."
+    },
+    {
+     "v": 21,
+     "text": "I am blameless, yet I do not care what happens.\nI despise my life."
+    },
+    {
+     "v": 22,
+     "text": "It makes no difference, so I say,\n‘He ends the lives of the innocent and the wicked alike.’"
+    },
+    {
+     "v": 23,
+     "text": "When a sudden plague kills,\nhe laughs at the fear of the blameless."
+    },
+    {
+     "v": 24,
+     "text": "The earth is handed over to wicked people.\nHe covers the eyes of its judges.\nIf he is not the one, who is?"
+    },
+    {
+     "v": 25,
+     "text": "“My days run faster than a runner.\nThey fly away and see nothing good."
+    },
+    {
+     "v": 26,
+     "text": "They glide past like boats made of reeds,{e}\nlike an eagle diving at its food."
+    },
+    {
+     "v": 27,
+     "text": "Suppose I say, ‘I will forget my complaint.\nI will drop this sad face and smile.’"
+    },
+    {
+     "v": 28,
+     "text": "I still shake at all my pain,\nbecause I know you will not call me innocent."
+    },
+    {
+     "v": 29,
+     "text": "I will be found guilty anyway,\nso why wear myself out for nothing?"
+    },
+    {
+     "v": 30,
+     "text": "If I scrubbed myself with snow\nand washed my hands with soap,{f}"
+    },
+    {
+     "v": 31,
+     "text": "Then you would toss me into a filthy ditch,\nand even my clothes would be disgusted by me."
+    },
+    {
+     "v": 32,
+     "text": "God is no human being like me, so I have no way to answer.\nThe two of us cannot walk into court together."
+    },
+    {
+     "v": 33,
+     "text": "No umpire{g} stands between us,\nno one to lay a hand on us both."
+    },
+    {
+     "v": 34,
+     "text": "He should take his stick away from me.\nHis terror should no longer scare me."
+    },
+    {
+     "v": 35,
+     "text": "Then I could talk with no fear of him.\nBut as things stand, I cannot.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "9:8",
+     "text": "Original: “backs.” It may mean the waves or the back of the sea monster. Compare 3:8."
+    },
+    {
+     "m": "b",
+     "ref": "9:9",
+     "text": "The Hebrew names (Ash, Kesil, Kimah) are uncertain; they are the Bear, Orion, and the Pleiades star groups. Compare 38:31–32 and Amos 5:8. The Septuagint names the Pleiades, the evening star, and Arcturus."
+    },
+    {
+     "m": "c",
+     "ref": "9:13",
+     "text": "Rahab was a sea monster in ancient stories, a picture of chaos. She is not Rahab of Jericho; the names are spelled differently in Hebrew. Compare 26:12. The Septuagint says “the great sea monsters under heaven.”"
+    },
+    {
+     "m": "d",
+     "ref": "9:19",
+     "text": "The Hebrew may be quoting God’s answer. Many read “who can call him to court?” The line is uncertain."
+    },
+    {
+     "m": "e",
+     "ref": "9:26",
+     "text": "Light boats made from papyrus reeds (Isaiah 18:2)."
+    },
+    {
+     "m": "f",
+     "ref": "9:30",
+     "text": "Original: “lye,” a cleaner made from plant ashes."
+    },
+    {
+     "m": "g",
+     "ref": "9:33",
+     "text": "Or “mediator.” The Hebrew word means someone who can judge between two sides. Some old copies read “If only we had an umpire between us.”"
+    }
+   ],
+   "subheads": {
+    "1": "How Can a Person Argue with God?",
+    "13": "God Is Too Strong to Face",
+    "25": "No Umpire Between Us"
+   }
+  },
+  {
+   "n": 10,
+   "paras": [
+    1,
+    8,
+    18
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“I am sick of living.\nI will let my complaint pour out.\nI will talk, even though my soul is bitter."
+    },
+    {
+     "v": 2,
+     "text": "I will tell God, ‘Do not declare me guilty.\nShow me what charge you have against me."
+    },
+    {
+     "v": 3,
+     "text": "Does it please you to be cruel,\nto throw away what your own hands made,\nwhile you smile on the plans of wicked people?"
+    },
+    {
+     "v": 4,
+     "text": "Do you have eyes of flesh?\nDo you see the way a human sees?"
+    },
+    {
+     "v": 5,
+     "text": "Are your days as short as ours?\nAre your years like a person’s years?"
+    },
+    {
+     "v": 6,
+     "text": "Why do you go digging for my fault\nand hunting for my sin?"
+    },
+    {
+     "v": 7,
+     "text": "You know very well I am not guilty,\nyet nobody can free me from your grip."
+    },
+    {
+     "v": 8,
+     "text": "“‘Your hands formed me and shaped me,\nevery part of me. And now you destroy me?"
+    },
+    {
+     "v": 9,
+     "text": "You worked me as a potter works clay.\nDo you plan now to crumble me into dust?"
+    },
+    {
+     "v": 10,
+     "text": "You poured me out like milk, did you not?\nYou made me firm like cheese."
+    },
+    {
+     "v": 11,
+     "text": "You covered me in skin and flesh.\nYou laced me up with bones and muscles."
+    },
+    {
+     "v": 12,
+     "text": "You gave me life and loyal love.\nYour watchful care kept my spirit safe."
+    },
+    {
+     "v": 13,
+     "text": "Yet you hid another plan in your heart.\nI know what you had in mind:"
+    },
+    {
+     "v": 14,
+     "text": "If I sinned, you would be watching,\nand you would never let my guilt go."
+    },
+    {
+     "v": 15,
+     "text": "If I am guilty, how terrible for me!\nAnd if I am innocent, I still cannot hold my head up,\nfor I am full of shame and soaked in suffering."
+    },
+    {
+     "v": 16,
+     "text": "If I stand tall, you stalk me like a lion.\nOnce more you display your amazing strength against me."
+    },
+    {
+     "v": 17,
+     "text": "You bring new witnesses to testify against me.\nYour anger toward me grows.\nFresh troops of troubles attack me.{a}"
+    },
+    {
+     "v": 18,
+     "text": "“‘Why did you ever let me be born?\nI should have died, and no one would have looked on me."
+    },
+    {
+     "v": 19,
+     "text": "I would have been as if I never lived,\ncarried straight from birth to the grave."
+    },
+    {
+     "v": 20,
+     "text": "My days are few. Stop!{b}\nTurn away from me for a little cheer,"
+    },
+    {
+     "v": 21,
+     "text": "before I leave and do not come back,\nfor the land of darkness and gloom,"
+    },
+    {
+     "v": 22,
+     "text": "a land as black as midnight,{c}\nwith deep shadow and no order,\nwhere even the light is like blackness.’”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "10:17",
+     "text": "Or “waves of soldiers come against me.” The Hebrew is uncertain."
+    },
+    {
+     "m": "b",
+     "ref": "10:20",
+     "text": "This follows the written Hebrew. The reading handed down by scribes is “Stop, and leave me alone.”"
+    },
+    {
+     "m": "c",
+     "ref": "10:22",
+     "text": "The Hebrew word for this darkness is rare."
+    }
+   ],
+   "subheads": {
+    "1": "Job Pleads with His Maker",
+    "8": "You Made Me. Will You Destroy Me?",
+    "18": "Why Was I Born?"
+   }
+  },
+  {
+   "n": 11,
+   "paras": [
+    1,
+    2,
+    7,
+    13
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Zophar from Naamah answered:"
+    },
+    {
+     "v": 2,
+     "text": "“Should such a flood of words go without a reply?\nShould a big talker{a} be called right?"
+    },
+    {
+     "v": 3,
+     "text": "Will your chatter silence everyone?\nWill you jeer and no one make you blush?"
+    },
+    {
+     "v": 4,
+     "text": "You claim, ‘What I believe is spotless,\nand you can find no fault in me.’"
+    },
+    {
+     "v": 5,
+     "text": "If only God would talk!\nIf only he would open his lips and answer you,"
+    },
+    {
+     "v": 6,
+     "text": "and tell you the hidden things of wisdom,\nfor real wisdom{b} has two sides to it.\nThen you would see that God is asking for less than your guilt deserves.{c}"
+    },
+    {
+     "v": 7,
+     "text": "“Can you search out the deep secrets of God?\nCan you map the far edge of Shaddai?"
+    },
+    {
+     "v": 8,
+     "text": "They are higher than the heavens. What can you do?\nThey are deeper than the grave. What can you know?"
+    },
+    {
+     "v": 9,
+     "text": "Their measure stretches past the earth\nand reaches wider than the sea."
+    },
+    {
+     "v": 10,
+     "text": "If he comes along and locks someone up,\nor calls the court together, who can stop him?"
+    },
+    {
+     "v": 11,
+     "text": "He knows who is worthless.\nHe sees evil, and he takes notice."
+    },
+    {
+     "v": 12,
+     "text": "A stupid man will become wise\non the day a wild donkey’s colt is born as a human.{d}"
+    },
+    {
+     "v": 13,
+     "text": "“But if you turn your heart to him\nand spread out your hands in prayer,"
+    },
+    {
+     "v": 14,
+     "text": "and if you throw away any sin in your hands\nand let no wrong live in your tents,"
+    },
+    {
+     "v": 15,
+     "text": "then you can hold your head high with no stain.\nYou will stand firm and never be afraid."
+    },
+    {
+     "v": 16,
+     "text": "You will put your misery out of mind.\nIt will be like floodwater that ran by long ago."
+    },
+    {
+     "v": 17,
+     "text": "Your life will blaze brighter than noon.\nEven the dark hours will glow like dawn."
+    },
+    {
+     "v": 18,
+     "text": "You will be bold, since hope is real.\nLooking about you,{e} you will lie down in peace."
+    },
+    {
+     "v": 19,
+     "text": "You will lie down with no one to scare you,\nand many will ask for your help."
+    },
+    {
+     "v": 20,
+     "text": "But the wicked will go blind with worry.\nThey will find no place to hide.\nTheir only hope is their last breath.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "11:2",
+     "text": "Original: “a man of lips,” that is, a man full of talk."
+    },
+    {
+     "m": "b",
+     "ref": "11:6",
+     "text": "The Hebrew word for “wisdom” is the same as in 5:12."
+    },
+    {
+     "m": "c",
+     "ref": "11:6",
+     "text": "Or “God lets some of your guilt be forgotten.”"
+    },
+    {
+     "m": "d",
+     "ref": "11:12",
+     "text": "Or “when a wild donkey is born tame.” This saying is uncertain."
+    },
+    {
+     "m": "e",
+     "ref": "11:18",
+     "text": "Or “you will dig a place,” that is, set up your tent. The Hebrew is uncertain."
+    }
+   ],
+   "subheads": {
+    "1": "Zophar Speaks Sharply",
+    "7": "Who Can Understand God?",
+    "13": "Return to God and Be Safe"
+   }
+  },
+  {
+   "n": 12,
+   "paras": [
+    1,
+    2,
+    7,
+    13
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Job replied:"
+    },
+    {
+     "v": 2,
+     "text": "“No doubt you are the only wise people,\nand wisdom will die when you do!"
+    },
+    {
+     "v": 3,
+     "text": "But my mind works as well as yours.\nI am not below you.\nWho has not heard such things?"
+    },
+    {
+     "v": 4,
+     "text": "My friends laugh at me,\na man who prayed to God and was answered.\nYes, they laugh at a good and honest man."
+    },
+    {
+     "v": 5,
+     "text": "People at ease look down on those in trouble.\nThey kick those whose feet are slipping.{a}"
+    },
+    {
+     "v": 6,
+     "text": "Robbers live in peaceful tents,\nand those who anger God are safe,\nthe ones who hold their own god in their fists.{b}"
+    },
+    {
+     "v": 7,
+     "text": "“Go ahead, question the cattle, and they will teach you.\nQuestion the birds overhead, and they will inform you."
+    },
+    {
+     "v": 8,
+     "text": "Or speak to the earth,{c} and it will show you.\nLet the sea’s fish tell you the story."
+    },
+    {
+     "v": 9,
+     "text": "Which of them does not know\nthat Yahweh’s{d} hand has done this?"
+    },
+    {
+     "v": 10,
+     "text": "Every living thing has its life in his hand,\nas does the breath of all people."
+    },
+    {
+     "v": 11,
+     "text": "The ear tests words\nthe way the tongue tests food."
+    },
+    {
+     "v": 12,
+     "text": "Wisdom belongs to the old.\nUnderstanding comes with long life."
+    },
+    {
+     "v": 13,
+     "text": "“God owns wisdom and power.\nCounsel and understanding are his too."
+    },
+    {
+     "v": 14,
+     "text": "What he tears down cannot be rebuilt.\nWhoever he locks up cannot get out."
+    },
+    {
+     "v": 15,
+     "text": "If he holds back the rain, the land dries up.\nIf he lets it loose, it floods the earth."
+    },
+    {
+     "v": 16,
+     "text": "Strength and success are his.\nThe one who is fooled and the one who fools are both his."
+    },
+    {
+     "v": 17,
+     "text": "He leads advisers away barefoot and ruined.\nHe turns judges into fools."
+    },
+    {
+     "v": 18,
+     "text": "He loosens the chains of kings,\nthen ties a cloth around their waists."
+    },
+    {
+     "v": 19,
+     "text": "He leads priests away with nothing.\nHe topples those who seemed secure."
+    },
+    {
+     "v": 20,
+     "text": "He silences trusted speakers.\nHe takes good sense from the elders."
+    },
+    {
+     "v": 21,
+     "text": "He pours shame on nobles.\nHe takes the belt of the strong."
+    },
+    {
+     "v": 22,
+     "text": "He drags deep secrets out of the dark\nand brings the deepest gloom into the light."
+    },
+    {
+     "v": 23,
+     "text": "He makes nations great, then wipes them out.\nHe lets nations spread, then sends them off as prisoners."
+    },
+    {
+     "v": 24,
+     "text": "He takes the good sense from leaders of the land\nand sets them wandering in a pathless desert."
+    },
+    {
+     "v": 25,
+     "text": "Without any light they grope in the dark.\nHe makes them reel like drunks.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "12:5",
+     "text": "The Hebrew of this verse is uncertain."
+    },
+    {
+     "m": "b",
+     "ref": "12:6",
+     "text": "Or “whom God has put in their hands.” The Hebrew is uncertain."
+    },
+    {
+     "m": "c",
+     "ref": "12:8",
+     "text": "Or “the plants of the earth.”"
+    },
+    {
+     "m": "d",
+     "ref": "12:9",
+     "text": "This is the only place in the poems of Job (3:1–42:6) where the name Yahweh appears outside the introductions to God’s speeches. Some Hebrew copies say “God.” Compare Isaiah 41:20."
+    }
+   ],
+   "subheads": {
+    "1": "Job Answers Sarcastically",
+    "7": "Even the Animals Know",
+    "13": "God Controls Everyone"
+   }
+  },
+  {
+   "n": 13,
+   "paras": [
+    1,
+    13,
+    20
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“Look, my own eyes have seen all this.\nMy ears have heard it and understood."
+    },
+    {
+     "v": 2,
+     "text": "What you know, I know too.\nI am not below you."
+    },
+    {
+     "v": 3,
+     "text": "But I would rather speak to Shaddai.\nI long to argue my case before God."
+    },
+    {
+     "v": 4,
+     "text": "You, however, smear on lies like plaster.\nYou are all doctors who cure nothing."
+    },
+    {
+     "v": 5,
+     "text": "I wish you would keep completely silent.\nThat, at least, would make you look wise."
+    },
+    {
+     "v": 6,
+     "text": "Now listen to my argument.\nPay attention to what my lips plead."
+    },
+    {
+     "v": 7,
+     "text": "Will you speak crooked words to defend God?\nWill you tell lies for him?"
+    },
+    {
+     "v": 8,
+     "text": "Will you take his side unfairly?\nWill you act as lawyers for God?"
+    },
+    {
+     "v": 9,
+     "text": "Will it turn out well when he looks you over?\nCan you trick him as you trick people?"
+    },
+    {
+     "v": 10,
+     "text": "He will surely scold you\nif you secretly take sides."
+    },
+    {
+     "v": 11,
+     "text": "Will his greatness not terrify you?\nWill dread of him not fall on you?"
+    },
+    {
+     "v": 12,
+     "text": "Your clever sayings are about as useful as ashes.\nYour arguments crumble like clay."
+    },
+    {
+     "v": 13,
+     "text": "“Be quiet and let me talk.\nThen let come what may."
+    },
+    {
+     "v": 14,
+     "text": "Why do I hold my own flesh in my teeth\nand carry my life in my hand?{a}"
+    },
+    {
+     "v": 15,
+     "text": "He may kill me. I have no hope.{b}\nBut I will still defend my conduct to his face."
+    },
+    {
+     "v": 16,
+     "text": "Maybe this will even save me,\nbecause a godless man would never dare to stand before him."
+    },
+    {
+     "v": 17,
+     "text": "Hear my words with care.\nLet my statement stay in your ears."
+    },
+    {
+     "v": 18,
+     "text": "See, my case is ready, laid out in order.\nI am sure I will be found right."
+    },
+    {
+     "v": 19,
+     "text": "Who will bring a charge against me?\nIf someone does, I will hush and die."
+    },
+    {
+     "v": 20,
+     "text": "“God, give me just two things,\nand I will no longer hide from you."
+    },
+    {
+     "v": 21,
+     "text": "Take your heavy hand off me,\nand do not let your terror frighten me."
+    },
+    {
+     "v": 22,
+     "text": "Then call me, and I will answer.\nOr let me talk, and you reply."
+    },
+    {
+     "v": 23,
+     "text": "How many wrongs and sins are mine?\nMake me see what I did wrong."
+    },
+    {
+     "v": 24,
+     "text": "Why do you keep your face hidden from me\nand count me as your enemy?{c}"
+    },
+    {
+     "v": 25,
+     "text": "Will you terrify a leaf in the wind?\nWill you chase dry straw?"
+    },
+    {
+     "v": 26,
+     "text": "You write bitter charges against me.\nYou hand me the sins I committed when young."
+    },
+    {
+     "v": 27,
+     "text": "You lock my feet in stocks.\nYou watch every step I take.\nYou mark a line{d} around my footprints."
+    },
+    {
+     "v": 28,
+     "text": "So a person{e} wastes away like rotting wood,\nlike clothes eaten by moths."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "13:14",
+     "text": "This means, “Why do I risk my life?”"
+    },
+    {
+     "m": "b",
+     "ref": "13:15",
+     "text": "This follows the written Hebrew text, which says “not.” The reading handed down by scribes is “in him,” which gives the well-known sense, “Though he kill me, I will hope in him.” The line is hard to settle."
+    },
+    {
+     "m": "c",
+     "ref": "13:24",
+     "text": "The Hebrew word for “enemy” sounds like Job’s name."
+    },
+    {
+     "m": "d",
+     "ref": "13:27",
+     "text": "Or “you mark a limit.” The Hebrew is uncertain."
+    },
+    {
+     "m": "e",
+     "ref": "13:28",
+     "text": "Original: “he,” that is, a human being. This verse may belong after 14:2."
+    }
+   ],
+   "subheads": {
+    "1": "Job Wants to Argue with God",
+    "13": "I Will Risk My Life",
+    "20": "Two Requests"
+   }
+  },
+  {
+   "n": 14,
+   "paras": [
+    1,
+    7,
+    13,
+    18
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“People are born from women.\nTheir days are few and crowded with trouble."
+    },
+    {
+     "v": 2,
+     "text": "They bloom like a flower and then wither.\nThey run off like a shadow and are gone."
+    },
+    {
+     "v": 3,
+     "text": "Do you truly fix your gaze on someone like that,\nand bring me{a} to court before you?"
+    },
+    {
+     "v": 4,
+     "text": "Who can bring something clean out of something unclean?\nNo one!"
+    },
+    {
+     "v": 5,
+     "text": "His days are numbered.\nYou decide how many months he gets.\nYou set limits that he cannot pass."
+    },
+    {
+     "v": 6,
+     "text": "So look away from him and let him rest,\nuntil he has enjoyed his day like a hired worker."
+    },
+    {
+     "v": 7,
+     "text": "“Even a tree has hope.\nIf it is chopped down, it can sprout again,\nand its new shoots will keep coming."
+    },
+    {
+     "v": 8,
+     "text": "Its roots may age under the soil,\nand its stump may die in the ground."
+    },
+    {
+     "v": 9,
+     "text": "Yet the scent of water makes it bud,\nand it grows shoots like a new plant."
+    },
+    {
+     "v": 10,
+     "text": "A man, though, dies and is laid out flat.\nHe breathes his last, and where is he?"
+    },
+    {
+     "v": 11,
+     "text": "Water drains out of a lake.\nA river shrinks and dries up."
+    },
+    {
+     "v": 12,
+     "text": "In the same way, people lie down and do not get up.\nUntil the sky is gone, they will not wake\nor rise from their sleep."
+    },
+    {
+     "v": 13,
+     "text": "“I wish you would tuck me away in the grave,\nkeep me there until your anger passes,\nand set a time to remember me!"
+    },
+    {
+     "v": 14,
+     "text": "If a person dies, can he live again?\nI would wait through all the days of my hard labor\nuntil my release{b} came."
+    },
+    {
+     "v": 15,
+     "text": "You would call, and I would reply.\nYou would long for what your hands had made."
+    },
+    {
+     "v": 16,
+     "text": "Then you would count my steps,\nbut you would not lie in wait for my sin."
+    },
+    {
+     "v": 17,
+     "text": "You would seal up my wrongs in a pouch\nand cover over my guilt."
+    },
+    {
+     "v": 18,
+     "text": "“But a falling mountain crumbles to nothing,\nand a rock slides from its place."
+    },
+    {
+     "v": 19,
+     "text": "Water wears down stones,\nand its floods wash away the soil.\nIn the same way you wipe out human hope."
+    },
+    {
+     "v": 20,
+     "text": "You overpower them once and for all, and they go.\nYou twist their faces and send them away."
+    },
+    {
+     "v": 21,
+     "text": "Their sons may become honored, but they never know.\nThey may be brought low, but the dead do not see it."
+    },
+    {
+     "v": 22,
+     "text": "Each feels only the ache in his own body,\nand each grieves only for himself.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "14:3",
+     "text": "The Septuagint, the Syriac, and the Latin read “him.”"
+    },
+    {
+     "m": "b",
+     "ref": "14:14",
+     "text": "The Hebrew word means “change,” “renewal,” or “relief,” like a guard being replaced."
+    }
+   ],
+   "subheads": {
+    "1": "A Short Life Full of Trouble",
+    "7": "A Tree Has Hope, but a Person?",
+    "13": "If Only I Could Wait in the Grave",
+    "18": "Hope Wears Away"
+   }
+  },
+  {
+   "n": 15,
+   "paras": [
+    1,
+    2,
+    7,
+    17
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Eliphaz from Teman spoke again:"
+    },
+    {
+     "v": 2,
+     "text": "“Would a wise person reply with hot air\nand stuff himself with a scorching desert wind?"
+    },
+    {
+     "v": 3,
+     "text": "Would he argue with useless talk,\nwith speeches that help no one?"
+    },
+    {
+     "v": 4,
+     "text": "You are even wrecking respect for God,\nand you leave no room for prayer to him."
+    },
+    {
+     "v": 5,
+     "text": "Your guilt is what feeds your mouth.\nYou have picked the speech of sly people."
+    },
+    {
+     "v": 6,
+     "text": "Your own mouth convicts you, and I do not have to.\nYour lips are your own witnesses."
+    },
+    {
+     "v": 7,
+     "text": "“Were you the first person ever born?\nWere you brought into the world before the hills?"
+    },
+    {
+     "v": 8,
+     "text": "Did you sit in on God’s private council?\nDo you keep all wisdom for yourself?"
+    },
+    {
+     "v": 9,
+     "text": "What do you know that we do not?\nWhat do you understand that is hidden from us?"
+    },
+    {
+     "v": 10,
+     "text": "Gray-haired men are on our side,\nmen older than your own father by many years."
+    },
+    {
+     "v": 11,
+     "text": "Is the comfort God offers too little for you,\nor the kind word we spoke to you?"
+    },
+    {
+     "v": 12,
+     "text": "Why does your heart carry you away?\nWhy do your eyes flash{a}"
+    },
+    {
+     "v": 13,
+     "text": "as you turn your spirit against God\nand let such words fly from your mouth?"
+    },
+    {
+     "v": 14,
+     "text": "Who is any human being, to be pure?\nWho is born of a woman, to be good?"
+    },
+    {
+     "v": 15,
+     "text": "God does not even trust his holy ones.\nThe heavens themselves are not clean before him."
+    },
+    {
+     "v": 16,
+     "text": "How much less a person who is vile and rotten,\nwho swallows wrong as easily as water!"
+    },
+    {
+     "v": 17,
+     "text": "“Listen to me, and I will explain.\nI will report what I have watched,"
+    },
+    {
+     "v": 18,
+     "text": "what wise men have taught,\nand what their ancestors never hid."
+    },
+    {
+     "v": 19,
+     "text": "Those ancestors alone held the land,\nand no outsider lived among them."
+    },
+    {
+     "v": 20,
+     "text": "The wicked man is in pain all his days.\nThe cruel man has only a few years left."
+    },
+    {
+     "v": 21,
+     "text": "The sound of terror rings in his ears.\nWhen all seems calm, a destroyer attacks him."
+    },
+    {
+     "v": 22,
+     "text": "He cannot believe he will escape the dark.\nA sword is waiting for him."
+    },
+    {
+     "v": 23,
+     "text": "He wanders about asking where his next meal is.{b}\nHe knows his dark day is near."
+    },
+    {
+     "v": 24,
+     "text": "Distress and fear terrify him.\nThey beat him down like a king ready to attack.{c}"
+    },
+    {
+     "v": 25,
+     "text": "He shook his fist at God.\nHe acted like a hero against Shaddai."
+    },
+    {
+     "v": 26,
+     "text": "He charged at God with his neck stiff,{d}\nbehind the thick bumps of his shield."
+    },
+    {
+     "v": 27,
+     "text": "His face grew fat,\nand his waist bulged with flesh."
+    },
+    {
+     "v": 28,
+     "text": "He lived in towns left in ruins,\nin houses where no one should live,\nhouses that were about to become rubble."
+    },
+    {
+     "v": 29,
+     "text": "He will not stay rich, and his wealth will not last.\nHis crops{e} will not bend the ground with their weight."
+    },
+    {
+     "v": 30,
+     "text": "He will never escape the darkness.\nFlames will dry up his branches,\nand a puff from God’s{f} mouth will carry him off."
+    },
+    {
+     "v": 31,
+     "text": "Let him not trust in empty things and fool himself,\nfor emptiness will be his pay."
+    },
+    {
+     "v": 32,
+     "text": "It will all come true before his time.\nHis palm branch will never be green."
+    },
+    {
+     "v": 33,
+     "text": "Like a vine, he will let his unripe grapes fall.\nLike an olive tree, he will drop his blossoms."
+    },
+    {
+     "v": 34,
+     "text": "Godless crowds will bear no fruit,\nand flames will eat the tents of bribe-takers."
+    },
+    {
+     "v": 35,
+     "text": "They are pregnant with trouble and give birth to evil.\nTheir wombs are busy with lies.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "15:12",
+     "text": "The Hebrew word is found only here. It may mean “wink” or “flash.”"
+    },
+    {
+     "m": "b",
+     "ref": "15:23",
+     "text": "Or, following the Septuagint, “He is set aside as food for vultures.”"
+    },
+    {
+     "m": "c",
+     "ref": "15:24",
+     "text": "The Hebrew word is found only here. “Ready to attack” is uncertain."
+    },
+    {
+     "m": "d",
+     "ref": "15:26",
+     "text": "Or “stiff-necked.”"
+    },
+    {
+     "m": "e",
+     "ref": "15:29",
+     "text": "The Hebrew word is found only here. “Crops” is uncertain."
+    },
+    {
+     "m": "f",
+     "ref": "15:30",
+     "text": "Original: “his,” that is, God’s."
+    }
+   ],
+   "subheads": {
+    "1": "Eliphaz Accuses Job of Empty Talk",
+    "7": "Who Do You Think You Are?",
+    "17": "The Fate of the Wicked"
+   }
+  },
+  {
+   "n": 16,
+   "paras": [
+    1,
+    2,
+    6,
+    18
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Job replied:"
+    },
+    {
+     "v": 2,
+     "text": "“I have heard plenty like this.\nYou are all miserable comforters."
+    },
+    {
+     "v": 3,
+     "text": "Will your windy speeches never end?\nWhat makes you keep answering?"
+    },
+    {
+     "v": 4,
+     "text": "I could talk like you,\nif you stood where I stand.\nI could string speeches together against you\nand wag my head over you."
+    },
+    {
+     "v": 5,
+     "text": "I could encourage you with my words,\nand my lips could soften your pain."
+    },
+    {
+     "v": 6,
+     "text": "“If I talk, the pain stays.\nIf I keep still, what do I gain?"
+    },
+    {
+     "v": 7,
+     "text": "God has worn me out.\nYou have wrecked all my family."
+    },
+    {
+     "v": 8,
+     "text": "You have made me shrivel,{a} and my thin body speaks against me.\nMy bony frame stands up and accuses me to my face."
+    },
+    {
+     "v": 9,
+     "text": "In anger God rips me apart and hates me.\nHe gnashes his teeth at me.\nMy foe glares at me with burning eyes."
+    },
+    {
+     "v": 10,
+     "text": "People hang their mouths open at me.\nThey slap my cheeks to insult me.\nThey all crowd together against me."
+    },
+    {
+     "v": 11,
+     "text": "God hands me over to evil people.\nHe throws me into the grip of the wicked."
+    },
+    {
+     "v": 12,
+     "text": "All was calm for me, and he broke me apart.\nSeizing my neck, he smashed me to bits.\nHe set me up as his target."
+    },
+    {
+     "v": 13,
+     "text": "His archers{b} ring me in.\nWith no pity he cuts into my insides\nand empties my gall onto the ground."
+    },
+    {
+     "v": 14,
+     "text": "He batters my wall again and again.\nHe charges me like a fighter."
+    },
+    {
+     "v": 15,
+     "text": "I have stitched sackcloth over my skin,\nand I have buried my pride{c} in the dust."
+    },
+    {
+     "v": 16,
+     "text": "Weeping has turned my face red,\nwith dark shadows around my eyes,"
+    },
+    {
+     "v": 17,
+     "text": "though my hands have done no violence,\nand my prayer is sincere."
+    },
+    {
+     "v": 18,
+     "text": "“Earth, do not cover up my blood!\nLet my cry never stop echoing."
+    },
+    {
+     "v": 19,
+     "text": "Even now there is a witness for me in heaven.\nMy defender is up there on high.{d}"
+    },
+    {
+     "v": 20,
+     "text": "My go-betweens{e} are my friends,\nwhile my eyes pour out tears to God."
+    },
+    {
+     "v": 21,
+     "text": "I wish someone would argue my case with God,\nthe way a person speaks up for a friend."
+    },
+    {
+     "v": 22,
+     "text": "A few more years will pass,\nand I will set out on the road with no return.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "16:8",
+     "text": "The Hebrew word is rare. It may mean “seized” or “shriveled.”"
+    },
+    {
+     "m": "b",
+     "ref": "16:13",
+     "text": "Or “his arrows.” The Hebrew word is rare."
+    },
+    {
+     "m": "c",
+     "ref": "16:15",
+     "text": "Original: “my horn,” which stands for strength or dignity."
+    },
+    {
+     "m": "d",
+     "ref": "16:19",
+     "text": "The Hebrew word for “witness” is Aramaic and appears only here. People disagree about who it is: God himself or a heavenly helper. Compare 9:33 and 19:25."
+    },
+    {
+     "m": "e",
+     "ref": "16:20",
+     "text": "Or “my mockers.” The Hebrew word can mean either."
+    }
+   ],
+   "subheads": {
+    "1": "Job Calls His Friends Poor Comforters",
+    "6": "God Has Worn Me Out",
+    "18": "My Witness Is in Heaven"
+   }
+  },
+  {
+   "n": 17,
+   "paras": [
+    1,
+    11
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“My spirit is used up. My days are put out.\nThe grave is waiting for me."
+    },
+    {
+     "v": 2,
+     "text": "Mockers surround me.\nMy eyes cannot look away from their insults."
+    },
+    {
+     "v": 3,
+     "text": "Please, God, put up a guarantee for me yourself.\nWho else will shake hands and pledge it?{a}"
+    },
+    {
+     "v": 4,
+     "text": "You have shut their minds to understanding,\nso you will not let them win."
+    },
+    {
+     "v": 5,
+     "text": "A man who turns in his friends to share the loot,\nhis own children’s eyes will fail."
+    },
+    {
+     "v": 6,
+     "text": "God has made me a joke to the nations,\na man people spit in the face."
+    },
+    {
+     "v": 7,
+     "text": "My eyes are dim with grief.\nMy whole body is a shadow."
+    },
+    {
+     "v": 8,
+     "text": "Honest people are stunned by this.\nThose without fault rise up against the godless."
+    },
+    {
+     "v": 9,
+     "text": "Still, the good person holds to his path,\nand the one with clean hands grows stronger."
+    },
+    {
+     "v": 10,
+     "text": "But all of you, try again if you like.\nI will not find one wise man among you."
+    },
+    {
+     "v": 11,
+     "text": "“My days are over. My plans are shattered,\nthe dreams{b} of my heart."
+    },
+    {
+     "v": 12,
+     "text": "These men call night day.\nThey say light is near, though darkness is here."
+    },
+    {
+     "v": 13,
+     "text": "If I look to the grave as my only house,\nif I spread my bed in the dark,"
+    },
+    {
+     "v": 14,
+     "text": "if I tell the pit,{c} ‘You are my father,’\nand tell the worm, ‘You are my mother and sister,’"
+    },
+    {
+     "v": 15,
+     "text": "where then is my hope?\nWho could ever find it?"
+    },
+    {
+     "v": 16,
+     "text": "Will it go down with me to the gates of the grave?\nWill we all sink into the dust together?”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "17:3",
+     "text": "That is, who else will promise to pay for me?"
+    },
+    {
+     "m": "b",
+     "ref": "17:11",
+     "text": "The Hebrew word means “possessions.” Here it probably means “dreams” or “wishes.”"
+    },
+    {
+     "m": "c",
+     "ref": "17:14",
+     "text": "Or “decay.” The Aramaic Targum of Job found at Qumran Cave 11 (11QtgJob) begins to survive from about this verse; its remains cover parts of 17:14 through 42:11."
+    }
+   ],
+   "subheads": {
+    "1": "My Spirit Is Broken",
+    "11": "My Hope Goes Down to the Grave"
+   }
+  },
+  {
+   "n": 18,
+   "paras": [
+    1,
+    2,
+    5
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Bildad from Shuah spoke again:"
+    },
+    {
+     "v": 2,
+     "text": "“When will you stop hunting for words?{a}\nThink first, and then we will talk."
+    },
+    {
+     "v": 3,
+     "text": "Why do you treat us like animals\nand think of us as stupid?{b}"
+    },
+    {
+     "v": 4,
+     "text": "You rip yourself apart in your anger.\nMust the whole earth be left empty for you?\nMust a mountain crag be shifted?"
+    },
+    {
+     "v": 5,
+     "text": "“Yes, the wicked man’s light will be put out,\nand his fire will throw off no sparks."
+    },
+    {
+     "v": 6,
+     "text": "His tent grows dark inside.\nThe lamp above him is snuffed out."
+    },
+    {
+     "v": 7,
+     "text": "His proud steps get short.\nHis own plans trip him up."
+    },
+    {
+     "v": 8,
+     "text": "His own feet walk him into a net.\nHe strolls across a trap."
+    },
+    {
+     "v": 9,
+     "text": "A snare catches his heel.\nA trap holds him tight."
+    },
+    {
+     "v": 10,
+     "text": "A cord lies buried in the dirt for him,\nand a trap is set along his path."
+    },
+    {
+     "v": 11,
+     "text": "Terrors scare him from every side\nand chase right behind him."
+    },
+    {
+     "v": 12,
+     "text": "Hunger eats his strength,\nand disaster waits next to him."
+    },
+    {
+     "v": 13,
+     "text": "Disease eats his skin.\nDeath’s firstborn{c} eats his limbs."
+    },
+    {
+     "v": 14,
+     "text": "Torn out of the tent he trusted,\nhe is marched away to the king of terrors."
+    },
+    {
+     "v": 15,
+     "text": "Strangers live in his tent now.{d}\nSulfur is sprinkled on his home like fire."
+    },
+    {
+     "v": 16,
+     "text": "His roots shrivel underground,\nand his branches wilt in the air."
+    },
+    {
+     "v": 17,
+     "text": "No one remembers him on earth.\nHis name is gone from the streets."
+    },
+    {
+     "v": 18,
+     "text": "He is shoved out of the light into darkness\nand chased out of the world."
+    },
+    {
+     "v": 19,
+     "text": "He has no child or grandchild among his people,\nand no survivor where he once lived."
+    },
+    {
+     "v": 20,
+     "text": "People in the west are shocked at his fate,\nand people in the east are gripped by horror.{e}"
+    },
+    {
+     "v": 21,
+     "text": "That is what happens to the homes of the wicked,\nand to the place of one who does not know God.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "18:2",
+     "text": "The Hebrew word is found only here. It may mean “ends” or “traps.”"
+    },
+    {
+     "m": "b",
+     "ref": "18:3",
+     "text": "Or “unclean.” The Hebrew word is uncertain."
+    },
+    {
+     "m": "c",
+     "ref": "18:13",
+     "text": "Probably a deadly disease, pictured as the oldest son of Death."
+    },
+    {
+     "m": "d",
+     "ref": "18:15",
+     "text": "Or “Nothing of his lives in his tent.” The Hebrew is uncertain."
+    },
+    {
+     "m": "e",
+     "ref": "18:20",
+     "text": "Or “Those who come later are shocked at his day, and those before are gripped by horror.”"
+    }
+   ],
+   "subheads": {
+    "1": "Bildad Warns Job",
+    "5": "The Lamp of the Wicked Goes Out"
+   }
+  },
+  {
+   "n": 19,
+   "paras": [
+    1,
+    2,
+    7,
+    13,
+    23
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Job replied:"
+    },
+    {
+     "v": 2,
+     "text": "“How long will you keep hurting my soul\nand crushing me with talk?"
+    },
+    {
+     "v": 3,
+     "text": "Ten times you have insulted me.\nYou feel no shame as you wrong me.{a}"
+    },
+    {
+     "v": 4,
+     "text": "Even if I really have made a mistake,\nthe mistake stays with me alone."
+    },
+    {
+     "v": 5,
+     "text": "If you want to lift yourselves above me\nand use my shame as proof against me,"
+    },
+    {
+     "v": 6,
+     "text": "then know this: God is the one who wronged me.\nHe has thrown his net all around me."
+    },
+    {
+     "v": 7,
+     "text": "“I shout, ‘Violence!’ but no one answers.\nI cry for help, but there is no justice."
+    },
+    {
+     "v": 8,
+     "text": "He has blocked my path so I cannot pass.\nHe has put darkness on my road."
+    },
+    {
+     "v": 9,
+     "text": "My honor he peeled away from me,\nand he lifted the crown from my head."
+    },
+    {
+     "v": 10,
+     "text": "He wrecks me from every side until I am finished.\nHe yanks up my hope like a tree."
+    },
+    {
+     "v": 11,
+     "text": "He lights the fire of his anger against me,\nand he treats me as his foe."
+    },
+    {
+     "v": 12,
+     "text": "His troops march up together.\nThey pile up a ramp against me\nand camp around my tent."
+    },
+    {
+     "v": 13,
+     "text": "“God has pushed my brothers far from me.\nThose who knew me now look at me as strangers."
+    },
+    {
+     "v": 14,
+     "text": "My relatives have given up on me.\nMy close friends have forgotten me."
+    },
+    {
+     "v": 15,
+     "text": "People who stay in my house, even my maids, think I am a stranger.\nTo them I have become a foreigner."
+    },
+    {
+     "v": 16,
+     "text": "I call for my servant, but he gives no reply,\nthough I plead with him out loud."
+    },
+    {
+     "v": 17,
+     "text": "My wife cannot stand my breath.\nMy own brothers{b} find me disgusting."
+    },
+    {
+     "v": 18,
+     "text": "Even small children make fun of me.\nWhen I stand up, they talk against me."
+    },
+    {
+     "v": 19,
+     "text": "All my close friends hate me.\nThose I loved have turned on me."
+    },
+    {
+     "v": 20,
+     "text": "Bones press against my skin and meat.\nI have slipped away with just my gums.{c}"
+    },
+    {
+     "v": 21,
+     "text": "Pity me, pity me, my friends,\nfor God’s hand has hit me hard!"
+    },
+    {
+     "v": 22,
+     "text": "Why do you chase me the way God does?\nHave you not eaten enough of me?{d}"
+    },
+    {
+     "v": 23,
+     "text": "“If only my words could be written down!\nIf only they could be engraved on a scroll,"
+    },
+    {
+     "v": 24,
+     "text": "or cut with an iron pen and lead\ninto rock to last forever!"
+    },
+    {
+     "v": 25,
+     "text": "As for me, I know that my redeemer{e} lives.\nAt the end{f} he will rise over the earth.{g}"
+    },
+    {
+     "v": 26,
+     "text": "Even when my skin has been torn off,\nI will see God from my own body.{h}"
+    },
+    {
+     "v": 27,
+     "text": "I myself will see him,\nand my own eyes will look, not those of a stranger.{i}\nMy heart{j} faints inside me."
+    },
+    {
+     "v": 28,
+     "text": "If you say, ‘Let us keep hounding him,\nsince the cause of his trouble lies in him,’{k}"
+    },
+    {
+     "v": 29,
+     "text": "then be afraid of the sword.\nFury calls down the sword’s penalty,\nso that you will know there is a judgment.”{l}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "19:3",
+     "text": "The Hebrew word is found only here. It may mean “wrong” or “stun.”"
+    },
+    {
+     "m": "b",
+     "ref": "19:17",
+     "text": "Original: “the sons of my womb,” that is, my own brothers born of the same mother. The Septuagint says “I begged the sons of my concubines.”"
+    },
+    {
+     "m": "c",
+     "ref": "19:20",
+     "text": "Original: “the skin of my teeth.” This saying is uncertain. It may mean “with nothing at all left.”"
+    },
+    {
+     "m": "d",
+     "ref": "19:22",
+     "text": "This means: by speaking evil of me, as in the Aramaic saying “eat pieces of” someone."
+    },
+    {
+     "m": "e",
+     "ref": "19:25",
+     "text": "Hebrew go’el, the close relative who buys back family land, frees a relative from slavery, or avenges a death (Leviticus 25:25; Numbers 35:19; Ruth 4:1–6). It is translated “champion” or “defender.” People disagree about whether Job means God himself or another helper in heaven (compare 9:33; 16:19). Verses 25–27 are very hard, and almost every line is uncertain."
+    },
+    {
+     "m": "f",
+     "ref": "19:25",
+     "text": "Or “as the last one.”"
+    },
+    {
+     "m": "g",
+     "ref": "19:25",
+     "text": "Or “over the dust,” that is, over my grave. The Septuagint says, “I know that he who is about to rescue me is eternal, and will raise up my skin on the earth, which endures these sufferings.”"
+    },
+    {
+     "m": "h",
+     "ref": "19:26",
+     "text": "Or “without my body” (after death) or “in my body.” The Hebrew word can mean either “from within” or “without.”"
+    },
+    {
+     "m": "i",
+     "ref": "19:27",
+     "text": "Or “and not as a stranger.”"
+    },
+    {
+     "m": "j",
+     "ref": "19:27",
+     "text": "Original: “kidneys,” thought of as the place of feelings. It means my heart fails with longing."
+    },
+    {
+     "m": "k",
+     "ref": "19:28",
+     "text": "This follows many Hebrew copies, the Septuagint, and the Latin. Most Hebrew copies say “in me.”"
+    },
+    {
+     "m": "l",
+     "ref": "19:29",
+     "text": "The Hebrew word is uncertain. Some read “that there is a Judge” or “that there is Shaddai.”"
+    }
+   ],
+   "subheads": {
+    "1": "How Long Will You Crush Me?",
+    "7": "God Has Fenced Me In",
+    "13": "Everyone Has Turned Away",
+    "23": "I Know My Redeemer Lives"
+   }
+  },
+  {
+   "n": 20,
+   "paras": [
+    1,
+    2,
+    12,
+    20
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Zophar from Naamah replied:"
+    },
+    {
+     "v": 2,
+     "text": "“My troubled thoughts force me to speak up,\nbecause I am so stirred inside."
+    },
+    {
+     "v": 3,
+     "text": "I hear a scolding that shames me,\nand my own understanding tells me how to reply."
+    },
+    {
+     "v": 4,
+     "text": "Surely you know how it has always been,\never since people were placed on the earth:"
+    },
+    {
+     "v": 5,
+     "text": "The wicked win only for a short time,\nand the godless are glad for just a moment."
+    },
+    {
+     "v": 6,
+     "text": "Though he rises as high as the sky,\nand his head brushes the clouds,"
+    },
+    {
+     "v": 7,
+     "text": "He will disappear for good, like his own garbage.\nThose who knew him will ask, ‘Where did he go?’"
+    },
+    {
+     "v": 8,
+     "text": "He flies off like a dream, and no one can find him.\nHe is chased away like a vision in the night."
+    },
+    {
+     "v": 9,
+     "text": "Eyes that watched him will not watch again.\nHis own house will never see him."
+    },
+    {
+     "v": 10,
+     "text": "His children will beg from the poor,{a}\nand his own hands will hand back his riches."
+    },
+    {
+     "v": 11,
+     "text": "His bones were full of youthful strength,\nbut that strength will lie with him in the dust."
+    },
+    {
+     "v": 12,
+     "text": "“Evil tastes sweet in his mouth.\nHe tucks it under his tongue."
+    },
+    {
+     "v": 13,
+     "text": "He cannot bear to lose it,\nso he holds it against the roof of his mouth."
+    },
+    {
+     "v": 14,
+     "text": "But in his stomach the food turns sour.\nIt becomes cobra poison inside him."
+    },
+    {
+     "v": 15,
+     "text": "He swallowed riches, and he will throw them up.\nGod will force them out of his stomach."
+    },
+    {
+     "v": 16,
+     "text": "He sucks cobra venom,\nand a viper’s{b} fangs kill him."
+    },
+    {
+     "v": 17,
+     "text": "He will never enjoy the streams,\nthe rivers flowing with honey and cream."
+    },
+    {
+     "v": 18,
+     "text": "He must hand over what he worked for, with nothing to eat.\nHe gets no pleasure from the money he earned."
+    },
+    {
+     "v": 19,
+     "text": "He crushed the poor and left them.\nHe took a house he never built."
+    },
+    {
+     "v": 20,
+     "text": "“His belly was never still,\nso he will not keep the things he craved."
+    },
+    {
+     "v": 21,
+     "text": "Nothing was left that he did not gobble up,\nso his good times will not last."
+    },
+    {
+     "v": 22,
+     "text": "Even in his fullness, he will be squeezed.\nEvery hand of the miserable will turn on him."
+    },
+    {
+     "v": 23,
+     "text": "While he is filling his stomach,\nGod{c} will send his blazing anger against him\nand rain it down on him as his meal.{d}"
+    },
+    {
+     "v": 24,
+     "text": "If he flees from an iron sword,\na bronze-tipped bow will run him through."
+    },
+    {
+     "v": 25,
+     "text": "He pulls it out, and it comes through his back.\nThe shining point comes out of his liver.\nTerrors close in on him."
+    },
+    {
+     "v": 26,
+     "text": "Total darkness waits for his treasures.\nA fire no one lit will burn him up,\nand eat what is left in his tent."
+    },
+    {
+     "v": 27,
+     "text": "Heaven will lay bare his guilt,\nand the earth will stand up against him."
+    },
+    {
+     "v": 28,
+     "text": "A flood will wash away his household’s goods\non the day God’s{e} anger breaks."
+    },
+    {
+     "v": 29,
+     "text": "That is the share God gives the wicked,\nthe property God sets aside for him.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "20:10",
+     "text": "Or “The poor will crush his children.”"
+    },
+    {
+     "m": "b",
+     "ref": "20:16",
+     "text": "The Hebrew word names a poisonous snake. The exact kind is uncertain."
+    },
+    {
+     "m": "c",
+     "ref": "20:23",
+     "text": "Original: “he.”"
+    },
+    {
+     "m": "d",
+     "ref": "20:23",
+     "text": "The Hebrew word is uncertain. It may mean “into his flesh” or “as his food.”"
+    },
+    {
+     "m": "e",
+     "ref": "20:28",
+     "text": "That is, God’s."
+    }
+   ],
+   "subheads": {
+    "1": "Zophar Says the Wicked Will Not Last",
+    "12": "Stolen Riches Turn Sour",
+    "20": "God’s Anger Falls"
+   }
+  },
+  {
+   "n": 21,
+   "paras": [
+    1,
+    2,
+    7,
+    17,
+    27
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Job replied:"
+    },
+    {
+     "v": 2,
+     "text": "“Listen closely to my words.\nLet that be the comfort you give me."
+    },
+    {
+     "v": 3,
+     "text": "Put up with me while I speak.\nWhen I finish, you may laugh."
+    },
+    {
+     "v": 4,
+     "text": "Is my complaint against a human being?\nWhy should I not lose patience?"
+    },
+    {
+     "v": 5,
+     "text": "Stare at me and be stunned.\nClap a hand across your mouth."
+    },
+    {
+     "v": 6,
+     "text": "Whenever I think of it, I shake with horror,\nand my body trembles."
+    },
+    {
+     "v": 7,
+     "text": "“Why do wicked people keep on living?\nThey grow old and become powerful."
+    },
+    {
+     "v": 8,
+     "text": "They watch their children settle near them,\nand their grandchildren grow up in view."
+    },
+    {
+     "v": 9,
+     "text": "Peace and safety fill their houses.\nGod’s rod never lands on them."
+    },
+    {
+     "v": 10,
+     "text": "Their bulls breed every time.\nTheir cows give birth and never lose a calf."
+    },
+    {
+     "v": 11,
+     "text": "They let their little ones run out like lambs,\nand their children skip and dance."
+    },
+    {
+     "v": 12,
+     "text": "They sing along with tambourine and harp.\nThey are happy at the sound of the flute."
+    },
+    {
+     "v": 13,
+     "text": "They spend their days in comfort,\nthen go down to the grave{a} in a moment."
+    },
+    {
+     "v": 14,
+     "text": "And yet they say to God, ‘Leave us alone!\nYour ways hold no interest for us."
+    },
+    {
+     "v": 15,
+     "text": "Who is Shaddai, that we should work for him?\nWhere is the profit in begging for his help?’"
+    },
+    {
+     "v": 16,
+     "text": "Look: their success is in their own grip.\n(The way the wicked plan is not my way.)"
+    },
+    {
+     "v": 17,
+     "text": "“How many times is the wicked man’s lamp snuffed out?\nHow often does ruin fall on them?\nHow often does God deal out suffering in his fury?"
+    },
+    {
+     "v": 18,
+     "text": "How many are blown like straw before the wind,\nor like dry husks that a storm carries off?"
+    },
+    {
+     "v": 19,
+     "text": "You say, ‘God saves up a man’s guilt for his children.’\nNo, let God pay it back to the man himself, so he will feel it!"
+    },
+    {
+     "v": 20,
+     "text": "Let him see his own downfall with his own eyes.\nLet him drink the fury of Shaddai himself."
+    },
+    {
+     "v": 21,
+     "text": "Once his months run out,\nwhat does he care about the house he leaves behind?"
+    },
+    {
+     "v": 22,
+     "text": "Can anyone teach God anything,\nwhen God judges even those on high?"
+    },
+    {
+     "v": 23,
+     "text": "One man dies strong and full of life,\ncompletely comfortable and safe,"
+    },
+    {
+     "v": 24,
+     "text": "his body well fed{b}\nand his bones full of marrow."
+    },
+    {
+     "v": 25,
+     "text": "Another dies bitter in spirit,\nnever having tasted anything good."
+    },
+    {
+     "v": 26,
+     "text": "Together they lie in the dirt,\nand maggots cover them both."
+    },
+    {
+     "v": 27,
+     "text": "“I know what you are thinking,\nand the plots you have against me."
+    },
+    {
+     "v": 28,
+     "text": "You ask, ‘Where is the palace of the ruler?\nWhere are the tents the wicked once lived in?’"
+    },
+    {
+     "v": 29,
+     "text": "Have you never asked travelers?\nDo you not accept what they report,"
+    },
+    {
+     "v": 30,
+     "text": "that the wicked are spared on the day of disaster,\nand carried to safety on the day of anger?{c}"
+    },
+    {
+     "v": 31,
+     "text": "Who tells him to his face what he has done?\nWho pays him back for his actions?"
+    },
+    {
+     "v": 32,
+     "text": "When he is carried to the cemetery,\nguards stand watch at his tomb."
+    },
+    {
+     "v": 33,
+     "text": "The dirt of the valley feels soft to him.\nA crowd follows him to the grave,\nand countless others went before him."
+    },
+    {
+     "v": 34,
+     "text": "So how can you comfort me with nonsense,\nwhen your replies are nothing but lies?”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "21:13",
+     "text": "Or “in peace they go down to the grave.”"
+    },
+    {
+     "m": "b",
+     "ref": "21:24",
+     "text": "The Hebrew word is found only here. It may mean “his pails” or “his sides.” The Septuagint says “his insides are full of fat.”"
+    },
+    {
+     "m": "c",
+     "ref": "21:30",
+     "text": "That is, they are rescued. Or “they are led away from the day of anger.”"
+    }
+   ],
+   "subheads": {
+    "1": "Job Asks Why the Wicked Do So Well",
+    "7": "Happy and Godless",
+    "17": "Does Trouble Really Fall on Them?",
+    "27": "Empty Comfort"
+   }
+  },
+  {
+   "n": 22,
+   "paras": [
+    1,
+    2,
+    12,
+    21
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Eliphaz from Teman replied:"
+    },
+    {
+     "v": 2,
+     "text": "“Can anyone do God a favor?\nA wise person only helps himself."
+    },
+    {
+     "v": 3,
+     "text": "Does Shaddai get any pleasure when you do right?\nDoes he gain anything when your ways are clean?"
+    },
+    {
+     "v": 4,
+     "text": "Is he correcting you because you honor him?\nIs that why he brings you to trial?"
+    },
+    {
+     "v": 5,
+     "text": "Is your wickedness not huge?\nDo your sins ever stop?"
+    },
+    {
+     "v": 6,
+     "text": "You took clothes as payment for debts from your own brothers, who owed nothing.\nYou stripped the poor of their clothing."
+    },
+    {
+     "v": 7,
+     "text": "You gave no water to tired people.\nYou kept bread from the hungry."
+    },
+    {
+     "v": 8,
+     "text": "The strong{a} man owned the land,\nand the favorite lived on it."
+    },
+    {
+     "v": 9,
+     "text": "You sent widows away with nothing.\nYou broke the strength of orphans."
+    },
+    {
+     "v": 10,
+     "text": "That is why traps surround you\nand sudden terror shakes you,"
+    },
+    {
+     "v": 11,
+     "text": "or darkness covers your eyes,\nand a flood of water drowns you."
+    },
+    {
+     "v": 12,
+     "text": "“Is God not high up in heaven?\nLook at the tops{b} of the stars, and see how far up they are!"
+    },
+    {
+     "v": 13,
+     "text": "You say, ‘What does God know?\nCan he judge us through dark clouds?"
+    },
+    {
+     "v": 14,
+     "text": "The clouds hide him so he cannot see us.\nHe just walks around on the dome{c} of the sky.’"
+    },
+    {
+     "v": 15,
+     "text": "Will you stay on the old road\nthat wicked people have walked?"
+    },
+    {
+     "v": 16,
+     "text": "They were swept off before their time.\nTheir foundations were washed away like a river."
+    },
+    {
+     "v": 17,
+     "text": "They told God, ‘Go away!’\nThey asked, ‘What can Shaddai do to them?’{d}"
+    },
+    {
+     "v": 18,
+     "text": "Still, he had loaded their homes with good things.\n(The way the wicked plan is not my way.)"
+    },
+    {
+     "v": 19,
+     "text": "Good people see their end and are glad.\nThe innocent laugh at them and say,"
+    },
+    {
+     "v": 20,
+     "text": "‘Our enemies{e} are truly wiped out,\nand fire has burned up whatever they had left.’"
+    },
+    {
+     "v": 21,
+     "text": "“Make peace with God and give in to him.\nThen good things will come to you."
+    },
+    {
+     "v": 22,
+     "text": "Take instruction from his mouth,\nand store his words in your heart."
+    },
+    {
+     "v": 23,
+     "text": "If you come back to Shaddai, you will be rebuilt,\nand if you drive evil far from your tent,"
+    },
+    {
+     "v": 24,
+     "text": "if you toss your gold into the dirt,\nyour fine gold of Ophir{f} among the creek stones,"
+    },
+    {
+     "v": 25,
+     "text": "then Shaddai himself will be your gold,\nand your piles of silver.{g}"
+    },
+    {
+     "v": 26,
+     "text": "Then you will find joy in Shaddai\nand look up to God."
+    },
+    {
+     "v": 27,
+     "text": "You will pray, and he will listen,\nand you will pay what you promised."
+    },
+    {
+     "v": 28,
+     "text": "Your plans will work out,\nand light will fall across your road."
+    },
+    {
+     "v": 29,
+     "text": "When people are cast down, you will say, ‘Raise them up!’{h}\nand he will rescue the one with downcast eyes."
+    },
+    {
+     "v": 30,
+     "text": "He will even rescue someone who is guilty.\nHe will rescue him because your hands are clean.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "22:8",
+     "text": "Original: “the man of arm,” that is, a powerful man."
+    },
+    {
+     "m": "b",
+     "ref": "22:12",
+     "text": "Original: “head.”"
+    },
+    {
+     "m": "c",
+     "ref": "22:14",
+     "text": "The Hebrew word means the circle or dome of the sky."
+    },
+    {
+     "m": "d",
+     "ref": "22:17",
+     "text": "This follows the Hebrew. The Septuagint says “What will the Lord do to us?”"
+    },
+    {
+     "m": "e",
+     "ref": "22:20",
+     "text": "The Hebrew word is found only here and is uncertain."
+    },
+    {
+     "m": "f",
+     "ref": "22:24",
+     "text": "Ophir was a land famous for its fine gold. It may have been in southern Arabia or East Africa. The Septuagint says “Sophir.”"
+    },
+    {
+     "m": "g",
+     "ref": "22:25",
+     "text": "The Hebrew word is rare. It may mean “heaps” or “fine silver.”"
+    },
+    {
+     "m": "h",
+     "ref": "22:29",
+     "text": "Or “pride.” The Hebrew of this verse is uncertain."
+    }
+   ],
+   "subheads": {
+    "1": "Eliphaz Lists Job’s Supposed Sins",
+    "12": "Does God See Through the Clouds?",
+    "21": "Come Back to Shaddai"
+   }
+  },
+  {
+   "n": 23,
+   "paras": [
+    1,
+    2,
+    8
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Job replied:"
+    },
+    {
+     "v": 2,
+     "text": "“Even today my complaint is bitter rebellion.{a}\nHis{b} hand is heavy on my groaning."
+    },
+    {
+     "v": 3,
+     "text": "If only I could learn where he is!\nIf only I could reach his house!"
+    },
+    {
+     "v": 4,
+     "text": "I would present my case in his court\nand stock my mouth with arguments."
+    },
+    {
+     "v": 5,
+     "text": "I would find out the answer he would give,\nand grasp what he meant for me."
+    },
+    {
+     "v": 6,
+     "text": "Would he fight me with all his power?\nNo, he would listen to me."
+    },
+    {
+     "v": 7,
+     "text": "An honest man could argue with him there,\nand I would be free of my judge for good."
+    },
+    {
+     "v": 8,
+     "text": "“But I walk east, and he is absent.\nI walk west, and I do not see him."
+    },
+    {
+     "v": 9,
+     "text": "When he works in the north, I catch no glimpse of him.\nWhen he turns south, he stays out of my sight.{c}"
+    },
+    {
+     "v": 10,
+     "text": "But he knows the road I am on.\nWhen he has tested me, I will come out as pure gold."
+    },
+    {
+     "v": 11,
+     "text": "My feet have stayed in his footprints.\nI have followed his path and not wandered away."
+    },
+    {
+     "v": 12,
+     "text": "I never stepped away from the command of his lips.\nI valued what he said above my daily bread.{d}"
+    },
+    {
+     "v": 13,
+     "text": "But he stands alone,{e} and who can change his mind?\nWhatever he wants, he does."
+    },
+    {
+     "v": 14,
+     "text": "He will carry out his plans for me,\nand he has many more like them."
+    },
+    {
+     "v": 15,
+     "text": "So his presence makes me shake.\nThe more I think, the more I fear him."
+    },
+    {
+     "v": 16,
+     "text": "God has made my courage melt.\nShaddai has filled me with dread."
+    },
+    {
+     "v": 17,
+     "text": "Yet the darkness does not keep me quiet,\nnor the gloom that covers my face.{f}”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "23:2",
+     "text": "The Hebrew word means “rebellion.” The Syriac, the Targum, and the Latin read “bitter.”"
+    },
+    {
+     "m": "b",
+     "ref": "23:2",
+     "text": "This follows the Septuagint and the Syriac. The Hebrew says “my.”"
+    },
+    {
+     "m": "c",
+     "ref": "23:9",
+     "text": "Original: “forward, backward, left, and right,” which may also be read as “east, west, north, and south.”"
+    },
+    {
+     "m": "d",
+     "ref": "23:12",
+     "text": "This follows the Hebrew: “more than my portion.” The Septuagint and the Latin say “in my heart.”"
+    },
+    {
+     "m": "e",
+     "ref": "23:13",
+     "text": "Or “he never changes.” Or, with a small change, “he has chosen.”"
+    },
+    {
+     "m": "f",
+     "ref": "23:17",
+     "text": "The Hebrew of this verse is uncertain."
+    }
+   ],
+   "subheads": {
+    "1": "If Only I Could Find God",
+    "8": "He Is Not Here, Yet He Knows Me"
+   }
+  },
+  {
+   "n": 24,
+   "paras": [
+    1,
+    13,
+    18
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“Why does Shaddai set no times for judging?\nWhy do his friends wait in vain to see his days?{a}"
+    },
+    {
+     "v": 2,
+     "text": "People move boundary stones.\nThey steal flocks and graze them as their own."
+    },
+    {
+     "v": 3,
+     "text": "They drive off the orphan’s donkey.\nThey hold a widow’s ox as a pledge."
+    },
+    {
+     "v": 4,
+     "text": "They shove the poor off the road.\nAll the humble of the land have to hide."
+    },
+    {
+     "v": 5,
+     "text": "Like wild donkeys in the desert,\nthe poor go out to work, hunting for food.\nThe wasteland gives bread to their children."
+    },
+    {
+     "v": 6,
+     "text": "They harvest crops in a field that is not theirs,{b}\nand gather leftover grapes in the vineyard of wicked men."
+    },
+    {
+     "v": 7,
+     "text": "They spend the night naked, with no clothes.\nThey have no cover against the cold."
+    },
+    {
+     "v": 8,
+     "text": "They are soaked by mountain rain,\nand with no shelter they huddle against rocks."
+    },
+    {
+     "v": 9,
+     "text": "Evil men snatch the orphan from the breast.\nThey take the poor man’s coat as a pledge."
+    },
+    {
+     "v": 10,
+     "text": "The poor go about naked, with no clothing,\nand carry sacks of grain while hungry."
+    },
+    {
+     "v": 11,
+     "text": "Between rows of olive trees{c} they press oil,\nand tread winepresses while they are thirsty."
+    },
+    {
+     "v": 12,
+     "text": "In the city the dying groan.\nThe wounded cry out for help.\nYet God does not call it wrong.{d}"
+    },
+    {
+     "v": 13,
+     "text": "“There is another group: they hate the light.\nThey do not learn its ways,\nand they never walk its paths."
+    },
+    {
+     "v": 14,
+     "text": "The killer rises when it is light\nto murder the poor and needy,\nand at night he prowls like a thief."
+    },
+    {
+     "v": 15,
+     "text": "The adulterer waits for evening to come.\nHe tells himself, ‘No eye will spot me,’\nand he veils his face."
+    },
+    {
+     "v": 16,
+     "text": "In the dark they dig into houses.\nIn daytime they lock themselves away.\nThey want no part of daylight."
+    },
+    {
+     "v": 17,
+     "text": "For all of them, deep gloom is morning,\nbecause they are friends with the terrors of the dark."
+    },
+    {
+     "v": 18,
+     "text": "“He{e} is a scrap on the face of the water.\nTheir land is cursed.\nNo one turns toward their vineyards."
+    },
+    {
+     "v": 19,
+     "text": "As drought and heat carry off snow water,\nso the grave carries off sinners."
+    },
+    {
+     "v": 20,
+     "text": "His mother’s womb forgets him. Worms feast on him.\nNo one remembers him,\nand wrong is snapped like a tree."
+    },
+    {
+     "v": 21,
+     "text": "He preys on{f} the childless woman,\nand does no good to the widow."
+    },
+    {
+     "v": 22,
+     "text": "Yet God{g} drags off the strong with his power.\nThey get up again, though they had given up hope of living."
+    },
+    {
+     "v": 23,
+     "text": "He lets them feel safe, and they rest on it,\nbut his eyes watch their ways."
+    },
+    {
+     "v": 24,
+     "text": "They are lifted high for a short time and then vanish.\nThey sink and are collected like all others.\nThey are cut off like the tips of grain."
+    },
+    {
+     "v": 25,
+     "text": "If this is not true, who will prove me a liar\nand show my words are nothing?”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "24:1",
+     "text": "The order of chapters 24–27 is disputed. Some speeches seem to be missing or misplaced: Bildad’s third speech (chapter 25) is very short, Zophar has no third speech, and parts of 24:18–25 and 27:13–23 sound like the friends. Many scholars rearrange these chapters. This book keeps the traditional order."
+    },
+    {
+     "m": "b",
+     "ref": "24:6",
+     "text": "Original: “his fodder.” Or, dividing the letters differently, “at night.” The Hebrew is uncertain."
+    },
+    {
+     "m": "c",
+     "ref": "24:11",
+     "text": "The Hebrew word is rare. It may mean the walls of terraces in olive groves."
+    },
+    {
+     "m": "d",
+     "ref": "24:12",
+     "text": "The Syriac says “God does not listen to their prayer.” The Hebrew says God does not charge folly."
+    },
+    {
+     "m": "e",
+     "ref": "24:18",
+     "text": "Verses 18–24 are hard. Many think Job is quoting his friends here (“You say...”)."
+    },
+    {
+     "m": "f",
+     "ref": "24:21",
+     "text": "Or “he wrongs.” The Hebrew is uncertain."
+    },
+    {
+     "m": "g",
+     "ref": "24:22",
+     "text": "Original: “he.”"
+    }
+   ],
+   "subheads": {
+    "1": "Why Does God Not Set Times of Judgment?",
+    "13": "Those Who Hate the Light",
+    "18": "The Fate of Sinners"
+   }
+  },
+  {
+   "n": 25,
+   "paras": [
+    1,
+    2
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Bildad from Shuah replied:"
+    },
+    {
+     "v": 2,
+     "text": "“Rule and awe belong to God.\nHe keeps peace in the heights of heaven."
+    },
+    {
+     "v": 3,
+     "text": "Who could count his armies?\nOn whom does his light not rise?"
+    },
+    {
+     "v": 4,
+     "text": "So how can any mortal be in the right before God?\nHow could someone born of a woman be clean?"
+    },
+    {
+     "v": 5,
+     "text": "Even the moon is not bright enough for him,\nand the stars are not pure in his eyes."
+    },
+    {
+     "v": 6,
+     "text": "A human is far less, only a maggot.\nA person is only a worm!”{a}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "25:6",
+     "text": "Bildad’s third speech is very short. Some scholars think part of it is found in 26:5–14. See the note at 24:1."
+    }
+   ],
+   "subheads": {
+    "1": "Bildad’s Short Speech"
+   }
+  },
+  {
+   "n": 26,
+   "paras": [
+    1,
+    2,
+    5
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Job replied:"
+    },
+    {
+     "v": 2,
+     "text": "“What a help you have been to someone with no strength!\nWhat a rescue for a worn-out arm!"
+    },
+    {
+     "v": 3,
+     "text": "What fine advice you gave to a man with no wisdom,\nand what wonderful insight{a} you showed!"
+    },
+    {
+     "v": 4,
+     "text": "Who helped you find those words?\nWhose spirit spoke through you?"
+    },
+    {
+     "v": 5,
+     "text": "“The spirits of the dead{b} tremble\nunder the waters and all who live there."
+    },
+    {
+     "v": 6,
+     "text": "The grave lies open in front of God,\nand Abaddon{c} has no cover."
+    },
+    {
+     "v": 7,
+     "text": "He stretches the sky of the north over empty space.\nHe hangs the earth on nothing at all."
+    },
+    {
+     "v": 8,
+     "text": "He ties up the waters in his rain clouds,\nyet the clouds do not burst under the weight."
+    },
+    {
+     "v": 9,
+     "text": "He hides the round face of the moon{d}\nby pulling a cloud across it."
+    },
+    {
+     "v": 10,
+     "text": "He drew a circle on the face of the water,\nwhere light and darkness meet."
+    },
+    {
+     "v": 11,
+     "text": "The pillars of heaven shake,\nstunned at his roar."
+    },
+    {
+     "v": 12,
+     "text": "With his power he calmed{e} the sea.\nWith his skill he crushed Rahab.{f}"
+    },
+    {
+     "v": 13,
+     "text": "His breath cleared the skies,{g}\nand his hand pierced the fleeing snake.{h}"
+    },
+    {
+     "v": 14,
+     "text": "These are only the edges of his work.\nHow small a whisper of him we hear!\nWho can grasp the thunder of his great power?”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "26:3",
+     "text": "The Hebrew word is the same as in 5:12."
+    },
+    {
+     "m": "b",
+     "ref": "26:5",
+     "text": "Original: “Rephaim,” the shades of the dead. The Septuagint says “Will giants be born under the water?”"
+    },
+    {
+     "m": "c",
+     "ref": "26:6",
+     "text": "Abaddon means “destruction.” It is a poetic name for the place of the dead (see 28:22; 31:12; Revelation 9:11)."
+    },
+    {
+     "m": "d",
+     "ref": "26:9",
+     "text": "Or “his throne.” The Hebrew words for “throne” and “full moon” are spelled alike."
+    },
+    {
+     "m": "e",
+     "ref": "26:12",
+     "text": "Or “stirred up.”"
+    },
+    {
+     "m": "f",
+     "ref": "26:12",
+     "text": "Rahab was a sea monster in old stories, a picture of chaos. See the note at 9:13. The Septuagint says “by his wisdom the great sea animal was overthrown.”"
+    },
+    {
+     "m": "g",
+     "ref": "26:13",
+     "text": "The Hebrew word is found only here. It may mean “fair” or “clear.”"
+    },
+    {
+     "m": "h",
+     "ref": "26:13",
+     "text": "Or “the gliding snake,” as in Isaiah 27:1, where it describes Leviathan. The Septuagint says “by his command he killed the rebel dragon.”"
+    }
+   ],
+   "subheads": {
+    "1": "Job Mocks Their Help",
+    "5": "God’s Great Power"
+   }
+  },
+  {
+   "n": 27,
+   "paras": [
+    1,
+    2,
+    7,
+    13
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Job spoke again in a poem{a} and said:"
+    },
+    {
+     "v": 2,
+     "text": "“I swear by God, who is alive and who took away my rights,\nand by Shaddai, who has filled my soul with bitterness:"
+    },
+    {
+     "v": 3,
+     "text": "for as long as there is breath in me,\nand God’s spirit stays in my nostrils,"
+    },
+    {
+     "v": 4,
+     "text": "my lips will speak nothing false.\nMy tongue will not whisper a lie."
+    },
+    {
+     "v": 5,
+     "text": "Never will I say that you are right.\nUntil my last breath I will hold on to my honesty."
+    },
+    {
+     "v": 6,
+     "text": "I will keep my goodness and never let it go.\nMy heart will not blame me for any day of my life."
+    },
+    {
+     "v": 7,
+     "text": "“May my enemy be treated as the wicked are,\nand my attacker as the unjust."
+    },
+    {
+     "v": 8,
+     "text": "What hope do the godless have when their lives are cut off,\nwhen God takes away their breath?"
+    },
+    {
+     "v": 9,
+     "text": "Will God listen to their cry\nwhen trouble comes down on them?"
+    },
+    {
+     "v": 10,
+     "text": "Will they find joy in Shaddai?\nWill they call on God at every hour?"
+    },
+    {
+     "v": 11,
+     "text": "“Let me teach you about God’s hand.\nI will not hold back what Shaddai does."
+    },
+    {
+     "v": 12,
+     "text": "All of you have seen it yourselves.\nWhy, then, is your talk so empty?"
+    },
+    {
+     "v": 13,
+     "text": "“This is what God hands the wicked man,{b}\nthe share that cruel people get from Shaddai:"
+    },
+    {
+     "v": 14,
+     "text": "If he has many sons, they are marked for the sword,\nand his children will never have enough bread."
+    },
+    {
+     "v": 15,
+     "text": "Those who outlive him will be buried by disease,{c}\nand their widows will not mourn."
+    },
+    {
+     "v": 16,
+     "text": "He may pile up silver like dirt\nand stock clothes like clay."
+    },
+    {
+     "v": 17,
+     "text": "He can stock them, but good people will wear them,\nand innocent people will share the silver."
+    },
+    {
+     "v": 18,
+     "text": "The house he builds is as frail as a moth’s cocoon,{d}\nlike a hut a guard puts up."
+    },
+    {
+     "v": 19,
+     "text": "He goes to bed rich, but he is never gathered to his family.{e}\nThen he opens his eyes, and it is all gone."
+    },
+    {
+     "v": 20,
+     "text": "Terrors flood over him like waters.\nA storm wind snatches him in the night."
+    },
+    {
+     "v": 21,
+     "text": "A scorching wind lifts him up and carries him off.\nIt sweeps him away from his home."
+    },
+    {
+     "v": 22,
+     "text": "It hurls itself at him{f} with no pity.\nHe runs headlong to escape it."
+    },
+    {
+     "v": 23,
+     "text": "It claps its hands at him\nand whistles him out of his place.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "27:1",
+     "text": "The Hebrew word mashal means a saying, a story, or a poem. See also 29:1."
+    },
+    {
+     "m": "b",
+     "ref": "27:13",
+     "text": "Many scholars think 27:13–23 belongs to the missing third speech of Zophar, since it repeats what the friends teach about the wicked. See the note at 24:1 and compare 20:29."
+    },
+    {
+     "m": "c",
+     "ref": "27:15",
+     "text": "Original: “by death,” probably a plague. Compare Jeremiah 15:2."
+    },
+    {
+     "m": "d",
+     "ref": "27:18",
+     "text": "Hebrew “moth.” Some read “spider.” Compare 8:14. The Septuagint says “like moths and like a spider’s web.”"
+    },
+    {
+     "m": "e",
+     "ref": "27:19",
+     "text": "Or, with the Septuagint and the Syriac, “he will do so no more.”"
+    },
+    {
+     "m": "f",
+     "ref": "27:22",
+     "text": "Or “God hurls at him.”"
+    }
+   ],
+   "subheads": {
+    "1": "Job Holds to His Honesty",
+    "7": "The Wicked Man’s End",
+    "13": "What God Gives the Cruel"
+   }
+  },
+  {
+   "n": 28,
+   "paras": [
+    1,
+    12,
+    20
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“There is a mine{a} for silver,\nand a place where gold is refined."
+    },
+    {
+     "v": 2,
+     "text": "Iron comes out of the soil,\nand rock is melted down into copper."
+    },
+    {
+     "v": 3,
+     "text": "People push back the darkness.\nThey search to the farthest limits\nfor ore in the black depths."
+    },
+    {
+     "v": 4,
+     "text": "They cut a shaft far from where anyone lives.{b}\nNo foot has been near.\nThey dangle far from people and swing back and forth."
+    },
+    {
+     "v": 5,
+     "text": "The earth above gives food,\nbut below it is torn up as if by fire."
+    },
+    {
+     "v": 6,
+     "text": "Its rocks hold sapphires,{c}\nand its dust holds gold."
+    },
+    {
+     "v": 7,
+     "text": "No hunting bird knows that path.\nNo falcon{d} has ever seen it."
+    },
+    {
+     "v": 8,
+     "text": "Stately animals{e} have never stepped on it.\nNo lion has ever stalked that way."
+    },
+    {
+     "v": 9,
+     "text": "Workers strike the hard rock.\nThey flip mountains over from their roots."
+    },
+    {
+     "v": 10,
+     "text": "They cut tunnels through the stone,\nand their eyes spot every treasure."
+    },
+    {
+     "v": 11,
+     "text": "They block the streams from trickling.\nThey drag hidden things into the light."
+    },
+    {
+     "v": 12,
+     "text": "“But where does wisdom come from?\nWhere is the home of understanding?"
+    },
+    {
+     "v": 13,
+     "text": "No human knows the price of it,{f}\nand it cannot be found in the land of the living."
+    },
+    {
+     "v": 14,
+     "text": "The ocean depths report, ‘It is not here.’\nThe sea reports, ‘It is not with me.’"
+    },
+    {
+     "v": 15,
+     "text": "Pure gold{g} cannot buy it.\nNo amount of silver can pay for it."
+    },
+    {
+     "v": 16,
+     "text": "It is worth more than gold from Ophir,\nmore than precious onyx{h} or sapphire."
+    },
+    {
+     "v": 17,
+     "text": "Gold and glass{i} cannot match it.\nFine gold jars cannot trade for it."
+    },
+    {
+     "v": 18,
+     "text": "Coral and crystal{j} are not worth a mention.\nOwning wisdom is worth more than pearls.{k}"
+    },
+    {
+     "v": 19,
+     "text": "Topaz{l} from Cush{m} cannot compare.\nRefined gold cannot pay for it."
+    },
+    {
+     "v": 20,
+     "text": "“Then where does wisdom come from?\nWhere is the home of understanding?"
+    },
+    {
+     "v": 21,
+     "text": "It is hidden from the eyes of everything alive.\nEven the birds of the sky cannot see it."
+    },
+    {
+     "v": 22,
+     "text": "Abaddon and Death say,\n‘We have only heard a rumor of it.’"
+    },
+    {
+     "v": 23,
+     "text": "God understands the way to it.\nHe alone knows where it lives."
+    },
+    {
+     "v": 24,
+     "text": "He looks to the ends of the earth\nand sees everything under the sky."
+    },
+    {
+     "v": 25,
+     "text": "When he gave the wind its weight\nand measured out the water,"
+    },
+    {
+     "v": 26,
+     "text": "when he made a law for the rain\nand charted the route of the lightning,"
+    },
+    {
+     "v": 27,
+     "text": "then he saw wisdom and spoke of it.\nHe set it up and tested it."
+    },
+    {
+     "v": 28,
+     "text": "And he told human beings,\n‘Respect for the Lord{n} is wisdom,\nand turning away from evil is understanding.’”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "28:1",
+     "text": "The Hebrew word means “a place of going out,” that is, a mine."
+    },
+    {
+     "m": "b",
+     "ref": "28:4",
+     "text": "The Hebrew of this verse is hard to read. It seems to describe miners lowered into a shaft on ropes."
+    },
+    {
+     "m": "c",
+     "ref": "28:6",
+     "text": "The Hebrew word is probably lapis lazuli rather than the sapphire we know today. It appears again in verse 16."
+    },
+    {
+     "m": "d",
+     "ref": "28:7",
+     "text": "The Hebrew word names a bird of prey. It may be a falcon or a kite."
+    },
+    {
+     "m": "e",
+     "ref": "28:8",
+     "text": "Original: “sons of pride,” perhaps big wild beasts. The phrase is found only here and in 41:34."
+    },
+    {
+     "m": "f",
+     "ref": "28:13",
+     "text": "The Septuagint says “its way.”"
+    },
+    {
+     "m": "g",
+     "ref": "28:15",
+     "text": "The Hebrew word is rare. It may mean “closed” (refined) gold."
+    },
+    {
+     "m": "h",
+     "ref": "28:16",
+     "text": "The Hebrew name of this stone is uncertain. Onyx, carnelian, or lapis lazuli have been suggested. The names of the precious stones in this passage cannot be known for sure. The Septuagint says “gold of Sophir, with precious onyx and sapphire.”"
+    },
+    {
+     "m": "i",
+     "ref": "28:17",
+     "text": "The Hebrew word is found only here. It probably means glass, which was costly then. The Septuagint says “crystal.”"
+    },
+    {
+     "m": "j",
+     "ref": "28:18",
+     "text": "The Hebrew names are both uncertain. They may mean coral and crystal (or jasper). The Septuagint says “coral and fine pearl.”"
+    },
+    {
+     "m": "k",
+     "ref": "28:18",
+     "text": "The Hebrew word may mean pearls, red coral, or rubies. This is uncertain."
+    },
+    {
+     "m": "l",
+     "ref": "28:19",
+     "text": "The Hebrew word is probably topaz or peridot, which came from an island in the Red Sea. The Septuagint says “the topaz of Ethiopia.”"
+    },
+    {
+     "m": "m",
+     "ref": "28:19",
+     "text": "That is, the upper Nile region."
+    },
+    {
+     "m": "n",
+     "ref": "28:28",
+     "text": "Hebrew Adonai, “Lord.” It is the only time it is used in Job. Some Hebrew copies are said to read Yahweh."
+    }
+   ],
+   "subheads": {
+    "1": "Digging for Treasure",
+    "12": "But Where Is Wisdom?",
+    "20": "The Fear of the Lord"
+   }
+  },
+  {
+   "n": 29,
+   "paras": [
+    1,
+    2,
+    18,
+    21
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Job spoke again in a poem and said:"
+    },
+    {
+     "v": 2,
+     "text": "“How I wish I could go back to the months of long ago,\nto the days when God looked after me,"
+    },
+    {
+     "v": 3,
+     "text": "when his lamp shone over my head,\nand his light guided me through the dark,"
+    },
+    {
+     "v": 4,
+     "text": "when I was in the autumn of my life,{a}\nand God’s friendship{b} blessed my tent,"
+    },
+    {
+     "v": 5,
+     "text": "when Shaddai was still close by,\nand my children{c} gathered around me,"
+    },
+    {
+     "v": 6,
+     "text": "when cream washed my feet,\nand rivers of olive oil flowed for me out of the rock!"
+    },
+    {
+     "v": 7,
+     "text": "Whenever I walked to the town gate\nand took my chair in the open square,"
+    },
+    {
+     "v": 8,
+     "text": "Young men saw me and stepped aside.\nOld men stood up."
+    },
+    {
+     "v": 9,
+     "text": "Leaders went silent\nand pressed their hands to their mouths."
+    },
+    {
+     "v": 10,
+     "text": "Nobles hushed their voices,\nand their tongues stuck to the roofs of their mouths."
+    },
+    {
+     "v": 11,
+     "text": "Whoever heard me called me happy.\nWhoever saw me gave a good report of me."
+    },
+    {
+     "v": 12,
+     "text": "I saved the poor from their cries for help,\nand orphans who had nobody on their side."
+    },
+    {
+     "v": 13,
+     "text": "A dying man blessed me.\nI made a widow’s heart sing for joy."
+    },
+    {
+     "v": 14,
+     "text": "I wore justice like a coat.\nMy fairness was my cloak and my turban."
+    },
+    {
+     "v": 15,
+     "text": "To the blind I was eyes,\nand to the lame I was feet."
+    },
+    {
+     "v": 16,
+     "text": "I was a father to the needy.\nI looked into the lawsuits of strangers."
+    },
+    {
+     "v": 17,
+     "text": "I smashed the teeth of the cruel\nand pulled their victims out of their jaws."
+    },
+    {
+     "v": 18,
+     "text": "“I thought, ‘I will die in my own nest,\nand I will have as many days as there are grains of sand.{d}"
+    },
+    {
+     "v": 19,
+     "text": "My roots reach down to water,\nand dew rests on my branches all night."
+    },
+    {
+     "v": 20,
+     "text": "My honor stays fresh with me,\nand my bow is strong in my hand.’"
+    },
+    {
+     "v": 21,
+     "text": "“They listened to me and held their breath,\nand they waited in silence for my advice."
+    },
+    {
+     "v": 22,
+     "text": "After I spoke, no one spoke again.\nMy words fell on them like drops."
+    },
+    {
+     "v": 23,
+     "text": "They waited for me the way they wait for rain.\nThey opened their mouths wide for spring showers."
+    },
+    {
+     "v": 24,
+     "text": "When they had lost hope, I smiled at them,\nand they never let my good mood fade.{e}"
+    },
+    {
+     "v": 25,
+     "text": "I picked the path for them and sat at the head.\nI lived like a king in the midst of his army,\nlike one who comforts those in grief.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "29:4",
+     "text": "Original: “the days of my autumn,” that is, the full harvest time of my life."
+    },
+    {
+     "m": "b",
+     "ref": "29:4",
+     "text": "The Hebrew word means “council” or “close friendship.” Some read “when God protected my tent.”"
+    },
+    {
+     "m": "c",
+     "ref": "29:5",
+     "text": "Or “my young men.”"
+    },
+    {
+     "m": "d",
+     "ref": "29:18",
+     "text": "Or “as the phoenix.” The Hebrew word for “sand” was taken by some ancient Jewish teachers as the name of the long-lived phoenix. The Septuagint says “like the trunk of a palm tree.”"
+    },
+    {
+     "m": "e",
+     "ref": "29:24",
+     "text": "The Hebrew of this verse is uncertain."
+    }
+   ],
+   "subheads": {
+    "1": "The Good Old Days",
+    "18": "Once I Expected a Long Life",
+    "21": "People Waited for My Advice"
+   }
+  },
+  {
+   "n": 30,
+   "paras": [
+    1,
+    9,
+    16,
+    24
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“But now I am laughed at\nby men younger than I am,\nmen whose fathers I would not have trusted\nto work with my sheepdogs."
+    },
+    {
+     "v": 2,
+     "text": "What use was their strength to me?\nTheir energy{a} had long since died."
+    },
+    {
+     "v": 3,
+     "text": "Hunger and want had made them skin and bone.\nThey chewed on dry ground,\nin the dark{b} of wasteland and ruin."
+    },
+    {
+     "v": 4,
+     "text": "They picked salty leaves{c} from the shrubs.\nThey ate roots of the broom bush.{d}"
+    },
+    {
+     "v": 5,
+     "text": "The community drove them out.\nPeople yelled after them as one yells after a thief."
+    },
+    {
+     "v": 6,
+     "text": "They had to live in dry stream cuts,\nin holes in the ground and in the rocks."
+    },
+    {
+     "v": 7,
+     "text": "They cried out like donkeys among the bushes.\nThey huddled together under the weeds.{e}"
+    },
+    {
+     "v": 8,
+     "text": "They were foolish people with no name,\nthrown out of the land with whips."
+    },
+    {
+     "v": 9,
+     "text": "“And now I am the subject of their songs.\nMy name has become a joke to them."
+    },
+    {
+     "v": 10,
+     "text": "They hate me and stay far away.\nThey do not even hold back from spitting in my face."
+    },
+    {
+     "v": 11,
+     "text": "Because God{f} has cut my bowstring and put me down,\nthey have thrown off all restraint around me."
+    },
+    {
+     "v": 12,
+     "text": "On my right side a mob{g} rises up.\nThey knock my feet out from under me\nand build ramps of ruin against me."
+    },
+    {
+     "v": 13,
+     "text": "They tear up my road.\nThey help my disaster along,\nand no one stops them.{h}"
+    },
+    {
+     "v": 14,
+     "text": "They pour in as through a wide hole in a wall.\nThey roll in over the rubble."
+    },
+    {
+     "v": 15,
+     "text": "Terrors are turned loose on me.\nMy dignity is blown off like it was chaff,\nand my safety has drifted by like a cloud."
+    },
+    {
+     "v": 16,
+     "text": "“Now my life drains out of me.\nDays of suffering have seized me."
+    },
+    {
+     "v": 17,
+     "text": "At night my bones ache, as if pierced,\nand the gnawing pain never rests."
+    },
+    {
+     "v": 18,
+     "text": "God grabs my clothes with great force,{i}\nand chokes me by my collar."
+    },
+    {
+     "v": 19,
+     "text": "He has flung me into the muck.\nI look like dust and ashes."
+    },
+    {
+     "v": 20,
+     "text": "I cry to you, God, and you give no answer.\nI rise to my feet, and you just stare.{j}"
+    },
+    {
+     "v": 21,
+     "text": "You have become hard-hearted toward me.\nYou strike me with the full force of your hand."
+    },
+    {
+     "v": 22,
+     "text": "You lift me onto the wind and make me ride it,\nthen dissolve me in the storm’s roar.{k}"
+    },
+    {
+     "v": 23,
+     "text": "I know you will send me to my death,\nto the house set aside for everyone alive."
+    },
+    {
+     "v": 24,
+     "text": "“Surely no one in a collapsing building refuses to reach out a hand,\nor cries for help when disaster comes.{l}"
+    },
+    {
+     "v": 25,
+     "text": "Did I not weep for people in hard times?\nDid my heart not ache for the poor?"
+    },
+    {
+     "v": 26,
+     "text": "I hoped for good, and evil came.\nI waited for light, and darkness came."
+    },
+    {
+     "v": 27,
+     "text": "My insides churn and will not settle.\nDays of suffering meet me head on."
+    },
+    {
+     "v": 28,
+     "text": "I wander about in black, though the sun did not burn me.\nI get up in the assembly and shout for help."
+    },
+    {
+     "v": 29,
+     "text": "I have become a brother of jackals\nand a friend of ostriches.{m}"
+    },
+    {
+     "v": 30,
+     "text": "My skin turns black and peels off.\nMy bones burn with fever."
+    },
+    {
+     "v": 31,
+     "text": "My harp plays only sad songs,\nand my flute plays the sound of weeping.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "30:2",
+     "text": "The Hebrew word is the same as in 5:26."
+    },
+    {
+     "m": "b",
+     "ref": "30:3",
+     "text": "The Hebrew word usually means “yesterday.” Here it may mean “gloom” or “at night.” The Hebrew of this verse is uncertain."
+    },
+    {
+     "m": "c",
+     "ref": "30:4",
+     "text": "The Hebrew word is found only here. It probably means saltbush, a salty plant the very poor ate. This is uncertain."
+    },
+    {
+     "m": "d",
+     "ref": "30:4",
+     "text": "The white broom is a desert shrub with bitter roots. Perhaps the roots were burned for warmth instead of eaten."
+    },
+    {
+     "m": "e",
+     "ref": "30:7",
+     "text": "The Hebrew word is uncertain. It may mean nettles, wild peas, or wild mustard."
+    },
+    {
+     "m": "f",
+     "ref": "30:11",
+     "text": "Original: “he.” The written Hebrew says “I,” but scribes read “he,” meaning God."
+    },
+    {
+     "m": "g",
+     "ref": "30:12",
+     "text": "The Hebrew word is found only here. It may mean “brood” or “mob.”"
+    },
+    {
+     "m": "h",
+     "ref": "30:13",
+     "text": "Or “with no one to hold them back.” The Hebrew is uncertain."
+    },
+    {
+     "m": "i",
+     "ref": "30:18",
+     "text": "This follows the Septuagint. The Hebrew says “my clothing changes shape.” The verse is uncertain."
+    },
+    {
+     "m": "j",
+     "ref": "30:20",
+     "text": "This follows the Hebrew. One Hebrew copy and the Latin are said to read “you do not look at me.”"
+    },
+    {
+     "m": "k",
+     "ref": "30:22",
+     "text": "The Hebrew has two different readings of the last word. The line is uncertain."
+    },
+    {
+     "m": "l",
+     "ref": "30:24",
+     "text": "The Hebrew of this verse is uncertain."
+    },
+    {
+     "m": "m",
+     "ref": "30:29",
+     "text": "Hebrew “daughters of the ostrich.” Some think this means owls. Jackals and ostriches both make sad cries. The Septuagint says “a brother of sea monsters and a friend of ostriches.”"
+    }
+   ],
+   "subheads": {
+    "1": "From Honor to Disgrace",
+    "9": "Mocked by Outcasts",
+    "16": "God Seems Cruel",
+    "24": "A Brother to Jackals"
+   }
+  },
+  {
+   "n": 31,
+   "paras": [
+    1,
+    5,
+    9,
+    13,
+    16,
+    24,
+    29,
+    38
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“I made a solemn promise to my eyes.\nHow could I look at a young woman with desire?"
+    },
+    {
+     "v": 2,
+     "text": "What would God above give me for that?\nWhat would Shaddai on high hand down?"
+    },
+    {
+     "v": 3,
+     "text": "Does disaster not wait for the wicked,\nand ruin for those who do evil?"
+    },
+    {
+     "v": 4,
+     "text": "Does God not see how I live\nand count every step I take?"
+    },
+    {
+     "v": 5,
+     "text": "“Have I walked with lies?\nHas my foot rushed after fraud?"
+    },
+    {
+     "v": 6,
+     "text": "Then weigh me on honest scales,\nand let God see that I am blameless."
+    },
+    {
+     "v": 7,
+     "text": "Have my steps left the right road?\nDid my heart chase after what my eyes saw?\nDid any dirt stick to my hands?"
+    },
+    {
+     "v": 8,
+     "text": "Then let someone else eat what I plant,\nand let my crops{a} be pulled up by the roots."
+    },
+    {
+     "v": 9,
+     "text": "“Has my heart been tempted by a woman?\nDid I lie in wait at my neighbor’s door?"
+    },
+    {
+     "v": 10,
+     "text": "Then let my wife cook for another man,\nand let others sleep with her."
+    },
+    {
+     "v": 11,
+     "text": "That would be a shameful crime,\na sin for judges to punish."
+    },
+    {
+     "v": 12,
+     "text": "It would be a fire that burns down to Abaddon\nand uproots everything I have grown."
+    },
+    {
+     "v": 13,
+     "text": "“Did I ever brush aside the complaint of a servant, male or female,\nwhen they brought a case against me?"
+    },
+    {
+     "v": 14,
+     "text": "What will I do when God gets up to judge?\nWhat can I say when he questions me?"
+    },
+    {
+     "v": 15,
+     "text": "The God who made me in the womb made them too.\nOne God shaped both of us before birth."
+    },
+    {
+     "v": 16,
+     "text": "“Did I refuse the poor what they needed,\nor make a widow’s eyes grow dim with tears?"
+    },
+    {
+     "v": 17,
+     "text": "Did I eat my bread alone\nwhile an orphan went without?"
+    },
+    {
+     "v": 18,
+     "text": "(From my youth I raised orphans like a father,\nand from birth I guided widows.{b})"
+    },
+    {
+     "v": 19,
+     "text": "Did I see someone dying from lack of clothes,\nor a poor man with nothing to wear,"
+    },
+    {
+     "v": 20,
+     "text": "and his body did not thank me,\nbecause I never warmed him with wool from my sheep?"
+    },
+    {
+     "v": 21,
+     "text": "Did I raise my fist against an orphan\nbecause I knew I had friends in the court at the gate?"
+    },
+    {
+     "v": 22,
+     "text": "Then let my shoulder fall from its blade,\nand let my arm snap off at the joint.{c}"
+    },
+    {
+     "v": 23,
+     "text": "I was afraid of disaster from God,\nand I could not stand against his greatness."
+    },
+    {
+     "v": 24,
+     "text": "“Did I put my trust in gold,\nor call pure gold my security?"
+    },
+    {
+     "v": 25,
+     "text": "Did I celebrate how large my wealth had grown,\nor how much my hands had earned?"
+    },
+    {
+     "v": 26,
+     "text": "Did I look at the sun{d} shining,\nor the moon moving in its glory,"
+    },
+    {
+     "v": 27,
+     "text": "and feel a secret pull in my heart\nand blow a kiss to them with my hand?{e}"
+    },
+    {
+     "v": 28,
+     "text": "That would be another sin for judges to punish,\nfor I would have denied God above."
+    },
+    {
+     "v": 29,
+     "text": "“Was I happy when my enemy fell?\nDid I cheer when trouble found him?"
+    },
+    {
+     "v": 30,
+     "text": "I never let my mouth sin\nby asking for his death in a curse."
+    },
+    {
+     "v": 31,
+     "text": "Did the people in my tent not say,\n‘Who has not had enough of Job’s food?’"
+    },
+    {
+     "v": 32,
+     "text": "No outsider had to spend the night in the street.\nMy doors stood open to travelers.{f}"
+    },
+    {
+     "v": 33,
+     "text": "Did I hide my sins as people do,{g}\nand tuck my guilt away inside me,"
+    },
+    {
+     "v": 34,
+     "text": "because I was afraid of the crowd,\nor terrified of the sneers of the clans,\nso I kept silent and stayed in the house?"
+    },
+    {
+     "v": 35,
+     "text": "How I wish someone would hear me!\nHere is my mark.{h} Let Shaddai reply!\nLet my accuser put his charge in writing!"
+    },
+    {
+     "v": 36,
+     "text": "I would carry it on my shoulder with pride.\nI would wrap it around my head like a crown."
+    },
+    {
+     "v": 37,
+     "text": "I would give God an account of every step I took.\nLike a prince, I would walk up to him."
+    },
+    {
+     "v": 38,
+     "text": "“If my land cries out against me,\nand all its furrows weep together,"
+    },
+    {
+     "v": 39,
+     "text": "if I ate its harvest without paying,\nor broke the spirit of its owners,"
+    },
+    {
+     "v": 40,
+     "text": "then may thorns come up where wheat should be,\nand stinking weeds{i} where barley should be.”\nJob’s speeches are finished."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "31:8",
+     "text": "Or “my children.”"
+    },
+    {
+     "m": "b",
+     "ref": "31:18",
+     "text": "Original: “her.” The Hebrew of this verse is uncertain; the “her” is probably a widow."
+    },
+    {
+     "m": "c",
+     "ref": "31:22",
+     "text": "Original: “from its reed,” that is, the upper arm bone."
+    },
+    {
+     "m": "d",
+     "ref": "31:26",
+     "text": "Original: “the light.”"
+    },
+    {
+     "m": "e",
+     "ref": "31:27",
+     "text": "This was an old way of worshiping the sun or moon."
+    },
+    {
+     "m": "f",
+     "ref": "31:32",
+     "text": "This follows the ancient versions. The Hebrew says “to the road.”"
+    },
+    {
+     "m": "g",
+     "ref": "31:33",
+     "text": "Or “like Adam.” The Hebrew word is adam, which may mean the first man or just people."
+    },
+    {
+     "m": "h",
+     "ref": "31:35",
+     "text": "Original: the Hebrew letter taw, the last letter, written as a cross-shaped mark. Here it is Job’s signature on his sworn statement."
+    },
+    {
+     "m": "i",
+     "ref": "31:40",
+     "text": "The Hebrew word is found only here. It is some harmful weed, perhaps cockle."
+    }
+   ],
+   "subheads": {
+    "1": "Job’s Final Oath",
+    "5": "If I Have Lied",
+    "9": "If I Have Chased Another Man’s Wife",
+    "13": "If I Was Unfair to My Servants",
+    "16": "If I Ignored the Poor",
+    "24": "If I Trusted in Gold",
+    "29": "If I Hated My Enemies",
+    "38": "If I Cheated the Land"
+   }
+  },
+  {
+   "n": 32,
+   "paras": [
+    1,
+    6,
+    11,
+    15
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "These three men gave up answering Job, since in his own eyes he was innocent."
+    },
+    {
+     "v": 2,
+     "text": "Then a fourth man, Elihu,{a} became angry. He was the son of Barachel{b} from the town of Buz,{c} of the family of Ram. He was angry with Job because Job had made himself out to be more right than God."
+    },
+    {
+     "v": 3,
+     "text": "He was angry with Job’s three friends as well. They had run out of answers, but they still made Job out to be guilty.{d}"
+    },
+    {
+     "v": 4,
+     "text": "Elihu had held back from talking to Job, since the others were older than he was."
+    },
+    {
+     "v": 5,
+     "text": "Now he saw that the three men had no reply left, and he burned with anger."
+    },
+    {
+     "v": 6,
+     "text": "So Elihu, son of Barachel from Buz, spoke up:\n“I am young,\nand you are very old.\nThat is why I held back\nand was afraid to tell you what I know."
+    },
+    {
+     "v": 7,
+     "text": "I thought, ‘Let age do the talking.\nLet many years teach wisdom.’"
+    },
+    {
+     "v": 8,
+     "text": "Yet a person’s understanding comes from a spirit,\nfrom the breath of Shaddai."
+    },
+    {
+     "v": 9,
+     "text": "It is not only the old{e} who are wise,\nor the aged who know what is fair."
+    },
+    {
+     "v": 10,
+     "text": "So I say, ‘Hear me out,\nand I will share my own knowledge.’"
+    },
+    {
+     "v": 11,
+     "text": "“Look, I held back while you spoke.\nI listened closely to your reasons\nwhile you hunted for words."
+    },
+    {
+     "v": 12,
+     "text": "I gave you my full attention,\nand no one among you proved Job wrong.\nNone of you replied to what he said."
+    },
+    {
+     "v": 13,
+     "text": "Do not say, ‘We have found wisdom.\nOnly God can beat him, not a man.’"
+    },
+    {
+     "v": 14,
+     "text": "Job has not aimed his words at me,\nand I will not answer him with your arguments."
+    },
+    {
+     "v": 15,
+     "text": "“They are stunned and have no answer.\nThey have run out of words."
+    },
+    {
+     "v": 16,
+     "text": "Should I keep waiting now that they are silent,\nnow that they stand there and say nothing more?"
+    },
+    {
+     "v": 17,
+     "text": "I will give my share of the answer.\nI will tell what I know."
+    },
+    {
+     "v": 18,
+     "text": "For I am stuffed with words,\nand the spirit in me presses hard."
+    },
+    {
+     "v": 19,
+     "text": "My insides are like wine with no vent,\nlike new wineskins about to split."
+    },
+    {
+     "v": 20,
+     "text": "I need to speak so I can feel better.\nI need to open my lips and reply."
+    },
+    {
+     "v": 21,
+     "text": "I will not take sides with anyone,\nand I will not flatter anyone."
+    },
+    {
+     "v": 22,
+     "text": "I have no talent for flattery.\nMy Maker would take me away at once if I tried.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "32:2",
+     "text": "Elihu means “He is my God.” He is the only speaker in the book with a clearly Israelite name."
+    },
+    {
+     "m": "b",
+     "ref": "32:2",
+     "text": "Barachel means “God blesses.”"
+    },
+    {
+     "m": "c",
+     "ref": "32:2",
+     "text": "Buz was a son of Nahor, Abraham’s brother (Genesis 22:21). Compare Jeremiah 25:23. The Septuagint adds “of the land of Ausis” (Uz)."
+    },
+    {
+     "m": "d",
+     "ref": "32:3",
+     "text": "This follows the standard Hebrew. An old Jewish tradition says scribes changed the text, and the original read “they had made God look guilty,” because by staying silent they had put God in the wrong."
+    },
+    {
+     "m": "e",
+     "ref": "32:9",
+     "text": "This follows the Septuagint, the Syriac, and the Latin. The Hebrew says “the great.”"
+    }
+   ],
+   "subheads": {
+    "1": "A Young Man Speaks Up",
+    "6": "Elihu Says He Must Speak",
+    "11": "Words Bubbling Inside"
+   }
+  },
+  {
+   "n": 33,
+   "paras": [
+    1,
+    8,
+    19,
+    29
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“So now, Job, listen to my speech.\nPay attention to every word I say."
+    },
+    {
+     "v": 2,
+     "text": "I have opened my mouth now.\nMy tongue is about to speak."
+    },
+    {
+     "v": 3,
+     "text": "My words come from a sincere heart.\nMy lips will say what I truly know."
+    },
+    {
+     "v": 4,
+     "text": "God’s Spirit formed me,\nand Shaddai’s breath keeps me alive."
+    },
+    {
+     "v": 5,
+     "text": "Reply to me, if you are able.\nArrange your case and take your stand."
+    },
+    {
+     "v": 6,
+     "text": "In God’s eyes I am the same as you.\nI was pinched off{a} from clay too."
+    },
+    {
+     "v": 7,
+     "text": "You need not be scared of me.\nI will not weigh you down.{b}"
+    },
+    {
+     "v": 8,
+     "text": "“You said something I heard clearly.\nI caught the sound of your words:"
+    },
+    {
+     "v": 9,
+     "text": "‘I am clean and have not sinned.\nI am pure,{c} and there is no guilt in me."
+    },
+    {
+     "v": 10,
+     "text": "Yet God finds reasons{d} to attack me.\nHe treats me as his enemy."
+    },
+    {
+     "v": 11,
+     "text": "He locks my feet in stocks\nand watches every path I take.’"
+    },
+    {
+     "v": 12,
+     "text": "Here is my answer: you are wrong in this,\nbecause God is greater than any human."
+    },
+    {
+     "v": 13,
+     "text": "Why do you complain against him\nthat he gives no account of what he does?{e}"
+    },
+    {
+     "v": 14,
+     "text": "God speaks once, and then again,\nbut people do not notice."
+    },
+    {
+     "v": 15,
+     "text": "He speaks in a dream, in a vision at night,\nwhen deep sleep falls on people,\nwhile they doze on their beds."
+    },
+    {
+     "v": 16,
+     "text": "Then he opens their ears\nand puts his warning on them like a seal,{f}"
+    },
+    {
+     "v": 17,
+     "text": "to turn a person from his actions\nand to keep him from pride."
+    },
+    {
+     "v": 18,
+     "text": "So he holds his soul back from the pit,\nand his life from crossing over by the spear.{g}"
+    },
+    {
+     "v": 19,
+     "text": "“Or a person is corrected by pain on his bed,\nand by endless aching in his bones."
+    },
+    {
+     "v": 20,
+     "text": "His appetite turns against bread,\nand he hates even his favorite meal."
+    },
+    {
+     "v": 21,
+     "text": "His flesh wastes away until it can hardly be seen,\nand bones that were hidden now stick out."
+    },
+    {
+     "v": 22,
+     "text": "His soul comes near the pit,\nand his life draws near to those who bring death.{h}"
+    },
+    {
+     "v": 23,
+     "text": "But suppose a messenger stands by him,\na spokesman,{i} one in a thousand,\nto tell him what is right for him to do."
+    },
+    {
+     "v": 24,
+     "text": "God shows him kindness and says,\n‘Do not let him descend to the pit.\nI have found the ransom money for him.’"
+    },
+    {
+     "v": 25,
+     "text": "Then his body becomes fresher{j} than a child’s.\nHe returns to the days of his youth."
+    },
+    {
+     "v": 26,
+     "text": "He prays to God and God accepts him.\nHe sees God’s face with joy,\nand God makes him right with himself again."
+    },
+    {
+     "v": 27,
+     "text": "He sings out to others and says,\n‘I sinned and twisted what was straight,\nand I did not get what I deserved.{k}"
+    },
+    {
+     "v": 28,
+     "text": "He bought back my soul from going down to the pit,\nand my life will look on the light.’"
+    },
+    {
+     "v": 29,
+     "text": "“God does all these things\ntwo times, even three, for a person,"
+    },
+    {
+     "v": 30,
+     "text": "to bring his soul back from the pit,\nso that the light of life can shine on him."
+    },
+    {
+     "v": 31,
+     "text": "Pay attention, Job, and listen to me.\nBe quiet while I talk."
+    },
+    {
+     "v": 32,
+     "text": "If you have something to say, reply to me.\nGo on, for I would like to see you cleared."
+    },
+    {
+     "v": 33,
+     "text": "Otherwise, listen to me.\nKeep silent, and I will pass on wisdom.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "33:6",
+     "text": "That is, pinched off, the way a potter takes a lump of clay."
+    },
+    {
+     "m": "b",
+     "ref": "33:7",
+     "text": "The Hebrew word is found only here. It may mean “pressure” or “burden.”"
+    },
+    {
+     "m": "c",
+     "ref": "33:9",
+     "text": "The Hebrew word is found only here. It means “clean” or “innocent.”"
+    },
+    {
+     "m": "d",
+     "ref": "33:10",
+     "text": "The Hebrew word is rare. It may mean “pretexts” or “excuses.”"
+    },
+    {
+     "m": "e",
+     "ref": "33:13",
+     "text": "Original: “that he answers none of his words.” Perhaps “that he does not answer for any of his own actions.”"
+    },
+    {
+     "m": "f",
+     "ref": "33:16",
+     "text": "This follows the Hebrew. Or “scares them with warnings.” The Septuagint says “he terrifies them with such frightening visions.” The Hebrew is uncertain."
+    },
+    {
+     "m": "g",
+     "ref": "33:18",
+     "text": "Or “crossing the river (of death).” The Hebrew word can mean a weapon or a channel."
+    },
+    {
+     "m": "h",
+     "ref": "33:22",
+     "text": "Or “the angels of death,” or “the place of the dead.”"
+    },
+    {
+     "m": "i",
+     "ref": "33:23",
+     "text": "The Hebrew word means an interpreter or a speaker for someone. Compare 16:20. The Septuagint says “even if a thousand angels of death come, none of them will wound him.”"
+    },
+    {
+     "m": "j",
+     "ref": "33:25",
+     "text": "The Hebrew word is found only here. “Fresher” is a guess from the setting."
+    },
+    {
+     "m": "k",
+     "ref": "33:27",
+     "text": "Or “it was not worth it to me.”"
+    }
+   ],
+   "subheads": {
+    "1": "Elihu Speaks to Job",
+    "8": "God Does Speak",
+    "19": "Pain, a Messenger, and a Ransom",
+    "29": "God Brings Back from the Pit"
+   }
+  },
+  {
+   "n": 34,
+   "paras": [
+    1,
+    2,
+    10,
+    16,
+    31
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Elihu went on:"
+    },
+    {
+     "v": 2,
+     "text": "“Listen to my words, you wise men.\nHear me out, you who have knowledge."
+    },
+    {
+     "v": 3,
+     "text": "The ear tests what it hears,\nas the tongue tastes food."
+    },
+    {
+     "v": 4,
+     "text": "Let us pick out for ourselves what is right.\nLet us learn together what is good."
+    },
+    {
+     "v": 5,
+     "text": "Job has declared, ‘I am innocent,\nand God has taken my justice away."
+    },
+    {
+     "v": 6,
+     "text": "Although I am right, I am called a liar.\nMy wound{a} cannot be healed, though I did nothing wrong.’"
+    },
+    {
+     "v": 7,
+     "text": "Is there anyone like Job?\nHe drinks in mockery like water."
+    },
+    {
+     "v": 8,
+     "text": "He keeps company with evildoers\nand walks with wicked men."
+    },
+    {
+     "v": 9,
+     "text": "For he has said, ‘It does not pay\nto take delight in God.’"
+    },
+    {
+     "v": 10,
+     "text": "“So hear me, you who have understanding.{b}\nGod is far above doing evil.\nShaddai is far above doing wrong."
+    },
+    {
+     "v": 11,
+     "text": "He rewards people for what they do.\nHe gives each one the result of his own ways."
+    },
+    {
+     "v": 12,
+     "text": "It is certain that God will not do wicked things,\nand Shaddai will never twist justice."
+    },
+    {
+     "v": 13,
+     "text": "Who put the earth in his care?\nWho set the whole world in its place?{c}"
+    },
+    {
+     "v": 14,
+     "text": "If he turned his attention only to himself,{d}\nand took back his spirit and breath,"
+    },
+    {
+     "v": 15,
+     "text": "every living creature would die together,\nand humanity would return to dust."
+    },
+    {
+     "v": 16,
+     "text": "“Use your understanding and listen to this.\nGive ear to the sound of what I say."
+    },
+    {
+     "v": 17,
+     "text": "Could someone who hates justice rule?\nWill you condemn the Righteous and Mighty One,"
+    },
+    {
+     "v": 18,
+     "text": "who says to a king, ‘You worthless man!’\nand to nobles, ‘You wicked men!’?"
+    },
+    {
+     "v": 19,
+     "text": "He does not favor rulers,\nand he does not put the rich ahead of the poor,\nfor his hands made them all."
+    },
+    {
+     "v": 20,
+     "text": "They die in an instant, in the dead of night.\nPeople shake and pass away.\nThe mighty are taken out without a human hand."
+    },
+    {
+     "v": 21,
+     "text": "His eyes are on every person’s ways,\nand he sees each step."
+    },
+    {
+     "v": 22,
+     "text": "There is no darkness or deep shadow\nwhere evildoers can hide."
+    },
+    {
+     "v": 23,
+     "text": "God does not need to look into a person again\nbefore he takes him to court."
+    },
+    {
+     "v": 24,
+     "text": "He breaks the mighty without an investigation\nand puts others in their places."
+    },
+    {
+     "v": 25,
+     "text": "Because he knows what they do,\nhe overturns them at night, and they are crushed."
+    },
+    {
+     "v": 26,
+     "text": "He strikes them down as wicked men\nwhere everyone can watch,{e}"
+    },
+    {
+     "v": 27,
+     "text": "because they turned away from following him\nand ignored all his ways."
+    },
+    {
+     "v": 28,
+     "text": "They made the poor cry out to him,\nand he heard the cry of the suffering."
+    },
+    {
+     "v": 29,
+     "text": "When he stays silent, who can blame him?\nWhen he hides his face, who can find him,\nwhether a nation or one person?"
+    },
+    {
+     "v": 30,
+     "text": "He does this so that godless men will not rule,\nand so that no one sets traps for the people.{f}"
+    },
+    {
+     "v": 31,
+     "text": "“Has anyone ever said to God,\n‘I have been punished. I will not sin again."
+    },
+    {
+     "v": 32,
+     "text": "Teach me what I cannot see.\nIf I have done wrong, I will not do it again’?"
+    },
+    {
+     "v": 33,
+     "text": "Should God pay you back on your terms, since you reject his?\nYou must decide, not I.\nSo tell us what you know."
+    },
+    {
+     "v": 34,
+     "text": "People with understanding will tell me,\nand every wise person who hears me will say,"
+    },
+    {
+     "v": 35,
+     "text": "‘Job speaks without knowledge.\nHis words have no insight.’"
+    },
+    {
+     "v": 36,
+     "text": "I wish Job would be tested all the way,\nsince he replies like wicked men!"
+    },
+    {
+     "v": 37,
+     "text": "He adds rebellion to his sin.\nHe claps his hands{g} in scorn among us,\nand he piles up words against God.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "34:6",
+     "text": "Original: “my arrow,” that is, the wound made by God’s arrow (compare 6:4)."
+    },
+    {
+     "m": "b",
+     "ref": "34:10",
+     "text": "Original: “men of heart,” that is, men of understanding. The same words are used in verse 34."
+    },
+    {
+     "m": "c",
+     "ref": "34:13",
+     "text": "The Hebrew does not have “in its place.”"
+    },
+    {
+     "m": "d",
+     "ref": "34:14",
+     "text": "Or “If he set his mind on it.” The Hebrew is uncertain."
+    },
+    {
+     "m": "e",
+     "ref": "34:26",
+     "text": "Original: “in the place of those who look on.”"
+    },
+    {
+     "m": "f",
+     "ref": "34:30",
+     "text": "The Hebrew of verses 29–33 is very hard to read."
+    },
+    {
+     "m": "g",
+     "ref": "34:37",
+     "text": "This was a sign of scorn."
+    }
+   ],
+   "subheads": {
+    "1": "Elihu Defends God’s Justice",
+    "10": "God Never Does Wrong",
+    "16": "God Judges Kings and Poor Alike",
+    "31": "Job Adds Rebellion to Sin"
+   }
+  },
+  {
+   "n": 35,
+   "paras": [
+    1,
+    2,
+    9
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Elihu went on:"
+    },
+    {
+     "v": 2,
+     "text": "“Do you think this is fair?\nYou say, ‘I am more in the right than God,’"
+    },
+    {
+     "v": 3,
+     "text": "and you ask, ‘What good does it do you?{a}\nWhat do I gain compared to sinning?’"
+    },
+    {
+     "v": 4,
+     "text": "I will give you an answer,\nand your friends too."
+    },
+    {
+     "v": 5,
+     "text": "Look up at the sky and see.\nStudy the clouds, which are far above you."
+    },
+    {
+     "v": 6,
+     "text": "If you sin, how does that hurt him?\nIf your wrongs pile up, what does it do to him?"
+    },
+    {
+     "v": 7,
+     "text": "If you are good, what do you give him?\nWhat does he receive from you?"
+    },
+    {
+     "v": 8,
+     "text": "Your wrong hurts only a person like you.\nYour goodness helps only another human."
+    },
+    {
+     "v": 9,
+     "text": "“People cry out under heavy oppression.\nThey shout for help against the power of the strong."
+    },
+    {
+     "v": 10,
+     "text": "But no one asks, ‘Where is God, my Maker,\nwho gives songs in the night,"
+    },
+    {
+     "v": 11,
+     "text": "who gives us more teaching than the beasts of the field,\nand more wisdom than the birds of the sky?’"
+    },
+    {
+     "v": 12,
+     "text": "So they cry out, and he does not answer,\nbecause of the pride of evil people."
+    },
+    {
+     "v": 13,
+     "text": "God does not listen to empty cries.\nShaddai pays them no attention."
+    },
+    {
+     "v": 14,
+     "text": "Even less will he hear you when you say you cannot see him,\nthat your case is before him and you are waiting."
+    },
+    {
+     "v": 15,
+     "text": "And now you say his anger has never come,\nand he takes little notice of foolish pride.{b}"
+    },
+    {
+     "v": 16,
+     "text": "So Job opens his mouth for nothing.\nHe piles up words without knowledge.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "35:3",
+     "text": "Elihu quotes Job here: “you” means Job himself, or it could be “me.”"
+    },
+    {
+     "m": "b",
+     "ref": "35:15",
+     "text": "The Hebrew word is found only here. It may mean “folly” or “wrongdoing.”"
+    }
+   ],
+   "subheads": {
+    "1": "Elihu: God Is Not Harmed by Our Sin",
+    "9": "Why God Is Silent"
+   }
+  },
+  {
+   "n": 36,
+   "paras": [
+    1,
+    2,
+    5,
+    13,
+    22
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Elihu spoke on:"
+    },
+    {
+     "v": 2,
+     "text": "“Stay with me a little longer, and I will show you,\nfor I have more to say in God’s defense."
+    },
+    {
+     "v": 3,
+     "text": "I will fetch my knowledge from far away\nand give my Maker credit for being just."
+    },
+    {
+     "v": 4,
+     "text": "My words are not lies.\nA man with perfect knowledge stands here with you."
+    },
+    {
+     "v": 5,
+     "text": "“Look, God is mighty, yet he looks down on no one.\nHis strength of mind is great."
+    },
+    {
+     "v": 6,
+     "text": "He will not let the wicked live,\nbut he gives the poor what is right."
+    },
+    {
+     "v": 7,
+     "text": "His eyes never leave those who do right.\nHe sets them on thrones beside kings\nand raises them high for good."
+    },
+    {
+     "v": 8,
+     "text": "If people are tied in chains,\ncaught in cords of suffering,"
+    },
+    {
+     "v": 9,
+     "text": "he tells them what they have done,\nand how proud they have been in their sins."
+    },
+    {
+     "v": 10,
+     "text": "He uncovers their ears to a lesson\nand tells them to quit their evil."
+    },
+    {
+     "v": 11,
+     "text": "If they obey and serve him,\ntheir days will end in good fortune,\nand their years in comfort."
+    },
+    {
+     "v": 12,
+     "text": "But if they will not listen, they cross over by the spear{a}\nand die without knowing why."
+    },
+    {
+     "v": 13,
+     "text": "“Those whose hearts are godless pile up anger.\nEven when he ties them up, they do not cry for help."
+    },
+    {
+     "v": 14,
+     "text": "They die young,\namong the shrine prostitutes.{b}"
+    },
+    {
+     "v": 15,
+     "text": "He rescues the suffering through their suffering\nand opens their ears through their pain."
+    },
+    {
+     "v": 16,
+     "text": "He also wants to lead you out of the jaws of trouble\ninto a wide-open place with no walls,\nand set your table with rich food.{c}"
+    },
+    {
+     "v": 17,
+     "text": "But you are loaded with the verdict meant for the wicked.\nJudgment and justice have you in their grip."
+    },
+    {
+     "v": 18,
+     "text": "Be careful that anger does not tempt you to jeer.\nDo not let a large bribe lead you off course."
+    },
+    {
+     "v": 19,
+     "text": "Will your cries keep you out of trouble,\nor all your strong efforts?"
+    },
+    {
+     "v": 20,
+     "text": "Do not wish for the night,\nwhen whole peoples are cut off where they stand."
+    },
+    {
+     "v": 21,
+     "text": "Watch out! Do not turn to evil,\nwhich you seem to prefer to suffering."
+    },
+    {
+     "v": 22,
+     "text": "“Look, God is high and powerful.\nWho is a teacher like him?"
+    },
+    {
+     "v": 23,
+     "text": "Who has set his road for him?\nWho dares tell him, ‘What you did was wrong’?"
+    },
+    {
+     "v": 24,
+     "text": "Remember to praise what he does,\nwhich people have sung about."
+    },
+    {
+     "v": 25,
+     "text": "All humanity has looked at it.\nPeople see it from a distance."
+    },
+    {
+     "v": 26,
+     "text": "Yes, God is greater than we can know.\nThe count of his years cannot be found out."
+    },
+    {
+     "v": 27,
+     "text": "He pulls up the drops of water.\nThey fall as rain from his mist,"
+    },
+    {
+     "v": 28,
+     "text": "and the clouds pour it down\nand shower it over people in plenty."
+    },
+    {
+     "v": 29,
+     "text": "Who can understand how the clouds spread out,\nor the crashes from his tent?"
+    },
+    {
+     "v": 30,
+     "text": "See how he spreads lightning around himself\nand covers the ocean floor.{d}"
+    },
+    {
+     "v": 31,
+     "text": "By these he rules the nations\nand gives food in plenty."
+    },
+    {
+     "v": 32,
+     "text": "He wraps lightning around his hands\nand orders it to hit its target."
+    },
+    {
+     "v": 33,
+     "text": "Its crash tells of him,\nand the cattle tell of the storm that rises.{e}”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "36:12",
+     "text": "Or “cross the river of death.” See the note at 33:18."
+    },
+    {
+     "m": "b",
+     "ref": "36:14",
+     "text": "Original: “qedeshim,” men who served as prostitutes at pagan shrines. The point is that their lives end in shame."
+    },
+    {
+     "m": "c",
+     "ref": "36:16",
+     "text": "The Hebrew of verses 16–20 is very hard to read."
+    },
+    {
+     "m": "d",
+     "ref": "36:30",
+     "text": "Or “the depths.”"
+    },
+    {
+     "m": "e",
+     "ref": "36:33",
+     "text": "The Hebrew of this verse is very hard to read. The Septuagint says “The Lord will speak about this to his friend, but there is also a share for the unjust.”"
+    }
+   ],
+   "subheads": {
+    "1": "Elihu Speaks for God",
+    "5": "God Lifts the Humble",
+    "13": "A Warning to Job",
+    "22": "God Is Greater Than We Know"
+   }
+  },
+  {
+   "n": 37,
+   "paras": [
+    1,
+    14
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“My heart pounds at this,\nand jumps from its place."
+    },
+    {
+     "v": 2,
+     "text": "Hear it! Hear the rumble of his voice,\nthe growl that rolls from his mouth."
+    },
+    {
+     "v": 3,
+     "text": "He sends it under the whole sky,\nand his lightning to the far ends of the earth."
+    },
+    {
+     "v": 4,
+     "text": "Then comes the sound of a roar.\nHe thunders with his majestic voice.\nOnce his voice is heard, he holds back none of the lightning.{a}"
+    },
+    {
+     "v": 5,
+     "text": "God’s voice booms in wonderful ways.\nHis great deeds are past our understanding."
+    },
+    {
+     "v": 6,
+     "text": "He tells the snow, ‘Fall on the earth,’\nand tells the rain shower, ‘Pour down in torrents.’"
+    },
+    {
+     "v": 7,
+     "text": "He puts a seal on everyone’s hands,\nso all the people he made will know his work.{b}"
+    },
+    {
+     "v": 8,
+     "text": "Wild animals slip into their hiding places\nand wait in their dens."
+    },
+    {
+     "v": 9,
+     "text": "The storm comes out of its room,\nand the cold comes with the winds that scatter.{c}"
+    },
+    {
+     "v": 10,
+     "text": "God’s breath makes ice,\nand the wide waters freeze solid."
+    },
+    {
+     "v": 11,
+     "text": "He fills the thick clouds with water,\nand the clouds scatter his lightning."
+    },
+    {
+     "v": 12,
+     "text": "They swirl around at his direction\nto do all that he orders\nover the whole inhabited earth."
+    },
+    {
+     "v": 13,
+     "text": "He makes it come to correct people,\nor to water his land,\nor to show his faithful love."
+    },
+    {
+     "v": 14,
+     "text": "“Listen to this, Job.\nStand still and think about the wonders of God."
+    },
+    {
+     "v": 15,
+     "text": "Do you know how God gives them orders,\nand makes the lightning in his clouds flash?"
+    },
+    {
+     "v": 16,
+     "text": "Do you know how the clouds hang in balance,{d}\nthe marvels of the one with perfect knowledge?"
+    },
+    {
+     "v": 17,
+     "text": "Your clothes grow hot\nwhen the land is hushed under a south wind."
+    },
+    {
+     "v": 18,
+     "text": "Can you help him stretch out the sky,\nhard as a polished metal mirror?"
+    },
+    {
+     "v": 19,
+     "text": "Tell us what to say to him.\nWe cannot argue our case because of the darkness in our minds."
+    },
+    {
+     "v": 20,
+     "text": "Should anyone tell him I want to talk?\nWho would ask to be wiped out?"
+    },
+    {
+     "v": 21,
+     "text": "People cannot stare at the sun,\nshining brightly in the sky,\nafter the wind has blown the clouds away."
+    },
+    {
+     "v": 22,
+     "text": "Golden splendor comes from the north.{e}\nGod is surrounded by awesome glory."
+    },
+    {
+     "v": 23,
+     "text": "We cannot find Shaddai.\nHe is great in power,\nand he never twists justice or fairness."
+    },
+    {
+     "v": 24,
+     "text": "So people honor him with awe.\nHe pays no attention to those who think themselves wise.”{f}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "37:4",
+     "text": "Original: “them.”"
+    },
+    {
+     "m": "b",
+     "ref": "37:7",
+     "text": "Or “so that all people may know his work.” The Hebrew is uncertain."
+    },
+    {
+     "m": "c",
+     "ref": "37:9",
+     "text": "The Hebrew word probably means the north winds. This is uncertain."
+    },
+    {
+     "m": "d",
+     "ref": "37:16",
+     "text": "The Hebrew word is found only here. It may mean “spreadings” or “balancings.”"
+    },
+    {
+     "m": "e",
+     "ref": "37:22",
+     "text": "Or “golden light.” The Septuagint says “from the north come clouds shining like gold.”"
+    },
+    {
+     "m": "f",
+     "ref": "37:24",
+     "text": "Or “no one who is wise in heart can see him.”"
+    }
+   ],
+   "subheads": {
+    "1": "The Thunder of God’s Voice",
+    "14": "Stop and Think About God’s Wonders"
+   }
+  },
+  {
+   "n": 38,
+   "paras": [
+    1,
+    2,
+    4,
+    8,
+    12,
+    16,
+    19,
+    22,
+    25,
+    31,
+    34,
+    39
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Then Yahweh spoke to Job from the middle of a storm:{a}"
+    },
+    {
+     "v": 2,
+     "text": "“Who is this that hides my plans in shadow\nwith words that show no knowledge?"
+    },
+    {
+     "v": 3,
+     "text": "Get ready like a strong man.{b}\nI will ask the questions, and you will answer me."
+    },
+    {
+     "v": 4,
+     "text": "“Where were you when I built the foundations of the earth?\nSpeak up, if you are so wise."
+    },
+    {
+     "v": 5,
+     "text": "Who decided its size? Surely you know!\nWho stretched a measuring line across it?"
+    },
+    {
+     "v": 6,
+     "text": "What were its bases set on?\nWho laid its cornerstone,"
+    },
+    {
+     "v": 7,
+     "text": "while the morning stars sang as one\nand every heavenly being{c} cheered?"
+    },
+    {
+     "v": 8,
+     "text": "“Who closed the sea in with doors\nwhen it burst out as if from the womb,"
+    },
+    {
+     "v": 9,
+     "text": "when I wrapped it in clouds like a robe\nand in thick darkness like baby blankets,"
+    },
+    {
+     "v": 10,
+     "text": "when I marked out its limit\nand set its bars and doors in place,"
+    },
+    {
+     "v": 11,
+     "text": "when I said, ‘You may come this far, and no farther.\nHere your proud waves must stop’?"
+    },
+    {
+     "v": 12,
+     "text": "“In all your life, have you ever ordered the morning to come?\nHave you shown the dawn where to stand,"
+    },
+    {
+     "v": 13,
+     "text": "so it can grab the edges of the earth\nand shake the wicked out of it?"
+    },
+    {
+     "v": 14,
+     "text": "The earth takes shape like clay pressed by a seal.\nIts features stand out like the folds of a coat.{d}"
+    },
+    {
+     "v": 15,
+     "text": "The wicked lose their light,\nand the raised arm is broken."
+    },
+    {
+     "v": 16,
+     "text": "“Have you traveled to the springs that feed the sea?\nHave you strolled through the deepest part of the ocean?"
+    },
+    {
+     "v": 17,
+     "text": "Were the gates of death ever opened for you?\nDid you ever see the doors of deep darkness?"
+    },
+    {
+     "v": 18,
+     "text": "Have you grasped how far the earth stretches?\nSpeak, if you know all this."
+    },
+    {
+     "v": 19,
+     "text": "“Which way leads to where light lives?\nAnd where is the home of darkness,"
+    },
+    {
+     "v": 20,
+     "text": "so you can take each one to its border\nand know the paths to its house?"
+    },
+    {
+     "v": 21,
+     "text": "Surely you know, for you were born by then!\nYou have lived so many years!{e}"
+    },
+    {
+     "v": 22,
+     "text": "“Have you gone into the storerooms of snow?\nHave you seen the storerooms of hail,"
+    },
+    {
+     "v": 23,
+     "text": "which I have saved for times of trouble,\nfor days of fighting and war?"
+    },
+    {
+     "v": 24,
+     "text": "Where does lightning{f} spread out,\nor the east wind scatter across the earth?"
+    },
+    {
+     "v": 25,
+     "text": "“Who cut a canal for the flood of rain\nand a trail for the thunderbolt,"
+    },
+    {
+     "v": 26,
+     "text": "to bring rain on land where no one lives,\non a desert with no people,"
+    },
+    {
+     "v": 27,
+     "text": "to soak the wild and empty ground\nand make the young grass sprout?"
+    },
+    {
+     "v": 28,
+     "text": "Does the rain have a father?\nWho is the parent of the dewdrops?"
+    },
+    {
+     "v": 29,
+     "text": "Out of whose body did the ice come?\nWho bore the frost that settles from the sky?"
+    },
+    {
+     "v": 30,
+     "text": "Water turns hard as stone,\nand the face of the deep freezes over."
+    },
+    {
+     "v": 31,
+     "text": "“Can you fasten the Pleiades{g} together,\nor loosen the straps of Orion?{h}"
+    },
+    {
+     "v": 32,
+     "text": "Can you bring out the Mazzaroth{i} at the right time,\nor guide the Bear{j} and its cubs?"
+    },
+    {
+     "v": 33,
+     "text": "Do you know how the sky is ruled?\nCan you make it govern the earth?"
+    },
+    {
+     "v": 34,
+     "text": "“Can you call out to the clouds\nand be buried in a flood of water?"
+    },
+    {
+     "v": 35,
+     "text": "Can you send out lightning bolts,\nand have them answer, ‘Here we are’?"
+    },
+    {
+     "v": 36,
+     "text": "Who gave the ibis{k} its wisdom,\nor the rooster its understanding?"
+    },
+    {
+     "v": 37,
+     "text": "Who is clever enough to number the clouds?\nWho can pour out the water bottles of the sky,"
+    },
+    {
+     "v": 38,
+     "text": "so the dust turns to mud\nand the clods stick together?"
+    },
+    {
+     "v": 39,
+     "text": "“Do you hunt food for the lioness,\nor feed the hunger of her cubs,"
+    },
+    {
+     "v": 40,
+     "text": "when they are curled up in their dens\nor hiding in the thick brush?"
+    },
+    {
+     "v": 41,
+     "text": "Who provides prey for the raven,\nwhen its chicks cry out to God\nand wander about with nothing to eat?”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "38:1",
+     "text": "Or “whirlwind.”"
+    },
+    {
+     "m": "b",
+     "ref": "38:3",
+     "text": "Original: “Gird up your loins like a man,” a way of saying “get ready for action.” Or “like a warrior.”"
+    },
+    {
+     "m": "c",
+     "ref": "38:7",
+     "text": "Original: “sons of God.” See the note at 1:6. The Septuagint says “all my angels praised me with a loud voice.”"
+    },
+    {
+     "m": "d",
+     "ref": "38:14",
+     "text": "This pictures dawn bringing out the shapes of the land, as a seal makes marks on clay. The Septuagint is very different: “Did you take clay from the ground and form a living creature?”"
+    },
+    {
+     "m": "e",
+     "ref": "38:21",
+     "text": "Yahweh is being playful: Job could not have been alive at creation."
+    },
+    {
+     "m": "f",
+     "ref": "38:24",
+     "text": "Or “light.”"
+    },
+    {
+     "m": "g",
+     "ref": "38:31",
+     "text": "The Hebrew name is Kimah, a star cluster usually taken to be the Pleiades. Compare 9:9."
+    },
+    {
+     "m": "h",
+     "ref": "38:31",
+     "text": "The Hebrew name Kesil means “fool.” It is usually taken as Orion, pictured as a giant tied in the sky. These star names are traditional, not certain."
+    },
+    {
+     "m": "i",
+     "ref": "38:32",
+     "text": "The Hebrew word is found only here. It may mean the star groups of the zodiac, or one star group. The Septuagint keeps “Mazuroth” and adds “the evening star with its rays.”"
+    },
+    {
+     "m": "j",
+     "ref": "38:32",
+     "text": "The Hebrew name Ayish is probably the Great Bear and its “children,” the stars of its tail. Others suggest Aldebaran or the Hyades. Compare 9:9."
+    },
+    {
+     "m": "k",
+     "ref": "38:36",
+     "text": "The Hebrew words for “ibis” and “rooster” are rare and uncertain. The ibis (linked to the Egyptian god of wisdom) and the rooster (which announces dawn) were both thought to sense the weather. The Septuagint says “Who gave women skill in weaving or the knowledge of fine needlework?”"
+    }
+   ],
+   "subheads": {
+    "1": "Yahweh Answers from the Storm",
+    "4": "Where Were You at Creation?",
+    "8": "Who Fenced In the Sea?",
+    "12": "Who Commands the Dawn?",
+    "16": "Have You Seen the Deep and the Dark?",
+    "19": "The Home of Light",
+    "22": "Snow, Hail, and Wind",
+    "25": "Rain and Ice",
+    "31": "The Stars and the Clouds",
+    "39": "Feeding the Lions and Ravens"
+   }
+  },
+  {
+   "n": 39,
+   "paras": [
+    1,
+    5,
+    9,
+    13,
+    19,
+    26
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“Do you know when mountain goats{a} give birth?\nHave you watched deer{b} bring forth their young?"
+    },
+    {
+     "v": 2,
+     "text": "Can you figure out how long they are pregnant?\nDo you know when they are due,"
+    },
+    {
+     "v": 3,
+     "text": "when they crouch down, deliver their young,\nand their labor pains are over?"
+    },
+    {
+     "v": 4,
+     "text": "Their young grow stout in open fields.\nThey go off and do not return."
+    },
+    {
+     "v": 5,
+     "text": "“Who set the wild donkey{c} free?\nWho untied the ropes of the swift donkey?"
+    },
+    {
+     "v": 6,
+     "text": "I gave it the wasteland as its home,\nand the salt flats as its place to live."
+    },
+    {
+     "v": 7,
+     "text": "It scoffs at the clamor of towns.\nIt never hears a driver yell."
+    },
+    {
+     "v": 8,
+     "text": "It roams the hills for its pasture\nand searches out anything green."
+    },
+    {
+     "v": 9,
+     "text": "“Would the wild ox{d} agree to work for you?\nWould it spend the night at your feed bin?"
+    },
+    {
+     "v": 10,
+     "text": "Can you tie it to a plow with a rope?\nWill it pull your harrow through the valley?"
+    },
+    {
+     "v": 11,
+     "text": "Will you depend on it because it is so strong,\nand leave your hard work to it?"
+    },
+    {
+     "v": 12,
+     "text": "Will you trust it to haul your grain home\nand pile it on your threshing floor?"
+    },
+    {
+     "v": 13,
+     "text": "“The ostrich{e} flaps her wings happily,\nbut do her wings and feathers compare with the stork’s?{f}"
+    },
+    {
+     "v": 14,
+     "text": "In the dirt she leaves her eggs,\nand the warm sand hatches them."
+    },
+    {
+     "v": 15,
+     "text": "She forgets that a foot could crush them,\nor that wild beasts could stamp on them."
+    },
+    {
+     "v": 16,
+     "text": "She is rough with her chicks, as though they belonged to another.\nShe does not worry that her work may be wasted,"
+    },
+    {
+     "v": 17,
+     "text": "because God took away her wisdom\nand gave her no good sense."
+    },
+    {
+     "v": 18,
+     "text": "Yet when she leaps up to race,{g}\nshe mocks horse and rider."
+    },
+    {
+     "v": 19,
+     "text": "“Did you give the horse its power?\nDid you cover its neck with a shaking mane?{h}"
+    },
+    {
+     "v": 20,
+     "text": "Do you teach it to hop like a locust?\nIts proud snort is frightening."
+    },
+    {
+     "v": 21,
+     "text": "It scrapes{i} the valley floor, glad of its strength,\nand gallops out against the weapons."
+    },
+    {
+     "v": 22,
+     "text": "It mocks fear and never flinches.\nIt does not shy from the sword."
+    },
+    {
+     "v": 23,
+     "text": "The arrows rattle on its side,\nwith the flash of the spear and the lance."
+    },
+    {
+     "v": 24,
+     "text": "Trembling with excitement, it swallows up the ground.\nWhen the trumpet sounds, it cannot stand still."
+    },
+    {
+     "v": 25,
+     "text": "At each blast of the trumpet it snorts, ‘Ha!’\nIt smells battle from far away,\nthe shouts of commanders and the war cries."
+    },
+    {
+     "v": 26,
+     "text": "“Is the hawk{j} wise because of you,\nwhen it stretches its wings toward the south?"
+    },
+    {
+     "v": 27,
+     "text": "Do you order the eagle{k} to rise\nand build its nest up high?"
+    },
+    {
+     "v": 28,
+     "text": "It lives on the cliff and spends the night there,\non a rocky point and a mountain fort."
+    },
+    {
+     "v": 29,
+     "text": "From there it hunts for food.\nIts eyes see far into the distance."
+    },
+    {
+     "v": 30,
+     "text": "Its chicks feed on blood,\nand where there are dead bodies, there it is.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "39:1",
+     "text": "The Hebrew means “climbers of the rock,” probably the Nubian ibex."
+    },
+    {
+     "m": "b",
+     "ref": "39:1",
+     "text": "The Hebrew word means female deer."
+    },
+    {
+     "m": "c",
+     "ref": "39:5",
+     "text": "Two Hebrew words (pere and arod) both mean the wild donkey or onager, a fast desert animal that cannot be tamed. The second word is found only here."
+    },
+    {
+     "m": "d",
+     "ref": "39:9",
+     "text": "Hebrew re’em, the aurochs, a powerful wild ox with horns that is now extinct. The Septuagint says “one-horned,” which older English Bibles turned into “unicorn.”"
+    },
+    {
+     "m": "e",
+     "ref": "39:13",
+     "text": "The Hebrew word, found only here, means “shrieking ones.” It is usually taken to be the ostrich, which fits what follows. The Septuagint says “The peacock has a lovely wing; if the stork and ostrich conceive...” This is likely but not certain."
+    },
+    {
+     "m": "f",
+     "ref": "39:13",
+     "text": "Or “are they the wings of the kind one?” The Hebrew word for stork sounds like the word for “faithful love.” The Hebrew of this line is uncertain."
+    },
+    {
+     "m": "g",
+     "ref": "39:18",
+     "text": "The meaning of the Hebrew verb is uncertain."
+    },
+    {
+     "m": "h",
+     "ref": "39:19",
+     "text": "The Hebrew word is found only here. It may mean “thunder,” “trembling,” or “mane.” The Septuagint says “terror.”"
+    },
+    {
+     "m": "i",
+     "ref": "39:21",
+     "text": "Original: “They paw.”"
+    },
+    {
+     "m": "j",
+     "ref": "39:26",
+     "text": "The Hebrew word names a falcon or hawk. The idea may be the hawk flying south for winter."
+    },
+    {
+     "m": "k",
+     "ref": "39:27",
+     "text": "The Hebrew word can mean an eagle or a griffon vulture. Verse 30 fits the vulture."
+    }
+   ],
+   "subheads": {
+    "1": "Mountain Goats and Deer",
+    "5": "The Wild Donkey",
+    "9": "The Wild Ox",
+    "13": "The Ostrich",
+    "19": "The War Horse",
+    "26": "The Hawk and the Eagle"
+   }
+  },
+  {
+   "n": 40,
+   "paras": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    10,
+    15,
+    19
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Yahweh went on and said to Job:"
+    },
+    {
+     "v": 2,
+     "text": "“Will the one who finds fault argue with Shaddai?\nLet the man who corrects God answer for it.”"
+    },
+    {
+     "v": 3,
+     "text": "Then Job replied to Yahweh:"
+    },
+    {
+     "v": 4,
+     "text": "“I am nothing. How can I answer you?\nI will clap my hand over my mouth."
+    },
+    {
+     "v": 5,
+     "text": "I spoke once and have no reply.\nI spoke again, and I will say no more.”"
+    },
+    {
+     "v": 6,
+     "text": "Yahweh then addressed Job once more, speaking out of the storm:"
+    },
+    {
+     "v": 7,
+     "text": "“Get ready like a strong man.{a}\nI will ask the questions, and you will answer me."
+    },
+    {
+     "v": 8,
+     "text": "Would you really cancel my justice?\nWould you call me guilty so that you can be innocent?"
+    },
+    {
+     "v": 9,
+     "text": "Is your arm as strong as God’s?\nCan you thunder with a voice like his?"
+    },
+    {
+     "v": 10,
+     "text": "“Go ahead, dress yourself in glory and greatness.\nPut on splendor and honor."
+    },
+    {
+     "v": 11,
+     "text": "Pour out your angry floods.\nLook at each proud person and bring him down."
+    },
+    {
+     "v": 12,
+     "text": "Look at all the proud and make them small.\nStamp out the wicked wherever they stand."
+    },
+    {
+     "v": 13,
+     "text": "Bury every one of them in the dust.\nLock them away in the dark place of the dead."
+    },
+    {
+     "v": 14,
+     "text": "Then I myself will praise you,\nbecause your own right hand has won the victory for you."
+    },
+    {
+     "v": 15,
+     "text": "“Look at Behemoth,{b} made by me just as you were.\nHe eats grass like a bull."
+    },
+    {
+     "v": 16,
+     "text": "See the power in his hips\nand the strength in his belly muscles."
+    },
+    {
+     "v": 17,
+     "text": "His tail sways stiff as a cedar.\nThe sinews of his thighs{c} are knotted tight."
+    },
+    {
+     "v": 18,
+     "text": "His bones are pipes of bronze.\nHis legs are rods of iron."
+    },
+    {
+     "v": 19,
+     "text": "“Among God’s works he stands first.{d}\nNo one but his Maker dares bring a sword near him."
+    },
+    {
+     "v": 20,
+     "text": "The hills grow his food,\nand all the wild animals frolic nearby."
+    },
+    {
+     "v": 21,
+     "text": "Beneath lotus plants{e} he lies down,\nin the shelter of reeds and marsh."
+    },
+    {
+     "v": 22,
+     "text": "Lotus plants shade him with their branches.\nWillows along the stream surround him."
+    },
+    {
+     "v": 23,
+     "text": "A raging river does not scare him.\nHe stays calm even when the Jordan{f} rushes up to his mouth."
+    },
+    {
+     "v": 24,
+     "text": "Can anyone catch him while he watches,\nor pierce his nose with a snare?”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "40:7",
+     "text": "Original: “Gird up your loins like a man,” a way of saying “get ready for action.” See the note at 38:3."
+    },
+    {
+     "m": "b",
+     "ref": "40:15",
+     "text": "Hebrew behemot, a plural form of the word for “beast,” used here to mean “the Great Beast.” It fits the hippopotamus best, though some think of the elephant or a creature of legend. The Septuagint says “Look now at the wild animals with you.” This is uncertain."
+    },
+    {
+     "m": "c",
+     "ref": "40:17",
+     "text": "The Hebrew word is found with this meaning only here. Some take it differently."
+    },
+    {
+     "m": "d",
+     "ref": "40:19",
+     "text": "Or “the chief of God’s works.” The Septuagint says “the chief of the Lord’s creation, made to be played with by his angels.”"
+    },
+    {
+     "m": "e",
+     "ref": "40:21",
+     "text": "The Hebrew word is found only here and in verse 22. It probably means the thorny lotus bush. The Septuagint says “trees of every kind, by the papyrus, and reed, and bulrush.”"
+    },
+    {
+     "m": "f",
+     "ref": "40:23",
+     "text": "That is, any great river in flood."
+    }
+   ],
+   "subheads": {
+    "1": "Yahweh Questions Job Again",
+    "3": "Job Has Nothing to Say",
+    "6": "Can You Judge the World?",
+    "15": "Behemoth, the Great Beast"
+   }
+  },
+  {
+   "n": 41,
+   "paras": [
+    1,
+    9,
+    12
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“Can you pull Leviathan{a} out with a fishhook,{b}\nor tie down his tongue with a rope?"
+    },
+    {
+     "v": 2,
+     "text": "Can you thread a cord through his nose,\nor pierce his jaw with a hook?"
+    },
+    {
+     "v": 3,
+     "text": "Will he plead with you over and over for mercy?\nWill he speak softly to you?"
+    },
+    {
+     "v": 4,
+     "text": "Will he sign a treaty with you\nto serve as your slave for life?"
+    },
+    {
+     "v": 5,
+     "text": "Will you play with him like a pet bird,\nor put him on a leash for your daughters?"
+    },
+    {
+     "v": 6,
+     "text": "Will fishing crews bargain over him?\nWill they cut him up and sell him among the merchants?"
+    },
+    {
+     "v": 7,
+     "text": "Can you riddle his skin with harpoons,\nor his head with fishing spears?"
+    },
+    {
+     "v": 8,
+     "text": "Put your hand on him once,\nand you will never forget the fight, and never try again!"
+    },
+    {
+     "v": 9,
+     "text": "“Anyone who hopes to beat him is let down.{c}\nIs a man not knocked flat just by seeing him?"
+    },
+    {
+     "v": 10,
+     "text": "No one is bold enough to stir him up.\nSo who can stand against me?"
+    },
+    {
+     "v": 11,
+     "text": "Who has given me anything first, so that I owe him?{d}\nEverything under all the sky is mine."
+    },
+    {
+     "v": 12,
+     "text": "“I must speak of his limbs,\nhis great power, and his fine shape."
+    },
+    {
+     "v": 13,
+     "text": "Who can peel off his outer coat?\nWho can get inside his double armor?{e}"
+    },
+    {
+     "v": 14,
+     "text": "Who can pry open the doors of his mouth?\nHis teeth are ringed with terror."
+    },
+    {
+     "v": 15,
+     "text": "His back is made of rows of shields,{f}\nsealed up tight together."
+    },
+    {
+     "v": 16,
+     "text": "Each is so close to the next\nthat not even air can slip between."
+    },
+    {
+     "v": 17,
+     "text": "Each one clings to the next.\nThey are locked together and cannot be pried apart."
+    },
+    {
+     "v": 18,
+     "text": "His sneezes throw off flashes of light.\nHis eyes shine like the first rays of dawn.{g}"
+    },
+    {
+     "v": 19,
+     "text": "Flames shoot from his mouth.\nSparks of fire fly out."
+    },
+    {
+     "v": 20,
+     "text": "Smoke pours from his nose,\nlike steam from a boiling pot over a reed fire."
+    },
+    {
+     "v": 21,
+     "text": "His breath lights coals on fire,\nand a blaze comes out of his mouth."
+    },
+    {
+     "v": 22,
+     "text": "Strength lives in his neck,\nand terror dances in front of him."
+    },
+    {
+     "v": 23,
+     "text": "The folds of his flesh are welded together,\nsolid and unmoving."
+    },
+    {
+     "v": 24,
+     "text": "His heart is solid as stone,\nsolid as the lower millstone."
+    },
+    {
+     "v": 25,
+     "text": "When he rises up, even the mighty{h} are afraid.\nWhen he thrashes, they lose their senses."
+    },
+    {
+     "v": 26,
+     "text": "A sword that hits him does no good,\nnor does a spear, an arrow, or a dart.{i}"
+    },
+    {
+     "v": 27,
+     "text": "To him iron is like straw,\nand bronze is like rotten wood."
+    },
+    {
+     "v": 28,
+     "text": "Arrows do not make him run.\nSlingstones are like husks to him."
+    },
+    {
+     "v": 29,
+     "text": "Clubs are like stubble to him.\nHe laughs at the whistle of a flying spear."
+    },
+    {
+     "v": 30,
+     "text": "His belly has sharp shards like broken pots.\nHe drags across the mud like a threshing sled."
+    },
+    {
+     "v": 31,
+     "text": "He churns the deep until it bubbles like a pot.\nHe stirs the sea like a pot of perfume."
+    },
+    {
+     "v": 32,
+     "text": "He leaves a shining wake behind him.\nYou would think the ocean had gray hair."
+    },
+    {
+     "v": 33,
+     "text": "Nothing on earth is like him,\na creature made to have no fear."
+    },
+    {
+     "v": 34,
+     "text": "He looks down on everything proud.\nHe is king over all the beasts of pride.”{j}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "41:1",
+     "text": "Hebrew Livyatan. See the note at 3:8. This is often thought to describe the crocodile, but it is made larger with features of a sea monster, such as fire from the mouth (verses 18–21). Its identity is uncertain. In the Hebrew text, 41:1–8 is numbered 40:25–32, and 41:9–34 is 41:1–26."
+    },
+    {
+     "m": "b",
+     "ref": "41:1",
+     "text": "Or “a hook.”"
+    },
+    {
+     "m": "c",
+     "ref": "41:9",
+     "text": "Original: “his hope is false,” that is, the hope of anyone who would attack him."
+    },
+    {
+     "m": "d",
+     "ref": "41:11",
+     "text": "The Hebrew of verses 10–11 is hard. Some copies and the Septuagint say “Who can stand before him? Who has faced him and come out safe?” Compare Romans 11:35."
+    },
+    {
+     "m": "e",
+     "ref": "41:13",
+     "text": "This follows the Septuagint, “inside the fold of his breastplate.” The Hebrew says “his double bridle,” perhaps meaning the jaws."
+    },
+    {
+     "m": "f",
+     "ref": "41:15",
+     "text": "Or “His pride is his rows of shields.” The Hebrew words for “pride” and “back” differ only in their vowels."
+    },
+    {
+     "m": "g",
+     "ref": "41:18",
+     "text": "The Septuagint says “When he sneezes a light shines, and his eyes look like the morning star.”"
+    },
+    {
+     "m": "h",
+     "ref": "41:25",
+     "text": "Or “the gods.”"
+    },
+    {
+     "m": "i",
+     "ref": "41:26",
+     "text": "The Hebrew word is found only here. It may mean “javelin” or “coat of armor.”"
+    },
+    {
+     "m": "j",
+     "ref": "41:34",
+     "text": "Original: “sons of pride,” also in 28:8. They are probably proud wild animals. The Septuagint says “he is king of everything in the waters.”"
+    }
+   ],
+   "subheads": {
+    "1": "Leviathan, King of the Proud",
+    "9": "No One Dares Wake Him",
+    "12": "His Strength and Armor"
+   }
+  },
+  {
+   "n": 42,
+   "paras": [
+    1,
+    2,
+    7,
+    10,
+    12
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Job answered Yahweh:"
+    },
+    {
+     "v": 2,
+     "text": "“You can do anything, I know.\nNothing you plan can be blocked."
+    },
+    {
+     "v": 3,
+     "text": "You asked, ‘Who is this that hides my plans without knowing what he says?’\nI spoke about things I did not understand,\nthings too wonderful for me to know."
+    },
+    {
+     "v": 4,
+     "text": "You said, ‘Now listen, and I will speak.\nI will question you, and you will tell me the answers.’"
+    },
+    {
+     "v": 5,
+     "text": "I used to know you only by what others said.\nNow my own eyes have seen you."
+    },
+    {
+     "v": 6,
+     "text": "So I take back what I said,{a}\nand I am sorry{b} in dust and ashes.”"
+    },
+    {
+     "v": 7,
+     "text": "When Yahweh had said all this to Job, he turned to Eliphaz from Teman. He said, “My anger is aimed at you and your two friends. You have not told the truth about me the way my servant Job has."
+    },
+    {
+     "v": 8,
+     "text": "So choose seven bulls and seven rams. Take them to Job, my servant, and burn them as an offering for yourselves. He will pray on your behalf, and I will grant his request. Then I will not treat you as your foolishness deserves. You were wrong about me, but Job spoke truly.”"
+    },
+    {
+     "v": 9,
+     "text": "So Eliphaz, Bildad, and Zophar, who came from Teman, Shuah, and Naamah, went and did as Yahweh had told them. And Yahweh accepted Job’s prayer."
+    },
+    {
+     "v": 10,
+     "text": "Job prayed for his friends, and then Yahweh gave back everything he had lost.{c} In fact, Yahweh doubled all that Job had owned."
+    },
+    {
+     "v": 11,
+     "text": "All of Job’s brothers and sisters came, and so did everyone who had known him before. In his house they shared a meal with him. They felt sorry for him and cheered him up after all the trouble Yahweh had sent. Every guest handed him a piece of silver{d} and a gold ring.{e}"
+    },
+    {
+     "v": 12,
+     "text": "The last years of Job’s life were even more blessed by Yahweh than the first. His herds and flocks grew to 14,000 sheep and 6,000 camels. He also owned 1,000 pairs of oxen and 1,000 female donkeys."
+    },
+    {
+     "v": 13,
+     "text": "Seven sons{f} and three daughters were also born to him."
+    },
+    {
+     "v": 14,
+     "text": "The oldest daughter he called Jemimah.{g} The next was Keziah,{h} and the youngest was Keren-happuch.{i}"
+    },
+    {
+     "v": 15,
+     "text": "Job’s daughters were the loveliest women anywhere in the country. Their father also let them inherit land, just as their brothers did."
+    },
+    {
+     "v": 16,
+     "text": "After this, Job lived another 140 years.{j} He saw his children and grandchildren, four generations in all."
+    },
+    {
+     "v": 17,
+     "text": "Then Job died, an old man who had lived a full life.{k}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "42:6",
+     "text": "Or “I despise my words,” or “I melt away.” The Hebrew verb has no stated object. The Septuagint says “So I have counted myself worthless, and I faint.” This verse is very hard to translate."
+    },
+    {
+     "m": "b",
+     "ref": "42:6",
+     "text": "Or “I am comforted,” or “I change my mind about dust and ashes,” that is, about being mortal or about my grief. The Hebrew word can mean several things."
+    },
+    {
+     "m": "c",
+     "ref": "42:10",
+     "text": "Or “restored his fortunes.” Original: “turned the captivity of Job.”"
+    },
+    {
+     "m": "d",
+     "ref": "42:11",
+     "text": "Original: “a qesitah,” a piece of money or weight of unknown value. It is found elsewhere only in Genesis 33:19 and Joshua 24:32. The Septuagint says “a lamb.” The Aramaic Targum of Job from Qumran is said to end at this verse."
+    },
+    {
+     "m": "e",
+     "ref": "42:11",
+     "text": "Or “a nose ring” or “an earring.” The Septuagint says “four drachmas’ weight of gold.”"
+    },
+    {
+     "m": "f",
+     "ref": "42:13",
+     "text": "The Hebrew form for “seven” is unusual. Some Jewish teachers took it to mean “twice seven,” that is, fourteen sons."
+    },
+    {
+     "m": "g",
+     "ref": "42:14",
+     "text": "Jemimah probably means “dove.” The Septuagint has “Day.”"
+    },
+    {
+     "m": "h",
+     "ref": "42:14",
+     "text": "Keziah means “cassia,” a sweet-smelling spice."
+    },
+    {
+     "m": "i",
+     "ref": "42:14",
+     "text": "Keren-happuch means “horn of eye paint,” a small container for the makeup used to darken eyelids. The Septuagint has “Amaltheia’s horn,” the horn of plenty."
+    },
+    {
+     "m": "j",
+     "ref": "42:16",
+     "text": "The Septuagint says Job lived 170 years after his suffering, 240 years in all."
+    },
+    {
+     "m": "k",
+     "ref": "42:17",
+     "text": "The Septuagint adds a long closing note. It says Job will rise again with those the Lord raises up, that he lived in the land of Ausis on the border of Edom and Arabia, that he was first called Jobab, and that he married an Arabian woman and had a son named Ennon. It then gives his family line, going back to Esau and to Abraham."
+    }
+   ],
+   "subheads": {
+    "1": "Job Answers Yahweh",
+    "7": "Yahweh Corrects the Three Friends",
+    "10": "Yahweh Gives Job Twice as Much"
+   }
+  }
+ ]
+}
