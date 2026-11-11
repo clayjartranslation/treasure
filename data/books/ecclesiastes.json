@@ -1,0 +1,1420 @@
+{
+ "id": "ecclesiastes",
+ "name": "Ecclesiastes",
+ "division": "Old Testament",
+ "sourceNote": "Written freshly, thought for thought, from the oldest Hebrew, Greek, and Aramaic witnesses (the Masoretic Text with the Dead Sea Scrolls, the Septuagint, and the Samaritan Pentateuch). © 2026 Jose Santiago. All rights reserved.",
+ "chapters": [
+  {
+   "n": 1,
+   "paras": [
+    1,
+    2,
+    12,
+    16
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "These are the words of Qoheleth,{a} the son of David{b} and king in Jerusalem."
+    },
+    {
+     "v": 2,
+     "text": "“Breath of breaths,”{c} says Qoheleth.\n“Breath of breaths! It is all a breath.”"
+    },
+    {
+     "v": 3,
+     "text": "What profit do people make from all their labor\nunder the sun?"
+    },
+    {
+     "v": 4,
+     "text": "One group of people goes and another comes,\nbut the earth stays the same forever."
+    },
+    {
+     "v": 5,
+     "text": "The sun rises, then it sets,\nthen it hurries back to the spot where it will rise again."
+    },
+    {
+     "v": 6,
+     "text": "The wind heads south,\nthen swings around to the north.\nRound and round it goes,\nand finally it comes back to its starting point."
+    },
+    {
+     "v": 7,
+     "text": "Every river runs into the ocean,\nyet the ocean never gets full.\nThe water goes back\nto the source it flowed from, and flows again."
+    },
+    {
+     "v": 8,
+     "text": "Everything is tiring,\nmore than words can describe.\nThe eye is never done with seeing,\nand the ear is never full of hearing."
+    },
+    {
+     "v": 9,
+     "text": "What has happened will happen again.\nWhat has been done will be done again.\nNothing under the sun is really new."
+    },
+    {
+     "v": 10,
+     "text": "Can anyone point at something and say,\n“Look, here is something new!”?\nIt was around long before our day,\nback in earlier ages."
+    },
+    {
+     "v": 11,
+     "text": "No one remembers the people of long ago,\nand people yet to be born\nwill not be remembered\nby those who live after them."
+    },
+    {
+     "v": 12,
+     "text": "I, Qoheleth, ruled Israel as king, living in Jerusalem."
+    },
+    {
+     "v": 13,
+     "text": "I decided to study and explore, using wisdom, everything people do on earth. God has given people a heavy job to keep them busy."
+    },
+    {
+     "v": 14,
+     "text": "I observed every deed done under the sun. All of it is a breath, like trying to catch the wind.{d}"
+    },
+    {
+     "v": 15,
+     "text": "A twisted thing cannot be made straight,\nand a shortage cannot be added up."
+    },
+    {
+     "v": 16,
+     "text": "I thought to myself, “I have become greater than every ruler Jerusalem had before me. I have gathered more wisdom and knowledge than any of them.”"
+    },
+    {
+     "v": 17,
+     "text": "So I made up my mind to learn about wisdom, and also about madness and foolishness.{e} I found that this is like chasing the wind too."
+    },
+    {
+     "v": 18,
+     "text": "More wisdom brings more sadness,\nand more knowledge brings more pain."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "1:1",
+     "text": "Hebrew Qoheleth. It comes from qahal, “assembly,” and is a feminine form. It means someone who speaks to a gathering, or maybe someone who collects sayings (12:9). It is usually translated “the Preacher” or “the Teacher.” The Greek title is Ekklesiastes."
+    },
+    {
+     "m": "b",
+     "ref": "1:1",
+     "text": "David means “beloved.”"
+    },
+    {
+     "m": "c",
+     "ref": "1:2",
+     "text": "Hebrew hevel habalim. Hevel means “breath” or “vapor,” something real but short and hard to grab. Depending on the verse it can mean “fleeting,” “pointless,” or “absurd.” It is often translated “vanity.”"
+    },
+    {
+     "m": "d",
+     "ref": "1:14",
+     "text": "Or “feeding on wind” or “reaching for wind.” The Hebrew words reut ruach are uncertain. The same words appear in 2:11, 17, 26; 4:4, 6; and 6:9."
+    },
+    {
+     "m": "e",
+     "ref": "1:17",
+     "text": "The Septuagint says “parables and understanding” instead of “madness and foolishness.”"
+    }
+   ],
+   "subheads": {
+    "1": "Everything Is a Breath",
+    "12": "The Teacher Looks for Wisdom"
+   }
+  },
+  {
+   "n": 2,
+   "paras": [
+    1,
+    4,
+    12,
+    18,
+    24
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "I told myself, “Come on, let me test you with fun. Enjoy yourself.” But that also turned out to be a breath."
+    },
+    {
+     "v": 2,
+     "text": "I said that laughter was crazy, and I asked what good fun really does."
+    },
+    {
+     "v": 3,
+     "text": "I wanted to lift my spirits with wine while my mind stayed steady with wisdom. I also tried foolishness, hoping to learn what is worth doing during the short lives people spend under heaven."
+    },
+    {
+     "v": 4,
+     "text": "I started large projects. I put up houses for myself and planted vineyards for myself."
+    },
+    {
+     "v": 5,
+     "text": "I made gardens and parks{a} and filled them with every kind of fruit tree."
+    },
+    {
+     "v": 6,
+     "text": "I dug pools to water the groves of young trees."
+    },
+    {
+     "v": 7,
+     "text": "I bought servants, men and women, and others were born in my house. I also owned more cattle and sheep than anyone before me in Jerusalem."
+    },
+    {
+     "v": 8,
+     "text": "I stacked up silver and gold for myself, treasure from kings and countries. I hired men and women singers. I also had what people love most, many wives and women to enjoy.{b}"
+    },
+    {
+     "v": 9,
+     "text": "So I became greater than everyone in Jerusalem before me, and my wisdom stayed with me."
+    },
+    {
+     "v": 10,
+     "text": "Anything my eyes wanted, I gave them. I held back no pleasure from my heart. My heart took joy in all my work, and that was the pay I received for it all."
+    },
+    {
+     "v": 11,
+     "text": "Then I looked at everything my hands had made and all the work it had taken. It was all a breath, like chasing wind. Nothing was gained under the sun."
+    },
+    {
+     "v": 12,
+     "text": "Next I turned to compare wisdom with madness and foolishness. What can the person who follows a king do? Only what has been done already.{c}"
+    },
+    {
+     "v": 13,
+     "text": "I saw that wisdom does more good than foolishness, in the way that light does more good than darkness."
+    },
+    {
+     "v": 14,
+     "text": "A wise person has eyes in his head,\nwhile a fool stumbles around in the dark.\nStill, I learned that the same end comes to both of them."
+    },
+    {
+     "v": 15,
+     "text": "So I thought, “The fool’s fate will come to me as well. Then why have I worked so hard at being wise?” I decided that this was also a breath."
+    },
+    {
+     "v": 16,
+     "text": "Wise people and fools alike will soon be forgotten. In the days ahead, both will be long gone. The wise die just like the foolish!"
+    },
+    {
+     "v": 17,
+     "text": "So I came to hate life. What people do under the sun felt like a heavy, bad load. It is all a breath, like chasing wind."
+    },
+    {
+     "v": 18,
+     "text": "I hated every bit of the labor I had done under the sun, because it will all go to the person who comes after me."
+    },
+    {
+     "v": 19,
+     "text": "Who knows if that person will be wise or foolish? Yet he will control everything I worked for and gained with my wisdom under the sun. This is a breath too."
+    },
+    {
+     "v": 20,
+     "text": "So I gave up and sank into despair over every effort I had made under the sun."
+    },
+    {
+     "v": 21,
+     "text": "A person may work with wisdom, knowledge, and skill, and then have to hand it all over to someone who did not work for it. That is a breath too, and a terrible wrong."
+    },
+    {
+     "v": 22,
+     "text": "What do people gain from their labor and from the worry in their hearts as they toil under the sun?"
+    },
+    {
+     "v": 23,
+     "text": "All their days are filled with pain, and their work is full of stress. Even at night their minds cannot rest. This is a breath too."
+    },
+    {
+     "v": 24,
+     "text": "The best thing a person can do is eat, drink, and find enjoyment in his work. I saw that even this comes from God’s hand."
+    },
+    {
+     "v": 25,
+     "text": "Who can eat well or enjoy anything without him?{d}"
+    },
+    {
+     "v": 26,
+     "text": "Anyone who pleases God receives wisdom, knowledge, and joy from him. The sinner, though, is handed the job of gathering and storing up, so it can go to someone who pleases God. That is also a breath, like chasing wind."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "2:5",
+     "text": "Hebrew pardesim, a Persian word for walled parks or orchards. The English word “paradise” comes from it."
+    },
+    {
+     "m": "b",
+     "ref": "2:8",
+     "text": "Hebrew shiddah weshiddoth. This odd phrase appears only here. It is often taken to mean “many concubines.” The Septuagint says “a butler and women who serve wine.”"
+    },
+    {
+     "m": "c",
+     "ref": "2:12",
+     "text": "The second half of this verse is hard to read in Hebrew. Literally it says, “What is the man who will come after the king? What they have already done.”"
+    },
+    {
+     "m": "d",
+     "ref": "2:25",
+     "text": "This follows the Septuagint and some other old copies. The Hebrew text says “without me.” The word “enjoy” may also mean “worry” or “feel.”"
+    }
+   ],
+   "subheads": {
+    "1": "Pleasure and Hard Work Do Not Satisfy",
+    "12": "Wise and Foolish Both Die",
+    "18": "Who Gets What I Worked For?",
+    "24": "Enjoy What God Gives"
+   }
+  },
+  {
+   "n": 3,
+   "paras": [
+    1,
+    9,
+    16
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Everything has its own set time.\nEvery activity on earth has its season:"
+    },
+    {
+     "v": 2,
+     "text": "a time to be born and a time to die,\na time to plant and a time to dig up the plants,"
+    },
+    {
+     "v": 3,
+     "text": "There is a time for killing and a time for healing.\nThere is a time for pulling down and a time for putting up."
+    },
+    {
+     "v": 4,
+     "text": "There is a time for crying and a time for laughing.\nThere is a time for grieving and a time for dancing."
+    },
+    {
+     "v": 5,
+     "text": "a time to scatter stones and a time to pile them up,{a}\na time to hug and a time to pull away,"
+    },
+    {
+     "v": 6,
+     "text": "There is a time for looking and a time for giving up.\nThere is a time for saving and a time for tossing out."
+    },
+    {
+     "v": 7,
+     "text": "There is a time for ripping cloth and a time for sewing it.\nThere is a time for silence and a time for speaking."
+    },
+    {
+     "v": 8,
+     "text": "a time to love and a time to hate,\na time for war and a time for peace."
+    },
+    {
+     "v": 9,
+     "text": "What does a worker get from all his effort?"
+    },
+    {
+     "v": 10,
+     "text": "I have seen the job God gave people to keep them busy."
+    },
+    {
+     "v": 11,
+     "text": "God made everything fit well in its time. He also put a sense of forever{b} in human minds. Even so, no one can fully understand what God does from start to finish."
+    },
+    {
+     "v": 12,
+     "text": "I know that people can do nothing better than be glad and do good{c} through all their lives."
+    },
+    {
+     "v": 13,
+     "text": "Everyone should also eat, drink, and enjoy the results of their work. That is a gift from God."
+    },
+    {
+     "v": 14,
+     "text": "I know that everything God does will last for all time. You cannot add a thing to it or subtract a thing from it. God made it so, so that people would respect him."
+    },
+    {
+     "v": 15,
+     "text": "What exists now has existed before,\nand what will exist has been before,\nand God goes looking for what has been chased away.{d}"
+    },
+    {
+     "v": 16,
+     "text": "I also noticed something else under the sun. In the place of justice stood evil, and in the place of fairness stood evil."
+    },
+    {
+     "v": 17,
+     "text": "I told myself, “God will judge good people and wicked people, because every matter and every action has its time.”{e}"
+    },
+    {
+     "v": 18,
+     "text": "About people, I told myself, “God is testing them to show them they are only animals.”"
+    },
+    {
+     "v": 19,
+     "text": "People and animals meet the same end. One dies the way the other dies. All of them have the same breath.{f} People are not better off than animals, because it is all a breath."
+    },
+    {
+     "v": 20,
+     "text": "Everything goes to the same place. All came from dust, and all go back to dust."
+    },
+    {
+     "v": 21,
+     "text": "Who knows if the human spirit rises upward while an animal’s spirit sinks down into the earth?{g}"
+    },
+    {
+     "v": 22,
+     "text": "So I concluded that nothing is better for a person than enjoying his work, since that is what he is given. Who can show him what will happen after he is gone?"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "3:5",
+     "text": "This pair is uncertain. It may mean clearing a field and building a wall, or it may be a polite way of speaking about married life, as the next line suggests."
+    },
+    {
+     "m": "b",
+     "ref": "3:11",
+     "text": "Hebrew haolam. It can also mean “a sense of the ages,” or, with different vowels, “ignorance.”"
+    },
+    {
+     "m": "c",
+     "ref": "3:12",
+     "text": "Or “to enjoy themselves.”"
+    },
+    {
+     "m": "d",
+     "ref": "3:15",
+     "text": "Or “what has passed.” Literally “what is chased.”"
+    },
+    {
+     "m": "e",
+     "ref": "3:17",
+     "text": "The Hebrew word “there” is unexpected. Some read “he has set a time,” by changing the vowels slightly."
+    },
+    {
+     "m": "f",
+     "ref": "3:19",
+     "text": "Hebrew ruach, “breath” or “spirit.” It is a different word from hevel."
+    },
+    {
+     "m": "g",
+     "ref": "3:21",
+     "text": "This follows the Septuagint and some other old copies. The vowels in the Hebrew text read, “Who knows if the spirit of people goes upward?”"
+    }
+   ],
+   "subheads": {
+    "1": "A Time for Everything",
+    "9": "God Has Set Eternity in Hearts",
+    "16": "Humans and Animals Face the Same End"
+   }
+  },
+  {
+   "n": 4,
+   "paras": [
+    1,
+    4,
+    7,
+    13
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Again I looked at all the cruelty done under the sun. I saw the tears of people who were hurt, and no one comforted them. Their attackers had power, and no one comforted the victims."
+    },
+    {
+     "v": 2,
+     "text": "So I decided that the dead, who died long ago, are better off than the living, who are still alive."
+    },
+    {
+     "v": 3,
+     "text": "Better off than both is the person who has never been born. He has not seen the evil done under the sun."
+    },
+    {
+     "v": 4,
+     "text": "I also saw that all hard work and skill come from people competing with each other. That is a breath too, like chasing wind."
+    },
+    {
+     "v": 5,
+     "text": "The fool sits with folded hands\nand ruins himself."
+    },
+    {
+     "v": 6,
+     "text": "One hand full of calm\nis better than two hands full of labor and wind-chasing."
+    },
+    {
+     "v": 7,
+     "text": "I saw another breath under the sun:"
+    },
+    {
+     "v": 8,
+     "text": "A man may be completely alone, with no partner, no son and no brother. Still, he works nonstop, and his eyes are never satisfied with money. He asks, “Who am I working for? Why do I deny myself good things?” This is also a breath, a miserable job."
+    },
+    {
+     "v": 9,
+     "text": "Two people are better off than one,\nbecause they get more for their work together."
+    },
+    {
+     "v": 10,
+     "text": "If one trips, the other can pull him to his feet.\nBut how sad for the one who trips with nobody to lift him!"
+    },
+    {
+     "v": 11,
+     "text": "Also, when two lie down together, they stay warm.\nHow can one person alone get warm?"
+    },
+    {
+     "v": 12,
+     "text": "One person alone may be beaten, but two can stand up to an attacker.\nA rope with three strands does not snap quickly."
+    },
+    {
+     "v": 13,
+     "text": "A poor but wise young person is better than an old, foolish king who will not take advice any more."
+    },
+    {
+     "v": 14,
+     "text": "The young man rose from a prison cell to the throne, though he had been born poor in that kingdom.{a}"
+    },
+    {
+     "v": 15,
+     "text": "I saw all the living people who walk under the sun rush to follow the young man, the second one, who took the king’s place."
+    },
+    {
+     "v": 16,
+     "text": "There was no end to the crowds he led,{b} yet those who come later will not like him either. This is a breath too, like chasing wind."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "4:14",
+     "text": "The Hebrew of verses 13–16 is vague. It is not always clear who “he” is."
+    },
+    {
+     "m": "b",
+     "ref": "4:16",
+     "text": "Or “all who went before them.” Literally “all who were before them.”"
+    }
+   ],
+   "subheads": {
+    "1": "Cruelty and Loneliness",
+    "7": "Two Are Better Than One",
+    "13": "Even Kings Are Forgotten"
+   }
+  },
+  {
+   "n": 5,
+   "paras": [
+    1,
+    8,
+    10,
+    13,
+    18
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Be careful where you walk{a} when you go to God’s house. Going to listen is better than the gift of fools, who do not know they are doing wrong.{b}"
+    },
+    {
+     "v": 2,
+     "text": "Do not be quick to open your mouth.\nDo not hurry to say anything in front of God.\nHe lives in heaven, while you live on the ground,\nso keep your words few."
+    },
+    {
+     "v": 3,
+     "text": "A dream comes from lots of activity,\nand a fool’s talk comes from lots of words."
+    },
+    {
+     "v": 4,
+     "text": "If you make a vow to God, do not put off keeping it. He has no joy in fools. Do what you promised."
+    },
+    {
+     "v": 5,
+     "text": "Making no promise at all is better than making one and breaking it."
+    },
+    {
+     "v": 6,
+     "text": "Do not let what you say drag you{c} into sin. Do not tell the temple messenger{d} it was a mistake. Why make God angry at your words and let him wreck all you have worked for?"
+    },
+    {
+     "v": 7,
+     "text": "Many dreams and many words bring only breaths.{e} So respect God."
+    },
+    {
+     "v": 8,
+     "text": "If you see poor people mistreated in a district, and justice and fairness pushed aside, do not be shocked. One official is watched by a higher one, and others are over them."
+    },
+    {
+     "v": 9,
+     "text": "But the produce of the land belongs to everyone. Even a king depends on the farm fields.{f}"
+    },
+    {
+     "v": 10,
+     "text": "Anyone who loves silver will never have enough silver.\nAnyone who loves wealth will never have enough income.\nThis is a breath too."
+    },
+    {
+     "v": 11,
+     "text": "When goods multiply,\nthe people who use them multiply too.\nWhat does the owner get out of it\nexcept to look at it all?"
+    },
+    {
+     "v": 12,
+     "text": "A worker sleeps sweetly,\nwhether he has eaten little or much.\nBut a rich person’s full stomach\nwill not let him sleep."
+    },
+    {
+     "v": 13,
+     "text": "I have seen a painful wrong under the sun: wealth stored up by its owner, to his own harm."
+    },
+    {
+     "v": 14,
+     "text": "That wealth is lost in a bad business deal, and when he has a child, he has nothing to give.{g}"
+    },
+    {
+     "v": 15,
+     "text": "He came naked from his mother’s womb, and he will go back naked, just as he came. He cannot carry away a single thing from his work."
+    },
+    {
+     "v": 16,
+     "text": "This is a painful wrong too: he leaves exactly as he came. What does he get for working for the wind?"
+    },
+    {
+     "v": 17,
+     "text": "All his days he eats in the dark, with much frustration, illness, and anger.{h}"
+    },
+    {
+     "v": 18,
+     "text": "Here is what I have seen to be good and right: a person should eat, drink, and enjoy the results of his work under the sun during the limited days God gives him, because that is his share."
+    },
+    {
+     "v": 19,
+     "text": "Also, when God gives anyone riches and property, and lets him enjoy them, accept his share, and be happy in his work, that is a gift from God."
+    },
+    {
+     "v": 20,
+     "text": "He will not spend much time thinking about the days of his life, because God keeps him busy with joy in his heart."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "5:1",
+     "text": "In Hebrew this verse is numbered 4:17, and verses 2–20 are numbered 5:1–19. The written Hebrew text says “your feet.”"
+    },
+    {
+     "m": "b",
+     "ref": "5:1",
+     "text": "Or “because they do not know how to do anything but wrong.”"
+    },
+    {
+     "m": "c",
+     "ref": "5:6",
+     "text": "Literally “your flesh.”"
+    },
+    {
+     "m": "d",
+     "ref": "5:6",
+     "text": "This was probably a temple official or priest. The Septuagint says “before God.”"
+    },
+    {
+     "m": "e",
+     "ref": "5:7",
+     "text": "Or “For in many dreams and many words there are breaths.” The Hebrew is uncertain."
+    },
+    {
+     "m": "f",
+     "ref": "5:9",
+     "text": "The Hebrew of this verse is hard to read."
+    },
+    {
+     "m": "g",
+     "ref": "5:14",
+     "text": "Hebrew verses 13–17 (English 14–18) are partly kept in 4QQoh-a, the oldest known copy of Ecclesiastes (about 175–150 BC)."
+    },
+    {
+     "m": "h",
+     "ref": "5:17",
+     "text": "The Septuagint says “and mourning” instead of “he eats,” a Hebrew word that looks much like it."
+    }
+   ],
+   "subheads": {
+    "1": "Be Careful Before God",
+    "8": "Money Does Not Satisfy",
+    "13": "Riches Can Be Lost",
+    "18": "Enjoy Your Share"
+   }
+  },
+  {
+   "n": 6,
+   "paras": [
+    1,
+    7,
+    10
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "There is another wrong I have seen under the sun, and it is heavy on people:"
+    },
+    {
+     "v": 2,
+     "text": "God gives a man riches, property, and honor, so he has everything he could want, yet God does not let him enjoy it. A stranger enjoys it instead. This is a breath and a painful wrong."
+    },
+    {
+     "v": 3,
+     "text": "Imagine a man with a hundred children who lives many years, however long that is. If he never enjoys his good things{a} and is not even laid in a proper grave, then I say a baby who never took a breath is better off."
+    },
+    {
+     "v": 4,
+     "text": "That baby comes in a breath and goes out in darkness, and its name is covered in darkness.{b}"
+    },
+    {
+     "v": 5,
+     "text": "It never saw the sun or knew anything, yet it finds more rest than that man."
+    },
+    {
+     "v": 6,
+     "text": "Even if he lived two thousand years without enjoying good things,{c} do they not all end in one place?"
+    },
+    {
+     "v": 7,
+     "text": "All people work to feed their mouths,\nyet their appetite is never full."
+    },
+    {
+     "v": 8,
+     "text": "What do wise people have over fools?\nWhat does a poor person gain by knowing how to behave in front of others?"
+    },
+    {
+     "v": 9,
+     "text": "What the eyes see is better\nthan wandering desires.\nThis is a breath too, like chasing wind."
+    },
+    {
+     "v": 10,
+     "text": "Whatever exists was named long ago, and what humans are is already known. No one can win an argument against someone stronger."
+    },
+    {
+     "v": 11,
+     "text": "The more words, the more breath. What good does that do anyone?"
+    },
+    {
+     "v": 12,
+     "text": "Who knows what is best for a person during the few days of a short life,{d} which passes like a shadow? Who can say what will happen on earth after he is gone?"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "6:3",
+     "text": "In 4QQoh-a (about 175–150 BC) the parts of this verse come in a different order, but the meaning is the same."
+    },
+    {
+     "m": "b",
+     "ref": "6:4",
+     "text": "In 4QQoh-a the first scribe wrote “and in darkness his name is covered,” about the man. A later scribe changed it to match the standard Hebrew text."
+    },
+    {
+     "m": "c",
+     "ref": "6:6",
+     "text": "4QQoh-a uses some different words in this verse, with the same meaning."
+    },
+    {
+     "m": "d",
+     "ref": "6:12",
+     "text": "Literally “the days of the life of his breath.”"
+    }
+   ],
+   "subheads": {
+    "1": "Having Wealth but Not Enjoying It",
+    "7": "Appetite Is Never Full",
+    "10": "Who Knows What Is Good?"
+   }
+  },
+  {
+   "n": 7,
+   "paras": [
+    1,
+    11,
+    15,
+    23
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "A good reputation is worth more than fine perfume,{a}\nand a funeral day is better than a birthday."
+    },
+    {
+     "v": 2,
+     "text": "It is better to visit a home where people are grieving\nthan a home where people are feasting,\nbecause death comes to everyone,\nand the living should think about it."
+    },
+    {
+     "v": 3,
+     "text": "Sorrow is better than laughter,\nbecause a sad face can make the heart better."
+    },
+    {
+     "v": 4,
+     "text": "The wise person’s heart is in the house of grief,\nwhile the fool’s heart sits in the house of fun."
+    },
+    {
+     "v": 5,
+     "text": "Hearing a wise person’s warning beats\nhearing the song of fools."
+    },
+    {
+     "v": 6,
+     "text": "The laughing of a fool\nis like thorns crackling under a pot.{b}\nThis is a breath too."
+    },
+    {
+     "v": 7,
+     "text": "Pressure to pay off turns wise people into fools,\nand a bribe ruins the mind.{c}"
+    },
+    {
+     "v": 8,
+     "text": "The end of a matter is better than the start.\nPatience is better than pride."
+    },
+    {
+     "v": 9,
+     "text": "Do not let your spirit get angry quickly,\nbecause anger sits in the lap of fools."
+    },
+    {
+     "v": 10,
+     "text": "Do not ask, “Why were the old days better than now?”\nA wise person does not ask that."
+    },
+    {
+     "v": 11,
+     "text": "Wisdom is good along with an inheritance.\nIt helps all who live under the sun."
+    },
+    {
+     "v": 12,
+     "text": "Wisdom protects, and money protects.\nBut knowledge has this advantage: wisdom keeps its owner alive."
+    },
+    {
+     "v": 13,
+     "text": "Look at what God has done.\nWho could straighten something he has bent?"
+    },
+    {
+     "v": 14,
+     "text": "When times are good, be glad.\nWhen times are bad, think:\nGod made both kinds of days,\nso that no one can find out what will happen after him."
+    },
+    {
+     "v": 15,
+     "text": "During my brief life{d} I have seen both: a good person who dies in spite of his goodness, and a wicked person who lives long in spite of his evil."
+    },
+    {
+     "v": 16,
+     "text": "Do not try to be too good, and do not make yourself too clever. Why ruin yourself?"
+    },
+    {
+     "v": 17,
+     "text": "Do not be extremely wicked, and do not act like a fool. Why die before your time?"
+    },
+    {
+     "v": 18,
+     "text": "It is good to hold on to the first and not let go of the second, because the person who respects God will get through both.{e}"
+    },
+    {
+     "v": 19,
+     "text": "Wisdom makes the wise stronger{f}\nthan ten rulers in a city."
+    },
+    {
+     "v": 20,
+     "text": "No one on earth is so good\nthat he always does right and never sins."
+    },
+    {
+     "v": 21,
+     "text": "Also, do not take every word people say to heart, or you may hear your servant cursing you."
+    },
+    {
+     "v": 22,
+     "text": "Your own heart knows that many times you have cursed others too."
+    },
+    {
+     "v": 23,
+     "text": "I tested all this with wisdom. I said, “I will become wise,” but wisdom stayed out of my reach."
+    },
+    {
+     "v": 24,
+     "text": "What exists is far off and very deep. Who can find it out?"
+    },
+    {
+     "v": 25,
+     "text": "I turned my mind to learn, to study, and to search for wisdom and the reason for things,{g} and to see how foolish wickedness is and how crazy folly is."
+    },
+    {
+     "v": 26,
+     "text": "What I found is more bitter than death: a woman who is a trap, whose heart is a net and whose hands are chains. A person who pleases God escapes her, but the sinner is caught."
+    },
+    {
+     "v": 27,
+     "text": "“Look, this is what I found,” says Qoheleth.{h} “I added one thing to another to get the total,"
+    },
+    {
+     "v": 28,
+     "text": "I am still hunting for it and have not found it. I found one honest man among a thousand, but among all the women I did not find one."
+    },
+    {
+     "v": 29,
+     "text": "But I did find this: God made people honest, but they have looked for many schemes.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "7:1",
+     "text": "The Hebrew has a word game: shem, “name,” and shemen, “oil” or “perfume.”"
+    },
+    {
+     "m": "b",
+     "ref": "7:6",
+     "text": "This is another word game: sirim, “thorns,” and sir, “pot.”"
+    },
+    {
+     "m": "c",
+     "ref": "7:7",
+     "text": "Hebrew mattanah means “gift,” here meaning a bribe. 4QQoh-a may have a different verb in the first line."
+    },
+    {
+     "m": "d",
+     "ref": "7:15",
+     "text": "Hebrew “days of my breath.”"
+    },
+    {
+     "m": "e",
+     "ref": "7:18",
+     "text": "Or “will avoid both extremes.”"
+    },
+    {
+     "m": "f",
+     "ref": "7:19",
+     "text": "This follows the standard Hebrew text, “makes strong.” 4QQoh-a and the Septuagint say “helps.”"
+    },
+    {
+     "m": "g",
+     "ref": "7:25",
+     "text": "Hebrew heshbon, “account” or “reckoning.” It is also used in verse 27."
+    },
+    {
+     "m": "h",
+     "ref": "7:27",
+     "text": "The Hebrew verb here is feminine: “she says, Qoheleth.” If the letters are divided another way, it reads “says the Qoheleth,” as in 12:8. The Septuagint supports that reading."
+    }
+   ],
+   "subheads": {
+    "1": "Better Than",
+    "11": "Wisdom Gives Protection",
+    "15": "Do Not Go to Extremes",
+    "23": "The Search for Wisdom"
+   }
+  },
+  {
+   "n": 8,
+   "paras": [
+    1,
+    2,
+    9,
+    14,
+    16
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Who compares with a wise person?\nWho understands how to explain things?\nWisdom brightens a person’s face\nand softens a hard look.{a}"
+    },
+    {
+     "v": 2,
+     "text": "I say this:{b} obey the king’s orders, because of the promise you made before God."
+    },
+    {
+     "v": 3,
+     "text": "Do not hurry away from him. Do not stand up for a bad cause, because he does whatever he wants."
+    },
+    {
+     "v": 4,
+     "text": "The king’s word is the highest power. Who would dare ask him, “What are you doing?”"
+    },
+    {
+     "v": 5,
+     "text": "Anyone who obeys his order will not be harmed. A wise heart understands the right moment and the right way."
+    },
+    {
+     "v": 6,
+     "text": "Everything has a right time and a right way, although people’s troubles weigh heavily on them."
+    },
+    {
+     "v": 7,
+     "text": "No one knows what will happen. Who can tell anyone how it will turn out?"
+    },
+    {
+     "v": 8,
+     "text": "No one has authority over the wind{c} to hold it back, and no one has authority over the day they die. No soldier is released during a war, and evil will not save those who practice it."
+    },
+    {
+     "v": 9,
+     "text": "I saw all this when I turned my mind to everything done under the sun, in a time when one person has power over another and hurts him."
+    },
+    {
+     "v": 10,
+     "text": "I also saw wicked people buried. They used to go in and out of the holy place, and they were forgotten{d} in the very city where they did these things. This is also a breath."
+    },
+    {
+     "v": 11,
+     "text": "Punishment for a crime is not carried out quickly, so people’s hearts are full of plans to do wrong."
+    },
+    {
+     "v": 12,
+     "text": "A sinner may do wrong a hundred times and still live a long life. Yet I know it will go well for those who respect God, because they stand in awe of him."
+    },
+    {
+     "v": 13,
+     "text": "It will not go well for the wicked, and his days will not last, like an evening shadow, because he does not respect God."
+    },
+    {
+     "v": 14,
+     "text": "Here is a breath on earth: some good people get what wicked people deserve, and some wicked people get what good people deserve. I said that this too is a breath."
+    },
+    {
+     "v": 15,
+     "text": "So I recommend joy. Nothing is better for people under the sun than eating, drinking, and having fun. Joy will stay with them in their labor through the life God gives them under the sun."
+    },
+    {
+     "v": 16,
+     "text": "I set my mind to know wisdom and to watch the busy work on earth, even staying awake day and night."
+    },
+    {
+     "v": 17,
+     "text": "Then I saw all that God does. No one can figure out what happens under the sun. No matter how hard people try to search, they will not find the answer. Even if a wise person says he knows, he cannot find it out."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "8:1",
+     "text": "Literally “and the strength of his face is changed.” The Septuagint says “but a person with a shameless face will be hated.”"
+    },
+    {
+     "m": "b",
+     "ref": "8:2",
+     "text": "The Hebrew word “I” stands alone at the start of the verse. Something may have been lost."
+    },
+    {
+     "m": "c",
+     "ref": "8:8",
+     "text": "Or “the spirit” or “the breath of life.”"
+    },
+    {
+     "m": "d",
+     "ref": "8:10",
+     "text": "This follows the standard Hebrew text. The Septuagint and some other old copies say “praised,” which differs by one Hebrew letter."
+    }
+   ],
+   "subheads": {
+    "1": "Obey the King",
+    "9": "Life Does Not Seem Fair",
+    "16": "No One Can Figure It All Out"
+   }
+  },
+  {
+   "n": 9,
+   "paras": [
+    1,
+    7,
+    11,
+    13
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "I thought about all this and tested it. Good and wise people, and everything they do, are in God’s hands. No one knows whether love or hate is waiting. It is all ahead of them."
+    },
+    {
+     "v": 2,
+     "text": "The same thing happens to everyone:{a} one fate for the good and the wicked, for the clean and the unclean, for those who offer sacrifices and those who do not. The good person and the sinner are treated alike, and so are the one who swears an oath and the one who is afraid to swear."
+    },
+    {
+     "v": 3,
+     "text": "This is what is wrong with everything done under the sun: all share one fate. People’s hearts are also full of evil, and craziness lives in them as long as they are alive. Then they join the dead."
+    },
+    {
+     "v": 4,
+     "text": "But whoever is still counted among the living{b} has hope. A live dog beats a dead lion."
+    },
+    {
+     "v": 5,
+     "text": "The living are aware that they will die, but the dead are aware of nothing. They earn no more pay, and even the memory of them is forgotten.{c}"
+    },
+    {
+     "v": 6,
+     "text": "Their love, their hate, and their jealousy are already gone. They will never again have a part in anything done under the sun."
+    },
+    {
+     "v": 7,
+     "text": "Go on, enjoy your meal and your wine with a happy heart, since God long ago accepted what you do."
+    },
+    {
+     "v": 8,
+     "text": "Keep your clothes white at all times, and never run out of oil for your head."
+    },
+    {
+     "v": 9,
+     "text": "Take pleasure in life with the wife you love, through all the brief days God has given you under the sun, all your brief days,{d} because that is your reward in life and for the work you do under the sun."
+    },
+    {
+     "v": 10,
+     "text": "Put all your strength into whatever work you find to do, because in the grave{e} where you are headed there is no work, no planning, no knowledge, and no wisdom."
+    },
+    {
+     "v": 11,
+     "text": "I also saw under the sun that fast runners do not always win the race, strong fighters do not always win the battle, wise people do not always have food, smart people do not always get rich, and skilled people do not always get praise. Time and chance catch up with all of them."
+    },
+    {
+     "v": 12,
+     "text": "Nobody knows when his hour will come. Fish are caught in a cruel net, and birds are caught in a trap. In the same way, people are trapped at a bad time that falls on them suddenly."
+    },
+    {
+     "v": 13,
+     "text": "Here is another lesson in wisdom that I saw under the sun, and it moved me deeply:"
+    },
+    {
+     "v": 14,
+     "text": "A small city had only a few people living in it. A powerful king marched against it, surrounded it, and built great ramps against its walls."
+    },
+    {
+     "v": 15,
+     "text": "In that city lived a poor man who was wise, and his wisdom saved the city. Yet afterward no one remembered that poor man."
+    },
+    {
+     "v": 16,
+     "text": "I concluded, “Wisdom is stronger than strength.” Still, the poor man’s wisdom is looked down on, and no one listens to his words."
+    },
+    {
+     "v": 17,
+     "text": "Quiet words from the wise are heard\nbetter than the shouts of a foolish ruler."
+    },
+    {
+     "v": 18,
+     "text": "Wisdom beats weapons of war,\nbut one sinner can destroy a lot of good."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "9:2",
+     "text": "The Septuagint begins this verse with “Everything is a breath,” joining the last word of verse 1 to it and reading hevel (“breath”) for hakkol (“everything”)."
+    },
+    {
+     "m": "b",
+     "ref": "9:4",
+     "text": "This follows the margin of the Hebrew text. The written text says “chosen.”"
+    },
+    {
+     "m": "c",
+     "ref": "9:5",
+     "text": "This is a word game in Hebrew: sakar, “reward,” and zeker, “memory.”"
+    },
+    {
+     "m": "d",
+     "ref": "9:9",
+     "text": "Literally “all the days of the life of your breath … all the days of your breath.” The Septuagint and some other old copies do not have the repeated words."
+    },
+    {
+     "m": "e",
+     "ref": "9:10",
+     "text": "Hebrew Sheol, the place of the dead. The Septuagint says “Hades.”"
+    }
+   ],
+   "subheads": {
+    "1": "One Fate for Everyone",
+    "7": "Enjoy Life While You Can",
+    "11": "Time and Chance",
+    "13": "A Poor Wise Man"
+   }
+  },
+  {
+   "n": 10,
+   "paras": [
+    1,
+    5,
+    12,
+    16
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Dead flies make a perfume maker’s oil stink and bubble.\nA bit of foolishness can outweigh wisdom and honor."
+    },
+    {
+     "v": 2,
+     "text": "A wise person’s heart leans toward the right side,\nand a fool’s heart leans toward the left.{a}"
+    },
+    {
+     "v": 3,
+     "text": "As the fool walks down the road, he has no sense,\nand he shows everyone how foolish he is."
+    },
+    {
+     "v": 4,
+     "text": "If a ruler becomes angry with you, do not quit your job.\nStaying calm can settle even serious offenses."
+    },
+    {
+     "v": 5,
+     "text": "I have seen a wrong under the sun, a mistake of the kind rulers make:"
+    },
+    {
+     "v": 6,
+     "text": "fools are given high positions, while rich people sit in low ones."
+    },
+    {
+     "v": 7,
+     "text": "I have seen servants riding horses and princes walking like servants."
+    },
+    {
+     "v": 8,
+     "text": "Anyone who digs a pit may fall in.\nAnyone who knocks down a wall may get bitten by a snake."
+    },
+    {
+     "v": 9,
+     "text": "A person who cuts stones may get hurt by them.\nA person who splits logs may be in danger from them."
+    },
+    {
+     "v": 10,
+     "text": "If the ax is dull and no one sharpens the blade,\na person must use more strength.\nBut wisdom helps a person succeed."
+    },
+    {
+     "v": 11,
+     "text": "If the snake bites before it is charmed,\nthe snake charmer earns nothing.{b}"
+    },
+    {
+     "v": 12,
+     "text": "A wise person’s words bring favor,\nbut a fool’s lips destroy him."
+    },
+    {
+     "v": 13,
+     "text": "His words begin with foolishness\nand end with wicked madness."
+    },
+    {
+     "v": 14,
+     "text": "A fool talks and talks, although no one knows what will happen. Who can tell anyone what will come after him?"
+    },
+    {
+     "v": 15,
+     "text": "The fool’s work wears him out,\nsince he cannot even find the road to town."
+    },
+    {
+     "v": 16,
+     "text": "How sad for a country whose king is a boy,{c}\nand whose leaders feast in the morning!"
+    },
+    {
+     "v": 17,
+     "text": "How happy is a country whose king comes from a noble family,\nand whose leaders eat at a proper time,\nto gain strength and not to get drunk!"
+    },
+    {
+     "v": 18,
+     "text": "Laziness makes the roof beams sag,\nand idle hands make the house leak."
+    },
+    {
+     "v": 19,
+     "text": "People have feasts to enjoy a laugh.\nWine brightens life,\nand money answers every need."
+    },
+    {
+     "v": 20,
+     "text": "Do not curse a king, not even in your thoughts,{d}\nand never curse the rich, not even in your bedroom,\nbecause a little bird may carry your words,\nand something with wings may repeat them."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "10:2",
+     "text": "The right hand stood for strength and approval. The left stood for weakness or bad luck."
+    },
+    {
+     "m": "b",
+     "ref": "10:11",
+     "text": "Literally “master of the tongue.”"
+    },
+    {
+     "m": "c",
+     "ref": "10:16",
+     "text": "Or “a servant.” The Septuagint speaks to a city here."
+    },
+    {
+     "m": "d",
+     "ref": "10:20",
+     "text": "Or “in your bed.” The Hebrew word madda may mean “knowledge” or, with another reading, “bed.”"
+    }
+   ],
+   "subheads": {
+    "1": "Wisdom and Foolishness",
+    "5": "Strange Things Under the Sun",
+    "12": "Words of the Wise and the Fool",
+    "16": "Rulers and Laziness"
+   }
+  },
+  {
+   "n": 11,
+   "paras": [
+    1,
+    7,
+    9
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Throw your bread out on the water,\nbecause after many days you will find it again."
+    },
+    {
+     "v": 2,
+     "text": "Share what you have with seven people, or even eight,\nbecause you do not know what trouble may come to the land."
+    },
+    {
+     "v": 3,
+     "text": "When clouds are heavy,\nthey pour rain on the earth.\nAnd when a tree falls, whether to the south or north,\nit stays where it falls."
+    },
+    {
+     "v": 4,
+     "text": "Anyone who keeps checking the wind will never plant.\nAnyone who keeps looking at the clouds will never harvest."
+    },
+    {
+     "v": 5,
+     "text": "You do not know which way the wind{a} blows,\nor how a baby’s bones grow inside a pregnant woman.\nIn the same way, you cannot understand what God is doing,\nfor he makes everything."
+    },
+    {
+     "v": 6,
+     "text": "Plant your seed in the morning,\nand do not rest your hands in the evening,\nbecause you do not know which will do well, this one or that one,\nor whether both will do well."
+    },
+    {
+     "v": 7,
+     "text": "Light is sweet,\nand it is good for the eyes to see the sun."
+    },
+    {
+     "v": 8,
+     "text": "However many years someone lives, he should enjoy every one of them. Still, he should keep in mind that dark days will be many. Everything that is coming is a breath."
+    },
+    {
+     "v": 9,
+     "text": "Be happy, young man, while you are young.\nLet your heart be glad in your prime.\nFollow what your heart desires\nand what your eyes see.{b}\nJust understand that God will hold you accountable\nfor all of it."
+    },
+    {
+     "v": 10,
+     "text": "Chase sadness out of your heart,\nand keep pain away from your body,\nbecause youth and dark hair{c} are a breath."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "11:5",
+     "text": "Or “the spirit” or “the breath of life” that enters an unborn child."
+    },
+    {
+     "m": "b",
+     "ref": "11:9",
+     "text": "The Septuagint says, “Walk in the ways of your heart without blame, but not by what your eyes see.”"
+    },
+    {
+     "m": "c",
+     "ref": "11:10",
+     "text": "Hebrew shacharuth. It probably means “the black hair” of youth, or it may mean “the dawn.”"
+    }
+   ],
+   "subheads": {
+    "1": "Take Risks and Work Hard",
+    "7": "Enjoy Your Youth"
+   }
+  },
+  {
+   "n": 12,
+   "paras": [
+    1,
+    8,
+    9,
+    13
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Remember your Creator{a} while you are young,\nbefore the hard days come,\nand the years arrive when you will say,\n“I get no joy from them.”"
+    },
+    {
+     "v": 2,
+     "text": "Remember him before the sun, the light,\nthe moon, and the stars go dark,\nand the clouds return after the storm."
+    },
+    {
+     "v": 3,
+     "text": "Remember him when the guards of the house shake,\nthe strong men bend over,\nthe women who grind grain stop because so few are left,\nand those who look out the windows see only shadows.{b}"
+    },
+    {
+     "v": 4,
+     "text": "The doors to the street are shut,\nand the sound of grinding fades.\nPeople wake up at the sound of a bird,\nand all the songs grow quiet."
+    },
+    {
+     "v": 5,
+     "text": "People fear high places,\nand dangers are on the road.\nThe almond tree is in bloom,{c}\nthe grasshopper drags itself along,\nand desire fades like the caper berry.{d}\nThis is because a person is going to his everlasting home,\nand mourners walk through the streets."
+    },
+    {
+     "v": 6,
+     "text": "Remember him before the silver cord snaps,{e}\nthe golden bowl breaks,\nthe jar shatters at the spring,\nand the wheel is smashed at the well."
+    },
+    {
+     "v": 7,
+     "text": "Then the dust goes back into the ground,\nand the life-giving breath{f} goes home to God, who gave it."
+    },
+    {
+     "v": 8,
+     "text": "“Breath of breaths,” says Qoheleth.\n“It is all a breath.”"
+    },
+    {
+     "v": 9,
+     "text": "Qoheleth was wise, and he also taught the people what he knew. He weighed, studied, and arranged many proverbs."
+    },
+    {
+     "v": 10,
+     "text": "Qoheleth searched for the right words and wrote down true words carefully."
+    },
+    {
+     "v": 11,
+     "text": "The words of wise people are like sticks that prod. Collections of their sayings are like nails driven in tight. They are all given by one Shepherd."
+    },
+    {
+     "v": 12,
+     "text": "Besides these, my child, take this warning: there is no end to making books, and too much study wears out the body."
+    },
+    {
+     "v": 13,
+     "text": "Now that everything has been heard, here is the conclusion: respect God and obey his commands, because this is the whole duty of everyone.{g}"
+    },
+    {
+     "v": 14,
+     "text": "God will judge everything people do, including everything hidden, whether good or bad."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "12:1",
+     "text": "The Hebrew word is plural, probably to show greatness. Some readers hear a word game with bor, “pit” (the grave), or beer, “well” (a man’s wife, as in Proverbs 5:15–18)."
+    },
+    {
+     "m": "b",
+     "ref": "12:3",
+     "text": "Verses 3–5 are often read as a picture of old age: shaking arms, bent legs, few teeth, and weak eyes. Others read them as a home in mourning."
+    },
+    {
+     "m": "c",
+     "ref": "12:5",
+     "text": "Its white blossoms are often taken as a picture of white hair."
+    },
+    {
+     "m": "d",
+     "ref": "12:5",
+     "text": "This is probably the caper plant. People thought its buds made them hungry."
+    },
+    {
+     "m": "e",
+     "ref": "12:6",
+     "text": "This follows the margin of the Hebrew text. The written text says “removed.”"
+    },
+    {
+     "m": "f",
+     "ref": "12:7",
+     "text": "Or “spirit.” Hebrew ruach."
+    },
+    {
+     "m": "g",
+     "ref": "12:13",
+     "text": "Literally “for this is all of humanity” or “this is every person’s duty.”"
+    }
+   ],
+   "subheads": {
+    "1": "Remember Your Creator While You Are Young",
+    "8": "Final Words of Qoheleth",
+    "13": "The Whole Duty of Everyone"
+   }
+  }
+ ]
+}
