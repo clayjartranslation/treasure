@@ -1,0 +1,5047 @@
+{
+ "id": "proverbs",
+ "name": "Proverbs",
+ "division": "Old Testament",
+ "sourceNote": "Written freshly, thought for thought, from the oldest Hebrew, Greek, and Aramaic witnesses (the Masoretic Text with the Dead Sea Scrolls, the Septuagint, and the Samaritan Pentateuch). © 2026 Jose Santiago. All rights reserved.",
+ "chapters": [
+  {
+   "n": 1,
+   "paras": [
+    1,
+    7,
+    8,
+    20
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Here are the wise sayings{a} of Solomon,{b} who was David’s{c} son and ruled Israel.{d}"
+    },
+    {
+     "v": 2,
+     "text": "They are written so you can learn wisdom and self-control\nand understand deep and helpful words."
+    },
+    {
+     "v": 3,
+     "text": "They teach you how to be sensible,\nhonest, fair, and just."
+    },
+    {
+     "v": 4,
+     "text": "They give clear thinking to people who are easily fooled,\nand knowledge and good judgment to the young."
+    },
+    {
+     "v": 5,
+     "text": "Wise people who listen will learn even more.\nThose with understanding will gain the skill of good guidance."
+    },
+    {
+     "v": 6,
+     "text": "They will make sense of sayings and word pictures,\nand of the teachings and puzzles of wise people."
+    },
+    {
+     "v": 7,
+     "text": "Respect for Yahweh is where knowledge starts.{e}\nFools look down on wisdom and correction.{f}"
+    },
+    {
+     "v": 8,
+     "text": "My child, pay attention when your father trains you.\nNever toss aside your mother’s teaching.{g}"
+    },
+    {
+     "v": 9,
+     "text": "Their teaching will be like a beautiful wreath on your head,\nand like a necklace around your neck."
+    },
+    {
+     "v": 10,
+     "text": "My child, sinners may try to lure you along.\nSay no to them."
+    },
+    {
+     "v": 11,
+     "text": "They may say, “Join us!\nWe will hide and wait to kill someone.\nWe will jump on an innocent person just for fun."
+    },
+    {
+     "v": 12,
+     "text": "We will swallow them whole, like the grave,{h}\nhealthy and strong, like people dropping into a pit."
+    },
+    {
+     "v": 13,
+     "text": "We will find all kinds of valuable things.\nWe will pack our houses with stolen goods."
+    },
+    {
+     "v": 14,
+     "text": "Throw in your lot with us.\nWe will all share one purse.”"
+    },
+    {
+     "v": 15,
+     "text": "My child, do not walk down that road with them.\nKeep your feet off their path."
+    },
+    {
+     "v": 16,
+     "text": "Their feet hurry toward harm.\nThey rush to spill blood."
+    },
+    {
+     "v": 17,
+     "text": "A bird will not land where a net is spread out in plain sight.{i}"
+    },
+    {
+     "v": 18,
+     "text": "But these men are really setting an ambush for themselves.\nThey are hiding to catch their own lives."
+    },
+    {
+     "v": 19,
+     "text": "That is where greed leads every time.\nIt takes the life of the person who holds on to it."
+    },
+    {
+     "v": 20,
+     "text": "Out in the street Wisdom{j} calls aloud.\nIn the open squares her voice rings out."
+    },
+    {
+     "v": 21,
+     "text": "From the top of the noisy walls she shouts.\nRight where the city gates open, she gives her speech:"
+    },
+    {
+     "v": 22,
+     "text": "“How long will you simple people keep loving your simple ways?\nHow long will mockers enjoy mocking,\nand fools keep hating knowledge?"
+    },
+    {
+     "v": 23,
+     "text": "Turn back when I warn you!\nThen I will pour out my spirit on you\nand share my words with you."
+    },
+    {
+     "v": 24,
+     "text": "I called, but you refused to come.\nI reached out my hand, and no one cared."
+    },
+    {
+     "v": 25,
+     "text": "You ignored all my advice.\nYou did not want my correction."
+    },
+    {
+     "v": 26,
+     "text": "So I will laugh at your trouble when it hits.\nI will tease you when terror comes."
+    },
+    {
+     "v": 27,
+     "text": "Terror will sweep over you like a windstorm.\nDisaster will rush in like a whirling storm.\nPain and misery will pile up on you."
+    },
+    {
+     "v": 28,
+     "text": "Then you will cry out to me, but I will give no answer.\nYou will hunt for me, yet you will not find me."
+    },
+    {
+     "v": 29,
+     "text": "You hated knowledge.\nYou did not choose to respect Yahweh."
+    },
+    {
+     "v": 30,
+     "text": "You refused my guidance.\nYou brushed off all my corrections."
+    },
+    {
+     "v": 31,
+     "text": "So you will eat what your own choices grew.\nYou will be stuffed with your own plans."
+    },
+    {
+     "v": 32,
+     "text": "Simple people die because they wander off.\nFools are destroyed by their own comfort."
+    },
+    {
+     "v": 33,
+     "text": "But whoever listens to me will rest safely.\nThey will be calm and not afraid of harm.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "1:1",
+     "text": "The Hebrew word mishle means proverbs, wise sayings, comparisons, and short stories with a lesson."
+    },
+    {
+     "m": "b",
+     "ref": "1:1",
+     "text": "Solomon means “peaceful” (it is related to shalom, “peace”)."
+    },
+    {
+     "m": "c",
+     "ref": "1:1",
+     "text": "David means “beloved.”"
+    },
+    {
+     "m": "d",
+     "ref": "1:1",
+     "text": "Israel means “he struggles with God” (Genesis 32:28)."
+    },
+    {
+     "m": "e",
+     "ref": "1:7",
+     "text": "Or “the main part of knowledge.”"
+    },
+    {
+     "m": "f",
+     "ref": "1:7",
+     "text": "The Septuagint adds a line: “There is good understanding for everyone who practices it. Respect for God is the start of seeing clearly.”"
+    },
+    {
+     "m": "g",
+     "ref": "1:8",
+     "text": "The Hebrew word is torah, which means “teaching.” It later became the name of the Law."
+    },
+    {
+     "m": "h",
+     "ref": "1:12",
+     "text": "Hebrew Sheol, the place of the dead. The next line calls it “the pit.”"
+    },
+    {
+     "m": "i",
+     "ref": "1:17",
+     "text": "The point may be that even a bird is smart enough to avoid an obvious trap. Another view is that the bird sees only the food and is caught anyway."
+    },
+    {
+     "m": "j",
+     "ref": "1:20",
+     "text": "In Hebrew, Wisdom is a plural word (chokhmoth). She speaks like a woman in public. She is seen again in chapters 8 and 9."
+    }
+   ],
+   "subheads": {
+    "1": "Why These Sayings Were Collected",
+    "8": "Do Not Follow Bad Friends",
+    "20": "Wisdom Calls Out"
+   }
+  },
+  {
+   "n": 2,
+   "paras": [
+    1,
+    12,
+    16
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "My child, suppose you accept what I say\nand treasure my instructions deep inside."
+    },
+    {
+     "v": 2,
+     "text": "Suppose you listen closely for wisdom\nand set your mind on understanding."
+    },
+    {
+     "v": 3,
+     "text": "Suppose you beg for good sense\nand shout out for understanding."
+    },
+    {
+     "v": 4,
+     "text": "Suppose you search for her as you would for silver\nand dig for her like buried treasure."
+    },
+    {
+     "v": 5,
+     "text": "Then you will come to respect Yahweh\nand discover what it means to know God."
+    },
+    {
+     "v": 6,
+     "text": "Yahweh is the one who gives wisdom.\nKnowledge and understanding come out of his mouth."
+    },
+    {
+     "v": 7,
+     "text": "He saves up success{a} for honest people.\nHe is a shield for those who live without blame."
+    },
+    {
+     "v": 8,
+     "text": "He guards the paths of fairness\nand watches over the road of his loyal people.{b}"
+    },
+    {
+     "v": 9,
+     "text": "Then you will see what is right, just, and fair,\nand you will know every good path."
+    },
+    {
+     "v": 10,
+     "text": "Wisdom will enter your heart,\nand knowledge will make your soul glad."
+    },
+    {
+     "v": 11,
+     "text": "Good judgment will watch over you.\nUnderstanding will stand guard around you."
+    },
+    {
+     "v": 12,
+     "text": "They will save you from the path of evil\nand from men who twist the truth when they talk."
+    },
+    {
+     "v": 13,
+     "text": "These men leave the straight roads\nto walk in dark paths."
+    },
+    {
+     "v": 14,
+     "text": "They enjoy doing wrong.\nThey cheer when evil turns things upside down."
+    },
+    {
+     "v": 15,
+     "text": "Their roads wind and bend.\nTheir ways go off in crooked directions."
+    },
+    {
+     "v": 16,
+     "text": "Wisdom will also rescue you from an outsider woman,{c}\na stranger who uses smooth words."
+    },
+    {
+     "v": 17,
+     "text": "She has walked away from the husband of her youth.\nShe has forgotten the promise she made before her God.{d}"
+    },
+    {
+     "v": 18,
+     "text": "Her house sinks down toward death.{e}\nHer paths go down to the spirits of the dead.{f}"
+    },
+    {
+     "v": 19,
+     "text": "None who visit her ever come home.\nThey never get back onto the paths of life."
+    },
+    {
+     "v": 20,
+     "text": "So walk with good people.\nStay on the road that honest people travel."
+    },
+    {
+     "v": 21,
+     "text": "Honest people will live in the land,\nand those without blame will stay there."
+    },
+    {
+     "v": 22,
+     "text": "But the wicked will be removed from the earth,\nand the unfaithful will be pulled out of it like weeds."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "2:7",
+     "text": "The Hebrew word tushiyyah can mean “success” or “sound judgment.”"
+    },
+    {
+     "m": "b",
+     "ref": "2:8",
+     "text": "Hebrew chasidim, people who are loyal to God’s promise."
+    },
+    {
+     "m": "c",
+     "ref": "2:16",
+     "text": "Hebrew zarah, “stranger,” and nokhriyyah, “foreigner.” In Proverbs these words describe a married woman who is unfaithful to her husband. She appears again in 5:3–20, 6:24–35, and 7:5–27."
+    },
+    {
+     "m": "d",
+     "ref": "2:17",
+     "text": "Or “the promise made in the presence of her God,” meaning her wedding vow."
+    },
+    {
+     "m": "e",
+     "ref": "2:18",
+     "text": "Or “She herself sinks down to death, and her house with her.” The Hebrew is hard to read."
+    },
+    {
+     "m": "f",
+     "ref": "2:18",
+     "text": "Hebrew repha’im, the spirits of the dead in Sheol."
+    }
+   ],
+   "subheads": {
+    "1": "What Wisdom Brings",
+    "12": "Saved from Bad Paths",
+    "16": "Saved from a Faithless Woman"
+   }
+  },
+  {
+   "n": 3,
+   "paras": [
+    1,
+    5,
+    13,
+    21,
+    27
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "My child, never forget what I teach.\nLet your heart hold on to my commands."
+    },
+    {
+     "v": 2,
+     "text": "They will give you more days to live,\nmore years, and a peaceful life."
+    },
+    {
+     "v": 3,
+     "text": "Never let kindness and truth walk away from you.\nWear them like a chain on your neck.\nCarve them on the tablet of your heart."
+    },
+    {
+     "v": 4,
+     "text": "Then God and people\nwill think well of you and respect you."
+    },
+    {
+     "v": 5,
+     "text": "Trust Yahweh completely.\nDo not lean on what you understand yourself."
+    },
+    {
+     "v": 6,
+     "text": "Include him in everything you do,\nand he will make your paths straight."
+    },
+    {
+     "v": 7,
+     "text": "Do not think you are wise by yourself.\nRespect Yahweh and stay away from evil."
+    },
+    {
+     "v": 8,
+     "text": "It will heal your body{a}\nand refresh your bones.{b}"
+    },
+    {
+     "v": 9,
+     "text": "Honor Yahweh with your wealth,\nwith the first part of everything you harvest."
+    },
+    {
+     "v": 10,
+     "text": "Then your barns will overflow,\nand your jars will spill over with fresh wine."
+    },
+    {
+     "v": 11,
+     "text": "My child, do not turn away when Yahweh trains you.\nDo not get upset when he corrects you."
+    },
+    {
+     "v": 12,
+     "text": "Yahweh corrects the ones he loves,\nthe way a father corrects a son who makes him proud.{c}"
+    },
+    {
+     "v": 13,
+     "text": "How happy is the person who finds wisdom,\nwho gains understanding!"
+    },
+    {
+     "v": 14,
+     "text": "Wisdom earns more than silver does.\nHer gain is better than pure gold."
+    },
+    {
+     "v": 15,
+     "text": "She is worth more than jewels.{d}\nNothing you could want is as good as she is."
+    },
+    {
+     "v": 16,
+     "text": "A long life is in her right hand.\nWealth and honor are in her left.{e}"
+    },
+    {
+     "v": 17,
+     "text": "Her roads are pleasant,\nand every path she takes leads to peace."
+    },
+    {
+     "v": 18,
+     "text": "She is a tree of life for those who grab hold of her.\nEveryone who keeps her close is blessed."
+    },
+    {
+     "v": 19,
+     "text": "Yahweh used wisdom to lay the foundations of the earth.\nHe used understanding to set the sky above."
+    },
+    {
+     "v": 20,
+     "text": "His knowledge split open the deep waters\nand let the clouds drop their dew."
+    },
+    {
+     "v": 21,
+     "text": "My child, keep your eyes on these things.\nHold on to good sense and sound judgment."
+    },
+    {
+     "v": 22,
+     "text": "They will give life to your soul\nand make a lovely chain for your neck."
+    },
+    {
+     "v": 23,
+     "text": "You will walk safely on your way,\nand you will not stub your toe."
+    },
+    {
+     "v": 24,
+     "text": "When you lie down, you will not be afraid.\nYou will rest and sleep well.{f}"
+    },
+    {
+     "v": 25,
+     "text": "Do not be afraid of sudden danger,\nor of the crash that hits the wicked."
+    },
+    {
+     "v": 26,
+     "text": "Yahweh will be the one you can count on.\nHe will keep your foot out of the trap."
+    },
+    {
+     "v": 27,
+     "text": "Do not keep back good things from people who have earned them,\nwhen you have the power to give."
+    },
+    {
+     "v": 28,
+     "text": "Do not tell your neighbor, “Go away and return later.\nI will give it tomorrow,” when you already have it."
+    },
+    {
+     "v": 29,
+     "text": "Do not plan to hurt your neighbor\nwhile he lives next door and trusts you."
+    },
+    {
+     "v": 30,
+     "text": "Do not start a fight with someone for no reason\nwhen he has done you no harm."
+    },
+    {
+     "v": 31,
+     "text": "Do not envy a violent man.\nDo not pick any of his ways to copy."
+    },
+    {
+     "v": 32,
+     "text": "Yahweh hates those who are dishonest,\nbut he shares his secrets with honest people."
+    },
+    {
+     "v": 33,
+     "text": "Yahweh’s curse rests on the home of wicked people,\nbut he blesses the house of those who do right."
+    },
+    {
+     "v": 34,
+     "text": "He laughs at proud mockers,\nyet he is kind to the humble.{g}"
+    },
+    {
+     "v": 35,
+     "text": "Wise people will receive honor,\nbut fools will be rewarded with shame.{h}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "3:8",
+     "text": "Or “your belly button.” The Septuagint reads “your body.”"
+    },
+    {
+     "m": "b",
+     "ref": "3:8",
+     "text": "Literally, “a drink for your bones.”"
+    },
+    {
+     "m": "c",
+     "ref": "3:12",
+     "text": "The Septuagint says “he whips every child he accepts.” This is the form quoted in Hebrews 12:6."
+    },
+    {
+     "m": "d",
+     "ref": "3:15",
+     "text": "Or “rubies” or “pearls.” The exact stone is not certain."
+    },
+    {
+     "m": "e",
+     "ref": "3:16",
+     "text": "The Septuagint adds, “Right living comes out of her mouth. She carries law and mercy on her tongue.”"
+    },
+    {
+     "m": "f",
+     "ref": "3:24",
+     "text": "The Septuagint says, “If you rest, you will not be afraid. If you sleep, your sleep will be sweet.”"
+    },
+    {
+     "m": "g",
+     "ref": "3:34",
+     "text": "The Septuagint says, “The Lord stands against the proud but gives kindness to the humble.” This is the form quoted in James 4:6 and 1 Peter 5:5. The Greek word kyrios (“Lord”) usually stands for Yahweh."
+    },
+    {
+     "m": "h",
+     "ref": "3:35",
+     "text": "Or “but fools lift up shame.” The Hebrew is uncertain."
+    }
+   ],
+   "subheads": {
+    "1": "Trust Yahweh",
+    "13": "Wisdom Is Worth More Than Gold",
+    "21": "Be Kind to Your Neighbor"
+   }
+  },
+  {
+   "n": 4,
+   "paras": [
+    1,
+    10,
+    20
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Children, hear your father’s training.\nPay attention and gain understanding."
+    },
+    {
+     "v": 2,
+     "text": "The lesson I give you is a good one.\nDo not turn your back on what I teach."
+    },
+    {
+     "v": 3,
+     "text": "I was once a boy in my own father’s house.\nI was small, and my mother’s only son."
+    },
+    {
+     "v": 4,
+     "text": "My father taught me and said,\n“Hold my words tightly in your heart.\nObey my commands and you will live."
+    },
+    {
+     "v": 5,
+     "text": "Get wisdom. Get understanding.\nDo not forget my words, and do not wander from them."
+    },
+    {
+     "v": 6,
+     "text": "Stay with wisdom, and she will keep you safe.\nCare for her deeply, and she will guard you."
+    },
+    {
+     "v": 7,
+     "text": "Wisdom comes first, so get wisdom!\nWhatever else you get, get understanding.{a}"
+    },
+    {
+     "v": 8,
+     "text": "Hold her in high value, and she will raise you up.\nWrap your arms around her, and she will bring you honor."
+    },
+    {
+     "v": 9,
+     "text": "She will crown you with a lovely wreath.\nShe will give you a glorious crown.”"
+    },
+    {
+     "v": 10,
+     "text": "Listen, my child, and accept my words.\nThen you will live many years."
+    },
+    {
+     "v": 11,
+     "text": "I have shown you the road of wisdom.\nI have led you down straight paths."
+    },
+    {
+     "v": 12,
+     "text": "When you walk, nothing will hold you back.\nWhen you run, you will not fall."
+    },
+    {
+     "v": 13,
+     "text": "Grab hold of instruction and never let it go.\nKeep it carefully, for it is your life."
+    },
+    {
+     "v": 14,
+     "text": "Do not step onto the path of wicked people.\nDo not walk down the road of those who do evil."
+    },
+    {
+     "v": 15,
+     "text": "Stay away from it. Do not go near.\nTurn around and go the other way."
+    },
+    {
+     "v": 16,
+     "text": "They cannot sleep until they have done something bad.\nThey lie awake until they have made someone stumble."
+    },
+    {
+     "v": 17,
+     "text": "Wickedness is the bread they eat.\nViolence is the wine they drink."
+    },
+    {
+     "v": 18,
+     "text": "The path of good people is like the early morning light.\nIt grows brighter until the day is full."
+    },
+    {
+     "v": 19,
+     "text": "Wicked people travel in thick darkness.\nThey cannot see what they trip over."
+    },
+    {
+     "v": 20,
+     "text": "My child, give attention to my words.\nBend your ear toward what I say."
+    },
+    {
+     "v": 21,
+     "text": "Never lose sight of them.\nHold them in the middle of your heart."
+    },
+    {
+     "v": 22,
+     "text": "They give life to anyone who finds them\nand health to the whole body."
+    },
+    {
+     "v": 23,
+     "text": "Above all else, protect your heart,\nbecause your whole life flows from it."
+    },
+    {
+     "v": 24,
+     "text": "Keep lying words out of your mouth.\nKeep twisted talk far from your lips."
+    },
+    {
+     "v": 25,
+     "text": "Look straight ahead.\nKeep your eyes fixed on what is in front of you."
+    },
+    {
+     "v": 26,
+     "text": "Make a smooth path for your feet.\nThen every road you take will be safe."
+    },
+    {
+     "v": 27,
+     "text": "Do not veer to either side.\nKeep your feet from evil.{b}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "4:7",
+     "text": "This verse is not in the Septuagint."
+    },
+    {
+     "m": "b",
+     "ref": "4:27",
+     "text": "The Septuagint adds, “God knows the roads on the right, but the ones on the left are crooked. He will straighten your paths and lead you in peace.”"
+    }
+   ],
+   "subheads": {
+    "1": "A Father’s Lesson",
+    "10": "Stay on the Right Road",
+    "20": "Guard Your Heart"
+   }
+  },
+  {
+   "n": 5,
+   "paras": [
+    1,
+    7,
+    15
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "My child, tune in to my wisdom.\nLean close to hear my understanding."
+    },
+    {
+     "v": 2,
+     "text": "Then you will keep your good judgment,\nand your lips will guard what you know."
+    },
+    {
+     "v": 3,
+     "text": "Honey drips from the lips of a faithless woman.\nHer talk is silkier than oil."
+    },
+    {
+     "v": 4,
+     "text": "In the end, though, she tastes as bitter as wormwood.{a}\nShe cuts like a sword with two sharp edges."
+    },
+    {
+     "v": 5,
+     "text": "Her feet go down into death.\nEvery step she takes ends at the grave."
+    },
+    {
+     "v": 6,
+     "text": "Life’s path never crosses her mind.\nHer roads twist about, though she cannot tell.{b}"
+    },
+    {
+     "v": 7,
+     "text": "So now, my children, hear me out.\nNever walk away from what I say."
+    },
+    {
+     "v": 8,
+     "text": "Keep far away from her road.\nDo not even go near her door."
+    },
+    {
+     "v": 9,
+     "text": "If you do, you may give your best years to others,\nand the rest of your life to someone cruel."
+    },
+    {
+     "v": 10,
+     "text": "Strangers will take what your strength has earned.\nYour hard work will fill another person’s house."
+    },
+    {
+     "v": 11,
+     "text": "At the end of your life you will groan,\nwhen your body is worn out."
+    },
+    {
+     "v": 12,
+     "text": "You will say, “I hated being corrected!\nMy heart refused every warning."
+    },
+    {
+     "v": 13,
+     "text": "I would not obey my teachers.\nI never tilted my ear to those who trained me."
+    },
+    {
+     "v": 14,
+     "text": "I nearly lost everything\nin front of the whole community.”"
+    },
+    {
+     "v": 15,
+     "text": "Drink from your own well.\nLet fresh water flow from your own spring.{c}"
+    },
+    {
+     "v": 16,
+     "text": "Why should your streams pour out into the streets?\nWhy should your fresh water run through the town squares?"
+    },
+    {
+     "v": 17,
+     "text": "Keep it for yourself.\nDo not share it with strangers."
+    },
+    {
+     "v": 18,
+     "text": "May your own fountain bring you a blessing.\nBe glad over the bride of your younger days."
+    },
+    {
+     "v": 19,
+     "text": "She is a charming deer, a graceful mountain goat.\nLet her love satisfy you at all times.\nLet her love keep you spellbound."
+    },
+    {
+     "v": 20,
+     "text": "My child, why let a stranger’s wife dazzle you?\nWhy hold in your arms a woman who is not yours?"
+    },
+    {
+     "v": 21,
+     "text": "Yahweh sees every move a person makes.\nHe studies{d} every path."
+    },
+    {
+     "v": 22,
+     "text": "The sins of wicked people trap them.\nThe ropes of their own wrongs hold them tight."
+    },
+    {
+     "v": 23,
+     "text": "They die because they would not learn.\nTheir huge foolishness makes them stumble away.{e}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "5:4",
+     "text": "Wormwood is a plant with a very bitter taste. People used it as a picture of bitterness."
+    },
+    {
+     "m": "b",
+     "ref": "5:6",
+     "text": "Or “She makes sure you do not walk on the level path of life. Her roads wander, and you do not know it.”"
+    },
+    {
+     "m": "c",
+     "ref": "5:15",
+     "text": "In verses 15–18 the water, well, and fountain stand for a man’s own wife."
+    },
+    {
+     "m": "d",
+     "ref": "5:21",
+     "text": "Or “measures.”"
+    },
+    {
+     "m": "e",
+     "ref": "5:23",
+     "text": "The Hebrew word for “stumble away” also means “be drunk.” It is the same word used in verses 19 and 20."
+    }
+   ],
+   "subheads": {
+    "1": "Faithful Love at Home",
+    "7": "Stay Far from Her Door",
+    "15": "Be Happy with Your Own Wife"
+   }
+  },
+  {
+   "n": 6,
+   "paras": [
+    1,
+    6,
+    12,
+    16,
+    20
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "My child, you may have promised to pay a neighbor’s debt.\nYou may have shaken hands on a loan for a stranger."
+    },
+    {
+     "v": 2,
+     "text": "If your own words have trapped you,\nand your own lips have caught you,"
+    },
+    {
+     "v": 3,
+     "text": "here is what to do to get free, my child.\nYou are in your neighbor’s power,\nso go and beg{a} him without stopping."
+    },
+    {
+     "v": 4,
+     "text": "Do not let yourself sleep.\nDo not let your eyes close."
+    },
+    {
+     "v": 5,
+     "text": "Slip out like a deer escaping a hunter,{b}\nlike a bird getting away from a trapper."
+    },
+    {
+     "v": 6,
+     "text": "Lazy person, visit the ants.\nWatch what they do and learn."
+    },
+    {
+     "v": 7,
+     "text": "They have no chief.\nThey have no boss or ruler."
+    },
+    {
+     "v": 8,
+     "text": "Still, they store up food in the summer\nand collect their supplies at harvest time.{c}"
+    },
+    {
+     "v": 9,
+     "text": "Lazy person, how long will you stay in bed?\nWhen will you get up?"
+    },
+    {
+     "v": 10,
+     "text": "A short nap, a little rest,\na quick fold of the arms to relax,"
+    },
+    {
+     "v": 11,
+     "text": "and then poverty will arrive like a robber,\nand need will come like a man with a weapon.{d}"
+    },
+    {
+     "v": 12,
+     "text": "A worthless person,{e} a troublemaker,\ngoes around speaking lies."
+    },
+    {
+     "v": 13,
+     "text": "He winks with one eye, taps with his foot,\nand points with his finger."
+    },
+    {
+     "v": 14,
+     "text": "His heart is twisted. He is always planning something bad.\nHe keeps starting arguments."
+    },
+    {
+     "v": 15,
+     "text": "So disaster will hit him without warning.\nHe will be smashed in a moment, and no one can fix him."
+    },
+    {
+     "v": 16,
+     "text": "Yahweh hates six things.\nSeven things are disgusting to him:{f}"
+    },
+    {
+     "v": 17,
+     "text": "proud looks, a lying tongue,\nhands that kill innocent people,"
+    },
+    {
+     "v": 18,
+     "text": "a heart that plans evil,\nfeet that hurry to do wrong,"
+    },
+    {
+     "v": 19,
+     "text": "a witness who tells lies with every breath,\nand anyone who starts fights among family."
+    },
+    {
+     "v": 20,
+     "text": "My child, obey the command of your father.\nDo not throw away your mother’s teaching."
+    },
+    {
+     "v": 21,
+     "text": "Tie them to your heart for good.\nFasten them around your neck."
+    },
+    {
+     "v": 22,
+     "text": "As you walk, they will lead you.\nAs you sleep, they will keep guard.\nAt dawn they will talk with you."
+    },
+    {
+     "v": 23,
+     "text": "The command is a lamp, and the teaching is a light.\nCorrection that trains you is the road to life."
+    },
+    {
+     "v": 24,
+     "text": "They will keep you away from an evil woman,{g}\naway from the slippery words of a stranger."
+    },
+    {
+     "v": 25,
+     "text": "Never long for her looks in your heart.\nNever let her glances snare you."
+    },
+    {
+     "v": 26,
+     "text": "A woman who sells herself may cost a single loaf.\nA married woman, though, goes after a man’s whole life.{h}"
+    },
+    {
+     "v": 27,
+     "text": "Can anyone carry fire in the lap of his robe\nwithout burning his clothes?"
+    },
+    {
+     "v": 28,
+     "text": "Can anyone step on burning coals\nand keep his feet unhurt?"
+    },
+    {
+     "v": 29,
+     "text": "It is the same for the man who sleeps with his neighbor’s wife.\nWhoever touches her will pay for it."
+    },
+    {
+     "v": 30,
+     "text": "People do not hate a thief for stealing\nwhen he is starving and needs food."
+    },
+    {
+     "v": 31,
+     "text": "When he is found out, he owes seven times the loss.\nHe could lose all that his family owns."
+    },
+    {
+     "v": 32,
+     "text": "Anyone who sleeps with another man’s wife lacks sense.\nHe wrecks himself."
+    },
+    {
+     "v": 33,
+     "text": "He will get wounds and shame.\nHis disgrace will never be erased."
+    },
+    {
+     "v": 34,
+     "text": "A husband’s jealousy burns with anger.\nHe will show no mercy on the day he takes revenge."
+    },
+    {
+     "v": 35,
+     "text": "No payment will satisfy him.\nHe will turn down your gifts, however large."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "6:3",
+     "text": "Or “crush your pride and beg.”"
+    },
+    {
+     "m": "b",
+     "ref": "6:5",
+     "text": "The Hebrew says “from the hand.” The words “of a hunter” come from the matching line and some old copies."
+    },
+    {
+     "m": "c",
+     "ref": "6:8",
+     "text": "The Septuagint adds, “Or go to the bee and see how hard she works. Kings and ordinary people use what she makes to stay healthy. Everyone wants it and honors her. She is weak, yet she is respected because she values wisdom.”"
+    },
+    {
+     "m": "d",
+     "ref": "6:11",
+     "text": "The Septuagint adds, “But if you work hard, your harvest will arrive like a spring of water, and poverty will run away like a poor runner.”"
+    },
+    {
+     "m": "e",
+     "ref": "6:12",
+     "text": "Hebrew adam beliyya’al, “a man of Belial.” Belial means worthless or wicked."
+    },
+    {
+     "m": "f",
+     "ref": "6:16",
+     "text": "This is a “six, then seven” saying. A similar pattern appears in 30:15–31."
+    },
+    {
+     "m": "g",
+     "ref": "6:24",
+     "text": "The Septuagint says “a married woman.”"
+    },
+    {
+     "m": "h",
+     "ref": "6:26",
+     "text": "Or “For because of a woman who sells herself, a man is reduced to a loaf of bread.” This line is hard to read in Hebrew."
+    }
+   ],
+   "subheads": {
+    "1": "Promises, Laziness, and Trouble Makers",
+    "12": "A Troublemaker’s End",
+    "16": "Seven Things Yahweh Hates",
+    "20": "Warning About Another Man’s Wife"
+   }
+  },
+  {
+   "n": 7,
+   "paras": [
+    1,
+    6,
+    24
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "My child, hold on to what I say.\nStore my commands up inside you.{a}"
+    },
+    {
+     "v": 2,
+     "text": "Follow my commands and you will live.\nProtect my teaching like the apple of your eye."
+    },
+    {
+     "v": 3,
+     "text": "Wrap them around your fingers.\nWrite them on the tablet of your heart."
+    },
+    {
+     "v": 4,
+     "text": "Tell wisdom, “You are my sister.”\nCall understanding your close friend."
+    },
+    {
+     "v": 5,
+     "text": "They will keep you away from an unfaithful woman,\nfrom the stranger with her smooth words."
+    },
+    {
+     "v": 6,
+     "text": "Once I stood at the window of my house\nand looked out through the shutters."
+    },
+    {
+     "v": 7,
+     "text": "I spotted a group of simple people.\nAmong the young men I noticed one\nwho had no sense."
+    },
+    {
+     "v": 8,
+     "text": "He was walking down the street near her corner,\nheading for her house."
+    },
+    {
+     "v": 9,
+     "text": "It was twilight, as the day was ending,\nin the black of night."
+    },
+    {
+     "v": 10,
+     "text": "A woman came out to meet him.\nHer clothes were those of a woman who sells herself, and her plans were secret.{b}"
+    },
+    {
+     "v": 11,
+     "text": "She was loud and wild.\nHer feet would not stay home."
+    },
+    {
+     "v": 12,
+     "text": "One minute she was in the street, the next in the market.\nAt every corner she lay in wait."
+    },
+    {
+     "v": 13,
+     "text": "She grabbed him and kissed him.\nWithout shame she told him,"
+    },
+    {
+     "v": 14,
+     "text": "“I owed peace offerings,\nand today I kept my promises.{c}"
+    },
+    {
+     "v": 15,
+     "text": "So I came out to find you.\nI looked for you everywhere, and here you are!"
+    },
+    {
+     "v": 16,
+     "text": "I put fresh covers on my bed,\nbright cloth from Egypt."
+    },
+    {
+     "v": 17,
+     "text": "I have perfumed my bed\nwith myrrh, aloes, and cinnamon."
+    },
+    {
+     "v": 18,
+     "text": "Come, let us enjoy love until morning.\nLet us have fun together."
+    },
+    {
+     "v": 19,
+     "text": "My husband is away from home.\nHis trip will take him far."
+    },
+    {
+     "v": 20,
+     "text": "He took a bag of coins along.\nHe plans to return at full moon.”"
+    },
+    {
+     "v": 21,
+     "text": "With so much talk she turned him her way.\nWith her smooth lips she pushed him along."
+    },
+    {
+     "v": 22,
+     "text": "Right away he followed her,\nlike an ox heading to the butcher,\nlike a fool walking into chains.{d}"
+    },
+    {
+     "v": 23,
+     "text": "Soon an arrow would strike deep inside him.\nHe was a bird flying into a snare.\nHe never guessed that his life was on the line."
+    },
+    {
+     "v": 24,
+     "text": "So now, my children, listen to me.\nHear every word I say."
+    },
+    {
+     "v": 25,
+     "text": "Do not let your heart drift toward her roads.\nDo not wander onto her paths."
+    },
+    {
+     "v": 26,
+     "text": "She has brought down many victims.\nHer list of dead men is long."
+    },
+    {
+     "v": 27,
+     "text": "Her house leads down to the grave.\nIts halls end in the rooms of death."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "7:1",
+     "text": "The Septuagint adds two lines: “My child, honor the Lord and you will be strong. Fear no one but him.”"
+    },
+    {
+     "m": "b",
+     "ref": "7:10",
+     "text": "Or “with a secret purpose” or “with a covered heart.”"
+    },
+    {
+     "m": "c",
+     "ref": "7:14",
+     "text": "The meat from a peace offering had to be eaten within a day or two (Leviticus 7:15–16). So she has food ready."
+    },
+    {
+     "m": "d",
+     "ref": "7:22",
+     "text": "The Hebrew of this line is not certain. The Septuagint says, “like a dog into chains, or like a deer shot in the body with an arrow.”"
+    }
+   ],
+   "subheads": {
+    "1": "Keep My Teaching Close",
+    "6": "A Young Man and a Dangerous Woman",
+    "24": "Do Not Go Her Way"
+   }
+  },
+  {
+   "n": 8,
+   "paras": [
+    1,
+    12,
+    22,
+    32
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Can you hear that? Wisdom is calling out.\nUnderstanding is raising her voice.{a}"
+    },
+    {
+     "v": 2,
+     "text": "She takes her place on the hills beside the road,\nwhere the paths cross."
+    },
+    {
+     "v": 3,
+     "text": "Next to the gates that lead into town,\nright at the doorways, she shouts:"
+    },
+    {
+     "v": 4,
+     "text": "“People, I am calling to you.\nMy voice reaches every human being."
+    },
+    {
+     "v": 5,
+     "text": "Simple people, learn to be sharp.\nFools, get some sense.{b}"
+    },
+    {
+     "v": 6,
+     "text": "Listen, because what I say is noble.\nMy lips speak what is right."
+    },
+    {
+     "v": 7,
+     "text": "My mouth tells the truth.\nMy lips cannot stand evil."
+    },
+    {
+     "v": 8,
+     "text": "Every word I speak is fair.\nNone of it is bent or twisted."
+    },
+    {
+     "v": 9,
+     "text": "To people with understanding, it is all clear.\nTo those who have found knowledge, it is correct."
+    },
+    {
+     "v": 10,
+     "text": "Choose my teaching over silver.\nChoose knowledge over the finest gold."
+    },
+    {
+     "v": 11,
+     "text": "Wisdom is worth more than jewels.\nNo treasure can match her."
+    },
+    {
+     "v": 12,
+     "text": "I, Wisdom, live next door to good sense.\nI am the one who finds knowledge and good judgment."
+    },
+    {
+     "v": 13,
+     "text": "To respect Yahweh is to hate evil.\nI hate pride, bragging, wicked ways,\nand twisted talk."
+    },
+    {
+     "v": 14,
+     "text": "Advice and sound thinking belong to me.\nI am understanding, and I have power."
+    },
+    {
+     "v": 15,
+     "text": "Kings rule because of me.\nRulers make fair laws with my help."
+    },
+    {
+     "v": 16,
+     "text": "Princes lead with my help,\nand so do all the noble judges of the world.{c}"
+    },
+    {
+     "v": 17,
+     "text": "I love those who love me.\nAnyone who searches for me eagerly will find me."
+    },
+    {
+     "v": 18,
+     "text": "Wealth and honor are mine to give,\nalong with lasting riches and right living."
+    },
+    {
+     "v": 19,
+     "text": "What I give is better than gold, even fine gold.\nWhat I earn beats the best silver."
+    },
+    {
+     "v": 20,
+     "text": "I walk down the road of what is right,\nalong the middle of the paths of justice."
+    },
+    {
+     "v": 21,
+     "text": "I give wealth to those who love me,\nand I fill up their storehouses.{d}"
+    },
+    {
+     "v": 22,
+     "text": "Yahweh made me{e} at the very start of his work,\nbefore anything else he did long ago."
+    },
+    {
+     "v": 23,
+     "text": "I was set in place ages ago,{f}\nat the beginning, before the earth existed."
+    },
+    {
+     "v": 24,
+     "text": "I was born when no deep seas existed,\nwhen no springs overflowed with water."
+    },
+    {
+     "v": 25,
+     "text": "Before the mountains sank into place,\nbefore any hills, I was born."
+    },
+    {
+     "v": 26,
+     "text": "He had not made the land, the open country,\nor even the first bit of soil."
+    },
+    {
+     "v": 27,
+     "text": "I was present as he fixed the heavens above,\nas he drew a circle over the face of the deep."
+    },
+    {
+     "v": 28,
+     "text": "I was there when he made the clouds solid above,\nwhen he made the springs of the deep flow strong."
+    },
+    {
+     "v": 29,
+     "text": "I was there when he gave the sea its edge,\nso its waters would not go past his command,\nand when he marked out the foundations of the earth."
+    },
+    {
+     "v": 30,
+     "text": "I stood next to him like a skilled builder.{g}\nEvery day I was his delight.\nI played in front of him all the time."
+    },
+    {
+     "v": 31,
+     "text": "I played over his world, the earth,\nand I found my joy in human beings."
+    },
+    {
+     "v": 32,
+     "text": "Now, my children, pay attention.\nHappy are those who stay on my paths."
+    },
+    {
+     "v": 33,
+     "text": "Listen to this teaching, and become wise.\nNever brush it aside."
+    },
+    {
+     "v": 34,
+     "text": "Happy is the person who hears me,\nwho waits at my gates every day,\nwho stands guard at my doorposts."
+    },
+    {
+     "v": 35,
+     "text": "Whoever finds me finds life,\nand wins Yahweh’s approval."
+    },
+    {
+     "v": 36,
+     "text": "But anyone who misses me hurts himself.{h}\nEveryone who hates me loves death instead.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "8:1",
+     "text": "Wisdom speaks for herself in this whole chapter. See the note at 1:20 about her."
+    },
+    {
+     "m": "b",
+     "ref": "8:5",
+     "text": "Literally “understand a heart.”"
+    },
+    {
+     "m": "c",
+     "ref": "8:16",
+     "text": "Literally “all judges of righteousness.” The Septuagint and some other old copies say “of the earth.”"
+    },
+    {
+     "m": "d",
+     "ref": "8:21",
+     "text": "The Septuagint adds, “If I tell you what happens each day, I will remember to tell about things from long ago.”"
+    },
+    {
+     "m": "e",
+     "ref": "8:22",
+     "text": "Hebrew qanani, from qanah. This word usually means “get” or “own” (see 4:5 and 4:7). In a few places it may mean “create” or “give birth to” (Genesis 14:19, 22; Deuteronomy 32:6). The Septuagint says “created me.”"
+    },
+    {
+     "m": "f",
+     "ref": "8:23",
+     "text": "Or “woven together” (compare Psalm 139:13), or “put in office.”"
+    },
+    {
+     "m": "g",
+     "ref": "8:30",
+     "text": "Hebrew amon. Another reading, amun, means “a little child being raised.” The Septuagint says “fitting myself to him.”"
+    },
+    {
+     "m": "h",
+     "ref": "8:36",
+     "text": "Or “anyone who sins against me.”"
+    }
+   ],
+   "subheads": {
+    "1": "Wisdom Speaks",
+    "12": "What Wisdom Offers",
+    "22": "Wisdom at the Creation",
+    "32": "Choose Wisdom and Live"
+   }
+  },
+  {
+   "n": 9,
+   "paras": [
+    1,
+    7,
+    13
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Wisdom has built a house for herself.\nShe has cut out seven pillars for it.{a}"
+    },
+    {
+     "v": 2,
+     "text": "She has prepared meat, mixed her wine,\nand laid out her table."
+    },
+    {
+     "v": 3,
+     "text": "She has sent her servant girls to call out\nfrom the highest places in town:"
+    },
+    {
+     "v": 4,
+     "text": "“Whoever is simple, come on in!”\nTo those with no sense, she says,"
+    },
+    {
+     "v": 5,
+     "text": "“Come, eat my bread.\nDrink the wine I have blended."
+    },
+    {
+     "v": 6,
+     "text": "Give up your simple ways and live.\nWalk on the road of understanding.”"
+    },
+    {
+     "v": 7,
+     "text": "Correct a mocker and you will get insults back.\nWarn a wicked person and you will get hurt."
+    },
+    {
+     "v": 8,
+     "text": "Do not scold a mocker, or he will hate you.\nScold a wise person, and he will love you for it."
+    },
+    {
+     "v": 9,
+     "text": "Teach a wise person and he will grow wiser still.\nInstruct a good person and he will learn more."
+    },
+    {
+     "v": 10,
+     "text": "Respect for Yahweh is where wisdom begins.\nKnowing the Holy One{b} is what understanding means.{c}"
+    },
+    {
+     "v": 11,
+     "text": "Because of wisdom, you will have many more days,\nand years will be added to your life."
+    },
+    {
+     "v": 12,
+     "text": "If you are wise, you gain from it yourself.\nIf you are a mocker, you alone pay the price.{d}"
+    },
+    {
+     "v": 13,
+     "text": "Lady Folly{e} is loud.\nShe is simple and knows nothing."
+    },
+    {
+     "v": 14,
+     "text": "She sits at her own doorway.\nShe sits on a chair up on the town’s high ground."
+    },
+    {
+     "v": 15,
+     "text": "She calls to everyone who passes by,\npeople who are minding their own business:"
+    },
+    {
+     "v": 16,
+     "text": "“Anyone who is simple, come in here!”\nTo those with no sense, she says,"
+    },
+    {
+     "v": 17,
+     "text": "“Stolen water tastes sweet.\nFood eaten in secret is delicious.”"
+    },
+    {
+     "v": 18,
+     "text": "But the guest does not know the dead are there,\nand her visitors are already in the deep places of the grave.{f}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "9:1",
+     "text": "The seven pillars could mean a grand house, the seven days of creation, or the fullness of Wisdom’s work. People disagree."
+    },
+    {
+     "m": "b",
+     "ref": "9:10",
+     "text": "Hebrew qedoshim, a plural word. It may be a plural of greatness, or it may mean “holy ones.”"
+    },
+    {
+     "m": "c",
+     "ref": "9:10",
+     "text": "The Septuagint adds, “To know the law is the sign of a healthy mind.”"
+    },
+    {
+     "m": "d",
+     "ref": "9:12",
+     "text": "The Septuagint adds three verses. They say that trusting in lies is like herding the wind and chasing flying birds, or like leaving your own vineyard and walking through a dry desert, picking up nothing with your hands."
+    },
+    {
+     "m": "e",
+     "ref": "9:13",
+     "text": "Literally “a woman of folly.” Folly is shown as a rival of Wisdom who invites the same guests (compare verses 4 and 16). The second line is uncertain. The Septuagint says, “and she does not know shame.”"
+    },
+    {
+     "m": "f",
+     "ref": "9:18",
+     "text": "The Septuagint adds, “Hurry away. Do not wait there or fix your eyes on her. If you do, you will cross over strange water. Stay away from strange water. Do not drink from a strange spring. Then you will live long, and years will be added to your life.”"
+    }
+   ],
+   "subheads": {
+    "1": "Two Invitations",
+    "7": "Teaching Wise People and Mockers",
+    "13": "Folly Calls"
+   }
+  },
+  {
+   "n": 10,
+   "paras": [
+    1
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Proverbs of Solomon:{a}\nWise children make their father proud,\nbut foolish children bring their mother sorrow."
+    },
+    {
+     "v": 2,
+     "text": "Treasure won by crime does no good,\nbut doing right saves a life from death."
+    },
+    {
+     "v": 3,
+     "text": "Yahweh does not let good people starve,\nbut he blocks the greedy hopes of the wicked."
+    },
+    {
+     "v": 4,
+     "text": "Lazy hands bring poverty,\nbut busy hands bring wealth.{b}"
+    },
+    {
+     "v": 5,
+     "text": "Gathering crops in summer is the act of a wise child.\nSleeping through harvest is the act of a child who shames the family."
+    },
+    {
+     "v": 6,
+     "text": "Blessings crown the heads of good people,\nbut violence hides behind the words of the wicked.{c}"
+    },
+    {
+     "v": 7,
+     "text": "The memory of a good person is a blessing,\nbut the name of a wicked person rots away."
+    },
+    {
+     "v": 8,
+     "text": "A wise heart accepts orders,\nbut a fool who talks too much will fall flat."
+    },
+    {
+     "v": 9,
+     "text": "Honest people walk without fear,\nbut people with crooked ways will be caught."
+    },
+    {
+     "v": 10,
+     "text": "Whoever winks with an eye causes pain,\nand a fool who talks too much will fall flat.{d}"
+    },
+    {
+     "v": 11,
+     "text": "The words of good people are a spring that gives life,\nbut violence hides behind the words of the wicked."
+    },
+    {
+     "v": 12,
+     "text": "Hate starts fights,\nbut love covers over every wrong."
+    },
+    {
+     "v": 13,
+     "text": "Wisdom shows up in the speech of people with understanding.\nA stick is the right tool for the back of one who lacks sense."
+    },
+    {
+     "v": 14,
+     "text": "Wise people save up what they learn,\nbut a fool’s mouth invites disaster."
+    },
+    {
+     "v": 15,
+     "text": "The rich have wealth as their walled city.\nThe poor have poverty as their ruin."
+    },
+    {
+     "v": 16,
+     "text": "What good people earn gives them life.\nWhat the wicked earn leads them to sin."
+    },
+    {
+     "v": 17,
+     "text": "Whoever accepts training walks the road to life.\nWhoever turns down correction leads others off track."
+    },
+    {
+     "v": 18,
+     "text": "A person who hides hate while smiling is a liar.\nA person who spreads gossip is a fool."
+    },
+    {
+     "v": 19,
+     "text": "Where there are many words, wrong is never far away.\nWhoever keeps his mouth shut shows good sense."
+    },
+    {
+     "v": 20,
+     "text": "What good people say is like pure silver.\nThe thoughts of the wicked are worth little."
+    },
+    {
+     "v": 21,
+     "text": "The words of good people nourish many.\nFools die because they have no sense."
+    },
+    {
+     "v": 22,
+     "text": "Yahweh’s blessing is what brings wealth,\nand hard work adds nothing to it.{e}"
+    },
+    {
+     "v": 23,
+     "text": "A fool thinks doing wrong is fun,\nbut a person with understanding finds wisdom fun."
+    },
+    {
+     "v": 24,
+     "text": "What the wicked dread comes true for them.\nWhat the good long for is given to them."
+    },
+    {
+     "v": 25,
+     "text": "After the storm blows past, the wicked are gone.\nThe good stand firm forever."
+    },
+    {
+     "v": 26,
+     "text": "Vinegar hurts the teeth, and smoke stings the eyes.\nA lazy messenger does the same to the one who sends him."
+    },
+    {
+     "v": 27,
+     "text": "Respect for Yahweh adds days to life,\nbut the wicked have their years cut short."
+    },
+    {
+     "v": 28,
+     "text": "The hope of good people ends in joy,\nbut the wicked see their hopes come to nothing."
+    },
+    {
+     "v": 29,
+     "text": "Yahweh’s way is a fortress for honest people,\nbut it is ruin for those who do wrong."
+    },
+    {
+     "v": 30,
+     "text": "Good people will never be shaken.\nThe wicked will not stay in the land."
+    },
+    {
+     "v": 31,
+     "text": "The mouth of a good person grows wise words,\nbut a twisted tongue will be cut out."
+    },
+    {
+     "v": 32,
+     "text": "The lips of a good person know what fits the moment,\nbut the mouth of the wicked knows nothing but crooked words."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "10:1",
+     "text": "Chapters 10:1–22:16 are a collection of mostly two-line sayings. There are 375 of them. That matches the number value of the Hebrew letters in the name Solomon (shlmh)."
+    },
+    {
+     "m": "b",
+     "ref": "10:4",
+     "text": "The Septuagint adds, “A child who is taught will become wise and will make a fool his servant.”"
+    },
+    {
+     "m": "c",
+     "ref": "10:6",
+     "text": "Or “but violence covers the mouth of the wicked.” The same line appears in verse 11."
+    },
+    {
+     "m": "d",
+     "ref": "10:10",
+     "text": "The second line repeats verse 8b. The Septuagint says, “but a person who corrects boldly makes peace.”"
+    },
+    {
+     "m": "e",
+     "ref": "10:22",
+     "text": "Or “and he adds no sorrow to it.”"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "paras": [
+    1
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Yahweh is disgusted by cheating scales,\nbut he is pleased by an accurate weight.{a}"
+    },
+    {
+     "v": 2,
+     "text": "Pride arrives, and shame follows close behind.\nWisdom stays with the humble."
+    },
+    {
+     "v": 3,
+     "text": "Honesty guides decent people.\nCrooked dealing destroys the unfaithful."
+    },
+    {
+     "v": 4,
+     "text": "Money cannot help on the day of judgment,\nbut doing right saves a life from death.{b}"
+    },
+    {
+     "v": 5,
+     "text": "A blameless person’s goodness keeps his road straight,\nbut the wicked trip over their own evil."
+    },
+    {
+     "v": 6,
+     "text": "The goodness of honest people sets them free,\nbut the unfaithful get caught by their own greed."
+    },
+    {
+     "v": 7,
+     "text": "When a wicked person dies, his hope dies with him.\nWhat he expected from his power is lost.{c}"
+    },
+    {
+     "v": 8,
+     "text": "A good person is pulled out of trouble,\nand a wicked one steps into it instead."
+    },
+    {
+     "v": 9,
+     "text": "A godless person ruins his neighbor with words,\nbut good people escape through what they know."
+    },
+    {
+     "v": 10,
+     "text": "When good people succeed, the whole city celebrates.\nWhen the wicked die, people cheer."
+    },
+    {
+     "v": 11,
+     "text": "A city is lifted up by the blessing of honest people.\nThe words of the wicked pull it to the ground."
+    },
+    {
+     "v": 12,
+     "text": "Putting down your neighbor shows a lack of sense.\nA person with understanding keeps quiet."
+    },
+    {
+     "v": 13,
+     "text": "A gossip wanders about telling secrets.\nA trustworthy person keeps things private."
+    },
+    {
+     "v": 14,
+     "text": "A nation with no direction collapses.\nWith many advisers, it is safe."
+    },
+    {
+     "v": 15,
+     "text": "Anyone who guarantees a stranger’s loan will be hurt.\nAnyone who refuses such deals stays safe."
+    },
+    {
+     "v": 16,
+     "text": "A kind woman earns respect.\nRuthless men gather wealth.{d}"
+    },
+    {
+     "v": 17,
+     "text": "A merciful person does himself a favor.\nA cruel person damages his own body."
+    },
+    {
+     "v": 18,
+     "text": "The pay of a wicked person is an illusion.\nThe one who plants goodness gets a real reward."
+    },
+    {
+     "v": 19,
+     "text": "Doing right leads firmly to life.\nChasing evil leads to death."
+    },
+    {
+     "v": 20,
+     "text": "Yahweh is disgusted by twisted hearts,\nbut he is pleased with those whose lives are blameless."
+    },
+    {
+     "v": 21,
+     "text": "You can be sure of this: the guilty will not escape punishment,\nbut the children of good people will go free."
+    },
+    {
+     "v": 22,
+     "text": "A pig with a gold ring in its nose\nis like a beautiful woman with no good sense."
+    },
+    {
+     "v": 23,
+     "text": "Good people want only what is good.\nThe wicked can expect only anger."
+    },
+    {
+     "v": 24,
+     "text": "One person gives freely and ends up with more.\nAnother saves too much and ends up poor."
+    },
+    {
+     "v": 25,
+     "text": "Generous people will do well.\nThose who bring others refreshment will find refreshment themselves."
+    },
+    {
+     "v": 26,
+     "text": "People curse a man who hoards his grain,\nbut they bless the one who sells it."
+    },
+    {
+     "v": 27,
+     "text": "Whoever searches for good finds approval.\nWhoever goes looking for evil will have it find him."
+    },
+    {
+     "v": 28,
+     "text": "Those who trust their money will fall,\nbut good people will thrive like green leaves."
+    },
+    {
+     "v": 29,
+     "text": "Whoever brings trouble to his family will inherit only wind.\nThe fool will end up working for the wise."
+    },
+    {
+     "v": 30,
+     "text": "The result of good living is a tree of life,\nand a wise person wins others over.{e}"
+    },
+    {
+     "v": 31,
+     "text": "If good people are paid back on earth,\nhow much more the wicked and the sinful!{f}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "11:1",
+     "text": "Literally “a full stone.” Weights were stones that merchants carried in a bag."
+    },
+    {
+     "m": "b",
+     "ref": "11:4",
+     "text": "The Septuagint does not have this verse."
+    },
+    {
+     "m": "c",
+     "ref": "11:7",
+     "text": "Or “what he expected from his wealth.” The Hebrew is not certain."
+    },
+    {
+     "m": "d",
+     "ref": "11:16",
+     "text": "The Septuagint makes this longer: “A kind wife brings glory to her husband, but a woman who hates what is right brings shame. Lazy people end up in need, but hard workers hold on to wealth.”"
+    },
+    {
+     "m": "e",
+     "ref": "11:30",
+     "text": "Or “takes lives.” The Septuagint says “but the lives of lawbreakers are cut short.”"
+    },
+    {
+     "m": "f",
+     "ref": "11:31",
+     "text": "The Septuagint says, “If the righteous are barely saved, where will the ungodly and the sinner be seen?” This is the form quoted in 1 Peter 4:18."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "paras": [
+    1
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Whoever loves to be corrected loves to learn.\nWhoever hates a warning is stupid as an animal."
+    },
+    {
+     "v": 2,
+     "text": "Yahweh approves of a good person,\nbut he condemns anyone who makes sneaky plans."
+    },
+    {
+     "v": 3,
+     "text": "Evil never makes a person secure,\nbut the roots of good people will not be pulled up."
+    },
+    {
+     "v": 4,
+     "text": "A strong wife is a crown to her husband.\nA wife who shames him is like rot in his bones."
+    },
+    {
+     "v": 5,
+     "text": "Good people make fair plans.\nThe wicked give deceitful advice."
+    },
+    {
+     "v": 6,
+     "text": "The words of the wicked wait like hunters to spill blood.\nThe words of honest people save lives."
+    },
+    {
+     "v": 7,
+     "text": "Knock down the wicked and they are gone,\nbut the family of good people stays standing."
+    },
+    {
+     "v": 8,
+     "text": "People praise someone for having good sense.\nThey look down on someone with a warped mind."
+    },
+    {
+     "v": 9,
+     "text": "It is better to be ordinary and have a servant\nthan to act important and go without food."
+    },
+    {
+     "v": 10,
+     "text": "A good person knows what his animals need.\nEven the mercy of the wicked has cruelty in it."
+    },
+    {
+     "v": 11,
+     "text": "Those who farm their land will have plenty to eat.\nThose who chase empty dreams lack sense.{a}"
+    },
+    {
+     "v": 12,
+     "text": "The wicked want what crooks have caught.\nThe roots of good people bear fruit.{b}"
+    },
+    {
+     "v": 13,
+     "text": "An evil trap is set by a sinful tongue,\nbut a good person gets out of trouble.{c}"
+    },
+    {
+     "v": 14,
+     "text": "A person’s words bring good things to eat,\nand the work of his hands comes back to reward him."
+    },
+    {
+     "v": 15,
+     "text": "Fools think their own way is right.\nWise people take advice."
+    },
+    {
+     "v": 16,
+     "text": "A fool shows his anger right away.\nA sensible person shrugs off an insult."
+    },
+    {
+     "v": 17,
+     "text": "An honest witness tells what is right.\nA lying witness tells what cheats."
+    },
+    {
+     "v": 18,
+     "text": "Thoughtless words cut like swords,\nbut wise people’s words bring healing."
+    },
+    {
+     "v": 19,
+     "text": "Honest words last forever.\nA lying tongue lasts a moment."
+    },
+    {
+     "v": 20,
+     "text": "Deceit fills the minds of those who plot evil,\nwhile those who work for peace have joy."
+    },
+    {
+     "v": 21,
+     "text": "Nothing bad happens to good people,\nbut the wicked have trouble piled up."
+    },
+    {
+     "v": 22,
+     "text": "Yahweh is disgusted by lying lips,\nbut he enjoys people who keep their word."
+    },
+    {
+     "v": 23,
+     "text": "A clever person keeps his knowledge to himself.\nA foolish heart blurts out its foolishness."
+    },
+    {
+     "v": 24,
+     "text": "Hard workers will be in charge.\nLazy people will be put to forced labor."
+    },
+    {
+     "v": 25,
+     "text": "Worry weighs a person down,\nbut a kind word lifts him up."
+    },
+    {
+     "v": 26,
+     "text": "A good person gives guidance to a friend.{d}\nThe way of the wicked leads them off track."
+    },
+    {
+     "v": 27,
+     "text": "A lazy person does not cook what he hunts,\nbut a hard worker holds valuable treasure.{e}"
+    },
+    {
+     "v": 28,
+     "text": "Life is found on the path of goodness.\nAlong that road there is no death.{f}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "12:11",
+     "text": "The Septuagint adds, “Whoever enjoys banquets of wine will leave shame in his own fortress.”"
+    },
+    {
+     "m": "b",
+     "ref": "12:12",
+     "text": "The Hebrew of this verse is hard to read."
+    },
+    {
+     "m": "c",
+     "ref": "12:13",
+     "text": "The Septuagint adds, “A person with a gentle look will be pitied, but one who fights at the gates hurts souls.”"
+    },
+    {
+     "m": "d",
+     "ref": "12:26",
+     "text": "Or “A good person looks for his own pasture.” The Hebrew is uncertain."
+    },
+    {
+     "m": "e",
+     "ref": "12:27",
+     "text": "The Hebrew of this verse is hard to read."
+    },
+    {
+     "m": "f",
+     "ref": "12:28",
+     "text": "Or “but the road of that path leads to death,” following some old copies."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "paras": [
+    1
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "A wise child takes a father’s training to heart,\nbut a mocker pays no attention to a warning."
+    },
+    {
+     "v": 2,
+     "text": "Good words feed a person well,\nbut the unfaithful have an appetite for violence."
+    },
+    {
+     "v": 3,
+     "text": "Guarding your mouth protects your life.\nTalking without thinking leads to ruin."
+    },
+    {
+     "v": 4,
+     "text": "The lazy want everything and get nothing,\nbut hard workers are fully satisfied."
+    },
+    {
+     "v": 5,
+     "text": "Good people hate lies.\nThe wicked bring a stink and a shame."
+    },
+    {
+     "v": 6,
+     "text": "Doing right protects the person who is honest,\nand doing wrong knocks down the sinner.{a}"
+    },
+    {
+     "v": 7,
+     "text": "One person acts rich and has nothing.\nAnother acts poor and has a fortune."
+    },
+    {
+     "v": 8,
+     "text": "A wealthy man may buy back his life with a payment,\nbut nobody even threatens a poor man."
+    },
+    {
+     "v": 9,
+     "text": "The light of good people glows bright,\nbut the lamp of the wicked is put out.{b}"
+    },
+    {
+     "v": 10,
+     "text": "Pride produces only fights,\nbut wisdom comes to those who take advice."
+    },
+    {
+     "v": 11,
+     "text": "Money earned in an empty way dwindles,\nbut money saved bit by bit grows."
+    },
+    {
+     "v": 12,
+     "text": "When hope is put off too long, the heart gets sick.\nWhen a wish comes true, it is like a tree of life."
+    },
+    {
+     "v": 13,
+     "text": "Whoever laughs at instruction will pay the price.\nWhoever honors a command will be given a reward.{c}"
+    },
+    {
+     "v": 14,
+     "text": "The teaching of wise people is a spring of life.\nIt helps you avoid the traps of death."
+    },
+    {
+     "v": 15,
+     "text": "Good sense wins approval,\nbut the road of the unfaithful is rough.{d}"
+    },
+    {
+     "v": 16,
+     "text": "Every sensible person acts with knowledge,\nbut a fool displays his foolishness."
+    },
+    {
+     "v": 17,
+     "text": "A wicked messenger lands in trouble,\nbut a reliable one brings healing."
+    },
+    {
+     "v": 18,
+     "text": "Whoever ignores correction ends up poor and ashamed.\nWhoever welcomes it is honored."
+    },
+    {
+     "v": 19,
+     "text": "A wish come true is sweet to the soul,\nbut fools refuse to leave evil behind."
+    },
+    {
+     "v": 20,
+     "text": "Walk with wise people and you will become wise.\nBefriend fools and you will be hurt."
+    },
+    {
+     "v": 21,
+     "text": "Trouble chases sinners,\nbut good people are repaid with good things."
+    },
+    {
+     "v": 22,
+     "text": "Good people leave an inheritance for their grandchildren.\nThe property of sinners ends up with the just."
+    },
+    {
+     "v": 23,
+     "text": "A poor person’s plowed ground may give plenty of food,\nbut injustice sweeps some of it away.{e}"
+    },
+    {
+     "v": 24,
+     "text": "Whoever will not discipline his child does not love him.\nWhoever loves his child takes care to correct him."
+    },
+    {
+     "v": 25,
+     "text": "Good people eat until they are full,\nbut the stomach of the wicked stays empty."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "13:6",
+     "text": "The Septuagint does not have this verse."
+    },
+    {
+     "m": "b",
+     "ref": "13:9",
+     "text": "The Septuagint adds, “Deceitful souls wander off into sins, but good people show pity and mercy.”"
+    },
+    {
+     "m": "c",
+     "ref": "13:13",
+     "text": "The Septuagint adds, “A deceitful child will have nothing good, but a wise servant will do well, and his way will be made straight.”"
+    },
+    {
+     "m": "d",
+     "ref": "13:15",
+     "text": "Or “lasts.” The Hebrew is uncertain. The Septuagint says “ends in destruction.”"
+    },
+    {
+     "m": "e",
+     "ref": "13:23",
+     "text": "The Hebrew of this verse is hard to read."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "paras": [
+    1
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Wise women make their homes strong,{a}\nbut Folly tears her own down with her bare hands."
+    },
+    {
+     "v": 2,
+     "text": "A person who lives honestly respects Yahweh.\nA person with crooked ways despises him."
+    },
+    {
+     "v": 3,
+     "text": "A fool’s talk is a stick that beats his own pride,{b}\nbut the speech of the wise protects them."
+    },
+    {
+     "v": 4,
+     "text": "With no oxen, the feed box stays clean,\nbut a strong ox brings in a big harvest."
+    },
+    {
+     "v": 5,
+     "text": "A truthful witness does not lie.\nA false witness breathes out lies."
+    },
+    {
+     "v": 6,
+     "text": "A mocker searches for wisdom and finds none.\nFor a person with understanding, knowledge comes easily."
+    },
+    {
+     "v": 7,
+     "text": "Walk away from a fool.\nYou will not hear any knowledge on his lips."
+    },
+    {
+     "v": 8,
+     "text": "The wisdom of a sensible person is to know where he is headed.\nThe foolishness of fools is cheating."
+    },
+    {
+     "v": 9,
+     "text": "Fools laugh off their guilt,{c}\nbut honest people share good will."
+    },
+    {
+     "v": 10,
+     "text": "Each heart knows its own bitter pain,\nand no outsider can share its joy."
+    },
+    {
+     "v": 11,
+     "text": "The home of the wicked will be destroyed,\nbut the tent of honest people will thrive."
+    },
+    {
+     "v": 12,
+     "text": "One road seems right to a person,\nyet it ends in death."
+    },
+    {
+     "v": 13,
+     "text": "Even while laughing, a heart may ache,\nand happiness can end in sadness."
+    },
+    {
+     "v": 14,
+     "text": "Unfaithful people get all they deserve from their own paths.\nGood people get what they deserve from theirs.{d}"
+    },
+    {
+     "v": 15,
+     "text": "A simple person believes anything.\nA sensible person looks at each step."
+    },
+    {
+     "v": 16,
+     "text": "A wise person is careful and avoids evil.\nA fool is careless and feels sure of himself."
+    },
+    {
+     "v": 17,
+     "text": "Someone with a short temper acts foolishly,\nand a person who plots is hated."
+    },
+    {
+     "v": 18,
+     "text": "Simple people are given foolishness as their inheritance.\nSensible people wear knowledge as a crown."
+    },
+    {
+     "v": 19,
+     "text": "The evil will kneel before the good.\nThe wicked will stand waiting at the doors of the righteous."
+    },
+    {
+     "v": 20,
+     "text": "Even his neighbor avoids a poor man,\nbut a rich man has friends by the dozen."
+    },
+    {
+     "v": 21,
+     "text": "Looking down on a neighbor is a sin.\nHappy is the person who shows kindness to the poor."
+    },
+    {
+     "v": 22,
+     "text": "Surely those who plot evil go astray.\nThose who plan good earn faithful love and trust."
+    },
+    {
+     "v": 23,
+     "text": "All hard work brings a profit.\nMere talk brings only poverty."
+    },
+    {
+     "v": 24,
+     "text": "Wealth is a crown for the wise.\nThe foolishness of fools stays foolishness.{e}"
+    },
+    {
+     "v": 25,
+     "text": "A truthful witness saves lives.\nOne who breathes out lies is a cheat."
+    },
+    {
+     "v": 26,
+     "text": "Respect for Yahweh gives strong safety,\nand it gives a refuge to a person’s children."
+    },
+    {
+     "v": 27,
+     "text": "Respect for Yahweh is a spring of life.\nIt helps you dodge the traps of death."
+    },
+    {
+     "v": 28,
+     "text": "A ruler gets glory from a large population.\nWithout subjects, a prince is ruined."
+    },
+    {
+     "v": 29,
+     "text": "A patient person has great understanding.\nA hothead shows off his foolishness."
+    },
+    {
+     "v": 30,
+     "text": "A peaceful heart keeps the body alive,\nbut jealousy makes the bones rot."
+    },
+    {
+     "v": 31,
+     "text": "Whoever crushes the poor insults the God who made them.\nWhoever shows kindness to those in need gives God honor."
+    },
+    {
+     "v": 32,
+     "text": "The wicked are knocked down by their own evil,\nbut good people find shelter even when they die.{f}"
+    },
+    {
+     "v": 33,
+     "text": "Wisdom rests quietly in the heart of a person with understanding,\nbut among fools she has to make herself known.{g}"
+    },
+    {
+     "v": 34,
+     "text": "Doing right lifts up a nation,\nbut sin brings shame on any people."
+    },
+    {
+     "v": 35,
+     "text": "A king is pleased with a servant who acts wisely,\nbut his anger lands on one who brings shame."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "14:1",
+     "text": "Or “Wisdom builds her house.” The plural form of the word wisdom can show honor, as in 9:1."
+    },
+    {
+     "m": "b",
+     "ref": "14:3",
+     "text": "Or “a branch of pride.”"
+    },
+    {
+     "m": "c",
+     "ref": "14:9",
+     "text": "Or “Guilt laughs at fools.” The Hebrew is uncertain."
+    },
+    {
+     "m": "d",
+     "ref": "14:14",
+     "text": "Or “and a good person gets satisfied from what he does.”"
+    },
+    {
+     "m": "e",
+     "ref": "14:24",
+     "text": "The Septuagint says, “The crown of wise people is a clever mind, but the work of fools is evil.”"
+    },
+    {
+     "m": "f",
+     "ref": "14:32",
+     "text": "Hebrew bemoto (“in his death”). Many scholars read betummo (“in his honesty”) by switching two letters. The Septuagint says “in his own holiness.”"
+    },
+    {
+     "m": "g",
+     "ref": "14:33",
+     "text": "The Septuagint and some other old copies say, “but in the heart of fools she is not known.”"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "paras": [
+    1
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Calm words cool down a rage,\nbut cutting words fire up anger."
+    },
+    {
+     "v": 2,
+     "text": "Wise people make knowledge attractive when they speak.\nFools let foolishness bubble out."
+    },
+    {
+     "v": 3,
+     "text": "Yahweh’s eyes are on every place,\nwatching both bad people and good."
+    },
+    {
+     "v": 4,
+     "text": "Kind speech is a tree of life.\nTwisted speech breaks a person’s spirit."
+    },
+    {
+     "v": 5,
+     "text": "A fool rejects his father’s training.\nAnyone who accepts correction shows good sense."
+    },
+    {
+     "v": 6,
+     "text": "Great treasure fills the home of a good person,\nbut the income of the wicked brings trouble."
+    },
+    {
+     "v": 7,
+     "text": "Wise lips spread knowledge around.\nThe hearts of fools do not."
+    },
+    {
+     "v": 8,
+     "text": "Yahweh is disgusted by the offerings of the wicked,\nbut honest people’s prayers make him glad."
+    },
+    {
+     "v": 9,
+     "text": "Yahweh hates the way the wicked live,\nbut he loves anyone who chases after what is right."
+    },
+    {
+     "v": 10,
+     "text": "Cruel punishment waits for anyone who leaves the right road.\nAnyone who hates correction will die."
+    },
+    {
+     "v": 11,
+     "text": "Even the grave and the place of ruin{a} are open to Yahweh.\nSo human hearts are no secret to him!"
+    },
+    {
+     "v": 12,
+     "text": "A mocker hates being corrected.\nHe will not visit wise people."
+    },
+    {
+     "v": 13,
+     "text": "A happy heart puts a smile on the face,\nbut a sad heart breaks the spirit."
+    },
+    {
+     "v": 14,
+     "text": "A sensible mind goes after knowledge.\nThe mouth of a fool feeds on foolishness."
+    },
+    {
+     "v": 15,
+     "text": "Every day is hard when you are poor,\nbut a cheerful heart is like a never-ending party."
+    },
+    {
+     "v": 16,
+     "text": "A little with respect for Yahweh\nbeats a fortune with worry."
+    },
+    {
+     "v": 17,
+     "text": "A plate of vegetables with love\nis better than steak with hate."
+    },
+    {
+     "v": 18,
+     "text": "A hothead starts fights.\nA patient person ends them.{b}"
+    },
+    {
+     "v": 19,
+     "text": "The road of a lazy person is blocked with thorns.\nThe road of an honest person is a smooth highway."
+    },
+    {
+     "v": 20,
+     "text": "A wise child makes a father happy,\nbut a foolish person looks down on his mother."
+    },
+    {
+     "v": 21,
+     "text": "Foolishness makes people with no sense happy.\nA person with understanding walks straight ahead."
+    },
+    {
+     "v": 22,
+     "text": "Plans fail without advice.\nWith many advisers, they succeed."
+    },
+    {
+     "v": 23,
+     "text": "People enjoy giving a fitting answer.\nA word at just the right time is wonderful!"
+    },
+    {
+     "v": 24,
+     "text": "For the wise, the path of life goes up,\nso they stay away from the grave below."
+    },
+    {
+     "v": 25,
+     "text": "Yahweh knocks down the proud person’s house,\nbut he marks the border of the widow’s land."
+    },
+    {
+     "v": 26,
+     "text": "Yahweh hates evil plans,\nbut kind words are clean in his sight."
+    },
+    {
+     "v": 27,
+     "text": "Someone greedy for gain brings trouble to his family.\nSomeone who refuses bribes will live.{c}"
+    },
+    {
+     "v": 28,
+     "text": "Good people think before they reply.\nThe wicked pour out evil with their mouths.{d}"
+    },
+    {
+     "v": 29,
+     "text": "Yahweh stays far away from the wicked,\nyet he hears the prayers of good people.{e}"
+    },
+    {
+     "v": 30,
+     "text": "A sparkle in the eyes makes the heart glad,\nand good news puts strength in the body."
+    },
+    {
+     "v": 31,
+     "text": "Anyone who listens to correction that gives life\nwill feel at home among wise people.{f}"
+    },
+    {
+     "v": 32,
+     "text": "Ignoring instruction means throwing your life away.\nListening to a warning builds good sense."
+    },
+    {
+     "v": 33,
+     "text": "Respect for Yahweh teaches wisdom,\nand humility comes before honor."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "15:11",
+     "text": "Hebrew Abaddon, “destruction.” It is another name for the place of the dead, paired with Sheol."
+    },
+    {
+     "m": "b",
+     "ref": "15:18",
+     "text": "The Septuagint adds, “A person who is slow to anger puts out arguments, but a godless person stirs them up.”"
+    },
+    {
+     "m": "c",
+     "ref": "15:27",
+     "text": "The Septuagint adds, “Giving to the poor and dealing faithfully wash sins away. Respect for the Lord makes everyone turn from evil.” This is a form of 16:6."
+    },
+    {
+     "m": "d",
+     "ref": "15:28",
+     "text": "The Septuagint adds, “The ways of good people are acceptable to the Lord, and even enemies become friends through them.” This is a form of 16:7."
+    },
+    {
+     "m": "e",
+     "ref": "15:29",
+     "text": "The Septuagint adds, “A small income with justice is better than large crops with injustice. Let a person’s heart think rightly, so that God will straighten his steps.” These are forms of 16:8–9."
+    },
+    {
+     "m": "f",
+     "ref": "15:31",
+     "text": "The Septuagint does not have this verse."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "paras": [
+    1
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "People make plans in their hearts,\nbut the right words to say come from Yahweh.{a}"
+    },
+    {
+     "v": 2,
+     "text": "To himself, everyone’s behavior looks clean,\nbut Yahweh tests what is inside."
+    },
+    {
+     "v": 3,
+     "text": "Hand your work over to Yahweh,\nand your plans will succeed."
+    },
+    {
+     "v": 4,
+     "text": "Yahweh made everything with a purpose,\neven the wicked, who are meant for the day of trouble."
+    },
+    {
+     "v": 5,
+     "text": "Yahweh is disgusted by every proud heart.\nBe certain that none of them will escape punishment."
+    },
+    {
+     "v": 6,
+     "text": "Faithful love and truth wipe away guilt,\nand respect for Yahweh keeps people from evil."
+    },
+    {
+     "v": 7,
+     "text": "When Yahweh is pleased with how someone lives,\nhe can even make that person’s enemies friendly."
+    },
+    {
+     "v": 8,
+     "text": "A small income earned honestly\nis better than a large one earned unfairly."
+    },
+    {
+     "v": 9,
+     "text": "A person’s mind designs his course,\nbut Yahweh decides where he steps."
+    },
+    {
+     "v": 10,
+     "text": "A king speaks with the voice of a judge.\nHe must not make unfair rulings."
+    },
+    {
+     "v": 11,
+     "text": "Yahweh owns honest scales and balances.\nHe made every weight in the bag."
+    },
+    {
+     "v": 12,
+     "text": "Kings hate wrongdoing,\nbecause a throne stands firm on what is right."
+    },
+    {
+     "v": 13,
+     "text": "Kings like to hear honest speech.\nThey love anyone who speaks the truth."
+    },
+    {
+     "v": 14,
+     "text": "A king’s anger can mean a death sentence,\nbut a wise person can calm it down."
+    },
+    {
+     "v": 15,
+     "text": "A king’s smiling face means life.\nHis favor is like a spring rain cloud."
+    },
+    {
+     "v": 16,
+     "text": "How much better to get wisdom than gold!\nChoosing understanding beats choosing silver."
+    },
+    {
+     "v": 17,
+     "text": "The road of honest people curves away from evil.\nWhoever watches the road protects his life."
+    },
+    {
+     "v": 18,
+     "text": "Pride comes right before a crash.\nA stuck-up attitude comes before a tumble."
+    },
+    {
+     "v": 19,
+     "text": "Better to be low and humble among the poor\nthan to split stolen goods with the proud."
+    },
+    {
+     "v": 20,
+     "text": "Anyone who thinks about a matter carefully will do well.\nWhoever trusts Yahweh is blessed."
+    },
+    {
+     "v": 21,
+     "text": "A wise heart earns the name “understanding.”\nPleasant words make teaching more convincing."
+    },
+    {
+     "v": 22,
+     "text": "Understanding is a spring of life for the one who has it,\nbut fools are punished by their own foolishness."
+    },
+    {
+     "v": 23,
+     "text": "A wise heart guides what the mouth says\nand makes the lips more convincing."
+    },
+    {
+     "v": 24,
+     "text": "Kind words are like honey from the comb.\nThey are sweet to the soul and healthy for the body."
+    },
+    {
+     "v": 25,
+     "text": "One road seems right to a person,\nyet it ends in death."
+    },
+    {
+     "v": 26,
+     "text": "A worker’s hunger works for him,\nbecause his stomach pushes him to keep going."
+    },
+    {
+     "v": 27,
+     "text": "A worthless person digs up trouble.\nHis speech burns like fire."
+    },
+    {
+     "v": 28,
+     "text": "A twisted person spreads fighting,\nand a gossip splits up close friends."
+    },
+    {
+     "v": 29,
+     "text": "A violent person lures his neighbor\nonto a road that is not good."
+    },
+    {
+     "v": 30,
+     "text": "One who winks is planning something crooked.\nOne who bites his lips has already done the harm."
+    },
+    {
+     "v": 31,
+     "text": "Gray hair is a glorious crown.\nIt is earned by living right."
+    },
+    {
+     "v": 32,
+     "text": "Patience is stronger than a soldier.\nSelf-control is worth more than conquering a city."
+    },
+    {
+     "v": 33,
+     "text": "People throw dice to decide,\nbut every outcome comes from Yahweh."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "16:1",
+     "text": "The Septuagint does not have verses 1, 3, 4, and 6 in this form. Forms of verses 6–9 also appear at the end of chapter 15."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "paras": [
+    1
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "A dry piece of bread eaten in peace\nis better than a home packed with feast food{a} and fighting."
+    },
+    {
+     "v": 2,
+     "text": "A sensible servant will take charge over a child who brings shame,\nand will share the family property with the other sons."
+    },
+    {
+     "v": 3,
+     "text": "Silver is tested in a pot and gold in a furnace,\nbut Yahweh is the one who tests hearts."
+    },
+    {
+     "v": 4,
+     "text": "An evildoer pays close attention to wicked talk.\nA liar listens to a destructive tongue."
+    },
+    {
+     "v": 5,
+     "text": "Whoever makes fun of poor people insults their Maker.\nAnyone who gloats over a disaster will be punished."
+    },
+    {
+     "v": 6,
+     "text": "Grandchildren are a crown for the aged,\nand children take pride in their parents.{b}"
+    },
+    {
+     "v": 7,
+     "text": "Fancy words do not fit a fool,\nand lies fit a leader even less."
+    },
+    {
+     "v": 8,
+     "text": "To the person who gives it, a bribe looks like a magic charm.\nIt seems to work wherever he turns."
+    },
+    {
+     "v": 9,
+     "text": "Whoever forgives a wrong builds friendship.\nWhoever keeps bringing it up pulls close friends apart."
+    },
+    {
+     "v": 10,
+     "text": "One word of correction sinks deeper into a person with understanding\nthan a hundred whips into a fool."
+    },
+    {
+     "v": 11,
+     "text": "An evil person wants nothing but revolt,\nso a cruel messenger will be sent against him."
+    },
+    {
+     "v": 12,
+     "text": "Better to run into a mother bear whose cubs were stolen\nthan to meet a fool who is acting foolish."
+    },
+    {
+     "v": 13,
+     "text": "If anyone returns evil for good,\nevil will never leave his home."
+    },
+    {
+     "v": 14,
+     "text": "The start of a fight is like a crack in a dam.\nQuit before the quarrel bursts out."
+    },
+    {
+     "v": 15,
+     "text": "Letting the guilty go free and punishing the innocent:\nYahweh hates them both."
+    },
+    {
+     "v": 16,
+     "text": "What use is money in a fool’s hand?\nHe wants to buy wisdom but has no mind to learn it.{c}"
+    },
+    {
+     "v": 17,
+     "text": "A friend loves at every moment.\nA brother is born to help in hard times."
+    },
+    {
+     "v": 18,
+     "text": "A person with no sense shakes hands on a deal\nand promises to cover a neighbor’s debt."
+    },
+    {
+     "v": 19,
+     "text": "Anyone who loves sin loves fighting.\nWhoever makes his doorway tall is begging for a crash."
+    },
+    {
+     "v": 20,
+     "text": "A twisted heart finds nothing good.\nA deceitful tongue lands in trouble."
+    },
+    {
+     "v": 21,
+     "text": "Having a fool for a child brings sorrow.\nThe father of a dull person has no joy."
+    },
+    {
+     "v": 22,
+     "text": "A cheerful heart works like good medicine,\nbut a crushed spirit saps strength."
+    },
+    {
+     "v": 23,
+     "text": "A wicked person slips a bribe out of his clothing{d}\nto twist the course of justice."
+    },
+    {
+     "v": 24,
+     "text": "A person with understanding keeps wisdom in front of him,\nbut a fool’s eyes wander to the far ends of the earth."
+    },
+    {
+     "v": 25,
+     "text": "A foolish child brings grief to his father\nand bitter pain to the mother who bore him."
+    },
+    {
+     "v": 26,
+     "text": "It is not good to fine an innocent person,\nor to flog leaders because they were honest."
+    },
+    {
+     "v": 27,
+     "text": "Whoever uses few words has knowledge.\nA person with a cool temper has understanding."
+    },
+    {
+     "v": 28,
+     "text": "Even fools seem wise if they stay quiet.\nThey seem smart if they keep their mouths closed."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "17:1",
+     "text": "Literally “sacrifices.” People ate the meat at sacrifice meals."
+    },
+    {
+     "m": "b",
+     "ref": "17:6",
+     "text": "The Septuagint adds, “The faithful own a whole world of wealth, but the unfaithful do not own a single coin.”"
+    },
+    {
+     "m": "c",
+     "ref": "17:16",
+     "text": "The Septuagint adds, “Whoever builds his house high is looking for ruin. Whoever turns away from learning will fall into trouble.”"
+    },
+    {
+     "m": "d",
+     "ref": "17:23",
+     "text": "Literally “from the chest,” meaning from a fold in his clothing."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "paras": [
+    1
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "A loner chases his own wishes.\nHe lashes out at every piece of good advice.{a}"
+    },
+    {
+     "v": 2,
+     "text": "A fool does not enjoy understanding.\nHe only enjoys sharing his own opinions."
+    },
+    {
+     "v": 3,
+     "text": "When the wicked come, scorn comes too,\nand shame brings insults."
+    },
+    {
+     "v": 4,
+     "text": "The words from a person’s mouth are deep water.\nThe source of wisdom is a rushing stream."
+    },
+    {
+     "v": 5,
+     "text": "It is wrong to take the side of a guilty person\nor to deny justice to the innocent in court."
+    },
+    {
+     "v": 6,
+     "text": "A fool’s words walk him into a fight.\nHis mouth is asking for a beating."
+    },
+    {
+     "v": 7,
+     "text": "A fool’s mouth is what ruins him.\nHis lips are a trap for his own life."
+    },
+    {
+     "v": 8,
+     "text": "A gossip’s words are like delicious snacks.\nThey sink deep into a person’s insides."
+    },
+    {
+     "v": 9,
+     "text": "Anyone who is lazy at work\nis a close relative of someone who wrecks things."
+    },
+    {
+     "v": 10,
+     "text": "The name of Yahweh is a strong tower.\nGood people run into it and are safe."
+    },
+    {
+     "v": 11,
+     "text": "A rich person thinks his wealth is a strong city.\nIn his mind it is a tall wall."
+    },
+    {
+     "v": 12,
+     "text": "A heart grows proud just before a fall,\nand humility comes before honor."
+    },
+    {
+     "v": 13,
+     "text": "Replying before you have listened\nis foolish and shameful."
+    },
+    {
+     "v": 14,
+     "text": "A strong spirit can get a person through illness,\nbut who can bear a broken spirit?"
+    },
+    {
+     "v": 15,
+     "text": "A mind with understanding gains knowledge,\nand the ears of the wise go looking for it."
+    },
+    {
+     "v": 16,
+     "text": "A gift can open doors for a person\nand bring him in front of important people."
+    },
+    {
+     "v": 17,
+     "text": "The first person to tell his side sounds right\nuntil the other comes and asks questions."
+    },
+    {
+     "v": 18,
+     "text": "Drawing lots ends arguments\nand settles things between strong rivals."
+    },
+    {
+     "v": 19,
+     "text": "A brother who has been hurt is tougher to win back than a walled city.\nArguments are like the bars on a fortress gate.{b}"
+    },
+    {
+     "v": 20,
+     "text": "A person’s stomach is filled by what his mouth says.\nHe is satisfied with the harvest of his lips."
+    },
+    {
+     "v": 21,
+     "text": "Life and death are in the tongue’s power.\nThose who enjoy talking will eat the crop it grows."
+    },
+    {
+     "v": 22,
+     "text": "A man who finds a wife has found something good,\nand he has gained Yahweh’s favor.{c}"
+    },
+    {
+     "v": 23,
+     "text": "A poor man begs for mercy,\nbut a rich man answers with harsh words.{d}"
+    },
+    {
+     "v": 24,
+     "text": "A person with many friends may be ruined,\nbut some friends stick closer than family."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "18:1",
+     "text": "The Hebrew of this verse is uncertain."
+    },
+    {
+     "m": "b",
+     "ref": "18:19",
+     "text": "The Hebrew of this verse is hard to read."
+    },
+    {
+     "m": "c",
+     "ref": "18:22",
+     "text": "The Septuagint adds, “Whoever sends away a good wife sends away something good. Whoever keeps an unfaithful wife is foolish and ungodly.”"
+    },
+    {
+     "m": "d",
+     "ref": "18:23",
+     "text": "The Septuagint does not have verses 23–24 and 19:1–2."
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "paras": [
+    1
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "A poor person who lives honestly\nis better off than a fool who speaks crookedly."
+    },
+    {
+     "v": 2,
+     "text": "Eagerness without knowledge is not good.\nRushing along makes a person miss the turn."
+    },
+    {
+     "v": 3,
+     "text": "A person’s own foolishness ruins his life,\nand then his heart is angry at Yahweh."
+    },
+    {
+     "v": 4,
+     "text": "Money brings in lots of friends,\nbut a poor person’s friend walks away."
+    },
+    {
+     "v": 5,
+     "text": "A lying witness will be found guilty.\nOne who breathes out lies will not get off."
+    },
+    {
+     "v": 6,
+     "text": "Many people try to win a generous person’s favor,\nand everybody is a friend to one who gives gifts."
+    },
+    {
+     "v": 7,
+     "text": "Even a poor person’s relatives hate him.\nHow much more his friends stay away!\nHe begs them with words, but they are gone.{a}"
+    },
+    {
+     "v": 8,
+     "text": "Whoever gains good sense loves his own life.\nWhoever holds on to understanding will find success."
+    },
+    {
+     "v": 9,
+     "text": "A lying witness will be found guilty.\nOne who breathes out lies will be destroyed."
+    },
+    {
+     "v": 10,
+     "text": "A life of luxury is not right for a fool,\nand it is worse for a slave to rule over princes."
+    },
+    {
+     "v": 11,
+     "text": "Good sense helps a person stay patient,\nand overlooking an insult is to his credit."
+    },
+    {
+     "v": 12,
+     "text": "A king’s rage sounds like a lion roaring,\nbut his approval is as refreshing as morning dew on grass."
+    },
+    {
+     "v": 13,
+     "text": "A foolish son is a disaster for his father.\nA wife who nags is like a leaky roof that never stops dripping."
+    },
+    {
+     "v": 14,
+     "text": "Parents leave behind houses and money,\nbut a sensible wife is a gift from Yahweh."
+    },
+    {
+     "v": 15,
+     "text": "Laziness brings on deep sleep,\nand a person who does nothing goes hungry."
+    },
+    {
+     "v": 16,
+     "text": "Whoever follows the command protects his life.\nWhoever is careless about how he lives will die."
+    },
+    {
+     "v": 17,
+     "text": "Whoever is kind to the poor is making Yahweh a loan,\nand Yahweh will pay him back for it."
+    },
+    {
+     "v": 18,
+     "text": "Discipline your child while there is hope,\nand never aim at his destruction.{b}"
+    },
+    {
+     "v": 19,
+     "text": "A hothead will have to pay the penalty.\nSave him once, and you will be doing it over and over."
+    },
+    {
+     "v": 20,
+     "text": "Listen to advice and accept correction,\nso that you will be wise later in life."
+    },
+    {
+     "v": 21,
+     "text": "A person’s heart holds many plans,\nbut only Yahweh’s purpose will stand."
+    },
+    {
+     "v": 22,
+     "text": "What people want from others is faithful love,{c}\nand being poor is better than being a liar."
+    },
+    {
+     "v": 23,
+     "text": "Respect for Yahweh leads to life.\nA person who has it rests easy, and harm does not touch him."
+    },
+    {
+     "v": 24,
+     "text": "The lazy person reaches into the bowl\nbut is too weary to lift food to his mouth."
+    },
+    {
+     "v": 25,
+     "text": "Beat a mocker, and the simple will gain some sense.\nCorrect an understanding person, and he will learn more."
+    },
+    {
+     "v": 26,
+     "text": "Whoever steals from his father and throws out his mother\nis a child who causes shame and disgrace."
+    },
+    {
+     "v": 27,
+     "text": "My child, if you quit hearing correction,\nyou will wander off from the things you know."
+    },
+    {
+     "v": 28,
+     "text": "A worthless witness makes fun of justice,\nand the mouth of the wicked gulps down evil."
+    },
+    {
+     "v": 29,
+     "text": "Punishments are ready for mockers,\nand whips for the backs of fools."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "19:7",
+     "text": "The third line is uncertain. It may be a piece of a lost saying. The Septuagint has a longer text here."
+    },
+    {
+     "m": "b",
+     "ref": "19:18",
+     "text": "Or “do not wish for his death,” meaning do not discipline him in a rage. Or “do not be set on ruining him” by neglecting him."
+    },
+    {
+     "m": "c",
+     "ref": "19:22",
+     "text": "Or “A person’s greed is his shame.”"
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "paras": [
+    1
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Wine makes people mock, and beer makes them brawl.\nNo one who is fooled by them is wise."
+    },
+    {
+     "v": 2,
+     "text": "A king’s rage roars like a young lion.\nWhoever makes him angry risks his life."
+    },
+    {
+     "v": 3,
+     "text": "Staying out of fights brings honor to a person,\nbut every fool is quick to quarrel."
+    },
+    {
+     "v": 4,
+     "text": "A lazy farmer will not plow in the fall.\nAt harvest he looks for a crop and finds none."
+    },
+    {
+     "v": 5,
+     "text": "Plans inside a person are like deep water in a well,\nbut someone with insight can draw them out."
+    },
+    {
+     "v": 6,
+     "text": "Plenty of people boast about their loyalty,\nbut who can find a person who is truly reliable?"
+    },
+    {
+     "v": 7,
+     "text": "A good person lives honestly.\nHis children are blessed after him!"
+    },
+    {
+     "v": 8,
+     "text": "A king sitting on his judge’s throne\nseparates out all evil with a look."
+    },
+    {
+     "v": 9,
+     "text": "Who can say, “I have cleaned up my heart.\nI am free from my sin”?{a}"
+    },
+    {
+     "v": 10,
+     "text": "Using one weight to buy and another to sell, or two sizes of measuring cup,{b}\nis something Yahweh hates."
+    },
+    {
+     "v": 11,
+     "text": "Even a child shows by his actions\nwhether his behavior is clean and honest."
+    },
+    {
+     "v": 12,
+     "text": "Hearing ears and seeing eyes\nwere both made by Yahweh."
+    },
+    {
+     "v": 13,
+     "text": "Do not fall in love with sleep, or poverty will find you.\nKeep your eyes open and you will have food to spare."
+    },
+    {
+     "v": 14,
+     "text": "“It is no good, no good,” says the buyer.\nThen he walks off and brags about the deal.{c}"
+    },
+    {
+     "v": 15,
+     "text": "Gold and jewels are easy to find,\nbut lips that speak with knowledge are a rare treasure."
+    },
+    {
+     "v": 16,
+     "text": "Take the coat of a man who promised to cover a stranger’s debt.\nKeep it as a deposit if he backs a foreign woman’s loan.{d}"
+    },
+    {
+     "v": 17,
+     "text": "Food won by cheating tastes sweet at first,\nbut later the mouth is full of gravel."
+    },
+    {
+     "v": 18,
+     "text": "Plans succeed when people get advice.\nFight a war only with good direction."
+    },
+    {
+     "v": 19,
+     "text": "A gossip goes around telling secrets,\nso stay away from a person who talks too much."
+    },
+    {
+     "v": 20,
+     "text": "People who insult their father or mother\nwill see their lamp snuffed out in pitch darkness."
+    },
+    {
+     "v": 21,
+     "text": "Property grabbed quickly at the start\nwill not be blessed in the end."
+    },
+    {
+     "v": 22,
+     "text": "Do not announce, “I will repay that wrong myself.”\nWait for Yahweh, and he will rescue you."
+    },
+    {
+     "v": 23,
+     "text": "Yahweh hates it when people use two different weights,\nand cheating scales are wrong."
+    },
+    {
+     "v": 24,
+     "text": "Yahweh directs a person’s steps.\nSo how can anyone understand his own road?"
+    },
+    {
+     "v": 25,
+     "text": "It is a trap to promise something to God in a rush\nand think about the promise only afterward."
+    },
+    {
+     "v": 26,
+     "text": "A wise king separates out the wicked\nand rolls the threshing wheel across them."
+    },
+    {
+     "v": 27,
+     "text": "The human spirit is a lamp from Yahweh.\nIt shines into every hidden part of a person."
+    },
+    {
+     "v": 28,
+     "text": "Faithful love and truth protect a king,\nand love keeps his throne steady."
+    },
+    {
+     "v": 29,
+     "text": "Young men are proud of their strength,\nand old men are honored for their gray hair."
+    },
+    {
+     "v": 30,
+     "text": "Wounds that hurt can scrub out evil,\nand a beating goes deep inside a person."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "20:9",
+     "text": "In the Septuagint, verses 20–22 come here, and verses 14–19 are missing."
+    },
+    {
+     "m": "b",
+     "ref": "20:10",
+     "text": "Literally “a stone and a stone, an ephah and an ephah.” This means one set of weights and measures for buying and another for selling. An ephah was a dry measure of about 3/5 bushel (22 liters)."
+    },
+    {
+     "m": "c",
+     "ref": "20:14",
+     "text": "The Septuagint does not have verses 14–19."
+    },
+    {
+     "m": "d",
+     "ref": "20:16",
+     "text": "Or “a foreigner,” following another way of reading the Hebrew. Compare 27:13."
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "paras": [
+    1
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "A king’s heart is like a canal in Yahweh’s hand.\nHe steers it wherever he wants."
+    },
+    {
+     "v": 2,
+     "text": "People think every path they take is right,\nbut Yahweh checks their hearts."
+    },
+    {
+     "v": 3,
+     "text": "Yahweh would rather see people do what is right and fair\nthan bring him sacrifices."
+    },
+    {
+     "v": 4,
+     "text": "Proud eyes and a boastful heart\nare the lamp of the wicked, and they are sin.{a}"
+    },
+    {
+     "v": 5,
+     "text": "The plans of hard workers lead to gain,\nbut everyone who rushes ends up in need.{b}"
+    },
+    {
+     "v": 6,
+     "text": "Wealth earned with a lying tongue\nis a puff of smoke and a deadly trap.{c}"
+    },
+    {
+     "v": 7,
+     "text": "The wicked will be swept off by their own violence,\nsince they will not deal fairly."
+    },
+    {
+     "v": 8,
+     "text": "A guilty person’s road is crooked,\nbut the actions of a clean person are straight."
+    },
+    {
+     "v": 9,
+     "text": "Living in the corner of an attic roof\nbeats sharing a home with a quarrelsome wife."
+    },
+    {
+     "v": 10,
+     "text": "The wicked person craves evil.\nHis neighbor gets no mercy from him."
+    },
+    {
+     "v": 11,
+     "text": "When a mocker is punished, simple people learn wisdom.\nWhen a wise person receives teaching, his knowledge grows."
+    },
+    {
+     "v": 12,
+     "text": "The Righteous One{d} sees into the home of the wicked\nand throws them down into ruin."
+    },
+    {
+     "v": 13,
+     "text": "If you plug your ears when the poor cry out,\nyou will cry out someday and get no answer."
+    },
+    {
+     "v": 14,
+     "text": "A secret gift calms anger,\nand a bribe tucked in a coat cools a rage."
+    },
+    {
+     "v": 15,
+     "text": "Justice makes good people glad\nand makes evildoers afraid."
+    },
+    {
+     "v": 16,
+     "text": "Anyone who wanders from the road of understanding\nwill rest among the ghosts of the dead."
+    },
+    {
+     "v": 17,
+     "text": "Those who chase pleasure will end up poor.\nThose who love wine and rich food will never get wealthy."
+    },
+    {
+     "v": 18,
+     "text": "The wicked are the price paid to free the good,\nand the faithless are paid for the honest."
+    },
+    {
+     "v": 19,
+     "text": "Living out in the wilderness\nis better than living with a nagging, angry wife."
+    },
+    {
+     "v": 20,
+     "text": "Treasure and oil are stored in a wise person’s home,\nbut a fool gulps them all down."
+    },
+    {
+     "v": 21,
+     "text": "Anyone who chases goodness and faithful love\nfinds life, justice, and honor."
+    },
+    {
+     "v": 22,
+     "text": "A wise person can march against a city full of fighters\nand pull down the fortress they trusted in."
+    },
+    {
+     "v": 23,
+     "text": "Guard your mouth and tongue,\nand you will keep yourself out of trouble."
+    },
+    {
+     "v": 24,
+     "text": "A proud and arrogant person is called a “mocker.”\nHe acts with fierce pride."
+    },
+    {
+     "v": 25,
+     "text": "The lazy person’s cravings will kill him,\nbecause his hands will not work."
+    },
+    {
+     "v": 26,
+     "text": "All day long he wants more,\nbut a good person gives without holding back."
+    },
+    {
+     "v": 27,
+     "text": "The wicked person’s offering is disgusting.\nIt is even worse when he brings it with bad motives!"
+    },
+    {
+     "v": 28,
+     "text": "A lying witness will die,\nbut one who listens will keep on speaking.{e}"
+    },
+    {
+     "v": 29,
+     "text": "A wicked person puts on a hard face.\nAn honest person thinks about where his road goes.{f}"
+    },
+    {
+     "v": 30,
+     "text": "No wisdom, no understanding,\nand no plan can win against Yahweh."
+    },
+    {
+     "v": 31,
+     "text": "Soldiers prepare their horses for the battle,\nbut Yahweh alone gives the win."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "21:4",
+     "text": "Or “the farm of the wicked.” The Hebrew is uncertain."
+    },
+    {
+     "m": "b",
+     "ref": "21:5",
+     "text": "The Septuagint does not have this verse."
+    },
+    {
+     "m": "c",
+     "ref": "21:6",
+     "text": "This follows the Septuagint and some other old copies. The Hebrew says “for those who seek death.”"
+    },
+    {
+     "m": "d",
+     "ref": "21:12",
+     "text": "Or “A righteous person.” The second line suggests it means God."
+    },
+    {
+     "m": "e",
+     "ref": "21:28",
+     "text": "Or “will speak and win.” The meaning is uncertain."
+    },
+    {
+     "m": "f",
+     "ref": "21:29",
+     "text": "This follows the margin of the Hebrew text. The written text says “understands his ways.”"
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "paras": [
+    1,
+    17,
+    22,
+    24,
+    26,
+    28,
+    29
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "A good reputation beats enormous riches.\nBeing admired is worth more than silver or gold."
+    },
+    {
+     "v": 2,
+     "text": "Rich and poor share one thing:\nYahweh made every one of them."
+    },
+    {
+     "v": 3,
+     "text": "A sensible person sees danger and hides,\nbut simple people walk on and suffer for it."
+    },
+    {
+     "v": 4,
+     "text": "The prize for humility and respect for Yahweh\nis wealth, honor, and life."
+    },
+    {
+     "v": 5,
+     "text": "Thorns and traps lie on the roads of crooked people.\nWhoever protects his life stays far away from them."
+    },
+    {
+     "v": 6,
+     "text": "Teach a child the way that fits him,\nand even when he is old he will not leave it.{a}"
+    },
+    {
+     "v": 7,
+     "text": "The rich boss around the poor,\nand a borrower is a servant to the lender."
+    },
+    {
+     "v": 8,
+     "text": "Whoever plants injustice will harvest trouble,\nand the stick of his anger will break.{b}"
+    },
+    {
+     "v": 9,
+     "text": "Kind people will receive blessings,\nsince they hand some of their food to the poor.{c}"
+    },
+    {
+     "v": 10,
+     "text": "Throw out the mocker and the fighting leaves with him.\nArguments and insults end."
+    },
+    {
+     "v": 11,
+     "text": "Anyone who loves purity of heart and has gracious words\nbecomes a friend of the king."
+    },
+    {
+     "v": 12,
+     "text": "Yahweh’s eyes guard those who have knowledge,\nbut he ruins the words of the unfaithful."
+    },
+    {
+     "v": 13,
+     "text": "Someone lazy makes excuses: “There is a lion out there!\nI would be killed in the street!”"
+    },
+    {
+     "v": 14,
+     "text": "The mouth of an unfaithful woman is a deep pit.\nAnyone Yahweh is angry with will fall in.{d}"
+    },
+    {
+     "v": 15,
+     "text": "Foolishness is tied up in the heart of a child.\nThe stick of correction will drive it far away."
+    },
+    {
+     "v": 16,
+     "text": "Squeezing the poor to get rich,\nand giving gifts to the rich: both lead to poverty."
+    },
+    {
+     "v": 17,
+     "text": "Lean in and hear the words of wise people,{e}\nand turn your mind to my knowledge."
+    },
+    {
+     "v": 18,
+     "text": "It will be a pleasure to keep them inside you\nand to have them all ready to say."
+    },
+    {
+     "v": 19,
+     "text": "I am teaching them to you today, to you personally,\nso that you will put your trust in Yahweh."
+    },
+    {
+     "v": 20,
+     "text": "I have written you thirty sayings{f}\nfull of advice and knowledge."
+    },
+    {
+     "v": 21,
+     "text": "They show what is right and true, words you can count on,\nso you can send back honest answers to those who sent you."
+    },
+    {
+     "v": 22,
+     "text": "Never steal from poor people just because they are poor.\nNever crush those in need at the city gate."
+    },
+    {
+     "v": 23,
+     "text": "Yahweh will take up their case\nand take the life of anyone who has robbed them."
+    },
+    {
+     "v": 24,
+     "text": "Never become a friend of a person with a quick temper.\nNever travel with someone full of rage."
+    },
+    {
+     "v": 25,
+     "text": "If you do, you will pick up his habits\nand be caught in a trap."
+    },
+    {
+     "v": 26,
+     "text": "Do not be one of those who shake hands on a deal\nand promise to pay another person’s debts."
+    },
+    {
+     "v": 27,
+     "text": "If you have no money to pay,\nwhy should your own bed be taken from under you?"
+    },
+    {
+     "v": 28,
+     "text": "Do not move the old boundary stone\nthat your ancestors put in place."
+    },
+    {
+     "v": 29,
+     "text": "Do you see someone who is skilled and quick at his work?\nHe will serve kings.\nHe will not serve unimportant people."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "22:6",
+     "text": "Or “according to the way he should go.” The Septuagint does not have this verse."
+    },
+    {
+     "m": "b",
+     "ref": "22:8",
+     "text": "The Septuagint adds, “God loves a cheerful, generous giver, but he will bring the empty work of the stingy to an end.” Compare 2 Corinthians 9:7."
+    },
+    {
+     "m": "c",
+     "ref": "22:9",
+     "text": "The Septuagint adds, “Whoever gives freely wins victory and honor, but he takes away the life of those who keep the gifts for themselves.”"
+    },
+    {
+     "m": "d",
+     "ref": "22:14",
+     "text": "The Septuagint adds, “Evil ways lie in front of a person, and he does not like to turn away from them. But he must turn aside from a twisted and evil way.”"
+    },
+    {
+     "m": "e",
+     "ref": "22:17",
+     "text": "A new collection starts here (22:17–24:22). It is very close to the Egyptian Instruction of Amenemope, which has thirty chapters."
+    },
+    {
+     "m": "f",
+     "ref": "22:20",
+     "text": "The Hebrew text has the word shilshom (“before”), but the margin has shalishim. Many readers take it as “thirty” or as “excellent things.” The Septuagint says “write them three times.”"
+    }
+   ],
+   "subheads": {
+    "1": "Sayings About Daily Life",
+    "17": "Words of the Wise",
+    "22": "Do Not Rob the Poor",
+    "24": "Do Not Befriend an Angry Man",
+    "26": "Debts and Boundary Stones"
+   }
+  },
+  {
+   "n": 23,
+   "paras": [
+    1,
+    4,
+    6,
+    9,
+    10,
+    12,
+    13,
+    15,
+    17,
+    19,
+    22,
+    26,
+    29
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "When you sit down to dine with a powerful person,\nlook carefully at what{a} is placed in front of you."
+    },
+    {
+     "v": 2,
+     "text": "If you tend to overeat,\nimagine a knife at your throat."
+    },
+    {
+     "v": 3,
+     "text": "Do not crave his fancy foods.\nThat meal is a trick."
+    },
+    {
+     "v": 4,
+     "text": "Do not wear yourself out chasing money.\nBe wise enough to quit."
+    },
+    {
+     "v": 5,
+     "text": "You glance at it, and it vanishes.\nMoney sprouts wings\nand soars off like an eagle."
+    },
+    {
+     "v": 6,
+     "text": "Never eat at the table of a selfish person.{b}\nNever crave his tasty treats."
+    },
+    {
+     "v": 7,
+     "text": "He is like a man counting the cost in his head.{c}\n“Eat and drink!” he says to you,\nbut his heart is not with you."
+    },
+    {
+     "v": 8,
+     "text": "You will throw up the little you ate,\nand your kind words will go to waste."
+    },
+    {
+     "v": 9,
+     "text": "Do not speak your best advice to a fool.\nHe will sneer at your wise words."
+    },
+    {
+     "v": 10,
+     "text": "Do not move the old boundary stone.\nDo not take over the fields of orphans."
+    },
+    {
+     "v": 11,
+     "text": "Their Defender{d} is strong.\nHe will argue their case against you."
+    },
+    {
+     "v": 12,
+     "text": "Give your mind to instruction.\nGive your ears to words of knowledge."
+    },
+    {
+     "v": 13,
+     "text": "Do not hold back correction from a child.\nA spanking will not kill him."
+    },
+    {
+     "v": 14,
+     "text": "Use the stick on him yourself,\nand you will save his life from the grave."
+    },
+    {
+     "v": 15,
+     "text": "My child, if your mind is wise,\nmy own heart will celebrate too."
+    },
+    {
+     "v": 16,
+     "text": "My insides{e} will cheer\nwhen your lips say what is right."
+    },
+    {
+     "v": 17,
+     "text": "Do not let your heart envy sinners.\nKeep respecting Yahweh every day."
+    },
+    {
+     "v": 18,
+     "text": "There is certainly a future for you,\nand your hope will not be wiped out."
+    },
+    {
+     "v": 19,
+     "text": "Listen, my child, and be wise.\nPoint your heart in the right direction."
+    },
+    {
+     "v": 20,
+     "text": "Do not join those who drink too much wine\nor stuff themselves with meat."
+    },
+    {
+     "v": 21,
+     "text": "Drunks and big eaters will become poor,\nand sleepiness will put them in rags."
+    },
+    {
+     "v": 22,
+     "text": "Listen to your father, who gave you life.\nDo not look down on your mother when she grows old."
+    },
+    {
+     "v": 23,
+     "text": "Buy truth and never sell it.\nBuy wisdom, training, and understanding too."
+    },
+    {
+     "v": 24,
+     "text": "The father of a good child will shout for joy.\nThe parent of a wise child will be delighted."
+    },
+    {
+     "v": 25,
+     "text": "Make your father and mother happy.\nGive joy to the woman who gave birth to you."
+    },
+    {
+     "v": 26,
+     "text": "My child, hand your heart over to me.\nLet your eyes enjoy{f} my ways."
+    },
+    {
+     "v": 27,
+     "text": "A woman who sells herself is a deep ditch.\nAn unfaithful wife is a narrow well."
+    },
+    {
+     "v": 28,
+     "text": "She waits like a thief\nand adds to the number of the unfaithful."
+    },
+    {
+     "v": 29,
+     "text": "Who groans? Who is full of sorrow?\nWho gets into fights? Who complains?\nWho has cuts and bruises with no cause?\nWho has bloodshot eyes?"
+    },
+    {
+     "v": 30,
+     "text": "Those who stay up late with their wine,\nwho go looking for mixed drinks."
+    },
+    {
+     "v": 31,
+     "text": "Do not stare at wine that is red,\nthat sparkles in the cup\nand slides down easily."
+    },
+    {
+     "v": 32,
+     "text": "Later it bites like a snake\nand spits poison like a viper."
+    },
+    {
+     "v": 33,
+     "text": "Your eyes will see strange things,\nand your mouth will say twisted things."
+    },
+    {
+     "v": 34,
+     "text": "You will feel like you are lying in the middle of the ocean,\nor like you are sleeping at the top of a ship’s mast.{g}"
+    },
+    {
+     "v": 35,
+     "text": "“They hit me,” you say, “but I felt nothing.\nThey beat me up, and I did not notice.\nWhen will I wake up?\nI want another drink.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "23:1",
+     "text": "Or “who.”"
+    },
+    {
+     "m": "b",
+     "ref": "23:6",
+     "text": "Literally “of someone with an evil eye.”"
+    },
+    {
+     "m": "c",
+     "ref": "23:7",
+     "text": "The Hebrew of this line is uncertain. It may also mean “as he figures in his soul, so he is.”"
+    },
+    {
+     "m": "d",
+     "ref": "23:11",
+     "text": "Hebrew go’el, the close relative who protects the rights of a family member. Here it means God himself."
+    },
+    {
+     "m": "e",
+     "ref": "23:16",
+     "text": "Literally “my kidneys,” which people thought of as the place of deep feelings."
+    },
+    {
+     "m": "f",
+     "ref": "23:26",
+     "text": "This follows the written Hebrew text. The margin says “keep.”"
+    },
+    {
+     "m": "g",
+     "ref": "23:34",
+     "text": "The Hebrew of this line is uncertain."
+    }
+   ],
+   "subheads": {
+    "1": "Manners at a Ruler’s Table",
+    "4": "Wealth Flies Away",
+    "6": "Do Not Trust a Stingy Host",
+    "10": "Care for the Fatherless",
+    "12": "Learn and Make Your Parents Proud",
+    "17": "Stay Away from Drunkenness",
+    "26": "A Warning About Wine"
+   }
+  },
+  {
+   "n": 24,
+   "paras": [
+    1,
+    3,
+    5,
+    7,
+    8,
+    10,
+    11,
+    13,
+    15,
+    17,
+    19,
+    21,
+    23,
+    27,
+    28,
+    30
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Do not envy wicked people.\nDo not wish to be with them."
+    },
+    {
+     "v": 2,
+     "text": "Their hearts dream up violence,\nand their mouths talk of causing trouble."
+    },
+    {
+     "v": 3,
+     "text": "A house is built with wisdom,\nand understanding makes it strong."
+    },
+    {
+     "v": 4,
+     "text": "Knowledge fills its rooms\nwith all kinds of rare and lovely treasures."
+    },
+    {
+     "v": 5,
+     "text": "A wise person has strength,{a}\nand a person with knowledge grows more powerful."
+    },
+    {
+     "v": 6,
+     "text": "You need good direction to fight a war,\nand victory comes with many advisers."
+    },
+    {
+     "v": 7,
+     "text": "Wisdom is too high for fools.\nAt the town gate, they keep their mouths shut."
+    },
+    {
+     "v": 8,
+     "text": "Anyone who plans to do wrong\nwill be known as a schemer."
+    },
+    {
+     "v": 9,
+     "text": "Planning foolish things is a sin,\nand people cannot stand a mocker."
+    },
+    {
+     "v": 10,
+     "text": "If you give up when trouble comes,\nyou were not very strong."
+    },
+    {
+     "v": 11,
+     "text": "Save those who are being dragged off to die.\nHold back those who are stumbling toward slaughter."
+    },
+    {
+     "v": 12,
+     "text": "Suppose you say, “We did not know about this.”\nDoes the one who weighs hearts not notice?\nDoes the one who watches over you not know?\nWill he not pay each person back for what he did?"
+    },
+    {
+     "v": 13,
+     "text": "Have some honey, my child, since it is good.\nDrops from the honeycomb taste sweet."
+    },
+    {
+     "v": 14,
+     "text": "Wisdom is just as sweet to your soul.\nFind it, and your future is secure,\nand your hope will not be cut short."
+    },
+    {
+     "v": 15,
+     "text": "Wicked person, do not lurk near a good person’s home.\nDo not wreck his place of rest."
+    },
+    {
+     "v": 16,
+     "text": "A good person may fall seven times and get back up,\nbut the wicked are knocked down by disaster."
+    },
+    {
+     "v": 17,
+     "text": "Do not cheer when your enemy falls.\nDo not feel glad when he stumbles."
+    },
+    {
+     "v": 18,
+     "text": "Yahweh might see it and be displeased,\nand then turn his anger away from that man."
+    },
+    {
+     "v": 19,
+     "text": "Do not get upset over evildoers.\nDo not envy the wicked."
+    },
+    {
+     "v": 20,
+     "text": "Evildoers have no future ahead.\nThe wicked person’s lamp will be put out."
+    },
+    {
+     "v": 21,
+     "text": "My child, respect Yahweh and the king.\nDo not join people who like to change sides,{b}"
+    },
+    {
+     "v": 22,
+     "text": "because disaster from them will come without warning.\nWho knows what ruin they can both bring?{c}"
+    },
+    {
+     "v": 23,
+     "text": "Here are more sayings of the wise:{d}\nTaking sides when you judge is wrong."
+    },
+    {
+     "v": 24,
+     "text": "Whoever says to a guilty person, “You are in the clear,”\nwill be cursed by many peoples and hated by nations."
+    },
+    {
+     "v": 25,
+     "text": "But those who judge the guilty fairly will be glad,\nand great blessings will rest on them."
+    },
+    {
+     "v": 26,
+     "text": "An honest answer\nis like a friendly kiss on the lips."
+    },
+    {
+     "v": 27,
+     "text": "Finish your outdoor work first.\nGet your fields in shape,\nand only after that build your house."
+    },
+    {
+     "v": 28,
+     "text": "Never speak against your neighbor without cause.\nWould you deceive with your words?"
+    },
+    {
+     "v": 29,
+     "text": "Do not say, “I will treat him the way he treated me.\nI will get him back for what he did.”"
+    },
+    {
+     "v": 30,
+     "text": "I walked past the field of a lazy person,\npast the vineyard of a man with no sense."
+    },
+    {
+     "v": 31,
+     "text": "Thistles had taken over the whole place.\nWeeds covered the ground,\nand the stone wall had fallen down."
+    },
+    {
+     "v": 32,
+     "text": "I looked at it and thought it over.\nI saw it and took the lesson to heart:"
+    },
+    {
+     "v": 33,
+     "text": "a little sleep, a short nap,\na bit of folding the arms to rest,"
+    },
+    {
+     "v": 34,
+     "text": "and poverty will come at you like a robber,\nand need will come like a man with a weapon.{e}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "24:5",
+     "text": "This follows the Septuagint and some other old copies. The Hebrew says “A wise man is in strength.”"
+    },
+    {
+     "m": "b",
+     "ref": "24:21",
+     "text": "Or “with people of high rank.” The Hebrew is uncertain."
+    },
+    {
+     "m": "c",
+     "ref": "24:22",
+     "text": "The Septuagint adds a long passage here on the son who keeps the command and on the king’s tongue as a sword. In the Septuagint, 30:1–14 also comes here."
+    },
+    {
+     "m": "d",
+     "ref": "24:23",
+     "text": "A short collection starts here (24:23–34)."
+    },
+    {
+     "m": "e",
+     "ref": "24:34",
+     "text": "In the Septuagint, 30:15–33 and 31:1–9 come after this verse. Then chapters 25–29 follow, and then 31:10–31."
+    }
+   ],
+   "subheads": {
+    "1": "Do Not Envy Evil People",
+    "3": "Wisdom Builds a Home",
+    "10": "Rescue Those in Danger",
+    "13": "Honey and Hope",
+    "15": "Do Not Gloat",
+    "19": "Respect Yahweh and the King",
+    "23": "More Sayings of the Wise",
+    "27": "Home Before Fields",
+    "30": "A Lesson from a Lazy Man’s Field"
+   }
+  },
+  {
+   "n": 25,
+   "paras": [
+    1,
+    2,
+    8,
+    11
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "These are more proverbs of Solomon. The officials of King Hezekiah{a} of Judah copied them out."
+    },
+    {
+     "v": 2,
+     "text": "God gets glory for hiding things.\nKings get glory for searching things out."
+    },
+    {
+     "v": 3,
+     "text": "The sky is high and the earth is deep.\nA king’s mind cannot be figured out."
+    },
+    {
+     "v": 4,
+     "text": "Remove the waste from silver,\nand the silversmith can make a vessel."
+    },
+    {
+     "v": 5,
+     "text": "Remove the wicked from the king’s presence,\nand his throne will stand firm because of what is right."
+    },
+    {
+     "v": 6,
+     "text": "Do not brag in front of the king.\nDo not stand where important people stand."
+    },
+    {
+     "v": 7,
+     "text": "Being invited to move up to a higher seat beats\nbeing sent lower in front of a noble\nwhom your own eyes have seen.{b}"
+    },
+    {
+     "v": 8,
+     "text": "Do not hurry to take a quarrel to court.\nWhat will you do in the end\nif your neighbor proves you wrong?"
+    },
+    {
+     "v": 9,
+     "text": "Settle the matter with your neighbor directly.\nDo not give away someone else’s secret."
+    },
+    {
+     "v": 10,
+     "text": "Otherwise, whoever hears it may blame you,\nand you will never lose your bad name.{c}"
+    },
+    {
+     "v": 11,
+     "text": "A word spoken at the right moment\nis like gold apples in a silver bowl.{d}"
+    },
+    {
+     "v": 12,
+     "text": "A wise person’s correction to a listening ear\nis like a gold ring or a fine gold necklace."
+    },
+    {
+     "v": 13,
+     "text": "A trustworthy messenger is like cold snow in the heat of harvest\nto those who send him.\nHe gives his master new strength."
+    },
+    {
+     "v": 14,
+     "text": "Clouds and wind without rain:\nthat is a person who brags about a gift he never gives."
+    },
+    {
+     "v": 15,
+     "text": "With patience you can persuade a ruler,\nand a gentle tongue can crush a bone."
+    },
+    {
+     "v": 16,
+     "text": "Found some honey? Take just your share.\nToo much will make you sick."
+    },
+    {
+     "v": 17,
+     "text": "Do not visit your neighbor’s house too often,\nor he will get tired of you and hate you."
+    },
+    {
+     "v": 18,
+     "text": "Someone who tells lies about his neighbor in court\nis like a club, a sword, or a sharp arrow."
+    },
+    {
+     "v": 19,
+     "text": "Trusting a traitor in a time of trouble\nis like a rotten tooth or a foot that slips."
+    },
+    {
+     "v": 20,
+     "text": "Singing songs to a sad heart is like taking off a coat in cold weather,\nor like pouring vinegar on soda.{e} {f}"
+    },
+    {
+     "v": 21,
+     "text": "Is your enemy hungry? Feed him.\nIs he thirsty? Give him a drink."
+    },
+    {
+     "v": 22,
+     "text": "You will be stacking glowing coals on his head,{g}\nand Yahweh will pay you back with good."
+    },
+    {
+     "v": 23,
+     "text": "The north wind brings rain,\nand secret talk brings angry looks.{h}"
+    },
+    {
+     "v": 24,
+     "text": "Living in the corner of an attic roof\nbeats sharing a home with a quarrelsome wife."
+    },
+    {
+     "v": 25,
+     "text": "Good news from far away\nis like cold water for a thirsty throat."
+    },
+    {
+     "v": 26,
+     "text": "A good person who gives way to the wicked\nis like a muddy spring or a dirty well."
+    },
+    {
+     "v": 27,
+     "text": "Eating too much honey is not good,\nand neither is chasing your own praise.{i}"
+    },
+    {
+     "v": 28,
+     "text": "A person with no self-control\nis like a city with its walls knocked down."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "25:1",
+     "text": "Hezekiah means “Yahweh makes strong.” He was king of Judah from about 715 to 686 BC (2 Kings 18–20)."
+    },
+    {
+     "m": "b",
+     "ref": "25:7",
+     "text": "The last line may belong with verse 8."
+    },
+    {
+     "m": "c",
+     "ref": "25:10",
+     "text": "The Septuagint adds, “Kindness and friendship set a person free. Keep them for yourself so you do not become a target of blame, and guard your ways in peace.”"
+    },
+    {
+     "m": "d",
+     "ref": "25:11",
+     "text": "The meaning of the Hebrew word for “bowl” is uncertain. It may mean “carvings.”"
+    },
+    {
+     "m": "e",
+     "ref": "25:20",
+     "text": "Hebrew nether, a natural soda that fizzes when vinegar is poured on it."
+    },
+    {
+     "m": "f",
+     "ref": "25:20",
+     "text": "The Septuagint adds, “As a moth harms clothing and a worm harms wood, so a person’s grief harms the heart.”"
+    },
+    {
+     "m": "g",
+     "ref": "25:22",
+     "text": "This picture means making him burn with shame. It may come from an Egyptian ceremony of being sorry. It is quoted in Romans 12:20."
+    },
+    {
+     "m": "h",
+     "ref": "25:23",
+     "text": "Rain in Israel mostly comes from the west. So “north” may mean “northwest,” or the saying may come from another place."
+    },
+    {
+     "m": "i",
+     "ref": "25:27",
+     "text": "The second line is uncertain. It could also mean “but searching out hard things is glory.”"
+    }
+   ],
+   "subheads": {
+    "1": "More Proverbs of Solomon",
+    "2": "Kings and Secrets",
+    "8": "Settling Quarrels",
+    "11": "Sayings in Pictures"
+   }
+  },
+  {
+   "n": 26,
+   "paras": [
+    1
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Snow in summer and rain at harvest\ndo not fit, and neither does honor for a fool."
+    },
+    {
+     "v": 2,
+     "text": "A fluttering sparrow and a darting swallow\ndo not land. A curse with no cause does not land either.{a}"
+    },
+    {
+     "v": 3,
+     "text": "Horses need whips, donkeys need bridles,\nand fools need a stick on the back."
+    },
+    {
+     "v": 4,
+     "text": "Do not answer a fool with his own kind of foolishness,\nor you will turn into a fool too."
+    },
+    {
+     "v": 5,
+     "text": "Answer a fool with his own kind of foolishness,\nor he will think he is wise.{b}"
+    },
+    {
+     "v": 6,
+     "text": "Sending a message with a fool\nis like chopping off your own feet and drinking trouble."
+    },
+    {
+     "v": 7,
+     "text": "A proverb in a fool’s mouth\nhangs as limp as the legs of a lame man."
+    },
+    {
+     "v": 8,
+     "text": "Honoring a fool\nis like tying a stone into a sling."
+    },
+    {
+     "v": 9,
+     "text": "A proverb in a fool’s mouth\nis like a thorn bush in the hand of a drunk."
+    },
+    {
+     "v": 10,
+     "text": "Someone who hires a fool, or anyone who happens to pass by,\nis like an archer who wounds everyone.{c}"
+    },
+    {
+     "v": 11,
+     "text": "A dog goes back to what it threw up.\nA fool does his foolish thing again.{d}"
+    },
+    {
+     "v": 12,
+     "text": "Do you see a person who thinks he is wise?\nA fool has more hope than he does."
+    },
+    {
+     "v": 13,
+     "text": "The lazy person says, “There is a lion on the road!\nA lion is roaming the squares!”"
+    },
+    {
+     "v": 14,
+     "text": "A door swings back and forth on its hinges,\nand a lazy person rolls over in bed."
+    },
+    {
+     "v": 15,
+     "text": "The lazy person digs his hand into the dish\nand is too tired to lift it up to his mouth."
+    },
+    {
+     "v": 16,
+     "text": "A lazy person believes he is smarter\nthan seven people who give sensible answers."
+    },
+    {
+     "v": 17,
+     "text": "Grabbing a stray dog by the ears\nis like jumping into a fight that is not yours."
+    },
+    {
+     "v": 18,
+     "text": "A crazy person might shoot flaming sticks,\narrows, and death."
+    },
+    {
+     "v": 19,
+     "text": "One who tricks his neighbor\nand then says, “I was only joking!” is no better."
+    },
+    {
+     "v": 20,
+     "text": "Without wood, a fire goes out.\nWithout a gossip, a fight dies down."
+    },
+    {
+     "v": 21,
+     "text": "Charcoal keeps embers glowing, and wood keeps a fire going.\nA quarrelsome person keeps fights burning the same way."
+    },
+    {
+     "v": 22,
+     "text": "A gossip’s words are like delicious snacks.\nThey go deep into a person’s insides."
+    },
+    {
+     "v": 23,
+     "text": "Sweet talk from an evil heart\nis like shiny glaze brushed over a clay pot.{e}"
+    },
+    {
+     "v": 24,
+     "text": "A hateful person hides it with his speech,\nbut inside he stores up lies."
+    },
+    {
+     "v": 25,
+     "text": "When he talks kindly, do not trust him,\nbecause seven disgusting things fill his heart."
+    },
+    {
+     "v": 26,
+     "text": "His hatred may be covered up with tricks,\nbut his evil will be shown to the whole community."
+    },
+    {
+     "v": 27,
+     "text": "Anyone who digs a pit will land in it.\nAnyone who rolls a stone will have it roll back on him."
+    },
+    {
+     "v": 28,
+     "text": "A lying tongue hates the people it hurts,\nand flattering talk causes ruin."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "26:2",
+     "text": "This follows the margin of the Hebrew text. The written text says “does not come to it,” which may mean “does not come to the one who spoke it.”"
+    },
+    {
+     "m": "b",
+     "ref": "26:5",
+     "text": "Verses 4 and 5 sit side by side on purpose. Whether to answer a fool depends on the situation."
+    },
+    {
+     "m": "c",
+     "ref": "26:10",
+     "text": "This verse is very hard to understand in Hebrew. Another suggestion is, “A master worker makes everything, but a person who hires a fool is like one who hires anyone who passes by.”"
+    },
+    {
+     "m": "d",
+     "ref": "26:11",
+     "text": "Quoted in 2 Peter 2:22. The Septuagint adds, “There is a shame that brings sin, and there is a shame that is glory and kindness.”"
+    },
+    {
+     "m": "e",
+     "ref": "26:23",
+     "text": "Or, by changing the Hebrew slightly, “like glaze over clay.” A word from the Ugaritic language suggests that “silver waste” should be read as “glaze.”"
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "paras": [
+    1,
+    23
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Do not boast about what tomorrow will bring.\nYou cannot know what a single day may produce."
+    },
+    {
+     "v": 2,
+     "text": "Let someone else say good things about you, not your own mouth.\nLet a stranger do it, not your own lips."
+    },
+    {
+     "v": 3,
+     "text": "Stone is heavy and sand is a load,\nbut a fool’s annoying ways weigh more than both."
+    },
+    {
+     "v": 4,
+     "text": "Rage is cruel, and anger floods everything,\nbut who can stand up to jealousy?"
+    },
+    {
+     "v": 5,
+     "text": "An honest warning out loud\nis better than love that stays hidden."
+    },
+    {
+     "v": 6,
+     "text": "A friend’s wounds can be trusted,\nbut an enemy’s kisses are too many to count.{a}"
+    },
+    {
+     "v": 7,
+     "text": "A person who is full will turn down even honey,\nbut to a hungry person every bitter thing tastes sweet."
+    },
+    {
+     "v": 8,
+     "text": "Someone who strays far from home\nis like a bird that strays far from its nest."
+    },
+    {
+     "v": 9,
+     "text": "Perfume and incense make the heart glad,\nand so does a friend’s sweet advice from the heart.{b}"
+    },
+    {
+     "v": 10,
+     "text": "Stay loyal to your own friend and to your father’s friend.\nWhen disaster hits, do not rush to a brother’s house.\nSomeone living close by helps more than a brother who lives far off."
+    },
+    {
+     "v": 11,
+     "text": "Be wise, my child, and bring joy to my heart.\nThen I can reply to anyone who ridicules me."
+    },
+    {
+     "v": 12,
+     "text": "A sensible person sees danger and hides.\nSimple people keep walking and suffer for it."
+    },
+    {
+     "v": 13,
+     "text": "Take the coat of a man who promised to cover a stranger’s debt.\nKeep it as a deposit if he backs a foreign woman’s loan."
+    },
+    {
+     "v": 14,
+     "text": "If you greet your neighbor in a loud voice at sunrise,\nhe will treat it as an insult."
+    },
+    {
+     "v": 15,
+     "text": "A constant drip on a rainy day\nand a wife who picks fights are the same."
+    },
+    {
+     "v": 16,
+     "text": "Holding her back is like holding back a gale,\nor like gripping oil in your right hand.{c}"
+    },
+    {
+     "v": 17,
+     "text": "Iron makes iron sharp,\nand one person makes another sharp.{d}"
+    },
+    {
+     "v": 18,
+     "text": "Whoever takes care of a fig tree gets to eat its figs,\nand whoever serves his master is honored."
+    },
+    {
+     "v": 19,
+     "text": "Water shows you your face,\nand a person’s heart shows who he is."
+    },
+    {
+     "v": 20,
+     "text": "The grave and the place of ruin are never full,\nand neither are human eyes.{e}"
+    },
+    {
+     "v": 21,
+     "text": "A pot tests silver, and a furnace tests gold,\nand a person is tested by the praise he gets.{f}"
+    },
+    {
+     "v": 22,
+     "text": "Even if you crush a fool with a pestle in a bowl of grain,\nhis foolishness will not leave him."
+    },
+    {
+     "v": 23,
+     "text": "Know how your sheep are doing.\nPay attention to your herds,"
+    },
+    {
+     "v": 24,
+     "text": "because wealth does not last forever,\nand a crown is not handed down from one age to the next."
+    },
+    {
+     "v": 25,
+     "text": "When the hay is cut and new grass shows up,\nand the mountain plants are gathered,"
+    },
+    {
+     "v": 26,
+     "text": "lambs will give you clothing,\nand goats will pay for a field."
+    },
+    {
+     "v": 27,
+     "text": "There will be plenty of goat’s milk for your food,\nenough to feed your whole family\nand keep your servant girls alive."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "27:6",
+     "text": "Or “deceitful,” from another way of reading the Hebrew."
+    },
+    {
+     "m": "b",
+     "ref": "27:9",
+     "text": "The second line is uncertain. The Septuagint says, “but the soul is torn apart by troubles.”"
+    },
+    {
+     "m": "c",
+     "ref": "27:16",
+     "text": "The Hebrew of this line is uncertain."
+    },
+    {
+     "m": "d",
+     "ref": "27:17",
+     "text": "Or “so a person sharpens his friend.”"
+    },
+    {
+     "m": "e",
+     "ref": "27:20",
+     "text": "The Septuagint adds, “Anyone who stares is disgusting to the Lord, and those who are not taught do not hold back their tongues.”"
+    },
+    {
+     "m": "f",
+     "ref": "27:21",
+     "text": "The Septuagint adds, “The heart of lawbreakers looks for trouble, but an honest heart looks for knowledge.”"
+    }
+   ],
+   "subheads": {
+    "1": "Sayings About Friends and Fools",
+    "23": "Take Care of Your Flocks"
+   }
+  },
+  {
+   "n": 28,
+   "paras": [
+    1
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "The wicked flee though nobody is after them,\nbut the good are bold like young lions."
+    },
+    {
+     "v": 2,
+     "text": "When a country turns against God, it has many rulers,\nbut with a person of understanding and knowledge, order lasts.{a}"
+    },
+    {
+     "v": 3,
+     "text": "A poor man who crushes other poor people\nis like a hard rain that leaves no crops."
+    },
+    {
+     "v": 4,
+     "text": "People who walk away from the teaching{b} applaud the wicked,\nbut people who hold to the teaching oppose them."
+    },
+    {
+     "v": 5,
+     "text": "Evil people cannot grasp what is just,\nbut those who seek Yahweh grasp all of it."
+    },
+    {
+     "v": 6,
+     "text": "A poor person who lives honestly is better off\nthan a rich person who lives two crooked lives."
+    },
+    {
+     "v": 7,
+     "text": "A child with understanding follows the teaching,\nbut one who hangs around with big eaters shames his father."
+    },
+    {
+     "v": 8,
+     "text": "Anyone who gets rich through high interest and unfair profit\nis saving it up for someone kind to the poor."
+    },
+    {
+     "v": 9,
+     "text": "If a person refuses to listen to the teaching,\neven his prayers are disgusting."
+    },
+    {
+     "v": 10,
+     "text": "Whoever leads honest people onto an evil road\nwill fall into his own pit,\nbut people without blame will receive good things."
+    },
+    {
+     "v": 11,
+     "text": "A rich person thinks he is wise,\nbut a poor person with understanding sees through him."
+    },
+    {
+     "v": 12,
+     "text": "When good people triumph, there is a great celebration.\nWhen the wicked take over, people hide."
+    },
+    {
+     "v": 13,
+     "text": "Whoever hides his wrongs will not succeed,\nbut whoever admits them and quits will find mercy."
+    },
+    {
+     "v": 14,
+     "text": "Blessed is the person who always stays humble before God.\nWhoever hardens his heart falls into trouble."
+    },
+    {
+     "v": 15,
+     "text": "A growling lion or an attacking bear\nis what a wicked ruler is to helpless people."
+    },
+    {
+     "v": 16,
+     "text": "A leader with no understanding is a cruel oppressor,\nbut one who hates dishonest gain will live long."
+    },
+    {
+     "v": 17,
+     "text": "Someone weighed down by the guilt of murder\nwill run until he dies. Let no one stop him.{c}"
+    },
+    {
+     "v": 18,
+     "text": "Whoever lives without blame will be kept safe,\nbut one who lives two crooked lives will suddenly fall.{d}"
+    },
+    {
+     "v": 19,
+     "text": "People who work their land will have plenty to eat.\nPeople who chase empty dreams will have plenty of poverty."
+    },
+    {
+     "v": 20,
+     "text": "A trustworthy person is richly blessed,\nbut someone rushing to get rich will not stay innocent."
+    },
+    {
+     "v": 21,
+     "text": "Taking sides is not good,\nyet some will do wrong for a crust of bread."
+    },
+    {
+     "v": 22,
+     "text": "A greedy person{e} hurries to get rich\nand does not realize that need is on its way."
+    },
+    {
+     "v": 23,
+     "text": "In the end, a person who corrects others earns more thanks\nthan one who flatters."
+    },
+    {
+     "v": 24,
+     "text": "Whoever steals from his father or mother and says, “That is not wrong,”\nis a partner of someone who destroys."
+    },
+    {
+     "v": 25,
+     "text": "A greedy person starts fights,\nbut whoever trusts Yahweh will prosper."
+    },
+    {
+     "v": 26,
+     "text": "Whoever trusts his own mind is a fool,\nbut whoever lives wisely will be safe."
+    },
+    {
+     "v": 27,
+     "text": "Whoever gives to the poor will never go without,\nbut whoever looks away will be cursed again and again."
+    },
+    {
+     "v": 28,
+     "text": "When the wicked take charge, people hide.\nWhen they die out, good people grow in number."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "28:2",
+     "text": "The Hebrew of this verse is hard to read."
+    },
+    {
+     "m": "b",
+     "ref": "28:4",
+     "text": "Hebrew torah. It probably means the teaching of wise people as well as God’s law. The same word is used in verses 7 and 9."
+    },
+    {
+     "m": "c",
+     "ref": "28:17",
+     "text": "The Septuagint adds, “Correct your son, and he will love you and bring honor to your soul. He will not obey a lawless nation.”"
+    },
+    {
+     "m": "d",
+     "ref": "28:18",
+     "text": "Or “will fall into a pit,” reading one letter another way."
+    },
+    {
+     "m": "e",
+     "ref": "28:22",
+     "text": "Literally “the man with an evil eye,” as in 23:6."
+    }
+   ]
+  },
+  {
+   "n": 29,
+   "paras": [
+    1
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "A person who is corrected many times and still refuses to bend\nwill be broken suddenly, with no way to be fixed."
+    },
+    {
+     "v": 2,
+     "text": "When good people grow in number, the nation is glad.\nWhen a wicked person rules, the nation groans."
+    },
+    {
+     "v": 3,
+     "text": "Someone who loves wisdom makes his father happy,\nbut someone who spends time with women who sell themselves wastes his money."
+    },
+    {
+     "v": 4,
+     "text": "A king who is fair gives his country strength,\nbut a man who loads on taxes{a} brings it down."
+    },
+    {
+     "v": 5,
+     "text": "A person who flatters his neighbor\nsets a trap for his own feet."
+    },
+    {
+     "v": 6,
+     "text": "An evil person’s sin is a trap,\nbut a good person sings and celebrates."
+    },
+    {
+     "v": 7,
+     "text": "A good person cares about the rights of the poor.\nA wicked person does not understand them."
+    },
+    {
+     "v": 8,
+     "text": "Mockers can set a whole city on fire,\nbut wise people calm anger down."
+    },
+    {
+     "v": 9,
+     "text": "If a wise person argues in court with a fool,\nthe fool shouts and laughs, and nothing is settled."
+    },
+    {
+     "v": 10,
+     "text": "Bloodthirsty people hate someone who is innocent,\nand they go after the life of an honest person.{b}"
+    },
+    {
+     "v": 11,
+     "text": "A fool spills out all his anger,\nbut a wise person holds it in and cools it down."
+    },
+    {
+     "v": 12,
+     "text": "When a ruler pays attention to lies,\nall of his officials turn wicked."
+    },
+    {
+     "v": 13,
+     "text": "The poor man and the bully have this in common:\nYahweh gave sight to both."
+    },
+    {
+     "v": 14,
+     "text": "A king who judges the poor honestly\nwill keep his throne forever."
+    },
+    {
+     "v": 15,
+     "text": "Correction brings wisdom,\nbut a child left to do whatever he wants shames his mother."
+    },
+    {
+     "v": 16,
+     "text": "When the wicked increase, so does sin,\nbut good people will see them fall."
+    },
+    {
+     "v": 17,
+     "text": "Correct your child and he will bring you peace.\nHe will bring joy to your soul."
+    },
+    {
+     "v": 18,
+     "text": "Without a message from God,{c} people run wild,\nbut happy are those who follow the teaching."
+    },
+    {
+     "v": 19,
+     "text": "Words alone will not correct a servant.\nHe understands, but he will not do it."
+    },
+    {
+     "v": 20,
+     "text": "Do you see someone who talks without thinking?\nA fool has more hope than he does."
+    },
+    {
+     "v": 21,
+     "text": "If you pamper a servant from boyhood,\nyou will find in the end that he turns soft.{d}"
+    },
+    {
+     "v": 22,
+     "text": "An angry person stirs up arguments,\nand a hothead sins in many ways."
+    },
+    {
+     "v": 23,
+     "text": "A person’s pride will bring him down,\nbut a humble spirit will win honor."
+    },
+    {
+     "v": 24,
+     "text": "To split loot with a thief is to hate your own life.\nYou hear the curse and say nothing.{e}"
+    },
+    {
+     "v": 25,
+     "text": "Fear of people is a trap,\nbut whoever trusts Yahweh is set up high and safe."
+    },
+    {
+     "v": 26,
+     "text": "Many people want a meeting with the ruler,\nbut justice for a person comes from Yahweh."
+    },
+    {
+     "v": 27,
+     "text": "Good people hate those who are unjust.\nThe wicked hate those who live honestly."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "29:4",
+     "text": "Hebrew terumot, “contributions.” It may mean forced gifts or heavy taxes."
+    },
+    {
+     "m": "b",
+     "ref": "29:10",
+     "text": "Or “but honest people care about his life.”"
+    },
+    {
+     "m": "c",
+     "ref": "29:18",
+     "text": "Hebrew hazon, “vision,” a message from God given to prophets."
+    },
+    {
+     "m": "d",
+     "ref": "29:21",
+     "text": "The meaning of the Hebrew word is uncertain. It may also mean “an heir” or “a cause of grief.”"
+    },
+    {
+     "m": "e",
+     "ref": "29:24",
+     "text": "A public curse was spoken against any witness who kept back what he knew (Leviticus 5:1)."
+    }
+   ]
+  },
+  {
+   "n": 30,
+   "paras": [
+    1,
+    5,
+    7,
+    10,
+    11,
+    15,
+    17,
+    18,
+    20,
+    21,
+    24,
+    29,
+    32
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "These are the words of Agur{a} son of Jakeh, a message.{b}\nThe man said this to Ithiel, to Ithiel and Ucal:{c}"
+    },
+    {
+     "v": 2,
+     "text": "I am more like a beast than a human.\nI lack a person’s understanding."
+    },
+    {
+     "v": 3,
+     "text": "Wisdom has not been taught to me,\nand the Holy One is unknown to me."
+    },
+    {
+     "v": 4,
+     "text": "Who has climbed up to heaven and come back down?\nWho has caught the wind in his fists?\nWho has folded the seas into a cloak?\nWho has set up the far edges of the earth?\nTell me his name and his son’s name, if you know!"
+    },
+    {
+     "v": 5,
+     "text": "Every promise of God has been tested like metal in fire.\nHe shields all who run to him for safety."
+    },
+    {
+     "v": 6,
+     "text": "Never add to what he has said,\nor he will scold you and prove you a liar."
+    },
+    {
+     "v": 7,
+     "text": "I ask you for two things.\nDo not refuse me before I die."
+    },
+    {
+     "v": 8,
+     "text": "Keep lies and false words far from me.\nGive me neither poverty nor riches.\nJust give me the food I need each day."
+    },
+    {
+     "v": 9,
+     "text": "If I have too much, I might turn from you\nand ask, “Who is Yahweh?”\nIf I am poor, I might become a thief\nand bring shame on the name of my God."
+    },
+    {
+     "v": 10,
+     "text": "Never accuse a servant in front of his master,\nor he will curse you and you will pay."
+    },
+    {
+     "v": 11,
+     "text": "There are those who curse their own fathers\nand never speak a kind word of their mothers."
+    },
+    {
+     "v": 12,
+     "text": "Some people think they are clean,\nbut they have never been washed of their dirt."
+    },
+    {
+     "v": 13,
+     "text": "Some people look down on everyone.\nHow proudly they raise their eyes!"
+    },
+    {
+     "v": 14,
+     "text": "Some people have teeth like swords\nand jaws like knives.\nThey eat the poor off the earth,\nand the needy from among people."
+    },
+    {
+     "v": 15,
+     "text": "The leech{d} has two daughters named “Give!” and “Give!”\nThree things are never satisfied,\nand four never say, “That is plenty!”"
+    },
+    {
+     "v": 16,
+     "text": "They are the grave, a womb with no child,\nsoil that always needs more rain,\nand fire, which never says, “Stop!”"
+    },
+    {
+     "v": 17,
+     "text": "The eye that laughs at a father\nand scorns a mother’s teaching\nwill be pecked out by valley ravens\nand swallowed by young eagles."
+    },
+    {
+     "v": 18,
+     "text": "Three things are too amazing for me.\nFour things I cannot understand:"
+    },
+    {
+     "v": 19,
+     "text": "the path of an eagle in the sky,\nthe path of a snake on a rock,\nthe path of a ship on the open sea,\nand the path of a man with a young woman.{e}"
+    },
+    {
+     "v": 20,
+     "text": "An unfaithful wife acts like this:\nshe finishes a meal, dabs her lips,\nand says, “I have done no harm.”"
+    },
+    {
+     "v": 21,
+     "text": "Three things make the earth tremble.\nIt cannot carry four:"
+    },
+    {
+     "v": 22,
+     "text": "a slave who becomes king,\nand a godless fool with a full stomach,"
+    },
+    {
+     "v": 23,
+     "text": "an unloved woman who finally gets a husband,\nand a servant girl who takes her mistress’s place."
+    },
+    {
+     "v": 24,
+     "text": "Four creatures on earth are tiny,\nyet they are extremely wise:"
+    },
+    {
+     "v": 25,
+     "text": "Ants are not strong,\nyet they store food all summer."
+    },
+    {
+     "v": 26,
+     "text": "Rock badgers{f} have little strength,\nyet they make their homes among the cliffs."
+    },
+    {
+     "v": 27,
+     "text": "Locusts have no king,\nyet they all go out in organized lines."
+    },
+    {
+     "v": 28,
+     "text": "A lizard{g} can be caught in your hand,\nyet it lives in the palaces of kings."
+    },
+    {
+     "v": 29,
+     "text": "Three creatures walk with grand style.\nFour stride proudly:"
+    },
+    {
+     "v": 30,
+     "text": "the lion, the strongest animal,\nwhich backs down from nothing;"
+    },
+    {
+     "v": 31,
+     "text": "the proud rooster,{h} the male goat,\nand a king whose army surrounds him.{i}"
+    },
+    {
+     "v": 32,
+     "text": "If you have acted like a fool and made yourself important,\nor if you have plotted evil,\nput your hand over your mouth."
+    },
+    {
+     "v": 33,
+     "text": "Churning milk makes butter.\nTwisting a nose makes it bleed.\nStirring up anger makes a fight.{j}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "30:1",
+     "text": "Agur may mean “collector” or “hired man.” Jakeh may mean “devoted” or “obedient.” Nothing more is known about either one. The Septuagint does not treat these as names. It says, “My son, respect my words and accept them,"
+    },
+    {
+     "m": "b",
+     "ref": "30:1",
+     "text": "Hebrew hamassa, “the message.” It could also be “of Massa,” a people of north Arabia who came from Ishmael (Genesis 25:14). Compare 31:1."
+    },
+    {
+     "m": "c",
+     "ref": "30:1",
+     "text": "Ithiel means “God is with me,” and Ucal may mean “I am able.” If the Hebrew letters are divided another way, the line reads, “I am tired, God. I am tired, God, and worn out.”"
+    },
+    {
+     "m": "d",
+     "ref": "30:15",
+     "text": "Hebrew aluqah. It may be a leech that sucks blood, or a made-up monster that drinks blood."
+    },
+    {
+     "m": "e",
+     "ref": "30:19",
+     "text": "Or “a girl.” Hebrew almah, a young woman old enough to marry."
+    },
+    {
+     "m": "f",
+     "ref": "30:26",
+     "text": "Hebrew shephanim, the rock hyrax, a small animal that lives among rocks."
+    },
+    {
+     "m": "g",
+     "ref": "30:28",
+     "text": "Or “spider.” The meaning of the Hebrew word semamit is uncertain."
+    },
+    {
+     "m": "h",
+     "ref": "30:31",
+     "text": "Hebrew zarzir motnayim, literally “belted at the waist.” The animal is uncertain. The Septuagint says “a rooster walking boldly among the hens.” Others suggest a greyhound or a war horse."
+    },
+    {
+     "m": "i",
+     "ref": "30:31",
+     "text": "The Hebrew of this line is uncertain."
+    },
+    {
+     "m": "j",
+     "ref": "30:33",
+     "text": "This verse plays on the Hebrew word aph, which means both “nose” and “anger.”"
+    }
+   ],
+   "subheads": {
+    "1": "The Words of Agur",
+    "5": "God’s Word Is Pure",
+    "7": "Two Requests",
+    "11": "Four Kinds of People",
+    "15": "Things That Are Never Full",
+    "18": "Things Too Amazing",
+    "21": "Four Things the Earth Cannot Bear",
+    "24": "Four Small and Wise Creatures",
+    "29": "Things That Walk Proudly",
+    "32": "Be Quiet and Think"
+   }
+  },
+  {
+   "n": 31,
+   "paras": [
+    1,
+    10
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "These are the words of King Lemuel,{a} a message{b} his mother taught him:"
+    },
+    {
+     "v": 2,
+     "text": "What should I tell you, my son? What, son I carried?\nWhat, son I promised to God?"
+    },
+    {
+     "v": 3,
+     "text": "Do not give your strength to women,\nor your life to those who destroy kings."
+    },
+    {
+     "v": 4,
+     "text": "It is not for kings, Lemuel, to drink wine.\nKings should not do it.\nRulers should not crave beer,"
+    },
+    {
+     "v": 5,
+     "text": "or they will drink and forget the law,\nand treat every poor person unfairly."
+    },
+    {
+     "v": 6,
+     "text": "Offer beer to someone who is dying,\nand wine to people who are filled with grief."
+    },
+    {
+     "v": 7,
+     "text": "Let them drink and forget how poor they are,\nand not remember their misery."
+    },
+    {
+     "v": 8,
+     "text": "Speak for people who have no voice,\nand for the rights of everyone who is helpless.{c}"
+    },
+    {
+     "v": 9,
+     "text": "Say what is right, judge with fairness,\nand stand up for the poor and those in need."
+    },
+    {
+     "v": 10,
+     "text": "Who can find a wife with strong character?{d}\nHer value is much greater than jewels."
+    },
+    {
+     "v": 11,
+     "text": "Her husband puts his full trust in her,\nand he will not lack for gain."
+    },
+    {
+     "v": 12,
+     "text": "She brings him good, never harm,\nevery day of her life."
+    },
+    {
+     "v": 13,
+     "text": "She picks out wool and linen\nand works with it happily."
+    },
+    {
+     "v": 14,
+     "text": "She is like ships that carry trade goods.\nShe brings her food from distant lands."
+    },
+    {
+     "v": 15,
+     "text": "She rises in the dark hours.\nShe feeds her household\nand gives her servant girls their tasks."
+    },
+    {
+     "v": 16,
+     "text": "She inspects a field and buys it.\nWith her own earnings she plants a vineyard."
+    },
+    {
+     "v": 17,
+     "text": "She puts on strength like a belt\nand makes her arms powerful."
+    },
+    {
+     "v": 18,
+     "text": "She sees that her business does well.\nHer lamp burns late into the night."
+    },
+    {
+     "v": 19,
+     "text": "She grips the spinning stick,\nand her fingers work the spindle."
+    },
+    {
+     "v": 20,
+     "text": "She gives freely to the poor\nand reaches out a hand to those in need."
+    },
+    {
+     "v": 21,
+     "text": "She does not fear snow for her family,\nbecause everyone at home wears warm red clothing.{e}"
+    },
+    {
+     "v": 22,
+     "text": "She makes bedspreads for her home.\nShe wears fine linen and purple cloth."
+    },
+    {
+     "v": 23,
+     "text": "Her husband is well known at the city gate,\nwhere he takes a seat with the country’s leaders."
+    },
+    {
+     "v": 24,
+     "text": "She sews linen garments to sell.\nShe hands belts to the merchants."
+    },
+    {
+     "v": 25,
+     "text": "Strength and dignity are her clothes,\nand she laughs about the days ahead."
+    },
+    {
+     "v": 26,
+     "text": "Wisdom comes out when she speaks,\nand kind teaching{f} is on her tongue."
+    },
+    {
+     "v": 27,
+     "text": "She watches over everything in her home\nand never eats the bread of laziness."
+    },
+    {
+     "v": 28,
+     "text": "Her children stand and call her blessed.\nHer husband praises her too:"
+    },
+    {
+     "v": 29,
+     "text": "“Many women have done noble things,\nbut you have done better than every one.”"
+    },
+    {
+     "v": 30,
+     "text": "Charm fools people, and beauty fades like a breath.{g}\nA woman who respects Yahweh is the one who deserves praise."
+    },
+    {
+     "v": 31,
+     "text": "Give her the reward her hands have earned,\nand let her work praise her at the city gate."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "31:1",
+     "text": "Lemuel means “belonging to God.” He is not known from anywhere else. The Septuagint does not read a name here (see the next note)."
+    },
+    {
+     "m": "b",
+     "ref": "31:1",
+     "text": "Hebrew massa. It could also mean “king of Massa,” the north Arabian people named at 30:1. The Septuagint says, “My words were spoken by God, the answer of a king, whom his mother taught.” It also places some of 31:1–9 elsewhere."
+    },
+    {
+     "m": "c",
+     "ref": "31:8",
+     "text": "Or “who are left alone.” Literally “children of passing away.”"
+    },
+    {
+     "m": "d",
+     "ref": "31:10",
+     "text": "Hebrew eshet chayil, a woman of strength, skill, and worth. The same phrase is used of Ruth (Ruth 3:11) and in 12:4. Verses 10–31 form an acrostic poem. Each verse starts with the next letter of the 22 Hebrew letters."
+    },
+    {
+     "m": "e",
+     "ref": "31:21",
+     "text": "Or, following the Septuagint and some other old copies, “double clothing.”"
+    },
+    {
+     "m": "f",
+     "ref": "31:26",
+     "text": "Hebrew torat chesed, which may mean “the teaching of faithful love” or “kindly instruction.”"
+    },
+    {
+     "m": "g",
+     "ref": "31:30",
+     "text": "Hebrew hevel, “vapor” or “breath,” the key word of Ecclesiastes."
+    }
+   ],
+   "subheads": {
+    "1": "The Words of King Lemuel",
+    "10": "A Strong and Capable Wife"
+   }
+  }
+ ]
+}
