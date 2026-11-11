@@ -1,0 +1,1080 @@
+{
+ "id": "song-of-songs",
+ "name": "Song of Songs",
+ "division": "Old Testament",
+ "sourceNote": "Written freshly, thought for thought, from the oldest Hebrew, Greek, and Aramaic witnesses (the Masoretic Text with the Dead Sea Scrolls, the Septuagint, and the Samaritan Pentateuch). © 2026 Jose Santiago. All rights reserved.",
+ "chapters": [
+  {
+   "n": 1,
+   "paras": [
+    1,
+    2,
+    5,
+    8,
+    9,
+    12,
+    15,
+    16
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "The Song of Songs,{a} written by Solomon.{b}"
+    },
+    {
+     "v": 2,
+     "text": "“Let him kiss me with kisses from his mouth,{c}\nbecause your love{d} is better than wine."
+    },
+    {
+     "v": 3,
+     "text": "Your perfumes smell wonderful.\nYour name is like perfume poured out.\nNo wonder the young women adore you."
+    },
+    {
+     "v": 4,
+     "text": "Take me with you. Let us hurry!\nThe king has led me into his rooms.”\n“We will be glad and celebrate with you.{e}\nWe will praise your love above wine.”\n“They are right to adore you.”"
+    },
+    {
+     "v": 5,
+     "text": "“Though my skin is dark, I am lovely,\nyoung women of Jerusalem.\nI am as dark as the tents of Kedar{f}\nand as the tent curtains of Solomon."
+    },
+    {
+     "v": 6,
+     "text": "Please do not gaze at my dark skin.\nThe sun scorched me.\nMy brothers were angry with me,\nand they sent me to guard their vineyards.\nMy own vineyard, I did not guard."
+    },
+    {
+     "v": 7,
+     "text": "Tell me, you who hold my heart,\nwhere do you graze your sheep?\nWhere do they rest at midday?\nWhy should I be left wandering like a veiled woman{g}\nnear your friends’ flocks?”"
+    },
+    {
+     "v": 8,
+     "text": "“Do you not know,\nloveliest of all women?\nThen follow the sheep’s trail\nand let your young goats feed\nbeside the shepherds’ tents.{h}"
+    },
+    {
+     "v": 9,
+     "text": "My dearest, you remind me\nof a mare in Pharaoh’s team of chariot horses.{i}"
+    },
+    {
+     "v": 10,
+     "text": "Your cheeks are lovely between your earrings,\nand your neck is lovely among your strings of beads."
+    },
+    {
+     "v": 11,
+     "text": "We will make you gold earrings\ndecorated with silver.{j}"
+    },
+    {
+     "v": 12,
+     "text": "While the king was resting at his table,\nmy perfume{k} filled the air with its smell."
+    },
+    {
+     "v": 13,
+     "text": "To me, the one I love is a small bag of myrrh{l}\nresting all night between my breasts."
+    },
+    {
+     "v": 14,
+     "text": "To me, the one I love is a bunch of henna flowers{m}\nin the vineyards of En-gedi.{n}"
+    },
+    {
+     "v": 15,
+     "text": "My dearest, you are so beautiful!\nYes, so beautiful, with eyes like doves.”{o}"
+    },
+    {
+     "v": 16,
+     "text": "“How handsome you are, my love, and how charming!{p}\nOur bed is green with leaves."
+    },
+    {
+     "v": 17,
+     "text": "The beams of our house are cedar,\nand our ceiling is made of juniper wood.{q}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "1:1",
+     "text": "This is a Hebrew way of saying “the best song.”"
+    },
+    {
+     "m": "b",
+     "ref": "1:1",
+     "text": "Or “for Solomon” or “about Solomon.” The name Solomon is tied to the word shalom, “peace.”"
+    },
+    {
+     "m": "c",
+     "ref": "1:2",
+     "text": "The woman speaks in verses 2–4. The Hebrew has no labels for who is speaking, so they are guessed from the grammar here and below."
+    },
+    {
+     "m": "d",
+     "ref": "1:2",
+     "text": "Hebrew dodim, “lovemaking” or “caresses.” It also appears in verse 4. The Septuagint reads the same letters differently and says “your breasts.”"
+    },
+    {
+     "m": "e",
+     "ref": "1:4",
+     "text": "The “we” may be the young women of verse 3, or friends. The word “you” is male."
+    },
+    {
+     "m": "f",
+     "ref": "1:5",
+     "text": "Kedar was a desert tribe of Syria and Arabia. The name may mean “dark.” Their tents were made of black goat hair."
+    },
+    {
+     "m": "g",
+     "ref": "1:7",
+     "text": "She may be veiled like a woman who sells herself (compare Genesis 38:14–15). Some old copies say “a woman who wanders.”"
+    },
+    {
+     "m": "h",
+     "ref": "1:8",
+     "text": "He answers in verse 8, or it may be the friends."
+    },
+    {
+     "m": "i",
+     "ref": "1:9",
+     "text": "He speaks in verses 9–11. The Hebrew word rayati means “my companion,” and it is his usual name for her in this song. A mare set loose among stallions pulling chariots was a well-known picture of distraction."
+    },
+    {
+     "m": "j",
+     "ref": "1:11",
+     "text": "The “we” here may be his companions or the friends."
+    },
+    {
+     "m": "k",
+     "ref": "1:12",
+     "text": "She speaks in verses 12–14. Hebrew nard, or spikenard, was a costly perfume made from a plant of the Himalayas."
+    },
+    {
+     "m": "l",
+     "ref": "1:13",
+     "text": "Myrrh is a sweet-smelling tree sap from Arabia and East Africa. People wore it in a small pouch."
+    },
+    {
+     "m": "m",
+     "ref": "1:14",
+     "text": "Henna is a shrub with sweet-smelling bunches of white flowers. It was also used for dye."
+    },
+    {
+     "m": "n",
+     "ref": "1:14",
+     "text": "En-gedi means “spring of the young goat.” It was an oasis on the west shore of the Dead Sea."
+    },
+    {
+     "m": "o",
+     "ref": "1:15",
+     "text": "He speaks."
+    },
+    {
+     "m": "p",
+     "ref": "1:16",
+     "text": "She speaks in verses 16–17. Some people split verse 17 between the two speakers."
+    },
+    {
+     "m": "q",
+     "ref": "1:17",
+     "text": "Or “firs” or “cypresses.” The exact tree is uncertain."
+    }
+   ],
+   "title": "The Song of Songs",
+   "subheads": {
+    "2": "She Longs for Him",
+    "5": "Dark but Lovely",
+    "8": "He Answers",
+    "12": "Love Between Them"
+   }
+  },
+  {
+   "n": 2,
+   "paras": [
+    1,
+    2,
+    3,
+    8,
+    16
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“I am a wildflower{a} from the plain of Sharon,{b}\na lily blooming in the valleys.”"
+    },
+    {
+     "v": 2,
+     "text": "“Among thorns, a lily stands out,\nand so does my dearest among the other young women.”{c}"
+    },
+    {
+     "v": 3,
+     "text": "“Among the forest trees, an apple tree{d} stands out,\nand so does my love among the young men.{e}\nI am happy to rest in his shade,\nand his fruit is sweet in my mouth."
+    },
+    {
+     "v": 4,
+     "text": "He brought me to the banquet hall,\nand his flag over me is love."
+    },
+    {
+     "v": 5,
+     "text": "Give me raisin cakes to make me strong.\nGive me apples to refresh me,\nbecause I am weak with love."
+    },
+    {
+     "v": 6,
+     "text": "His left hand is under my head,\nand his right arm holds me close."
+    },
+    {
+     "v": 7,
+     "text": "I make you promise, women of Jerusalem,\nby the gazelles and the deer of the field:\ndo not stir up love or wake it\nuntil the right time.{f}"
+    },
+    {
+     "v": 8,
+     "text": "Listen! It is the one I love!\nLook, here he comes,\nleaping over the mountains,\nbounding across the hills."
+    },
+    {
+     "v": 9,
+     "text": "The one I love is like a gazelle\nor a young deer.\nSee him waiting outside our wall,\ngazing in through the windows,\nlooking through the lattice."
+    },
+    {
+     "v": 10,
+     "text": "My love speaks, and this is what he says:\n‘Rise, my dearest,\nmy lovely one, and walk with me."
+    },
+    {
+     "v": 11,
+     "text": "Look, the winter is over.\nThe rains have stopped and gone away."
+    },
+    {
+     "v": 12,
+     "text": "Flowers are coming up in the land.\nThe time for singing{g} has come.\nThe sound of doves cooing\nis heard in our country."
+    },
+    {
+     "v": 13,
+     "text": "The fig tree is ripening its early fruit,\nand the grapevines in bloom smell sweet.\nRise, my dearest,\nmy lovely one, and walk with me."
+    },
+    {
+     "v": 14,
+     "text": "My dove, hiding in the rocky cracks,\nin the secret places of the cliff,\nlet me look at you.\nLet me hear you speak,\nfor your voice is pleasant\nand you are lovely to see.’"
+    },
+    {
+     "v": 15,
+     "text": "Chase away the foxes for us,{h}\nthe little foxes\nthat wreck the vineyards,\nwhile our grapevines are in bloom."
+    },
+    {
+     "v": 16,
+     "text": "I belong to my love, and he is mine.\nHe feeds his flock among the lilies."
+    },
+    {
+     "v": 17,
+     "text": "Before the evening breeze comes\nand the shadows flee,\nreturn, my beloved, like a gazelle\nor a young deer\nbounding over the rocky hills.”{i}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "2:1",
+     "text": "The flower is uncertain. It may be a crocus, narcissus, or other meadow flower. The Septuagint says “a flower of the plain.” The woman speaks."
+    },
+    {
+     "m": "b",
+     "ref": "2:1",
+     "text": "Sharon was the coastal plain south of Mount Carmel, known for pastures and wildflowers. The name means “plain.”"
+    },
+    {
+     "m": "c",
+     "ref": "2:2",
+     "text": "He speaks."
+    },
+    {
+     "m": "d",
+     "ref": "2:3",
+     "text": "Hebrew tappuach. It may be an apple, apricot, or quince."
+    },
+    {
+     "m": "e",
+     "ref": "2:3",
+     "text": "She speaks in verses 3–17."
+    },
+    {
+     "m": "f",
+     "ref": "2:7",
+     "text": "This is a word game. The Hebrew words for “gazelles” and “deer of the field” sound like the titles “Yahweh of Armies” and “God Almighty” (El Shaddai), as if she is making the promise in a hidden way. The Septuagint says “by the powers and the strengths of the field.”"
+    },
+    {
+     "m": "g",
+     "ref": "2:12",
+     "text": "Or “pruning,” as in the Septuagint. The Hebrew word zamir can mean either."
+    },
+    {
+     "m": "h",
+     "ref": "2:15",
+     "text": "It is not clear who speaks verse 15. She may be quoting a song, or her brothers may be speaking (compare 1:6)."
+    },
+    {
+     "m": "i",
+     "ref": "2:17",
+     "text": "Or “the mountains of Bether,” a place nobody knows, or “the mountains of spices” (compare 8:14). The Septuagint says “the mountains of the ravines.”"
+    }
+   ],
+   "subheads": {
+    "1": "A Flower and a Lily",
+    "8": "Spring Calls",
+    "16": "I Am His"
+   }
+  },
+  {
+   "n": 3,
+   "paras": [
+    1,
+    6
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“Many nights, as I lay in bed,{a}\nI searched for the man my heart loves.\nI searched, and could not find him."
+    },
+    {
+     "v": 2,
+     "text": "‘Let me get up and walk through the town,\nalong the streets and the open squares,\nand search for the man my heart loves.’\nI searched, and could not find him."
+    },
+    {
+     "v": 3,
+     "text": "The night guards found me\nas they made their rounds in the town.\n‘Did you happen to see the man my heart loves?’"
+    },
+    {
+     "v": 4,
+     "text": "I had just passed them\nwhen I found the man my heart loves.\nI grabbed him and would not release him\nuntil I had brought him to my mother’s house,\ninto the room where she gave birth to me."
+    },
+    {
+     "v": 5,
+     "text": "Women of Jerusalem, I want your promise,\nsworn by the gazelles and by the deer of the field:\nnever stir up love or wake it\nbefore it is ready.”"
+    },
+    {
+     "v": 6,
+     "text": "Who is this coming up from the desert{b}\nlike pillars of smoke,\nsmelling of myrrh and frankincense,{c}\nand of all the spices a trader sells?"
+    },
+    {
+     "v": 7,
+     "text": "Look, it is the carriage of Solomon!\nSixty soldiers surround it,\nchosen from the soldiers of Israel."
+    },
+    {
+     "v": 8,
+     "text": "Each of them grips a sword.\nThey are trained for war.\nEach one wears his sword on his hip\nto guard against night terrors."
+    },
+    {
+     "v": 9,
+     "text": "King Solomon had a carriage{d} built for himself\nout of timber from Lebanon.{e}"
+    },
+    {
+     "v": 10,
+     "text": "He had silver posts put in,\nand a gold back.\nThe seat was covered with purple cloth,\nand the inside was decorated lovingly{f}\nby the women of Jerusalem."
+    },
+    {
+     "v": 11,
+     "text": "Come out, women of Zion,\nand look at King Solomon\nwearing the crown his mother put on him\non his wedding day,\nthe day his heart was glad."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "3:1",
+     "text": "She speaks in verses 1–5. Literally “in the nights.”"
+    },
+    {
+     "m": "b",
+     "ref": "3:6",
+     "text": "It is not said who speaks verses 6–11. It may be the friends, or a storyteller. The words “Who is this” are female in Hebrew, so they may mean the carriage or the bride."
+    },
+    {
+     "m": "c",
+     "ref": "3:6",
+     "text": "Frankincense is a white tree sap from southern Arabia and Somalia. People burned it as incense."
+    },
+    {
+     "m": "d",
+     "ref": "3:9",
+     "text": "Hebrew appiryon. It is found only here. It may be a Persian or Greek word for a carrying chair."
+    },
+    {
+     "m": "e",
+     "ref": "3:9",
+     "text": "Lebanon means “white,” from its snowy mountain tops. It was famous for cedar trees."
+    },
+    {
+     "m": "f",
+     "ref": "3:10",
+     "text": "Or “decorated with leather,” from a related word. The Hebrew is uncertain."
+    }
+   ],
+   "subheads": {
+    "1": "Searching at Night",
+    "6": "Solomon’s Carriage"
+   }
+  },
+  {
+   "n": 4,
+   "paras": [
+    1,
+    8,
+    16
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“You are so lovely, my dearest!{a}\nTruly lovely!\nYour eyes are doves\nbehind your veil.\nYour hair ripples like a herd of goats\ncoming down the slopes of Gilead.{b}"
+    },
+    {
+     "v": 2,
+     "text": "Your teeth are like a flock of sheep\njust washed after being sheared.\nEach one has a twin,\nand not one is missing."
+    },
+    {
+     "v": 3,
+     "text": "Your lips are a thread of red,\nand your speech is charming.\nBehind the veil, your cheeks\nare like pomegranate halves."
+    },
+    {
+     "v": 4,
+     "text": "Your neck is like David’s tower,\nbuilt in layers of stone,{c}\nhung with a thousand shields,\nthe round shields of mighty soldiers."
+    },
+    {
+     "v": 5,
+     "text": "Your breasts are like twin fawns,\nyoung gazelles\nthat feed among the lilies."
+    },
+    {
+     "v": 6,
+     "text": "Before the evening breeze comes\nand the shadows flee,\nI will go to the hill of myrrh\nand the mountain of incense."
+    },
+    {
+     "v": 7,
+     "text": "You are beautiful in every way, dearest.\nYou have no fault at all."
+    },
+    {
+     "v": 8,
+     "text": "Leave Lebanon and come with me, my bride.{d}\nLeave Lebanon behind.\nLook down from the crest of Amana,\nfrom the heights of Senir and of Hermon,{e}\nfrom the lions’ dens\nand the leopards’ hills."
+    },
+    {
+     "v": 9,
+     "text": "You have captured my heart, my sister,{f} my bride.\nOne glance from your eyes captured it,\none pearl on your necklace."
+    },
+    {
+     "v": 10,
+     "text": "How sweet your love is, my sister, my bride!\nYour love is far better than wine,\nand the scent of your perfumes beats every spice."
+    },
+    {
+     "v": 11,
+     "text": "Sweetness like the honeycomb falls from your lips, my bride.\nHoney and milk lie under your tongue,\nand your clothing carries the smell of Lebanon’s cedars."
+    },
+    {
+     "v": 12,
+     "text": "My sister, my bride, you are a locked garden,\na spring{g} shut up, a fountain sealed."
+    },
+    {
+     "v": 13,
+     "text": "Your growing plants are an orchard{h} of pomegranates\nwith the best fruits,\nhenna and nard,"
+    },
+    {
+     "v": 14,
+     "text": "nard and saffron,{i}\nsweet cane{j} and cinnamon,\nwith every kind of incense tree,\nmyrrh and aloes,{k}\nand all the best spices."
+    },
+    {
+     "v": 15,
+     "text": "You are a fountain that waters gardens,\na well of fresh water,\na stream running down from Lebanon.”"
+    },
+    {
+     "v": 16,
+     "text": "“Wake up, north wind!\nCome here, south wind!{l}\nBlow across my garden,\nand let its fragrance drift out.\nLet my love enter his own garden\nand eat its finest fruit.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "4:1",
+     "text": "He speaks in verses 1–15."
+    },
+    {
+     "m": "b",
+     "ref": "4:1",
+     "text": "Gilead was the hill country east of the Jordan River, known for its pastures. The name may mean “pile of witness” (compare Genesis 31:47–48)."
+    },
+    {
+     "m": "c",
+     "ref": "4:4",
+     "text": "Hebrew talpiyyoth. It is found only here and its meaning is uncertain. It may mean “in rows of stone,” “for weapons,” or “as a landmark.”"
+    },
+    {
+     "m": "d",
+     "ref": "4:8",
+     "text": "The Septuagint says “Come from Lebanon, my bride.” The Hebrew “with me” can be read as “come” with a small change in vowels."
+    },
+    {
+     "m": "e",
+     "ref": "4:8",
+     "text": "Amana was a peak in the Anti-Lebanon mountains. Senir was the Amorite name for Hermon (Deuteronomy 3:9), or a nearby peak. Hermon is the highest mountain in the area, about 9,200 feet (2,814 meters) tall."
+    },
+    {
+     "m": "f",
+     "ref": "4:9",
+     "text": "“Sister” was a loving name for a beloved or bride in love poems of the ancient Near East. It does not mean she is a relative."
+    },
+    {
+     "m": "g",
+     "ref": "4:12",
+     "text": "Hebrew gal, which may mean “pool” or “spring.” The Septuagint and some other old copies read gan, “garden,” repeating the first line."
+    },
+    {
+     "m": "h",
+     "ref": "4:13",
+     "text": "Hebrew pardes, “park” or “orchard” (compare Ecclesiastes 2:5)."
+    },
+    {
+     "m": "i",
+     "ref": "4:14",
+     "text": "Saffron is made from the dried middle parts of the crocus flower. People used it as a spice and a dye."
+    },
+    {
+     "m": "j",
+     "ref": "4:14",
+     "text": "Hebrew qaneh, a sweet-smelling reed or cane brought in from the east (compare Exodus 30:23)."
+    },
+    {
+     "m": "k",
+     "ref": "4:14",
+     "text": "Here “aloes” means eaglewood, a sweet-smelling wood from Asia. It is not the aloe plant used as medicine."
+    },
+    {
+     "m": "l",
+     "ref": "4:16",
+     "text": "She speaks in verse 16."
+    }
+   ],
+   "subheads": {
+    "1": "He Praises Her Beauty",
+    "8": "A Locked Garden",
+    "16": "She Invites Him"
+   }
+  },
+  {
+   "n": 5,
+   "paras": [
+    1,
+    2,
+    9,
+    10
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“I have come to my garden, my sister,{a} my bride.\nI have gathered my myrrh and spices.\nI have eaten my honeycomb and honey.\nI have drunk my wine and milk.”\n“Eat, friends, and drink!\nDrink all you want, lovers.”{b}"
+    },
+    {
+     "v": 2,
+     "text": "“I was sleeping, yet my heart stayed awake.{c}\nListen! My love is tapping at the door:\n‘Let me in, my sister, my dearest,\nmy dove, my perfect one.\nDew has soaked my head,\nand the night mist has dampened my curls.’"
+    },
+    {
+     "v": 3,
+     "text": "‘I have already taken off my robe.\nWhy dress again?\nI have washed my feet.\nWhy dirty them?’"
+    },
+    {
+     "v": 4,
+     "text": "My love reached his hand through the opening in the door,{d}\nand my heart pounded for him."
+    },
+    {
+     "v": 5,
+     "text": "I rose to unlock the door for my beloved.\nMyrrh dripped from my hands,\npure myrrh ran from my fingers,\nonto the door bolt."
+    },
+    {
+     "v": 6,
+     "text": "I opened to my beloved,\nbut he had already turned and gone.\nMy heart sank when he had spoken.{e}\nI hunted for him and could not find him.\nI cried out his name, but no answer came."
+    },
+    {
+     "v": 7,
+     "text": "The watchmen on patrol in the city found me.\nThey beat me and bruised me.\nThe wall guards\npulled off my cloak."
+    },
+    {
+     "v": 8,
+     "text": "Women of Jerusalem, I beg you:\nwhen you find my beloved,\nwhat will you say to him?\nSay that I am sick with love.”"
+    },
+    {
+     "v": 9,
+     "text": "“How is your beloved better than other men,{f}\nmost beautiful of women?\nHow is he better than other men,\nthat you ask this of us?”"
+    },
+    {
+     "v": 10,
+     "text": "“My beloved glows with health,{g}\nand he is the best among ten thousand men."
+    },
+    {
+     "v": 11,
+     "text": "His head is polished gold.\nHis hair hangs in waves,{h}\nblack like a raven."
+    },
+    {
+     "v": 12,
+     "text": "His eyes are like doves\nby flowing streams,\nbathed in milk\nand set like gems.{i}"
+    },
+    {
+     "v": 13,
+     "text": "His cheeks are like gardens of spice,\nlike banks of sweet perfume.{j}\nHis lips are like lilies\ndripping with pure myrrh."
+    },
+    {
+     "v": 14,
+     "text": "His arms are bars of gold\nset with gems from Tarshish.{k}\nHis chest is smooth ivory\ncovered with blue stones.{l}"
+    },
+    {
+     "v": 15,
+     "text": "His legs are marble pillars\nstanding on gold bases.\nHe looks as grand as Lebanon,\nas tall as the cedar trees."
+    },
+    {
+     "v": 16,
+     "text": "His mouth is all sweetness.\nEverything about him is lovely.\nThat is the man I love and my friend,\nwomen of Jerusalem.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "5:1",
+     "text": "He speaks in the first four lines."
+    },
+    {
+     "m": "b",
+     "ref": "5:1",
+     "text": "Or “drink deeply of love.” It is not clear who speaks these two lines: the friends, a storyteller, or he himself."
+    },
+    {
+     "m": "c",
+     "ref": "5:2",
+     "text": "She speaks in verses 2–8, telling about a dreamlike night. He speaks in verse 2, and she answers in verse 3."
+    },
+    {
+     "m": "d",
+     "ref": "5:4",
+     "text": "Literally “through the hole,” probably the keyhole or latch opening of the door."
+    },
+    {
+     "m": "e",
+     "ref": "5:6",
+     "text": "Or “when he turned away.” The Hebrew is uncertain."
+    },
+    {
+     "m": "f",
+     "ref": "5:9",
+     "text": "The women of Jerusalem speak in verse 9."
+    },
+    {
+     "m": "g",
+     "ref": "5:10",
+     "text": "She answers in verses 10–16. Hebrew tsach, “bright” or “shining.”"
+    },
+    {
+     "m": "h",
+     "ref": "5:11",
+     "text": "Hebrew taltallim. It is found only here. It may mean “like palm branches” or “curly.”"
+    },
+    {
+     "m": "i",
+     "ref": "5:12",
+     "text": "Or “sitting by full pools.” The Hebrew is uncertain."
+    },
+    {
+     "m": "j",
+     "ref": "5:13",
+     "text": "This follows the Hebrew text. The Septuagint and some other old copies say “pouring out perfumes,” with a change of vowels."
+    },
+    {
+     "m": "k",
+     "ref": "5:14",
+     "text": "Tarshish was a faraway port, maybe in Spain. Here it probably means a gem named for it, such as beryl or topaz."
+    },
+    {
+     "m": "l",
+     "ref": "5:14",
+     "text": "Literally “sapphires.” The ancient stone with this name was probably lapis lazuli."
+    }
+   ],
+   "subheads": {
+    "1": "He Enjoys the Garden",
+    "2": "A Knock at the Door",
+    "9": "She Describes Him"
+   }
+  },
+  {
+   "n": 6,
+   "paras": [
+    1,
+    2,
+    4,
+    11,
+    13
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“Which way did your beloved go,{a}\nloveliest of women?\nWhere has he turned,\nso we can search for him with you?”"
+    },
+    {
+     "v": 2,
+     "text": "“My beloved has gone to his own garden,{b}\nto the spice beds,\nto tend his flock there\nand gather lilies."
+    },
+    {
+     "v": 3,
+     "text": "He is mine, and I am his.\nHis flock feeds among the lilies.”"
+    },
+    {
+     "v": 4,
+     "text": "“You are as beautiful as Tirzah,{c} my dearest,\nas lovely as Jerusalem,\nas stunning as an army with its flags.{d}"
+    },
+    {
+     "v": 5,
+     "text": "Look away from me,\nbecause your eyes overpower me.\nYour hair is like a herd of goats\nspilling down from Gilead."
+    },
+    {
+     "v": 6,
+     "text": "Your teeth are like a flock of ewes\nclimbing out of the pool after a washing.\nEvery ewe has twin lambs,\nand not one has lost hers."
+    },
+    {
+     "v": 7,
+     "text": "Behind your veil, your cheeks\nlook like pomegranate halves."
+    },
+    {
+     "v": 8,
+     "text": "There may be sixty queens,\neighty other wives,\nand countless young women,"
+    },
+    {
+     "v": 9,
+     "text": "But my dove, my flawless one, has no equal.\nHer mother had no other daughter,\nand she is that woman’s treasure.\nYoung women saw her and said she was blessed.\nQueens and other wives gave her praise:"
+    },
+    {
+     "v": 10,
+     "text": "‘Who is this woman, shining like the dawn,\nas lovely as the moon,{e}\nas bright as the sun,\nas stunning as an army with its flags?’”"
+    },
+    {
+     "v": 11,
+     "text": "“I walked down to the nut orchard{f}\nto see what was growing in the valley,\nto see if the grapevines had sprouted\nand the pomegranate trees had bloomed."
+    },
+    {
+     "v": 12,
+     "text": "Before I knew it, my longing had set me\nin the chariot of my noble people.{g}"
+    },
+    {
+     "v": 13,
+     "text": "Return, return, Shulammite!{h}\nReturn, return, so we may gaze at you!”\n“Why would you gaze at the Shulammite\nas she dances between two lines of dancers?”{i}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "6:1",
+     "text": "The women of Jerusalem speak in verse 1."
+    },
+    {
+     "m": "b",
+     "ref": "6:2",
+     "text": "She speaks in verses 2–3."
+    },
+    {
+     "m": "c",
+     "ref": "6:4",
+     "text": "He speaks in verses 4–10. Tirzah means “she is pleasing.” It was a beautiful city and early capital of the northern kingdom (1 Kings 14:17; 16:23). The Septuagint translates the name as “Pleasure.”"
+    },
+    {
+     "m": "d",
+     "ref": "6:4",
+     "text": "Or “as the stars in the sky.” The Hebrew word nidgaloth is uncertain. It appears again in verse 10."
+    },
+    {
+     "m": "e",
+     "ref": "6:10",
+     "text": "The poetic Hebrew words here are levanah, “the white one,” for the moon, and chammah, “the hot one,” for the sun."
+    },
+    {
+     "m": "f",
+     "ref": "6:11",
+     "text": "It is not clear who speaks verses 11–12. It is probably she, and maybe he."
+    },
+    {
+     "m": "g",
+     "ref": "6:12",
+     "text": "Or “among the chariots of Amminadib,” as a name meaning “my relative is noble.” The Septuagint has “the chariots of Aminadab.” This verse is one of the hardest to read in the whole book."
+    },
+    {
+     "m": "h",
+     "ref": "6:13",
+     "text": "In Hebrew this verse is 7:1, and 7:1–13 below are Hebrew 7:2–14. The friends call to her in the first two lines, and she (or he) answers in the last two. Shulammite may mean “woman of Shulem” (perhaps Shunem, as in the Septuagint), or it may be a female form of a name tied to Solomon and shalom."
+    },
+    {
+     "m": "i",
+     "ref": "6:13",
+     "text": "Or “as she dances the dance of Mahanaim.” Mahanaim was a town east of the Jordan River whose name means “two camps” (Genesis 32:2)."
+    }
+   ],
+   "subheads": {
+    "1": "Where Has He Gone?",
+    "4": "He Praises Her Again",
+    "11": "The Garden of Nuts"
+   }
+  },
+  {
+   "n": 7,
+   "paras": [
+    1,
+    10
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“How lovely your sandaled feet are,{a}\nnoble daughter!{b}\nYour rounded hips look like jewelry,\ncrafted by an artist’s hands."
+    },
+    {
+     "v": 2,
+     "text": "Your waist is like a round bowl\nthat always has spiced wine in it.\nYour middle is like a pile of wheat\nfenced in with lilies."
+    },
+    {
+     "v": 3,
+     "text": "Your breasts are like twin fawns,\nyoung gazelles."
+    },
+    {
+     "v": 4,
+     "text": "Your neck is an ivory tower.\nYour eyes are like the pools of Heshbon{c}\nnear the gate of Bath-rabbim.{d}\nYour nose is like the tower of Lebanon\nthat faces Damascus."
+    },
+    {
+     "v": 5,
+     "text": "Your head rises over you like Mount Carmel.{e}\nYour flowing hair shines like purple cloth.{f}\nA king is held captive in its waves."
+    },
+    {
+     "v": 6,
+     "text": "How lovely and pleasant you are,\nmy love, the joy of all joys!{g}"
+    },
+    {
+     "v": 7,
+     "text": "You are as tall as a palm tree,\nand your breasts hang like its clusters of dates."
+    },
+    {
+     "v": 8,
+     "text": "I told myself, ‘Let me climb that palm.\nI will take hold of its branches of fruit.’\nMay your breasts be like clusters of grapes,\nand your breath smell like apples,"
+    },
+    {
+     "v": 9,
+     "text": "and your kisses be like the finest wine,\nflowing smoothly for my love,{h}\nmoving over the lips of those who sleep.”{i}"
+    },
+    {
+     "v": 10,
+     "text": "“To my love I belong,\nand I am the one he longs for."
+    },
+    {
+     "v": 11,
+     "text": "Come, my love.\nLet us walk out to the fields\nand stay the night among the henna shrubs.{j}"
+    },
+    {
+     "v": 12,
+     "text": "We will rise early and walk to the vineyards\nto find out if the grapevines have sprouted,\nif their buds have opened,\nand if the pomegranate trees have flowered.\nI will give you my love there."
+    },
+    {
+     "v": 13,
+     "text": "The mandrake plants{k} give off their scent,\nand at our doors are all the best fruits,\nnew ones and old ones,\nthat I have saved for you, my love.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "7:1",
+     "text": "He speaks in verses 1–9a, or the friends speak in verses 1–5. English 7:1–13 is Hebrew 7:2–14."
+    },
+    {
+     "m": "b",
+     "ref": "7:1",
+     "text": "Literally “daughter of a noble” or “prince’s daughter.”"
+    },
+    {
+     "m": "c",
+     "ref": "7:4",
+     "text": "Heshbon means “reckoning.” It was a city east of the Jordan River, now in the country of Jordan, known for its water pools."
+    },
+    {
+     "m": "d",
+     "ref": "7:4",
+     "text": "Bath-rabbim means “daughter of many.” It was probably the name of a city gate."
+    },
+    {
+     "m": "e",
+     "ref": "7:5",
+     "text": "Carmel means “garden land” or “orchard.” It is the tree-covered ridge above the Mediterranean Sea near the modern city of Haifa."
+    },
+    {
+     "m": "f",
+     "ref": "7:5",
+     "text": "Purple dye, made from the murex shell, was the most costly color in the ancient world."
+    },
+    {
+     "m": "g",
+     "ref": "7:6",
+     "text": "Or “loved one, daughter of delights,” following some old copies and dividing the Hebrew letters another way."
+    },
+    {
+     "m": "h",
+     "ref": "7:9",
+     "text": "She takes up his words in the last two lines and speaks in verses 10–13."
+    },
+    {
+     "m": "i",
+     "ref": "7:9",
+     "text": "This follows the Hebrew text. The Septuagint and some other old copies say “over my lips and teeth.”"
+    },
+    {
+     "m": "j",
+     "ref": "7:11",
+     "text": "Or “in the villages.” Hebrew kefarim can mean either."
+    },
+    {
+     "m": "k",
+     "ref": "7:13",
+     "text": "Mandrakes are plants with a sweet-smelling yellow fruit. People believed they stirred up love and made families grow (compare Genesis 30:14–16)."
+    }
+   ],
+   "subheads": {
+    "1": "He Admires Her",
+    "10": "She Invites Him to the Countryside"
+   }
+  },
+  {
+   "n": 8,
+   "paras": [
+    1,
+    5,
+    8,
+    10,
+    13,
+    14
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“How I wish you were like a brother to me,{a}\none who nursed at my mother’s breast!\nThen I could kiss you in the street,\nand nobody would think badly of me."
+    },
+    {
+     "v": 2,
+     "text": "I would take your hand and lead you\ninto my mother’s house, and she would teach me.{b}\nI would let you drink spiced wine,\nthe juice of my pomegranates."
+    },
+    {
+     "v": 3,
+     "text": "His left hand is under my head,\nand his right arm holds me close."
+    },
+    {
+     "v": 4,
+     "text": "I make you promise, women of Jerusalem:\nwhy stir up love or wake it\nbefore it is ready?”{c}"
+    },
+    {
+     "v": 5,
+     "text": "“Who is this woman coming up from the wilderness,{d}\nleaning on her beloved?”\n“I woke you under the apple tree.{e}\nThat is where your mother went into labor with you.\nThat is where she gave birth to you."
+    },
+    {
+     "v": 6,
+     "text": "Wear me like a seal over your heart,\nlike a ring on your arm,\nfor love is as strong as death,\nand its passion{f} is as firm as the grave.\nIts sparks are sparks of fire,\na flame of Yah.{g}"
+    },
+    {
+     "v": 7,
+     "text": "Floods of water cannot put out love,\nand rivers cannot wash it away.\nIf someone offered all the wealth in his house to buy love,\npeople would only laugh at him.”"
+    },
+    {
+     "v": 8,
+     "text": "“We have a little sister,{h}\nand she is not grown yet.\nWhat should we do for our sister\non the day someone asks for her hand?"
+    },
+    {
+     "v": 9,
+     "text": "If she is a wall,\nwe will put a silver tower on top of her.\nIf she is a gate,\nwe will lock her in with cedar boards.”"
+    },
+    {
+     "v": 10,
+     "text": "“I have been a wall,{i}\nand my breasts have been towers.\nSo he now looks at me\nas one who has found peace.{j}"
+    },
+    {
+     "v": 11,
+     "text": "Solomon owned a vineyard at Baal-hamon.{k}\nHe rented the vineyard to farmers.\nEach one had to pay him\ntwenty-five pounds of silver for its fruit.{l}"
+    },
+    {
+     "v": 12,
+     "text": "My own vineyard is mine to give.\nSolomon, you may have the twenty-five pounds,\nand the farmers who tend its fruit may have five pounds.”{m}"
+    },
+    {
+     "v": 13,
+     "text": "“You who sit in the gardens,{n}\nfriends are waiting to hear your voice.\nLet me be the one who hears it!”"
+    },
+    {
+     "v": 14,
+     "text": "“Run away, my beloved,{o}\nand be like a gazelle\nor a young deer\non the spice mountains.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "8:1",
+     "text": "She speaks in verses 1–4."
+    },
+    {
+     "m": "b",
+     "ref": "8:2",
+     "text": "Or, following the Septuagint and some other old copies, “into the room of the one who gave birth to me” (compare 3:4)."
+    },
+    {
+     "m": "c",
+     "ref": "8:4",
+     "text": "This is the same line as in 2:7 and 3:5, but here it leaves out the promise by the gazelles and deer, and it is a question."
+    },
+    {
+     "m": "d",
+     "ref": "8:5",
+     "text": "The friends speak in the first two lines."
+    },
+    {
+     "m": "e",
+     "ref": "8:5",
+     "text": "She speaks in verses 5b–7. In the Hebrew, “you” in this verse is male. The Septuagint begins this verse, “Who is this who comes up all in white?”"
+    },
+    {
+     "m": "f",
+     "ref": "8:6",
+     "text": "Or “jealousy.” Hebrew qinah, the strong feeling of love."
+    },
+    {
+     "m": "g",
+     "ref": "8:6",
+     "text": "Hebrew shalhevetyah. The ending -yah may be the short form of God’s name, “a flame of Yahweh.” It may also only make the word stronger, “a mighty flame,” since Hebrew sometimes uses God’s name that way. This may be the only mention of God in the Song."
+    },
+    {
+     "m": "h",
+     "ref": "8:8",
+     "text": "Her brothers speak in verses 8–9 (compare 1:6)."
+    },
+    {
+     "m": "i",
+     "ref": "8:10",
+     "text": "She speaks in verses 10–12."
+    },
+    {
+     "m": "j",
+     "ref": "8:10",
+     "text": "Hebrew shalom. It may be a word game on Solomon (Shelomoh) and the Shulammite (6:13)."
+    },
+    {
+     "m": "k",
+     "ref": "8:11",
+     "text": "Baal-hamon means “owner of plenty” or “lord of a crowd.” Nobody knows where it was. The name may be a symbol."
+    },
+    {
+     "m": "l",
+     "ref": "8:11",
+     "text": "Hebrew “a thousand of silver,” meaning a thousand shekels. A shekel weighs about 0.4 ounce, so this is about 25 pounds (11.5 kilograms)."
+    },
+    {
+     "m": "m",
+     "ref": "8:12",
+     "text": "Hebrew “two hundred,” meaning two hundred shekels of silver, about 5 pounds (2.3 kilograms)."
+    },
+    {
+     "m": "n",
+     "ref": "8:13",
+     "text": "He speaks in verse 13. “You” is female."
+    },
+    {
+     "m": "o",
+     "ref": "8:14",
+     "text": "She speaks in verse 14 (compare 2:17)."
+    }
+   ],
+   "subheads": {
+    "1": "She Wishes He Were Her Brother",
+    "5": "Love Is Strong as Death",
+    "8": "The Little Sister",
+    "10": "The Vineyard",
+    "13": "The Final Call"
+   }
+  }
+ ]
+}

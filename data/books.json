@@ -872,7 +872,17 @@
    "name": "Song of Songs",
    "division": "Old Testament",
    "chapterCount": 8,
-   "translated": []
+   "translated": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "file": "data/books/song-of-songs.json"
   },
   {
    "id": "isaiah",
