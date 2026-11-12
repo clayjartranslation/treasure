@@ -12,6 +12,32 @@
   const settings = Object.assign({ theme: 'auto', size: 19, notes: true, resume: false, rate: 1, voice: '', autoNext: true, sleepChoice: 'off', sleepCustom: 20 }, readJSON('ctb-settings'));
   function readJSON(k) { try { return JSON.parse(localStorage.getItem(k) || '{}'); } catch (e) { return {}; } }
   function saveSettings() { try { localStorage.setItem('ctb-settings', JSON.stringify(settings)); } catch (e) {} }
+  function accountsConfigured() {
+    return !!(window.ClayJarSync && ClayJarSync.configEnabled && ClayJarSync.configEnabled(window.CLAYJAR_ACCOUNTS));
+  }
+  if (accountsConfigured()) {
+    document.documentElement.dataset.accounts = 'on';
+    const sb = document.getElementById('settingsBtn');
+    if (sb) sb.setAttribute('aria-label', 'Menu: reading settings, bookmarks, highlights, account');
+  }
+  function noteSync(kind) {
+    try {
+      if (window.CTBSync && CTBSync.applying) return;
+      if (window.ClayJarAccounts && ClayJarAccounts.noteChange) ClayJarAccounts.noteChange(kind);
+    } catch (e) {}
+  }
+  function touchAudioSettings() {
+    settings.audioSettingsT = Date.now();
+    saveSettings();
+    noteSync('audioSettings');
+  }
+  function writeLast(obj) {
+    const prev = readJSON('ctb-last');
+    const next = { book: obj.book, name: obj.name || '', ch: obj.ch, v: obj.v || 0, t: Date.now() };
+    if (prev.book === next.book && prev.ch === next.ch && (prev.v || 0) === next.v && prev.t) return;
+    try { localStorage.setItem('ctb-last', JSON.stringify(next)); } catch (e) {}
+    noteSync('reading');
+  }
   function applySettings() {
     if (settings.theme === 'auto') delete root.dataset.theme; else root.dataset.theme = settings.theme;
     root.style.setProperty('--read-size', settings.size + 'px');
@@ -73,8 +99,12 @@
   }
 
   // ---------- Routes ----------
+  let routeBooted = false, fromSync = false;
   async function route() {
     closeSheet(); toggleSettings(false); hideBar(); readerCtx = null;
+    if (routeBooted && !fromSync) { sessionStorage.setItem('ctb-moved', '1'); sessionStorage.removeItem('ctb-follow'); }
+    fromSync = false;
+    routeBooted = true;
     const hash = location.hash.replace(/^#\/?/, '');
     const [path, query] = hash.split('?');
     const parts = path.split('/').filter(Boolean).map(decodeURIComponent);
@@ -84,6 +114,7 @@
       else if (parts[0] === 'books') await books(parts[1]);
       else if (parts[0] === 'read') await reader(parts[1], +parts[2] || 1, +parts[3] || 0);
       else if (parts[0] === 'saved') await savedPage(parts[1]);
+      else if (parts[0] === 'account') await accountPage();
       else if (parts[0] === 'search') await search(new URLSearchParams(query || '').get('q') || '');
       else if (parts[0] === 'about') await about(parts[1]);
       else await home();
@@ -108,8 +139,8 @@
     render(`
       <section class="hero" aria-labelledby="homeTitle">
         <img class="hero-logo" src="icons/ctb-logo-720.jpg" width="330" height="330"
-             alt="Clay Jar Treasure Bible logo: a terracotta clay jar holding a scroll, with rays of light rising from it.">
-        <h1 id="homeTitle">${NAME}</h1>
+             alt="Clay Jar Treasure Bible™ logo: a terracotta clay jar holding a scroll, with rays of light rising from it.">
+        <h1 id="homeTitle">${NAME}<span class="tm">™</span></h1>
         <p class="tag">The Bible in clear, everyday English. Free to read, with no sign-up and no ads.</p>
         <p class="free-line"><strong>Free forever:</strong> no sign-up, no ads, no tracking.</p>
         <div class="cta">
@@ -141,6 +172,7 @@
 
       <ul class="links" aria-label="More">
         <li><a href="#/saved">Bookmarks and highlights <span>${store.bm.length} bookmark${store.bm.length === 1 ? '' : 's'}, ${store.hl.length} highlight${store.hl.length === 1 ? '' : 's'}</span></a></li>
+        ${accountsConfigured() ? '<li><a href="#/account">Account <span>optional, saves your place on other devices</span></a></li>' : ''}
         <li><a href="#/about">About this Bible <span>name, copyright, style, sources</span></a></li>
         <li><a href="#/about/approach">How we translate <span>thought for thought, in plain English</span></a></li>
         <li><a href="#/about/copyright">Copyright and quoting <span>how you may share it</span></a></li>
@@ -258,7 +290,7 @@
       </article>`, `${book.name} ${ch.n}`);
     main.querySelectorAll('.fn').forEach((b) => b.addEventListener('click', () => openSheet(notesBy[b.dataset.m], b)));
     readerCtx = { id, name: book.name, ch };
-    try { localStorage.setItem('ctb-last', JSON.stringify({ book: id, name: book.name, ch: ch.n, v: verse || 0 })); } catch (e) {}
+    writeLast({ book: id, name: book.name, ch: ch.n, v: verse || 0 });
     afterReaderRender(book, ch, idx, verse);
     if (verse) {
       const el = $('#v' + verse);
@@ -386,14 +418,80 @@
     else window.scrollTo(0, 0);
   }
 
+  function backupPanelHtml() {
+    return `<section class="card account-backup" aria-labelledby="backupTitle">
+      <h2 id="backupTitle">Backup file</h2>
+      <p>No account needed. The file stays on this device until you save or share it. It holds bookmarks, highlights, your place in the text, listening progress, and settings. Importing merges that file with what is already on this device. Nothing is uploaded.</p>
+      <div class="account-actions">
+        <button type="button" class="btn" id="acctExport">Save backup file</button>
+        <label class="btn" for="acctImport">Import backup file</label>
+        <input id="acctImport" type="file" accept="application/json,.json" class="visually-hidden">
+      </div>
+      <p class="account-status" id="acctBackupMsg" role="status"></p>
+    </section>`;
+  }
+  function wireBackupPanel() {
+    const msg = (t) => { const el = $('#acctBackupMsg'); if (el) el.textContent = t; };
+    const exp = $('#acctExport');
+    if (exp) exp.addEventListener('click', () => { downloadBackup(); msg('Backup file saved. On an iPhone, look in Downloads.'); });
+    const imp = $('#acctImport');
+    if (imp) imp.addEventListener('change', async (e) => {
+      const f = e.target.files && e.target.files[0];
+      if (!f) return;
+      const r = importData(await f.text());
+      e.target.value = '';
+      msg(r.err || `Merged ${r.nb} bookmark${r.nb === 1 ? '' : 's'} and ${r.nh} highlight${r.nh === 1 ? '' : 's'}. Your place, listening progress, and settings were merged too.`);
+    });
+  }
+  function renderOfflineAccount() {
+    render(`<h1>On this device</h1>
+      <p class="muted">Sign-in is not turned on for this copy of the site. Reading, listening, bookmarks, and highlights stay on this device.</p>
+      ${backupPanelHtml()}
+      <p class="account-legal-links"><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></p>`, 'On this device');
+    wireBackupPanel();
+  }
+
+  async function accountPage() {
+    setTitle('');
+    if (!accountsConfigured()) { renderOfflineAccount(); return; }
+    render('<h1>Account</h1><p class="loading">Loading account…</p>', 'Account');
+    const api = window.ClayJarAccounts;
+    if (api && api.whenReady) await api.whenReady();
+    if (api && api.renderAccount) api.renderAccount(main);
+    else render('<p class="empty">Account tools did not load. Refresh and try again. Reading on this device still works.</p>', 'Account');
+  }
+
   // =====================================================================
-  // Bookmarks, highlights, listening (all saved on this device only)
+  // Bookmarks, highlights, listening. On this device always; in the account when signed in.
   // =====================================================================
   const COLORS = ['yellow', 'green', 'blue', 'pink'];
   const loadArr = (k) => { try { const a = JSON.parse(localStorage.getItem(k) || '[]'); return Array.isArray(a) ? a : []; } catch (e) { return []; } };
   const store = { bm: loadArr('ctb-bookmarks'), hl: loadArr('ctb-highlights') };
+  const tombs = readJSON('ctb-tombs');
+  if (!tombs.bm || typeof tombs.bm !== 'object' || Array.isArray(tombs.bm)) tombs.bm = {};
+  if (!tombs.hl || typeof tombs.hl !== 'object' || Array.isArray(tombs.hl)) tombs.hl = {};
   let readerCtx = null;       // { id, name, ch } for the chapter on screen
   let storeWarned = false;
+  function saveTombs() {
+    const trim = (bag) => {
+      const keys = Object.keys(bag);
+      if (keys.length <= 400) return;
+      keys.sort((a, b) => (bag[a] || 0) - (bag[b] || 0)).slice(0, keys.length - 400).forEach((k) => { delete bag[k]; });
+    };
+    trim(tombs.bm); trim(tombs.hl);
+    try { localStorage.setItem('ctb-tombs', JSON.stringify(tombs)); } catch (e) {}
+  }
+  function rememberTomb(kind, id, t) {
+    if (!id) return;
+    (kind === 'bm' ? tombs.bm : tombs.hl)[id] = t || Date.now();
+    saveTombs();
+  }
+  function forgetTomb(kind, id) {
+    const bag = kind === 'bm' ? tombs.bm : tombs.hl;
+    if (!bag[id]) return;
+    delete bag[id];
+    saveTombs();
+  }
   function persist() {
     try {
       localStorage.setItem('ctb-bookmarks', JSON.stringify(store.bm));
@@ -401,6 +499,7 @@
     } catch (e) {
       if (!storeWarned) { storeWarned = true; toast('Your phone would not let this page save. Bookmarks and highlights may be lost when you close it.'); }
     }
+    noteSync('library');
   }
   const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
   const snip = (t, n = 110) => { t = plain(t).replace(/\s+/g, ' ').trim(); return t.length > n ? t.slice(0, n - 1).replace(/\s+\S*$/, '') + '…' : t; };
@@ -416,6 +515,7 @@
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => { toastEl.hidden = true; }, action ? 6000 : 2600);
   }
+  window.addEventListener('ctb-toast', (e) => { if (e.detail) toast(e.detail); });
 
   // ---------- Verse text and offsets ----------
   // A verse's "highlight text" is its visible words only: verse numbers and footnote markers are skipped.
@@ -485,13 +585,17 @@
   function paintAll() { main.querySelectorAll('.scripture .verse').forEach(paintVerse); }
   // Remove the characters s..e of a verse from every saved highlight there (splitting highlights as needed).
   function carve(book, ch, v, s, e) {
+    const before = new Set(store.hl.filter((h) => h.book === book && h.ch === ch && h.v === v).map((h) => h.id));
     const out = [];
+    const now = Date.now();
     for (const h of store.hl) {
       if (h.book !== book || h.ch !== ch || h.v !== v || h.e <= s || h.s >= e) { out.push(h); continue; }
-      if (h.s < s) out.push(Object.assign({}, h, { e: s, text: h.text.slice(0, s - h.s), whole: false }));
-      if (h.e > e) out.push(Object.assign({}, h, { id: uid(), s: e, text: h.text.slice(e - h.s), whole: false }));
+      if (h.s < s) out.push(Object.assign({}, h, { e: s, text: h.text.slice(0, s - h.s), whole: false, t: now }));
+      if (h.e > e) out.push(Object.assign({}, h, { id: uid(), s: e, text: h.text.slice(e - h.s), whole: false, t: now }));
     }
     store.hl = out;
+    const after = new Set(store.hl.map((h) => h.id));
+    before.forEach((id) => { if (!after.has(id)) rememberTomb('hl', id, now); });
   }
   function addHighlight(a, color, whole) {
     const ctx = readerCtx;
@@ -514,8 +618,8 @@
     const ctx = readerCtx; if (!ctx) return;
     const ex = findBm(ctx.id, ctx.ch.n, v);
     if (ex) {
-      store.bm = store.bm.filter((b) => b !== ex); persist(); markBookmarks();
-      toast(`Bookmark removed: ${ctx.name} ${ctx.ch.n}:${v}`, { label: 'Undo', fn: () => { store.bm.push(ex); persist(); markBookmarks(); } });
+      store.bm = store.bm.filter((b) => b !== ex); rememberTomb('bm', ex.id, Date.now()); persist(); markBookmarks();
+      toast(`Bookmark removed: ${ctx.name} ${ctx.ch.n}:${v}`, { label: 'Undo', fn: () => { forgetTomb('bm', ex.id); store.bm.push(ex); persist(); markBookmarks(); } });
     } else {
       const verse = ctx.ch.verses.find((x) => x.v === v);
       store.bm.push({ id: uid(), book: ctx.id, name: ctx.name, ch: ctx.ch.n, v, text: snip(verse ? verse.text : ''), t: Date.now() });
@@ -628,7 +732,7 @@
       persist(); paintVerse(el); endAction('Verse highlighted in ' + color);
     } else if (tb.mode === 'mark') {
       const h = store.hl.find((x) => x.id === tb.hid); if (!h) return hideBar();
-      h.color = color; persist(); paintVerse($('#v' + h.v, main)); endAction('Highlight changed to ' + color);
+      h.color = color; h.t = Date.now(); persist(); paintVerse($('#v' + h.v, main)); endAction('Highlight changed to ' + color);
     }
   }
   function clearHighlights() {
@@ -636,7 +740,7 @@
     let verses = [];
     if (tb.mode === 'selection') { tb.anchors.forEach((a) => carve(ctx.id, ctx.ch.n, a.v, a.s, a.e)); verses = tb.anchors.map((a) => a.el); }
     else if (tb.mode === 'verse') { const el = $('#v' + tb.verse, main); carve(ctx.id, ctx.ch.n, tb.verse, 0, 1e9); verses = [el]; }
-    else if (tb.mode === 'mark') { const h = store.hl.find((x) => x.id === tb.hid); if (h) { store.hl = store.hl.filter((x) => x !== h); verses = [$('#v' + h.v, main)]; } }
+    else if (tb.mode === 'mark') { const h = store.hl.find((x) => x.id === tb.hid); if (h) { rememberTomb('hl', h.id, Date.now()); store.hl = store.hl.filter((x) => x !== h); verses = [$('#v' + h.v, main)]; } }
     persist(); verses.forEach(paintVerse); endAction('Highlight removed');
   }
   bar.querySelectorAll('.tb-color').forEach((b) => b.addEventListener('click', () => applyColor(b.dataset.color)));
@@ -799,15 +903,18 @@
   }
   function startAudio(fromVerse) {
     const ctx = readerCtx; if (!ctx) return;
+    const saved = fromVerse == null ? savedAudioHere() : null;
+    const verse = fromVerse || (saved && saved.v) || 0;
+    const atTime = saved && saved.mode === 'rec' && saved.time ? saved.time : undefined;
     clearTimeout(au.rt);
     if (SPEECH && (synth.speaking || synth.pending)) { try { synth.cancel(); } catch (e) {} }
     au.items = buildItems({ name: ctx.name }, ctx.ch);
     au.book = ctx.id; au.ch = ctx.ch.n; au.c = 0;
     au.i = 0;
-    if (fromVerse) { const k = au.items.findIndex((it) => it.kind === 'verse' && it.v === fromVerse); if (k >= 0) au.i = k; }
+    if (verse) { const k = au.items.findIndex((it) => it.kind === 'verse' && it.v === verse); if (k >= 0) au.i = k; }
     au.active = true; au.playing = true;
     player.hidden = false; document.body.classList.add('has-player');
-    if (startNarration(ctx, fromVerse)) return;   // a recording, when there is one for this chapter
+    if (startNarration(ctx, verse, atTime)) return;   // a recording, when there is one for this chapter
     if (!SPEECH) { stopAudio(); toast('Listening is not available for this chapter on this browser.'); return; }
     au.mode = 'tts';
     speakNow();                        // called straight from the tap, as iOS requires
@@ -815,6 +922,7 @@
   function listenFrom(v) { startAudio(v); }
   function pauseAudio() {
     if (!au.active) return;
+    writeAudioPosition(true);
     if (au.mode === 'rec') return pauseRec();
     au.playing = false; au.token++; clearTimeout(au.rt);
     try { synth.cancel(); } catch (e) {}
@@ -826,6 +934,7 @@
     au.playing = true; speakNow();
   }
   function stopAudio() {
+    if (au.active) writeAudioPosition(true);
     au.active = false; au.playing = false; au.token++; clearTimeout(au.rt);
     stopRec();
     if (SPEECH) { try { synth.cancel(); } catch (e) {} }
@@ -836,12 +945,13 @@
   function togglePlay() { if (!au.active) startAudio(); else if (au.playing) pauseAudio(); else resumeAudio(); }
   function skipVerse(dir) {
     if (!au.active) return;
-    if (au.mode === 'rec') return skipRec(dir);
+    if (au.mode === 'rec') { skipRec(dir); writeAudioPosition(true); return; }
     let k = au.i + dir;
     while (k >= 0 && k < au.items.length && au.items[k].kind !== 'verse') k += dir;
     if (k < 0 || k >= au.items.length) { if (dir > 0) return finishChapter(); k = 0; }
     au.i = k; au.c = 0;
     if (au.playing) { markSpeaking(); restartSoon(); } else { markSpeaking(); updatePlayer(); }
+    writeAudioPosition(true);
   }
   // Where does listening go after the last verse? The next chapter, or the next book that has chapters ready.
   function nextTarget() {
@@ -868,7 +978,9 @@
     const lb = $('#listenBtn');
     if (lb) {
       const here = au.active && readerCtx && readerCtx.id === au.book && readerCtx.ch.n === au.ch;
-      lb.textContent = here ? (au.playing ? '❚❚ Pause' : '▶ Resume listening') : '▶ Listen to this chapter';
+      const saved = !here ? savedAudioHere() : null;
+      const resumeAt = saved ? ('▶ Resume at ' + saved.ch + ':' + (saved.v || 1)) : '';
+      lb.textContent = here ? (au.playing ? '❚❚ Pause' : '▶ Resume listening') : (resumeAt || '▶ Listen to this chapter');
       lb.setAttribute('aria-pressed', String(!!(here && au.playing)));
     }
     const now = $('#plNow');
@@ -884,17 +996,17 @@
   $('#plOpts').addEventListener('click', () => { const o = $('#plOptions'); o.hidden = !o.hidden; $('#plOpts').setAttribute('aria-expanded', String(!o.hidden)); });
   $('#plRate').value = String(settings.rate);
   if ($('#plRate').value === '') $('#plRate').value = '1';
-  $('#plRate').addEventListener('change', (e) => { settings.rate = parseFloat(e.target.value) || 1; saveSettings(); if (au.mode === 'rec') audioEl.playbackRate = settings.rate; else if (au.active && au.playing) restartSoon(); });
-  $('#plVoice').addEventListener('change', (e) => { settings.voice = e.target.value; const pv = voiceList().find((x) => x.voiceURI === settings.voice); settings.voiceName = pv ? pv.name : ''; fillVoices(); saveSettings(); if (au.active && au.playing && au.mode !== 'rec') restartSoon(); });
+  $('#plRate').addEventListener('change', (e) => { settings.rate = parseFloat(e.target.value) || 1; touchAudioSettings(); if (au.mode === 'rec') audioEl.playbackRate = settings.rate; else if (au.active && au.playing) restartSoon(); });
+  $('#plVoice').addEventListener('change', (e) => { settings.voice = e.target.value; const pv = voiceList().find((x) => x.voiceURI === settings.voice); settings.voiceName = pv ? pv.name : ''; fillVoices(); touchAudioSettings(); if (au.active && au.playing && au.mode !== 'rec') restartSoon(); });
   $('#plAuto').checked = settings.autoNext !== false;
-  $('#plAuto').addEventListener('change', (e) => { settings.autoNext = e.target.checked; saveSettings(); });
+  $('#plAuto').addEventListener('change', (e) => { settings.autoNext = e.target.checked; touchAudioSettings(); });
   main.addEventListener('click', (e) => { if (e.target.closest('#listenBtn')) togglePlay(); });
   // If the phone silently stopped speaking (screen lock, a call, Siri), show Play instead of pretending to play.
   document.addEventListener('visibilitychange', () => {
     if (!SPEECH || au.mode === 'rec' || !au.active || document.hidden || !au.playing) return;
     setTimeout(() => { if (au.playing && !synth.speaking && !synth.pending) pauseAudio(); }, 400);
   });
-  window.addEventListener('pagehide', () => { if (SPEECH) try { synth.cancel(); } catch (e) {} });
+  window.addEventListener('pagehide', () => { writeAudioPosition(true); if (SPEECH) try { synth.cancel(); } catch (e) {} });
   // Safety net: some browsers never send "end" for a sentence. If nothing is speaking for a while, move on.
   setInterval(() => {
     if (!SPEECH || au.mode === 'rec' || !au.active || !au.playing || document.hidden) return;
@@ -911,6 +1023,31 @@
   const audioEl = document.createElement('audio');
   audioEl.id = 'plAudio'; audioEl.preload = 'auto'; audioEl.setAttribute('playsinline', ''); audioEl.hidden = true;
   player.appendChild(audioEl);
+  function savedAudioHere() {
+    const a = readJSON('ctb-audio');
+    if (!readerCtx || !a || a.book !== readerCtx.id || a.ch !== readerCtx.ch.n) return null;
+    if (!(a.v > 0 || a.time > 0)) return null;
+    return a;
+  }
+  let audioSavedAt = 0;
+  function writeAudioPosition(force) {
+    if (!au.book || au.ch == null) return;
+    const it = au.items[au.i];
+    const v = it && it.kind === 'verse' ? it.v : 0;
+    const time = au.mode === 'rec' ? Math.round((audioEl.currentTime || 0) * 10) / 10 : 0;
+    const now = Date.now();
+    if (!force && now - audioSavedAt < 20000) return;
+    const prev = readJSON('ctb-audio');
+    if (!force && prev.book === au.book && prev.ch === au.ch && (prev.v || 0) === v && Math.abs((prev.time || 0) - time) < 1 && prev.mode === (au.mode === 'rec' ? 'rec' : 'tts')) return;
+    audioSavedAt = now;
+    const bk = catalog && catalog.books.find((x) => x.id === au.book);
+    const rec = {
+      book: au.book, name: bk ? bk.name : (readerCtx && readerCtx.id === au.book ? readerCtx.name : (prev.name || '')),
+      ch: au.ch, v, time, mode: au.mode === 'rec' ? 'rec' : 'tts', narr: settings.narr || '', t: now
+    };
+    try { localStorage.setItem('ctb-audio', JSON.stringify(rec)); } catch (e) {}
+    noteSync('audio');
+  }
   // ---- Sleep timer: counts down by the clock (Date.now), so it stays right if the screen locks.
   // Fades the recording's volume over the last few seconds where the browser allows it (not iPhone), then pauses.
   const SLEEP_FADE_MS = 8000;
@@ -967,7 +1104,7 @@
   function sleepShowErr(msg) { const e = $('#plSleepErr'); e.textContent = msg || ''; e.hidden = !msg; }
   function sleepChoose(start) {                        // read the select (and custom box), then start or cancel
     const v = $('#plSleep').value; sleepShowErr('');
-    settings.sleepChoice = v; saveSettings();
+    settings.sleepChoice = v; touchAudioSettings();
     if (v === 'off') { sleepCancel(); return; }
     if (v === 'eoc') { sleepReset(); sl.eoc = true; sleepRender(); toast('Sleep timer: stops at the end of this chapter.'); return; }
     let min;
@@ -976,7 +1113,7 @@
       const raw = $('#plSleepMin').value.trim();
       min = /^\d+$/.test(raw) ? parseInt(raw, 10) : NaN;
       if (!(min >= 1 && min <= 600)) { sleepShowErr('Enter a whole number of minutes from 1 to 600.'); return; }
-      settings.sleepCustom = min; saveSettings();
+      settings.sleepCustom = min; touchAudioSettings();
     } else min = parseInt(v, 10);
     sleepStartMs(min * 60000);
     toast(`Sleep timer set for ${min} minute${min === 1 ? '' : 's'}.`);
@@ -1079,23 +1216,24 @@
     const e = recCache.get(v + '/' + readerCtx.id + '/' + readerCtx.ch.n);
     n.textContent = e && e.done ? (e.info ? (e.fellBack ? 'There is no dramatized recording of this chapter yet, so the regular recorded voice reads it.' : 'A recording is ready for this chapter.') : 'There is no recording of this chapter yet, so your device voice reads it.') : '';
   }
-  function startNarration(ctx, fromVerse) {
+  function startNarration(ctx, fromVerse, atTime) {
     const e = recFor(ctx.id, ctx.ch);
     if (!e || (e.done && !e.info)) { au.mode = 'tts'; return false; }
     au.mode = 'rec';
-    if (e.info) { playRec(e.info, fromVerse); return true; }
+    if (e.info) { playRec(e.info, fromVerse, atTime); return true; }
     const tok = ++au.token;                                             // still checking the recording: wait for it
     e.promise.then((info) => {
       if (tok !== au.token || !au.active) return;
-      if (info) playRec(info, fromVerse); else { au.mode = 'tts'; if (SPEECH) speakNow(); else stopAudio(); }
+      if (info) playRec(info, fromVerse, atTime); else { au.mode = 'tts'; if (SPEECH) speakNow(); else stopAudio(); }
     });
     return true;
   }
   const recTimes = (info) => au.items.map((it) => (it.kind === 'verse' ? info.meta.v[String(it.v)] : info.meta[it.kind]));
-  function playRec(info, fromVerse) {
+  function playRec(info, fromVerse, atTime) {
     au.rec = info; au.times = recTimes(info); au.i = 0;
     let start = 0;
     if (fromVerse) { const k = au.items.findIndex((it) => it.kind === 'verse' && it.v === fromVerse); if (k >= 0 && au.times[k] != null) { au.i = k; start = au.times[k]; } }
+    if (typeof atTime === 'number' && atTime > start) start = atTime;
     au.switching = true; au.mode = 'rec';
     if (audioEl.getAttribute('data-src') !== info.url) { audioEl.src = info.url; audioEl.setAttribute('data-src', info.url); }
     audioEl.playbackRate = Number(settings.rate) || 1;
@@ -1168,7 +1306,8 @@
     if (au.mode !== 'rec' || !au.active || !au.times.length) return;
     const t = audioEl.currentTime + 0.05; let k = -1;
     for (let i = 0; i < au.times.length; i++) if (au.times[i] != null && au.times[i] <= t) k = i;
-    if (k >= 0 && k !== au.i) { au.i = k; markSpeaking(); updatePlayer(); }
+    if (k >= 0 && k !== au.i) { au.i = k; markSpeaking(); updatePlayer(); writeAudioPosition(true); }
+    else writeAudioPosition(false);
   });
   audioEl.addEventListener('ended', () => { if (au.mode === 'rec' && au.active && au.playing) finishChapter(); });
   audioEl.addEventListener('pause', () => {            // lock screen, headphones, a phone call
@@ -1182,7 +1321,7 @@
     else { stopAudio(); toast('The recording could not be loaded.'); }
   });
   $('#plNarr').addEventListener('change', (e) => {
-    settings.narr = e.target.value; saveSettings();
+    settings.narr = e.target.value; touchAudioSettings();
     if (au.active) {
       const it = au.items[au.i], v = it && it.kind === 'verse' ? it.v : 0, was = au.playing;
       stopAudio(); if (was) startAudio(v || undefined);
@@ -1217,7 +1356,7 @@
       let cur = 0;
       for (const el of vs) { if (el.getBoundingClientRect().bottom > 90) { cur = +el.dataset.v; break; } }
       if (window.scrollY < 120) cur = 0;
-      try { localStorage.setItem('ctb-last', JSON.stringify({ book: readerCtx.id, name: readerCtx.name, ch: readerCtx.ch.n, v: cur })); } catch (e) {}
+      writeLast({ book: readerCtx.id, name: readerCtx.name, ch: readerCtx.ch.n, v: cur });
     }, 500);
   }
   window.addEventListener('scroll', () => { if (readerCtx) trackPosition(); }, { passive: true });
@@ -1255,7 +1394,10 @@
       body = `<div class="chips" role="group" aria-label="Filter by color">${chips}</div>
         ${items ? `<ul class="saved-list">${items}</ul>` : `<p class="empty">${store.hl.length ? 'No highlights in this color.' : 'No highlights yet. While reading, select some words or tap a verse, then pick a color.'}</p>`}`;
     } else {
-      body = `<p class="muted">Your bookmarks and highlights are saved only on this phone, in this app. Save a backup file now and then so you never lose them, and use it to move them to another device.</p>
+      const lead = accountsConfigured()
+        ? 'Everything stays on this device until you sign in. The backup file needs no account. It includes bookmarks, highlights, your place, listening progress, and settings. Importing merges it with what is already here.'
+        : 'Your reading stays on this device. The backup file needs no account. It includes bookmarks, highlights, your place, listening progress, and settings. Importing merges it with what is already here.';
+      body = `<p class="muted">${lead}</p>
         <div class="cta" style="justify-content:flex-start;margin:1rem 0">
           <button type="button" class="btn primary" id="expBtn">Save backup file</button>
           <button type="button" class="btn" id="shareBk" hidden>Share backup…</button>
@@ -1271,48 +1413,64 @@
     window.scrollTo(0, 0);
     const again = () => savedPage(tab);
     main.querySelectorAll('[data-del-bm]').forEach((b) => b.addEventListener('click', () => {
-      const ex = store.bm.find((x) => x.id === b.dataset.delBm); store.bm = store.bm.filter((x) => x !== ex); persist(); again();
-      toast('Bookmark deleted', { label: 'Undo', fn: () => { store.bm.push(ex); persist(); again(); } });
+      const ex = store.bm.find((x) => x.id === b.dataset.delBm); store.bm = store.bm.filter((x) => x !== ex); rememberTomb('bm', ex && ex.id, Date.now()); persist(); again();
+      toast('Bookmark deleted', { label: 'Undo', fn: () => { if (ex) { forgetTomb('bm', ex.id); store.bm.push(ex); persist(); again(); } } });
     }));
     main.querySelectorAll('[data-del-hl]').forEach((b) => b.addEventListener('click', () => {
-      const ex = store.hl.find((x) => x.id === b.dataset.delHl); store.hl = store.hl.filter((x) => x !== ex); persist(); again();
-      toast('Highlight deleted', { label: 'Undo', fn: () => { store.hl.push(ex); persist(); again(); } });
+      const ex = store.hl.find((x) => x.id === b.dataset.delHl); store.hl = store.hl.filter((x) => x !== ex); rememberTomb('hl', ex && ex.id, Date.now()); persist(); again();
+      toast('Highlight deleted', { label: 'Undo', fn: () => { if (ex) { forgetTomb('hl', ex.id); store.hl.push(ex); persist(); again(); } } });
     }));
     main.querySelectorAll('[data-filter]').forEach((b) => b.addEventListener('click', () => { sessionStorage.setItem('ctb-hlfilter', b.dataset.filter); again(); }));
     const rt2 = $('#resumeToggle2');
     if (rt2) rt2.addEventListener('change', () => { settings.resume = rt2.checked; saveSettings(); applySettings(); });
     if (tab === 'backup') wireBackup();
   }
-  const backupData = () => ({ format: 'ctb-saved', version: 1, exportedAt: new Date().toISOString(), bookmarks: store.bm, highlights: store.hl, lastRead: readJSON('ctb-last') });
+  const backupData = () => ({
+    format: 'ctb-saved', version: 2, exportedAt: new Date().toISOString(),
+    bookmarks: store.bm, highlights: store.hl, lastRead: readJSON('ctb-last'), audio: readJSON('ctb-audio'),
+    settings: {
+      theme: settings.theme, size: settings.size, notes: settings.notes !== false, resume: !!settings.resume,
+      rate: Number(settings.rate) || 1, voice: settings.voice || '', voiceName: settings.voiceName || '',
+      autoNext: settings.autoNext !== false, narr: settings.narr || '',
+      sleepChoice: settings.sleepChoice || 'off', sleepCustom: settings.sleepCustom || 20,
+      audioSettingsT: settings.audioSettingsT || 0
+    }
+  });
   const backupText = () => JSON.stringify(backupData(), null, 1);
+  const backupName = () => `ctb-backup-${new Date().toISOString().slice(0, 10)}.json`;
+  function applyAppearance(s) {
+    if (!s || typeof s !== 'object') return;
+    if (s.theme === 'auto' || s.theme === 'light' || s.theme === 'dark') settings.theme = s.theme;
+    if (typeof s.size === 'number' && s.size >= 14 && s.size <= 30) settings.size = Math.round(s.size);
+    if (typeof s.notes === 'boolean') settings.notes = s.notes;
+    if (typeof s.resume === 'boolean') settings.resume = s.resume;
+  }
   function importData(text) {
     let d; try { d = JSON.parse(text); } catch (e) { return { err: 'That does not look like a backup file.' }; }
-    if (!d || d.format !== 'ctb-saved' || !Array.isArray(d.bookmarks) || !Array.isArray(d.highlights)) return { err: 'That file is not a Clay Jar Treasure Bible backup.' };
-    const int = (x) => Number.isInteger(x) && x >= 0 && x < 100000;
-    const str = (x, n = 600) => (typeof x === 'string' ? x.slice(0, n) : '');
-    let nb = 0, nh = 0;
-    d.bookmarks.slice(0, 20000).forEach((b) => {
-      if (!b || typeof b.book !== 'string' || !int(b.ch) || !int(b.v) || findBm(b.book, b.ch, b.v)) return;
-      store.bm.push({ id: str(b.id, 40) || uid(), book: str(b.book, 80), name: str(b.name, 80), ch: b.ch, v: b.v, text: str(b.text), t: Number(b.t) || Date.now() }); nb++;
-    });
-    d.highlights.slice(0, 50000).forEach((h) => {
-      if (!h || typeof h.book !== 'string' || !int(h.ch) || !int(h.v) || !int(h.s) || !int(h.e) || h.e <= h.s || !COLORS.includes(h.color) || typeof h.text !== 'string') return;
-      if (store.hl.some((x) => x.book === h.book && x.ch === h.ch && x.v === h.v && x.s === h.s && x.e === h.e && x.color === h.color)) return;
-      carve(h.book, h.ch, h.v, h.s, h.e);
-      store.hl.push({ id: str(h.id, 40) || uid(), book: str(h.book, 80), name: str(h.name, 80), ch: h.ch, v: h.v, s: h.s, e: h.e, color: h.color, text: str(h.text, 3000), whole: !!h.whole, t: Number(h.t) || Date.now() }); nh++;
-    });
-    persist();
+    const built = window.ClayJarSync && ClayJarSync.backupToSnapshot && ClayJarSync.backupToSnapshot(d);
+    if (!built || built.error) return { err: (built && built.error) || 'That file is not a Clay Jar Treasure Bible backup.' };
+    const beforeBm = new Set(store.bm.map((b) => b.id));
+    const beforeHl = new Set(store.hl.map((h) => h.id));
+    const merged = ClayJarSync.mergeSnapshots(syncSnapshot(), built.snapshot);
+    commitMerged(merged);
+    if (built.settings) { applyAppearance(built.settings); saveSettings(); applySettings(); }
+    noteSync('library');
+    const nb = merged.bookmarks.filter((b) => !beforeBm.has(b.id)).length;
+    const nh = merged.highlights.filter((h) => !beforeHl.has(h.id)).length;
     return { nb, nh };
+  }
+  function downloadBackup() {
+    const blob = new Blob([backupText()], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href = url; a.download = backupName(); document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
   }
   function wireBackup() {
     const msg = (t) => { const m = $('#bkMsg'); if (m) m.textContent = t; };
-    const done = (r) => msg(r.err || `Restored ${r.nb} bookmark${r.nb === 1 ? '' : 's'} and ${r.nh} highlight${r.nh === 1 ? '' : 's'}${r.nb + r.nh === 0 ? ' (nothing new: they were already here)' : ''}.`);
-    const fname = () => `ctb-bookmarks-highlights-${new Date().toISOString().slice(0, 10)}.json`;
+    const done = (r) => msg(r.err || `Merged ${r.nb} bookmark${r.nb === 1 ? '' : 's'} and ${r.nh} highlight${r.nh === 1 ? '' : 's'}${r.nb + r.nh === 0 ? ' (nothing new: they were already here)' : ''}. Your place, listening progress, and settings were merged too.`);
+    const fname = backupName;
     $('#expBtn').addEventListener('click', () => {
-      const blob = new Blob([backupText()], { type: 'application/json' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a'); a.href = url; a.download = fname(); document.body.appendChild(a); a.click(); a.remove();
-      setTimeout(() => URL.revokeObjectURL(url), 4000);
+      downloadBackup();
       msg('Backup file saved. On an iPhone, look in Downloads, or use Share backup to put it in Files or Notes.');
     });
     try {
@@ -1329,8 +1487,110 @@
     });
     $('#pasteBk').addEventListener('click', () => done(importData($('#bkText').value)));
   }
+  function syncSnapshot() {
+    return {
+      bookmarks: store.bm.slice(),
+      highlights: store.hl.slice(),
+      tombs: { bm: Object.assign({}, tombs.bm), hl: Object.assign({}, tombs.hl) },
+      reading: readJSON('ctb-last'),
+      audio: readJSON('ctb-audio'),
+      audioSettings: {
+        rate: Number(settings.rate) || 1, voice: settings.voice || '', voiceName: settings.voiceName || '',
+        autoNext: settings.autoNext !== false, narr: settings.narr || '',
+        sleepChoice: settings.sleepChoice || 'off', sleepCustom: settings.sleepCustom || 20,
+        t: settings.audioSettingsT || 0
+      }
+    };
+  }
+  function applyAudioControls(prev) {
+    const rateChanged = prev.rate !== settings.rate, voiceChanged = prev.voice !== settings.voice;
+    const rateEl = $('#plRate');
+    if (rateEl) { rateEl.value = String(settings.rate); if (rateEl.value === '') rateEl.value = '1'; }
+    fillVoices();
+    const auto = $('#plAuto');
+    if (auto) auto.checked = settings.autoNext !== false;
+    fillNarr();
+    const sleep = $('#plSleep');
+    if (sleep) {
+      sleep.value = [...sleep.options].some((o) => o.value === settings.sleepChoice) ? settings.sleepChoice : 'off';
+      const custom = $('#plSleepCustom');
+      if (custom) custom.hidden = sleep.value !== 'custom';
+      const min = $('#plSleepMin');
+      if (min) min.value = String(settings.sleepCustom || 20);
+    }
+    if (au.mode === 'rec' && rateChanged) audioEl.playbackRate = Number(settings.rate) || 1;
+    else if (au.active && au.playing && au.mode !== 'rec' && (rateChanged || voiceChanged)) restartSoon();
+    updatePlayer();
+  }
+  function commitMerged(merged) {
+    const prevAudio = { rate: settings.rate, voice: settings.voice || '', narr: settings.narr || '' };
+    store.bm = merged.bookmarks || [];
+    store.hl = merged.highlights || [];
+    tombs.bm = (merged.tombs && merged.tombs.bm) || {};
+    tombs.hl = (merged.tombs && merged.tombs.hl) || {};
+    try {
+      localStorage.setItem('ctb-bookmarks', JSON.stringify(store.bm));
+      localStorage.setItem('ctb-highlights', JSON.stringify(store.hl));
+      localStorage.setItem('ctb-tombs', JSON.stringify(tombs));
+      if (merged.reading) localStorage.setItem('ctb-last', JSON.stringify(merged.reading));
+      if (merged.audio) localStorage.setItem('ctb-audio', JSON.stringify(merged.audio));
+    } catch (e) {}
+    if (merged.audioSettings && (merged.audioSettings.t || 0) >= (settings.audioSettingsT || 0)) {
+      const a = merged.audioSettings;
+      settings.rate = a.rate; settings.voice = a.voice || ''; settings.voiceName = a.voiceName || '';
+      settings.autoNext = a.autoNext !== false; settings.narr = a.narr || '';
+      settings.sleepChoice = a.sleepChoice || 'off'; settings.sleepCustom = a.sleepCustom || 20;
+      settings.audioSettingsT = a.t || 0;
+      saveSettings();
+      applyAudioControls(prevAudio);
+    } else updatePlayer();
+    if (readerCtx) { paintAll(); markBookmarks(); }
+  }
+  function applySync(merged) {
+    const prevReading = readJSON('ctb-last');
+    commitMerged(merged);
+    const next = merged.reading;
+    const onHome = !location.hash || location.hash === '#' || location.hash === '#/';
+    if (onHome && next && (prevReading.book !== next.book || prevReading.ch !== next.ch || (prevReading.v || 0) !== (next.v || 0))) home();
+    else if (/^#\/saved/.test(location.hash)) savedPage((location.hash.split('/')[2] || 'bookmarks'));
+    if (readerCtx && next && !au.active && sessionStorage.getItem('ctb-follow') === '1' && (next.t || 0) > (prevReading.t || 0)) {
+      if (readerCtx.id !== next.book || readerCtx.ch.n !== next.ch) {
+        fromSync = true;
+        location.hash = '#/read/' + encodeURIComponent(next.book) + '/' + next.ch + (next.v > 1 ? '/' + next.v : '');
+      } else if (next.v > 1) {
+        const el = document.getElementById('v' + next.v);
+        if (el) el.scrollIntoView({ block: 'center' });
+        sessionStorage.removeItem('ctb-follow');
+      }
+    }
+  }
+  function clearProgress() {
+    store.bm = []; store.hl = []; tombs.bm = {}; tombs.hl = {};
+    try {
+      localStorage.removeItem('ctb-bookmarks');
+      localStorage.removeItem('ctb-highlights');
+      localStorage.removeItem('ctb-tombs');
+      localStorage.removeItem('ctb-last');
+      localStorage.removeItem('ctb-audio');
+      localStorage.removeItem('ctb-sync-owner');
+    } catch (e) {}
+    delete settings.audioSettingsT;
+    saveSettings();
+    if (readerCtx) { paintAll(); markBookmarks(); }
+    updatePlayer();
+    if (/^#\/saved/.test(location.hash)) savedPage(location.hash.split('/')[2] || 'bookmarks');
+    else if (!location.hash || location.hash === '#' || location.hash === '#/') home();
+  }
+  window.CTBSync = {
+    snapshot: syncSnapshot, apply: applySync, clearProgress, applying: false, accountsConfigured,
+    backupText, downloadBackup, importBackup: importData,
+    backupPanelHtml, wireBackupPanel
+  };
+
   // Optional: open the app where the reader left off (only when the app is started fresh).
   (function resumeOnLaunch() {
+    const blank = !location.hash || location.hash === '#' || location.hash === '#/';
+    if (blank) sessionStorage.setItem('ctb-follow', '1');
     if (!settings.resume || sessionStorage.getItem('ctb-resumed')) return;
     sessionStorage.setItem('ctb-resumed', '1');
     if (location.hash && location.hash !== '#' && location.hash !== '#/') return;

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Terms of Service · Clay Jar Treasure Bible</title>
+  <meta name="description" content="Terms of Service for the Clay Jar Treasure Bible, a free, ad-free Bible site.">
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      try {
+        var s = JSON.parse(localStorage.getItem('ctb-settings') || '{}');
+        if (s.theme === 'dark' || s.theme === 'light') document.documentElement.dataset.theme = s.theme;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="bar">
+    <a class="brand" href="./">
+      <img src="icons/emblem-96.png" alt="" width="30" height="30">
+      <span>CTB<span class="tm">™</span></span>
+    </a>
+  </header>
+  <main class="legal-page" id="main">
+    <p class="eyebrow">Clay Jar Treasure Bible</p>
+    <h1>Terms of Service</h1>
+    <p class="legal-note">These terms are written in plain language for a free Bible site. They are not legal advice. Last updated 12 November 2026.</p>
+    <nav class="legal-nav" aria-label="Related pages">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="./#/about/copyright">Copyright and quoting</a>
+    </nav>
+
+    <h2>Who offers this site</h2>
+    <p>The Clay Jar Treasure Bible (“CTB”) is © 2026 Jose Santiago. All rights reserved, unless a page on this site says otherwise. The site is free to read and listen to. There is no fee, no ad, and no account required.</p>
+    <p>Clay Jar Treasure Bible™, Clay Jar Translation™ and their logos are trademarks of Jose Santiago.</p>
+
+    <h2>Using the site</h2>
+    <p>You may read the translation and listen to the audio in your browser. You may quote up to 500 verses if you credit the Clay Jar Treasure Bible. The <a href="./#/about/copyright">copyright page</a> says how quoting works.</p>
+    <p>Please use the site in a way that does not harm other people or the service. That includes:</p>
+    <ul>
+      <li>Do not break, overload, or try to get into the site, an account, or another person’s data.</li>
+      <li>Do not pretend the translation is your own work.</li>
+      <li>Do not use the site to harass, deceive, or break the law.</li>
+    </ul>
+    <p>If you sign in, you are asking the site to save your place, bookmarks, highlights, and listening progress to your account, as the sign-in screen describes. You can use the site without doing that. You can also keep a backup file on your own device with no account.</p>
+
+    <h2>The text and the audio</h2>
+    <p>CTB is a translation into everyday English. It is a reading of the Bible, not a promise about what a church, a doctor, a lawyer, or anyone else must do. Audio may be a device voice or a recording hosted for playback. Recordings can be missing for a chapter. The site then uses the device voice when one is available.</p>
+
+    <h2>No warranty</h2>
+    <p>The site is provided as it is and as it is available, for free. Jose Santiago does not promise that the site will always be up, that every chapter is published, that a recording will play, or that a saved place will never be lost. Keep a backup file if a copy matters to you.</p>
+
+    <h2>Limit of liability</h2>
+    <p>To the extent the law allows, Jose Santiago is not liable for indirect or consequential loss from using the site, including lost reading data. Because the site is free, direct damages, where a limit is allowed, are limited to zero, the amount you paid. Some places do not allow these limits. There, the limits apply only as far as the law allows. Nothing here takes away rights that cannot legally be waived.</p>
+
+    <h2>Governing law</h2>
+    <p>These terms are governed by the laws of the Commonwealth of Massachusetts, USA, without regard to conflict-of-law rules. If the consumer law where you live says you cannot be asked to use Massachusetts law, that local protection still applies. Courts in Massachusetts may hear a dispute, except where the law where you live gives you the right to sue at home.</p>
+
+    <h2>Changes</h2>
+    <p>These terms may be updated by changing this page and its date. The new terms apply as you keep using the site. If you have an account, the new terms apply as you keep using sign-in.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about these terms: <a href="mailto:contact.clayjar@protonmail.com">contact.clayjar@protonmail.com</a>.</p>
+  </main>
+  <footer class="foot">
+    <p><strong>Clay Jar Treasure Bible</strong><br>© 2026 Jose Santiago. All rights reserved.</p>
+    <p class="foot-small">Clay Jar Treasure Bible™, Clay Jar Translation™ and their logos are trademarks of Jose Santiago.</p>
+    <p class="foot-small"><a href="privacy.html">Privacy Policy</a> <a href="./">Back to reading</a></p>
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js', { scope: './' }).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>
