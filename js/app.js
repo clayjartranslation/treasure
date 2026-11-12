@@ -139,8 +139,8 @@
     render(`
       <section class="hero" aria-labelledby="homeTitle">
         <img class="hero-logo" src="icons/ctb-logo-720.jpg" width="330" height="330"
-             alt="Clay Jar Treasure Bible logo: a terracotta clay jar holding a scroll, with rays of light rising from it.">
-        <h1 id="homeTitle">${NAME}</h1>
+             alt="Clay Jar Treasure Bible™ logo: a terracotta clay jar holding a scroll, with rays of light rising from it.">
+        <h1 id="homeTitle">${NAME}<span class="tm">™</span></h1>
         <p class="tag">The Bible in clear, everyday English. Free to read, with no sign-up and no ads.</p>
         <p class="free-line"><strong>Free forever:</strong> no sign-up, no ads, no tracking.</p>
         <div class="cta">
