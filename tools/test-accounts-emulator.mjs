@@ -123,9 +123,14 @@ async function browserFlow() {
       return { accounts: document.documentElement.dataset.accounts || '', shown: !!shown, blurb: !!document.getElementById('accountBlurb') && getComputedStyle(document.getElementById('accountBlurb')).display !== 'none' };
     });
     assert(!hidden.accounts && !hidden.shown && !hidden.blurb, 'empty config must hide sign-in: ' + JSON.stringify(hidden));
-    await bare.goto(BASE + '#/account', { waitUntil: 'networkidle0' });
-    const fellHome = await bare.evaluate(() => !!document.getElementById('homeTitle'));
-    assert(fellHome, 'account route with an empty config shows the home page');
+    await bare.goto(BASE + '#/account', { waitUntil: 'domcontentloaded' });
+    const offlineOnly = await bare.evaluate(() => ({
+      google: !!document.getElementById('acctGoogle'),
+      phone: !!document.getElementById('acctPhoneSend'),
+      backup: !!document.getElementById('acctExport'),
+      signIn: /sign in with google/i.test(document.body.innerText),
+    }));
+    assert(!offlineOnly.google && !offlineOnly.phone && !offlineOnly.signIn && offlineOnly.backup, 'empty config offers backup only: ' + JSON.stringify(offlineOnly));
     await bare.close();
     console.log('empty config: ok');
 
@@ -147,7 +152,13 @@ async function browserFlow() {
     }));
     assert(providers.google, 'Google sign-in is offered');
     assert(!providers.apple, 'Apple stays hidden while the flag is off');
-    assert(/optional/i.test(providers.privacy) && /no ads/i.test(providers.privacy), 'privacy note is on the account page');
+    const optIn = await page.evaluate(() => ({
+      note: /on this device until you sign in/i.test(document.body.innerText),
+      phone: !!document.getElementById('acctPhoneSend'),
+      backup: !!document.getElementById('acctExport'),
+    }));
+    assert(optIn.note && optIn.backup && !optIn.phone, 'sign-in note and backup, no phone button: ' + JSON.stringify(optIn));
+    assert(/on this device/i.test(providers.privacy) && /no ads/i.test(providers.privacy) && /Privacy Policy/i.test(providers.privacy), 'privacy note is on the account page');
     await page.screenshot({ path: '/opt/cursor/artifacts/mobile-account-signed-out.png' });
     await page.type('#acctEmail', email);
     await page.click('#acctReset');
@@ -199,8 +210,13 @@ async function browserFlow() {
     console.log('two devices: bookmark synced');
 
     await page.goto(BASE + '#/account', { waitUntil: 'domcontentloaded' });
+    await page.waitForSelector('#acctSignOut', { timeout: 15000 });
+    await page.evaluate(() => document.getElementById('acctSignOut').click());
+    await page.waitForSelector('#acctOutKeep', { timeout: 10000 });
+    await page.waitForSelector('#acctOutClear');
+    await page.evaluate(() => document.getElementById('acctOutCancel').click());
     await page.waitForSelector('#acctDelete', { timeout: 15000 });
-    await page.click('#acctDelete');
+    await page.evaluate(() => document.getElementById('acctDelete').click());
     await page.waitForSelector('#acctDeleteConfirm', { timeout: 10000 });
     if (await page.$('#acctAgain')) await page.type('#acctAgain', pass);
     await page.evaluate(() => {
@@ -217,11 +233,11 @@ async function browserFlow() {
     }
     await page.type('#acctEmail', email);
     await page.type('#acctPass', pass);
-    await page.click('#acctSignIn');
+    await page.evaluate(() => document.getElementById('acctForm').requestSubmit());
     await page.waitForFunction(() => {
       const el = document.getElementById('acctError');
       return el && !el.hidden && (el.textContent || '').length > 0;
-    }, { timeout: 15000 });
+    }, { timeout: 20000 });
     console.log('delete account: ok');
     await other.close();
     await context.close();

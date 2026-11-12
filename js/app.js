@@ -418,9 +418,42 @@
     else window.scrollTo(0, 0);
   }
 
+  function backupPanelHtml() {
+    return `<section class="card account-backup" aria-labelledby="backupTitle">
+      <h2 id="backupTitle">Backup file</h2>
+      <p>No account needed. The file stays on this device until you save or share it. It holds bookmarks, highlights, your place in the text, listening progress, and settings. Importing merges that file with what is already on this device. Nothing is uploaded.</p>
+      <div class="account-actions">
+        <button type="button" class="btn" id="acctExport">Save backup file</button>
+        <label class="btn" for="acctImport">Import backup file</label>
+        <input id="acctImport" type="file" accept="application/json,.json" class="visually-hidden">
+      </div>
+      <p class="account-status" id="acctBackupMsg" role="status"></p>
+    </section>`;
+  }
+  function wireBackupPanel() {
+    const msg = (t) => { const el = $('#acctBackupMsg'); if (el) el.textContent = t; };
+    const exp = $('#acctExport');
+    if (exp) exp.addEventListener('click', () => { downloadBackup(); msg('Backup file saved. On an iPhone, look in Downloads.'); });
+    const imp = $('#acctImport');
+    if (imp) imp.addEventListener('change', async (e) => {
+      const f = e.target.files && e.target.files[0];
+      if (!f) return;
+      const r = importData(await f.text());
+      e.target.value = '';
+      msg(r.err || `Merged ${r.nb} bookmark${r.nb === 1 ? '' : 's'} and ${r.nh} highlight${r.nh === 1 ? '' : 's'}. Your place, listening progress, and settings were merged too.`);
+    });
+  }
+  function renderOfflineAccount() {
+    render(`<h1>On this device</h1>
+      <p class="muted">Sign-in is not turned on for this copy of the site. Reading, listening, bookmarks, and highlights stay on this device.</p>
+      ${backupPanelHtml()}
+      <p class="account-legal-links"><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></p>`, 'On this device');
+    wireBackupPanel();
+  }
+
   async function accountPage() {
     setTitle('');
-    if (!accountsConfigured()) { await home(); return; }
+    if (!accountsConfigured()) { renderOfflineAccount(); return; }
     render('<h1>Account</h1><p class="loading">Loading account…</p>', 'Account');
     const api = window.ClayJarAccounts;
     if (api && api.whenReady) await api.whenReady();
@@ -1362,8 +1395,8 @@
         ${items ? `<ul class="saved-list">${items}</ul>` : `<p class="empty">${store.hl.length ? 'No highlights in this color.' : 'No highlights yet. While reading, select some words or tap a verse, then pick a color.'}</p>`}`;
     } else {
       const lead = accountsConfigured()
-        ? 'Bookmarks and highlights stay on this device. Sign in and they, along with your place and listening position, are also kept in your account. A backup file is still a good extra copy.'
-        : 'Your bookmarks and highlights are saved only on this phone, in this app. Save a backup file now and then so you never lose them, and use it to move them to another device.';
+        ? 'Everything stays on this device until you sign in. The backup file needs no account. It includes bookmarks, highlights, your place, listening progress, and settings. Importing merges it with what is already here.'
+        : 'Your reading stays on this device. The backup file needs no account. It includes bookmarks, highlights, your place, listening progress, and settings. Importing merges it with what is already here.';
       body = `<p class="muted">${lead}</p>
         <div class="cta" style="justify-content:flex-start;margin:1rem 0">
           <button type="button" class="btn primary" id="expBtn">Save backup file</button>
@@ -1392,40 +1425,52 @@
     if (rt2) rt2.addEventListener('change', () => { settings.resume = rt2.checked; saveSettings(); applySettings(); });
     if (tab === 'backup') wireBackup();
   }
-  const backupData = () => ({ format: 'ctb-saved', version: 1, exportedAt: new Date().toISOString(), bookmarks: store.bm, highlights: store.hl, lastRead: readJSON('ctb-last') });
+  const backupData = () => ({
+    format: 'ctb-saved', version: 2, exportedAt: new Date().toISOString(),
+    bookmarks: store.bm, highlights: store.hl, lastRead: readJSON('ctb-last'), audio: readJSON('ctb-audio'),
+    settings: {
+      theme: settings.theme, size: settings.size, notes: settings.notes !== false, resume: !!settings.resume,
+      rate: Number(settings.rate) || 1, voice: settings.voice || '', voiceName: settings.voiceName || '',
+      autoNext: settings.autoNext !== false, narr: settings.narr || '',
+      sleepChoice: settings.sleepChoice || 'off', sleepCustom: settings.sleepCustom || 20,
+      audioSettingsT: settings.audioSettingsT || 0
+    }
+  });
   const backupText = () => JSON.stringify(backupData(), null, 1);
+  const backupName = () => `ctb-backup-${new Date().toISOString().slice(0, 10)}.json`;
+  function applyAppearance(s) {
+    if (!s || typeof s !== 'object') return;
+    if (s.theme === 'auto' || s.theme === 'light' || s.theme === 'dark') settings.theme = s.theme;
+    if (typeof s.size === 'number' && s.size >= 14 && s.size <= 30) settings.size = Math.round(s.size);
+    if (typeof s.notes === 'boolean') settings.notes = s.notes;
+    if (typeof s.resume === 'boolean') settings.resume = s.resume;
+  }
   function importData(text) {
     let d; try { d = JSON.parse(text); } catch (e) { return { err: 'That does not look like a backup file.' }; }
-    if (!d || d.format !== 'ctb-saved' || !Array.isArray(d.bookmarks) || !Array.isArray(d.highlights)) return { err: 'That file is not a Clay Jar Treasure Bible backup.' };
-    const int = (x) => Number.isInteger(x) && x >= 0 && x < 100000;
-    const str = (x, n = 600) => (typeof x === 'string' ? x.slice(0, n) : '');
-    let nb = 0, nh = 0;
-    d.bookmarks.slice(0, 20000).forEach((b) => {
-      if (!b || typeof b.book !== 'string' || !int(b.ch) || !int(b.v) || findBm(b.book, b.ch, b.v)) return;
-      const id = str(b.id, 40) || uid();
-      forgetTomb('bm', id);
-      store.bm.push({ id, book: str(b.book, 80), name: str(b.name, 80), ch: b.ch, v: b.v, text: str(b.text), t: Number(b.t) || Date.now() }); nb++;
-    });
-    d.highlights.slice(0, 50000).forEach((h) => {
-      if (!h || typeof h.book !== 'string' || !int(h.ch) || !int(h.v) || !int(h.s) || !int(h.e) || h.e <= h.s || !COLORS.includes(h.color) || typeof h.text !== 'string') return;
-      if (store.hl.some((x) => x.book === h.book && x.ch === h.ch && x.v === h.v && x.s === h.s && x.e === h.e && x.color === h.color)) return;
-      carve(h.book, h.ch, h.v, h.s, h.e);
-      const id = str(h.id, 40) || uid();
-      forgetTomb('hl', id);
-      store.hl.push({ id, book: str(h.book, 80), name: str(h.name, 80), ch: h.ch, v: h.v, s: h.s, e: h.e, color: h.color, text: str(h.text, 3000), whole: !!h.whole, t: Number(h.t) || Date.now() }); nh++;
-    });
-    persist();
+    const built = window.ClayJarSync && ClayJarSync.backupToSnapshot && ClayJarSync.backupToSnapshot(d);
+    if (!built || built.error) return { err: (built && built.error) || 'That file is not a Clay Jar Treasure Bible backup.' };
+    const beforeBm = new Set(store.bm.map((b) => b.id));
+    const beforeHl = new Set(store.hl.map((h) => h.id));
+    const merged = ClayJarSync.mergeSnapshots(syncSnapshot(), built.snapshot);
+    commitMerged(merged);
+    if (built.settings) { applyAppearance(built.settings); saveSettings(); applySettings(); }
+    noteSync('library');
+    const nb = merged.bookmarks.filter((b) => !beforeBm.has(b.id)).length;
+    const nh = merged.highlights.filter((h) => !beforeHl.has(h.id)).length;
     return { nb, nh };
+  }
+  function downloadBackup() {
+    const blob = new Blob([backupText()], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href = url; a.download = backupName(); document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
   }
   function wireBackup() {
     const msg = (t) => { const m = $('#bkMsg'); if (m) m.textContent = t; };
-    const done = (r) => msg(r.err || `Restored ${r.nb} bookmark${r.nb === 1 ? '' : 's'} and ${r.nh} highlight${r.nh === 1 ? '' : 's'}${r.nb + r.nh === 0 ? ' (nothing new: they were already here)' : ''}.`);
-    const fname = () => `ctb-bookmarks-highlights-${new Date().toISOString().slice(0, 10)}.json`;
+    const done = (r) => msg(r.err || `Merged ${r.nb} bookmark${r.nb === 1 ? '' : 's'} and ${r.nh} highlight${r.nh === 1 ? '' : 's'}${r.nb + r.nh === 0 ? ' (nothing new: they were already here)' : ''}. Your place, listening progress, and settings were merged too.`);
+    const fname = backupName;
     $('#expBtn').addEventListener('click', () => {
-      const blob = new Blob([backupText()], { type: 'application/json' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a'); a.href = url; a.download = fname(); document.body.appendChild(a); a.click(); a.remove();
-      setTimeout(() => URL.revokeObjectURL(url), 4000);
+      downloadBackup();
       msg('Backup file saved. On an iPhone, look in Downloads, or use Share backup to put it in Files or Notes.');
     });
     try {
@@ -1477,8 +1522,7 @@
     else if (au.active && au.playing && au.mode !== 'rec' && (rateChanged || voiceChanged)) restartSoon();
     updatePlayer();
   }
-  function applySync(merged) {
-    const prevReading = readJSON('ctb-last');
+  function commitMerged(merged) {
     const prevAudio = { rate: settings.rate, voice: settings.voice || '', narr: settings.narr || '' };
     store.bm = merged.bookmarks || [];
     store.hl = merged.highlights || [];
@@ -1501,6 +1545,10 @@
       applyAudioControls(prevAudio);
     } else updatePlayer();
     if (readerCtx) { paintAll(); markBookmarks(); }
+  }
+  function applySync(merged) {
+    const prevReading = readJSON('ctb-last');
+    commitMerged(merged);
     const next = merged.reading;
     const onHome = !location.hash || location.hash === '#' || location.hash === '#/';
     if (onHome && next && (prevReading.book !== next.book || prevReading.ch !== next.ch || (prevReading.v || 0) !== (next.v || 0))) home();
@@ -1533,7 +1581,11 @@
     if (/^#\/saved/.test(location.hash)) savedPage(location.hash.split('/')[2] || 'bookmarks');
     else if (!location.hash || location.hash === '#' || location.hash === '#/') home();
   }
-  window.CTBSync = { snapshot: syncSnapshot, apply: applySync, clearProgress, applying: false, accountsConfigured };
+  window.CTBSync = {
+    snapshot: syncSnapshot, apply: applySync, clearProgress, applying: false, accountsConfigured,
+    backupText, downloadBackup, importBackup: importData,
+    backupPanelHtml, wireBackupPanel
+  };
 
   // Optional: open the app where the reader left off (only when the app is started fresh).
   (function resumeOnLaunch() {

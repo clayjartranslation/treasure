@@ -6,11 +6,15 @@ When the config is filled in, a reader can sign in with Google or with email and
 
 Sign in with Apple is implemented and **turned off**. It needs a paid Apple Developer Program membership later. Leave `apple` set to `false` until then.
 
+Phone-number sign-in is implemented and **turned off**. SMS messages cost money and Firebase Phone Auth requires the Blaze plan, so it stays off on Spark. Leave `phone` set to `false`.
+
+Reading data stays on the device until a person signs in. The sign-in screen says what will sync. Signing in is the opt-in. The sign-in session is stored only in that browser (`browserLocalPersistence`).
+
 ## Why Firebase Spark (the free plan)
 
 The free Spark plan covers this:
 
-- **Authentication** for email/password and Google is free. Sign in with Apple is also free on Firebase; the cost that blocks it is Apple’s own developer fee, not Firebase. Phone-number sign-in is not used.
+- **Authentication** for email/password and Google is free. Sign in with Apple is also free on Firebase; the cost that blocks it is Apple’s own developer fee, not Firebase. Phone sign-in is not enabled: each SMS costs money and Phone Auth requires Blaze. Leave `phone: false` on Spark.
 - **Cloud Firestore** on Spark includes 1 GiB stored, 50,000 reads a day, and 20,000 writes a day. One person creates a small profile document, one state document per Bible, and one document per bookmark or highlight. Opening the app reads those documents. That budget fits a free Bible that is not an ad network.
 - **No Cloud Functions.** Those require the paid Blaze plan. Deleting an account is done from the browser: it deletes that person’s documents, then deletes the login. Nothing is billed.
 - **No Firebase Hosting.** The sites stay on GitHub Pages. Firebase is only the account database.
@@ -72,7 +76,7 @@ The first time this device signs in to an account, on-device bookmarks and highl
 4. Under **Authentication → Settings → Authorized domains**, add `clayjartranslation.github.io` if it is not there. Do not remove `localhost`.
 5. For Google, finish the consent screen in Google Cloud if the console asks (app name, support email). The authorized domain above is the one that matters for these sites.
 6. Open **Build → Firestore Database → Create database**. Choose production mode and a region close to readers. Then open the **Rules** tab and paste `firestore.rules` from this repo. Publish.
-7. Edit `js/firebase-config.js` in **this** repo. Fill in `apiKey`, `authDomain`, `projectId`, and `appId`. Leave `bibleId` as `'ctb'`. Leave `apple: false` and `useEmulator: false`.
+7. Edit `js/firebase-config.js` in **this** repo. Fill in `apiKey`, `authDomain`, `projectId`, and `appId`. Leave `bibleId` as `'ctb'`. Leave `apple: false`, `phone: false`, and `useEmulator: false`. Replace the `[contact email]` placeholder in `terms.html` and `privacy.html` with a real address before you rely on those pages as a contact path.
 8. Copy that same file to the Clay Jar Translation repo and change only `bibleId` to `'cjt'`.
 9. Deploy both sites. The config file is loaded from the network when the phone is online, so the next visit picks it up. Readers who are offline keep the previous copy until they connect.
 10. On a phone, open the Treasure Bible, choose **Menu → Account**, create an email account, bookmark a verse, then sign in on another device and confirm the bookmark is there. Repeat once on the Translation site and confirm its bookmarks stay separate.
@@ -89,16 +93,41 @@ Keep `apple: false` until you have an Apple Developer Program account (Apple cha
 
 Until that flag is true, the Apple button is not shown.
 
+## Phone sign-in (off on Spark)
+
+Keep `phone: false` while the project is on the Spark plan. Do not upgrade to Blaze just to offer SMS. Text-message verification is billed by Google, and Firebase requires Blaze before Phone Auth will send codes.
+
+The button, country picker (every country in `js/phone-countries.js`), E.164 check, and invisible reCAPTCHA are already in the page. They stay hidden while the flag is false. If you later move the project to Blaze and accept the SMS cost:
+
+1. In Firebase Authentication, enable the Phone provider. Add `clayjartranslation.github.io` as an authorized domain if it is not already there. Firebase provisions the reCAPTCHA used by the invisible check.
+2. Set `phone: true` in `js/firebase-config.js` on both sites and deploy.
+3. The sign-in screen already says that a code is texted to the number, and that Bible progress is not uploaded until sign-in finishes.
+
+Until that flag is true, the site does not ask for a phone number.
+
+## What syncs, and only after sign-in
+
+Nothing is uploaded because someone opens a chapter. The sign-in screen lists the opt-in: place in the text, bookmarks, highlights, listening place, and listening settings. Text size and appearance stay on the device. `setPersistence(browserLocalPersistence)` keeps the Firebase session in this browser only.
+
+Signing out asks whether to keep that device copy or remove bookmarks, highlights, place, and listening progress from the device. The cloud account is unchanged until they use Delete my data and account.
+
+A JSON backup needs no account. It is on the Account page and under Bookmarks and highlights → Backup. The file includes bookmarks, highlights, reading place, listening progress, and settings. Import merges with what is already on the device. Older files that only have bookmarks and highlights still import.
+
 ## Account page
 
-**Menu → Account** (only after the config is filled in):
+**Menu → Account** (after the config is filled in). With an empty config, `#/account` only offers the on-device backup, with no sign-in controls.
 
+- A note of what stays on the device and what signing in will sync
 - Sign in with Google
 - Email and password: sign in, create account, or email a password reset
-- Sign out (the on-device copy remains)
+- Phone, only when `phone` is true
+- Save or import a backup file with no account
+- Sign out, then keep or clear this device’s copy
 - Delete my data and account (removes the login and the cloud progress for **both** Bibles, and the copy of that progress on this device)
 
-A short privacy note is on that page. There is no paywall and no ad.
+Terms of Service (`terms.html`) and Privacy Policy (`privacy.html`) are linked from the footer and the Account page. Replace `[contact email]` in both files. Those pages are plain-language explanations, not legal advice.
+
+A short privacy note is on the Account page. There is no paywall and no ad.
 
 ## Local checks
 

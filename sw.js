@@ -1,9 +1,9 @@
 /* Service worker: saves the whole site for offline reading. Bump VERSION when files change
    (tools/add-book.js does this automatically). All paths are relative, so the site works
    from a domain root or a subpath such as https://USER.github.io/treasure/. */
-const VERSION = 'ctb-v35';
+const VERSION = 'ctb-v36';
 const CORE = [
-  './', 'index.html', 'css/style.css', 'js/app.js', 'js/firebase-config.js', 'js/sync-merge.js', 'js/accounts.js', 'manifest.webmanifest',
+  './', 'index.html', 'terms.html', 'privacy.html', 'css/style.css', 'js/app.js', 'js/firebase-config.js', 'js/sync-merge.js', 'js/phone-countries.js', 'js/accounts.js', 'manifest.webmanifest',
   'data/books.json', 'data/front-matter.json',
   'icons/ctb-logo-720.jpg', 'icons/emblem-96.png', 'icons/icon-192.png', 'icons/icon-512.png',
   'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png', 'icons/favicon-32.png', 'icons/favicon-48.png',

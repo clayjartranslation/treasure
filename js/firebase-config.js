@@ -23,6 +23,8 @@
     appId: '',
     /* Sign in with Apple is built, but it stays off until a paid Apple Developer account exists. */
     apple: false,
+    /* Phone sign-in is built, but it stays off. SMS costs money and needs the Blaze plan, not Spark. */
+    phone: false,
     /* Which Bible this site saves. Do not change this on the Treasure Bible. */
     bibleId: 'ctb',
     /* Local emulator only. Keep false on GitHub Pages. */

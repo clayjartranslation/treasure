@@ -68,7 +68,15 @@
       'auth/invalid-api-key': 'The account config’s API key was rejected.',
       'auth/missing-password': 'Enter a password.',
       'auth/popup-closed-by-user': '',
-      'auth/cancelled-popup-request': ''
+      'auth/cancelled-popup-request': '',
+      'auth/invalid-phone-number': 'That phone number does not look valid.',
+      'auth/missing-phone-number': 'Enter your phone number.',
+      'auth/quota-exceeded': 'Phone sign-in is busy right now. Try email instead, or come back later.',
+      'auth/captcha-check-failed': 'The check that you are a person failed. Try again.',
+      'auth/invalid-verification-code': 'That code does not match. Try again.',
+      'auth/code-expired': 'That code expired. Ask for a new one.',
+      'auth/invalid-verification-id': 'That code expired. Ask for a new one.',
+      'auth/missing-verification-code': 'Enter the code from the text message.'
     };
     if (c && Object.prototype.hasOwnProperty.call(map, c)) return map[c];
     return 'Something went wrong' + (c ? ' (' + c + ').' : '.');
@@ -77,8 +85,8 @@
   function paintChrome() {
     var el = document.getElementById('accountBlurb');
     if (!el) return;
-    if (!user) el.textContent = 'Sign in to save your place, bookmarks, highlights, and listening position on your other devices. Reading stays free without an account.';
-    else el.textContent = 'Signed in' + (user.email ? ' as ' + user.email : '') + '. ' + (saveLabel || 'Progress saves to your account.');
+    if (!user) el.textContent = 'On this device until you sign in. Signing in is optional and is what turns on saving to your account.';
+    else el.textContent = 'Signed in' + ((user.phoneNumber || user.email) ? ' as ' + (user.phoneNumber || user.email) : '') + '. ' + (saveLabel || 'Progress saves to your account.');
   }
 
   function renderAccount(main) {
@@ -93,14 +101,20 @@
       return;
     }
     var privacy = '<section class="card account-privacy" aria-labelledby="privTitle"><h2 id="privTitle">Privacy</h2>'
-      + '<p>Sign-in is optional. You can read and listen with no account and no ads. If you sign in, this site stores your reading place, bookmarks, highlights, listening place, and listening settings under your account so another device can pick them up. The Clay Jar Translation can use the same sign-in; that Bible keeps its own progress. Passwords are handled by Firebase Authentication. Google shares only the email and name it provides. Nothing here is sold. Delete my data and account removes the sign-in and the saved progress for both Bibles.</p></section>';
+      + '<p>Reading stays on this device until you sign in. Sign-in is the choice to also save to your account. There are no ads. The full <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a> explain what is stored and how to delete it.</p></section>';
+    var backup = (window.CTBSync && CTBSync.backupPanelHtml) ? CTBSync.backupPanelHtml() : '';
     if (!user) {
       main.innerHTML = '<h1>Account</h1>'
-        + '<p class="muted">Optional. Use it only if you want this Bible’s place, bookmarks, highlights, and listening position on your other devices.</p>'
+        + '<div class="callout" role="note" id="acctOptIn"><strong>On this device until you sign in.</strong>'
+        + '<p>Bookmarks, highlights, your place in the text, and listening progress stay in this browser. Nothing is sent to an account unless you sign in. Signing in is optional. If you do, this device also saves to your account:</p>'
+        + '<ul><li>your place in the text</li><li>bookmarks</li><li>highlights</li><li>where you are in the audio, and listening settings such as speed and voice</li></ul>'
+        + '<p>Text size and light or dark stay on this device. The Clay Jar Translation can use the same sign-in and keeps its own progress.</p></div>'
         + '<div class="card account-card"><div class="account-actions">'
         + '<button type="button" class="btn account-provider" id="acctGoogle">Sign in with Google</button>'
         + (cfg.apple === true ? '<button type="button" class="btn account-provider" id="acctApple">Sign in with Apple</button>' : '')
-        + '</div><form class="account-form" id="acctForm">'
+        + '</div>'
+        + (cfg.phone === true ? phoneBoxHtml() : '')
+        + '<form class="account-form" id="acctForm">'
         + '<label for="acctEmail">Email</label><input id="acctEmail" name="email" type="email" autocomplete="username" inputmode="email" required>'
         + '<label for="acctPass">Password</label><input id="acctPass" name="password" type="password" autocomplete="current-password" minlength="8" required>'
         + '<p class="account-error" id="acctError" role="alert" hidden></p>'
@@ -108,19 +122,45 @@
         + '<button type="submit" class="btn primary" id="acctSignIn">Sign in</button>'
         + '<button type="button" class="btn" id="acctCreate">Create account</button>'
         + '<button type="button" class="btn" id="acctReset">Email me a password reset</button>'
-        + '</div></form></div>' + privacy;
+        + '</div></form></div>' + backup + privacy;
       wireSignedOut();
+      if (window.CTBSync && CTBSync.wireBackupPanel) CTBSync.wireBackupPanel();
       return;
     }
+    var who = user.phoneNumber || user.email || 'Signed in';
     main.innerHTML = '<h1>Account</h1>'
-      + '<div class="card account-card"><p class="account-who">' + esc(user.email || 'Signed in') + '</p>'
+      + '<div class="card account-card"><p class="account-who">' + esc(who) + '</p>'
       + '<p class="account-status" id="acctStatus" role="status">' + esc(saveLabel || 'Saved to your account.') + '</p>'
-      + '<p class="muted">This Bible’s place, bookmarks, highlights, and listening position are stored under your account, separate from the Clay Jar Translation.</p>'
-      + '<div class="account-actions"><button type="button" class="btn" id="acctSignOut">Sign out</button></div>'
+      + '<p class="muted">This Bible’s place, bookmarks, highlights, and listening position are stored under your account, separate from the Clay Jar Translation. The sign-in itself stays in this browser.</p>'
+      + '<div id="acctSession"><div class="account-actions"><button type="button" class="btn" id="acctSignOut">Sign out</button></div></div>'
       + '<div class="account-danger" id="acctDanger"><button type="button" class="btn account-delete" id="acctDelete">Delete my data and account</button></div>'
-      + '</div>' + privacy;
-    $('#acctSignOut').addEventListener('click', function () { signOutUser(); });
+      + '</div>' + backup + privacy;
+    $('#acctSignOut').addEventListener('click', confirmSignOut);
     $('#acctDelete').addEventListener('click', confirmDelete);
+    if (window.CTBSync && CTBSync.wireBackupPanel) CTBSync.wireBackupPanel();
+  }
+
+  function phoneBoxHtml() {
+    var phone = window.ClayJarPhone;
+    var list = phone ? phone.countries : [];
+    var guess = phone ? phone.guessIso() : 'US';
+    var options = list.map(function (c) {
+      return '<option value="' + esc(c.iso) + '"' + (c.iso === guess ? ' selected' : '') + '>' + esc(c.name) + ' (+' + esc(c.dial) + ')</option>';
+    }).join('');
+    return '<div class="account-phone" id="acctPhoneBox"><h2>Phone number</h2>'
+      + '<div id="acctRecaptcha"></div>'
+      + '<label for="acctCountryFilter">Find a country</label>'
+      + '<input id="acctCountryFilter" type="search" autocomplete="off" enterkeyhint="search" placeholder="Type a country or code">'
+      + '<label for="acctCountry">Country</label>'
+      + '<select id="acctCountry" autocomplete="tel-country-code">' + options + '</select>'
+      + '<label for="acctPhone">Phone number</label>'
+      + '<div class="phone-row"><span class="phone-cc" id="acctCc" aria-hidden="true"></span>'
+      + '<input id="acctPhone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="National number"></div>'
+      + '<p class="account-status" id="acctPhonePreview" aria-live="polite"></p>'
+      + '<div class="account-actions"><button type="button" class="btn" id="acctPhoneSend">Text me a sign-in code</button></div>'
+      + '<div id="acctCodeBox" hidden><label for="acctCode">Code from the text message</label>'
+      + '<input id="acctCode" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]*">'
+      + '<div class="account-actions"><button type="button" class="btn primary" id="acctCodeGo">Sign in with this code</button></div></div></div>';
   }
 
   function showError(msg) {
@@ -177,6 +217,85 @@
     $('#acctGoogle').addEventListener('click', function () { signInProvider(googleProvider()); });
     var appleBtn = $('#acctApple');
     if (appleBtn) appleBtn.addEventListener('click', function () { signInProvider(appleProvider()); });
+    if (cfg.phone === true) wirePhone();
+  }
+
+  var phoneConfirm = null, phoneVerifier = null;
+  function resetVerifier() {
+    if (phoneVerifier) { try { phoneVerifier.clear(); } catch (e) {} phoneVerifier = null; }
+  }
+  function verifierFor(containerId) {
+    resetVerifier();
+    var el = document.getElementById(containerId);
+    if (!el) {
+      el = document.createElement('div');
+      el.id = containerId;
+      document.body.appendChild(el);
+    }
+    phoneVerifier = new authMods.RecaptchaVerifier(auth, containerId, { size: 'invisible' });
+    return phoneVerifier;
+  }
+  function refreshPhonePreview() {
+    var preview = $('#acctPhonePreview');
+    var cc = $('#acctCc');
+    var country = window.ClayJarPhone && ClayJarPhone.find($('#acctCountry').value);
+    if (cc && country) cc.textContent = '+' + country.dial;
+    if (!preview || !window.ClayJarPhone) return;
+    var parsed = ClayJarPhone.toE164($('#acctCountry').value, $('#acctPhone').value);
+    preview.textContent = $('#acctPhone').value ? (parsed.e164 || parsed.error || '') : '';
+  }
+  function fillCountrySelect(query) {
+    var sel = $('#acctCountry');
+    if (!sel || !window.ClayJarPhone) return;
+    var current = sel.value;
+    var q = String(query || '').trim().toLowerCase();
+    var list = ClayJarPhone.countries.filter(function (c) {
+      if (!q) return true;
+      return c.name.toLowerCase().indexOf(q) !== -1 || c.iso.toLowerCase() === q || ('+' + c.dial).indexOf(q.replace(/\s/g, '')) !== -1;
+    });
+    if (!list.length) return;
+    sel.innerHTML = list.map(function (c) {
+      return '<option value="' + esc(c.iso) + '">' + esc(c.name) + ' (+' + esc(c.dial) + ')</option>';
+    }).join('');
+    if (list.some(function (c) { return c.iso === current; })) sel.value = current;
+    refreshPhonePreview();
+  }
+  function wirePhone() {
+    if (!window.ClayJarPhone) return;
+    fillCountrySelect('');
+    $('#acctCountryFilter').addEventListener('input', function (e) { fillCountrySelect(e.target.value); });
+    $('#acctCountry').addEventListener('change', refreshPhonePreview);
+    $('#acctPhone').addEventListener('input', refreshPhonePreview);
+    refreshPhonePreview();
+    $('#acctPhoneSend').addEventListener('click', sendPhoneCode);
+    $('#acctCodeGo').addEventListener('click', confirmPhoneCode);
+  }
+  function sendPhoneCode() {
+    var parsed = window.ClayJarPhone.toE164($('#acctCountry').value, $('#acctPhone').value);
+    if (parsed.error) { showError(parsed.error); return; }
+    showError('');
+    var btn = $('#acctPhoneSend');
+    if (btn) btn.disabled = true;
+    authMods.signInWithPhoneNumber(auth, parsed.e164, verifierFor('acctRecaptcha')).then(function (result) {
+      phoneConfirm = result;
+      var box = $('#acctCodeBox');
+      if (box) box.hidden = false;
+      var code = $('#acctCode');
+      if (code) code.focus();
+      showError('');
+      var preview = $('#acctPhonePreview');
+      if (preview) preview.textContent = 'A code was sent to ' + parsed.e164 + '.';
+    }).catch(function (err) {
+      resetVerifier();
+      showError(explain(err));
+    }).then(function () { if (btn) btn.disabled = false; });
+  }
+  function confirmPhoneCode() {
+    var code = ($('#acctCode').value || '').replace(/\D/g, '');
+    if (!phoneConfirm) { showError('Ask for a code first.'); return; }
+    if (code.length < 4) { showError('Enter the code from the text message.'); return; }
+    showError('');
+    phoneConfirm.confirm(code).catch(function (err) { showError(explain(err)); });
   }
 
   var authMods = null, fsMods = null;
@@ -203,30 +322,67 @@
       if (msg) showError(msg);
     });
   }
-  function signOutUser() {
-    authMods.signOut(auth).then(function () { toast('Signed out. This device keeps its own copy.'); }).catch(function (err) { toast(explain(err)); });
+  function signOutUser(clearLocal) {
+    var done = function () {
+      toast(clearLocal ? 'Signed out. The copy on this device was removed.' : 'Signed out. The copy on this device was kept.');
+    };
+    if (clearLocal && window.CTBSync && CTBSync.clearProgress) CTBSync.clearProgress();
+    authMods.signOut(auth).then(done).catch(function (err) { toast(explain(err)); });
+  }
+  function confirmSignOut() {
+    var box = document.getElementById('acctSession');
+    if (!box) { signOutUser(false); return; }
+    box.innerHTML = '<p><strong>Sign out</strong></p>'
+      + '<p>Your account stays. Choose what to do with the bookmarks, highlights, place, and listening progress on this device.</p>'
+      + '<div class="account-actions">'
+      + '<button type="button" class="btn" id="acctOutKeep">Sign out and keep data on this device</button>'
+      + '<button type="button" class="btn" id="acctOutClear">Sign out and remove data from this device</button>'
+      + '<button type="button" class="btn" id="acctOutCancel">Cancel</button></div>';
+    $('#acctOutKeep').addEventListener('click', function () { signOutUser(false); });
+    $('#acctOutClear').addEventListener('click', function () { signOutUser(true); });
+    $('#acctOutCancel').addEventListener('click', function () { renderAccount($('#main')); });
   }
 
+  function phoneOnly(u) {
+    var ids = (u && u.providerData || []).map(function (p) { return p.providerId; });
+    return ids.indexOf('phone') !== -1 && ids.indexOf('password') === -1;
+  }
   function confirmDelete() {
     var box = document.getElementById('acctDanger');
     if (!box || !user) return;
     var needsPass = user.providerData && user.providerData.some(function (p) { return p.providerId === 'password'; });
+    var needsPhone = phoneOnly(user);
     box.innerHTML = '<p><strong>Delete everything saved to this account?</strong> This removes the sign-in and the cloud progress for both the Clay Jar Treasure Bible and the Clay Jar Translation, and the copy of that progress on this device. The Bible text stays free to read. This cannot be undone.</p>'
       + (needsPass ? '<label for="acctAgain">Password <span class="visually-hidden">to confirm deletion</span></label><input id="acctAgain" type="password" autocomplete="current-password">' : '')
+      + (needsPhone ? '<p>We will text a code to ' + esc(user.phoneNumber || 'your phone') + ' to confirm it is you.</p><div id="acctRecaptcha"></div><div class="account-actions"><button type="button" class="btn" id="acctPhoneReauth">Text me a code</button></div><label for="acctAgainCode">Code</label><input id="acctAgainCode" inputmode="numeric" autocomplete="one-time-code">' : '')
       + '<div class="account-actions"><button type="button" class="btn account-delete" id="acctDeleteConfirm">Delete forever</button><button type="button" class="btn" id="acctDeleteCancel">Cancel</button></div>'
       + '<p class="account-error" id="acctError" role="alert" hidden></p>';
     $('#acctDeleteCancel').addEventListener('click', function () { renderAccount($('#main')); });
+    var reauthBtn = $('#acctPhoneReauth');
+    if (reauthBtn) reauthBtn.addEventListener('click', function () {
+      showError('');
+      authMods.signInWithPhoneNumber(auth, user.phoneNumber, verifierFor('acctRecaptcha')).then(function (result) {
+        phoneConfirm = result;
+        showError('');
+        var err = $('#acctError');
+        if (err) { err.hidden = false; err.textContent = 'Enter the code, then delete forever.'; }
+      }).catch(function (err) { resetVerifier(); showError(explain(err)); });
+    });
     $('#acctDeleteConfirm').addEventListener('click', function () {
-      doDelete(needsPass ? ($('#acctAgain').value || '') : '');
+      doDelete(needsPass ? ($('#acctAgain').value || '') : '', needsPhone ? (($('#acctAgainCode') && $('#acctAgainCode').value) || '') : '');
     });
   }
 
-  function doDelete(password) {
+  function doDelete(password, phoneCode) {
     var current = user;
     if (!current) return;
-    var again = password
-      ? authMods.reauthenticateWithCredential(current, authMods.EmailAuthProvider.credential(current.email, password))
-      : Promise.resolve();
+    var again = Promise.resolve();
+    if (password) again = authMods.reauthenticateWithCredential(current, authMods.EmailAuthProvider.credential(current.email, password));
+    else if (phoneOnly(current)) {
+      var code = String(phoneCode || '').replace(/\D/g, '');
+      if (!phoneConfirm || code.length < 4) { showError('Text yourself a code, then enter it here.'); return; }
+      again = authMods.reauthenticateWithCredential(current, authMods.PhoneAuthProvider.credential(phoneConfirm.verificationId, code));
+    }
     again.then(function () { return wipeAccount(current); }).then(function () {
       return authMods.deleteUser(current);
     }).then(function () {
@@ -524,7 +680,10 @@
         authMods.connectAuthEmulator(auth, 'http://' + host + ':' + (cfg.authEmulatorPort || 9099), { disableWarnings: true });
         fsMods.connectFirestoreEmulator(db, host, cfg.firestoreEmulatorPort || 8080);
       }
-      return authMods.getRedirectResult(auth).catch(function () { return null; });
+      /* The sign-in session stays in this browser only. It is not a session cookie and it is not shared with other devices. */
+      return authMods.setPersistence(auth, authMods.browserLocalPersistence).then(function () {
+        return authMods.getRedirectResult(auth).catch(function () { return null; });
+      });
     }).then(function () {
       authMods.onAuthStateChanged(auth, onUser);
       booted = true;

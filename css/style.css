@@ -436,7 +436,28 @@ html[data-accounts="on"] .account-blurb { display: block; margin: .35rem 0 .15re
 .account-who { margin: 0; font-weight: 700; overflow-wrap: anywhere; }
 .account-status { margin: 0; }
 .account-privacy h2 { margin-top: 0; font-size: 1.15rem; }
-.account-privacy p { margin: 0; font-size: 1rem; line-height: 1.5; }
+.account-privacy p, .account-backup p, .callout ul { margin: .4rem 0 0; font-size: 1rem; line-height: 1.5; }
+.callout ul { padding-left: 1.2rem; }
+.account-backup h2, .account-phone h2 { margin: 0; font-size: 1.15rem; }
+.account-phone, .account-backup { display: grid; gap: .45rem; }
+.account-phone select, .account-form select {
+  font: inherit; font-size: 1rem; min-height: var(--hit); width: 100%;
+  border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink); padding: .4rem .7rem;
+}
+.phone-row { display: flex; align-items: center; gap: .5rem; }
+.phone-cc { font-weight: 700; min-width: 3.2rem; font-variant-numeric: tabular-nums; }
+.phone-row input { flex: 1; min-width: 0; }
+.account-legal-links { display: flex; flex-wrap: wrap; gap: .25rem 1rem; }
+.account-legal-links a { display: inline-flex; align-items: center; min-height: var(--hit); }
+.legal-page { max-width: 40rem; margin: 0 auto; padding: 1.25rem max(1.15rem, env(safe-area-inset-right)) calc(2rem + env(safe-area-inset-bottom)) max(1.15rem, env(safe-area-inset-left)); }
+.legal-page h1 { font-family: var(--serif); font-size: clamp(1.8rem, 7vw, 2.3rem); line-height: 1.2; }
+.legal-page h2 { font-family: var(--serif); font-size: 1.3rem; margin: 1.6rem 0 .4rem; }
+.legal-page p, .legal-page li { font-size: 1rem; line-height: 1.6; }
+.legal-page ul { padding-left: 1.2rem; }
+.legal-note { color: var(--ink-soft); }
+.legal-placeholder { font-weight: 700; }
+.legal-nav { display: flex; flex-wrap: wrap; gap: .25rem 1rem; margin: 1rem 0; }
+.legal-nav a, .legal-page .bar a { display: inline-flex; align-items: center; min-height: var(--hit); }
 .account-delete { border-color: #b3261e; color: #b3261e; }
 .account-danger { display: grid; gap: .6rem; border-top: 1px solid var(--line); padding-top: .75rem; }
 @media (prefers-color-scheme: dark) {

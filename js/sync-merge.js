@@ -158,6 +158,36 @@
     return local || { bookmarks: [], highlights: [], tombs: { bm: {}, hl: {} }, reading: null, audio: null, audioSettings: null };
   }
 
+  /* A backup file becomes the same shape as a cloud snapshot so import can merge. */
+  function backupToSnapshot(d) {
+    if (!d || d.format !== 'ctb-saved' || !Array.isArray(d.bookmarks) || !Array.isArray(d.highlights)) {
+      return { error: 'That file is not a Clay Jar Treasure Bible backup.' };
+    }
+    var fallback = Date.parse(d.exportedAt);
+    if (!isFinite(fallback)) fallback = 0;
+    var reading = d.lastRead || d.reading || null;
+    if (reading && typeof reading === 'object' && !ts(reading.t) && fallback) reading = Object.assign({}, reading, { t: fallback });
+    var audio = d.audio || null;
+    if (audio && typeof audio === 'object' && !ts(audio.t) && fallback) audio = Object.assign({}, audio, { t: fallback });
+    var settings = d.settings && typeof d.settings === 'object' ? d.settings : null;
+    var audioSettings = null;
+    if (settings) {
+      audioSettings = {
+        rate: settings.rate, voice: settings.voice, voiceName: settings.voiceName,
+        autoNext: settings.autoNext, narr: settings.narr,
+        sleepChoice: settings.sleepChoice, sleepCustom: settings.sleepCustom,
+        t: ts(settings.audioSettingsT) || fallback || 0
+      };
+    }
+    return {
+      snapshot: {
+        bookmarks: d.bookmarks, highlights: d.highlights, tombs: { bm: {}, hl: {} },
+        reading: reading, audio: audio, audioSettings: audioSettings
+      },
+      settings: settings
+    };
+  }
+
   root.ClayJarSync = {
     BIBLE_IDS: BIBLE_IDS,
     configEnabled: configEnabled,
@@ -167,7 +197,8 @@
     cleanAudio: cleanAudio,
     cleanAudioSettings: cleanAudioSettings,
     mergeSnapshots: mergeSnapshots,
-    localForAccount: localForAccount
+    localForAccount: localForAccount,
+    backupToSnapshot: backupToSnapshot
   };
 })(typeof globalThis !== 'undefined' ? globalThis : this);
 

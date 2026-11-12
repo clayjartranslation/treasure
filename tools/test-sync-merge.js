@@ -8,6 +8,7 @@ const cfgSrc = fs.readFileSync(path.join(__dirname, '../js/firebase-config.js'),
 assert(cfgSrc.includes("apiKey: ''"), 'committed config must not contain an API key');
 assert(cfgSrc.includes("bibleId: 'ctb'"));
 assert(cfgSrc.includes('apple: false'));
+assert(cfgSrc.includes('phone: false'));
 assert(cfgSrc.includes('useEmulator: false'));
 assert.strictEqual(Sync.configEnabled({ apiKey: '', authDomain: '', projectId: '', appId: '' }), false);
 assert.strictEqual(Sync.configEnabled({}), false);
@@ -108,5 +109,23 @@ const kept = Sync.localForAccount('user-a', 'user-a', { bookmarks: [bm('a', 1, 1
 assert.strictEqual(kept.bookmarks.length, 1);
 const first = Sync.localForAccount('', 'user-a', { bookmarks: [bm('a', 1, 1)] });
 assert.strictEqual(first.bookmarks.length, 1);
+
+const file = Sync.backupToSnapshot({
+  format: 'ctb-saved', version: 2, exportedAt: '2026-01-02T00:00:00.000Z',
+  bookmarks: [bm('file', 4, 10)], highlights: [hl('hf', 0, 3, 'pink', 10)],
+  lastRead: { book: 'job', name: 'Job', ch: 1, v: 2, t: 50 },
+  audio: { book: 'job', name: 'Job', ch: 1, v: 2, time: 4, mode: 'rec', narr: '', t: 50 },
+  settings: { rate: 1.25, voice: '', autoNext: true, narr: '', sleepChoice: 'off', sleepCustom: 20, audioSettingsT: 50, theme: 'dark' }
+});
+assert.ok(!file.error);
+const mergedFile = Sync.mergeSnapshots(
+  { bookmarks: [bm('local', 1, 5)], highlights: [], reading: { book: 'genesis', name: 'Genesis', ch: 1, v: 1, t: 100 }, audioSettings: { rate: 1, voice: '', autoNext: true, narr: '', sleepChoice: 'off', sleepCustom: 20, t: 100 } },
+  file.snapshot
+);
+assert.deepStrictEqual(mergedFile.bookmarks.map((b) => b.id).sort(), ['file', 'local']);
+assert.strictEqual(mergedFile.reading.book, 'genesis');
+assert.strictEqual(mergedFile.audioSettings.rate, 1);
+assert.strictEqual(file.settings.theme, 'dark');
+assert.ok(Sync.backupToSnapshot({ format: 'nope' }).error);
 
 console.log('sync-merge: ok');
