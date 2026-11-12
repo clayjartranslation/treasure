@@ -76,7 +76,7 @@ The first time this device signs in to an account, on-device bookmarks and highl
 4. Under **Authentication → Settings → Authorized domains**, add `clayjartranslation.github.io` if it is not there. Do not remove `localhost`.
 5. For Google, finish the consent screen in Google Cloud if the console asks (app name, support email). The authorized domain above is the one that matters for these sites.
 6. Open **Build → Firestore Database → Create database**. Choose production mode and a region close to readers. Then open the **Rules** tab and paste `firestore.rules` from this repo. Publish.
-7. Edit `js/firebase-config.js` in **this** repo. Fill in `apiKey`, `authDomain`, `projectId`, and `appId`. Leave `bibleId` as `'ctb'`. Leave `apple: false`, `phone: false`, and `useEmulator: false`. Replace the `[contact email]` placeholder in `terms.html` and `privacy.html` with a real address before you rely on those pages as a contact path.
+7. Edit `js/firebase-config.js` in **this** repo. Fill in `apiKey`, `authDomain`, `projectId`, and `appId`. Leave `bibleId` as `'ctb'`. Leave `apple: false`, `phone: false`, and `useEmulator: false`. The public contact address on the terms and privacy pages is [contact.clayjar@protonmail.com](mailto:contact.clayjar@protonmail.com).
 8. Copy that same file to the Clay Jar Translation repo and change only `bibleId` to `'cjt'`.
 9. Deploy both sites. The config file is loaded from the network when the phone is online, so the next visit picks it up. Readers who are offline keep the previous copy until they connect.
 10. On a phone, open the Treasure Bible, choose **Menu → Account**, create an email account, bookmark a verse, then sign in on another device and confirm the bookmark is there. Repeat once on the Translation site and confirm its bookmarks stay separate.
@@ -125,7 +125,7 @@ A JSON backup needs no account. It is on the Account page and under Bookmarks an
 - Sign out, then keep or clear this device’s copy
 - Delete my data and account (removes the login and the cloud progress for **both** Bibles, and the copy of that progress on this device)
 
-Terms of Service (`terms.html`) and Privacy Policy (`privacy.html`) are linked from the footer and the Account page. Replace `[contact email]` in both files. Those pages are plain-language explanations, not legal advice.
+Terms of Service (`terms.html`) and Privacy Policy (`privacy.html`) are linked from the footer and the Account page. Questions go to [contact.clayjar@protonmail.com](mailto:contact.clayjar@protonmail.com). Those pages are plain-language explanations, not legal advice.
 
 A short privacy note is on the Account page. There is no paywall and no ad.
 
