@@ -1,9 +1,9 @@
 /* Service worker: saves the whole site for offline reading. Bump VERSION when files change
    (tools/add-book.js does this automatically). All paths are relative, so the site works
    from a domain root or a subpath such as https://USER.github.io/treasure/. */
-const VERSION = 'ctb-v34';
+const VERSION = 'ctb-v35';
 const CORE = [
-  './', 'index.html', 'css/style.css', 'js/app.js', 'manifest.webmanifest',
+  './', 'index.html', 'css/style.css', 'js/app.js', 'js/firebase-config.js', 'js/sync-merge.js', 'js/accounts.js', 'manifest.webmanifest',
   'data/books.json', 'data/front-matter.json',
   'icons/ctb-logo-720.jpg', 'icons/emblem-96.png', 'icons/icon-192.png', 'icons/icon-512.png',
   'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png', 'icons/favicon-32.png', 'icons/favicon-48.png',
@@ -32,10 +32,14 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const req = event.request;
   if (req.method !== 'GET' || new URL(req.url).origin !== location.origin) return;
-  const isData = /\/data\/.+\.json$/.test(new URL(req.url).pathname);
+  const path = new URL(req.url).pathname;
+  const isData = /\/data\/.+\.json$/.test(path);
+  /* The account config is edited in place. Fetch it from the network when online so sign-in
+     can be switched on without waiting for the next book publish to bump the cache. */
+  const isConfig = /\/js\/firebase-config\.js$/.test(path);
   event.respondWith((async () => {
     const cache = await caches.open(VERSION);
-    if (isData) {
+    if (isData || isConfig) {
       // Data: always try the network first (bypassing the browser cache) so new chapters show up;
       // fall back to the saved copy when offline.
       try {

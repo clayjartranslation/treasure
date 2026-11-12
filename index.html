@@ -12,6 +12,7 @@
   <link rel="icon" href="icons/favicon-48.png" sizes="48x48" type="image/png">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Treasure Bible">
   <link rel="stylesheet" href="css/style.css">
@@ -80,10 +81,12 @@
         <span class="track" aria-hidden="true"></span>
       </label>
     </div>
+    <p class="account-only account-blurb" id="accountBlurb">Sign in to save your place on your other devices.</p>
     <div class="setting setting-links">
       <a class="btn" href="#/saved/bookmarks">Bookmarks</a>
       <a class="btn" href="#/saved/highlights">Highlights</a>
       <a class="btn" href="#/saved/backup">Backup</a>
+      <a class="btn account-only" href="#/account">Account</a>
     </div>
   </div>
 
@@ -175,6 +178,9 @@
     <p class="foot-small">Looking for a word-for-word, public-domain Bible? See the <a href="https://clayjartranslation.github.io/" rel="noopener">Clay Jar Translation</a>.</p>
   </footer>
 
+  <script src="js/firebase-config.js" defer></script>
+  <script src="js/sync-merge.js" defer></script>
   <script src="js/app.js" defer></script>
+  <script src="js/accounts.js" defer></script>
 </body>
 </html>
