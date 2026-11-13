@@ -1,9 +1,9 @@
 /* Service worker: saves the whole site for offline reading. Bump VERSION when files change
    (tools/add-book.js does this automatically). All paths are relative, so the site works
    from a domain root or a subpath such as https://USER.github.io/treasure/. */
-const VERSION = 'ctb-v40';
+const VERSION = 'ctb-v41';
 const CORE = [
-  './', 'index.html', 'terms.html', 'privacy.html', 'devotional.html', 'css/style.css', 'js/app.js', 'js/firebase-config.js', 'js/sync-merge.js', 'js/phone-countries.js', 'js/accounts.js', 'manifest.webmanifest',
+  './', 'index.html', 'terms.html', 'privacy.html', 'devotional.html', 'downloads.html', 'css/style.css', 'js/app.js', 'js/firebase-config.js', 'js/devotional-email-config.js', 'js/sync-merge.js', 'js/phone-countries.js', 'js/accounts.js', 'manifest.webmanifest',
   'data/books.json', 'data/front-matter.json', 'data/devotionals.json',
   'icons/ctb-logo-720.jpg', 'icons/emblem-96.png', 'icons/icon-192.png', 'icons/icon-512.png',
   'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png', 'icons/favicon-32.png', 'icons/favicon-48.png',
@@ -34,9 +34,9 @@ self.addEventListener('fetch', (event) => {
   if (req.method !== 'GET' || new URL(req.url).origin !== location.origin) return;
   const path = new URL(req.url).pathname;
   const isData = /\/data\/.+\.json$/.test(path);
-  /* The account config is edited in place. Fetch it from the network when online so sign-in
-     can be switched on without waiting for the next book publish to bump the cache. */
-  const isConfig = /\/js\/firebase-config\.js$/.test(path);
+  /* Account and devotional-email config are edited in place. Fetch them from the network when
+     online so a filled-in file shows up without waiting for the next cache bump. */
+  const isConfig = /\/js\/(?:firebase-config|devotional-email-config)\.js$/.test(path);
   event.respondWith((async () => {
     const cache = await caches.open(VERSION);
     if (isData || isConfig) {

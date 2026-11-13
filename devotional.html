@@ -50,6 +50,12 @@
       <span>CTB<span class="tm">™</span></span>
     </a>
   </header>
+  <nav class="site-nav" aria-label="Site">
+    <a href="./">Read</a>
+    <a href="devotional.html" aria-current="page">Devotional</a>
+    <a href="downloads.html">Downloads</a>
+    <a href="./#/books">Books</a>
+  </nav>
   <main class="legal-page devo" id="main" tabindex="-1">
     <p class="eyebrow">Clay Jar Treasure Bible</p>
     <h1 id="pageTitle">Today's devotional</h1>
@@ -72,6 +78,18 @@
       </section>
       <p class="devo-read"><a class="btn" id="entryLink" href="./">Read this chapter</a></p>
     </article>
+    <section class="card email-signup" id="email-signup" hidden>
+      <h2>Get it by email</h2>
+      <p>A free email each morning around 4:00 Eastern, with the verse, the reflection, and the prayer. No ads. You confirm from your inbox before anything is sent, and you can unsubscribe any time.</p>
+      <form id="email-form" method="post" action="">
+        <label for="email-address">Email</label>
+        <input id="email-address" name="EMAIL" type="email" required autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" placeholder="you@example.com">
+        <input class="email-hp" type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="locale" value="en">
+        <button class="btn primary" type="submit">Subscribe</button>
+      </form>
+      <p class="legal-note">Your email is stored by Brevo only to send this devotional. It is not sold. <a href="privacy.html">Privacy Policy</a>.</p>
+    </section>
     <nav aria-labelledby="archiveTitle">
       <h2 id="archiveTitle">Archive</h2>
       <ul class="links" id="archive"></ul>
@@ -82,7 +100,7 @@
     <p><strong>Clay Jar Treasure Bible</strong><br>© 2026 Jose Santiago. All rights reserved.</p>
     <p class="foot-small">Clay Jar Treasure Bible™, Clay Jar Translation™ and their logos are trademarks of Jose Santiago.</p>
     <p class="foot-small">Scripture quotations are from the Clay Jar Treasure Bible, © 2026 Jose Santiago. All rights reserved.</p>
-    <p class="foot-small"><a href="./">Back to reading</a> <a href="terms.html">Terms of Service</a> <a href="privacy.html">Privacy Policy</a></p>
+    <p class="foot-small"><a href="./">Back to reading</a> <a href="downloads.html">Downloads</a> <a href="terms.html">Terms of Service</a> <a href="privacy.html">Privacy Policy</a></p>
   </footer>
 
   <script id="devo-core">
@@ -317,6 +335,22 @@
       }).catch(function () {
         note.textContent = 'The devotionals could not be loaded. Open this page once while online, and it can be read offline afterward.';
       });
+    })();
+  </script>
+  <script src="js/devotional-email-config.js"></script>
+  <script>
+    (function () {
+      var ready = window.ctbDevotionalEmailReady && window.ctbDevotionalEmailReady();
+      var box = document.getElementById('email-signup');
+      var form = document.getElementById('email-form');
+      if (!box || !form) return;
+      form.addEventListener('submit', function (event) {
+        var action = form.getAttribute('action') || '';
+        if (!/^https:\/\/\S+$/i.test(action)) event.preventDefault();
+      });
+      if (!ready) return;
+      form.setAttribute('action', ready.formAction);
+      box.hidden = false;
     })();
   </script>
   <script>
