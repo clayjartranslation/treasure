@@ -12,6 +12,14 @@
   const settings = Object.assign({ theme: 'auto', size: 19, notes: true, resume: false, rate: 1, voice: '', autoNext: true, sleepChoice: 'off', sleepCustom: 20 }, readJSON('ctb-settings'));
   function readJSON(k) { try { return JSON.parse(localStorage.getItem(k) || '{}'); } catch (e) { return {}; } }
   function saveSettings() { try { localStorage.setItem('ctb-settings', JSON.stringify(settings)); } catch (e) {} }
+  function emailCallout() {
+    if (!window.ctbDevotionalEmailReady || !window.ctbDevotionalEmailReady()) return '';
+    return `<aside class="callout email-callout">
+        <strong>Get it by email</strong>
+        <p>The daily devotional can arrive each morning, free. No ads. Unsubscribe any time.</p>
+        <a class="btn" href="devotional.html#email-signup">Get it by email</a>
+      </aside>`;
+  }
   function accountsConfigured() {
     return !!(window.ClayJarSync && ClayJarSync.configEnabled && ClayJarSync.configEnabled(window.CLAYJAR_ACCOUNTS));
   }
@@ -149,6 +157,7 @@
           <a class="btn" href="#/books">All books</a>
         </div>
         <p class="verse-quote">God’s treasure, carried in clay jars like us.<br><small>Based on 2 Corinthians 4:7</small></p>
+        ${emailCallout()}
       </section>
 
       <section class="card prayer" aria-labelledby="prayerTitle">
@@ -164,7 +173,7 @@
 
       <section class="card share" aria-labelledby="shareTitle" style="margin-top:1.25rem">
         <h2 id="shareTitle" style="margin:0;font-size:1.1rem">Download and share</h2>
-        <p class="muted" style="margin:.35rem 0 .75rem">This Bible is free to read online, and this site works offline once you have opened it. It is copyrighted. You may quote brief passages with credit (see the copyright page).</p>
+        <p class="muted" style="margin:.35rem 0 .75rem">This Bible is free to read online, and this site works offline once you have opened it. It is copyrighted. You may quote brief passages with credit (see the copyright page). <a href="downloads.html">Downloads</a> explains how to keep it on your phone.</p>
         <div class="cta" style="justify-content:flex-start;margin:0">
           <button class="btn" type="button" id="shareBtn">Share this Bible</button>
         </div>

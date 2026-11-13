@@ -18,7 +18,10 @@
   --measure: 36rem;
   --hit: 2.75rem; /* 44px tap target */
   --bar-pad: .5rem;
-  --bar-h: calc(1px + var(--bar-pad) * 2 + var(--hit) + env(safe-area-inset-top, 0px));
+  --header-h: calc(1px + var(--bar-pad) * 2 + var(--hit) + env(safe-area-inset-top, 0px));
+  /* Two rows of nav buttons below 700px, one row above. Kept in step with .site-nav. */
+  --site-nav-h: calc(var(--hit) * 2 + 1.2rem + 2px);
+  --bar-h: calc(var(--header-h) + var(--site-nav-h));
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
@@ -78,6 +81,45 @@ button { font: inherit; color: inherit; }
 }
 .icon-btn:hover, .icon-btn[aria-expanded="true"] { background: var(--clay-soft); color: var(--clay); }
 .icon-btn svg { width: 1.35rem; height: 1.35rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Site sections. Buttons, not underlined text, so Devotional and Downloads are easy to see. */
+.site-nav {
+  position: sticky; top: var(--header-h); z-index: 18;
+  display: grid; grid-template-columns: 1fr 1fr; gap: .4rem;
+  padding: .35rem max(.75rem, env(safe-area-inset-right)) .45rem max(.75rem, env(safe-area-inset-left));
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: saturate(1.4) blur(12px); -webkit-backdrop-filter: saturate(1.4) blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.site-nav a {
+  display: inline-flex; align-items: center; justify-content: center; text-align: center;
+  min-width: 0; min-height: var(--hit); padding: .35rem .75rem; border-radius: 999px;
+  text-decoration: none; font-weight: 700; font-size: .98rem; line-height: 1.2;
+  border: 1px solid var(--line); background: var(--bg-raised); color: var(--ink);
+  touch-action: manipulation;
+}
+.site-nav a:hover { background: var(--clay-soft); border-color: var(--clay); color: var(--ink); }
+.site-nav a[aria-current="page"] {
+  background: var(--brown, #5a2e1a); border-color: var(--brown, #5a2e1a); color: #fff9eb;
+}
+.site-nav a[aria-current="page"]:hover {
+  background: var(--brown, #5a2e1a); border-color: var(--brown, #5a2e1a); color: #fff9eb;
+}
+@media (min-width: 700px) {
+  :root { --site-nav-h: calc(var(--hit) + .9rem); }
+  .site-nav { display: flex; flex-wrap: wrap; justify-content: center; }
+  .site-nav a { flex: 0 1 auto; min-width: 6.5rem; }
+}
+:root[data-theme="dark"] .site-nav a[aria-current="page"],
+:root[data-theme="dark"] .site-nav a[aria-current="page"]:hover {
+  background: var(--clay); border-color: var(--clay); color: #1d1410;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .site-nav a[aria-current="page"],
+  :root:not([data-theme="light"]) .site-nav a[aria-current="page"]:hover {
+    background: var(--clay); border-color: var(--clay); color: #1d1410;
+  }
+}
 
 /* ---------- Settings panel ---------- */
 .settings {
@@ -279,7 +321,7 @@ td:first-child { font-weight: 600; min-width: 8rem; }
 .offline-badge { position: fixed; bottom: calc(1rem + env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: .45rem .9rem; border-radius: 99px; font-size: .82rem; z-index: 30; box-shadow: var(--shadow); }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 @media print {
-  .bar, .settings, .pager, .foot-small, .sheet, .sheet-backdrop { display: none !important; }
+  .bar, .site-nav, .settings, .pager, .foot-small, .sheet, .sheet-backdrop { display: none !important; }
   body { background: #fff; color: #000; }
 }
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -458,6 +500,20 @@ html[data-accounts="on"] .account-blurb { display: block; margin: .35rem 0 .15re
 .legal-placeholder { font-weight: 700; }
 .legal-nav { display: flex; flex-wrap: wrap; gap: .25rem 1rem; margin: 1rem 0; }
 .legal-nav a, .legal-page .bar a { display: inline-flex; align-items: center; min-height: var(--hit); }
+.email-signup { display: grid; gap: .55rem; margin: 1.25rem 0; scroll-margin-top: calc(var(--bar-h) + .75rem); }
+.email-signup[hidden] { display: none !important; }
+.email-signup h2 { margin: 0; font-size: 1.25rem; text-align: center; }
+.email-signup p { margin: 0; }
+.email-signup label { font-weight: 600; }
+.email-signup input[type="email"] {
+  font: inherit; font-size: 1rem; min-height: var(--hit); width: 100%;
+  border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink); padding: .4rem .7rem;
+}
+.email-signup .btn { width: 100%; }
+.email-hp { position: absolute !important; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.email-callout { margin: 1.1rem auto 0; text-align: center; max-width: 28rem; }
+.email-callout .btn { margin-top: .75rem; }
+@media (min-width: 520px) { .email-signup .btn { width: auto; justify-self: start; } }
 .account-delete { border-color: #b3261e; color: #b3261e; }
 .account-danger { display: grid; gap: .6rem; border-top: 1px solid var(--line); padding-top: .75rem; }
 @media (prefers-color-scheme: dark) {

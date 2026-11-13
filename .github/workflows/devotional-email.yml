@@ -1,0 +1,40 @@
+name: Daily devotional email
+
+on:
+  schedule:
+    # 08:00 UTC is 4:00 AM Eastern Daylight Time.
+    # 09:00 UTC is 4:00 AM Eastern Standard Time.
+    # The script sends only while America/New_York is in the 4 AM hour.
+    - cron: '0 8 * * *'
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Print today’s email and do not send it'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: devotional-email
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Send today's devotional
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
+          BREVO_SENDER_EMAIL: ${{ secrets.BREVO_SENDER_EMAIL }}
+          DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+        run: node tools/send-devotional-email.js

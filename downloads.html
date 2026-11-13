@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Downloads · Clay Jar Treasure Bible</title>
+  <meta name="description" content="How to keep the Clay Jar Treasure Bible on your phone. Free to read, with no ads. The text is not offered as a full download.">
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      try {
+        var s = JSON.parse(localStorage.getItem('ctb-settings') || '{}');
+        if (s.theme === 'dark' || s.theme === 'light') document.documentElement.dataset.theme = s.theme;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="bar">
+    <a class="brand" href="./">
+      <img src="icons/emblem-96.png" alt="" width="30" height="30">
+      <span>CTB<span class="tm">™</span></span>
+    </a>
+  </header>
+  <nav class="site-nav" aria-label="Site">
+    <a href="./">Read</a>
+    <a href="devotional.html">Devotional</a>
+    <a href="downloads.html" aria-current="page">Downloads</a>
+    <a href="./#/books">Books</a>
+  </nav>
+  <main class="legal-page" id="main">
+    <p class="eyebrow">Clay Jar Treasure Bible</p>
+    <h1>Downloads</h1>
+    <p>This Bible is free to read in the browser. There is nothing to buy, and there are no ads.</p>
+
+    <h2>Keep it on an iPhone</h2>
+    <ol class="steps">
+      <li><b>Open the site in Safari.</b> <span>Use <a href="./">the reader</a>, not an in-app browser.</span></li>
+      <li><b>Tap Share, then Add to Home Screen.</b> <span>The icon then opens like an app. The name on the icon is Treasure Bible.</span></li>
+      <li><b>Open a book once while you are online.</b> <span>That copy stays on the phone, so you can read it later with no connection.</span></li>
+    </ol>
+    <p>On other phones, use the browser menu and look for “Install app” or “Add to Home screen.” A computer can use the same site. After a book has loaded once, it can be read offline.</p>
+
+    <h2>Your own notes</h2>
+    <p>Bookmarks, highlights, and your place can be saved as a file you keep. Open <a href="./#/saved/backup">Backup</a>. That file is your notes. It is not a copy of the Bible text, and it is not uploaded by this site.</p>
+
+    <h2>The text itself</h2>
+    <p>The Clay Jar Treasure Bible is © 2026 Jose Santiago. All rights reserved. A full file of the whole Bible (PDF, EPUB, or similar) is not offered. You may quote up to 500 verses if you give credit. The <a href="./#/about/copyright">copyright page</a> says how. For anything more, write to <a href="mailto:contact.clayjar@protonmail.com">contact.clayjar@protonmail.com</a>.</p>
+    <p>Looking for a word-for-word Bible you can download? The <a href="https://clayjartranslation.github.io/downloads/">Clay Jar Translation downloads</a> are free under CC BY 4.0. That is a different Bible.</p>
+  </main>
+  <footer class="foot">
+    <p><strong>Clay Jar Treasure Bible</strong><br>© 2026 Jose Santiago. All rights reserved.</p>
+    <p class="foot-small">Clay Jar Treasure Bible™, Clay Jar Translation™ and their logos are trademarks of Jose Santiago.</p>
+    <p class="foot-small"><a href="devotional.html">Devotional</a> <a href="terms.html">Terms of Service</a> <a href="privacy.html">Privacy Policy</a> <a href="./">Back to reading</a></p>
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js', { scope: './' }).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

@@ -18,4 +18,6 @@ Copy `text` character for character from that verse’s `text` in `data/books/<b
 
 When `devotional.html` or the precache list changes, bump `const VERSION` in `sw.js` (`ctb-vN`) so offline copies refresh. Book publishes bump that same line; rebase on main before merging.
 
+Email is optional and free. The signup form on `devotional.html`, and the “Get it by email” note on the home page, stay hidden until `js/devotional-email-config.js` has a Brevo form address and list id. Steps for an iPhone are in SETUP-EMAIL.md. A GitHub Action sends that day’s reading at 4:00 AM US Eastern (it wakes at 08:00 and 09:00 UTC and sends only in the 4 AM hour, so daylight saving time does not send twice). Until the Brevo secrets are set, that job exits without sending and without failing. The Clay Jar Translation may use the same Brevo account with a different list.
+
 Devotionals © 2026 Jose Santiago. All rights reserved.
