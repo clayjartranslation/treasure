@@ -85,18 +85,26 @@ button { font: inherit; color: inherit; }
 /* Site sections. Buttons, not underlined text, so Devotional and Downloads are easy to see. */
 .site-nav {
   position: sticky; top: var(--header-h); z-index: 18;
-  display: grid; grid-template-columns: 1fr 1fr; gap: .4rem;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; gap: .4rem;
+  align-items: center;
   padding: .35rem max(.75rem, env(safe-area-inset-right)) .45rem max(.75rem, env(safe-area-inset-left));
   background: color-mix(in srgb, var(--bg) 92%, transparent);
   backdrop-filter: saturate(1.4) blur(12px); -webkit-backdrop-filter: saturate(1.4) blur(12px);
   border-bottom: 1px solid var(--line);
+  min-width: 0;
 }
+.site-nav a:nth-child(1) { grid-column: 1; grid-row: 1; }
+.site-nav a:nth-child(2) { grid-column: 2; grid-row: 1; }
+.site-nav a:nth-child(3) { grid-column: 1; grid-row: 2; }
+.site-nav a:nth-child(4) { grid-column: 2; grid-row: 2; }
+.site-nav .lang-switch { grid-column: 3; grid-row: 1 / span 2; }
 .site-nav a {
   display: inline-flex; align-items: center; justify-content: center; text-align: center;
-  min-width: 0; min-height: var(--hit); padding: .35rem .75rem; border-radius: 999px;
-  text-decoration: none; font-weight: 700; font-size: .98rem; line-height: 1.2;
+  min-width: 0; min-height: var(--hit); padding: .35rem .45rem; border-radius: 999px;
+  text-decoration: none; font-weight: 700; font-size: .92rem; line-height: 1.15;
   border: 1px solid var(--line); background: var(--bg-raised); color: var(--ink);
   touch-action: manipulation;
+  overflow-wrap: anywhere;
 }
 .site-nav a:hover { background: var(--clay-soft); border-color: var(--clay); color: var(--ink); }
 .site-nav a[aria-current="page"] {
@@ -107,8 +115,9 @@ button { font: inherit; color: inherit; }
 }
 @media (min-width: 700px) {
   :root { --site-nav-h: calc(var(--hit) + .9rem); }
-  .site-nav { display: flex; flex-wrap: wrap; justify-content: center; }
-  .site-nav a { flex: 0 1 auto; min-width: 6.5rem; }
+  .site-nav { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; }
+  .site-nav a { flex: 0 1 auto; min-width: 6.5rem; padding: .35rem .75rem; font-size: .98rem; grid-column: auto; grid-row: auto; }
+  .site-nav .lang-switch { grid-column: auto; grid-row: auto; }
 }
 :root[data-theme="dark"] .site-nav a[aria-current="page"],
 :root[data-theme="dark"] .site-nav a[aria-current="page"]:hover {
@@ -520,3 +529,61 @@ html[data-accounts="on"] .account-blurb { display: block; margin: .35rem 0 .15re
   :root:not([data-theme="light"]) .account-error, :root:not([data-theme="light"]) .account-delete { color: #ffb4ab; border-color: #ffb4ab; }
 }
 :root[data-theme="dark"] .account-error, :root[data-theme="dark"] .account-delete { color: #ffb4ab; border-color: #ffb4ab; }
+
+/* Language menu. On a narrow screen it is a globe button; the select covers it and opens the system picker. */
+.lang-switch { position: relative; display: flex; align-items: center; justify-content: center; min-width: var(--hit); min-height: var(--hit); }
+.lang-face {
+  display: inline-grid; place-items: center; width: var(--hit); height: var(--hit);
+  border-radius: 999px; border: 1px solid var(--line); background: var(--bg-raised); color: var(--ink);
+  cursor: pointer;
+}
+.lang-face svg { width: 1.35rem; height: 1.35rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.lang-word {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.lang-switch select {
+  position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0;
+  font: inherit; cursor: pointer; touch-action: manipulation;
+}
+.lang-notice {
+  margin: 0; padding: .45rem max(.85rem, env(safe-area-inset-right)) .5rem max(.85rem, env(safe-area-inset-left));
+  text-align: center; font-size: .82rem; line-height: 1.4; background: var(--clay-soft); color: var(--ink);
+}
+.lang-notice[hidden] { display: none !important; }
+html[dir="rtl"] .scripture, html[dir="rtl"] .prose, html[dir="rtl"] .legal-page, html[dir="rtl"] .devo { text-align: start; }
+.section-h { margin: 0; font-size: 1.1rem; }
+.tight { margin: .35rem 0 0; }
+.share { margin-top: 1.25rem; }
+.share-copy { margin: .35rem 0 .75rem; }
+.cta-flush { justify-content: flex-start; margin: 0; }
+.cta-backup { justify-content: flex-start; margin: 1rem 0; }
+.foot-accept { font-size: .95rem; color: var(--ink); max-width: 36rem; }
+.legal-caps, .legal-caps strong { font-weight: 700; letter-spacing: .01em; }
+.devo .devo-verse { margin: 1rem 0 1.25rem; border-left: 3px solid var(--clay); }
+.devo .devo-verse blockquote {
+  margin: 0; font-family: var(--serif); font-size: calc(var(--read-size) * 1.05);
+  line-height: 1.65; white-space: pre-line; overflow-wrap: break-word;
+}
+.devo .devo-verse figcaption { margin-top: .85rem; color: var(--ink-soft); font-size: .95rem; }
+.devo .devo-prayer { margin-top: 1.5rem; }
+.devo .devo-prayer h2 { margin-top: 0; text-align: center; }
+.devo .devo-prayer p { font-family: var(--serif); font-size: calc(var(--read-size) * .95); line-height: 1.7; margin: 0; }
+.devo .devo-read { margin: 1.25rem 0 0; }
+.devo .links a { min-height: var(--hit); gap: .75rem; align-items: center; }
+.devo .links a b { font-weight: 600; min-width: 0; }
+.devo .links a span { flex: none; text-align: end; }
+.devo .links a[aria-current="page"] { border-color: var(--clay); box-shadow: inset 3px 0 0 var(--clay); }
+@media (min-width: 700px) {
+  .lang-switch { gap: .35rem; min-width: 0; }
+  .lang-face {
+    width: auto; height: auto; display: inline-flex; align-items: center; gap: .35rem;
+    padding: 0 .15rem 0 .35rem; border: 0; background: none;
+  }
+  .lang-word { position: static; width: auto; height: auto; margin: 0; overflow: visible; clip: auto; font-weight: 700; }
+  .lang-switch select {
+    position: static; opacity: 1; width: auto; max-width: 14rem; height: var(--hit); min-height: var(--hit);
+    padding: 0 1.6rem 0 .75rem; border: 1px solid var(--line); border-radius: 999px;
+    background: var(--bg-raised); color: var(--ink); font-weight: 700;
+  }
+}

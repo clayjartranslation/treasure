@@ -3,18 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' https://www.gstatic.com https://apis.google.com https://translate.googleapis.com https://translate.google.com https://clayjartranslation.github.io; script-src-attr 'none'; style-src 'self' https://www.gstatic.com https://translate.googleapis.com https://clayjartranslation.github.io; style-src-attr 'none'; img-src 'self' data: https://www.gstatic.com https://www.google.com https://translate.googleapis.com https://clayjartranslation.github.io; font-src 'self'; connect-src 'self' https://clayjartranslation.github.io https://www.gstatic.com https://apis.google.com https://firebase.googleapis.com https://firebaseinstallations.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://firestore.googleapis.com https://www.googleapis.com https://huggingface.co https://us.aws.cdn.hf.co https://eu.aws.cdn.hf.co https://cdn-lfs.huggingface.co https://cdn-lfs-us-1.huggingface.co https://cdn-lfs-eu-1.huggingface.co https://translate.googleapis.com; media-src 'self' blob: https://huggingface.co https://us.aws.cdn.hf.co https://eu.aws.cdn.hf.co https://cdn-lfs.huggingface.co https://cdn-lfs-us-1.huggingface.co https://cdn-lfs-eu-1.huggingface.co; frame-src https://accounts.google.com https://*.firebaseapp.com https://apis.google.com https://translate.google.com https://www.google.com; form-action 'self' https://*.sibforms.com https://www.paypal.com https://paypal.com; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests">
   <title>Terms of Service · Clay Jar Treasure Bible</title>
-  <meta name="description" content="Terms of Service for the Clay Jar Treasure Bible, a free, ad-free Bible site.">
+  <meta name="description" content="Terms of Service for the Clay Jar Treasure Bible, a free, ad-free Bible site offered by Jose Santiago of Marshfield, Massachusetts.">
   <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="stylesheet" href="css/style.css">
-  <script>
-    (function () {
-      try {
-        var s = JSON.parse(localStorage.getItem('ctb-settings') || '{}');
-        if (s.theme === 'dark' || s.theme === 'light') document.documentElement.dataset.theme = s.theme;
-      } catch (e) {}
-    })();
-  </script>
+  <script src="js/languages.js"></script>
+  <script src="js/lang.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -30,21 +26,26 @@
     <a href="downloads.html">Downloads</a>
     <a href="./#/books">Books</a>
   </nav>
+  <p class="lang-notice" id="langNotice" hidden>Machine translation by Google. The English text is the official Clay Jar Treasure Bible.</p>
   <main class="legal-page" id="main">
     <p class="eyebrow">Clay Jar Treasure Bible</p>
     <h1>Terms of Service</h1>
-    <p class="legal-note">These terms are written in plain language for a free Bible site. They are not legal advice. Last updated 12 November 2026.</p>
+    <p class="legal-note">These terms are written in plain language for a free Bible site. They are not legal advice. Last updated November 14, 2026.</p>
+    <p class="legal-caps"><strong>THESE TERMS INCLUDE AN “AS IS” WARRANTY DISCLAIMER, A LIMIT ON LIABILITY, AND AN AGREEMENT TO INDIVIDUAL ARBITRATION. YOU CAN OPT OUT OF ARBITRATION WITHIN 30 DAYS BY EMAIL. THESE TERMS DO NOT MAKE A LAWSUIT IMPOSSIBLE.</strong></p>
     <nav class="legal-nav" aria-label="Related pages">
       <a href="privacy.html">Privacy Policy</a>
       <a href="./#/about/copyright">Copyright and quoting</a>
     </nav>
 
     <h2>Who offers this site</h2>
-    <p>The Clay Jar Treasure Bible (“CTB”) is © 2026 Jose Santiago. All rights reserved, unless a page on this site says otherwise. The site is free to read and listen to. There is no fee, no ad, and no account required.</p>
-    <p>Clay Jar Treasure Bible™, Clay Jar Translation™ and their logos are trademarks of Jose Santiago.</p>
+    <p>The Clay Jar Treasure Bible (“CTB”) is offered by Jose Santiago, Marshfield, Plymouth County, Massachusetts, USA. The text is © 2026 Jose Santiago. All rights reserved, unless a page on this site says otherwise. The site is free to read and listen to. There is no fee, no ad, and no account required.</p>
+    <p class="notranslate" translate="no">Clay Jar Treasure Bible™, Clay Jar Translation™ and their logos are trademarks of Jose Santiago.</p>
+
+    <h2>Using the site means you agree</h2>
+    <p>If you read, listen, or otherwise use the site, you agree to these terms and to the <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use the site. A link to these terms is in the footer of every page, beside the navigation. The devotional email form has its own acknowledgement line. There is no separate click-to-agree box for ordinary reading. The footer link and this page are the notice. The arbitration section below also gives you 30 days to opt out.</p>
 
     <h2>Using the site</h2>
-    <p>You may read the translation and listen to the audio in your browser. You may quote up to 500 verses if you credit the Clay Jar Treasure Bible. The <a href="./#/about/copyright">copyright page</a> says how quoting works.</p>
+    <p>You may read the translation and listen to the audio in your browser. You may quote up to 500 verses of the English text if you credit the Clay Jar Treasure Bible. The <a href="./#/about/copyright">copyright page</a> says how quoting works.</p>
     <p>Please use the site in a way that does not harm other people or the service. That includes:</p>
     <ul>
       <li>Do not break, overload, or try to get into the site, an account, or another person’s data.</li>
@@ -53,35 +54,69 @@
     </ul>
     <p>If you sign in, you are asking the site to save your place, bookmarks, highlights, and listening progress to your account, as the sign-in screen describes. You can use the site without doing that. You can also keep a backup file on your own device with no account.</p>
 
+    <h2>Machine translation</h2>
+    <p>A language menu can show this site through Google Translate. Machine translations are provided as-is, for convenience. They may contain errors, omit meaning, or add words the English does not say. The English text is the official Clay Jar Treasure Bible and is the controlling text if a translation differs.</p>
+    <p>A machine translation does not change the copyright, © 2026 Jose Santiago, all rights reserved, and it does not change the trademarks. There is no license to copy, publish, sell, or redistribute the translation, or to present the translation as your own or as an official edition. The permission to quote up to 500 verses, with credit, applies to the English text.</p>
+
     <h2>The text and the audio</h2>
-    <p>CTB is a translation into everyday English. It is a reading of the Bible, not a promise about what a church, a doctor, a lawyer, or anyone else must do. Audio may be a device voice or a recording hosted for playback. Recordings can be missing for a chapter. The site then uses the device voice when one is available.</p>
+    <p>CTB is a translation into everyday English. Audio may be a device voice or a recording hosted for playback. Recordings can be missing for a chapter. The site then uses the device voice when one is available.</p>
+
+    <h2>Not professional advice</h2>
+    <p>The Bible text, footnotes, devotionals, and prayers are spiritual reading. They are not medical advice, mental-health advice, legal advice, or financial advice, and they are not a substitute for a licensed professional. They are not a promise about what a church, a doctor, a lawyer, or anyone else must do. If you may hurt yourself or someone else, contact your local emergency services.</p>
+
+    <h2>Daily devotional by email</h2>
+    <p>The email is optional. You can read the devotional on the site without it. If you subscribe, Brevo sends a confirmation message first. You are added only after you confirm that message. That is double opt-in. Every message has an unsubscribe link, and you can unsubscribe any time. You can also ask through the contact address. Subscribing is not required to read or listen. The signup form includes a line that you agree to these terms and acknowledge the Privacy Policy.</p>
+
+    <h2>Donations</h2>
+    <p>A donation is a voluntary gift. It is not required to read, listen, or use any part of the site. You receive no goods, no services, and no special access in return. Jose Santiago is not a 501(c)(3) organization, and a donation is not tax-deductible. If you give, PayPal processes the payment under PayPal’s own terms. Jose Santiago does not offer refunds of donations, except where the law requires a refund. A payment network’s own dispute process is separate from these terms.</p>
 
     <h2>No warranty</h2>
-    <p>The site is provided as it is and as it is available, for free. Jose Santiago does not promise that the site will always be up, that every chapter is published, that a recording will play, or that a saved place will never be lost. Keep a backup file if a copy matters to you.</p>
+    <p class="legal-caps"><strong>THE SITE, THE TEXT, THE AUDIO, THE DEVOTIONALS, AND ANY MACHINE TRANSLATION ARE PROVIDED “AS IS” AND “AS AVAILABLE.” TO THE FULLEST EXTENT THE LAW ALLOWS, JOSE SANTIAGO DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. HE DOES NOT WARRANT THAT THE SITE WILL BE UNINTERRUPTED, ACCURATE, OR ERROR-FREE.</strong></p>
+    <p>In plain words: this is a free Bible site. A chapter may be missing, a recording may not play, a saved place can be lost, and a machine translation can be wrong. Keep a backup file if a copy of your notes matters to you. This disclaimer applies only to the fullest extent the law allows. It does not remove a warranty or a remedy that a statute says cannot be waived. Where they apply, that includes Massachusetts General Laws chapter 106, section 2-316A, and the Massachusetts retail-advertising rule, 940 CMR 6.12, and the mandatory guarantees where you live.</p>
 
-    <h2>Limit of liability</h2>
-    <p>To the extent the law allows, Jose Santiago is not liable for indirect or consequential loss from using the site, including lost reading data. Because the site is free, direct damages, where a limit is allowed, are limited to zero, the amount you paid. Some places do not allow these limits. There, the limits apply only as far as the law allows. Nothing here takes away rights that cannot legally be waived.</p>
+    <h2>Limit on what can be recovered</h2>
+    <p class="legal-caps"><strong>TO THE FULLEST EXTENT THE LAW ALLOWS, JOSE SANTIAGO WILL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR LOST PROFITS, LOST DATA, OR LOST GOODWILL, EVEN IF HE WAS TOLD THEY WERE POSSIBLE.</strong></p>
+    <p class="legal-caps"><strong>TO THE FULLEST EXTENT THE LAW ALLOWS, HIS TOTAL LIABILITY FOR ANY CLAIM ARISING OUT OF THE SITE OR THESE TERMS WILL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID HIM TO USE THE SITE DURING THE TWELVE MONTHS BEFORE THE CLAIM OR (B) FIFTY U.S. DOLLARS (US$50). THE SITE IS FREE, SO THAT AMOUNT PAID IS ZERO UNLESS YOU PAID SOMETHING ELSE TO USE IT. A VOLUNTARY DONATION IS A GIFT, NOT A PAYMENT TO USE THE SITE, AND IS NOT COUNTED IN THAT AMOUNT.</strong></p>
+    <p>These limits apply only to the fullest extent the law allows. They do not limit liability for fraud or willful misconduct, or for injury to a person where the law forbids that limit. They do not take away a remedy a statute says cannot be limited, including, where it applies, a claim under Massachusetts General Laws chapter 93A. These sentences do not say that a lawsuit is impossible.</p>
 
-    <h2>Governing law</h2>
-    <p>These terms are governed by the laws of the Commonwealth of Massachusetts, USA, without regard to conflict-of-law rules. If the consumer law where you live says you cannot be asked to use Massachusetts law, that local protection still applies. Courts in Massachusetts may hear a dispute, except where the law where you live gives you the right to sue at home.</p>
+    <h2>If your use harms someone else</h2>
+    <p>To the fullest extent the law allows, you will defend Jose Santiago against a third-party claim, and you will pay the damages and reasonable costs awarded on that claim, when the claim arises out of your misuse of the site, your violation of these terms, or your violation of law or of someone else’s rights. This promise does not cover a claim caused by his own fraud or willful misconduct, or by his negligence where the law does not allow a reader to take on that risk. If the law where you live does not allow this kind of promise in a consumer contract, this section does not apply to you.</p>
 
-    <h2>Changes</h2>
-    <p>These terms may be updated by changing this page and its date. The new terms apply as you keep using the site. If you have an account, the new terms apply as you keep using sign-in.</p>
+    <h2>Disputes and arbitration</h2>
+    <p>Please write to <a href="mailto:contact.clayjar@protonmail.com">contact.clayjar@protonmail.com</a> first and give him a reasonable chance to resolve a problem with you directly.</p>
+    <p>Except where this section says otherwise, you and Jose Santiago agree that any dispute arising out of the site or these terms will be resolved by individual binding arbitration, and not in court. The Federal Arbitration Act (9 U.S.C. §§ 1–16) governs this agreement to arbitrate, including its interpretation and enforcement. The arbitration will be administered by the American Arbitration Association under its Consumer Arbitration Rules, including the rule that lets either party take an individual claim that fits in small claims court to small claims court without filing with the AAA. The rules are at <a href="https://www.adr.org/consumer" target="_blank" rel="noopener noreferrer">www.adr.org/consumer</a>. Jose Santiago will pay the administrative fees that those Consumer Rules assign to the business. You will not be asked to pay more than the filing fee of a small-claims court, unless those rules say otherwise.</p>
+    <p>The arbitration is individual. It will not be a class arbitration, a class action, or a representative action. The arbitrator may award relief only for the individual claimant. If a court finds that the class-action waiver cannot be enforced for a particular claim, that claim will be heard in court and not as a class arbitration. There is no jury in arbitration.</p>
+    <p>Where a claim is heard in court, you keep a jury if the law gives you one. To the extent the law allows a contract to waive a jury, you and Jose Santiago waive a jury trial. Where the law does not allow that waiver, the waiver does not apply.</p>
+    <p><strong>You can opt out of this arbitration agreement.</strong> To opt out, email <a href="mailto:contact.clayjar@protonmail.com">contact.clayjar@protonmail.com</a> within 30 days after you first use the site on or after November 14, 2026. Use the subject line “Arbitration opt-out,” and include your name and a statement that you opt out. If the arbitration section later changes in a material way, you may opt out again within 30 days after the “Last updated” date of that change. Opting out of arbitration does not opt you out of the rest of these terms. If you opt out, the arbitration agreement, including its class-action waiver and its jury waiver, does not apply to you, and you may bring an individual claim in court as the venue section describes. You may also join a class action where the law allows it.</p>
+    <p>Either party may take an individual claim that is within the jurisdiction of a small-claims court to that court, in Plymouth County, Massachusetts, or in the small-claims court where you live if that court can hear the claim. You do not have to arbitrate that claim.</p>
+    <p>These terms do not make a lawsuit impossible. You can opt out, you can use small claims court, and where a law says this arbitration agreement does not bind you, you can go to court.</p>
+
+    <h2>How long you have to start a claim</h2>
+    <p>Where the law allows a contract to set a shorter time, you must start a claim within one year after the claim arose. If the law does not allow that shortening, the time the law sets applies. This section does not shorten a period a statute says cannot be shortened. That includes the four-year period for a consumer claim under Massachusetts General Laws chapter 93A, section 5A, which a contract may not reduce.</p>
+
+    <h2>Which law applies, and which court</h2>
+    <p>These terms are governed by the laws of the Commonwealth of Massachusetts, USA, without regard to conflict-of-law rules, except that the Federal Arbitration Act governs the agreement to arbitrate. This choice of law does not remove a mandatory consumer protection of the place where you live.</p>
+    <p>If a claim is heard in court, the state courts located in Plymouth County, Massachusetts are the venue. Marshfield is in that county. That venue does not apply where the law where you live gives you the right to sue in your home courts, or where you are using the small-claims carve-out above.</p>
+
+    <h2>Where your local law gives you rights</h2>
+    <p>The warranty disclaimer, the limit on liability, the indemnity, the arbitration agreement, the class-action waiver, the jury waiver, the one-year period, and the choice of Massachusetts law and Plymouth County courts apply only to the fullest extent the law allows. They do not remove a right that cannot legally be waived.</p>
+    <p>If you live in the European Union, the European Economic Area, the United Kingdom, Australia, Canada, including Quebec, or another place with mandatory consumer rules, you keep those protections. A choice of foreign law or a foreign court does not take them away. Where a law says a pre-dispute arbitration clause, a class-action waiver, or a foreign venue is unfair or void in a consumer contract, that clause does not bind you. You may go to the court that law allows, including as a member of a class if that law gives you that right. In Quebec, a clause that forces a consumer to arbitrate, or that blocks a class action, is prohibited, and it does not bind you. Nothing in these terms says a lawsuit is impossible.</p>
+
+    <h2>Other legal terms</h2>
+    <p><strong>Severability.</strong> If one part of these terms is held invalid, the rest stays in effect. The disputes section says what happens if the class-action waiver is held invalid. That sentence controls for that case.</p>
+    <p><strong>No waiver.</strong> If Jose Santiago does not enforce a term once, that is not a waiver of the term.</p>
+    <p><strong>Entire agreement.</strong> These terms and the Privacy Policy are the whole agreement between you and Jose Santiago about the site. They replace earlier versions of the terms.</p>
+    <p><strong>Changes.</strong> These terms may be updated by changing this page and its date. If you keep using the site after the date changes, you agree to the updated terms. If you do not agree, stop using the site. A change to the arbitration section does not apply to a dispute that started before the change. A material change to the arbitration section starts a new 30-day opt-out, measured from the new date at the top. A change does not turn on an account, an email, or a translation by itself.</p>
 
     <h2>Contact</h2>
-    <p>Questions about these terms: <a href="mailto:contact.clayjar@protonmail.com">contact.clayjar@protonmail.com</a>.</p>
+    <p>Questions about these terms: <a href="mailto:contact.clayjar@protonmail.com">contact.clayjar@protonmail.com</a>. Jose Santiago, Marshfield, Plymouth County, Massachusetts, USA.</p>
   </main>
   <footer class="foot">
-    <p><strong>Clay Jar Treasure Bible</strong><br>© 2026 Jose Santiago. All rights reserved.</p>
-    <p class="foot-small">Clay Jar Treasure Bible™, Clay Jar Translation™ and their logos are trademarks of Jose Santiago.</p>
+    <p class="notranslate" translate="no"><strong>Clay Jar Treasure Bible</strong><br>© 2026 Jose Santiago. All rights reserved.</p>
+    <p class="foot-small notranslate" translate="no">Clay Jar Treasure Bible™, Clay Jar Translation™ and their logos are trademarks of Jose Santiago.</p>
+    <p class="foot-accept">Using this site means you agree to the <a href="terms.html">Terms of Service</a> and the <a href="privacy.html">Privacy Policy</a>. Those terms include individual arbitration and a 30-day email opt-out.</p>
     <p class="foot-small"><a href="devotional.html">Devotional</a> <a href="downloads.html">Downloads</a> <a href="privacy.html">Privacy Policy</a> <a href="./">Back to reading</a></p>
   </footer>
-  <script>
-    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('sw.js', { scope: './' }).catch(function () {});
-      });
-    }
-  </script>
+  <script src="js/register-sw.js"></script>
 </body>
 </html>

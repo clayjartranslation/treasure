@@ -127,5 +127,14 @@ assert.strictEqual(mergedFile.reading.book, 'genesis');
 assert.strictEqual(mergedFile.audioSettings.rate, 1);
 assert.strictEqual(file.settings.theme, 'dark');
 assert.ok(Sync.backupToSnapshot({ format: 'nope' }).error);
+assert.strictEqual(Sync.cleanBookmark({ book: '<script>', ch: 1, v: 1, text: 'x', t: 1 }), null);
+assert.ok(Sync.backupToSnapshot({ format: 'ctb-saved', bookmarks: ['nope'], highlights: [] }).error);
+assert.ok(Sync.backupToSnapshot({
+  format: 'ctb-saved',
+  bookmarks: Array.from({ length: 5001 }, (_, i) => bm('b' + i, 1, 1)),
+  highlights: []
+}).error);
+const keptText = Sync.cleanBookmark({ id: 'b1', book: 'genesis', name: 'Genesis', ch: 1, v: 1, text: '<img src=x onerror=alert(1)>', t: 1 });
+assert.ok(keptText.text.includes('<img'));
 
 console.log('sync-merge: ok');

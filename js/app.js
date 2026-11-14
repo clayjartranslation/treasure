@@ -10,7 +10,18 @@
 
   // ---------- Settings ----------
   const settings = Object.assign({ theme: 'auto', size: 19, notes: true, resume: false, rate: 1, voice: '', autoNext: true, sleepChoice: 'off', sleepCustom: 20 }, readJSON('ctb-settings'));
-  function readJSON(k) { try { return JSON.parse(localStorage.getItem(k) || '{}'); } catch (e) { return {}; } }
+  if (settings.theme !== 'auto' && settings.theme !== 'light' && settings.theme !== 'dark') settings.theme = 'auto';
+  if (typeof settings.size !== 'number' || settings.size < 14 || settings.size > 30) settings.size = 19;
+  function readJSON(k) { try { const v = JSON.parse(localStorage.getItem(k) || '{}'); return v && typeof v === 'object' && !Array.isArray(v) ? v : {}; } catch (e) { return {}; } }
+  function safePlace(p) {
+    if (!p || typeof p !== 'object' || Array.isArray(p)) return null;
+    if (typeof p.book !== 'string' || !/^[a-z0-9-]{1,80}$/.test(p.book)) return null;
+    const ch = Number(p.ch);
+    const v = Number(p.v);
+    if (!Number.isInteger(ch) || ch < 1 || ch > 200) return null;
+    const verse = Number.isInteger(v) && v >= 0 && v <= 200 ? v : 0;
+    return { book: p.book, name: typeof p.name === 'string' ? p.name.slice(0, 80) : '', ch: ch, v: verse };
+  }
   function saveSettings() { try { localStorage.setItem('ctb-settings', JSON.stringify(settings)); } catch (e) {} }
   function emailCallout() {
     if (!window.ctbDevotionalEmailReady || !window.ctbDevotionalEmailReady()) return '';
@@ -40,8 +51,13 @@
     noteSync('audioSettings');
   }
   function writeLast(obj) {
+    if (!obj || typeof obj.book !== 'string' || !/^[a-z0-9-]{1,80}$/.test(obj.book)) return;
+    const ch = Number(obj.ch);
+    const v = Number(obj.v);
+    if (!Number.isInteger(ch) || ch < 1 || ch > 200) return;
+    const verse = Number.isInteger(v) && v >= 0 && v <= 200 ? v : 0;
     const prev = readJSON('ctb-last');
-    const next = { book: obj.book, name: obj.name || '', ch: obj.ch, v: obj.v || 0, t: Date.now() };
+    const next = { book: obj.book, name: typeof obj.name === 'string' ? obj.name.slice(0, 80) : '', ch: ch, v: verse, t: Date.now() };
     if (prev.book === next.book && prev.ch === next.ch && (prev.v || 0) === next.v && prev.t) return;
     try { localStorage.setItem('ctb-last', JSON.stringify(next)); } catch (e) {}
     noteSync('reading');
@@ -141,7 +157,7 @@
     const totalCh = cat.books.reduce((n, b) => n + (parseInt(b.chapterCount, 10) || 0), 0);
     const doneCh = cat.books.reduce((n, b) => n + b.translated.length, 0);
     const first = done[0];
-    const last = readJSON('ctb-last');
+    const place = safePlace(readJSON('ctb-last'));
     setTitle('');
     const prayerHtml = prayer.blocks.filter((b) => b.type === 'text').map((b) => `<p>${esc(b.text)}</p>`).join('');
     render(`
@@ -150,10 +166,10 @@
              alt="Clay Jar Treasure Bible™ logo: a terracotta clay jar holding a scroll, with rays of light rising from it.">
         <h1 id="homeTitle">${NAME}<span class="tm">™</span></h1>
         <p class="tag">The Bible in clear, everyday English. Free to read, with no sign-up and no ads.</p>
-        <p class="free-line"><strong>Free forever:</strong> no sign-up, no ads, no tracking.</p>
+        <p class="free-line"><strong>Free forever:</strong> no sign-up and no ads.</p>
         <div class="cta">
-          ${last.book ? `<a class="btn primary" href="#/read/${esc(last.book)}/${last.ch}${last.v > 1 ? '/' + last.v : ''}">Continue ${esc(last.name)} ${last.ch}${last.v > 1 ? ':' + last.v : ''}</a>` : ''}
-          ${first ? `<a class="btn ${last.book ? '' : 'primary'}" href="#/read/${first.id}/${first.translated[0]}">Start reading ${esc(first.name)}</a>` : ''}
+          ${place ? `<a class="btn primary" href="#/read/${encodeURIComponent(place.book)}/${place.ch}${place.v > 1 ? '/' + place.v : ''}">Continue ${esc(place.name)} ${place.ch}${place.v > 1 ? ':' + place.v : ''}</a>` : ''}
+          ${first ? `<a class="btn ${place ? '' : 'primary'}" href="#/read/${encodeURIComponent(first.id)}/${first.translated[0]}">Start reading ${esc(first.name)}</a>` : ''}
           <a class="btn" href="#/books">All books</a>
         </div>
         <p class="verse-quote">God’s treasure, carried in clay jars like us.<br><small>Based on 2 Corinthians 4:7</small></p>
@@ -166,15 +182,15 @@
       </section>
 
       <section class="card progress" aria-labelledby="progTitle">
-        <h2 id="progTitle" style="margin:0;font-size:1.1rem">Progress</h2>
-        <p class="muted" style="margin:.35rem 0 0">${done.map((b) => `${esc(b.name)} ${rangeText(b.translated)}`).join(', ') || 'Nothing yet'} translated so far: ${doneCh} of about ${totalCh} chapters in ${cat.books.length} books.</p>
-        <div class="meter" role="img" aria-label="${doneCh} of about ${totalCh} chapters translated"><i style="width:${Math.max(1, (doneCh / totalCh) * 100).toFixed(2)}%"></i></div>
+        <h2 id="progTitle" class="section-h">Progress</h2>
+        <p class="muted tight">${done.map((b) => `${esc(b.name)} ${rangeText(b.translated)}`).join(', ') || 'Nothing yet'} translated so far: ${doneCh} of about ${totalCh} chapters in ${cat.books.length} books.</p>
+        <div class="meter" role="img" aria-label="${doneCh} of about ${totalCh} chapters translated"><i id="progressFill"></i></div>
       </section>
 
-      <section class="card share" aria-labelledby="shareTitle" style="margin-top:1.25rem">
-        <h2 id="shareTitle" style="margin:0;font-size:1.1rem">Download and share</h2>
-        <p class="muted" style="margin:.35rem 0 .75rem">This Bible is free to read online, and this site works offline once you have opened it. It is copyrighted. You may quote brief passages with credit (see the copyright page). <a href="downloads.html">Downloads</a> explains how to keep it on your phone.</p>
-        <div class="cta" style="justify-content:flex-start;margin:0">
+      <section class="card share" aria-labelledby="shareTitle">
+        <h2 id="shareTitle" class="section-h">Download and share</h2>
+        <p class="muted share-copy">This Bible is free to read online, and this site works offline once you have opened it. It is copyrighted. You may quote brief passages with credit (see the copyright page). <a href="downloads.html">Downloads</a> explains how to keep it on your phone.</p>
+        <div class="cta cta-flush">
           <button class="btn" type="button" id="shareBtn">Share this Bible</button>
         </div>
       </section>
@@ -186,6 +202,8 @@
         <li><a href="#/about/approach">How we translate <span>thought for thought, in plain English</span></a></li>
         <li><a href="#/about/copyright">Copyright and quoting <span>how you may share it</span></a></li>
       </ul>`);
+    const fill = document.getElementById('progressFill');
+    if (fill && totalCh) fill.style.width = Math.max(1, (doneCh / totalCh) * 100).toFixed(2) + '%';
     $('#shareBtn').addEventListener('click', async () => {
       const data = { title: NAME, text: 'The Bible in clear, everyday English. Free to read.', url: location.href.split('#')[0] };
       if (navigator.share) { try { await navigator.share(data); } catch (e) {} return; }
@@ -218,9 +236,9 @@
         }
         const open = b.id === openId || (list.filter((x) => x.translated.length).length === 1 && !openId);
         let grid = '';
-        if (!isNaN(total)) for (let i = 1; i <= total; i++) grid += b.translated.includes(i) ? `<a href="#/read/${b.id}/${i}" aria-label="${esc(b.name)} chapter ${i}">${i}</a>` : `<span aria-hidden="true">${i}</span>`;
-        return `<li><button class="book-row" type="button" aria-expanded="${open}" aria-controls="ch-${b.id}" data-book="${b.id}"><span class="bname">${esc(b.name)}</span><span class="meta"><b>${b.translated.length}</b> of ${esc(b.chapterCount)} chapters ready</span></button>
-          <div class="chapters" id="ch-${b.id}" ${open ? '' : 'hidden'} role="group" aria-label="${esc(b.name)} chapters">${grid}</div></li>`;
+        if (!isNaN(total)) for (let i = 1; i <= total; i++) grid += b.translated.includes(i) ? `<a href="#/read/${encodeURIComponent(b.id)}/${i}" aria-label="${esc(b.name)} chapter ${i}">${i}</a>` : `<span aria-hidden="true">${i}</span>`;
+        return `<li><button class="book-row" type="button" aria-expanded="${open}" aria-controls="ch-${esc(b.id)}" data-book="${esc(b.id)}"><span class="bname">${esc(b.name)}</span><span class="meta"><b>${b.translated.length}</b> of ${esc(b.chapterCount)} chapters ready</span></button>
+          <div class="chapters" id="ch-${esc(b.id)}" ${open ? '' : 'hidden'} role="group" aria-label="${esc(b.name)} chapters">${grid}</div></li>`;
       }).join('');
       render(`<h1>Books</h1>
         <div class="tabs" role="tablist" aria-label="Collections">${tabs}</div>
@@ -275,7 +293,7 @@
       const sub = ch.subheads && ch.subheads[s] ? `<h3 class="ch-sub">${esc(ch.subheads[s])}</h3>` : '';
       return `${sub}<p${poem ? ' class="poem"' : ''}>${vs}</p>`;
     }).join('');
-    const notes = ch.notes.map((x) => `<li id="note-${x.m}"><span class="m">${x.m}</span><a class="r" href="#/read/${id}/${ch.n}/${x.ref.split(':')[1] || ''}">${esc(x.ref)}</a><span>${esc(x.text)}</span></li>`).join('');
+    const notes = ch.notes.map((x) => `<li id="note-${esc(x.m)}"><span class="m">${esc(x.m)}</span><a class="r" href="#/read/${encodeURIComponent(id)}/${ch.n}/${encodeURIComponent(String(x.ref).split(':')[1] || '')}">${esc(x.ref)}</a><span>${esc(x.text)}</span></li>`).join('');
     const bookMeta = cat.books.find((b) => b.id === id);
     setTitle(`${book.name} ${ch.n}`, () => { location.hash = '#/books/' + id; });
     render(`
@@ -292,8 +310,8 @@
         </section>
         ${book.sourceNote && !next ? `<p class="source-note">${esc(book.sourceNote)}</p>` : ''}
         <nav class="pager" aria-label="Chapters">
-          <a class="btn" ${prev ? `href="#/read/${id}/${prev.n}"` : 'aria-disabled="true" tabindex="-1"'}>← ${prev ? esc(book.name) + ' ' + prev.n : ''}</a>
-          <a class="btn" ${next ? `href="#/read/${id}/${next.n}"` : 'aria-disabled="true" tabindex="-1"'}>${next ? esc(book.name) + ' ' + next.n : ''} →</a>
+          <a class="btn" ${prev ? `href="#/read/${encodeURIComponent(id)}/${prev.n}"` : 'aria-disabled="true" tabindex="-1"'}>← ${prev ? esc(book.name) + ' ' + prev.n : ''}</a>
+          <a class="btn" ${next ? `href="#/read/${encodeURIComponent(id)}/${next.n}"` : 'aria-disabled="true" tabindex="-1"'}>${next ? esc(book.name) + ' ' + next.n : ''} →</a>
         </nav>
         ${!next && bookMeta && bookMeta.translated.length < parseInt(bookMeta.chapterCount, 10) ? `<p class="empty">${esc(book.name)} ${ch.n + 1} and following are coming soon.</p>` : ''}
       </article>`, `${book.name} ${ch.n}`);
@@ -364,7 +382,7 @@
         const b = avail.find((x) => fold(x.name).replace(/\s+/g, '').startsWith(nm));
         if (b && b.translated.includes(+ref[2])) {
           count.textContent = '';
-          out.innerHTML = `<li><a href="#/read/${b.id}/${ref[2]}${ref[3] ? '/' + ref[3] : ''}"><span class="ref">Go to ${esc(b.name)} ${ref[2]}${ref[3] ? ':' + ref[3] : ''}</span></a></li>`;
+          out.innerHTML = `<li><a href="#/read/${encodeURIComponent(b.id)}/${ref[2]}${ref[3] ? '/' + ref[3] : ''}"><span class="ref">Go to ${esc(b.name)} ${ref[2]}${ref[3] ? ':' + ref[3] : ''}</span></a></li>`;
           return;
         }
       }
@@ -373,7 +391,8 @@
       count.textContent = hits.length ? `${hits.length} result${hits.length === 1 ? '' : 's'}${hits.length > 200 ? ', showing the first 200' : ''}` : 'No matches in the chapters translated so far.';
       out.innerHTML = hits.slice(0, 200).map((e) => {
         const ref = `${e.book.name} ${e.c}:${e.v}`;
-        return `<li><a href="#/read/${e.book.id}/${e.c}/${e.v}"><span class="ref">${esc(ref)}${e.kind === 'n' ? ` <small>footnote ${e.m}</small>` : ''}</span><span class="txt">${highlight(e.text, terms)}</span></a></li>`;
+        const mark = e.kind === 'n' && /^[a-z0-9]+$/i.test(String(e.m || '')) ? ` <small>footnote ${esc(e.m)}</small>` : '';
+        return `<li><a href="#/read/${encodeURIComponent(e.book.id)}/${e.c}/${e.v}"><span class="ref">${esc(ref)}${mark}</span><span class="txt">${highlight(e.text, terms)}</span></a></li>`;
       }).join('');
     };
     let timer;
@@ -405,13 +424,17 @@
     const block = (b, level) => {
       switch (b.type) {
         case 'text': return `<p>${esc(b.text)}</p>`;
-        case 'callout': return `<div class="callout ${esc(b.tone)}" role="note"><strong>${esc(b.lead)}</strong><p>${esc(b.text)}</p></div>`;
+        case 'callout': {
+          const tone = b.tone === 'info' ? ' info' : '';
+          return `<div class="callout${tone}" role="note"><strong>${esc(b.lead)}</strong><p>${esc(b.text)}</p></div>`;
+        }
         case 'properties': return `<dl class="props">${b.items.map((i) => `<dt>${esc(i.label)}</dt><dd>${esc(i.value)}</dd>`).join('')}</dl>`;
         case 'steps': return `<ol class="steps">${b.steps.map((s) => `<li><b>${esc(s.title)}</b><span>${esc(s.detail)}</span></li>`).join('')}</ol>`;
         case 'table': return `<div class="table-wrap" tabindex="0" role="region" aria-label="Table"><table class="stack"><thead><tr>${b.columns.map((c) => `<th scope="col">${esc(c)}</th>`).join('')}</tr></thead><tbody>${b.rows.map((r) => `<tr>${r.map((c, i) => `<td${b.columns[i] ? ` data-label="${esc(b.columns[i])}"` : ''}>${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
         case 'section': {
           const h = Math.min(level, 4);
-          return `<section${b.id ? ` id="${esc(b.id)}"` : ''}><h${h}>${esc(b.heading)}</h${h}>${b.blocks.map((x) => block(x, level + 1)).join('')}</section>`;
+          const sid = typeof b.id === 'string' && /^[a-z0-9-]{1,80}$/.test(b.id) ? b.id : '';
+          return `<section${sid ? ` id="${sid}"` : ''}><h${h}>${esc(b.heading)}</h${h}>${(b.blocks || []).map((x) => block(x, level + 1)).join('')}</section>`;
         }
       }
       return '';
@@ -420,7 +443,7 @@
       <p class="eyebrow">Front matter</p>
       <h1>${NAME}</h1>
       <p class="muted">${esc(fm.summary)}</p>
-      <nav class="toc" aria-label="Sections">${fm.sections.map((s) => `<a href="#/about/${s.id}">${esc(s.heading)}</a>`).join('')}</nav>
+      <nav class="toc" aria-label="Sections">${fm.sections.map((s) => `<a href="#/about/${encodeURIComponent(s.id)}">${esc(s.heading)}</a>`).join('')}</nav>
       ${fm.sections.map((s) => block(s, 2)).join('')}
     </div>`, 'About');
     if (anchor) { const el = document.getElementById(anchor); if (el) el.scrollIntoView(); }
@@ -475,7 +498,18 @@
   // =====================================================================
   const COLORS = ['yellow', 'green', 'blue', 'pink'];
   const loadArr = (k) => { try { const a = JSON.parse(localStorage.getItem(k) || '[]'); return Array.isArray(a) ? a : []; } catch (e) { return []; } };
-  const store = { bm: loadArr('ctb-bookmarks'), hl: loadArr('ctb-highlights') };
+  function savedList(key, cleaner) {
+    const raw = loadArr(key).slice(0, 5000);
+    const clean = window.ClayJarSync && ClayJarSync[cleaner];
+    if (typeof clean !== 'function') return raw;
+    const out = [];
+    raw.forEach((item) => {
+      const row = clean(item);
+      if (row && !row.deleted) out.push(row);
+    });
+    return out;
+  }
+  const store = { bm: savedList('ctb-bookmarks', 'cleanBookmark'), hl: savedList('ctb-highlights', 'cleanHighlight') };
   const tombs = readJSON('ctb-tombs');
   if (!tombs.bm || typeof tombs.bm !== 'object' || Array.isArray(tombs.bm)) tombs.bm = {};
   if (!tombs.hl || typeof tombs.hl !== 'object' || Array.isArray(tombs.hl)) tombs.hl = {};
@@ -1383,13 +1417,13 @@
       .map(([k, l, n]) => `<a class="tab" href="#/saved/${k}" role="tab" aria-selected="${k === tab}">${l}${n === null ? '' : `<small>${n}</small>`}</a>`).join('');
     let body = '';
     if (tab === 'bookmarks') {
-      const last = readJSON('ctb-last');
+      const place = safePlace(readJSON('ctb-last'));
       const items = store.bm.slice().sort(cmp).map((b) => {
         const ref = `${bookName(b.book, b.name)} ${b.ch}:${b.v}`;
         return `<li class="saved-item"><a class="saved-link" href="#/read/${encodeURIComponent(b.book)}/${b.ch}/${b.v}"><span class="ref">${esc(ref)}</span><span class="txt">${esc(b.text || '')}</span></a>
           <button type="button" class="saved-del" data-del-bm="${esc(b.id)}" aria-label="Delete bookmark ${esc(ref)}">${ICON_DEL}</button></li>`;
       }).join('');
-      body = `${last.book ? `<div class="card resume-card"><div><strong>Where I left off</strong><p class="muted">${esc(last.name)} ${last.ch}${last.v > 1 ? ':' + last.v : ''}</p></div><a class="btn" href="#/read/${encodeURIComponent(last.book)}/${last.ch}${last.v > 1 ? '/' + last.v : ''}">Continue</a></div>` : ''}
+      body = `${place ? `<div class="card resume-card"><div><strong>Where I left off</strong><p class="muted">${esc(place.name)} ${place.ch}${place.v > 1 ? ':' + place.v : ''}</p></div><a class="btn" href="#/read/${encodeURIComponent(place.book)}/${place.ch}${place.v > 1 ? '/' + place.v : ''}">Continue</a></div>` : ''}
         <label class="switch resume-switch" for="resumeToggle2"><span class="setting-label">Open the app where I left off</span><input type="checkbox" id="resumeToggle2" role="switch"${settings.resume ? ' checked' : ''}><span class="track" aria-hidden="true"></span></label>
         ${items ? `<ul class="saved-list">${items}</ul>` : '<p class="empty">No bookmarks yet. While reading, tap a verse and then the ribbon button.</p>'}`;
     } else if (tab === 'highlights') {
@@ -1397,7 +1431,8 @@
       const chips = ['all'].concat(COLORS).map((c) => `<button type="button" class="chip${c === f ? ' on' : ''}" data-filter="${c}" aria-pressed="${c === f}">${c === 'all' ? 'All' : `<i class="dot hl-${c}"></i>${c[0].toUpperCase() + c.slice(1)}`}</button>`).join('');
       const items = store.hl.filter((h) => f === 'all' || h.color === f).sort(cmp).map((h) => {
         const ref = `${bookName(h.book, h.name)} ${h.ch}:${h.v}`;
-        return `<li class="saved-item"><a class="saved-link" href="#/read/${encodeURIComponent(h.book)}/${h.ch}/${h.v}"><span class="ref"><i class="dot hl-${esc(h.color)}"></i>${esc(ref)}${h.whole ? ' <small>whole verse</small>' : ''}</span><span class="txt"><span class="hl-sample hl-${esc(h.color)}">${esc(h.text)}</span></span></a>
+        const color = COLORS.includes(h.color) ? h.color : 'yellow';
+        return `<li class="saved-item"><a class="saved-link" href="#/read/${encodeURIComponent(h.book)}/${h.ch}/${h.v}"><span class="ref"><i class="dot hl-${color}"></i>${esc(ref)}${h.whole ? ' <small>whole verse</small>' : ''}</span><span class="txt"><span class="hl-sample hl-${color}">${esc(h.text)}</span></span></a>
           <button type="button" class="saved-del" data-del-hl="${esc(h.id)}" aria-label="Delete ${esc(h.color)} highlight in ${esc(ref)}">${ICON_DEL}</button></li>`;
       }).join('');
       body = `<div class="chips" role="group" aria-label="Filter by color">${chips}</div>
@@ -1407,14 +1442,14 @@
         ? 'Everything stays on this device until you sign in. The backup file needs no account. It includes bookmarks, highlights, your place, listening progress, and settings. Importing merges it with what is already here.'
         : 'Your reading stays on this device. The backup file needs no account. It includes bookmarks, highlights, your place, listening progress, and settings. Importing merges it with what is already here.';
       body = `<p class="muted">${lead}</p>
-        <div class="cta" style="justify-content:flex-start;margin:1rem 0">
+        <div class="cta cta-backup">
           <button type="button" class="btn primary" id="expBtn">Save backup file</button>
           <button type="button" class="btn" id="shareBk" hidden>Share backup…</button>
           <label class="btn" for="impFile">Restore from file</label><input type="file" id="impFile" accept="application/json,.json" class="visually-hidden">
         </div>
         <details class="paste"><summary>Copy or paste backup text instead</summary>
           <textarea id="bkText" rows="5" spellcheck="false" aria-label="Backup text"></textarea>
-          <div class="cta" style="justify-content:flex-start;margin:.5rem 0 0"><button type="button" class="btn" id="copyBk">Copy backup text</button><button type="button" class="btn" id="pasteBk">Restore from this text</button></div>
+          <div class="cta cta-flush"><button type="button" class="btn" id="copyBk">Copy backup text</button><button type="button" class="btn" id="pasteBk">Restore from this text</button></div>
         </details>
         <p class="count" id="bkMsg" role="status" aria-live="polite">${store.bm.length} bookmark${store.bm.length === 1 ? '' : 's'} and ${store.hl.length} highlight${store.hl.length === 1 ? '' : 's'} saved on this device.</p>`;
     }
@@ -1455,7 +1490,9 @@
     if (typeof s.resume === 'boolean') settings.resume = s.resume;
   }
   function importData(text) {
+    if (typeof text !== 'string' || text.length > 2000000) return { err: 'That file is too large to be a backup.' };
     let d; try { d = JSON.parse(text); } catch (e) { return { err: 'That does not look like a backup file.' }; }
+    if (!d || typeof d !== 'object' || Array.isArray(d)) return { err: 'That file is not a Clay Jar Treasure Bible backup.' };
     const built = window.ClayJarSync && ClayJarSync.backupToSnapshot && ClayJarSync.backupToSnapshot(d);
     if (!built || built.error) return { err: (built && built.error) || 'That file is not a Clay Jar Treasure Bible backup.' };
     const beforeBm = new Set(store.bm.map((b) => b.id));
@@ -1603,14 +1640,10 @@
     if (!settings.resume || sessionStorage.getItem('ctb-resumed')) return;
     sessionStorage.setItem('ctb-resumed', '1');
     if (location.hash && location.hash !== '#' && location.hash !== '#/') return;
-    const l = readJSON('ctb-last');
-    if (l.book && l.ch) history.replaceState(null, '', `#/read/${encodeURIComponent(l.book)}/${l.ch}${l.v > 1 ? '/' + l.v : ''}`);
+    const l = safePlace(readJSON('ctb-last'));
+    if (l) history.replaceState(null, '', `#/read/${encodeURIComponent(l.book)}/${l.ch}${l.v > 1 ? '/' + l.v : ''}`);
   })();
 
-  // ---------- Offline ----------
-  if ('serviceWorker' in navigator && location.protocol !== 'file:') {
-    window.addEventListener('load', () => navigator.serviceWorker.register('sw.js', { scope: './' }).catch((e) => console.warn('Offline mode unavailable:', e.message)));
-  }
   function offlineBadge() {
     let b = $('.offline-badge');
     if (navigator.onLine) { if (b) b.remove(); return; }
