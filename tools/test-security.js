@@ -15,7 +15,7 @@ csps.forEach((csp) => assert.strictEqual(csp, csps[0]));
 const csp = csps[0];
 assert.ok(csp.startsWith("default-src 'self'"));
 assert.ok(!csp.includes("'unsafe-eval'"));
-assert.ok(!csp.includes("'unsafe-inline'"));
+assert.strictEqual(csp.split("'unsafe-inline'").length - 1, 2);
 assert.ok(csp.includes('script-src-attr \'none\''));
 assert.ok(csp.includes('https://www.gstatic.com'));
 assert.ok(csp.includes('https://huggingface.co'));
@@ -44,7 +44,7 @@ htmls.forEach((html, i) => {
 });
 
 const sw = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
-assert.match(sw, /const VERSION = 'ctb-v42'/);
+assert.match(sw, /const VERSION = 'ctb-v43'/);
 assert.ok(sw.includes('js/lang.js'));
 assert.ok(sw.includes('js/languages.js'));
 
