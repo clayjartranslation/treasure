@@ -1,18 +1,16 @@
 name: Daily devotional email
 
+# Runs every hour. The script emails only subscribers whose local time is
+# in the 4 AM hour and who have not already received that local date's reading.
 on:
   schedule:
-    # 08:00 UTC is 4:00 AM Eastern Daylight Time.
-    # 09:00 UTC is 4:00 AM Eastern Standard Time.
-    # The script sends only while America/New_York is in the 4 AM hour.
-    - cron: '0 8 * * *'
-    - cron: '0 9 * * *'
+    - cron: '0 * * * *'
   workflow_dispatch:
     inputs:
       dry_run:
-        description: 'Print today’s email and do not send it'
+        description: 'Print counts and a sample email and do not send'
         type: boolean
-        default: false
+        default: true
       test_email:
         description: 'Send today’s devotional only to this address. Does not email the list.'
         required: false
@@ -28,7 +26,7 @@ concurrency:
 jobs:
   send:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4

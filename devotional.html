@@ -56,12 +56,13 @@
     </article>
     <section class="card email-signup" id="email-signup" hidden>
       <h2>Get it by email</h2>
-      <p>A free email each morning around 4:00 Eastern, with the verse, the reflection, and the prayer. No ads. You confirm from your inbox before anything is sent, and you can unsubscribe any time.</p>
+      <p>A free email each morning at 4:00 in your time zone, with the verse, the reflection, and the prayer. No ads. You confirm from your inbox before anything is sent, and you can unsubscribe any time.</p>
       <form id="email-form" method="post" action="">
         <label for="email-address">Email</label>
         <input id="email-address" name="EMAIL" type="email" required autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" placeholder="you@example.com">
         <input class="email-hp" type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="hidden" name="locale" value="en">
+        <input type="hidden" name="TIMEZONE" value="">
         <button class="btn primary" type="submit">Subscribe</button>
       </form>
       <p class="email-spam-note">After signing up, check your spam or junk folder for the confirmation email, and add <span class="notranslate" translate="no">contact.clayjar@protonmail.com</span> to your contacts so daily devotionals reach your inbox.</p>
