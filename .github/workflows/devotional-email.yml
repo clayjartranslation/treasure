@@ -13,6 +13,10 @@ on:
         description: 'Print today’s email and do not send it'
         type: boolean
         default: false
+      test_email:
+        description: 'Send today’s devotional only to this address. Does not email the list.'
+        required: false
+        type: string
 
 permissions:
   contents: read
@@ -36,5 +40,6 @@ jobs:
           BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
           BREVO_SENDER_EMAIL: ${{ secrets.BREVO_SENDER_EMAIL }}
           DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
+          TEST_EMAIL: ${{ github.event.inputs.test_email }}
           GITHUB_EVENT_NAME: ${{ github.event_name }}
         run: node tools/send-devotional-email.js

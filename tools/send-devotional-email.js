@@ -10,6 +10,9 @@
  * If any secret is missing, this exits 0 and does not call Brevo.
  *
  * DRY_RUN=1 prints the email and does not call Brevo.
+ * TEST_EMAIL=address sends today's devotional only to that address through
+ * Brevo transactional mail. The list is not emailed, no campaign is created,
+ * and the daily send is not marked as done. A test may run outside the 4 AM hour.
  * DEVOTIONAL_NOW, if set, is an ISO time used instead of the clock (tests).
  */
 'use strict';
@@ -137,22 +140,52 @@ function buildMessage(entry, date) {
   return { name, subject, preview, html, text, link, when };
 }
 
-function nowFromEnv() {
-  if (!process.env.DEVOTIONAL_NOW) return new Date();
-  const date = new Date(process.env.DEVOTIONAL_NOW);
+function nowFromEnv(env) {
+  env = env || process.env;
+  if (!env.DEVOTIONAL_NOW) return new Date();
+  const date = new Date(env.DEVOTIONAL_NOW);
   if (Number.isNaN(date.getTime())) throw new Error('DEVOTIONAL_NOW is not a valid time.');
   return date;
 }
 
-function isDryRun() {
-  const value = String(process.env.DRY_RUN || '').toLowerCase();
+function isDryRun(env) {
+  env = env || process.env;
+  const value = String(env.DRY_RUN || '').toLowerCase();
   return value === '1' || value === 'true' || value === 'yes';
 }
 
-function readSecrets() {
-  const apiKey = String(process.env.BREVO_API_KEY || '').trim();
-  const listRaw = String(process.env.BREVO_LIST_ID || '').trim();
-  const sender = String(process.env.BREVO_SENDER_EMAIL || '').trim();
+function parseTestEmail(env) {
+  const raw = String((env && env.TEST_EMAIL) || '').trim();
+  if (!raw) return { set: false, ok: true, email: '' };
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(raw)) return { set: true, ok: false, email: raw };
+  return { set: true, ok: true, email: raw };
+}
+
+function forTestSend(content) {
+  return String(content || '')
+    .replace(/<p[^>]*>\s*<a href="\{\{ unsubscribe \}\}"[^>]*>Unsubscribe<\/a>\s*<\/p>/g,
+      '<p style="font-family:-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;font-size:14px;color:#6b4a37;margin:0;">This was a one-off test. The subscriber list was not emailed.</p>')
+    .replace(/Unsubscribe:\s*\{\{ unsubscribe \}\}/g,
+      'This was a one-off test. The subscriber list was not emailed.')
+    .replace(/\{\{ unsubscribe \}\}/g, '');
+}
+
+function readTransactionalSecrets(env) {
+  env = env || process.env;
+  const apiKey = String(env.BREVO_API_KEY || '').trim();
+  const sender = String(env.BREVO_SENDER_EMAIL || '').trim();
+  const senderOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(sender);
+  const missing = [];
+  if (!apiKey) missing.push('BREVO_API_KEY');
+  if (!senderOk) missing.push('BREVO_SENDER_EMAIL');
+  return { ok: missing.length === 0, apiKey, sender, missing };
+}
+
+function readSecrets(env) {
+  env = env || process.env;
+  const apiKey = String(env.BREVO_API_KEY || '').trim();
+  const listRaw = String(env.BREVO_LIST_ID || '').trim();
+  const sender = String(env.BREVO_SENDER_EMAIL || '').trim();
   const listId = /^[1-9]\d*$/.test(listRaw) ? Number(listRaw) : null;
   const senderOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(sender);
   return {
@@ -290,18 +323,46 @@ async function deliver(secrets, message) {
   console.log(`Sent campaign ${id} (${message.name}).`);
 }
 
-async function main() {
-  const date = nowFromEnv();
-  const parts = nyParts(date);
-  const dry = isDryRun();
-  if (!dry && parts.hour !== 4) {
-    console.log(`America/New_York is ${parts.iso} hour ${parts.hour}, not the 4 AM hour. Nothing was sent.`);
-    return;
+async function sendTest(env, secrets, message, testEmail, deps) {
+  const log = (deps && deps.log) || console.log;
+  const request = (deps && deps.request) || brevo;
+  const payload = {
+    sender: { name: 'Clay Jar Treasure Bible', email: secrets.sender },
+    replyTo: { email: secrets.sender },
+    to: [{ email: testEmail }],
+    subject: '[Test] ' + message.subject,
+    htmlContent: forTestSend(message.html),
+    textContent: forTestSend(message.text)
+  };
+  const sent = await request(secrets.apiKey, 'POST', '/smtp/email', payload);
+  if (!sent.ok) {
+    throw new Error('Brevo did not send the test email (' + sent.status + ').');
   }
-  const entry = chooseEntry(loadEntries(), parts.key);
+  const messageId = sent.json && sent.json.messageId;
+  log('Sent a test of ' + message.name + ' only to ' + testEmail + (messageId ? ' (messageId ' + messageId + ')' : '') + '. The list was not emailed.');
+}
+
+async function run(env, deps) {
+  env = env || process.env;
+  const log = (deps && deps.log) || console.log;
+  const date = nowFromEnv(env);
+  const parts = nyParts(date);
+  const dry = isDryRun(env);
+  const testTo = parseTestEmail(env);
+  const testing = testTo.set;
+  if (testing && !testTo.ok) {
+    log('TEST_EMAIL is set but is not an email address.');
+    return 1;
+  }
+  if (!dry && !testing && parts.hour !== 4) {
+    log(`America/New_York is ${parts.iso} hour ${parts.hour}, not the 4 AM hour. Nothing was sent.`);
+    return 0;
+  }
+  const load = (deps && deps.loadEntries) || loadEntries;
+  const entry = chooseEntry(load(), parts.key);
   if (!entry) {
-    console.log(`No devotional for ${parts.key} in data/devotionals.json. Nothing was sent.`);
-    return;
+    log(`No devotional for ${parts.key} in data/devotionals.json. Nothing was sent.`);
+    return 0;
   }
   const message = buildMessage(entry, date);
   if (!message.text.includes(entry.text)) throw new Error('The plain-text email dropped the verse.');
@@ -312,23 +373,38 @@ async function main() {
     throw new Error('The email is missing the copyright line.');
   }
   if (dry) {
-    const secrets = readSecrets();
-    console.log('Dry run: email was not sent. Brevo was not called.');
-    console.log('Secrets present: ' + (secrets.ok ? 'yes' : 'no'));
-    console.log('Campaign name: ' + message.name);
-    console.log('Subject: ' + message.subject);
-    console.log('--- plain text ---');
-    console.log(message.text);
-    console.log('--- html ---');
-    console.log(message.html);
-    return;
+    const secrets = testing ? readTransactionalSecrets(env) : readSecrets(env);
+    log('Dry run: email was not sent. Brevo was not called.');
+    if (testing) log('If sent, this would go only to ' + testTo.email + '. The list would not be emailed.');
+    log('Secrets present: ' + (secrets.ok ? 'yes' : 'no'));
+    log('Campaign name: ' + message.name);
+    log('Subject: ' + message.subject);
+    log('--- plain text ---');
+    log(message.text);
+    log('--- html ---');
+    log(message.html);
+    return 0;
   }
-  const secrets = readSecrets();
+  if (testing) {
+    const secrets = readTransactionalSecrets(env);
+    if (!secrets.ok) {
+      log('Brevo secrets are not set (' + secrets.missing.join(', ') + '). Nothing was sent.');
+      return 0;
+    }
+    await sendTest(env, secrets, message, testTo.email, deps);
+    return 0;
+  }
+  const secrets = readSecrets(env);
   if (!secrets.ok) {
-    console.log('Brevo secrets are not set (BREVO_API_KEY, BREVO_LIST_ID, BREVO_SENDER_EMAIL). Nothing was sent.');
-    return;
+    log('Brevo secrets are not set (BREVO_API_KEY, BREVO_LIST_ID, BREVO_SENDER_EMAIL). Nothing was sent.');
+    return 0;
   }
   await deliver(secrets, message);
+  return 0;
+}
+
+async function main() {
+  return run(process.env, {});
 }
 
 module.exports = {
@@ -338,12 +414,18 @@ module.exports = {
   chooseEntry,
   buildMessage,
   readSecrets,
+  parseTestEmail,
+  forTestSend,
+  readTransactionalSecrets,
   alreadyHandled,
+  run,
   COPYRIGHT
 };
 
 if (require.main === module) {
-  main().catch((err) => {
+  main().then((code) => {
+    process.exit(code || 0);
+  }).catch((err) => {
     console.error(err && err.message ? err.message : err);
     process.exit(1);
   });

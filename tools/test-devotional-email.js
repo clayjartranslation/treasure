@@ -207,8 +207,91 @@ check('pages and the service worker include the nav and the new files', () => {
   assert.ok(privacy.includes('Brevo'));
 });
 
-if (failed) {
-  console.error(failed + ' failed');
-  process.exit(1);
+check('workflow accepts a test_email input and keeps the 4 AM cron', () => {
+  const yml = fs.readFileSync(path.join(root, '.github/workflows/devotional-email.yml'), 'utf8');
+  assert.match(yml, /cron:\s*'0 8 \* \* \*'/);
+  assert.match(yml, /cron:\s*'0 9 \* \* \*'/);
+  assert.match(yml, /test_email:/);
+  assert.match(yml, /TEST_EMAIL:/);
+  assert.match(yml, /dry_run:/);
+});
+
+check('test send helpers validate the address and drop the campaign unsubscribe tag', () => {
+  assert.strictEqual(mail.parseTestEmail({}).set, false);
+  assert.strictEqual(mail.parseTestEmail({ TEST_EMAIL: 'not-an-email' }).ok, false);
+  assert.deepStrictEqual(mail.parseTestEmail({ TEST_EMAIL: ' reader@example.com ' }), {
+    set: true, ok: true, email: 'reader@example.com'
+  });
+  const data = JSON.parse(fs.readFileSync(path.join(root, 'data/devotionals.json'), 'utf8'));
+  const entry = data.entries.find((item) => item.date === '11-13');
+  const message = mail.buildMessage(entry, new Date('2026-11-13T15:00:00Z'));
+  const stripped = mail.forTestSend(message.html + '\n' + message.text);
+  assert.ok(!stripped.includes('{{ unsubscribe }}'));
+  assert.ok(stripped.includes('This was a one-off test. The subscriber list was not emailed.'));
+  assert.ok(stripped.includes(entry.text));
+});
+
+async function asyncChecks() {
+  const data = JSON.parse(fs.readFileSync(path.join(root, 'data/devotionals.json'), 'utf8'));
+  const entry = data.entries.find((item) => item.date === '11-13');
+  const logs = [];
+  const log = (line) => logs.push(String(line));
+
+  logs.length = 0;
+  let code = await mail.run({
+    TEST_EMAIL: 'not-an-email',
+    DEVOTIONAL_NOW: '2026-11-13T15:00:00Z',
+    DRY_RUN: '0'
+  }, { log });
+  check('invalid TEST_EMAIL exits 1', () => {
+    assert.strictEqual(code, 1);
+    assert.match(logs.join('\n'), /not an email address/);
+  });
+
+  const calls = [];
+  logs.length = 0;
+  code = await mail.run({
+    TEST_EMAIL: 'reader@example.com',
+    DEVOTIONAL_NOW: '2026-11-13T15:00:00Z',
+    DRY_RUN: '0',
+    BREVO_API_KEY: 'secret-key',
+    BREVO_LIST_ID: '4',
+    BREVO_SENDER_EMAIL: 'news@example.com'
+  }, {
+    log,
+    request: async (key, method, url, body) => {
+      calls.push({ method, url, body });
+      if (method === 'POST' && url === '/smtp/email') {
+        return { ok: true, status: 201, json: { messageId: '<ctb-test-id@smtp-relay.mailin.fr>' }, text: '' };
+      }
+      throw new Error('unexpected ' + method + ' ' + url);
+    }
+  });
+  check('test email uses transactional send and does not touch the list', () => {
+    assert.strictEqual(code, 0);
+    assert.strictEqual(calls.length, 1);
+    assert.strictEqual(calls[0].url, '/smtp/email');
+    assert.deepStrictEqual(calls[0].body.to, [{ email: 'reader@example.com' }]);
+    assert.ok(calls[0].body.subject.startsWith('[Test] '));
+    assert.ok(calls[0].body.htmlContent.includes(entry.text.split('\n')[0]));
+    assert.ok(calls[0].body.textContent.includes(entry.text));
+    assert.ok(!calls[0].body.htmlContent.includes('{{ unsubscribe }}'));
+    assert.ok(!JSON.stringify(calls[0].body).includes('listIds'));
+    const out = logs.join('\n');
+    assert.match(out, /only to reader@example.com/);
+    assert.match(out, /messageId <ctb-test-id@smtp-relay.mailin.fr>/);
+    assert.match(out, /The list was not emailed/);
+    assert.ok(!out.includes('secret-key'), 'logs must not print the API key');
+  });
 }
-console.log('all passed');
+
+asyncChecks().then(() => {
+  if (failed) {
+    console.error(failed + ' failed');
+    process.exit(1);
+  }
+  console.log('all passed');
+}).catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
