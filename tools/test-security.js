@@ -45,7 +45,7 @@ htmls.forEach((html, i) => {
 });
 
 const sw = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
-assert.match(sw, /const VERSION = 'ctb-v45'/);
+assert.match(sw, /const VERSION = 'ctb-v46'/);
 assert.ok(sw.includes('js/lang.js'));
 assert.ok(sw.includes('js/languages.js'));
 

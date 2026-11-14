@@ -22,8 +22,8 @@
   var existing = window.CTB_DEVOTIONAL_EMAIL;
   if (!ready(existing)) {
     window.CTB_DEVOTIONAL_EMAIL = {
-      formAction: '',
-      listId: ''
+      formAction: 'https://5b7e23a5.sibforms.com/serve/MUIFAPuE8VbvvKpYKQuBEukhsBupQHehKVZiLxtcd9CDEXH4zGuQaqr7bDd_9I4NCal0433ND2DZTYEm7Svd6QKTUa_PrqXqPGBwpZCC_2EohzULONLWk81D5C9Y2g70uVbqa0wV7hIxU8ZbS1VUftYpc2lvyh88rCc03quzns9b6sEGyVcwD95Hg5v0ye6oHfPFzrOpxDOsFn79xQ==',
+      listId: '4'
     };
   }
   window.ctbDevotionalEmailReady = function () {

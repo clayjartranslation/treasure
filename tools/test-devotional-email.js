@@ -94,13 +94,14 @@ check('a cancelled campaign does not block a new send', () => {
   assert.strictEqual(decision.action, 'create');
 });
 
-check('empty config stays empty and hides the form', () => {
+check('committed config shows the form', () => {
   const code = fs.readFileSync(path.join(root, 'js/devotional-email-config.js'), 'utf8');
+  assert.ok(!/api[_-]?key\s*[:=]/i.test(code), 'do not put the Brevo API key in the public config');
   const context = { window: {} };
   vm.runInNewContext(code, context);
-  assert.strictEqual(context.window.CTB_DEVOTIONAL_EMAIL.formAction, '');
-  assert.strictEqual(context.window.CTB_DEVOTIONAL_EMAIL.listId, '');
-  assert.strictEqual(context.window.ctbDevotionalEmailReady(), null);
+  const ready = context.window.ctbDevotionalEmailReady();
+  assert.strictEqual(ready.formAction, 'https://5b7e23a5.sibforms.com/serve/MUIFAPuE8VbvvKpYKQuBEukhsBupQHehKVZiLxtcd9CDEXH4zGuQaqr7bDd_9I4NCal0433ND2DZTYEm7Svd6QKTUa_PrqXqPGBwpZCC_2EohzULONLWk81D5C9Y2g70uVbqa0wV7hIxU8ZbS1VUftYpc2lvyh88rCc03quzns9b6sEGyVcwD95Hg5v0ye6oHfPFzrOpxDOsFn79xQ==');
+  assert.strictEqual(ready.listId, '4');
 });
 
 check('a filled config is kept and a partial one stays hidden', () => {
@@ -117,8 +118,9 @@ check('a filled config is kept and a partial one stays hidden', () => {
   assert.strictEqual(filled.window.ctbDevotionalEmailReady().listId, '12');
   const partial = { window: { CTB_DEVOTIONAL_EMAIL: { formAction: 'https://example.sibforms.com/serve/abc', listId: '' } } };
   vm.runInNewContext(code, partial);
-  assert.strictEqual(partial.window.CTB_DEVOTIONAL_EMAIL.formAction, '');
-  assert.strictEqual(partial.window.ctbDevotionalEmailReady(), null);
+  const fromFile = partial.window.ctbDevotionalEmailReady();
+  assert.ok(fromFile, 'an incomplete pre-set config should fall back to the committed form');
+  assert.strictEqual(fromFile.listId, '4');
   const bad = { window: {} };
   vm.runInNewContext(code, bad);
   bad.window.CTB_DEVOTIONAL_EMAIL = { formAction: 'http://example.com/form', listId: '4' };
