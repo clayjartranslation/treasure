@@ -484,10 +484,10 @@
         return chain;
       });
     }
-    var root = col(db, 'users', uid, 'bibles');
-    return getDocs(root).then(function (snap) {
+    /* The rules only allow reads of a known Bible id, so a list query over the whole bibles
+       collection is denied. Delete the two known Bibles directly instead. */
+    return Promise.resolve({ docs: [] }).then(function (snap) {
       var ids = { cjt: 1, ctb: 1 };
-      snap.docs.forEach(function (item) { ids[item.id] = 1; });
       var idsList = Object.keys(ids);
       return idsList.reduce(function (p, id) {
         return p.then(function () {
