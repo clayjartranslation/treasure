@@ -2,7 +2,7 @@
 
 Sign-in is **optional**. Reading and listening stay free, with no ads and no required account. With the config file left empty, the Treasure Bible hides every account control and behaves as it does today: place, bookmarks, highlights, and listening stay on the device.
 
-When the config is filled in, a reader can sign in with Google or with email and a password (including password reset). The same account works on this site and on the Clay Jar Translation. Each Bible keeps its own progress.
+When the config is filled in, a reader can sign in with Google or with email and a password (including password reset). This site uses its own Firebase project (`clayjar-treasure`). The Clay Jar Translation uses a separate project (`clayjar-bible`) and a different data shape, so a sign-in on one site does not open the other site’s bookmarks.
 
 Sign in with Apple is implemented and **turned off**. It needs a paid Apple Developer Program membership later. Leave `apple` set to `false` until then.
 
@@ -21,18 +21,13 @@ The free Spark plan covers this:
 
 Do not upgrade to Blaze for this feature. Spark is the right plan.
 
-## One project, two Bibles
+## This site’s Firebase project
 
-Create **one** Firebase project for both sites. Add **one** web app (or one per site; either works, as long as the project is the same). Put the same `apiKey`, `authDomain`, `projectId`, and `appId` in both repos. The only difference is `bibleId`:
+This repo uses the Spark project `clayjar-treasure` and `bibleId` `ctb`. The Clay Jar Translation (`https://clayjartranslation.github.io/`) uses a separate Spark project, `clayjar-bible`, because it stores progress in a different document shape. Do not copy this config file into that repo.
 
-| Site | Repo | `bibleId` | Where it is served |
-| --- | --- | --- | --- |
-| Clay Jar Translation | `clayjartranslation/clayjartranslation.github.io` | `cjt` | `https://clayjartranslation.github.io/` |
-| Clay Jar Treasure Bible | this repo | `ctb` | `https://clayjartranslation.github.io/treasure/` |
+Both sites are served from the host `clayjartranslation.github.io`. That host is an authorized domain on this project, along with `localhost` and the project’s default `firebaseapp.com` / `web.app` domains.
 
-Both origins are the host `clayjartranslation.github.io`. Add that host once under **Authentication → Settings → Authorized domains**. `localhost` is already on the list for local tests.
-
-Progress is stored separately under the user, so a highlight in the Treasure Bible does not appear in the Translation, and the other way around. Signing in on one site uses the same email and password on the other.
+A highlight in the Treasure Bible does not appear in the Translation, and the other way around.
 
 ## Data layout
 
@@ -48,7 +43,7 @@ users/{uid}/bibles/{bibleId}/bookmarks/{id}      one bookmark, or a delete marke
 users/{uid}/bibles/{bibleId}/highlights/{id}     one highlight, or a delete marker
 ```
 
-`bibleId` is `ctb` or `cjt`. `t` is a millisecond timestamp from the device. The newer timestamp wins for reading place, listening place, and listening settings.
+On this site, `bibleId` is `ctb`. The published rules also accept `cjt` so an old test path is not rejected, but this site always writes `ctb`. `t` is a millisecond timestamp from the device. The newer timestamp wins for reading place, listening place, and listening settings.
 
 Bookmarks and highlights merge by id. The same verse keeps one bookmark (the newer one). The same highlighted words and color keep one highlight. A delete is stored as `{ id, deleted: true, t }` so another device does not bring the item back. Colors are `yellow`, `green`, `blue`, and `pink`.
 
@@ -70,16 +65,11 @@ The first time this device signs in to an account, on-device bookmarks and highl
 
 ## What the owner must do to switch accounts on
 
-1. In the [Firebase console](https://console.firebase.google.com), create a project (Spark / no billing). Name it something like `clay-jar-bibles`.
-2. Add a **Web app**. Copy the config. You do not need Analytics.
-3. Open **Build → Authentication → Sign-in method** and enable **Google** and **Email/Password**. Leave Apple disabled.
-4. Under **Authentication → Settings → Authorized domains**, add `clayjartranslation.github.io` if it is not there. Do not remove `localhost`.
-5. For Google, finish the consent screen in Google Cloud if the console asks (app name, support email). The authorized domain above is the one that matters for these sites.
-6. Open **Build → Firestore Database → Create database**. Choose production mode and a region close to readers. Then open the **Rules** tab and paste `firestore.rules` from this repo. Publish.
-7. Edit `js/firebase-config.js` in **this** repo. Fill in `apiKey`, `authDomain`, `projectId`, and `appId`. Leave `bibleId` as `'ctb'`. Leave `apple: false`, `phone: false`, and `useEmulator: false`. The public contact address on the terms and privacy pages is [contact.clayjar@protonmail.com](mailto:contact.clayjar@protonmail.com).
-8. Copy that same file to the Clay Jar Translation repo and change only `bibleId` to `'cjt'`.
-9. Deploy both sites. The config file is loaded from the network when the phone is online, so the next visit picks it up. Readers who are offline keep the previous copy until they connect.
-10. On a phone, open the Treasure Bible, choose **Menu → Account**, create an email account, bookmark a verse, then sign in on another device and confirm the bookmark is there. Repeat once on the Translation site and confirm its bookmarks stay separate.
+The Spark project `clayjar-treasure` is already created. Email/password and Google sign-in are on; Apple and phone stay off. Authorized domains include `clayjartranslation.github.io` and `localhost`. Firestore (Standard edition, `nam5`) is live with the rules in this repo. `js/firebase-config.js` already has the public web config. Leave `bibleId` as `'ctb'`. Leave `apple: false`, `phone: false`, and `useEmulator: false`. The public contact address on the terms and privacy pages is [contact.clayjar@protonmail.com](mailto:contact.clayjar@protonmail.com).
+
+Do not copy this config into the Clay Jar Translation repo.
+
+After this file is on GitHub Pages, the config is loaded from the network when the phone is online, so the next visit picks it up. Readers who are offline keep the previous copy until they connect. To confirm it, open the Treasure Bible, choose **Menu → Account**, create an email account, bookmark a verse, then sign in on another device and confirm the bookmark is there.
 
 To switch accounts **off** again, set the four strings in `js/firebase-config.js` back to empty and deploy. The account button disappears. Anything already saved on the device remains on the device.
 
@@ -89,7 +79,7 @@ Keep `apple: false` until you have an Apple Developer Program account (Apple cha
 
 1. In Apple Developer, create a Services ID and a key for Sign in with Apple, and register the Firebase redirect URL shown in the Firebase Apple provider setup (it looks like `https://YOUR-PROJECT.firebaseapp.com/__/auth/handler`).
 2. In Firebase Authentication, enable the Apple provider and enter the Services ID, team id, key id, and private key.
-3. Set `apple: true` in `js/firebase-config.js` on both sites and deploy.
+3. Set `apple: true` in `js/firebase-config.js` on this site and deploy.
 
 Until that flag is true, the Apple button is not shown.
 
@@ -100,7 +90,7 @@ Keep `phone: false` while the project is on the Spark plan. Do not upgrade to Bl
 The button, country picker (every country in `js/phone-countries.js`), E.164 check, and invisible reCAPTCHA are already in the page. They stay hidden while the flag is false. If you later move the project to Blaze and accept the SMS cost:
 
 1. In Firebase Authentication, enable the Phone provider. Add `clayjartranslation.github.io` as an authorized domain if it is not already there. Firebase provisions the reCAPTCHA used by the invisible check.
-2. Set `phone: true` in `js/firebase-config.js` on both sites and deploy.
+2. Set `phone: true` in `js/firebase-config.js` on this site and deploy.
 3. The sign-in screen already says that a code is texted to the number, and that Bible progress is not uploaded until sign-in finishes.
 
 Until that flag is true, the site does not ask for a phone number.
@@ -123,7 +113,7 @@ A JSON backup needs no account. It is on the Account page and under Bookmarks an
 - Phone, only when `phone` is true
 - Save or import a backup file with no account
 - Sign out, then keep or clear this device’s copy
-- Delete my data and account (removes the login and the cloud progress for **both** Bibles, and the copy of that progress on this device)
+- Delete my data and account (removes the login and the cloud progress for this Bible, and the copy of that progress on this device)
 
 Terms of Service (`terms.html`) and Privacy Policy (`privacy.html`) are linked from the footer and the Account page. Questions go to [contact.clayjar@protonmail.com](mailto:contact.clayjar@protonmail.com). Those pages are plain-language explanations, not legal advice.
 
@@ -160,8 +150,8 @@ npx firebase-tools emulators:exec --only auth,firestore --project demo-clayjar "
 The site cannot do these from the repository. GitHub Pages does not let the site set HTTP headers, so the Content-Security-Policy is a `<meta>` tag. `frame-ancestors` is ignored in a meta tag. A script refuses to run the page inside a frame. A real `Content-Security-Policy: frame-ancestors 'none'` header needs a host that allows custom headers.
 
 1. **Firestore rules.** In Firebase, open Firestore → Rules, paste `firestore.rules` from this repo, and publish. The rules let a signed-in person read and write only `users/{their uid}`. `bibleId` may only be `ctb` or `cjt`. There is no Realtime Database in this project.
-2. **API key.** In Google Cloud → APIs & Services → Credentials, open the browser key. Restrict it to HTTP referrers `https://clayjartranslation.github.io/*`, `http://localhost:*`, and `http://127.0.0.1:*`. Restrict the APIs to Identity Toolkit, Token Service, and Cloud Firestore. The key is still visible in the page. The referrer restriction and the Firestore rules are what keep it from being reused.
-3. **Authorized domains.** Authentication → Settings → Authorized domains should list `clayjartranslation.github.io` and `localhost` only.
+2. **API key.** The browser key is already restricted to HTTP referrers `https://clayjartranslation.github.io/*` and `https://clayjartranslation.github.io`. Optionally also restrict the APIs to Identity Toolkit, Token Service, and Cloud Firestore. The key is still visible in the page. The referrer restriction and the Firestore rules are what keep it from being reused.
+3. **Authorized domains.** Authentication → Settings → Authorized domains should include `clayjartranslation.github.io`, `localhost`, and the project’s default `firebaseapp.com` / `web.app` domains. Do not remove the Firebase default domains.
 4. **App Check.** The free Spark plan can use App Check with reCAPTCHA v3. It is not wired up, because it needs a site key from the Firebase console and it would load a Google script on sign-in. After you enforce App Check, add the site key to `js/firebase-config.js` and add `https://www.google.com` to `script-src` in the Content-Security-Policy on every page. Do not require `request.app` in the rules until a build with that key is live, or sign-in will fail.
 5. **Phone sign-in and reCAPTCHA.** Leave `phone: false`. Turning it on also needs `https://www.google.com` in `script-src` and `frame-src`.
 6. **GitHub.** On a public repository, enable Dependabot alerts, secret scanning, and secret-scanning push protection. Protect `main` so a pull request and the Tests workflow are required. The agent may have been unable to change those settings. `/.well-known/security.txt` for the whole domain belongs at `https://clayjartranslation.github.io/.well-known/security.txt` (the user-site repository). This repo serves a copy at `/treasure/.well-known/security.txt`.

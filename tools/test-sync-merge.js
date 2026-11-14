@@ -5,7 +5,9 @@ const path = require('path');
 const Sync = require('../js/sync-merge.js');
 
 const cfgSrc = fs.readFileSync(path.join(__dirname, '../js/firebase-config.js'), 'utf8');
-assert(cfgSrc.includes("apiKey: ''"), 'committed config must not contain an API key');
+assert(/apiKey: 'AIza[A-Za-z0-9_-]+'/.test(cfgSrc), 'committed config should include the public web API key so sign-in can turn on');
+assert(cfgSrc.includes("projectId: 'clayjar-treasure'"), 'Treasure uses the clayjar-treasure project');
+assert(cfgSrc.includes("authDomain: 'clayjar-treasure.firebaseapp.com'"));
 assert(cfgSrc.includes("bibleId: 'ctb'"));
 assert(cfgSrc.includes('apple: false'));
 assert(cfgSrc.includes('phone: false'));

@@ -1,6 +1,6 @@
 rules_version = '2';
 /* Each signed-in person can read and write only the documents under users/{their uid}.
-   Both Bibles (ctb and cjt) live in this one project. There is no public data here.
+   This project is for the Clay Jar Treasure Bible (bibleId "ctb"). There is no public data here.
    Spark plan: these rules run in Firestore. No Cloud Functions.
    App Check is not required here until the owner turns it on in the Firebase console.
    Requiring request.app before that would block every sign-in. */
@@ -17,6 +17,8 @@ service cloud.firestore {
       allow read, delete: if signedIn(uid);
       allow create, update: if signedIn(uid)
         && request.resource.data.keys().hasOnly(['createdAt', 'updatedAt'])
+        && request.resource.data.createdAt is timestamp
+        && request.resource.data.updatedAt is timestamp
         && request.resource.size() < 2000;
 
       match /bibles/{bibleId} {
@@ -46,6 +48,7 @@ service cloud.firestore {
         && request.resource.data.id.size() > 0
         && request.resource.data.id.size() < 80
         && request.resource.data.t is number
+        && request.resource.size() < 16000
         && (!('text' in request.resource.data)
             || (request.resource.data.text is string && request.resource.data.text.size() <= 4000))
         && (!('book' in request.resource.data)
@@ -57,7 +60,15 @@ service cloud.firestore {
         && (!('v' in request.resource.data)
             || (request.resource.data.v is int && request.resource.data.v >= 0 && request.resource.data.v < 1000))
         && (!('color' in request.resource.data)
-            || request.resource.data.color in ['yellow', 'green', 'blue', 'pink', '']);
+            || request.resource.data.color in ['yellow', 'green', 'blue', 'pink', ''])
+        && (!('deleted' in request.resource.data)
+            || request.resource.data.deleted is bool)
+        && (!('whole' in request.resource.data)
+            || request.resource.data.whole is bool)
+        && (!('s' in request.resource.data)
+            || (request.resource.data.s is int && request.resource.data.s >= 0 && request.resource.data.s < 100000))
+        && (!('e' in request.resource.data)
+            || (request.resource.data.e is int && request.resource.data.e >= 0 && request.resource.data.e < 100000));
     }
   }
 }

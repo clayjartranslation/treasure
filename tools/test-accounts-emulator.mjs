@@ -1,6 +1,6 @@
 /* End-to-end check against the Auth and Firestore emulators.
    Run under: npx firebase-tools emulators:exec --only auth,firestore --project demo-clayjar
-   The committed js/firebase-config.js stays empty; the browser test injects a config. */
+   The emulator test injects its own config in the browser and does not use the live project. */
 import { createRequire } from 'module';
 import { mkdirSync } from 'fs';
 

@@ -1,7 +1,7 @@
-/* Clay Jar accounts — one file for the whole site.
-   Shared by the Clay Jar Treasure Bible (this repo, bibleId "ctb") and the Clay Jar
-   Translation (bibleId "cjt"). Both sites use the SAME Firebase project. Progress for
-   each Bible is stored in its own folder under the signed-in user.
+/* Clay Jar Treasure Bible — optional account sync
+   This site uses its own Firebase project (clayjar-treasure, bibleId "ctb").
+   The Clay Jar Translation uses a separate project and a different data shape,
+   so do not copy this config into that repo.
    Full steps: SETUP-ACCOUNTS.md.
 
    Leave the strings below empty (and useEmulator false) to hide sign-in. Reading,
@@ -17,10 +17,10 @@
   );
   if (filled) return;
   window.CLAYJAR_ACCOUNTS = {
-    apiKey: '',
-    authDomain: '',
-    projectId: '',
-    appId: '',
+    apiKey: 'AIzaSyBjfc8SVqHfIEuXLj1YxQsygLdvj53Z5gc',
+    authDomain: 'clayjar-treasure.firebaseapp.com',
+    projectId: 'clayjar-treasure',
+    appId: '1:296625615324:web:5065cb3bef07731fdd9f19',
     /* Sign in with Apple is built, but it stays off until a paid Apple Developer account exists. */
     apple: false,
     /* Phone sign-in is built, but it stays off. SMS costs money and needs the Blaze plan, not Spark. */
