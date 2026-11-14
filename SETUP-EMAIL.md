@@ -82,21 +82,20 @@ The form, `listId`, and `BREVO_LIST_ID` must all point at `Treasure Bible devoti
 
 1. On the repo, tap **Actions**.
 2. Open **Daily devotional email**.
-3. Tap **Run workflow**. Turn on **Print today’s email and do not send it**. Tap **Run workflow** again.
-4. Open the run and read the log. You should see today’s title, the verse, the reflection, the prayer, the copyright line, and `Unsubscribe`. The log says Brevo was not called.
+3. Tap **Run workflow**. Leave **Print counts and a sample email and do not send** on. Tap **Run workflow** again.
+4. Open the run and read the log. You should see a count of contacts in each time zone, today’s title, the verse, the reflection, the prayer, the copyright line, and an unsubscribe link. Nothing is sent.
 
-A run with the box unchecked only sends during the 4 AM hour, Eastern time. It still will not send a second time that day.
+A live run (the print switch off) still emails only people whose local time is in the 4 AM hour. To send a one-off copy to yourself, use the **test email** box. That does not email the list.
 
 ## What the daily send does
 
-The job wakes at 8:00 UTC and again at 9:00 UTC.
+GitHub starts a job at the top of every hour. The script emails only confirmed subscribers whose local time is in the 4 AM hour and who have not already received that local date’s reading. The reading itself is the one for the reader’s local date. If a time zone is missing or invalid, America/New_York is used.
 
-- In summer (Eastern Daylight Time), 8:00 UTC is 4:00 AM. That run sends. The 9:00 UTC run sees that it is 5:00 AM and does nothing.
-- In winter (Eastern Standard Time), 9:00 UTC is 4:00 AM. That run sends. The 8:00 UTC run sees that it is 3:00 AM and does nothing.
+The signup form posts a hidden `TIMEZONE` field. If the hosted Brevo form has no matching `TIMEZONE` attribute field, Brevo may ignore that value, and those readers are emailed at 4:00 Eastern until the time zone is stored. The send job creates the `TIMEZONE` and `LAST_DEVO_DATE` attributes if they are missing.
 
-When the clocks change, the other wake-up is the one that sends. It never sends twice in one day: if a Brevo campaign name already contains that date, the job stops.
+Unsubscribed or blocklisted addresses are skipped. Each email has an unsubscribe link to this site’s unsubscribe page, and Brevo adds a List-Unsubscribe header so Gmail, Yahoo, and Outlook can show their own Unsubscribe control. After a successful send, the job stores `LAST_DEVO_DATE` on the contact so a rerun never double-sends.
 
-The email has the title, the date, the verse copied from `data/devotionals.json`, the reflection, the prayer, a link to that day’s page, the line `Devotionals © 2026 Jose Santiago. All rights reserved.`, and Brevo’s unsubscribe link.
+The email has the title, the date, the verse copied from `data/devotionals.json`, the reflection, the prayer, a link to that day’s page, the line `Devotionals © 2026 Jose Santiago. All rights reserved.`, and the unsubscribe link.
 
 If there is no reading for that month and day, nothing is sent. If the three secrets are missing, the job ends normally and does not fail. A failure means the secrets are set and Brevo refused the send (for example the sender is not confirmed yet). Open the Actions log and read the message.
 

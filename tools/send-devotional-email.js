@@ -1,67 +1,250 @@
 #!/usr/bin/env node
-/*
- * Send today's Clay Jar Treasure Bible devotional through Brevo.
- *
- * Scheduled at 08:00 and 09:00 UTC. Sends only when America/New_York is in the
- * 4 AM hour, so daylight saving time still means 4:00 AM Eastern, once a day.
- * A campaign whose name contains that date is not sent again.
- *
- * Secrets (GitHub Actions): BREVO_API_KEY, BREVO_LIST_ID, BREVO_SENDER_EMAIL.
- * If any secret is missing, this exits 0 and does not call Brevo.
- *
- * DRY_RUN=1 prints the email and does not call Brevo.
- * TEST_EMAIL=address sends today's devotional only to that address through
- * Brevo transactional mail. The list is not emailed, no campaign is created,
- * and the daily send is not marked as done. A test may run outside the 4 AM hour.
- * DEVOTIONAL_NOW, if set, is an ISO time used instead of the clock (tests).
- */
+/* Send today's Clay Jar Treasure Bible devotional to the Brevo list at 4 AM in each
+   subscriber's own time zone. Free plan. No send while Brevo secrets are
+   missing (exit 0).
+
+   The job runs every hour. Each run emails only confirmed subscribers
+   whose local time is in the 4 AM hour and who have not already received
+   today's (their local date) devotional. Sends go through Brevo
+   transactional mail, one recipient per message version, so addresses
+   are never shared on the To line. LAST_DEVO_DATE is saved after a
+   successful send so a rerun never double-sends.
+
+   Brevo's {{ unsubscribe }} tag is not available in transactional mail.
+   Each email links to this site's unsubscribe page, and Brevo still
+   adds its List-Unsubscribe header (the one-click control in Gmail,
+   Yahoo, and Outlook). Contacts with emailBlacklisted, or on Brevo's
+   transactional block list, are skipped.
+
+   Usage: node tools/send-devotional-email.js
+   Env: BREVO_API_KEY, BREVO_LIST_ID, BREVO_SENDER_EMAIL
+        DRY_RUN=true prints counts and a sample message and does not send
+        EVENT_NAME=workflow_dispatch allows a manual run (still only the
+        4 AM hour, unless TEST_EMAIL is set)
+        TEST_EMAIL=address sends today's devotional only to that address
+        through Brevo transactional mail. The list is not emailed, and
+        LAST_DEVO_DATE is not updated.
+        DEVOTIONAL_NOW or NOW=ISO-8601 is a test clock. The workflow does not set it. */
 'use strict';
 
 const fs = require('fs');
 const path = require('path');
 
+const ROOT = path.join(__dirname, '..');
 const COPYRIGHT = 'Devotionals © 2026 Jose Santiago. All rights reserved.';
+const NOTICE = COPYRIGHT;
 const SITE = 'https://clayjartranslation.github.io/treasure/devotional.html';
-const BLOCKED = new Set(['sent', 'queued', 'inprocess', 'suspended', 'inreview', 'archive']);
+const UNSUBSCRIBE_PAGE = 'https://clayjartranslation.github.io/treasure/unsubscribe.html';
+const SENDER_NAME = 'Clay Jar Treasure Bible';
+const DEFAULT_TZ = 'America/New_York';
+const SEND_HOUR = 4;
+const FREE_DAILY_LIMIT = 300;
+const WARN_AT = 250;
+const MESSAGE_BATCH = 1000;
+const CONTACT_PAGE = 500;
+const ATTR_TIMEZONE = 'TIMEZONE';
+const ATTR_LAST_DEVO = 'LAST_DEVO_DATE';
+const MONTHS = [null, 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-function nyParts(date) {
+function isValidIanaTimeZone(tz) {
+  const name = String(tz || '').trim();
+  if (!name || name.length > 80) return false;
+  try {
+    new Intl.DateTimeFormat('en-US', { timeZone: name }).format(new Date());
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+function resolveTimeZone(raw) {
+  const name = String(raw == null ? '' : raw).trim();
+  return isValidIanaTimeZone(name) ? name : DEFAULT_TZ;
+}
+
+function tzParts(date, timeZone) {
+  const tz = resolveTimeZone(timeZone);
   const fmt = new Intl.DateTimeFormat('en-US', {
-    timeZone: 'America/New_York',
-    hour: '2-digit',
-    hourCycle: 'h23',
+    timeZone: tz,
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',
-    weekday: 'long'
+    hour: '2-digit',
+    minute: '2-digit',
+    hourCycle: 'h23',
   });
   const map = {};
-  fmt.formatToParts(date).forEach((part) => { map[part.type] = part.value; });
+  fmt.formatToParts(date).forEach((p) => { if (p.type !== 'literal') map[p.type] = p.value; });
   let hour = Number(map.hour);
   if (hour === 24) hour = 0;
-  const iso = `${map.year}-${map.month}-${map.day}`;
+  const month = map.month;
+  const day = map.day;
   return {
+    timeZone: tz,
     hour,
+    minute: Number(map.minute),
     year: map.year,
-    month: map.month,
-    day: map.day,
-    weekday: map.weekday,
-    key: `${map.month}-${map.day}`,
-    iso
+    month,
+    day,
+    isoDate: map.year + '-' + month + '-' + day,
+    key: month + '-' + day,
   };
 }
 
-function longDate(date) {
-  return new Intl.DateTimeFormat('en-US', {
-    timeZone: 'America/New_York',
-    weekday: 'long',
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric'
-  }).format(date);
+function nyParts(date) {
+  return tzParts(date, DEFAULT_TZ);
 }
 
-function campaignName(iso) {
-  return `CTB devotional ${iso}`;
+function inSendHour(parts) {
+  return parts.hour === SEND_HOUR;
+}
+
+function contactAttributes(contact) {
+  return (contact && contact.attributes) || {};
+}
+
+function contactEmail(contact) {
+  return String((contact && (contact.email || contact.emailAddress)) || '').trim();
+}
+
+function contactTimeZone(contact) {
+  const attrs = contactAttributes(contact);
+  return resolveTimeZone(
+    attrs[ATTR_TIMEZONE] ||
+    attrs.CONTACT_TIMEZONE ||
+    attrs['CONTACT TIMEZONE'] ||
+    attrs.LAST_DETECTED_TIMEZONE
+  );
+}
+
+function lastDevoDate(contact) {
+  return String(contactAttributes(contact)[ATTR_LAST_DEVO] || '').trim();
+}
+
+function alreadyReceived(contact, isoDate) {
+  return lastDevoDate(contact) === String(isoDate || '');
+}
+
+function isExcluded(contact, blockedSet) {
+  if (!contact) return true;
+  if (contact.emailBlacklisted === true) return true;
+  const email = contactEmail(contact).toLowerCase();
+  if (!email) return true;
+  if (blockedSet && blockedSet.has(email)) return true;
+  return false;
+}
+
+function groupByTimeZone(contacts, now, blockedSet) {
+  const groups = new Map();
+  function group(tz) {
+    if (!groups.has(tz)) {
+      const parts = tzParts(now, tz);
+      groups.set(tz, {
+        timeZone: tz,
+        localDate: parts.isoDate,
+        key: parts.key,
+        hour: parts.hour,
+        minute: parts.minute,
+        due: inSendHour(parts),
+        recipients: [],
+        skippedAlready: 0,
+        skippedExcluded: 0,
+        skippedWrongHour: 0,
+        total: 0,
+      });
+    }
+    return groups.get(tz);
+  }
+  (contacts || []).forEach((contact) => {
+    const tz = contactTimeZone(contact);
+    const g = group(tz);
+    g.total += 1;
+    if (isExcluded(contact, blockedSet)) {
+      g.skippedExcluded += 1;
+      return;
+    }
+    if (alreadyReceived(contact, g.localDate)) {
+      g.skippedAlready += 1;
+      return;
+    }
+    if (!g.due) {
+      g.skippedWrongHour += 1;
+      return;
+    }
+    g.recipients.push(contact);
+  });
+  return Array.from(groups.values()).sort((a, b) => a.timeZone.localeCompare(b.timeZone));
+}
+
+function dueGroups(groups) {
+  return (groups || []).filter((g) => g.due && g.recipients.length);
+}
+
+function alreadySentTodayCount(groups) {
+  return (groups || []).reduce((n, g) => n + g.skippedAlready, 0);
+}
+
+function dueCount(groups) {
+  return (groups || []).reduce((n, g) => n + (g.due ? g.recipients.length : 0), 0);
+}
+
+function applyDailyLimit(groups, alreadySent) {
+  let remaining = FREE_DAILY_LIMIT - alreadySent;
+  let truncated = 0;
+  const limited = (groups || []).map((g) => {
+    if (!g.due) return g;
+    if (remaining <= 0) {
+      truncated += g.recipients.length;
+      return Object.assign({}, g, { recipients: [], truncated: g.recipients.length });
+    }
+    if (g.recipients.length <= remaining) {
+      remaining -= g.recipients.length;
+      return g;
+    }
+    const kept = g.recipients.slice(0, remaining);
+    truncated += g.recipients.length - kept.length;
+    remaining = 0;
+    return Object.assign({}, g, { recipients: kept, truncated: g.recipients.length - kept.length });
+  });
+  return { groups: limited, truncated, remaining: Math.max(0, remaining) };
+}
+
+function longDate(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || '');
+  if (!m) return String(iso || '');
+  return MONTHS[Number(m[2])] + ' ' + Number(m[3]) + ', ' + m[1];
+}
+
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+}
+
+function campaignName(isoDate) {
+  return 'CTB devotional ' + isoDate;
+}
+
+function unsubscribeUrl(email) {
+  if (!email) return UNSUBSCRIBE_PAGE;
+  return UNSUBSCRIBE_PAGE + '?email=' + encodeURIComponent(String(email).trim());
+}
+
+function loadDevotionals(file) {
+  const data = JSON.parse(fs.readFileSync(file || path.join(ROOT, 'data', 'devotionals.json'), 'utf8'));
+  const list = data && Array.isArray(data.entries) ? data.entries : [];
+  return list;
+}
+
+function usable(entry) {
+  return !!(entry && /^\d{2}-\d{2}$/.test(entry.date) &&
+    entry.title && entry.reference && entry.text && entry.reflection && entry.prayer);
+}
+
+function findEntry(entries, key) {
+  return (entries || []).find((entry) => usable(entry) && entry.date === key) || null;
+}
+
+function chooseEntry(entries, key) {
+  return findEntry(entries, key);
 }
 
 function escapeHtml(value) {
@@ -70,88 +253,105 @@ function escapeHtml(value) {
   }[ch]));
 }
 
-function usable(entry) {
-  return !!(entry && /^\d{2}-\d{2}$/.test(entry.date) &&
-    entry.title && entry.reference && entry.text && entry.reflection && entry.prayer);
+function pageUrl(key) {
+  return SITE + '?d=' + encodeURIComponent(key);
 }
 
-function chooseEntry(entries, key) {
-  const match = (entries || []).find((entry) => usable(entry) && entry.date === key);
-  return match || null;
-}
-
-function buildMessage(entry, date) {
-  const parts = nyParts(date);
-  const name = campaignName(parts.iso);
-  const when = longDate(date);
-  const link = `${SITE}?d=${entry.date}`;
-  const subject = `Daily devotional: ${entry.title}`;
-  const preview = String(entry.text).split('\n')[0].slice(0, 140);
-  const verseHtml = escapeHtml(entry.text).replace(/\n/g, '<br>\n');
-  const reflection = String(entry.reflection).split(/\n\n+/).map((para) =>
+function buildEmail(entry, isoDate, unsub) {
+  const key = entry.date;
+  const url = pageUrl(key);
+  const when = longDate(isoDate);
+  const title = String(entry.title || '').trim();
+  const ref = String(entry.reference || '').trim();
+  const verse = String(entry.text || '');
+  const reflection = String(entry.reflection || '');
+  const prayer = String(entry.prayer || '');
+  const subject = 'Daily devotional: ' + title;
+  const unsubLink = unsub || unsubscribeUrl('');
+  const verseHtml = escapeHtml(verse).replace(/\n/g, '<br>\n');
+  const reflectionHtml = reflection.split(/\n\n+/).map((para) =>
     `<p style="font-size:18px;line-height:1.6;margin:0 0 14px;">${escapeHtml(para)}</p>`).join('\n');
+  const text = [
+    title,
+    when,
+    '',
+    ref,
+    'Clay Jar Treasure Bible',
+    '',
+    verse,
+    '',
+    'Reflection',
+    reflection,
+    '',
+    'Prayer',
+    prayer,
+    '',
+    'Read this devotional:',
+    url,
+    '',
+    COPYRIGHT,
+    '',
+    'Unsubscribe: ' + unsubLink,
+    ''
+  ].join('\n');
   const html = `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${escapeHtml(entry.title)}</title>
+<title>${escapeHtml(title)}</title>
 </head>
 <body style="margin:0;padding:0;background:#fff9eb;color:#3f2416;font-family:Georgia,'Iowan Old Style',serif;">
   <div style="max-width:36rem;margin:0 auto;padding:24px 20px;">
     <p style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a6522d;margin:0 0 8px;">Clay Jar Treasure Bible</p>
-    <h1 style="font-size:28px;line-height:1.25;margin:0 0 8px;">${escapeHtml(entry.title)}</h1>
+    <h1 style="font-size:28px;line-height:1.25;margin:0 0 8px;">${escapeHtml(title)}</h1>
     <p style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#6b4a37;margin:0 0 20px;">${escapeHtml(when)}</p>
     <blockquote style="margin:0 0 8px;padding:0 0 0 14px;border-left:3px solid #a6522d;font-size:20px;line-height:1.6;">${verseHtml}</blockquote>
-    <p style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#6b4a37;margin:0 0 20px;">${escapeHtml(entry.reference)}, Clay Jar Treasure Bible</p>
+    <p style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#6b4a37;margin:0 0 20px;">${escapeHtml(ref)}, Clay Jar Treasure Bible</p>
     <h2 style="font-size:20px;margin:0 0 8px;">Reflection</h2>
-    ${reflection}
+    ${reflectionHtml}
     <h2 style="font-size:20px;margin:10px 0 8px;">Prayer</h2>
-    <p style="font-size:18px;line-height:1.6;margin:0 0 24px;">${escapeHtml(entry.prayer)}</p>
-    <p style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:0 0 24px;"><a href="${escapeHtml(link)}" style="color:#a6522d;">Read this devotional</a></p>
+    <p style="font-size:18px;line-height:1.6;margin:0 0 24px;">${escapeHtml(prayer)}</p>
+    <p style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:0 0 24px;"><a href="${escapeHtml(url)}" style="color:#a6522d;">Read this devotional</a></p>
     <p style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;color:#6b4a37;margin:0 0 12px;">${escapeHtml(COPYRIGHT)}</p>
-    <p style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;margin:0;"><a href="{{ unsubscribe }}" style="color:#a6522d;">Unsubscribe</a></p>
+    <p style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;margin:0;"><a href="${escapeHtml(unsubLink)}" style="color:#a6522d;">Unsubscribe</a></p>
   </div>
 </body>
 </html>`;
-  const text = [
-    entry.title,
+  const preview = String(verse).split('\n')[0].slice(0, 140);
+  return {
+    name: campaignName(isoDate),
+    subject,
+    previewText: preview,
+    preview,
+    html,
+    text,
+    isoDate,
+    key,
+    url,
+    link: url,
     when,
-    '',
-    entry.reference,
-    'Clay Jar Treasure Bible',
-    '',
-    entry.text,
-    '',
-    'Reflection',
-    entry.reflection,
-    '',
-    'Prayer',
-    entry.prayer,
-    '',
-    'Read this devotional:',
-    link,
-    '',
-    COPYRIGHT,
-    '',
-    'Unsubscribe: {{ unsubscribe }}',
-    ''
-  ].join('\n');
-  return { name, subject, preview, html, text, link, when };
+    unsubscribeUrl: unsubLink,
+  };
 }
 
-function nowFromEnv(env) {
-  env = env || process.env;
-  if (!env.DEVOTIONAL_NOW) return new Date();
-  const date = new Date(env.DEVOTIONAL_NOW);
-  if (Number.isNaN(date.getTime())) throw new Error('DEVOTIONAL_NOW is not a valid time.');
-  return date;
+function buildMessage(entry, date, unsub) {
+  const when = (date instanceof Date) ? tzParts(date, DEFAULT_TZ).isoDate : String(date || '');
+  return buildEmail(entry, when, unsub);
 }
 
-function isDryRun(env) {
-  env = env || process.env;
-  const value = String(env.DRY_RUN || '').toLowerCase();
-  return value === '1' || value === 'true' || value === 'yes';
+function readSecrets(env) {
+  const apiKey = String(env.BREVO_API_KEY || '').trim();
+  const listRaw = String(env.BREVO_LIST_ID || '').trim();
+  const sender = String(env.BREVO_SENDER_EMAIL || '').trim();
+  const missing = [];
+  if (!apiKey) missing.push('BREVO_API_KEY');
+  if (!listRaw) missing.push('BREVO_LIST_ID');
+  if (!sender) missing.push('BREVO_SENDER_EMAIL');
+  if (missing.length) return { ok: false, missing };
+  if (!/^[1-9]\d*$/.test(listRaw)) return { ok: false, invalid: 'BREVO_LIST_ID is set but is not a list number.' };
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(sender)) return { ok: false, invalid: 'BREVO_SENDER_EMAIL is set but is not an email address.' };
+  return { ok: true, apiKey, listId: Number(listRaw), sender };
 }
 
 function parseTestEmail(env) {
@@ -161,272 +361,472 @@ function parseTestEmail(env) {
   return { set: true, ok: true, email: raw };
 }
 
-function forTestSend(content) {
-  return String(content || '')
-    .replace(/<p[^>]*>\s*<a href="\{\{ unsubscribe \}\}"[^>]*>Unsubscribe<\/a>\s*<\/p>/g,
-      '<p style="font-family:-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;font-size:14px;color:#6b4a37;margin:0;">This was a one-off test. The subscriber list was not emailed.</p>')
-    .replace(/Unsubscribe:\s*\{\{ unsubscribe \}\}/g,
-      'This was a one-off test. The subscriber list was not emailed.')
-    .replace(/\{\{ unsubscribe \}\}/g, '');
-}
-
 function readTransactionalSecrets(env) {
-  env = env || process.env;
   const apiKey = String(env.BREVO_API_KEY || '').trim();
   const sender = String(env.BREVO_SENDER_EMAIL || '').trim();
-  const senderOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(sender);
   const missing = [];
   if (!apiKey) missing.push('BREVO_API_KEY');
-  if (!senderOk) missing.push('BREVO_SENDER_EMAIL');
-  return { ok: missing.length === 0, apiKey, sender, missing };
+  if (!sender) missing.push('BREVO_SENDER_EMAIL');
+  if (missing.length) return { ok: false, missing };
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(sender)) {
+    return { ok: false, invalid: 'BREVO_SENDER_EMAIL is set but is not an email address.' };
+  }
+  return { ok: true, apiKey, sender };
 }
 
-function readSecrets(env) {
-  env = env || process.env;
-  const apiKey = String(env.BREVO_API_KEY || '').trim();
-  const listRaw = String(env.BREVO_LIST_ID || '').trim();
-  const sender = String(env.BREVO_SENDER_EMAIL || '').trim();
-  const listId = /^[1-9]\d*$/.test(listRaw) ? Number(listRaw) : null;
-  const senderOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(sender);
-  return {
-    ok: !!(apiKey && listId && senderOk),
-    apiKey,
-    listId,
-    sender
-  };
+function forTestSend(content) {
+  return String(content || '')
+    .replace(/<p[^>]*>\s*<a href="[^"]*unsubscribe\.html[^"]*"[^>]*>Unsubscribe<\/a>\s*<\/p>/g,
+      '<p style="margin:8px 0 0;font-family:-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;font-size:14px;line-height:1.5;color:#6b4a37;">This was a one-off test. The subscriber list was not emailed.</p>')
+    .replace(/Unsubscribe:\s*https?:\S+/g,
+      'This was a one-off test. The subscriber list was not emailed.')
+    .replace(/Unsubscribe:\s*\{\{ unsubscribe \}\}/g,
+      'This was a one-off test. The subscriber list was not emailed.')
+    .replace(/\{\{ unsubscribe \}\}/g, '')
+    .replace(/\{\{params\.unsubscribeUrl\}\}/g, '');
 }
 
-function loadEntries() {
-  const file = path.join(__dirname, '..', 'data', 'devotionals.json');
-  const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-  return data.entries || [];
+function clip(s) {
+  const t = String(s || '').replace(/\s+/g, ' ').trim();
+  return t.length > 400 ? t.slice(0, 400) : t;
 }
 
-function normStatus(status) {
-  return String(status || '').toLowerCase().replace(/_/g, '');
-}
-
-async function brevo(apiKey, method, apiPath, body) {
-  const res = await fetch('https://api.brevo.com/v3' + apiPath, {
-    method,
-    redirect: 'error',
-    signal: AbortSignal.timeout(30000),
-    headers: {
-      'api-key': apiKey,
-      accept: 'application/json',
-      ...(body ? { 'content-type': 'application/json' } : {})
-    },
-    body: body ? JSON.stringify(body) : undefined
-  });
+async function brevo(apiKey, method, urlPath, body) {
+  const headers = { 'api-key': apiKey, accept: 'application/json' };
+  const opts = { method, headers, signal: AbortSignal.timeout(30000) };
+  if (body !== undefined) {
+    headers['content-type'] = 'application/json';
+    opts.body = JSON.stringify(body);
+  }
+  const res = await fetch('https://api.brevo.com/v3' + urlPath, opts);
   const text = await res.text();
   let json = null;
   if (text) {
     try { json = JSON.parse(text); } catch (e) { json = null; }
   }
-  return { status: res.status, ok: res.ok, text, json };
+  return { status: res.status, ok: res.ok, json, text };
 }
 
-async function listCampaigns(apiKey) {
-  const statuses = ['draft', 'sent', 'queued', 'inProcess', 'suspended', 'inReview', 'archive', 'cancelled'];
-  const found = [];
-  for (const status of statuses) {
-    let offset = 0;
-    for (;;) {
-      const query = new URLSearchParams({
-        status,
-        limit: '50',
-        offset: String(offset),
-        excludeHtmlContent: 'true'
-      });
-      const res = await brevo(apiKey, 'GET', '/emailCampaigns?' + query.toString());
-      if (!res.ok) {
-        throw new Error(`Listing campaigns failed (${status} ${res.status}).`);
+function attributeExistsStatus(res) {
+  if (!res) return false;
+  if (res.status === 400 || res.status === 409) return true;
+  const t = String((res.json && (res.json.message || res.json.error)) || res.text || '').toLowerCase();
+  return /already exist|duplicate|has already/.test(t);
+}
+
+async function ensureAttributes(apiKey, request) {
+  const call = request || brevo;
+  const names = [ATTR_TIMEZONE, ATTR_LAST_DEVO];
+  for (const name of names) {
+    const res = await call(apiKey, 'POST', '/contacts/attributes/normal/' + name, { type: 'text' });
+    if (res.ok || res.status === 201 || attributeExistsStatus(res)) continue;
+    const err = new Error('Could not create the ' + name + ' contact attribute (' + res.status + '). ' + clip(res.text));
+    err.result = res;
+    throw err;
+  }
+  return names;
+}
+
+function contactsFromPayload(json) {
+  if (!json) return [];
+  if (Array.isArray(json.contacts)) return json.contacts;
+  if (Array.isArray(json)) return json;
+  return [];
+}
+
+async function listContacts(apiKey, listId, request) {
+  const call = request || brevo;
+  const all = [];
+  let offset = 0;
+  let limit = CONTACT_PAGE;
+  for (let page = 0; page < 100; page++) {
+    const res = await call(apiKey, 'GET', '/contacts?limit=' + limit + '&offset=' + offset + '&listIds=' + listId);
+    if (!res.ok && limit > 50 && (res.status === 400 || res.status === 422)) {
+      limit = 50;
+      const retry = await call(apiKey, 'GET', '/contacts?limit=' + limit + '&offset=' + offset + '&listIds=' + listId);
+      if (!retry.ok) {
+        const err = new Error('Could not list contacts (' + retry.status + '). ' + clip(retry.text));
+        err.result = retry;
+        throw err;
       }
-      const rows = (res.json && res.json.campaigns) || [];
-      found.push(...rows);
-      if (rows.length < 50) break;
-      offset += rows.length;
-      if (offset > 5000) break;
+      const batch = contactsFromPayload(retry.json);
+      all.push.apply(all, batch);
+      if (batch.length < limit) break;
+      offset += limit;
+      continue;
+    }
+    if (!res.ok) {
+      const err = new Error('Could not list contacts (' + res.status + '). ' + clip(res.text));
+      err.result = res;
+      throw err;
+    }
+    const batch = contactsFromPayload(res.json);
+    all.push.apply(all, batch);
+    if (batch.length < limit) break;
+    offset += limit;
+  }
+  return all;
+}
+
+function blockedEmailsFromPayload(json) {
+  const rows = (json && (json.contacts || json.blockedContacts || json)) || [];
+  if (!Array.isArray(rows)) return [];
+  return rows.map((row) => {
+    if (typeof row === 'string') return row;
+    return row && (row.email || row.emailAddress);
+  }).filter(Boolean);
+}
+
+async function listBlockedTransactional(apiKey, request) {
+  const call = request || brevo;
+  const set = new Set();
+  let offset = 0;
+  const limit = 100;
+  for (let page = 0; page < 50; page++) {
+    const res = await call(apiKey, 'GET', '/smtp/blockedContacts?limit=' + limit + '&offset=' + offset);
+    if (!res.ok) {
+      // The block list is helpful but not required. emailBlacklisted still applies.
+      return set;
+    }
+    const batch = blockedEmailsFromPayload(res.json);
+    batch.forEach((email) => set.add(String(email).trim().toLowerCase()));
+    if (batch.length < limit) break;
+    offset += limit;
+  }
+  return set;
+}
+
+function chunk(list, size) {
+  const out = [];
+  for (let i = 0; i < list.length; i += size) out.push(list.slice(i, i + size));
+  return out;
+}
+
+async function updateLastDevoDates(apiKey, contacts, isoDate, request) {
+  const call = request || brevo;
+  const rows = (contacts || []).map((c) => contactEmail(c)).filter(Boolean);
+  if (!rows.length) return 0;
+  const batches = chunk(rows, 100);
+  let updated = 0;
+  for (const batch of batches) {
+    const res = await call(apiKey, 'POST', '/contacts/batch', {
+      contacts: batch.map((email) => ({
+        email,
+        attributes: { [ATTR_LAST_DEVO]: isoDate },
+      })),
+    });
+    if (res.ok || res.status === 201 || res.status === 204) {
+      updated += batch.length;
+      continue;
+    }
+    for (const email of batch) {
+      const one = await call(apiKey, 'PUT', '/contacts/' + encodeURIComponent(email), {
+        attributes: { [ATTR_LAST_DEVO]: isoDate },
+      });
+      if (!one.ok && one.status !== 204) {
+        const err = new Error('Could not save LAST_DEVO_DATE for a contact (' + one.status + '). ' + clip(one.text));
+        err.result = one;
+        throw err;
+      }
+      updated += 1;
     }
   }
-  return found;
+  return updated;
 }
 
-function emptyList(res) {
-  const msg = `${res.text || ''} ${(res.json && res.json.message) || ''}`.toLowerCase();
-  return res.status === 400 && /empty|no recipient|no contact|nobody/.test(msg);
-}
-
-async function sendNow(apiKey, id) {
-  const res = await brevo(apiKey, 'POST', `/emailCampaigns/${id}/sendNow`);
-  if (res.ok || res.status === 204) return { sent: true };
-  if (emptyList(res)) return { sent: false, empty: true };
-  throw new Error(`Sending campaign ${id} failed (${res.status}).`);
-}
-
-async function createCampaign(apiKey, secrets, message) {
-  const res = await brevo(apiKey, 'POST', '/emailCampaigns', {
-    name: message.name,
-    subject: message.subject,
-    previewText: message.preview,
-    sender: { name: 'Clay Jar Treasure Bible', email: secrets.sender },
-    replyTo: secrets.sender,
-    htmlContent: message.html,
-    recipients: { listIds: [secrets.listId] },
-    inlineImageActivation: false,
-    mirrorActive: false,
-    tag: 'ctb-devotional'
-  });
-  if (!res.ok || !res.json || !res.json.id) {
-    throw new Error(`Creating the campaign failed (${res.status}).`);
-  }
-  return res.json.id;
-}
-
-function campaignDate(message) {
-  const match = /(\d{4}-\d{2}-\d{2})$/.exec(message.name);
-  return match ? match[1] : '';
-}
-
-function alreadyHandled(campaigns, stamp) {
-  const dated = (campaigns || []).filter((campaign) => stamp && String(campaign.name || '').includes(stamp));
-  const blocking = dated.filter((campaign) => BLOCKED.has(normStatus(campaign.status)));
-  if (blocking.length) return { action: 'skip', campaign: blocking[0] };
-  const draft = dated.find((campaign) => normStatus(campaign.status) === 'draft');
-  if (draft) return { action: 'send-draft', campaign: draft };
-  return { action: 'create' };
-}
-
-async function deliver(secrets, message) {
-  const stamp = campaignDate(message);
-  const decision = alreadyHandled(await listCampaigns(secrets.apiKey), stamp);
-  if (decision.action === 'skip') {
-    console.log(`A campaign named "${decision.campaign.name}" is already ${decision.campaign.status}. Not sending again.`);
-    return;
-  }
-  if (decision.action === 'send-draft') {
-    const draft = decision.campaign;
-    const result = await sendNow(secrets.apiKey, draft.id);
-    if (result.empty) {
-      console.log('The Brevo list has no confirmed subscribers yet. Nothing was sent.');
-      return;
+async function sendTransactionalBatch(apiKey, sender, email, recipients, request) {
+  const call = request || brevo;
+  const batches = chunk(recipients, MESSAGE_BATCH);
+  let sent = 0;
+  const messageIds = [];
+  for (const batch of batches) {
+    const versions = batch.map((contact) => {
+      const address = contactEmail(contact);
+      const personalized = buildEmailFromExisting(email, unsubscribeUrl(address));
+      return {
+        to: [{ email: address }],
+        htmlContent: personalized.html,
+        textContent: personalized.text,
+      };
+    });
+    const payload = {
+      sender: { name: SENDER_NAME, email: sender },
+      replyTo: { email: sender },
+      subject: email.subject,
+      htmlContent: email.html,
+      textContent: email.text,
+      messageVersions: versions,
+    };
+    const res = await call(apiKey, 'POST', '/smtp/email', payload);
+    if (!res.ok) {
+      const err = new Error('Brevo did not send the devotional (' + res.status + '). ' + clip(res.text));
+      err.result = res;
+      throw err;
     }
-    console.log(`Sent the existing draft campaign ${draft.id}.`);
-    return;
+    sent += batch.length;
+    const ids = res.json && (res.json.messageIds || (res.json.messageId ? [res.json.messageId] : []));
+    if (ids && ids.length) messageIds.push.apply(messageIds, ids);
   }
-  const id = await createCampaign(secrets.apiKey, secrets, message);
-  const result = await sendNow(secrets.apiKey, id);
-  if (result.empty) {
-    console.log(`Created campaign ${id}. The list has no confirmed subscribers yet, so it was not sent.`);
-    return;
-  }
-  console.log(`Sent campaign ${id} (${message.name}).`);
+  return { sent, messageIds };
 }
 
-async function sendTest(env, secrets, message, testEmail, deps) {
-  const log = (deps && deps.log) || console.log;
-  const request = (deps && deps.request) || brevo;
-  const payload = {
-    sender: { name: 'Clay Jar Treasure Bible', email: secrets.sender },
-    replyTo: { email: secrets.sender },
-    to: [{ email: testEmail }],
-    subject: '[Test] ' + message.subject,
-    htmlContent: forTestSend(message.html),
-    textContent: forTestSend(message.text)
+function buildEmailFromExisting(email, unsubLink) {
+  return {
+    html: String(email.html).split(email.unsubscribeUrl).join(unsubLink),
+    text: String(email.text).split(email.unsubscribeUrl).join(unsubLink),
   };
-  const sent = await request(secrets.apiKey, 'POST', '/smtp/email', payload);
-  if (!sent.ok) {
-    throw new Error('Brevo did not send the test email (' + sent.status + ').');
+}
+
+function isDryRun(env) {
+  const value = String((env || process.env).DRY_RUN || '').toLowerCase();
+  return value === '1' || value === 'true' || value === 'yes';
+}
+
+function clock(env, deps) {
+  if (deps && deps.now) return deps.now;
+  const raw = env.DEVOTIONAL_NOW || env.NOW;
+  if (raw) {
+    const d = new Date(raw);
+    if (!Number.isNaN(d.getTime())) return d;
   }
-  const messageId = sent.json && sent.json.messageId;
-  log('Sent a test of ' + message.name + ' only to ' + testEmail + (messageId ? ' (messageId ' + messageId + ')' : '') + '. The list was not emailed.');
+  return new Date();
+}
+
+function describeGroups(groups) {
+  if (!groups.length) return 'No contacts were returned for this list.';
+  const lines = ['Contacts by time zone:'];
+  groups.forEach((g) => {
+    const clock = String(g.hour).padStart(2, '0') + ':' + String(g.minute).padStart(2, '0');
+    lines.push(
+      '- ' + g.timeZone + ': ' + g.total + ' contact' + (g.total === 1 ? '' : 's') +
+      ', local ' + g.localDate + ' ' + clock +
+      ', ' + g.recipients.length + ' due' +
+      (g.skippedAlready ? ', ' + g.skippedAlready + ' already sent' : '') +
+      (g.skippedExcluded ? ', ' + g.skippedExcluded + ' unsubscribed or blocked' : '') +
+      (g.skippedWrongHour ? ', ' + g.skippedWrongHour + ' not in the 4 AM hour' : '') +
+      (g.truncated ? ', ' + g.truncated + ' held for the daily limit' : '')
+    );
+  });
+  return lines.join('\n');
 }
 
 async function run(env, deps) {
-  env = env || process.env;
   const log = (deps && deps.log) || console.log;
-  const date = nowFromEnv(env);
-  const parts = nyParts(date);
-  const dry = isDryRun(env);
+  const now = clock(env, deps);
+  const ny = nyParts(now);
+  const dryValue = String(env.DRY_RUN || '').toLowerCase();
+  const dry = dryValue === '1' || dryValue === 'true' || dryValue === 'yes';
   const testTo = parseTestEmail(env);
   const testing = testTo.set;
+  const stamp = ny.isoDate + ' ' + String(ny.hour).padStart(2, '0') + ':' + String(ny.minute).padStart(2, '0') + ' ' + DEFAULT_TZ;
+
   if (testing && !testTo.ok) {
     log('TEST_EMAIL is set but is not an email address.');
     return 1;
   }
-  if (!dry && !testing && parts.hour !== 4) {
-    log(`America/New_York is ${parts.iso} hour ${parts.hour}, not the 4 AM hour. Nothing was sent.`);
-    return 0;
-  }
-  const load = (deps && deps.loadEntries) || loadEntries;
-  const entry = chooseEntry(load(), parts.key);
-  if (!entry) {
-    log(`No devotional for ${parts.key} in data/devotionals.json. Nothing was sent.`);
-    return 0;
-  }
-  const message = buildMessage(entry, date);
-  if (!message.text.includes(entry.text)) throw new Error('The plain-text email dropped the verse.');
-  if (!message.html.includes('{{ unsubscribe }}') || !message.text.includes('{{ unsubscribe }}')) {
-    throw new Error('The email is missing the unsubscribe tag.');
-  }
-  if (!message.html.includes(COPYRIGHT) || !message.text.includes(COPYRIGHT)) {
-    throw new Error('The email is missing the copyright line.');
-  }
-  if (dry) {
-    const secrets = testing ? readTransactionalSecrets(env) : readSecrets(env);
-    log('Dry run: email was not sent. Brevo was not called.');
-    if (testing) log('If sent, this would go only to ' + testTo.email + '. The list would not be emailed.');
-    log('Secrets present: ' + (secrets.ok ? 'yes' : 'no'));
-    log('Campaign name: ' + message.name);
-    log('Subject: ' + message.subject);
-    log('--- plain text ---');
-    log(message.text);
-    log('--- html ---');
-    log(message.html);
-    return 0;
-  }
+
+  const secrets = testing ? readTransactionalSecrets(env) : readSecrets(env);
+  const entries = (deps && deps.load ? deps.load() : (deps && deps.loadEntries ? deps.loadEntries() : loadDevotionals()));
+
   if (testing) {
-    const secrets = readTransactionalSecrets(env);
-    if (!secrets.ok) {
-      log('Brevo secrets are not set (' + secrets.missing.join(', ') + '). Nothing was sent.');
+    const entry = findEntry(entries, ny.key);
+    const email = entry ? buildEmail(entry, ny.isoDate, unsubscribeUrl('')) : null;
+    if (dry) {
+      if (!email) {
+        log('Dry run. No devotional is written for ' + ny.key + ' (' + ny.isoDate + '). Nothing to send.');
+        return 0;
+      }
+      log('Dry run for ' + stamp + '. The message below is not sent.');
+      log('If sent, this would go only to ' + testTo.email + '. The list would not be emailed.');
+      log('Campaign: ' + email.name);
+      log('Subject: ' + email.subject);
+      log('--- plain text ---');
+      log(email.text);
+      log('--- html ---');
+      log(email.html);
+      if (!secrets.ok && secrets.missing) log('Brevo secrets are not all set (' + secrets.missing.join(', ') + '). A real run would skip.');
       return 0;
     }
-    await sendTest(env, secrets, message, testTo.email, deps);
+    if (!secrets.ok) {
+      if (secrets.invalid) {
+        log(secrets.invalid);
+        return 1;
+      }
+      log('Brevo is not configured. Missing ' + secrets.missing.join(', ') + '. Skipping without sending.');
+      return 0;
+    }
+    if (!email) {
+      log('No devotional is written for ' + ny.key + ' (' + ny.isoDate + '). Skipping without sending.');
+      return 0;
+    }
+    const request = (deps && deps.request) || brevo;
+    const payload = {
+      sender: { name: SENDER_NAME, email: secrets.sender },
+      replyTo: { email: secrets.sender },
+      to: [{ email: testTo.email }],
+      subject: '[Test] ' + email.subject,
+      htmlContent: forTestSend(email.html),
+      textContent: forTestSend(email.text),
+    };
+    const sent = await request(secrets.apiKey, 'POST', '/smtp/email', payload);
+    if (!sent.ok) {
+      const err = new Error('Brevo did not send the test email (' + sent.status + '). ' + clip(sent.text));
+      err.result = sent;
+      throw err;
+    }
+    const messageId = sent.json && sent.json.messageId;
+    log('Sent a test of ' + email.name + ' only to ' + testTo.email + (messageId ? ' (messageId ' + messageId + ')' : '') + '. The list was not emailed.');
     return 0;
   }
-  const secrets = readSecrets(env);
+
+  const sampleEntry = findEntry(entries, ny.key);
+  const sampleEmail = sampleEntry ? buildEmail(sampleEntry, ny.isoDate, unsubscribeUrl('')) : null;
+
+  if (dry && (!secrets.ok && !secrets.invalid)) {
+    log('Dry run for ' + stamp + '. Contacts were not loaded because Brevo secrets are not all set (' + (secrets.missing || []).join(', ') + '). Nothing is sent.');
+    if (!sampleEmail) {
+      log('No devotional is written for ' + ny.key + ' (' + ny.isoDate + ').');
+      return 0;
+    }
+    log('Sample for ' + DEFAULT_TZ + ' on ' + ny.isoDate + ':');
+    log('Campaign: ' + sampleEmail.name);
+    log('Subject: ' + sampleEmail.subject);
+    log('--- plain text ---');
+    log(sampleEmail.text);
+    log('--- html ---');
+    log(sampleEmail.html);
+    return 0;
+  }
+
   if (!secrets.ok) {
-    log('Brevo secrets are not set (BREVO_API_KEY, BREVO_LIST_ID, BREVO_SENDER_EMAIL). Nothing was sent.');
+    if (secrets.invalid) {
+      log(secrets.invalid);
+      return 1;
+    }
+    log('Brevo is not configured. Missing ' + secrets.missing.join(', ') + '. Skipping without sending.');
     return 0;
   }
-  await deliver(secrets, message);
+
+  const request = (deps && deps.request) || brevo;
+  await ensureAttributes(secrets.apiKey, request);
+  const contacts = deps && deps.listContacts
+    ? await deps.listContacts(secrets.apiKey, secrets.listId)
+    : await listContacts(secrets.apiKey, secrets.listId, request);
+  const blocked = deps && deps.listBlocked
+    ? await deps.listBlocked(secrets.apiKey)
+    : await listBlockedTransactional(secrets.apiKey, request);
+  let groups = groupByTimeZone(contacts, now, blocked);
+  const alreadySent = alreadySentTodayCount(groups);
+  const dueBeforeLimit = dueCount(groups);
+  if (alreadySent + dueBeforeLimit >= WARN_AT) {
+    log('Warning: ' + (alreadySent + dueBeforeLimit) + ' emails are at or near the free plan’s ' + FREE_DAILY_LIMIT + ' per day limit (' + alreadySent + ' already marked sent today, ' + dueBeforeLimit + ' due this hour).');
+  }
+  const limited = applyDailyLimit(groups, alreadySent);
+  groups = limited.groups;
+  if (limited.truncated) {
+    log('The free plan’s ' + FREE_DAILY_LIMIT + ' per day limit was reached. ' + limited.truncated + ' due recipient' + (limited.truncated === 1 ? ' was' : 's were') + ' held back.');
+  }
+  log(describeGroups(groups));
+
+  if (dry) {
+    log('Dry run for ' + stamp + '. The counts above were loaded from the list. Nothing is sent, and LAST_DEVO_DATE is not updated.');
+    const previewGroup = dueGroups(groups)[0];
+    const previewDate = previewGroup ? previewGroup.localDate : ny.isoDate;
+    const previewKey = previewGroup ? previewGroup.key : ny.key;
+    const previewEntry = findEntry(entries, previewKey);
+    if (!previewEntry) {
+      log('No devotional is written for ' + previewKey + ' (' + previewDate + ').');
+      return 0;
+    }
+    const email = buildEmail(previewEntry, previewDate, unsubscribeUrl(''));
+    log('Sample for ' + (previewGroup ? previewGroup.timeZone : DEFAULT_TZ) + ' on ' + previewDate + ':');
+    log('Campaign: ' + email.name);
+    log('Subject: ' + email.subject);
+    log('--- plain text ---');
+    log(email.text);
+    log('--- html ---');
+    log(email.html);
+    return 0;
+  }
+
+  const ready = dueGroups(groups);
+  if (!ready.length) {
+    log('No subscribers are in the 4 AM hour this run, or all of them have already received today’s reading. Nothing was sent.');
+    return 0;
+  }
+
+  let totalSent = 0;
+  for (const group of ready) {
+    const entry = findEntry(entries, group.key);
+    if (!entry) {
+      log('No devotional is written for ' + group.key + ' (' + group.localDate + ') in ' + group.timeZone + '. Skipping that group.');
+      continue;
+    }
+    const email = buildEmail(entry, group.localDate, unsubscribeUrl(''));
+    const result = await sendTransactionalBatch(secrets.apiKey, secrets.sender, email, group.recipients, request);
+    await updateLastDevoDates(secrets.apiKey, group.recipients, group.localDate, request);
+    totalSent += result.sent;
+    log('Sent ' + email.name + ' to ' + result.sent + ' subscriber' + (result.sent === 1 ? '' : 's') + ' in ' + group.timeZone + ' (list ' + secrets.listId + ').');
+  }
+  if (!totalSent) {
+    log('Nothing was sent.');
+  }
   return 0;
 }
 
 async function main() {
-  return run(process.env, {});
+  try {
+    return await run(process.env, {});
+  } catch (e) {
+    console.error(e && e.message ? e.message : e);
+    return 1;
+  }
 }
 
 module.exports = {
+  COPYRIGHT,
+  NOTICE: COPYRIGHT,
+  SITE,
+  UNSUBSCRIBE_PAGE,
+  DEFAULT_TZ,
+  SEND_HOUR,
+  FREE_DAILY_LIMIT,
+  WARN_AT,
+  ATTR_TIMEZONE,
+  ATTR_LAST_DEVO,
+  isValidIanaTimeZone,
+  resolveTimeZone,
+  tzParts,
   nyParts,
+  inSendHour,
+  contactTimeZone,
+  alreadyReceived,
+  isExcluded,
+  groupByTimeZone,
+  dueGroups,
+  alreadySentTodayCount,
+  dueCount,
+  applyDailyLimit,
   longDate,
   campaignName,
-  chooseEntry,
-  buildMessage,
+  unsubscribeUrl,
+  buildEmail,
   readSecrets,
   parseTestEmail,
-  forTestSend,
   readTransactionalSecrets,
-  alreadyHandled,
+  forTestSend,
+  findEntry,
+  chooseEntry,
+  usable,
+  buildMessage,
+  loadDevotionals,
+  loadEntries: loadDevotionals,
+  ensureAttributes,
+  describeGroups,
+  isDryRun,
   run,
-  COPYRIGHT
 };
 
 if (require.main === module) {
-  main().then((code) => {
-    process.exit(code || 0);
-  }).catch((err) => {
-    console.error(err && err.message ? err.message : err);
-    process.exit(1);
-  });
+  main().then((code) => process.exit(code));
 }

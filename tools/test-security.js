@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const root = path.join(__dirname, '..');
-const pages = ['index.html', 'devotional.html', 'downloads.html', 'privacy.html', 'terms.html'];
+const pages = ['index.html', 'devotional.html', 'downloads.html', 'privacy.html', 'terms.html', 'unsubscribe.html'];
 const htmls = pages.map((name) => fs.readFileSync(path.join(root, name), 'utf8'));
 const csps = htmls.map((html) => {
   const match = html.match(/<meta http-equiv="Content-Security-Policy" content="([^"]+)">/);
@@ -56,7 +56,7 @@ assert.ok(security.includes('Expires: 2027-11-14T23:59:59.000Z'));
 
 const privacy = htmls[3];
 const terms = htmls[4];
-['Google Translate', 'local storage', 'Brevo', 'double opt-in', 'unsubscribe', 'PayPal', 'PIPL', 'APPI', 'POPIA', 'CCPA', 'LGPD', 'PIPEDA', 'contact.clayjar@protonmail.com', 'not sold'].forEach((phrase) => {
+['Google Translate', 'local storage', 'Brevo', 'double opt-in', 'unsubscribe', 'time zone', 'PayPal', 'PIPL', 'APPI', 'POPIA', 'CCPA', 'LGPD', 'PIPEDA', 'contact.clayjar@protonmail.com', 'not sold'].forEach((phrase) => {
   assert.ok(privacy.includes(phrase), 'privacy missing ' + phrase);
 });
 ['AS IS', 'AS AVAILABLE', 'US$50', 'Federal Arbitration Act', 'Plymouth County', '30 days', 'small claims', 'Marshfield', 'do not make a lawsuit impossible', '501(c)(3)', 'English text is the official', 'no license', 'Brevo', 'double opt-in', 'PayPal', 'Where your local law gives you rights'].forEach((phrase) => {
