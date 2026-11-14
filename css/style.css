@@ -588,3 +588,10 @@ html[dir="rtl"] .scripture, html[dir="rtl"] .prose, html[dir="rtl"] .legal-page,
     background: var(--bg-raised); color: var(--ink); font-weight: 700;
   }
 }
+
+/* Landing-page sign-in buttons */
+.home-signin { margin: 1rem auto 0; max-width: 34rem; text-align: center; }
+.home-signin-lead { margin: 0 0 .6rem; font-size: .98rem; line-height: 1.45; color: var(--ink-soft, inherit); }
+.home-signin-btns { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; }
+.home-signin-btns .btn { flex: 1 1 10rem; min-height: 44px; justify-content: center; }
+@media (max-width: 420px) { .home-signin-btns .btn { flex-basis: 100%; } }

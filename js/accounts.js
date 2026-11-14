@@ -61,6 +61,7 @@
       'auth/weak-password': 'Use at least 8 characters for the password.',
       'auth/too-many-requests': 'Too many tries. Wait a little, then try again.',
       'auth/network-request-failed': 'The network blocked sign-in. Reading on this device is unchanged.',
+      'auth/account-exists-with-different-credential': 'An account with that email already exists with a different sign-in method. Sign in with the method you used first.',
       'auth/popup-blocked': 'The browser blocked the sign-in window. Allow pop-ups for this site, or try again.',
       'auth/unauthorized-domain': 'This site is not on the account project’s authorized domains yet.',
       'auth/requires-recent-login': 'Please sign in again, then delete the account.',
@@ -82,7 +83,64 @@
     return 'Something went wrong' + (c ? ' (' + c + ').' : '.');
   }
 
+  // Sign-in buttons on the landing page itself (not only on the Account page).
+  function isHome() { return !location.hash || location.hash === '#' || location.hash === '#/'; }
+  function homeError(msg) {
+    var el = document.getElementById('homeSignInError');
+    if (!el) return;
+    el.hidden = !msg;
+    el.textContent = msg || '';
+  }
+  function homeProvider(kind) {
+    var box = document.getElementById('homeSignIn');
+    var btns = box ? [].slice.call(box.querySelectorAll('button')) : [];
+    homeError('');
+    btns.forEach(function (b) { b.disabled = true; });
+    var done = function () { btns.forEach(function (b) { b.disabled = false; }); };
+    whenReady().then(function () {
+      if (!auth || !authMods) { location.hash = '#/account'; return; }
+      var provider = kind === 'github' ? githubProvider() : googleProvider();
+      return authMods.signInWithPopup(auth, provider).catch(function (err) {
+        if (err && (err.code === 'auth/popup-blocked' || err.code === 'auth/operation-not-supported-in-this-environment')) {
+          return authMods.signInWithRedirect(auth, provider);
+        }
+        var msg = explain(err);
+        if (msg) homeError(msg);
+      });
+    }).then(done, done);
+  }
+  function paintHomeSignIn() {
+    var main = document.getElementById('main');
+    if (!main) return;
+    var old = document.getElementById('homeSignIn');
+    if (user || !isHome()) { if (old) old.remove(); return; }
+    if (old) return;
+    var hero = main.querySelector('.hero');
+    if (!hero) return;
+    var box = document.createElement('div');
+    box.className = 'home-signin';
+    box.id = 'homeSignIn';
+    box.innerHTML = '<p class="home-signin-lead">Sign in to save your place on your other devices. Optional: your reading stays on this device unless you sign in.</p>'
+      + '<div class="home-signin-btns">'
+      + '<button type="button" class="btn primary" data-provider="google">Continue with <span class="notranslate" translate="no">Google</span></button>'
+      + '<button type="button" class="btn" data-provider="github">Continue with <span class="notranslate" translate="no">GitHub</span></button>'
+      + '<a class="btn" href="#/account">Use email</a>'
+      + '</div>'
+      + '<p class="account-error" id="homeSignInError" role="alert" hidden></p>';
+    var cta = hero.querySelector('.cta');
+    if (cta && cta.parentNode) cta.parentNode.insertBefore(box, cta.nextSibling); else hero.appendChild(box);
+    box.querySelector('[data-provider="google"]').addEventListener('click', function () { homeProvider('google'); });
+    box.querySelector('[data-provider="github"]').addEventListener('click', function () { homeProvider('github'); });
+  }
+  (function watchHome() {
+    var main = document.getElementById('main');
+    if (!main || typeof MutationObserver !== 'function') return;
+    new MutationObserver(paintHomeSignIn).observe(main, { childList: true });
+    paintHomeSignIn();
+  })();
+
   function paintChrome() {
+    paintHomeSignIn();
     var el = document.getElementById('accountBlurb');
     if (!el) return;
     if (!user) el.textContent = 'On this device until you sign in. Signing in is optional and is what turns on saving to your account.';
@@ -110,7 +168,8 @@
         + '<ul><li>your place in the text</li><li>bookmarks</li><li>highlights</li><li>where you are in the audio, and listening settings such as speed and voice</li></ul>'
         + '<p>Text size and light or dark stay on this device. The Clay Jar Translation can use the same sign-in and keeps its own progress.</p></div>'
         + '<div class="card account-card"><div class="account-actions">'
-        + '<button type="button" class="btn account-provider" id="acctGoogle">Sign in with Google</button>'
+        + '<button type="button" class="btn account-provider" id="acctGoogle">Sign in with <span class="notranslate" translate="no">Google</span></button>'
+        + '<button type="button" class="btn account-provider" id="acctGithub">Sign in with <span class="notranslate" translate="no">GitHub</span></button>'
         + (cfg.apple === true ? '<button type="button" class="btn account-provider" id="acctApple">Sign in with Apple</button>' : '')
         + '</div>'
         + (cfg.phone === true ? phoneBoxHtml() : '')
@@ -215,6 +274,7 @@
       });
     });
     $('#acctGoogle').addEventListener('click', function () { signInProvider(googleProvider()); });
+    $('#acctGithub').addEventListener('click', function () { signInProvider(githubProvider()); });
     var appleBtn = $('#acctApple');
     if (appleBtn) appleBtn.addEventListener('click', function () { signInProvider(appleProvider()); });
     if (cfg.phone === true) wirePhone();
@@ -304,6 +364,12 @@
     p.setCustomParameters({ prompt: 'select_account' });
     return p;
   }
+  function githubProvider() {
+    var p = new authMods.GithubAuthProvider();
+    p.addScope('read:user');
+    p.addScope('user:email');
+    return p;
+  }
   function appleProvider() {
     var p = new authMods.OAuthProvider('apple.com');
     p.addScope('email');
@@ -312,9 +378,10 @@
   }
   function signInProvider(provider) {
     showError('');
-    var run = preferRedirect() ? authMods.signInWithRedirect : authMods.signInWithPopup;
-    run(auth, provider).catch(function (err) {
-      if (err && err.code === 'auth/popup-blocked') {
+    // Popup first on every device (started by the tap, no shared storage needed).
+    // Redirect is only the fallback when the browser refuses the popup.
+    authMods.signInWithPopup(auth, provider).catch(function (err) {
+      if (err && (err.code === 'auth/popup-blocked' || err.code === 'auth/operation-not-supported-in-this-environment')) {
         authMods.signInWithRedirect(auth, provider).catch(function (e2) { showError(explain(e2)); });
         return;
       }
