@@ -392,6 +392,65 @@ async function asyncChecks() {
     assert.strictEqual(second.filter((c) => c.url === '/smtp/email').length, 0);
     assert.match(logs.join('\n'), /already received|already sent|Nothing was sent/i);
   });
+
+  logs.length = 0;
+  code = await mail.run({
+    DEVOTIONAL_NOW: '2026-11-13T09:10:00Z',
+    DRY_RUN: '1',
+    BREVO_API_KEY: 'secret-key',
+    BREVO_LIST_ID: '4',
+    BREVO_SENDER_EMAIL: 'news@example.com'
+  }, {
+    log,
+    request: mockRequest({
+      '*': async (key, method, url) => {
+        if (method === 'POST' && url.startsWith('/contacts/attributes/')) {
+          return { ok: false, status: 403, json: { message: 'api key is not authorized for resource "contacts"', code: 'permission_denied' }, text: '' };
+        }
+        if (method === 'GET' && url.startsWith('/contacts?')) return { ok: true, status: 200, json: { contacts: [
+          { email: 'due@example.com', attributes: { TIMEZONE: 'America/New_York' } }
+        ] }, text: '' };
+        if (method === 'GET' && url.startsWith('/smtp/blockedContacts')) return { ok: true, status: 200, json: { contacts: [] }, text: '' };
+        throw new Error('dry run must not send ' + method + ' ' + url);
+      }
+    })
+  });
+  check('dry run continues when attribute creation is forbidden', () => {
+    assert.strictEqual(code, 0);
+    assert.match(logs.join('\n'), /needs Contacts permission/);
+    assert.match(logs.join('\n'), /1 due/);
+    assert.ok(!logs.join('\n').includes('secret-key'));
+  });
+
+  logs.length = 0;
+  code = await mail.run({
+    DEVOTIONAL_NOW: '2026-11-13T09:10:00Z',
+    DRY_RUN: '1',
+    BREVO_API_KEY: 'secret-key',
+    BREVO_LIST_ID: '4',
+    BREVO_SENDER_EMAIL: 'news@example.com'
+  }, {
+    log,
+    request: mockRequest({
+      '*': async (key, method, url) => {
+        if (method === 'POST' && url.startsWith('/contacts/attributes/')) {
+          return { ok: false, status: 403, json: { code: 'permission_denied' }, text: '' };
+        }
+        if (method === 'GET' && url.startsWith('/contacts?')) {
+          const err = new Error('Could not list contacts (403). permission_denied');
+          err.result = { status: 403, ok: false, text: 'permission_denied' };
+          throw err;
+        }
+        throw new Error('unexpected ' + method + ' ' + url);
+      }
+    })
+  });
+  check('dry run still prints a sample if the list cannot be loaded', () => {
+    assert.strictEqual(code, 0);
+    assert.match(logs.join('\n'), /Could not load the subscriber list/);
+    assert.match(logs.join('\n'), /Nothing is sent/);
+    assert.ok(logs.join('\n').includes(entry.text));
+  });
 }
 
 asyncChecks().then(() => {
