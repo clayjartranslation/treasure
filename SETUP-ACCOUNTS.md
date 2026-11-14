@@ -154,3 +154,14 @@ npx firebase-tools emulators:exec --only auth,firestore --project demo-clayjar "
 | `js/accounts.js` | Sign-in screen and sync. It does not load Firebase when the config is empty. |
 | `firestore.rules` | Users read and write only `users/{their uid}`. |
 | `firebase.json` | Emulator ports for the local test. Not used by GitHub Pages. |
+
+## Security the owner has to finish in the consoles
+
+The site cannot do these from the repository. GitHub Pages does not let the site set HTTP headers, so the Content-Security-Policy is a `<meta>` tag. `frame-ancestors` is ignored in a meta tag. A script refuses to run the page inside a frame. A real `Content-Security-Policy: frame-ancestors 'none'` header needs a host that allows custom headers.
+
+1. **Firestore rules.** In Firebase, open Firestore → Rules, paste `firestore.rules` from this repo, and publish. The rules let a signed-in person read and write only `users/{their uid}`. `bibleId` may only be `ctb` or `cjt`. There is no Realtime Database in this project.
+2. **API key.** In Google Cloud → APIs & Services → Credentials, open the browser key. Restrict it to HTTP referrers `https://clayjartranslation.github.io/*`, `http://localhost:*`, and `http://127.0.0.1:*`. Restrict the APIs to Identity Toolkit, Token Service, and Cloud Firestore. The key is still visible in the page. The referrer restriction and the Firestore rules are what keep it from being reused.
+3. **Authorized domains.** Authentication → Settings → Authorized domains should list `clayjartranslation.github.io` and `localhost` only.
+4. **App Check.** The free Spark plan can use App Check with reCAPTCHA v3. It is not wired up, because it needs a site key from the Firebase console and it would load a Google script on sign-in. After you enforce App Check, add the site key to `js/firebase-config.js` and add `https://www.google.com` to `script-src` in the Content-Security-Policy on every page. Do not require `request.app` in the rules until a build with that key is live, or sign-in will fail.
+5. **Phone sign-in and reCAPTCHA.** Leave `phone: false`. Turning it on also needs `https://www.google.com` in `script-src` and `frame-src`.
+6. **GitHub.** On a public repository, enable Dependabot alerts, secret scanning, and secret-scanning push protection. Protect `main` so a pull request and the Tests workflow are required. The agent may have been unable to change those settings. `/.well-known/security.txt` for the whole domain belongs at `https://clayjartranslation.github.io/.well-known/security.txt` (the user-site repository). This repo serves a copy at `/treasure/.well-known/security.txt`.

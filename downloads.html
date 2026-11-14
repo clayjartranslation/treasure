@@ -3,18 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' https://www.gstatic.com https://apis.google.com https://translate.googleapis.com https://translate.google.com https://clayjartranslation.github.io; script-src-attr 'none'; style-src 'self' https://www.gstatic.com https://translate.googleapis.com https://clayjartranslation.github.io; style-src-attr 'none'; img-src 'self' data: https://www.gstatic.com https://www.google.com https://translate.googleapis.com https://clayjartranslation.github.io; font-src 'self'; connect-src 'self' https://clayjartranslation.github.io https://www.gstatic.com https://apis.google.com https://firebase.googleapis.com https://firebaseinstallations.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://firestore.googleapis.com https://www.googleapis.com https://huggingface.co https://us.aws.cdn.hf.co https://eu.aws.cdn.hf.co https://cdn-lfs.huggingface.co https://cdn-lfs-us-1.huggingface.co https://cdn-lfs-eu-1.huggingface.co https://translate.googleapis.com; media-src 'self' blob: https://huggingface.co https://us.aws.cdn.hf.co https://eu.aws.cdn.hf.co https://cdn-lfs.huggingface.co https://cdn-lfs-us-1.huggingface.co https://cdn-lfs-eu-1.huggingface.co; frame-src https://accounts.google.com https://*.firebaseapp.com https://apis.google.com https://translate.google.com https://www.google.com; form-action 'self' https://*.sibforms.com https://www.paypal.com https://paypal.com; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests">
   <title>Downloads · Clay Jar Treasure Bible</title>
   <meta name="description" content="How to keep the Clay Jar Treasure Bible on your phone. Free to read, with no ads. The text is not offered as a full download.">
   <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="stylesheet" href="css/style.css">
-  <script>
-    (function () {
-      try {
-        var s = JSON.parse(localStorage.getItem('ctb-settings') || '{}');
-        if (s.theme === 'dark' || s.theme === 'light') document.documentElement.dataset.theme = s.theme;
-      } catch (e) {}
-    })();
-  </script>
+  <script src="js/languages.js"></script>
+  <script src="js/lang.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -30,6 +26,7 @@
     <a href="downloads.html" aria-current="page">Downloads</a>
     <a href="./#/books">Books</a>
   </nav>
+  <p class="lang-notice" id="langNotice" hidden>Machine translation by Google. The English text is the official Clay Jar Treasure Bible.</p>
   <main class="legal-page" id="main">
     <p class="eyebrow">Clay Jar Treasure Bible</p>
     <h1>Downloads</h1>
@@ -48,19 +45,14 @@
 
     <h2>The text itself</h2>
     <p>The Clay Jar Treasure Bible is © 2026 Jose Santiago. All rights reserved. A full file of the whole Bible (PDF, EPUB, or similar) is not offered. You may quote up to 500 verses if you give credit. The <a href="./#/about/copyright">copyright page</a> says how. For anything more, write to <a href="mailto:contact.clayjar@protonmail.com">contact.clayjar@protonmail.com</a>.</p>
-    <p>Looking for a word-for-word Bible you can download? The <a href="https://clayjartranslation.github.io/downloads/">Clay Jar Translation downloads</a> are free under CC BY 4.0. That is a different Bible.</p>
+    <p>Looking for a word-for-word Bible you can download? The <a href="https://clayjartranslation.github.io/downloads/" target="_blank" rel="noopener noreferrer">Clay Jar Translation downloads</a> are free under CC BY 4.0. That is a different Bible.</p>
   </main>
   <footer class="foot">
-    <p><strong>Clay Jar Treasure Bible</strong><br>© 2026 Jose Santiago. All rights reserved.</p>
-    <p class="foot-small">Clay Jar Treasure Bible™, Clay Jar Translation™ and their logos are trademarks of Jose Santiago.</p>
+    <p class="notranslate" translate="no"><strong>Clay Jar Treasure Bible</strong><br>© 2026 Jose Santiago. All rights reserved.</p>
+    <p class="foot-small notranslate" translate="no">Clay Jar Treasure Bible™, Clay Jar Translation™ and their logos are trademarks of Jose Santiago.</p>
+    <p class="foot-accept">Using this site means you agree to the <a href="terms.html">Terms of Service</a> and the <a href="privacy.html">Privacy Policy</a>. Those terms include individual arbitration and a 30-day email opt-out.</p>
     <p class="foot-small"><a href="devotional.html">Devotional</a> <a href="terms.html">Terms of Service</a> <a href="privacy.html">Privacy Policy</a> <a href="./">Back to reading</a></p>
   </footer>
-  <script>
-    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('sw.js', { scope: './' }).catch(function () {});
-      });
-    }
-  </script>
+  <script src="js/register-sw.js"></script>
 </body>
 </html>

@@ -1,11 +1,16 @@
 rules_version = '2';
 /* Each signed-in person can read and write only the documents under users/{their uid}.
    Both Bibles (ctb and cjt) live in this one project. There is no public data here.
-   Spark plan: these rules run in Firestore. No Cloud Functions. */
+   Spark plan: these rules run in Firestore. No Cloud Functions.
+   App Check is not required here until the owner turns it on in the Firebase console.
+   Requiring request.app before that would block every sign-in. */
 service cloud.firestore {
   match /databases/{database}/documents {
     function signedIn(uid) {
       return request.auth != null && request.auth.uid == uid;
+    }
+    function knownBible(bibleId) {
+      return bibleId == 'ctb' || bibleId == 'cjt';
     }
 
     match /users/{uid} {
@@ -15,19 +20,20 @@ service cloud.firestore {
         && request.resource.size() < 2000;
 
       match /bibles/{bibleId} {
-        allow read, delete: if signedIn(uid);
+        allow read, delete: if signedIn(uid) && knownBible(bibleId);
         allow create, update: if signedIn(uid)
-          && bibleId.matches('^[a-z0-9-]{2,16}$')
+          && knownBible(bibleId)
           && request.resource.data.schema == 1
+          && request.resource.data.keys().hasOnly(['schema', 'reading', 'audio', 'audioSettings'])
           && request.resource.size() < 20000;
 
         match /bookmarks/{itemId} {
-          allow read, delete: if signedIn(uid);
-          allow create, update: if signedIn(uid) && validItem(itemId);
+          allow read, delete: if signedIn(uid) && knownBible(bibleId);
+          allow create, update: if signedIn(uid) && knownBible(bibleId) && validItem(itemId);
         }
         match /highlights/{itemId} {
-          allow read, delete: if signedIn(uid);
-          allow create, update: if signedIn(uid) && validItem(itemId);
+          allow read, delete: if signedIn(uid) && knownBible(bibleId);
+          allow create, update: if signedIn(uid) && knownBible(bibleId) && validItem(itemId);
         }
       }
     }
@@ -40,8 +46,18 @@ service cloud.firestore {
         && request.resource.data.id.size() > 0
         && request.resource.data.id.size() < 80
         && request.resource.data.t is number
-        && (!request.resource.data.keys().hasAny(['text'])
-            || (request.resource.data.text is string && request.resource.data.text.size() <= 4000));
+        && (!('text' in request.resource.data)
+            || (request.resource.data.text is string && request.resource.data.text.size() <= 4000))
+        && (!('book' in request.resource.data)
+            || (request.resource.data.book is string && request.resource.data.book.size() < 80))
+        && (!('name' in request.resource.data)
+            || (request.resource.data.name is string && request.resource.data.name.size() < 80))
+        && (!('ch' in request.resource.data)
+            || (request.resource.data.ch is int && request.resource.data.ch >= 0 && request.resource.data.ch < 1000))
+        && (!('v' in request.resource.data)
+            || (request.resource.data.v is int && request.resource.data.v >= 0 && request.resource.data.v < 1000))
+        && (!('color' in request.resource.data)
+            || request.resource.data.color in ['yellow', 'green', 'blue', 'pink', '']);
     }
   }
 }

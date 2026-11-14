@@ -1,0 +1,231 @@
+(function (root) {
+      var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      var DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+      function isLeap(year) {
+        return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+      }
+
+      /* Day index in UTC so a daylight-saving shift cannot move the date. Feb 29 in a non-leap year sits halfway between Feb 28 and Mar 1. */
+      function dayIndex(month, day, year) {
+        var dt = new Date(Date.UTC(year, month - 1, day));
+        if (dt.getUTCFullYear() !== year || dt.getUTCMonth() !== month - 1 || dt.getUTCDate() !== day) {
+          return dayIndex(2, 28, year) + 0.5;
+        }
+        return Math.round((dt.getTime() - Date.UTC(year, 0, 1)) / 86400000);
+      }
+
+      function validKey(key) {
+        var m = /^(\d{2})-(\d{2})$/.exec(key || '');
+        if (!m) return false;
+        var month = +m[1], day = +m[2];
+        if (month < 1 || month > 12 || day < 1) return false;
+        var dt = new Date(Date.UTC(2024, month - 1, day));
+        return dt.getUTCMonth() === month - 1 && dt.getUTCDate() === day;
+      }
+
+      function monthDay(date) {
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+        return (month < 10 ? '0' : '') + month + '-' + (day < 10 ? '0' : '') + day;
+      }
+
+      function formatLong(date) {
+        return DAYS[date.getDay()] + ', ' + MONTHS[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
+      }
+
+      function formatKey(key) {
+        var parts = String(key).split('-');
+        return MONTHS[(+parts[0]) - 1] + ' ' + (+parts[1]);
+      }
+
+      function nearestKey(keys, month, day, year) {
+        var span = isLeap(year) ? 366 : 365;
+        var today = dayIndex(month, day, year);
+        var best = keys[0];
+        var bestDist = Infinity;
+        var bestBack = Infinity;
+        for (var i = 0; i < keys.length; i++) {
+          var parts = keys[i].split('-');
+          var idx = dayIndex(+parts[0], +parts[1], year);
+          var forward = ((idx - today) % span + span) % span;
+          var back = ((today - idx) % span + span) % span;
+          var dist = Math.min(forward, back);
+          if (dist < bestDist || (dist === bestDist && back < bestBack)) {
+            best = keys[i];
+            bestDist = dist;
+            bestBack = back;
+          }
+        }
+        return best;
+      }
+
+      function usable(entry) {
+        return !!(entry && validKey(entry.date) &&
+          typeof entry.title === 'string' && entry.title &&
+          typeof entry.reference === 'string' && entry.reference &&
+          typeof entry.text === 'string' && entry.text &&
+          typeof entry.reflection === 'string' && entry.reflection &&
+          typeof entry.prayer === 'string' && entry.prayer);
+      }
+
+      /* mode: today | nearest | picked | missing | empty */
+      function choose(entries, now, param) {
+        var by = {};
+        var keys = [];
+        (entries || []).forEach(function (entry) {
+          if (!usable(entry) || by[entry.date]) return;
+          by[entry.date] = entry;
+          keys.push(entry.date);
+        });
+        keys.sort();
+        var todayKey = monthDay(now);
+        var mode = 'empty';
+        var selected = null;
+        if (!keys.length) {
+          return { keys: keys, by: by, selected: null, mode: mode, todayKey: todayKey };
+        }
+        if (param && validKey(param)) {
+          if (by[param]) {
+            selected = by[param];
+            mode = param === todayKey ? 'today' : 'picked';
+          } else {
+            var asked = param.split('-');
+            selected = by[nearestKey(keys, +asked[0], +asked[1], now.getFullYear())];
+            mode = 'missing';
+          }
+        } else if (by[todayKey]) {
+          selected = by[todayKey];
+          mode = 'today';
+        } else {
+          selected = by[nearestKey(keys, now.getMonth() + 1, now.getDate(), now.getFullYear())];
+          mode = 'nearest';
+        }
+        return { keys: keys, by: by, selected: selected, mode: mode, todayKey: todayKey };
+      }
+
+      root.Devo = {
+        choose: choose,
+        formatLong: formatLong,
+        formatKey: formatKey,
+        monthDay: monthDay,
+        validKey: validKey
+      };
+    })(typeof window !== 'undefined' ? window : globalThis);
+
+(function () {
+      var note = document.getElementById('note');
+      var entryEl = document.getElementById('entry');
+      var archive = document.getElementById('archive');
+      var pageTitle = document.getElementById('pageTitle');
+
+      function readHref(entry) {
+        if (!/^[a-z0-9-]+$/.test(entry.book || '')) return '';
+        var chapter = Number(entry.chapter);
+        var verse = Number(entry.verse);
+        if (!Number.isInteger(chapter) || !Number.isInteger(verse) || chapter < 1 || verse < 1) return '';
+        return './#/read/' + entry.book + '/' + chapter + '/' + verse;
+      }
+
+      function showNote(choice, now, param) {
+        note.hidden = false;
+        note.replaceChildren();
+        var selected = choice.selected;
+        if (choice.mode === 'nearest') {
+          note.textContent = 'There is no devotional for ' + Devo.formatLong(now) + ' yet. Here is the nearest one.';
+          return;
+        }
+        if (choice.mode === 'missing') {
+          note.appendChild(document.createTextNode('There is no devotional for ' + Devo.formatKey(param) + '. Here is the nearest one. '));
+        } else if (choice.mode === 'picked' && selected) {
+          note.appendChild(document.createTextNode('Showing the reading for ' + Devo.formatKey(selected.date) + '. '));
+        } else {
+          note.hidden = true;
+          return;
+        }
+        var back = document.createElement('a');
+        back.href = 'devotional.html';
+        back.textContent = "Today's devotional";
+        note.appendChild(back);
+      }
+
+      function showEntry(choice, now) {
+        var selected = choice.selected;
+        var todayView = choice.mode === 'today' || choice.mode === 'nearest';
+        pageTitle.textContent = todayView ? "Today's devotional" : 'Daily devotional';
+        document.title = (todayView
+          ? "Today's devotional"
+          : Devo.formatKey(selected.date) + ' · Daily devotional') + ' · Clay Jar Treasure Bible';
+        document.getElementById('entryDate').textContent = choice.mode === 'today'
+          ? Devo.formatLong(now)
+          : Devo.formatKey(selected.date);
+        document.getElementById('entryTitle').textContent = selected.title;
+        document.getElementById('entryText').textContent = selected.text;
+        var caption = document.getElementById('entryRef');
+        caption.replaceChildren();
+        var href = readHref(selected);
+        if (href) {
+          var link = document.createElement('a');
+          link.href = href;
+          link.textContent = selected.reference;
+          caption.appendChild(link);
+        } else {
+          caption.appendChild(document.createTextNode(selected.reference));
+        }
+        caption.appendChild(document.createTextNode(', Clay Jar Treasure Bible'));
+        var body = document.getElementById('entryBody');
+        body.replaceChildren();
+        selected.reflection.split(/\n\n+/).forEach(function (part) {
+          var p = document.createElement('p');
+          p.textContent = part;
+          body.appendChild(p);
+        });
+        document.getElementById('entryPrayer').textContent = selected.prayer;
+        var chapterLink = document.getElementById('entryLink');
+        if (href) {
+          chapterLink.hidden = false;
+          chapterLink.href = href;
+          chapterLink.textContent = 'Read ' + selected.reference;
+        } else {
+          chapterLink.hidden = true;
+        }
+        entryEl.hidden = false;
+      }
+
+      function showArchive(choice) {
+        archive.replaceChildren();
+        choice.keys.forEach(function (key) {
+          var item = choice.by[key];
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.href = 'devotional.html?d=' + key;
+          if (choice.selected && choice.selected.date === key) a.setAttribute('aria-current', 'page');
+          var name = document.createElement('b');
+          name.textContent = item.title;
+          var when = document.createElement('span');
+          when.textContent = Devo.formatKey(key);
+          a.appendChild(name);
+          a.appendChild(when);
+          li.appendChild(a);
+          archive.appendChild(li);
+        });
+      }
+
+      var now = new Date();
+      var param = new URLSearchParams(location.search).get('d');
+      fetch('data/devotionals.json').then(function (res) {
+        if (!res.ok) throw new Error('bad status');
+        return res.json();
+      }).then(function (data) {
+        var choice = Devo.choose(data && data.entries, now, param);
+        if (!choice.selected) {
+          note.textContent = 'No devotionals have been added yet.';
+          return;
+        }
+        showNote(choice, now, param);
+        showEntry(choice, now);
+        showArchive(choice);
+      }).catch(function () {
+        note.textContent = 'The devotionals could not be loaded. Open this page once while online, and it can be read offline afterward.';
+      });
+    })();

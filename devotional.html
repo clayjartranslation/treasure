@@ -3,44 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' https://www.gstatic.com https://apis.google.com https://translate.googleapis.com https://translate.google.com https://clayjartranslation.github.io; script-src-attr 'none'; style-src 'self' https://www.gstatic.com https://translate.googleapis.com https://clayjartranslation.github.io; style-src-attr 'none'; img-src 'self' data: https://www.gstatic.com https://www.google.com https://translate.googleapis.com https://clayjartranslation.github.io; font-src 'self'; connect-src 'self' https://clayjartranslation.github.io https://www.gstatic.com https://apis.google.com https://firebase.googleapis.com https://firebaseinstallations.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://firestore.googleapis.com https://www.googleapis.com https://huggingface.co https://us.aws.cdn.hf.co https://eu.aws.cdn.hf.co https://cdn-lfs.huggingface.co https://cdn-lfs-us-1.huggingface.co https://cdn-lfs-eu-1.huggingface.co https://translate.googleapis.com; media-src 'self' blob: https://huggingface.co https://us.aws.cdn.hf.co https://eu.aws.cdn.hf.co https://cdn-lfs.huggingface.co https://cdn-lfs-us-1.huggingface.co https://cdn-lfs-eu-1.huggingface.co; frame-src https://accounts.google.com https://*.firebaseapp.com https://apis.google.com https://translate.google.com https://www.google.com; form-action 'self' https://*.sibforms.com https://www.paypal.com https://paypal.com; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests">
   <title>Today's devotional · Clay Jar Treasure Bible</title>
-  <meta name="description" content="A free daily devotional from the Clay Jar Treasure Bible: a verse, a short reflection, and a prayer. No ads and no tracking.">
+  <meta name="description" content="A free daily devotional from the Clay Jar Treasure Bible: a verse, a short reflection, and a prayer. No ads.">
   <meta name="theme-color" content="#fff9eb" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#1d1410" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="icons/favicon-48.png" sizes="48x48" type="image/png">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .devo .devo-verse { margin: 1rem 0 1.25rem; border-left: 3px solid var(--clay); }
-    .devo .devo-verse blockquote {
-      margin: 0;
-      font-family: var(--serif);
-      font-size: calc(var(--read-size) * 1.05);
-      line-height: 1.65;
-      white-space: pre-line;
-      overflow-wrap: break-word;
-    }
-    .devo .devo-verse figcaption { margin-top: .85rem; color: var(--ink-soft); font-size: .95rem; }
-    .devo .devo-prayer { margin-top: 1.5rem; }
-    .devo .devo-prayer h2 { margin-top: 0; text-align: center; }
-    .devo .devo-prayer p { font-family: var(--serif); font-size: calc(var(--read-size) * .95); line-height: 1.7; margin: 0; }
-    .devo .devo-read { margin: 1.25rem 0 0; }
-    .devo .links a { min-height: var(--hit); gap: .75rem; align-items: center; }
-    .devo .links a b { font-weight: 600; min-width: 0; }
-    .devo .links a span { flex: none; text-align: right; }
-    .devo .links a[aria-current="page"] { border-color: var(--clay); box-shadow: inset 3px 0 0 var(--clay); }
-  </style>
-  <script>
-    (function () {
-      try {
-        var s = JSON.parse(localStorage.getItem('ctb-settings') || '{}');
-        var d = document.documentElement;
-        if (s.theme === 'dark' || s.theme === 'light') d.dataset.theme = s.theme;
-        if (s.size) d.style.setProperty('--read-size', s.size + 'px');
-      } catch (e) {}
-    })();
-  </script>
+  <script src="js/languages.js"></script>
+  <script src="js/lang.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -56,10 +30,11 @@
     <a href="downloads.html">Downloads</a>
     <a href="./#/books">Books</a>
   </nav>
+  <p class="lang-notice" id="langNotice" hidden>Machine translation by Google. The English text is the official Clay Jar Treasure Bible.</p>
   <main class="legal-page devo" id="main" tabindex="-1">
     <p class="eyebrow">Clay Jar Treasure Bible</p>
     <h1 id="pageTitle">Today's devotional</h1>
-    <p class="legal-note">A verse from this Bible, a short reflection, and a prayer. Free to read, with no ads and no tracking.</p>
+    <p class="legal-note">A verse from this Bible, a short reflection, and a prayer. Free to read, with no ads.</p>
     <noscript>
       <p>JavaScript is off, so this page cannot match a reading to the date on your device. Turn JavaScript on to read today's devotional. The page does not use ads or tracking.</p>
     </noscript>
@@ -88,277 +63,25 @@
         <input type="hidden" name="locale" value="en">
         <button class="btn primary" type="submit">Subscribe</button>
       </form>
-      <p class="legal-note">Your email is stored by Brevo only to send this devotional. It is not sold. <a href="privacy.html">Privacy Policy</a>.</p>
+      <p class="legal-note">By subscribing, you agree to the <a href="terms.html">Terms of Service</a> and acknowledge the <a href="privacy.html">Privacy Policy</a>. Your email is stored by Brevo only to send this devotional. It is not sold. Brevo asks you to confirm from your inbox before any devotional is sent, and you can unsubscribe any time.</p>
     </section>
     <nav aria-labelledby="archiveTitle">
       <h2 id="archiveTitle">Archive</h2>
       <ul class="links" id="archive"></ul>
     </nav>
-    <p class="legal-note">Devotionals © 2026 Jose Santiago. All rights reserved.</p>
+    <p class="legal-note notranslate" translate="no">Devotionals © 2026 Jose Santiago. All rights reserved.</p>
   </main>
   <footer class="foot">
-    <p><strong>Clay Jar Treasure Bible</strong><br>© 2026 Jose Santiago. All rights reserved.</p>
-    <p class="foot-small">Clay Jar Treasure Bible™, Clay Jar Translation™ and their logos are trademarks of Jose Santiago.</p>
-    <p class="foot-small">Scripture quotations are from the Clay Jar Treasure Bible, © 2026 Jose Santiago. All rights reserved.</p>
+    <p class="notranslate" translate="no"><strong>Clay Jar Treasure Bible</strong><br>© 2026 Jose Santiago. All rights reserved.</p>
+    <p class="foot-small notranslate" translate="no">Clay Jar Treasure Bible™, Clay Jar Translation™ and their logos are trademarks of Jose Santiago.</p>
+    <p class="foot-accept">Using this site means you agree to the <a href="terms.html">Terms of Service</a> and the <a href="privacy.html">Privacy Policy</a>. Those terms include individual arbitration and a 30-day email opt-out.</p>
+    <p class="foot-small notranslate" translate="no">Scripture quotations are from the Clay Jar Treasure Bible, © 2026 Jose Santiago. All rights reserved.</p>
     <p class="foot-small"><a href="./">Back to reading</a> <a href="downloads.html">Downloads</a> <a href="terms.html">Terms of Service</a> <a href="privacy.html">Privacy Policy</a></p>
   </footer>
 
-  <script id="devo-core">
-    (function (root) {
-      var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-      var DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
-      function isLeap(year) {
-        return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
-      }
-
-      /* Day index in UTC so a daylight-saving shift cannot move the date. Feb 29 in a non-leap year sits halfway between Feb 28 and Mar 1. */
-      function dayIndex(month, day, year) {
-        var dt = new Date(Date.UTC(year, month - 1, day));
-        if (dt.getUTCFullYear() !== year || dt.getUTCMonth() !== month - 1 || dt.getUTCDate() !== day) {
-          return dayIndex(2, 28, year) + 0.5;
-        }
-        return Math.round((dt.getTime() - Date.UTC(year, 0, 1)) / 86400000);
-      }
-
-      function validKey(key) {
-        var m = /^(\d{2})-(\d{2})$/.exec(key || '');
-        if (!m) return false;
-        var month = +m[1], day = +m[2];
-        if (month < 1 || month > 12 || day < 1) return false;
-        var dt = new Date(Date.UTC(2024, month - 1, day));
-        return dt.getUTCMonth() === month - 1 && dt.getUTCDate() === day;
-      }
-
-      function monthDay(date) {
-        var month = date.getMonth() + 1;
-        var day = date.getDate();
-        return (month < 10 ? '0' : '') + month + '-' + (day < 10 ? '0' : '') + day;
-      }
-
-      function formatLong(date) {
-        return DAYS[date.getDay()] + ', ' + MONTHS[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
-      }
-
-      function formatKey(key) {
-        var parts = String(key).split('-');
-        return MONTHS[(+parts[0]) - 1] + ' ' + (+parts[1]);
-      }
-
-      function nearestKey(keys, month, day, year) {
-        var span = isLeap(year) ? 366 : 365;
-        var today = dayIndex(month, day, year);
-        var best = keys[0];
-        var bestDist = Infinity;
-        var bestBack = Infinity;
-        for (var i = 0; i < keys.length; i++) {
-          var parts = keys[i].split('-');
-          var idx = dayIndex(+parts[0], +parts[1], year);
-          var forward = ((idx - today) % span + span) % span;
-          var back = ((today - idx) % span + span) % span;
-          var dist = Math.min(forward, back);
-          if (dist < bestDist || (dist === bestDist && back < bestBack)) {
-            best = keys[i];
-            bestDist = dist;
-            bestBack = back;
-          }
-        }
-        return best;
-      }
-
-      function usable(entry) {
-        return !!(entry && validKey(entry.date) &&
-          typeof entry.title === 'string' && entry.title &&
-          typeof entry.reference === 'string' && entry.reference &&
-          typeof entry.text === 'string' && entry.text &&
-          typeof entry.reflection === 'string' && entry.reflection &&
-          typeof entry.prayer === 'string' && entry.prayer);
-      }
-
-      /* mode: today | nearest | picked | missing | empty */
-      function choose(entries, now, param) {
-        var by = {};
-        var keys = [];
-        (entries || []).forEach(function (entry) {
-          if (!usable(entry) || by[entry.date]) return;
-          by[entry.date] = entry;
-          keys.push(entry.date);
-        });
-        keys.sort();
-        var todayKey = monthDay(now);
-        var mode = 'empty';
-        var selected = null;
-        if (!keys.length) {
-          return { keys: keys, by: by, selected: null, mode: mode, todayKey: todayKey };
-        }
-        if (param && validKey(param)) {
-          if (by[param]) {
-            selected = by[param];
-            mode = param === todayKey ? 'today' : 'picked';
-          } else {
-            var asked = param.split('-');
-            selected = by[nearestKey(keys, +asked[0], +asked[1], now.getFullYear())];
-            mode = 'missing';
-          }
-        } else if (by[todayKey]) {
-          selected = by[todayKey];
-          mode = 'today';
-        } else {
-          selected = by[nearestKey(keys, now.getMonth() + 1, now.getDate(), now.getFullYear())];
-          mode = 'nearest';
-        }
-        return { keys: keys, by: by, selected: selected, mode: mode, todayKey: todayKey };
-      }
-
-      root.Devo = {
-        choose: choose,
-        formatLong: formatLong,
-        formatKey: formatKey,
-        monthDay: monthDay,
-        validKey: validKey
-      };
-    })(typeof window !== 'undefined' ? window : globalThis);
-  </script>
-  <script>
-    (function () {
-      var note = document.getElementById('note');
-      var entryEl = document.getElementById('entry');
-      var archive = document.getElementById('archive');
-      var pageTitle = document.getElementById('pageTitle');
-
-      function readHref(entry) {
-        if (!/^[a-z0-9-]+$/.test(entry.book || '')) return '';
-        var chapter = Number(entry.chapter);
-        var verse = Number(entry.verse);
-        if (!Number.isInteger(chapter) || !Number.isInteger(verse) || chapter < 1 || verse < 1) return '';
-        return './#/read/' + entry.book + '/' + chapter + '/' + verse;
-      }
-
-      function showNote(choice, now, param) {
-        note.hidden = false;
-        note.replaceChildren();
-        var selected = choice.selected;
-        if (choice.mode === 'nearest') {
-          note.textContent = 'There is no devotional for ' + Devo.formatLong(now) + ' yet. Here is the nearest one.';
-          return;
-        }
-        if (choice.mode === 'missing') {
-          note.appendChild(document.createTextNode('There is no devotional for ' + Devo.formatKey(param) + '. Here is the nearest one. '));
-        } else if (choice.mode === 'picked' && selected) {
-          note.appendChild(document.createTextNode('Showing the reading for ' + Devo.formatKey(selected.date) + '. '));
-        } else {
-          note.hidden = true;
-          return;
-        }
-        var back = document.createElement('a');
-        back.href = 'devotional.html';
-        back.textContent = "Today's devotional";
-        note.appendChild(back);
-      }
-
-      function showEntry(choice, now) {
-        var selected = choice.selected;
-        var todayView = choice.mode === 'today' || choice.mode === 'nearest';
-        pageTitle.textContent = todayView ? "Today's devotional" : 'Daily devotional';
-        document.title = (todayView
-          ? "Today's devotional"
-          : Devo.formatKey(selected.date) + ' · Daily devotional') + ' · Clay Jar Treasure Bible';
-        document.getElementById('entryDate').textContent = choice.mode === 'today'
-          ? Devo.formatLong(now)
-          : Devo.formatKey(selected.date);
-        document.getElementById('entryTitle').textContent = selected.title;
-        document.getElementById('entryText').textContent = selected.text;
-        var caption = document.getElementById('entryRef');
-        caption.replaceChildren();
-        var href = readHref(selected);
-        if (href) {
-          var link = document.createElement('a');
-          link.href = href;
-          link.textContent = selected.reference;
-          caption.appendChild(link);
-        } else {
-          caption.appendChild(document.createTextNode(selected.reference));
-        }
-        caption.appendChild(document.createTextNode(', Clay Jar Treasure Bible'));
-        var body = document.getElementById('entryBody');
-        body.replaceChildren();
-        selected.reflection.split(/\n\n+/).forEach(function (part) {
-          var p = document.createElement('p');
-          p.textContent = part;
-          body.appendChild(p);
-        });
-        document.getElementById('entryPrayer').textContent = selected.prayer;
-        var chapterLink = document.getElementById('entryLink');
-        if (href) {
-          chapterLink.hidden = false;
-          chapterLink.href = href;
-          chapterLink.textContent = 'Read ' + selected.reference;
-        } else {
-          chapterLink.hidden = true;
-        }
-        entryEl.hidden = false;
-      }
-
-      function showArchive(choice) {
-        archive.replaceChildren();
-        choice.keys.forEach(function (key) {
-          var item = choice.by[key];
-          var li = document.createElement('li');
-          var a = document.createElement('a');
-          a.href = 'devotional.html?d=' + key;
-          if (choice.selected && choice.selected.date === key) a.setAttribute('aria-current', 'page');
-          var name = document.createElement('b');
-          name.textContent = item.title;
-          var when = document.createElement('span');
-          when.textContent = Devo.formatKey(key);
-          a.appendChild(name);
-          a.appendChild(when);
-          li.appendChild(a);
-          archive.appendChild(li);
-        });
-      }
-
-      var now = new Date();
-      var param = new URLSearchParams(location.search).get('d');
-      fetch('data/devotionals.json').then(function (res) {
-        if (!res.ok) throw new Error('bad status');
-        return res.json();
-      }).then(function (data) {
-        var choice = Devo.choose(data && data.entries, now, param);
-        if (!choice.selected) {
-          note.textContent = 'No devotionals have been added yet.';
-          return;
-        }
-        showNote(choice, now, param);
-        showEntry(choice, now);
-        showArchive(choice);
-      }).catch(function () {
-        note.textContent = 'The devotionals could not be loaded. Open this page once while online, and it can be read offline afterward.';
-      });
-    })();
-  </script>
+  <script src="js/devotional.js"></script>
   <script src="js/devotional-email-config.js"></script>
-  <script>
-    (function () {
-      var ready = window.ctbDevotionalEmailReady && window.ctbDevotionalEmailReady();
-      var box = document.getElementById('email-signup');
-      var form = document.getElementById('email-form');
-      if (!box || !form) return;
-      form.addEventListener('submit', function (event) {
-        var action = form.getAttribute('action') || '';
-        if (!/^https:\/\/\S+$/i.test(action)) event.preventDefault();
-      });
-      if (!ready) return;
-      form.setAttribute('action', ready.formAction);
-      box.hidden = false;
-    })();
-  </script>
-  <script>
-    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('sw.js', { scope: './' }).catch(function () {});
-      });
-    }
-  </script>
+  <script src="js/devotional-form.js"></script>
+  <script src="js/register-sw.js"></script>
 </body>
 </html>

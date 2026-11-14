@@ -1,0 +1,8 @@
+# Clay Jar Treasure Bible
+# This copy is served at /treasure/. The domain root is a separate GitHub Pages site.
+Contact: mailto:contact.clayjar@protonmail.com
+Expires: 2027-11-14T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://clayjartranslation.github.io/treasure/.well-known/security.txt
+Policy: https://clayjartranslation.github.io/treasure/privacy.html
+Acknowledgments: https://clayjartranslation.github.io/treasure/terms.html

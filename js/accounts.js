@@ -651,6 +651,9 @@
   }
 
   function boot() {
+    /* Pinned SDK. These modules load only after sign-in is configured.
+       Dynamic import() cannot attach Subresource Integrity to the whole module graph.
+       The Content-Security-Policy allows this exact host and no other script host except the ones listed there. */
     var base = 'https://www.gstatic.com/firebasejs/' + SDK + '/';
     Promise.all([
       import(base + 'firebase-app.js'),

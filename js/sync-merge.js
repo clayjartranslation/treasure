@@ -18,6 +18,8 @@
 
   function clip(s, n) { return typeof s === 'string' ? s.slice(0, n) : ''; }
   function isInt(x) { return Number.isInteger(x) && x >= 0 && x < 100000; }
+  function safeBook(id) { return typeof id === 'string' && /^[a-z0-9-]{1,80}$/.test(id); }
+  function plainObject(x) { return !!x && typeof x === 'object' && !Array.isArray(x); }
   function ts(x) { return typeof x === 'number' && isFinite(x) ? x : 0; }
 
   function cleanBookmark(b) {
@@ -27,7 +29,7 @@
       if (!id) return null;
       return { id: id, deleted: true, t: ts(b.t), book: clip(b.book, 80), name: clip(b.name, 80), ch: isInt(b.ch) ? b.ch : 0, v: isInt(b.v) ? b.v : 0, text: '' };
     }
-    if (typeof b.book !== 'string' || !b.book || !isInt(b.ch) || !isInt(b.v)) return null;
+    if (!safeBook(b.book) || !isInt(b.ch) || !isInt(b.v)) return null;
     if (!id) id = ('b' + clip(b.book, 20) + '-' + b.ch + '-' + b.v).slice(0, 40);
     return { id: id, deleted: false, book: clip(b.book, 80), name: clip(b.name, 80), ch: b.ch, v: b.v, text: clip(b.text, 600), t: ts(b.t) };
   }
@@ -39,7 +41,7 @@
       if (!id) return null;
       return { id: id, deleted: true, t: ts(h.t), book: clip(h.book, 80), name: '', ch: 0, v: 0, s: 0, e: 0, color: '', text: '', whole: false };
     }
-    if (typeof h.book !== 'string' || !h.book || !isInt(h.ch) || !isInt(h.v) || !isInt(h.s) || !isInt(h.e) || h.e <= h.s) return null;
+    if (!safeBook(h.book) || !isInt(h.ch) || !isInt(h.v) || !isInt(h.s) || !isInt(h.e) || h.e <= h.s) return null;
     if (!COLORS[h.color] || typeof h.text !== 'string') return null;
     if (!id) id = ('h' + clip(h.book, 12) + '-' + h.ch + '-' + h.v + '-' + h.s).slice(0, 40);
     return {
@@ -49,12 +51,12 @@
   }
 
   function cleanReading(r) {
-    if (!r || typeof r.book !== 'string' || !r.book || !isInt(r.ch)) return null;
+    if (!r || !safeBook(r.book) || !isInt(r.ch)) return null;
     return { book: clip(r.book, 80), name: clip(r.name, 80), ch: r.ch, v: isInt(r.v) ? r.v : 0, t: ts(r.t) };
   }
 
   function cleanAudio(a) {
-    if (!a || typeof a.book !== 'string' || !a.book || !isInt(a.ch)) return null;
+    if (!a || !safeBook(a.book) || !isInt(a.ch)) return null;
     var time = typeof a.time === 'number' && isFinite(a.time) && a.time >= 0 && a.time < 86400 ? Math.round(a.time * 10) / 10 : 0;
     return {
       book: clip(a.book, 80), name: clip(a.name, 80), ch: a.ch, v: isInt(a.v) ? a.v : 0,
@@ -160,7 +162,13 @@
 
   /* A backup file becomes the same shape as a cloud snapshot so import can merge. */
   function backupToSnapshot(d) {
-    if (!d || d.format !== 'ctb-saved' || !Array.isArray(d.bookmarks) || !Array.isArray(d.highlights)) {
+    if (!plainObject(d) || d.format !== 'ctb-saved' || !Array.isArray(d.bookmarks) || !Array.isArray(d.highlights)) {
+      return { error: 'That file is not a Clay Jar Treasure Bible backup.' };
+    }
+    if (d.bookmarks.length > 5000 || d.highlights.length > 5000) {
+      return { error: 'That backup has too many items to import.' };
+    }
+    if (d.bookmarks.some(function (item) { return !plainObject(item); }) || d.highlights.some(function (item) { return !plainObject(item); })) {
       return { error: 'That file is not a Clay Jar Treasure Bible backup.' };
     }
     var fallback = Date.parse(d.exportedAt);
