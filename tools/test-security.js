@@ -23,6 +23,7 @@ assert.ok(csp.includes('https://us.aws.cdn.hf.co'));
 assert.ok(csp.includes('https://*.sibforms.com'));
 assert.ok(csp.includes('https://www.paypal.com'));
 assert.ok(csp.includes('https://translate.googleapis.com'));
+assert.ok(csp.includes('https://translate-pa.googleapis.com'));
 assert.ok(csp.includes('upgrade-insecure-requests'));
 
 htmls.forEach((html, i) => {
@@ -44,7 +45,7 @@ htmls.forEach((html, i) => {
 });
 
 const sw = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
-assert.match(sw, /const VERSION = 'ctb-v43'/);
+assert.match(sw, /const VERSION = 'ctb-v44'/);
 assert.ok(sw.includes('js/lang.js'));
 assert.ok(sw.includes('js/languages.js'));
 
