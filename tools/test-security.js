@@ -45,7 +45,8 @@ htmls.forEach((html, i) => {
 });
 
 const sw = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
-assert.match(sw, /const VERSION = 'ctb-v46'/);
+const version = Number(sw.match(/const VERSION = 'ctb-v(\d+)'/)[1]);
+assert.ok(version >= 47, 'cache version should move past ctb-v46');
 assert.ok(sw.includes('js/lang.js'));
 assert.ok(sw.includes('js/languages.js'));
 
@@ -63,6 +64,11 @@ const terms = htmls[4];
 });
 assert.ok(terms.includes('November 14, 2026'));
 assert.ok(privacy.includes('November 14, 2026'));
+assert.ok(terms.includes('Email delivery is not guaranteed'));
+assert.ok(terms.includes('marked as spam by your email provider'));
+const devotional = fs.readFileSync(path.join(root, 'devotional.html'), 'utf8');
+assert.ok(devotional.includes('check your spam or junk folder for the confirmation email'));
+assert.ok(devotional.includes('contact.clayjar@protonmail.com'));
 
 const workflow = fs.readFileSync(path.join(root, '.github/workflows/devotional-email.yml'), 'utf8');
 assert.ok(!workflow.includes('actions/checkout@v'));
