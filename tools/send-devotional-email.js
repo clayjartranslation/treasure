@@ -414,17 +414,30 @@ function attributeExistsStatus(res) {
   return /already exist|duplicate|has already/.test(t);
 }
 
-async function ensureAttributes(apiKey, request) {
+function isPermissionDenied(res) {
+  if (!res) return false;
+  if (res.status === 401 || res.status === 403) return true;
+  const t = String((res.json && (res.json.message || res.json.code || res.json.error)) || res.text || '').toLowerCase();
+  return /permission_denied|not authorized|unauthorized/.test(t);
+}
+
+async function ensureAttributes(apiKey, request, log) {
   const call = request || brevo;
   const names = [ATTR_TIMEZONE, ATTR_LAST_DEVO];
   for (const name of names) {
     const res = await call(apiKey, 'POST', '/contacts/attributes/normal/' + name, { type: 'text' });
     if (res.ok || res.status === 201 || attributeExistsStatus(res)) continue;
+    if (isPermissionDenied(res)) {
+      if (log) {
+        log('Could not create the ' + name + ' contact attribute (' + res.status + '). The Brevo API key needs Contacts permission to create attributes, list subscribers, and save LAST_DEVO_DATE. Continuing; missing time zones default to America/New_York.');
+      }
+      return { ok: false, denied: true, names };
+    }
     const err = new Error('Could not create the ' + name + ' contact attribute (' + res.status + '). ' + clip(res.text));
     err.result = res;
     throw err;
   }
-  return names;
+  return { ok: true, denied: false, names };
 }
 
 function contactsFromPayload(json) {
@@ -708,13 +721,35 @@ async function run(env, deps) {
   }
 
   const request = (deps && deps.request) || brevo;
-  await ensureAttributes(secrets.apiKey, request);
-  const contacts = deps && deps.listContacts
-    ? await deps.listContacts(secrets.apiKey, secrets.listId)
-    : await listContacts(secrets.apiKey, secrets.listId, request);
-  const blocked = deps && deps.listBlocked
-    ? await deps.listBlocked(secrets.apiKey)
-    : await listBlockedTransactional(secrets.apiKey, request);
+  await ensureAttributes(secrets.apiKey, request, log);
+  let contacts = [];
+  let blocked = new Set();
+  try {
+    contacts = deps && deps.listContacts
+      ? await deps.listContacts(secrets.apiKey, secrets.listId)
+      : await listContacts(secrets.apiKey, secrets.listId, request);
+    blocked = deps && deps.listBlocked
+      ? await deps.listBlocked(secrets.apiKey)
+      : await listBlockedTransactional(secrets.apiKey, request);
+  } catch (err) {
+    const message = (err && err.message) ? err.message : String(err);
+    log('Could not load the subscriber list. ' + message);
+    log('The Brevo API key needs Contacts permission to list subscribers, store TIMEZONE, and record LAST_DEVO_DATE. Until that is granted, missing time zones default to America/New_York and hourly sends cannot go out.');
+    if (!dry) throw err;
+    if (!sampleEmail) {
+      log('No devotional is written for ' + ny.key + ' (' + ny.isoDate + ').');
+      return 0;
+    }
+    log('Dry run for ' + stamp + '. Contacts were not loaded. Nothing is sent.');
+    log('Sample for ' + DEFAULT_TZ + ' on ' + ny.isoDate + ':');
+    log('Campaign: ' + sampleEmail.name);
+    log('Subject: ' + sampleEmail.subject);
+    log('--- plain text ---');
+    log(sampleEmail.text);
+    log('--- html ---');
+    log(sampleEmail.html);
+    return 0;
+  }
   let groups = groupByTimeZone(contacts, now, blocked);
   const alreadySent = alreadySentTodayCount(groups);
   const dueBeforeLimit = dueCount(groups);
@@ -822,6 +857,7 @@ module.exports = {
   loadDevotionals,
   loadEntries: loadDevotionals,
   ensureAttributes,
+  isPermissionDenied,
   describeGroups,
   isDryRun,
   run,

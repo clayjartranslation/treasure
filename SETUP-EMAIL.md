@@ -97,7 +97,7 @@ Unsubscribed or blocklisted addresses are skipped. Each email has an unsubscribe
 
 The email has the title, the date, the verse copied from `data/devotionals.json`, the reflection, the prayer, a link to that day’s page, the line `Devotionals © 2026 Jose Santiago. All rights reserved.`, and the unsubscribe link.
 
-If there is no reading for that month and day, nothing is sent. If the three secrets are missing, the job ends normally and does not fail. A failure means the secrets are set and Brevo refused the send (for example the sender is not confirmed yet). Open the Actions log and read the message.
+If there is no reading for that month and day, nothing is sent. If the three secrets are missing, the job ends normally and does not fail. A failure means the secrets are set and Brevo refused the send (for example the sender is not confirmed yet). Open the Actions log and read the message. If the log says the API key is not authorized for Contacts, edit or replace the key in Brevo so it can manage contacts. The job needs that to read time zones and to record who already received today’s reading.
 
 Brevo’s free plan sends a limited number of emails a day (about 300). That is enough for this list. Do not add a card.
 
