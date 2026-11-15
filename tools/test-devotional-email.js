@@ -187,7 +187,8 @@ check('dry run without secrets prints a sample and does not call Brevo', () => {
 
 check('pages and the service worker include the nav and the new files', () => {
   const sw = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
-  assert.match(sw, /const VERSION = 'ctb-v4\d+'/);
+  const version = Number((sw.match(/const VERSION = 'ctb-v(\d+)'/) || [])[1]);
+  assert.ok(version >= 50, 'cache version should move past ctb-v49');
   assert.ok(sw.includes('downloads.html'));
   assert.ok(sw.includes('unsubscribe.html'));
   assert.ok(sw.includes('js/devotional-email-config.js'));
