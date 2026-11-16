@@ -37,6 +37,25 @@
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
   }
+  function isStandaloneOrIOS() {
+    var ua = navigator.userAgent || '';
+    var iOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    var standalone = navigator.standalone === true || (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches);
+    return iOS || standalone;
+  }
+  function clearAuthPersistence() {
+    ['localStorage', 'sessionStorage'].forEach(function (which) {
+      try {
+        var store = window[which];
+        var keys = [];
+        for (var i = 0; i < store.length; i++) keys.push(store.key(i));
+        keys.forEach(function (k) {
+          if (k && k.indexOf('firebase:') === 0) store.removeItem(k);
+        });
+      } catch (e) {}
+    });
+    try { indexedDB.deleteDatabase('firebaseLocalStorageDb'); } catch (e) {}
+  }
   function toast(msg) {
     try { window.dispatchEvent(new CustomEvent('ctb-toast', { detail: msg })); } catch (e) {}
   }
@@ -113,24 +132,57 @@
     var main = document.getElementById('main');
     if (!main) return;
     var old = document.getElementById('homeSignIn');
-    if (user || !isHome()) { if (old) old.remove(); return; }
-    if (old) return;
+    if (!isHome()) { if (old) old.remove(); return; }
+    var state = user ? 'in' : 'out';
+    if (old && old.getAttribute('data-state') === state) return;
+    if (old) old.remove();
     var hero = main.querySelector('.hero');
     if (!hero) return;
     var box = document.createElement('div');
     box.className = 'home-signin';
     box.id = 'homeSignIn';
-    box.innerHTML = '<p class="home-signin-lead">Sign in to save your place on your other devices. Optional: your reading stays on this device unless you sign in.</p>'
-      + '<div class="home-signin-btns">'
-      + '<button type="button" class="btn primary" data-provider="google">Continue with <span class="notranslate" translate="no">Google</span></button>'
-      + '<button type="button" class="btn" data-provider="github">Continue with <span class="notranslate" translate="no">GitHub</span></button>'
-      + '<a class="btn" href="#/account">Use email</a>'
-      + '</div>'
-      + '<p class="account-error" id="homeSignInError" role="alert" hidden></p>';
+    box.setAttribute('data-state', state);
+    if (user) {
+      var who = user.phoneNumber || user.email || user.displayName || 'your account';
+      box.innerHTML = '<p class="home-signin-lead">Signed in as <span class="notranslate" translate="no">' + esc(who) + '</span>.</p>'
+        + '<div class="home-signin-btns">'
+        + '<a class="btn" href="#/account">Account</a>'
+        + '<button type="button" class="btn" data-home-signout>Sign out</button>'
+        + '</div>'
+        + '<div id="homeSignOutBox" hidden>'
+        + '<p>Your account stays. Choose what happens to the copy on this device.</p>'
+        + '<p class="account-error" id="homeSignOutError" role="alert" hidden></p>'
+        + '<div class="home-signin-btns account-out-actions">'
+        + '<button type="button" class="btn primary" data-home-out-keep>Sign out and keep data on this device</button>'
+        + '<button type="button" class="btn" data-home-out-clear>Sign out and remove data from this device</button>'
+        + '<button type="button" class="btn" data-home-out-cancel>Cancel</button>'
+        + '</div></div>';
+    } else {
+      box.innerHTML = '<p class="home-signin-lead">Sign in to save your place on your other devices. Optional: your reading stays on this device unless you sign in.</p>'
+        + '<div class="home-signin-btns">'
+        + '<button type="button" class="btn primary" data-provider="google">Continue with <span class="notranslate" translate="no">Google</span></button>'
+        + '<button type="button" class="btn" data-provider="github">Continue with <span class="notranslate" translate="no">GitHub</span></button>'
+        + '<a class="btn" href="#/account">Use email</a>'
+        + '</div>'
+        + '<p class="account-error" id="homeSignInError" role="alert" hidden></p>';
+    }
     var cta = hero.querySelector('.cta');
     if (cta && cta.parentNode) cta.parentNode.insertBefore(box, cta.nextSibling); else hero.appendChild(box);
-    box.querySelector('[data-provider="google"]').addEventListener('click', function () { homeProvider('google'); });
-    box.querySelector('[data-provider="github"]').addEventListener('click', function () { homeProvider('github'); });
+    if (user) {
+      box.querySelector('[data-home-signout]').addEventListener('click', function () {
+        var confirmBox = document.getElementById('homeSignOutBox');
+        confirmBox.hidden = false;
+        if (confirmBox.scrollIntoView) confirmBox.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      });
+      box.querySelector('[data-home-out-keep]').addEventListener('click', function () { signOutUser(false); });
+      box.querySelector('[data-home-out-clear]').addEventListener('click', function () { signOutUser(true); });
+      box.querySelector('[data-home-out-cancel]').addEventListener('click', function () {
+        document.getElementById('homeSignOutBox').hidden = true;
+      });
+    } else {
+      box.querySelector('[data-provider="google"]').addEventListener('click', function () { homeProvider('google'); });
+      box.querySelector('[data-provider="github"]').addEventListener('click', function () { homeProvider('github'); });
+    }
   }
   (function watchHome() {
     var main = document.getElementById('main');
@@ -390,24 +442,46 @@
     });
   }
   function signOutUser(clearLocal) {
-    var done = function () {
-      toast(clearLocal ? 'Signed out. The copy on this device was removed.' : 'Signed out. The copy on this device was kept.');
-    };
-    if (clearLocal && window.CTBSync && CTBSync.clearProgress) CTBSync.clearProgress();
-    authMods.signOut(auth).then(done).catch(function (err) { toast(explain(err)); });
+    if (!authMods || !auth) { toast('Sign-in could not be reached. Refresh and try again.'); return; }
+    var keepMsg = 'Signed out. The copy on this device was kept.';
+    var clearMsg = 'Signed out. The copy on this device was removed.';
+    authMods.signOut(auth).then(function () {
+      if (clearLocal && window.CTBSync && CTBSync.clearProgress) CTBSync.clearProgress();
+      user = null;
+      stopSync();
+      setSaveLabel('');
+      clearAuthPersistence();
+      paintChrome();
+      if (/^#\/account\/?$/.test(location.hash)) renderAccount(document.getElementById('main'));
+      var msg = clearLocal ? clearMsg : keepMsg;
+      if (isStandaloneOrIOS()) {
+        try { sessionStorage.setItem('ctb-signed-out', msg); } catch (e) {}
+        location.reload();
+        return;
+      }
+      toast(msg);
+    }).catch(function (err) {
+      var msg = explain(err);
+      var homeErr = document.getElementById('homeSignOutError');
+      if (homeErr) { homeErr.hidden = !msg; homeErr.textContent = msg || ''; }
+      else if (msg) toast(msg);
+    });
   }
   function confirmSignOut() {
     var box = document.getElementById('acctSession');
     if (!box) { signOutUser(false); return; }
     box.innerHTML = '<p><strong>Sign out</strong></p>'
       + '<p>Your account stays. Choose what to do with the bookmarks, highlights, place, and listening progress on this device.</p>'
-      + '<div class="account-actions">'
-      + '<button type="button" class="btn" id="acctOutKeep">Sign out and keep data on this device</button>'
+      + '<div class="account-actions account-out-actions">'
+      + '<button type="button" class="btn primary" id="acctOutKeep">Sign out and keep data on this device</button>'
       + '<button type="button" class="btn" id="acctOutClear">Sign out and remove data from this device</button>'
       + '<button type="button" class="btn" id="acctOutCancel">Cancel</button></div>';
+    if (box.scrollIntoView) box.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     $('#acctOutKeep').addEventListener('click', function () { signOutUser(false); });
     $('#acctOutClear').addEventListener('click', function () { signOutUser(true); });
     $('#acctOutCancel').addEventListener('click', function () { renderAccount($('#main')); });
+    var keep = $('#acctOutKeep');
+    if (keep) keep.focus();
   }
 
   function phoneOnly(u) {
@@ -775,5 +849,12 @@
     noteChange: noteChange,
     currentUser: function () { return user; }
   };
+  try {
+    var signedOutMsg = sessionStorage.getItem('ctb-signed-out');
+    if (signedOutMsg) {
+      sessionStorage.removeItem('ctb-signed-out');
+      toast(signedOutMsg);
+    }
+  } catch (e) {}
   boot();
 })();

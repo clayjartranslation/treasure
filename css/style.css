@@ -477,6 +477,8 @@ html[data-accounts="on"] .account-blurb { display: block; margin: .35rem 0 .15re
 .account-card { display: grid; gap: .75rem; }
 .account-actions { display: flex; flex-wrap: wrap; gap: .5rem; }
 .account-actions .btn { min-height: var(--hit); }
+.account-out-actions { flex-direction: column; }
+.account-out-actions .btn { width: 100%; flex: 1 1 auto; }
 .account-form { display: grid; gap: .35rem; }
 .account-form label { font-weight: 600; }
 .account-form input, .account-danger input {
@@ -595,3 +597,6 @@ html[dir="rtl"] .scripture, html[dir="rtl"] .prose, html[dir="rtl"] .legal-page,
 .home-signin-btns { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; }
 .home-signin-btns .btn { flex: 1 1 10rem; min-height: 44px; justify-content: center; }
 @media (max-width: 420px) { .home-signin-btns .btn { flex-basis: 100%; } }
+.home-signin .account-out-actions .btn { flex-basis: 100%; }
+#homeSignOutBox { margin-top: .75rem; text-align: left; }
+#homeSignOutBox p { margin: 0 0 .5rem; }
