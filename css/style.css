@@ -600,3 +600,6 @@ html[dir="rtl"] .scripture, html[dir="rtl"] .prose, html[dir="rtl"] .legal-page,
 .home-signin .account-out-actions .btn { flex-basis: 100%; }
 #homeSignOutBox { margin-top: .75rem; text-align: left; }
 #homeSignOutBox p { margin: 0 0 .5rem; }
+
+.home-help { margin: .85rem 0 0; text-align: center; }
+.home-help a { font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }

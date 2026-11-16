@@ -190,9 +190,10 @@ check('pages and the service worker include the nav and the new files', () => {
   const version = Number((sw.match(/const VERSION = 'ctb-v(\d+)'/) || [])[1]);
   assert.ok(version >= 50, 'cache version should move past ctb-v49');
   assert.ok(sw.includes('downloads.html'));
+  assert.ok(sw.includes('how-to-use.html'));
   assert.ok(sw.includes('unsubscribe.html'));
   assert.ok(sw.includes('js/devotional-email-config.js'));
-  for (const file of ['index.html', 'devotional.html', 'downloads.html', 'privacy.html', 'terms.html', 'unsubscribe.html']) {
+  for (const file of ['index.html', 'devotional.html', 'downloads.html', 'privacy.html', 'terms.html', 'unsubscribe.html', 'how-to-use.html']) {
     const html = fs.readFileSync(path.join(root, file), 'utf8');
     assert.ok(html.includes('class="site-nav"'), file);
     assert.ok(html.includes('>Devotional<'), file);
