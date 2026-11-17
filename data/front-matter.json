@@ -71,7 +71,7 @@
     },
     {
      "type": "text",
-     "text": "Quoting. You may quote up to 500 verses of the Clay Jar Treasure Bible in print, online, or in a talk or song, as long as you give credit, for example “Scripture quotations are from the Clay Jar Treasure Bible, © 2026 Jose Santiago. All rights reserved.” For anything more, please ask first."
+     "text": "Quoting. You may quote up to 500 verses of the Clay Jar Treasure Bible in print, online, audio, or video, or in a talk or song, if the verses do not make up a complete book of the Bible, they make up less than 25 percent of the work they are quoted in, the wording is not changed, and you give credit, for example “Scripture quotations are from the Clay Jar Treasure Bible, © 2026 Jose Santiago. All rights reserved.” Copying, reposting, selling, adapting, or translating the text, or using it to train AI, needs written permission. For anything more, please ask first at contact.clayjar@protonmail.com. The Terms of Service give the full rules."
     },
     {
      "type": "text",
@@ -141,7 +141,7 @@
    "blocks": [
     {
      "type": "text",
-     "text": "We start from the oldest witnesses we have: the Hebrew text with the Dead Sea Scrolls, the Septuagint (the early Greek Old Testament), the Samaritan Pentateuch, and the oldest Greek manuscripts and papyri of the New Testament. Our own word-for-word public-domain work, the Clay Jar Translation, helps us keep the meaning exact. We never copy wording from any copyrighted English Bible."
+     "text": "We start from the oldest witnesses we have: the Hebrew text with the Dead Sea Scrolls, the Septuagint (the early Greek Old Testament), the Samaritan Pentateuch, and the oldest Greek manuscripts and papyri of the New Testament. Our own word-for-word translation, the Clay Jar Translation (openly licensed under CC BY 4.0), helps us keep the meaning exact. We never copy wording from any copyrighted English Bible."
     },
     {
      "type": "section",
