@@ -173,6 +173,7 @@
           <a class="btn" href="#/books">All books</a>
         </div>
         <p class="home-help"><a href="how-to-use.html">New here? How to use</a></p>
+        <p class="home-help"><a href="https://paypal.me/Pdogg35" target="_blank" rel="noopener noreferrer">Support this free Bible: Donate with PayPal</a></p>
         <p class="verse-quote">God’s treasure, carried in clay jars like us.<br><small>Based on 2 Corinthians 4:7</small></p>
         ${emailCallout()}
       </section>
