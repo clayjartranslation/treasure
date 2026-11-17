@@ -1,0 +1,15 @@
+{
+  "note": "Map a year's MM-DD devotional to a public-domain or CC0 image hosted on this site. If a day has no entry, the sender uses that book's public-domain opening picture from downloads/images/ when the file exists. Only Public domain and CC0 works belong here.",
+  "byDate": {
+    "11-17": {
+      "file": "ctb-isaiah-40-28.jpg",
+      "url": "https://clayjartranslation.github.io/treasure/email-images/ctb-isaiah-40-28.jpg",
+      "alt": "William Blake, The Ancient of Days",
+      "caption": "William Blake, The Ancient of Days (1794). Public domain, Wikimedia Commons.",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Ancient_of_Days_by_William_Blake.jpg",
+      "license": "Public domain",
+      "artist": "William Blake",
+      "title": "The Ancient of Days"
+    }
+  }
+}
