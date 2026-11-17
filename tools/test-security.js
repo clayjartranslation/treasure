@@ -59,7 +59,7 @@ const terms = htmls[4];
 ['Google Translate', 'local storage', 'Brevo', 'double opt-in', 'unsubscribe', 'time zone', 'PayPal', 'PIPL', 'APPI', 'POPIA', 'CCPA', 'LGPD', 'PIPEDA', 'contact.clayjar@protonmail.com', 'not sold'].forEach((phrase) => {
   assert.ok(privacy.includes(phrase), 'privacy missing ' + phrase);
 });
-['AS IS', 'AS AVAILABLE', 'US$0', 'DMCA', 'COPPA', 'Downloads (PDF and EPUB)', 'personal reading only', 'machine-learning', 'Force majeure', 'Assignment', 'Termination', 'Donations are NOT tax-deductible', 'Federal Arbitration Act', 'Plymouth County', '30 days', 'small claims', 'Marshfield', 'do not make a lawsuit impossible', '501(c)(3)', 'English text is the official', 'no license', 'Brevo', 'double opt-in', 'PayPal', 'Where your local law gives you rights'].forEach((phrase) => {
+['AS IS', 'AS AVAILABLE', 'US$50', 'DMCA', 'COPPA', 'Downloads (PDF and EPUB)', 'personal reading only', 'machine-learning', 'Force majeure', 'Assignment', 'Termination', 'Donations are NOT tax-deductible', 'Federal Arbitration Act', 'Plymouth County', '30 days', 'small claims', 'Marshfield', 'do not make a lawsuit impossible', '501(c)(3)', 'English text is the official', 'no license', 'Brevo', 'double opt-in', 'PayPal', 'Where your local law gives you rights'].forEach((phrase) => {
   assert.ok(terms.toLowerCase().includes(phrase.toLowerCase()), 'terms missing ' + phrase);
 });
 assert.ok(terms.includes('Last updated November 16, 2026'));
