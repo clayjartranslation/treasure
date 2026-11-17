@@ -744,7 +744,7 @@ async function run(env, deps) {
       sender: { name: SENDER_NAME, email: secrets.sender },
       replyTo: { email: secrets.sender },
       to: [{ email: testTo.email }],
-      subject: '[Test] ' + email.subject,
+      subject: '[Preview] ' + email.subject,
       htmlContent: forTestSend(email.html),
       textContent: forTestSend(email.text),
     };
