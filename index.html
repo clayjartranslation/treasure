@@ -113,7 +113,7 @@
     <p id="sheetText"></p>
   </aside>
 
-  <div class="hlbar" id="hlbar" role="toolbar" aria-label="Bookmark and highlight" hidden>
+  <div class="hlbar" id="hlbar" role="toolbar" aria-label="Bookmark, highlight, or share" hidden>
     <span class="visually-hidden" id="tbLabel" aria-live="polite"></span>
     <button type="button" class="tb-btn" id="tbBm" aria-pressed="false" aria-label="Bookmark this verse">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v18l-5-4-5 4z"/></svg>
@@ -127,6 +127,9 @@
     </button>
     <button type="button" class="tb-btn" id="tbListen" aria-label="Listen from this verse">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+    </button>
+    <button type="button" class="tb-btn" id="tbShare" aria-label="Share this verse">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
     </button>
   </div>
 
@@ -193,6 +196,7 @@
   <script src="js/firebase-config.js" defer></script>
   <script src="js/sync-merge.js" defer></script>
   <script src="js/phone-countries.js" defer></script>
+  <script src="js/share.js" data-site="ctb" defer></script>
   <script src="js/app.js" defer></script>
   <script src="js/accounts.js" defer></script>
   <script src="js/register-sw.js"></script>

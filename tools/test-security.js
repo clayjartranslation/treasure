@@ -82,3 +82,11 @@ assert.ok(rules.includes("bibleId == 'ctb'"));
 assert.ok(!rules.includes('match /{document=**}') || rules.includes('allow read, write: if false'));
 
 console.log('security ok');
+
+// Verse sharing: plain links only, attribution and the 5-verse limit.
+const shareSrc = fs.readFileSync(path.join(__dirname, '..', 'js/share.js'), 'utf8');
+assert.ok(!/connect\.facebook|platform\.twitter|widgets\.js/.test(shareSrc), 'share.js must not load third-party SDKs');
+assert.ok(shareSrc.includes('Used by permission') && /max: 5/.test(shareSrc));
+assert.ok(terms.includes('Sharing verses') && terms.includes('up to 5 verses at a time'));
+assert.ok(privacy.includes('Sharing verses') && privacy.includes('Truth Social'));
+console.log('sharing checks passed');
