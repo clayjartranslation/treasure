@@ -717,6 +717,7 @@
     $('#tbLabel').textContent = tb.mode === 'selection' ? 'Highlight selected words' : tb.mode === 'mark' ? 'Change or remove this highlight' : `Verse ${v}`;
     bar.querySelectorAll('.tb-color').forEach((b) => b.setAttribute('aria-label', (tb.mode === 'verse' ? 'Highlight whole verse ' : tb.mode === 'mark' ? 'Change highlight to ' : 'Highlight ') + b.dataset.color));
     $('#tbListen').hidden = !SPEECH;
+    $('#tbShare').setAttribute('aria-label', tb.mode === 'selection' ? 'Share the selected verses' : `Share verse ${v}`);
     main.querySelectorAll('.verse.picked').forEach((x) => x.classList.remove('picked'));
     if (tb.mode === 'verse') { const el = $('#v' + v, main); if (el) el.classList.add('picked'); }
   }
@@ -796,6 +797,14 @@
   bar.querySelectorAll('.tb-color').forEach((b) => b.addEventListener('click', () => applyColor(b.dataset.color)));
   $('#tbClear').addEventListener('click', clearHighlights);
   $('#tbBm').addEventListener('click', () => { const v = tb.mode === 'selection' ? tb.anchors[0].v : tb.verse; const sel = window.getSelection(); if (sel) sel.removeAllRanges(); hideBar(); toggleBookmark(v); });
+  $('#tbShare').addEventListener('click', () => {
+    const ctx = readerCtx; if (!ctx || !window.ScriptureShare) return;
+    const nums = tb.mode === 'selection' ? Array.from(new Set(tb.anchors.map((a) => a.v))) : [tb.verse];
+    const verses = nums.map((n) => ctx.ch.verses.find((x) => x.v === n)).filter(Boolean);
+    const sel = window.getSelection(); if (sel) sel.removeAllRanges();
+    hideBar();
+    window.ScriptureShare.open({ bookId: ctx.id, bookName: ctx.name, ch: ctx.ch.n, verses });
+  });
   $('#tbListen').addEventListener('click', () => { const v = tb.mode === 'selection' ? tb.anchors[0].v : tb.verse; const sel = window.getSelection(); if (sel) sel.removeAllRanges(); hideBar(); listenFrom(v); });
 
   // Taps in the scripture: footnote buttons keep their own handler; highlights and verses open the toolbar.

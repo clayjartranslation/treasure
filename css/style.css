@@ -622,3 +622,26 @@ html[dir="rtl"] .scripture, html[dir="rtl"] .prose, html[dir="rtl"] .legal-page,
 .agree-check span { flex: 1; min-width: 0; font-weight: normal; }
 .agree-check input { width: auto; flex: none; margin-top: .25rem; }
 .agree-note, .account-terms { font-size: .92rem; line-height: 1.45; }
+
+/* Verse sharing sheet. No third-party scripts or images. */
+.share-sheet { border: 0; padding: 0; background: transparent; max-width: min(34rem, calc(100vw - 1rem)); width: 100%; margin: auto auto 0; color: var(--ink); }
+.share-sheet::backdrop { background: rgba(20, 12, 8, .55); }
+@media (min-width: 640px) { .share-sheet { margin: auto; } }
+.share-card { background: var(--bg-raised, #fffaf1); border-radius: 18px 18px 0 0; padding: 1rem 1rem calc(1rem + env(safe-area-inset-bottom, 0px)); box-shadow: 0 -6px 30px rgba(0, 0, 0, .3); max-height: 88vh; overflow-y: auto; }
+@media (min-width: 640px) { .share-card { border-radius: 18px; } }
+.share-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+.share-head h2 { margin: 0; font-size: 1.15rem; }
+.share-x { width: 44px; height: 44px; border: 0; background: none; color: inherit; border-radius: 12px; cursor: pointer; display: grid; place-items: center; flex: none; }
+.share-x svg { width: 1.3rem; height: 1.3rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+.share-quote { margin: .6rem 0; padding: .6rem .8rem; border-left: 3px solid var(--clay, #a6522d); background: var(--clay-soft, #f6e3cf); border-radius: 8px; font-size: .98rem; line-height: 1.5; max-height: 11rem; overflow-y: auto; }
+.share-note { font-size: .9rem; color: var(--ink-soft, #6b4a36); margin: .3rem 0; }
+.share-native { width: 100%; margin: .3rem 0 .6rem; min-height: 44px; }
+.share-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
+@media (min-width: 480px) { .share-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.share-opt { display: flex; align-items: center; justify-content: center; min-height: 44px; padding: .45rem .5rem; border: 1px solid var(--line, #e3cdb5); border-radius: 12px; background: var(--bg, #fff9eb); color: var(--ink); font: inherit; font-weight: 600; font-size: .95rem; text-align: center; text-decoration: none; cursor: pointer; }
+.share-opt:hover { border-color: var(--clay, #a6522d); }
+.share-grid button.share-opt { grid-column: 1 / -1; }
+.share-status { min-height: 1.2em; font-size: .92rem; margin: .5rem 0 0; color: var(--clay, #a6522d); }
+.share-privacy { font-size: .85rem; color: var(--ink-soft, #6b4a36); margin: .4rem 0 0; line-height: 1.4; }
+.hlbar { flex-wrap: wrap; justify-content: center; }
+@media print { .share-sheet { display: none !important; } }
