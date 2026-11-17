@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- PROTOTYPE (branch ai-preview-ondevice, not linked from the live site). Everything runs in the reader's browser. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://huggingface.co https://*.hf.co https://cdn-lfs.huggingface.co https://cdn-lfs-us-1.huggingface.co https://cdn-lfs-eu-1.huggingface.co; worker-src 'self' blob:; object-src 'none'; base-uri 'self'">
+  <meta name="robots" content="noindex">
+  <title>Ask the Treasure Bible (preview)</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .ask-wrap { max-width: 40rem; margin: 0 auto; padding: 1rem max(1rem, env(safe-area-inset-right)) 3rem max(1rem, env(safe-area-inset-left)); }
+    .ask-wrap h1 { font: 700 1.55rem var(--serif); margin: .4rem 0 .2rem; }
+    .ask-sub { color: var(--ink-soft); margin: 0 0 .9rem; font-size: .95rem; }
+    .ask-box { display: flex; gap: .5rem; }
+    .ask-box input { flex: 1; min-width: 0; min-height: var(--hit); padding: .55rem .8rem; border: 1px solid var(--line); border-radius: 12px; background: var(--bg-raised); color: var(--ink); font-size: 16px; }
+    .btn { min-height: var(--hit); padding: .5rem .95rem; border-radius: 12px; border: 1px solid var(--brown); background: var(--brown); color: #fff9eb; font-weight: 600; cursor: pointer; }
+    .btn.ghost { background: var(--bg-raised); color: var(--clay); border-color: var(--line); }
+    .status { font-size: .85rem; color: var(--ink-faint); margin: .6rem 0; min-height: 1.2em; }
+    .notice { font-size: .82rem; background: var(--clay-soft); border-radius: 10px; padding: .55rem .75rem; color: var(--ink); margin: .75rem 0; }
+    .ai-card { border: 1px solid var(--line); background: var(--bg-raised); border-radius: 14px; padding: .8rem .95rem; margin: .8rem 0; box-shadow: var(--shadow); }
+    .ai-card h2 { font: 600 1rem var(--sans); margin: 0 0 .4rem; display: flex; align-items: center; gap: .4rem; }
+    .ai-card .answer { font: 17px/1.55 var(--serif); white-space: pre-wrap; }
+    .ai-card .engine { font-size: .75rem; color: var(--ink-faint); margin-top: .5rem; }
+    .pass { list-style: none; padding: 0; margin: 0; }
+    .pass li { border-bottom: 1px solid var(--line); padding: .65rem 0; }
+    .pass a.ref { font-weight: 700; color: var(--clay); text-decoration: none; }
+    .pass .txt { display: block; font: 16px/1.5 var(--serif); color: var(--ink); margin-top: .2rem; }
+    .cite { color: var(--clay); font-weight: 600; text-decoration: none; }
+    .preview-tag { display: inline-block; font-size: .7rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; background: var(--brown); color: #fff9eb; border-radius: 999px; padding: .1rem .5rem; }
+  </style>
+</head>
+<body>
+  <header class="bar">
+    <a class="brand" href="./" aria-label="Clay Jar Treasure Bible home"><img src="icons/emblem-96.png" alt="" width="30" height="30"><span>CTB<span class="tm">™</span></span></a>
+    <span style="margin-left:auto" class="preview-tag">Preview</span>
+  </header>
+  <main class="ask-wrap" id="main">
+    <h1>Ask the Treasure Bible</h1>
+    <p class="ask-sub">Find passages by meaning, then get a short explanation drawn only from those verses. Everything runs on your device. Your question is never sent anywhere.</p>
+    <form class="ask-box" id="askForm" role="search">
+      <label for="q" class="visually-hidden">Your question</label>
+      <input id="q" type="search" placeholder="e.g. Why did God make a covenant with Noah?" autocomplete="off" enterkeyhint="search">
+      <button class="btn" type="submit">Find</button>
+    </form>
+    <p class="status" id="status" aria-live="polite"></p>
+    <div id="ai"></div>
+    <ul class="pass" id="results"></ul>
+    <p class="notice" id="aiNotice"><strong>AI can make mistakes.</strong> Explanations are created by a small AI model on your device from the passages shown. Always read the verses themselves. This is not pastoral, legal, medical, or professional advice.</p>
+  </main>
+  <script type="module" src="js/ask.js"></script>
+</body>
+</html>

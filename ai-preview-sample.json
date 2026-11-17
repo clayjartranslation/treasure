@@ -1,0 +1,7 @@
+{
+ "engine": "Qwen3 0.6B (the phone model)",
+ "model": "onnx-community/Qwen3-0.6B-ONNX",
+ "question": "What promise did God make after the flood?",
+ "secs_on_test_cpu": 20.909,
+ "answer": "After the flood, God made a promise to Noah and his family, saying that no flood will ever again wipe out all living things, and none will ever again destroy the earth. This promise is fulfilled in Genesis 9:11. [Genesis 9:11]\n\nGenesis 9:12–17 describes God’s promise to every living creature, with a sign of the promise made to them. The promise is fulfilled when the bow shows in the clouds, and God remembers his promise. [Genesis 9:17]"
+}
