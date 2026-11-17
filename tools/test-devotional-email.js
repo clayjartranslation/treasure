@@ -281,7 +281,7 @@ async function asyncChecks() {
     assert.strictEqual(calls.length, 1);
     assert.strictEqual(calls[0].url, '/smtp/email');
     assert.deepStrictEqual(calls[0].body.to, [{ email: 'reader@example.com' }]);
-    assert.ok(calls[0].body.subject.startsWith('[Test] '));
+    assert.ok(calls[0].body.subject.startsWith('[Preview] '));
     assert.ok(calls[0].body.htmlContent.includes(entry.text.split('\n')[0]));
     assert.ok(calls[0].body.textContent.includes(entry.text));
     assert.ok(!calls[0].body.htmlContent.includes('unsubscribe.html'));
