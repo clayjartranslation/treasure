@@ -604,6 +604,13 @@ html[dir="rtl"] .scripture, html[dir="rtl"] .prose, html[dir="rtl"] .legal-page,
 .home-help { margin: .85rem 0 0; text-align: center; }
 .home-help a { font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
 
+.help-finish { max-width: 34rem; margin: 1.25rem auto 0; padding: 1rem 1.1rem; border: 1px solid var(--line, rgba(0,0,0,.12)); border-radius: 14px; text-align: left; }
+.help-finish h2 { margin: 0 0 .4rem; font-size: 1.1rem; text-align: center; }
+.help-finish p { margin: 0; line-height: 1.55; overflow-wrap: anywhere; }
+.help-finish .home-help { margin-top: .75rem; }
+.help-sign { font-style: italic; white-space: nowrap; }
+.help-finish .help-small { margin-top: .5rem; font-size: .8rem; color: var(--ink-soft); text-align: center; }
+
 /* Download file list on downloads.html */
 .legal-page .file-row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin: 0; }
 .legal-page .file-row a { font-weight: 700; }
