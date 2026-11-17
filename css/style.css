@@ -610,3 +610,10 @@ html[dir="rtl"] .scripture, html[dir="rtl"] .prose, html[dir="rtl"] .legal-page,
 .help-finish .home-help { margin-top: .75rem; }
 .help-sign { font-style: italic; white-space: nowrap; }
 .help-finish .help-small { margin-top: .5rem; font-size: .8rem; color: var(--ink-soft); text-align: center; }
+
+/* Download file list on downloads.html */
+.legal-page .file-row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin: 0; }
+.legal-page .file-row a { font-weight: 700; }
+.legal-page .size { font-family: var(--sans); font-size: .9rem; color: var(--ink-soft); white-space: nowrap; }
+.legal-page .file-detail { margin: .25rem 0 1rem; }
+.legal-page .card .file-detail:last-child { margin-bottom: 0; }
