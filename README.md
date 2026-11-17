@@ -14,7 +14,7 @@ Optional accounts (off until configured): see SETUP-ACCOUNTS.md and js/firebase-
 
 Readings live in `data/devotionals.json`, one object in `entries` per month-day. `date` is `MM-DD` (`11-13`, and `02-29` for leap day). Each object has `title`, `reference`, `book` (an id that already exists under `data/books/`), `chapter`, `verse`, `text`, `reflection`, and `prayer`.
 
-Copy `text` character for character from that verse’s `text` in `data/books/<book>.json`, including line breaks. Do not edit the Bible book files. `devotional.html` shows the reading for the reader’s local month and day, and lists every entry in the archive (`devotional.html?d=11-13`). If that date has no reading yet, the page shows the nearest one. Append about seven days at a time until all 366 are written.
+Copy `text` character for character from that verse’s `text` in `data/books/<book>.json`, including line breaks. Do not edit the Bible book files. `devotional.html` shows the reading for the reader’s local month and day, and lists every entry in the archive (`devotional.html?d=11-13`). If that date has no reading yet, the page shows the nearest one. Write an original reflection of about 300 to 400 words and a prayer of about 100 to 150 words. Do not copy another devotional. Append about seven days at a time until all 366 are written.
 
 When `devotional.html` or the precache list changes, bump `const VERSION` in `sw.js` (`ctb-vN`) so offline copies refresh. Book publishes bump that same line; rebase on main before merging.
 
