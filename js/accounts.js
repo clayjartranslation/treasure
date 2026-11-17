@@ -164,6 +164,7 @@
         + '<button type="button" class="btn" data-provider="github">Continue with <span class="notranslate" translate="no">GitHub</span></button>'
         + '<a class="btn" href="#/account">Use email</a>'
         + '</div>'
+        + '<p class="account-terms">By continuing with any sign-in option, you agree to the <a href="terms.html">Terms of Service</a> and acknowledge the <a href="privacy.html">Privacy Policy</a>.</p>'
         + '<p class="account-error" id="homeSignInError" role="alert" hidden></p>';
     }
     var cta = hero.querySelector('.cta');
@@ -219,7 +220,7 @@
         + '<p>Bookmarks, highlights, your place in the text, and listening progress stay in this browser. Nothing is sent to an account unless you sign in. Signing in is optional. If you do, this device also saves to your account:</p>'
         + '<ul><li>your place in the text</li><li>bookmarks</li><li>highlights</li><li>where you are in the audio, and listening settings such as speed and voice</li></ul>'
         + '<p>Text size and light or dark stay on this device. The Clay Jar Translation can use the same sign-in and keeps its own progress.</p></div>'
-        + '<div class="card account-card"><div class="account-actions">'
+        + '<div class="card account-card"><p class="account-terms">By continuing with any sign-in option, you agree to the <a href="terms.html">Terms of Service</a> and acknowledge the <a href="privacy.html">Privacy Policy</a>.</p><div class="account-actions">'
         + '<button type="button" class="btn account-provider" id="acctGoogle">Sign in with <span class="notranslate" translate="no">Google</span></button>'
         + '<button type="button" class="btn account-provider" id="acctGithub">Sign in with <span class="notranslate" translate="no">GitHub</span></button>'
         + (cfg.apple === true ? '<button type="button" class="btn account-provider" id="acctApple">Sign in with Apple</button>' : '')
