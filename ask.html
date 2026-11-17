@@ -27,26 +27,35 @@
     .pass a.ref { font-weight: 700; color: var(--clay); text-decoration: none; }
     .pass .txt { display: block; font: 16px/1.5 var(--serif); color: var(--ink); margin-top: .2rem; }
     .cite { color: var(--clay); font-weight: 600; text-decoration: none; }
+    .tabs { display: flex; gap: .4rem; margin: 0 0 .7rem; flex-wrap: wrap; }
+    .tabs button { min-height: var(--hit); padding: .4rem .9rem; border-radius: 999px; border: 1px solid var(--line); background: var(--bg-raised); color: var(--ink); cursor: pointer; font-weight: 600; }
+    .tabs button[aria-selected="true"] { background: var(--brown); border-color: var(--brown); color: #fff9eb; }
+    @media (min-width: 900px) { .ask-wrap { max-width: 46rem; } }
     .preview-tag { display: inline-block; font-size: .7rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; background: var(--brown); color: #fff9eb; border-radius: 999px; padding: .1rem .5rem; }
   </style>
 </head>
-<body>
+<body data-site-name="Clay Jar Treasure Bible" data-site-short="CTB">
   <header class="bar">
     <a class="brand" href="./" aria-label="Clay Jar Treasure Bible home"><img src="icons/emblem-96.png" alt="" width="30" height="30"><span>CTB<span class="tm">™</span></span></a>
     <span style="margin-left:auto" class="preview-tag">Preview</span>
   </header>
   <main class="ask-wrap" id="main">
     <h1>Ask the Treasure Bible</h1>
-    <p class="ask-sub">Find passages by meaning, then get a short explanation drawn only from those verses. Everything runs on your device. Your question is never sent anywhere.</p>
+    <p class="ask-sub">Ask questions, find verses, or get a prayer, drawn only from this Bible’s own verses. Everything runs on your device. What you type is never sent anywhere.</p>
+    <div class="tabs" role="tablist" aria-label="What would you like to do?">
+      <button type="button" role="tab" data-mode="ask">Ask</button>
+      <button type="button" role="tab" data-mode="find">Find verses</button>
+      <button type="button" role="tab" data-mode="pray">Prayer</button>
+    </div>
     <form class="ask-box" id="askForm" role="search">
       <label for="q" class="visually-hidden">Your question</label>
       <input id="q" type="search" placeholder="e.g. Why did God make a covenant with Noah?" autocomplete="off" enterkeyhint="search">
-      <button class="btn" type="submit">Find</button>
+      <button class="btn" type="submit" id="goBtn">Ask</button>
     </form>
     <p class="status" id="status" aria-live="polite"></p>
     <div id="ai"></div>
     <ul class="pass" id="results"></ul>
-    <p class="notice" id="aiNotice"><strong>AI can make mistakes.</strong> Explanations are created by a small AI model on your device from the passages shown. Always read the verses themselves. This is not pastoral, legal, medical, or professional advice.</p>
+    <p class="notice" id="aiNotice"><strong>AI can make mistakes.</strong> Explanations and prayers are written by a small AI model on your device from the passages shown. Always read the verses themselves. This is not pastoral, legal, medical, or professional advice.</p>
   </main>
   <script type="module" src="js/ask.js"></script>
 </body>
