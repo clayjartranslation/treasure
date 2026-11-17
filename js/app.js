@@ -175,8 +175,9 @@
         <p class="home-help"><a href="how-to-use.html">New here? How to use</a></p>
         <aside class="help-finish" aria-labelledby="helpFinishTitle">
           <h2 id="helpFinishTitle">Help finish this Bible</h2>
-          <p>Genesis through Isaiah are ready, and I’m still translating Jeremiah through the rest of the Old Testament, then the Apocrypha, the New Testament, and the Pseudepigrapha. Right now I pay the costs out of my own pocket, so I can only do a little at a time, and it will take a while to finish until donations come in. If you’d like to help, you can give through PayPal. Gifts are voluntary, non-refundable, and not tax-deductible. <span class="help-sign">— Jose</span></p>
+          <p>This Bible is a labor of love, built so everyone can read God’s Word for free, with no ads and no paywalls. Genesis through Isaiah are ready, and I’m still translating Jeremiah through the rest of the Old Testament, then the Apocrypha, the New Testament, and the Pseudepigrapha. I cover every cost myself on a limited income, so progress comes slowly, a little at a time. With your help, the remaining work can be finished sooner and kept free for everyone. Thank you for reading, and for any help you can give. May the Lord bless you and keep you. <span class="help-sign">— Jose</span></p>
           <p class="home-help"><a class="btn" href="https://paypal.me/Pdogg35" target="_blank" rel="noopener noreferrer">Donate with PayPal</a></p>
+          <p class="help-small">Gifts are voluntary and non-refundable, and they are not tax-deductible.</p>
         </aside>
         <p class="verse-quote">God’s treasure, carried in clay jars like us.<br><small>Based on 2 Corinthians 4:7</small></p>
         ${emailCallout()}
