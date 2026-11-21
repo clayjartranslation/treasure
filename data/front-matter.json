@@ -50,7 +50,7 @@
     },
     {
      "type": "text",
-     "text": "It is the family edition of the Clay Jar Translation, a separate word-for-word Bible that is in the public domain."
+     "text": "It is the family edition of the Clay Jar Translation, a separate word-for-word Bible licensed under CC BY-NC-SA 4.0."
     }
    ]
   },
@@ -79,7 +79,7 @@
     },
     {
      "type": "text",
-     "text": "The Clay Jar Translation (CJT) is a different book. Its text is in the public domain, and you can find it at clayjartranslation.github.io."
+     "text": "The Clay Jar Translation (CJT) is a different book. Its text is licensed under CC BY-NC-SA 4.0, and you can find it at clayjartranslation.github.io."
     }
    ]
   },
@@ -141,7 +141,7 @@
    "blocks": [
     {
      "type": "text",
-     "text": "We start from the oldest witnesses we have: the Hebrew text with the Dead Sea Scrolls, the Septuagint (the early Greek Old Testament), the Samaritan Pentateuch, and the oldest Greek manuscripts and papyri of the New Testament. Our own word-for-word translation, the Clay Jar Translation (openly licensed under CC BY 4.0), helps us keep the meaning exact. We never copy wording from any copyrighted English Bible."
+     "text": "We start from the oldest witnesses we have: the Hebrew text with the Dead Sea Scrolls, the Septuagint (the early Greek Old Testament), the Samaritan Pentateuch, and the oldest Greek manuscripts and papyri of the New Testament. Our own word-for-word translation, the Clay Jar Translation (licensed under CC BY-NC-SA 4.0), helps us keep the meaning exact. We never copy wording from any copyrighted English Bible."
     },
     {
      "type": "section",

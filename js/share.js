@@ -9,8 +9,8 @@
     cjt: {
       abbr: 'CJT', name: 'Clay Jar Translation',
       base: 'https://clayjartranslation.github.io/',
-      attr: 'Clay Jar Translation (CJT), © 2026 Jose Santiago, CC BY 4.0',
-      attrShort: 'Clay Jar Translation (CJT), CC BY 4.0',
+      attr: 'Clay Jar Translation™ (CJT), © 2026 Jose Santiago, CC BY-NC-SA 4.0',
+      attrShort: 'Clay Jar Translation™ (CJT), CC BY-NC-SA 4.0',
       max: 0
     },
     ctb: {
