@@ -18,7 +18,7 @@
       base: 'https://clayjartranslation.github.io/treasure/',
       attr: '© 2026 Jose Santiago. Clay Jar Treasure Bible™. Used by permission. All rights reserved.',
       attrShort: '© 2026 Jose Santiago. Clay Jar Treasure Bible™. Used by permission.',
-      max: 5
+      max: 0
     }
   };
   var CFG = CFGS[site] || CFGS.cjt;
