@@ -364,42 +364,44 @@
       <form class="search-box" role="search" id="searchForm">
         <label for="q" class="visually-hidden">Search the translated text</label>
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input id="q" type="search" placeholder="Search words or a reference, e.g. Genesis 3:15" value="${esc(q)}" autocomplete="off" enterkeyhint="search">
+        <input id="q" type="search" placeholder="Search words, a topic, or a reference, e.g. Genesis 3:15" value="${esc(q)}" autocomplete="off" enterkeyhint="search">
       </form>
       <div class="search-opts"><label><input type="checkbox" id="inNotes"> Include footnotes</label></div>
+      <p class="search-note">A topic also finds related words, such as shepherd with sheep and flock, or rainbow with bow and covenant. What you type stays on this device.</p>
       <p class="count" id="count" aria-live="polite"></p>
       <ul class="results" id="results"></ul>`, 'Search');
     const input = $('#q'), inNotes = $('#inNotes');
     inNotes.checked = sessionStorage.getItem('ctb-innotes') === '1';
     const loaded = await Promise.all(avail.map((b) => loadBook(b.id)));
-    const index = [];
-    loaded.forEach((book) => book && book.chapters.forEach((c) => {
-      c.verses.forEach((v) => index.push({ kind: 'v', book, c: c.n, v: v.v, text: plain(v.text) }));
-      c.notes.forEach((x) => index.push({ kind: 'n', book, c: c.n, v: +(x.ref.split(':')[1] || 0), m: x.m, text: x.text }));
-    }));
+    const entries = [];
+    loaded.forEach((book) => { if (book) entries.push.apply(entries, CTBFind.entriesFromBook(book)); });
+    const compiled = CTBFind.compile(entries);
     const run = () => {
       const raw = input.value.trim();
       history.replaceState(null, '', '#/search' + (raw ? '?q=' + encodeURIComponent(raw) : ''));
       const out = $('#results'), count = $('#count');
       if (raw.length < 2) { out.innerHTML = ''; count.textContent = raw ? 'Type at least two letters.' : `Searching ${avail.map((b) => b.name + ' ' + rangeText(b.translated)).join(', ')}.`; return; }
       // Reference lookup, e.g. "gen 3:15" or "Genesis 3"
-      const ref = /^([1-4]?\s*[a-z][a-z .]*?)\s*(\d+)(?::(\d+))?$/i.exec(raw);
+      const ref = CTBFind.parseReference(raw);
       if (ref) {
-        const nm = fold(ref[1]).replace(/\s+/g, '');
-        const b = avail.find((x) => fold(x.name).replace(/\s+/g, '').startsWith(nm));
-        if (b && b.translated.includes(+ref[2])) {
+        const nm = CTBFind.fold(ref.name).replace(/\s+/g, '');
+        const b = avail.find((x) => CTBFind.fold(x.name).replace(/\s+/g, '').startsWith(nm));
+        if (b && b.translated.includes(ref.chapter)) {
           count.textContent = '';
-          out.innerHTML = `<li><a href="#/read/${encodeURIComponent(b.id)}/${ref[2]}${ref[3] ? '/' + ref[3] : ''}"><span class="ref">Go to ${esc(b.name)} ${ref[2]}${ref[3] ? ':' + ref[3] : ''}</span></a></li>`;
+          out.innerHTML = `<li><a href="#/read/${encodeURIComponent(b.id)}/${ref.chapter}${ref.verse ? '/' + ref.verse : ''}"><span class="ref">Go to ${esc(b.name)} ${ref.chapter}${ref.verse ? ':' + ref.verse : ''}</span></a></li>`;
           return;
         }
       }
-      const terms = fold(raw).replace(/"/g, '').split(/\s+/).filter(Boolean);
-      const hits = index.filter((e) => (e.kind === 'v' || inNotes.checked) && terms.every((t) => fold(e.text).includes(t)));
-      count.textContent = hits.length ? `${hits.length} result${hits.length === 1 ? '' : 's'}${hits.length > 200 ? ', showing the first 200' : ''}` : 'No matches in the chapters translated so far.';
-      out.innerHTML = hits.slice(0, 200).map((e) => {
-        const ref = `${e.book.name} ${e.c}:${e.v}`;
-        const mark = e.kind === 'n' && /^[a-z0-9]+$/i.test(String(e.m || '')) ? ` <small>footnote ${esc(e.m)}</small>` : '';
-        return `<li><a href="#/read/${encodeURIComponent(e.book.id)}/${e.c}/${e.v}"><span class="ref">${esc(ref)}${mark}</span><span class="txt">${highlight(e.text, terms)}</span></a></li>`;
+      const terms = CTBFind.termsOf(raw);
+      const hits = CTBFind.rank(compiled, raw, { notes: inNotes.checked });
+      const related = hits.some((h) => h.related);
+      count.textContent = hits.length ? `${hits.length} result${hits.length === 1 ? '' : 's'}${hits.length > 200 ? ', showing the best 200' : ''}${related ? ', including related words' : ''}` : 'No matches in the chapters translated so far.';
+      out.innerHTML = hits.slice(0, 200).map((h) => {
+        const e = h.e;
+        const refText = `${e.name} ${e.ch}:${e.v}`;
+        const note = e.kind === 'n' && /^[a-z0-9]+$/i.test(String(e.m || '')) ? ` <small>footnote ${esc(e.m)}</small>` : '';
+        const rel = h.related && h.via.length ? ` <small>related: ${esc(h.via.slice(0, 3).join(', '))}</small>` : '';
+        return `<li><a href="#/read/${encodeURIComponent(e.bookId)}/${e.ch}/${e.v}"><span class="ref">${esc(refText)}${note}${rel}</span><span class="txt">${CTBFind.highlight(e.text, { terms: terms, words: h.via })}</span></a></li>`;
       }).join('');
     };
     let timer;
@@ -408,20 +410,6 @@
     $('#searchForm').addEventListener('submit', (e) => { e.preventDefault(); run(); input.blur(); });
     run();
     if (!q) input.focus();
-  }
-  function highlight(text, terms) {
-    // Highlight on the folded string, map back to original positions (folding keeps length for these characters).
-    const f = fold(text);
-    if (f.length !== text.length) return esc(text);
-    const marks = new Array(text.length).fill(false);
-    terms.forEach((t) => { let i = f.indexOf(t); while (i > -1) { for (let k = i; k < i + t.length; k++) marks[k] = true; i = f.indexOf(t, i + t.length); } });
-    let out = '', open = false;
-    for (let i = 0; i < text.length; i++) {
-      if (marks[i] && !open) { out += '<mark>'; open = true; }
-      if (!marks[i] && open) { out += '</mark>'; open = false; }
-      out += esc(text[i]);
-    }
-    return out + (open ? '</mark>' : '');
   }
 
   // ----- Front matter -----

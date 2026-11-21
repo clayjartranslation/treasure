@@ -1,9 +1,9 @@
 /* Service worker: saves the whole site for offline reading. Bump VERSION when files change
    (tools/add-book.js does this automatically). All paths are relative, so the site works
    from a domain root or a subpath such as https://USER.github.io/treasure/. */
-const VERSION = 'ctb-v69';
+const VERSION = 'ctb-v70';
 const CORE = [
-  './', 'index.html', 'terms.html', 'privacy.html', 'devotional.html', 'bible-in-a-year.html', 'unsubscribe.html', 'downloads.html', 'how-to-use.html', 'css/style.css', 'js/share.js', 'js/app.js', 'js/firebase-config.js', 'js/devotional-email-config.js', 'js/devotional.js', 'js/bible-in-a-year.js', 'js/devotional-form.js', 'js/unsubscribe.js', 'js/languages.js', 'js/lang.js', 'js/register-sw.js', 'js/sync-merge.js', 'js/phone-countries.js', 'js/accounts.js', 'manifest.webmanifest', '.well-known/security.txt',
+  './', 'index.html', 'terms.html', 'privacy.html', 'devotional.html', 'bible-in-a-year.html', 'unsubscribe.html', 'downloads.html', 'how-to-use.html', 'css/style.css', 'js/share.js', 'js/app.js', 'js/find-verses.js', 'js/firebase-config.js', 'js/devotional-email-config.js', 'js/devotional.js', 'js/bible-in-a-year.js', 'js/devotional-form.js', 'js/unsubscribe.js', 'js/languages.js', 'js/lang.js', 'js/register-sw.js', 'js/sync-merge.js', 'js/phone-countries.js', 'js/accounts.js', 'manifest.webmanifest', '.well-known/security.txt',
   'data/books.json', 'data/front-matter.json', 'data/devotionals.json', 'data/bible-in-a-year.json',
   'icons/ctb-logo-720.jpg', 'icons/emblem-96.png', 'icons/icon-192.png', 'icons/icon-512.png',
   'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png', 'icons/favicon-32.png', 'icons/favicon-48.png',
