@@ -9,7 +9,7 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const SITE = fs.existsSync(path.join(ROOT, 'downloads.html')) ? 'ctb' : 'cjt';
 const CFG = {
-  cjt: { name: 'Clay Jar Translation', abbr: 'CJT', base: 'https://clayjartranslation.github.io/', logo: 'icons/cjt-logo-720.jpg', rights: '© 2026 Jose Santiago, CC BY 4.0.' },
+  cjt: { name: 'Clay Jar Translation', abbr: 'CJT', base: 'https://clayjartranslation.github.io/', logo: 'icons/cjt-logo-720.jpg', rights: '© 2026 Jose Santiago, CC BY-NC-SA 4.0.' },
   ctb: { name: 'Clay Jar Treasure Bible', abbr: 'CTB', base: 'https://clayjartranslation.github.io/treasure/', logo: 'icons/ctb-logo-720.jpg', rights: '© 2026 Jose Santiago. All rights reserved.' }
 }[SITE];
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
