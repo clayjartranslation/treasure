@@ -280,9 +280,10 @@ h3 { font-size: 1.12rem; margin: 1.75rem 0 .5rem; }
   border: 1px solid var(--line); background: var(--bg-raised); color: var(--ink); -webkit-appearance: none;
 }
 .search-box svg { position: absolute; left: .9rem; top: 50%; transform: translateY(-50%); width: 1.2rem; height: 1.2rem; fill: none; stroke: var(--ink-faint); stroke-width: 2; }
-.search-opts { display: flex; align-items: center; gap: .5rem; font-size: 1rem; color: var(--ink-soft); margin-bottom: 1rem; }
+.search-opts { display: flex; align-items: center; gap: .5rem; font-size: 1rem; color: var(--ink-soft); margin-bottom: .35rem; }
 .search-opts label { display: inline-flex; align-items: center; gap: .65rem; min-height: var(--hit); cursor: pointer; }
 .search-opts input { width: 1.25rem; height: 1.25rem; accent-color: var(--clay); }
+.search-note { color: var(--ink-faint); font-size: .9rem; line-height: 1.45; margin: 0 0 1rem; }
 .results { list-style: none; padding: 0; margin: 0; }
 .results li { border-bottom: 1px solid var(--line); }
 .results a { display: block; padding: .8rem .1rem; text-decoration: none; color: var(--ink); }
