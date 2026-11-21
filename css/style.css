@@ -645,3 +645,14 @@ html[dir="rtl"] .scripture, html[dir="rtl"] .prose, html[dir="rtl"] .legal-page,
 .share-privacy { font-size: .85rem; color: var(--ink-soft, #6b4a36); margin: .4rem 0 0; line-height: 1.4; }
 .hlbar { flex-wrap: wrap; justify-content: center; }
 @media print { .share-sheet { display: none !important; } }
+
+/* Bible in a Year */
+.biay-portions { list-style: none; padding: 0; margin: .5rem 0 1rem; }
+.biay-portions li { margin: .45rem 0; line-height: 1.5; }
+.biay-nav { display: flex; flex-wrap: wrap; gap: .5rem; }
+.biay-month { margin: .5rem 0; }
+.biay-month summary { cursor: pointer; font-weight: 600; min-height: 44px; display: flex; align-items: center; }
+.biay-list { list-style: none; padding: 0; margin: 0 0 1rem; }
+.biay-list li { padding: .4rem 0; border-bottom: 1px solid rgba(127, 127, 127, .2); line-height: 1.5; }
+.biay-list .biay-date { display: inline-block; min-width: 4.2em; font-weight: 600; }
+.biay-current { background: rgba(200, 120, 60, .12); }
