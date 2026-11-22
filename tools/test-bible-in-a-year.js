@@ -79,4 +79,44 @@ for (let i = 0; i < days.length; i++) {
   }
 }
 
+
+const genHtml = biay.portionScripture(genesis, 1, 1, 3, { label: 'Genesis 1:1–3', kindLabel: 'Old Testament' });
+assert.match(genHtml, /id="biay-v1"/);
+assert.match(genHtml, /In the beginning/);
+assert.match(genHtml, /<sup class="fn-mark">a<\/sup>/);
+assert.match(genHtml, /Genesis 1:1–3/);
+assert.doesNotMatch(genHtml, /id="biay-v4"/);
+const mid = biay.portionScripture(genesis, 1, 3, 5, { label: 'Genesis 1:3–5' });
+assert.match(mid, /id="biay-v3"/);
+assert.doesNotMatch(mid, /id="biay-v1"/);
+assert.doesNotMatch(mid, /class="ch-heading"/);
+
+const psHtml = biay.portionScripture(psalms, 1, 1, 6, { label: 'Psalm 1', kindLabel: 'Psalms' });
+assert.match(psHtml, /class="poem"/);
+assert.match(psHtml, /Happy is the person|Blessed is the man/);
+
+const noBook = biay.portionScripture(null, 1, 1, 3);
+assert.strictEqual(noBook, '');
+
+const meta = { v: { '1': 0, '2': 5.5, '3': 10, '4': 14.2 } };
+assert.strictEqual(biay.verseAtTime(meta, 0, 1, 3), 1);
+assert.strictEqual(biay.verseAtTime(meta, 5.5, 1, 3), 2);
+assert.strictEqual(biay.verseAtTime(meta, 9.9, 1, 3), 2);
+assert.strictEqual(biay.verseAtTime(meta, 10, 1, 3), 3);
+assert.strictEqual(biay.verseAtTime(meta, 14, 1, 3), 3);
+assert.strictEqual(biay.verseAtTime({ v: {} }, 1, 1, 3), null);
+assert.strictEqual(biay.verseAtTime(null, 1, 1, 3), null);
+const lateMeta = { v: { '17': 80.1, '18': 85, '19': 90 } };
+assert.strictEqual(biay.verseAtTime(lateMeta, 80.1, 17, 19), 17);
+assert.strictEqual(biay.verseAtTime(lateMeta, 79, 17, 19), null);
+assert.deepStrictEqual(biay.speakingTarget(lateMeta, 79, 17, 19), { kind: 'title' });
+assert.deepStrictEqual(biay.speakingTarget(lateMeta, 85, 17, 19), { kind: 'verse', v: 18 });
+assert.strictEqual(biay.speakingTarget({ v: {} }, 1, 1, 3), null);
+
+assert.strictEqual(biay.textSource('cjt', { source: 'cjt' }, {}), 'cjt');
+assert.strictEqual(biay.textSource('ctb', { source: 'cjt', fellBackToCjt: true }, { ctbPublished: true }), 'cjt');
+assert.strictEqual(biay.textSource('ctb', { source: 'ctb' }, { ctbPublished: true }), 'ctb');
+assert.strictEqual(biay.textSource('ctb', null, { ctbPublished: true }), 'ctb');
+assert.strictEqual(biay.textSource('ctb', null, { ctbPublished: false }), 'cjt');
+
 console.log('bible-in-a-year tests ok');
