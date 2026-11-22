@@ -45,7 +45,20 @@
     <p class="eyebrow">Clay Jar Treasure Bible</p>
     <h1 id="pageTitle">Bible in a Year</h1>
     <p class="muted">Read the whole Bible in 365 days. Each day has four short readings: the Old Testament, the Psalms, Proverbs, and the New Testament. Today’s date follows Eastern Time (New York).</p>
-    <noscript><p>This page needs JavaScript (kept on this site) to show today’s reading. It does not track you.</p></noscript>
+    <section class="card email-signup" id="biay-email-signup" aria-labelledby="biayEmailTitle">
+      <h2 id="biayEmailTitle">Get each day’s reading by email</h2>
+      <p>A free email each morning at 4:00 Eastern Time with that day’s four readings and a link to open them. No ads.</p>
+      <form id="biay-email-form" method="post" action="https://5b7e23a5.sibforms.com/serve/MUIFAKwj8BW4A8yBKLWymZRj6WcPY2dE6tcgHpPnySZfjiKrM0UQsXr5qENxM8RiUxXJ_tysOhA-kQ8LaRYbRIUpTnVwm2mBnSl8d25vkBmkvv8QyL_7pfE_VWHNu_c5DEDDLsBF68a9kRlcEX4lU1Om1ix0nEAIH_1s116JlVEqjOsFHxiME0EHGlLaCTnkdMLlqVjxt4q2TvQBZg==" accept-charset="UTF-8">
+        <label for="biayEmail">Email address</label>
+        <input id="biayEmail" name="EMAIL" type="email" required autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" maxlength="254" placeholder="you@example.com" enterkeyhint="go">
+        <input class="email-hp" type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="locale" value="en">
+        <label class="agree-check" for="agreeBiayEmail"><input id="agreeBiayEmail" type="checkbox" required> <span>I agree to the <a href="terms.html">Terms of Service</a>, including the class-action and jury waivers, and I acknowledge the <a href="privacy.html">Privacy Policy</a>.</span></label>
+        <button class="btn primary" type="submit">Subscribe</button>
+      </form>
+      <p class="legal-note">You’ll get a confirmation email first, and you can unsubscribe any time.</p>
+    </section>
+    <noscript><p>This page needs JavaScript (kept on this site) to show today’s reading and to play the day’s audio. It does not track you. The email form still works without JavaScript.</p></noscript>
     <div id="biay" data-site="ctb" aria-busy="true" aria-live="polite"><p class="muted">Loading…</p></div>
   </main>
   <footer class="foot">
