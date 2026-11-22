@@ -4,8 +4,8 @@
   var params = new URLSearchParams(window.location.search);
   var email = String(params.get('email') || '').trim();
   var link = document.getElementById('unsubMail');
-  var subject = 'Unsubscribe daily devotional';
-  var body = 'Please unsubscribe this address from the Clay Jar Treasure Bible daily devotional.';
+  var subject = 'Unsubscribe email';
+  var body = 'Please unsubscribe this address from the Clay Jar Treasure Bible email list (daily devotional and/or Bible in a Year).';
   if (email) body += '\n\n' + email;
   if (link) {
     link.setAttribute('href', 'mailto:contact.clayjar@protonmail.com?subject=' +

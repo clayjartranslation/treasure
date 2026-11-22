@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const root = path.join(__dirname, '..');
-const pages = ['index.html', 'devotional.html', 'downloads.html', 'privacy.html', 'terms.html', 'unsubscribe.html', 'how-to-use.html'];
+const pages = ['index.html', 'devotional.html', 'downloads.html', 'privacy.html', 'terms.html', 'unsubscribe.html', 'how-to-use.html', 'bible-in-a-year.html'];
 const htmls = pages.map((name) => fs.readFileSync(path.join(root, name), 'utf8'));
 const csps = htmls.map((html) => {
   const match = html.match(/<meta http-equiv="Content-Security-Policy" content="([^"]+)">/);
@@ -56,14 +56,14 @@ assert.ok(security.includes('Expires: 2027-11-14T23:59:59.000Z'));
 
 const privacy = htmls[3];
 const terms = htmls[4];
-['Google Translate', 'local storage', 'Brevo', 'double opt-in', 'unsubscribe', 'time zone', 'PayPal', 'PIPL', 'APPI', 'POPIA', 'CCPA', 'LGPD', 'PIPEDA', 'contact.clayjar@protonmail.com', 'not sold'].forEach((phrase) => {
+['Google Translate', 'local storage', 'Brevo', 'double opt-in', 'unsubscribe', 'time zone', 'PayPal', 'PIPL', 'APPI', 'POPIA', 'CCPA', 'LGPD', 'PIPEDA', 'contact.clayjar@protonmail.com', 'not sold', 'Bible in a Year reading email'].forEach((phrase) => {
   assert.ok(privacy.includes(phrase), 'privacy missing ' + phrase);
 });
 ['AS IS', 'AS AVAILABLE', 'US$50', 'DMCA', 'COPPA', 'Downloads (PDF and EPUB)', 'personal reading only', 'machine-learning', 'Force majeure', 'Assignment', 'Termination', 'Donations are NOT tax-deductible', 'chapter 218, section 21', 'no arbitration', 'Plymouth County', 'small claims', 'Marshfield', 'Notice of Dispute', 'hold harmless', '17 U.S.C. § 1202', '1125(a)', 'Berne Convention', 'artificial-intelligence', 'Quoting.', 'chapter 260, section 5A', 'fullest extent permitted by law', '501(c)(3)', 'English text is the official', 'no license', 'Brevo', 'double opt-in', 'PayPal', 'Where your local law gives you rights'].forEach((phrase) => {
   assert.ok(terms.toLowerCase().includes(phrase.toLowerCase()), 'terms missing ' + phrase);
 });
 assert.ok(terms.includes('Last updated November 21, 2026'));
-assert.ok(privacy.includes('Last updated November 17, 2026'));
+assert.ok(privacy.includes('Last updated November 21, 2026'));
 assert.ok(terms.includes('Email delivery is not guaranteed'));
 assert.ok(terms.includes('marked as spam by your email provider'));
 const devotional = fs.readFileSync(path.join(root, 'devotional.html'), 'utf8');

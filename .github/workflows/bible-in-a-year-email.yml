@@ -1,0 +1,43 @@
+name: Daily Bible in a Year email
+
+# Runs every hour. The script emails the list only when it is 4 AM
+# in America/New_York, with that Eastern Time day's readings.
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Print counts and a sample email and do not send'
+        type: boolean
+        default: true
+      test_email:
+        description: 'Send today’s readings only to this address. Does not email the list.'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: bible-in-a-year-email
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '20'
+      - name: Send today's Bible in a Year email
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID: '6'
+          BREVO_SENDER_EMAIL: ${{ secrets.BREVO_SENDER_EMAIL }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+          TEST_EMAIL: ${{ github.event_name == 'workflow_dispatch' && inputs.test_email || '' }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: node tools/send-bible-in-a-year-email.js

@@ -657,3 +657,11 @@ html[dir="rtl"] .scripture, html[dir="rtl"] .prose, html[dir="rtl"] .legal-page,
 .biay-list li { padding: .4rem 0; border-bottom: 1px solid rgba(127, 127, 127, .2); line-height: 1.5; }
 .biay-list .biay-date { display: inline-block; min-width: 4.2em; font-weight: 600; }
 .biay-current { background: rgba(200, 120, 60, .12); }
+
+/* Bible in a Year continuous play */
+.biay-player { margin: 1rem 0 0; display: grid; gap: .55rem; }
+.biay-player-bar { display: grid; gap: .4rem; }
+.biay-player .player-now { white-space: normal; overflow: visible; text-overflow: unset; }
+.biay-player-btns { display: flex; flex-wrap: wrap; gap: .4rem; }
+.biay-player-btns .btn { min-height: 44px; }
+.biay-portions .biay-play-part { margin-left: .4rem; font-size: .9rem; }
