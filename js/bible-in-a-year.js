@@ -104,14 +104,101 @@
     return list;
   }
 
+  function clipDuration(meta) {
+    if (!meta) return null;
+    if (meta.d != null && meta.d !== '') return Number(meta.d);
+    if (meta.dur != null && meta.dur !== '') return Number(meta.dur);
+    if (meta.duration != null && meta.duration !== '') return Number(meta.duration);
+    return null;
+  }
+
   function clipTimes(meta, startV, endV) {
     if (!meta || !meta.v) return null;
     var start = meta.v[String(startV)];
     if (start == null || start === '') return null;
     var end = meta.v[String(Number(endV) + 1)];
-    if (end == null && meta.dur != null) end = meta.dur;
-    if (end == null && meta.duration != null) end = meta.duration;
-    return { start: Number(start), end: end == null || end === '' ? null : Number(end), timed: true };
+    if (end == null || end === '') end = clipDuration(meta);
+    return { start: Number(start), end: end == null || end === '' || isNaN(Number(end)) ? null : Number(end), timed: true };
+  }
+
+  function portionItems(meta, startV, endV) {
+    var items = [];
+    if (startV <= 1 && meta && meta.intro != null && meta.intro !== '') items.push({ kind: 'intro', v: 0 });
+    if (startV <= 1 && meta && meta.title != null && meta.title !== '') items.push({ kind: 'title', v: 0 });
+    for (var v = startV; v <= endV; v++) items.push({ kind: 'verse', v: v });
+    return items;
+  }
+
+  // Same mapping the chapter pages use: verse times from meta.v, intro/title from meta.intro / meta.title.
+  function recTimes(meta, items) {
+    return (items || []).map(function (it) {
+      if (it.kind === 'verse') {
+        var ts = meta && meta.v && meta.v[String(it.v)];
+        return (ts == null || ts === '') ? null : Number(ts);
+      }
+      var t = meta && meta[it.kind];
+      return (t == null || t === '') ? null : Number(t);
+    });
+  }
+
+  function itemIndexAtTime(times, currentTime) {
+    var t = Number(currentTime) + 0.05, k = -1;
+    if (isNaN(t)) return -1;
+    for (var i = 0; i < times.length; i++) if (times[i] != null && !isNaN(times[i]) && times[i] <= t) k = i;
+    return k;
+  }
+
+  function timingsReliable(meta, startV, endV) {
+    if (!meta || !meta.v) return false;
+    var prev = -Infinity, have = 0, need = endV - startV + 1;
+    if (need < 1) return false;
+    for (var v = startV; v <= endV; v++) {
+      var ts = meta.v[String(v)];
+      if (ts == null || ts === '' || isNaN(Number(ts))) continue;
+      ts = Number(ts);
+      if (ts < prev - 0.001) return false;
+      prev = ts;
+      have += 1;
+    }
+    if (!have) return false;
+    return have >= need;
+  }
+
+  function inClipWindow(currentTime, clipStart, clipEnd) {
+    var t = Number(currentTime);
+    if (isNaN(t)) return false;
+    if (clipStart != null && clipStart !== '' && t < Number(clipStart) - 0.35) return false;
+    if (clipEnd != null && clipEnd !== '' && t >= Number(clipEnd) - 0.05) return false;
+    return true;
+  }
+
+  // Highlight target at an audio currentTime. Returns null when the playhead is
+  // outside this portion (seek not finished, leftover time from the previous
+  // chapter) or when the timings are not safe to use.
+  function highlightForPlayback(meta, currentTime, startV, endV, opts) {
+    opts = opts || {};
+    if (opts.usedFullChapter) return null;
+    if (!timingsReliable(meta, startV, endV)) return null;
+    if (!inClipWindow(currentTime, opts.clipStart, opts.clipEnd)) return null;
+    var items = portionItems(meta, startV, endV);
+    var times = recTimes(meta, items);
+    var k = itemIndexAtTime(times, currentTime);
+    if (k < 0) return null;
+    return items[k];
+  }
+
+  function verseAtTime(meta, time, startV, endV) {
+    var hit = highlightForPlayback(meta, time, startV, endV, {
+      clipStart: meta && meta.v ? meta.v[String(startV)] : null
+    });
+    return hit && hit.kind === 'verse' ? hit.v : null;
+  }
+
+  function speakingTarget(meta, time, startV, endV) {
+    var clipStart = null;
+    if (startV <= 1) clipStart = 0;
+    else if (meta && meta.v && meta.v[String(startV)] != null) clipStart = meta.v[String(startV)];
+    return highlightForPlayback(meta, time, startV, endV, { clipStart: clipStart });
   }
 
   function portionScripture(book, chNum, startV, endV, opts) {
@@ -165,30 +252,6 @@
     if (opts.fellBack) head += '<p class="muted biay-source-note">Text and audio are from the Clay Jar Translation.</p>';
     head += '</header>';
     return head + '<div class="scripture biay-scripture-text">' + blocks.join('') + '</div>';
-  }
-
-  function verseAtTime(meta, time, startV, endV) {
-    if (!meta || !meta.v) return null;
-    var t = Number(time) + 0.05;
-    var found = null;
-    for (var v = startV; v <= endV; v++) {
-      var ts = meta.v[String(v)];
-      if (ts == null || ts === '') continue;
-      if (Number(ts) <= t) found = v;
-    }
-    return found;
-  }
-
-  function speakingTarget(meta, time, startV, endV) {
-    var v = verseAtTime(meta, time, startV, endV);
-    if (v) return { kind: 'verse', v: v };
-    if (!meta || !meta.v) return null;
-    var first = null;
-    for (var n = startV; n <= endV; n++) {
-      if (meta.v[String(n)] != null && meta.v[String(n)] !== '') { first = Number(meta.v[String(n)]); break; }
-    }
-    if (first != null && Number(time) + 0.05 < first) return { kind: 'title' };
-    return null;
   }
 
   function textSource(site, info, seg) {
@@ -249,7 +312,9 @@
       audio: null,
       advancing: false,
       meta: null,
-      canHighlight: false
+      canHighlight: false,
+      seekPending: false,
+      times: []
     };
 
     function recBase(which) { return which === 'ctb' ? CTB_REC : CJT_REC; }
@@ -379,11 +444,15 @@
       var root = scriptureEl();
       if (!root) return;
       clearSpeaking();
-      if (!player.canHighlight) return;
+      if (!player.canHighlight || player.seekPending || player.advancing) return;
       var seg = player.list[player.i];
       var audio = player.audio;
       if (!seg || !audio) return;
-      var target = speakingTarget(player.meta, audio.currentTime, seg.startV, seg.endV);
+      var target = highlightForPlayback(player.meta, audio.currentTime, seg.startV, seg.endV, {
+        clipStart: player.clipStart,
+        clipEnd: player.clipEnd,
+        usedFullChapter: !!player.clipUsedFull
+      });
       if (!target) return;
       var el = target.kind === 'title' ? root.querySelector('.ch-title') : document.getElementById('biay-v' + target.v);
       if (!el) return;
@@ -419,9 +488,6 @@
         });
         pane.innerHTML = html || '<p class="muted">The text for this portion could not be loaded.</p>';
         pane.hidden = false;
-        player.meta = (info && info.meta) || null;
-        player.canHighlight = !!(info && info.meta && info.meta.v && !info.usedFullChapter);
-        if (info && seg.fullChapter && info.meta && info.meta.v && !info.usedFullChapter) player.canHighlight = true;
         markSpeaking();
       });
     }
@@ -472,6 +538,13 @@
       });
       a.addEventListener('timeupdate', function () {
         if (player.advancing) return;
+        if (player.seekPending) {
+          if (inClipWindow(a.currentTime, player.clipStart, player.clipEnd)) {
+            player.seekPending = false;
+            markSpeaking();
+          }
+          return;
+        }
         if (player.playing && player.clipEnd != null && a.currentTime >= player.clipEnd - 0.05) {
           advance(1, false);
           return;
@@ -505,24 +578,49 @@
             player.fallbackNotes.push(seg.label + ' is playing from the Clay Jar Translation recording.');
           }
           var audio = ensureAudio();
-          player.clipEnd = info.end;
-          player.clipStart = info.start || 0;
           var start = fromStart === false ? (audio.currentTime || info.start || 0) : (info.start || 0);
+          if (fromStart !== false) start = info.start || 0;
+          player.meta = info.meta || null;
+          player.clipStart = start;
+          player.clipEnd = info.end;
+          player.clipUsedFull = !!info.usedFullChapter;
+          player.canHighlight = timingsReliable(player.meta, seg.startV, seg.endV) && !info.usedFullChapter;
+          player.times = recTimes(player.meta, portionItems(player.meta, seg.startV, seg.endV));
+          player.seekPending = start > 0.15;
           if (audio.getAttribute('data-src') !== info.url) {
             audio.src = info.url;
             audio.setAttribute('data-src', info.url);
+            try { audio.load(); } catch (e) {}
           }
           audio.playbackRate = Number(settings.rate) || 1;
-          var seek = function () { try { audio.currentTime = start; } catch (e) {} };
-          if (audio.readyState >= 1) seek();
-          else audio.addEventListener('loadedmetadata', seek, { once: true });
+          var applySeek = function () {
+            if (tok !== player.token) return;
+            try {
+              if (Math.abs((audio.currentTime || 0) - start) > 0.12) audio.currentTime = start;
+            } catch (e) {}
+          };
+          var seekDone = function () {
+            if (tok !== player.token) return;
+            if (start <= 0.15 || inClipWindow(audio.currentTime, player.clipStart, player.clipEnd)) {
+              player.seekPending = false;
+              markSpeaking();
+            }
+          };
+          if (audio.readyState >= 1) applySeek();
+          else audio.addEventListener('loadedmetadata', applySeek, { once: true });
+          audio.addEventListener('seeked', seekDone, { once: true });
+          audio.addEventListener('playing', function () {
+            if (tok !== player.token) return;
+            if (player.seekPending) applySeek();
+            else markSpeaking();
+          }, { once: true });
           player.playing = true;
           player.advancing = false;
           updateUi();
           renderPortion(seg, info, tok);
           var pr = audio.play();
-          if (pr && pr.catch) {
-            pr.catch(function (err) {
+          if (pr && pr.then) {
+            pr.then(function () { applySeek(); }).catch(function (err) {
               if (err && err.name === 'AbortError') return;
               player.playing = false;
               updateUi();
@@ -612,6 +710,7 @@
       player.playing = false;
       player.advancing = false;
       player.clipEnd = null;
+      player.seekPending = false;
       try { ensureAudio().pause(); } catch (e) {}
       if ('mediaSession' in navigator) { try { navigator.mediaSession.playbackState = 'none'; } catch (e) {} }
       clearSpeaking();
@@ -778,6 +877,13 @@
     expandItem: expandItem,
     dayPlaylist: dayPlaylist,
     clipTimes: clipTimes,
+    clipDuration: clipDuration,
+    portionItems: portionItems,
+    recTimes: recTimes,
+    itemIndexAtTime: itemIndexAtTime,
+    timingsReliable: timingsReliable,
+    inClipWindow: inClipWindow,
+    highlightForPlayback: highlightForPlayback,
     portionScripture: portionScripture,
     verseAtTime: verseAtTime,
     speakingTarget: speakingTarget,

@@ -109,9 +109,93 @@ assert.strictEqual(biay.verseAtTime(null, 1, 1, 3), null);
 const lateMeta = { v: { '17': 80.1, '18': 85, '19': 90 } };
 assert.strictEqual(biay.verseAtTime(lateMeta, 80.1, 17, 19), 17);
 assert.strictEqual(biay.verseAtTime(lateMeta, 79, 17, 19), null);
-assert.deepStrictEqual(biay.speakingTarget(lateMeta, 79, 17, 19), { kind: 'title' });
+// Mid-chapter: time before the clip start is a pending seek, not a title.
+assert.strictEqual(biay.speakingTarget(lateMeta, 79, 17, 19), null);
 assert.deepStrictEqual(biay.speakingTarget(lateMeta, 85, 17, 19), { kind: 'verse', v: 18 });
 assert.strictEqual(biay.speakingTarget({ v: {} }, 1, 1, 3), null);
+
+function loadTiming(name) {
+  const p1 = path.join(root, 'tests/fixtures/audio-timings', name);
+  const p2 = path.join(root, 'tools/fixtures/audio-timings', name);
+  const file = fs.existsSync(p1) ? p1 : p2;
+  return JSON.parse(fs.readFileSync(file, 'utf8'));
+}
+
+function chapterPageItem(meta, currentTime, lastV) {
+  const items = [];
+  if (meta.intro != null && meta.intro !== '') items.push({ kind: 'intro', v: 0 });
+  if (meta.title != null && meta.title !== '') items.push({ kind: 'title', v: 0 });
+  for (let v = 1; v <= lastV; v++) items.push({ kind: 'verse', v: v });
+  const times = biay.recTimes(meta, items);
+  const k = biay.itemIndexAtTime(times, currentTime);
+  return k < 0 ? null : items[k];
+}
+
+const cases = [
+  { file: 'af_heart_2-baruch_48.json', startV: 30, endV: 50, lastV: 50, label: '2 Baruch 48:30–50 af_heart' },
+  { file: 'am_michael_2-baruch_48.json', startV: 30, endV: 50, lastV: 50, label: '2 Baruch 48:30–50 am_michael' },
+  { file: 'af_heart_psalms_132.json', startV: 11, endV: 16, lastV: 18, label: 'Psalm 132:11–16 af_heart' },
+  { file: 'am_michael_psalms_132.json', startV: 11, endV: 16, lastV: 18, label: 'Psalm 132:11–16 am_michael' },
+  { file: 'af_heart_proverbs_29.json', startV: 10, endV: 11, lastV: 27, label: 'Proverbs 29:10–11 af_heart' },
+  { file: 'am_michael_proverbs_29.json', startV: 10, endV: 11, lastV: 27, label: 'Proverbs 29:10–11 am_michael' },
+  { file: 'af_heart_hebrews_13.json', startV: 1, endV: 21, lastV: 25, label: 'Hebrews 13:1–21 af_heart' },
+  { file: 'am_michael_hebrews_13.json', startV: 1, endV: 21, lastV: 25, label: 'Hebrews 13:1–21 am_michael' },
+  { file: 'af_heart_2-baruch_55.json', startV: 1, endV: 8, lastV: 8, label: '2 Baruch 55 af_heart' },
+  { file: 'am_michael_2-baruch_55.json', startV: 1, endV: 8, lastV: 8, label: '2 Baruch 55 am_michael' },
+];
+
+for (const c of cases) {
+  const meta = loadTiming(c.file);
+  assert.ok(biay.timingsReliable(meta, c.startV, c.endV), c.label + ' should have reliable timings');
+  const clip = biay.clipTimes(meta, c.startV, c.endV);
+  assert.ok(clip, c.label + ' clip');
+  if (c.endV === c.lastV) {
+    assert.strictEqual(clip.end, biay.clipDuration(meta), c.label + ' last-verse clip must use meta.d');
+  } else {
+    assert.strictEqual(clip.end, Number(meta.v[String(c.endV + 1)]), c.label + ' end is the next verse');
+  }
+  // Before the seek lands, do not highlight a later verse.
+  assert.strictEqual(biay.highlightForPlayback(meta, 0, c.startV, c.endV, { clipStart: clip.start, clipEnd: clip.end }), null, c.label + ' at 0');
+  // Leftover currentTime from a previous long chapter must not highlight this portion.
+  assert.strictEqual(biay.highlightForPlayback(meta, 400, c.startV, c.endV, { clipStart: clip.start, clipEnd: clip.end }), null, c.label + ' leftover 400s');
+
+  const startT = Number(meta.v[String(c.startV)]);
+  const samples = new Set([startT, startT + 0.2, startT + 1]);
+  for (let v = c.startV; v <= c.endV; v++) {
+    const ts = Number(meta.v[String(v)]);
+    samples.add(ts);
+    samples.add(ts + 0.5);
+    if (v < c.endV) samples.add((ts + Number(meta.v[String(v + 1)])) / 2);
+  }
+  if (clip.end != null) samples.add(clip.end - 0.2);
+
+  for (const t of samples) {
+    const got = biay.highlightForPlayback(meta, t, c.startV, c.endV, { clipStart: clip.start, clipEnd: clip.end });
+    const page = chapterPageItem(meta, t, c.lastV);
+    if (!biay.inClipWindow(t, clip.start, clip.end)) {
+      assert.strictEqual(got, null, c.label + ' out of window at ' + t);
+      continue;
+    }
+    assert.ok(got, c.label + ' missing highlight at ' + t);
+    assert.ok(page, c.label + ' chapter page empty at ' + t);
+    assert.strictEqual(got.kind, page.kind, c.label + ' kind at ' + t);
+    assert.strictEqual(got.v, page.v, c.label + ' verse at ' + t + ' biay=' + JSON.stringify(got) + ' page=' + JSON.stringify(page));
+  }
+}
+
+// Female and male timings differ: the playing voice's file must be used.
+const psF = loadTiming('af_heart_psalms_132.json');
+const psM = loadTiming('am_michael_psalms_132.json');
+const tMid = 70;
+const female = biay.highlightForPlayback(psF, tMid, 11, 16, { clipStart: psF.v['11'], clipEnd: psF.v['17'] });
+const male = biay.highlightForPlayback(psM, tMid, 11, 16, { clipStart: psM.v['11'], clipEnd: psM.v['17'] });
+assert.ok(female && male);
+assert.notStrictEqual(female.v, male.v, 'the same currentTime should not assume one voice’s verse for the other');
+
+assert.strictEqual(biay.highlightForPlayback(psF, tMid, 11, 16, { usedFullChapter: true, clipStart: psF.v['11'], clipEnd: psF.v['17'] }), null);
+assert.strictEqual(biay.timingsReliable({ v: { '1': 0, '2': 1 } }, 1, 4), false);
+assert.strictEqual(biay.timingsReliable({ v: { '1': 10, '2': 5 } }, 1, 2), false);
+assert.strictEqual(biay.clipTimes({ v: { '1': 3, '2': 8 }, d: 12.5 }, 1, 2).end, 12.5);
 
 assert.strictEqual(biay.textSource('cjt', { source: 'cjt' }, {}), 'cjt');
 assert.strictEqual(biay.textSource('ctb', { source: 'cjt', fellBackToCjt: true }, { ctbPublished: true }), 'cjt');
