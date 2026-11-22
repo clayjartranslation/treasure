@@ -665,3 +665,29 @@ html[dir="rtl"] .scripture, html[dir="rtl"] .prose, html[dir="rtl"] .legal-page,
 .biay-player-btns { display: flex; flex-wrap: wrap; gap: .4rem; }
 .biay-player-btns .btn { min-height: 44px; }
 .biay-portions .biay-play-part { margin-left: .4rem; font-size: .9rem; }
+
+.biay-scripture { margin: .35rem 0 .75rem; }
+.biay-scripture[hidden] { display: none; }
+.biay-reading-head { margin: 0 0 .7rem; }
+.biay-reading-head h3 { margin: .15rem 0 0; font-family: var(--serif); font-size: 1.25rem; }
+.biay-source-note { margin: .35rem 0 0; }
+.biay-scripture .verse { cursor: default; -webkit-tap-highlight-color: transparent; scroll-margin-bottom: calc(7.5rem + env(safe-area-inset-bottom)); }
+.biay-scripture .fn-mark { font-family: var(--sans); font-size: .65em; font-weight: 700; color: var(--ink-faint); vertical-align: super; line-height: 0; }
+.biay-fn { list-style: none; padding: 0; margin: 1rem 0 0; font-size: .88rem; color: var(--ink-soft); }
+.biay-fn li { padding: .2rem 0; }
+.biay-fn .m { font-weight: 700; font-family: var(--sans); margin-right: .25rem; }
+.biay-player-bar:not([hidden]) {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(44rem, 100%);
+  bottom: 0;
+  z-index: 46;
+  background: var(--bg-raised, var(--bg));
+  border-top: 1px solid var(--line);
+  box-shadow: 0 -6px 20px rgba(0, 0, 0, .08);
+  padding: .55rem max(.75rem, env(safe-area-inset-right)) calc(.55rem + env(safe-area-inset-bottom)) max(.75rem, env(safe-area-inset-left));
+}
+body.biay-has-player { padding-bottom: calc(7.5rem + env(safe-area-inset-bottom)); }
+#biayPlayHint { margin: .15rem 0 0; }
+

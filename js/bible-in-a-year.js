@@ -114,6 +114,89 @@
     return { start: Number(start), end: end == null || end === '' ? null : Number(end), timed: true };
   }
 
+  function portionScripture(book, chNum, startV, endV, opts) {
+    opts = opts || {};
+    if (!book) return '';
+    var ch = (book.chapters || []).filter(function (x) { return x.n === chNum; })[0];
+    if (!ch || !Array.isArray(ch.verses)) return '';
+    var verses = ch.verses.filter(function (v) { return v.v >= startV && v.v <= endV; });
+    if (!verses.length) return '';
+    var usedMarks = {};
+    function bodyOf(text) {
+      return esc(text).replace(/\{([a-z]+)\}/g, function (_, m) {
+        usedMarks[m] = true;
+        return '<sup class="fn-mark">' + m + '</sup>';
+      });
+    }
+    var paraStarts = (Array.isArray(ch.paras) && ch.paras.length) ? ch.paras.slice() : [ch.verses[0].v];
+    var ends = paraStarts.concat([ch.verses[ch.verses.length - 1].v + 1]);
+    var blocks = [];
+    if (startV <= 1 && ch.heading) blocks.push('<h3 class="ch-heading">' + esc(ch.heading) + '</h3>');
+    if (startV <= 1 && ch.title) blocks.push('<p class="ch-title">' + bodyOf(ch.title) + '</p>');
+    for (var pi = 0; pi < paraStarts.length; pi++) {
+      var fromV = paraStarts[pi];
+      var toV = ends[pi + 1] - 1;
+      var slice = ch.verses.filter(function (v) { return v.v >= fromV && v.v <= toV && v.v >= startV && v.v <= endV; });
+      if (!slice.length) continue;
+      var poem = slice.some(function (v) { return String(v.text).indexOf('\n') >= 0; });
+      var sub = ch.subheads && ch.subheads[fromV] && fromV >= startV ? '<h3 class="ch-sub">' + esc(ch.subheads[fromV]) + '</h3>' : '';
+      var html = slice.map(function (v) {
+        var body = bodyOf(v.text);
+        var isFirst = v.v === 1;
+        var sup = '<sup class="vnum' + (isFirst ? ' first' : '') + '">' + v.v + '</sup>';
+        if (body.indexOf('\n') >= 0) {
+          var lines = body.split('\n').map(function (l, li) {
+            return '<span class="pl">' + (li === 0 ? sup : '') + l.trim() + '</span>';
+          }).join('');
+          return '<span class="verse" id="biay-v' + v.v + '" data-v="' + v.v + '">' + lines + '</span>';
+        }
+        return '<span class="verse" id="biay-v' + v.v + '" data-v="' + v.v + '">' + sup + body + '</span>';
+      }).join(' ');
+      blocks.push(sub + '<p' + (poem ? ' class="poem"' : '') + '>' + html + '</p>');
+    }
+    var notes = (ch.notes || []).filter(function (n) { return usedMarks[n.m]; });
+    if (notes.length) {
+      blocks.push('<ol class="biay-fn">' + notes.map(function (n) {
+        return '<li><span class="m">' + esc(n.m) + '</span> ' + esc(n.text) + '</li>';
+      }).join('') + '</ol>');
+    }
+    var label = opts.label || ((book.name || '') + ' ' + chNum);
+    var head = '<header class="biay-reading-head"><p class="eyebrow">' + esc(opts.kindLabel || 'Reading') + '</p><h3>' + esc(label) + '</h3>';
+    if (opts.fellBack) head += '<p class="muted biay-source-note">Text and audio are from the Clay Jar Translation.</p>';
+    head += '</header>';
+    return head + '<div class="scripture biay-scripture-text">' + blocks.join('') + '</div>';
+  }
+
+  function verseAtTime(meta, time, startV, endV) {
+    if (!meta || !meta.v) return null;
+    var t = Number(time) + 0.05;
+    var found = null;
+    for (var v = startV; v <= endV; v++) {
+      var ts = meta.v[String(v)];
+      if (ts == null || ts === '') continue;
+      if (Number(ts) <= t) found = v;
+    }
+    return found;
+  }
+
+  function speakingTarget(meta, time, startV, endV) {
+    var v = verseAtTime(meta, time, startV, endV);
+    if (v) return { kind: 'verse', v: v };
+    if (!meta || !meta.v) return null;
+    var first = null;
+    for (var n = startV; n <= endV; n++) {
+      if (meta.v[String(n)] != null && meta.v[String(n)] !== '') { first = Number(meta.v[String(n)]); break; }
+    }
+    if (first != null && Number(time) + 0.05 < first) return { kind: 'title' };
+    return null;
+  }
+
+  function textSource(site, info, seg) {
+    if (info && info.source) return info.source;
+    if (site === 'ctb' && seg && seg.ctbPublished) return 'ctb';
+    return 'cjt';
+  }
+
   function readSettings(site) {
     try {
       var raw = JSON.parse(localStorage.getItem(SETTINGS_KEY[site] || 'cjt-settings') || '{}');
@@ -164,7 +247,9 @@
       skipped: [],
       fallbackNotes: [],
       audio: null,
-      advancing: false
+      advancing: false,
+      meta: null,
+      canHighlight: false
     };
 
     function recBase(which) { return which === 'ctb' ? CTB_REC : CJT_REC; }
@@ -274,10 +359,79 @@
     function noteEl() { return document.getElementById('biayNote'); }
     function barEl() { return document.getElementById('biayPlayerBar'); }
     function toggleBtn() { return document.getElementById('biayToggle'); }
+    function scriptureEl() { return document.getElementById('biayScripture'); }
+
+    function setPlayerChrome(on) {
+      var bar = barEl();
+      if (bar) bar.hidden = !on;
+      if (typeof document !== 'undefined' && document.body) {
+        document.body.classList.toggle('biay-has-player', !!on);
+      }
+    }
+
+    function clearSpeaking() {
+      var root = scriptureEl();
+      if (!root) return;
+      Array.prototype.forEach.call(root.querySelectorAll('.speaking'), function (x) { x.classList.remove('speaking'); });
+    }
+
+    function markSpeaking() {
+      var root = scriptureEl();
+      if (!root) return;
+      clearSpeaking();
+      if (!player.canHighlight) return;
+      var seg = player.list[player.i];
+      var audio = player.audio;
+      if (!seg || !audio) return;
+      var target = speakingTarget(player.meta, audio.currentTime, seg.startV, seg.endV);
+      if (!target) return;
+      var el = target.kind === 'title' ? root.querySelector('.ch-title') : document.getElementById('biay-v' + target.v);
+      if (!el) return;
+      el.classList.add('speaking');
+      var bar = barEl();
+      var header = document.querySelector('header.bar');
+      var top = ((header && header.getBoundingClientRect().bottom) || 70) + 8;
+      var bottom = (bar && !bar.hidden ? bar.getBoundingClientRect().top : window.innerHeight) - 8;
+      var r = el.getBoundingClientRect();
+      if (r.top < top || r.bottom > bottom) {
+        var reduce = false;
+        try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+        el.scrollIntoView({ block: 'center', behavior: reduce ? 'auto' : 'smooth' });
+      }
+    }
+
+    function renderPortion(seg, info, tok) {
+      var pane = scriptureEl();
+      if (!pane || !seg) return Promise.resolve();
+      var which = textSource(site, info, seg);
+      return loadBook(which, seg.book).then(function (book) {
+        if (tok !== player.token) return { stale: true };
+        if (!book && which !== 'cjt') return loadBook('cjt', seg.book).then(function (fb) {
+          return tok !== player.token ? { stale: true } : fb;
+        });
+        return book;
+      }).then(function (book) {
+        if (tok !== player.token || (book && book.stale)) return;
+        var html = portionScripture(book, seg.ch, seg.startV, seg.endV, {
+          label: seg.label,
+          kindLabel: seg.kindLabel,
+          fellBack: !!(info && info.fellBackToCjt)
+        });
+        pane.innerHTML = html || '<p class="muted">The text for this portion could not be loaded.</p>';
+        pane.hidden = false;
+        player.meta = (info && info.meta) || null;
+        player.canHighlight = !!(info && info.meta && info.meta.v && !info.usedFullChapter);
+        if (info && seg.fullChapter && info.meta && info.meta.v && !info.usedFullChapter) player.canHighlight = true;
+        markSpeaking();
+      });
+    }
 
     function updateUi() {
       var bar = barEl();
-      if (bar) bar.hidden = player.list.length === 0;
+      if (bar && player.list.length === 0) bar.hidden = true;
+      if (typeof document !== 'undefined' && document.body) {
+        document.body.classList.toggle('biay-has-player', !!(bar && !bar.hidden));
+      }
       var seg = player.list[player.i];
       var now = nowEl();
       if (now) {
@@ -317,10 +471,12 @@
         advance(1, false);
       });
       a.addEventListener('timeupdate', function () {
-        if (!player.playing || player.advancing) return;
-        if (player.clipEnd != null && a.currentTime >= player.clipEnd - 0.05) {
+        if (player.advancing) return;
+        if (player.playing && player.clipEnd != null && a.currentTime >= player.clipEnd - 0.05) {
           advance(1, false);
+          return;
         }
+        markSpeaking();
       });
       a.addEventListener('error', function () {
         if (!player.playing || player.advancing) return;
@@ -363,6 +519,7 @@
           player.playing = true;
           player.advancing = false;
           updateUi();
+          renderPortion(seg, info, tok);
           var pr = audio.play();
           if (pr && pr.catch) {
             pr.catch(function (err) {
@@ -391,6 +548,7 @@
       if (now && !player.playing) now.textContent = 'End of today’s readings';
       var tb = toggleBtn();
       if (tb) { tb.textContent = 'Play'; tb.setAttribute('aria-label', 'Play'); }
+      clearSpeaking();
     }
 
     function prefetch(i, settings) {
@@ -423,6 +581,7 @@
         if (note) note.textContent = 'End of today’s readings.';
         var tb = toggleBtn();
         if (tb) { tb.textContent = 'Play'; tb.setAttribute('aria-label', 'Play'); }
+        clearSpeaking();
         return;
       }
       playIndex(next, true);
@@ -455,6 +614,7 @@
       player.clipEnd = null;
       try { ensureAudio().pause(); } catch (e) {}
       if ('mediaSession' in navigator) { try { navigator.mediaSession.playbackState = 'none'; } catch (e) {} }
+      clearSpeaking();
       updateUi();
     }
 
@@ -479,7 +639,7 @@
       player.skipped = [];
       player.fallbackNotes = [];
       player.usedFullChapter = false;
-      if (barEl()) barEl().hidden = false;
+      setPlayerChrome(true);
       playIndex(i, true);
     }
 
@@ -506,6 +666,8 @@
       return '<div class="biay-player" id="biayPlayer">' +
         '<audio id="biayAudio" preload="auto" playsinline hidden></audio>' +
         '<button type="button" class="btn primary" id="biayPlayDay">Play today’s readings</button>' +
+        '<p class="muted" id="biayPlayHint">As the recording plays, the words of that portion appear below, and the verse being read is marked.</p>' +
+        '<div class="biay-scripture" id="biayScripture" hidden></div>' +
         '<div class="biay-player-bar" id="biayPlayerBar" hidden>' +
         '<p class="player-now" id="biayNow" aria-live="polite"></p>' +
         '<div class="biay-player-btns">' +
@@ -616,6 +778,10 @@
     expandItem: expandItem,
     dayPlaylist: dayPlaylist,
     clipTimes: clipTimes,
+    portionScripture: portionScripture,
+    verseAtTime: verseAtTime,
+    speakingTarget: speakingTarget,
+    textSource: textSource,
     chosenVoice: chosenVoice,
     mount: mount
   };
