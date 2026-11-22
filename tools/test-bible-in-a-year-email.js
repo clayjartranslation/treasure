@@ -20,7 +20,7 @@ assert.doesNotMatch(page, /assets\.brevo\.com/);
 assert.match(page, /form-action 'self' https:\/\/\*\.sibforms\.com/);
 
 const sw = read('sw.js');
-assert.match(sw, /const VERSION = 'ctb-v72'/);
+assert.match(sw, /const VERSION = 'ctb-v73'/);
 assert.match(sw, /if \(req\.method !== 'GET' \|\| new URL\(req\.url\)\.origin !== location\.origin\) return;/);
 assert.match(sw, /bible-in-a-year\.html/);
 assert.doesNotMatch(sw, /api[_-]?key/i);
