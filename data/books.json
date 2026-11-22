@@ -1025,7 +1025,14 @@
    "name": "Lamentations",
    "division": "Old Testament",
    "chapterCount": 5,
-   "translated": []
+   "translated": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "file": "data/books/lamentations.json"
   },
   {
    "id": "ezekiel",
