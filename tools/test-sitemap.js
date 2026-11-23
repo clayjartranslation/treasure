@@ -28,7 +28,8 @@ if (isCtb) {
   assert.ok(locs.includes(base + 's/revelation/22.html'));
   assert.ok(locs.includes(base + 's/joseph-and-aseneth/1.html'));
 }
-assert.ok(!locs.some((u) => /google[0-9a-f]+\.html/i.test(u)), 'verification file must not be in the sitemap');
+assert.ok(!locs.some((u) => /google[0-9a-f]+\.html/i.test(u)), 'Google verification file must not be in the sitemap');
+assert.ok(!locs.some((u) => /yandex_[0-9a-f]+\.html/i.test(u)), 'Yandex verification file must not be in the sitemap');
 assert.ok(locs.every((u) => u.startsWith(base)), 'every URL must be absolute and on this site');
 assert.strictEqual(new Set(locs).size, locs.length, 'duplicate URLs in sitemap');
 assert.ok((xml.match(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/g) || []).length === locs.length);
