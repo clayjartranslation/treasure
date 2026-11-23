@@ -8,7 +8,7 @@
    later and who have not already received today's (their local date)
    devotional. Sends go through Brevo
    transactional mail, one recipient per message version, so addresses
-   are never shared on the To line. LAST_DEVO_DATE is saved after a
+   are never shared on the To line. LAST_CTB_DEVO_DATE is saved after a
    successful send so a rerun never double-sends.
 
    Brevo's {{ unsubscribe }} tag is not available in transactional mail.
@@ -24,7 +24,7 @@
         4 AM local, unless TEST_EMAIL is set)
         TEST_EMAIL=address sends today's devotional only to that address
         through Brevo transactional mail. The list is not emailed, and
-        LAST_DEVO_DATE is not updated.
+        LAST_CTB_DEVO_DATE is not updated.
         DEVOTIONAL_NOW or NOW=ISO-8601 is a test clock. The workflow does not set it. */
 'use strict';
 
@@ -96,7 +96,9 @@ const WARN_AT = 250;
 const MESSAGE_BATCH = 1000;
 const CONTACT_PAGE = 500;
 const ATTR_TIMEZONE = 'TIMEZONE';
-const ATTR_LAST_DEVO = 'LAST_DEVO_DATE';
+const ATTR_LAST_DEVO = 'LAST_CTB_DEVO_DATE';
+// Site-specific so a contact on both Bible lists is not marked sent
+// when only the Clay Jar devotional has gone out (LAST_DEVO_DATE).
 const MONTHS = [null, 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 function isValidIanaTimeZone(tz) {
@@ -497,7 +499,7 @@ async function ensureAttributes(apiKey, request, log) {
     if (res.ok || res.status === 201 || attributeExistsStatus(res)) continue;
     if (isPermissionDenied(res)) {
       if (log) {
-        log('Could not create the ' + name + ' contact attribute (' + res.status + '). The Brevo API key needs Contacts permission to create attributes, list subscribers, and save LAST_DEVO_DATE. Continuing; missing time zones default to America/New_York.');
+        log('Could not create the ' + name + ' contact attribute (' + res.status + '). The Brevo API key needs Contacts permission to create attributes, list subscribers, and save LAST_CTB_DEVO_DATE. Continuing; missing time zones default to America/New_York.');
       }
       return { ok: false, denied: true, names };
     }
@@ -605,7 +607,7 @@ async function updateLastDevoDates(apiKey, contacts, isoDate, request) {
         attributes: { [ATTR_LAST_DEVO]: isoDate },
       });
       if (!one.ok && one.status !== 204) {
-        const err = new Error('Could not save LAST_DEVO_DATE for a contact (' + one.status + '). ' + clip(one.text));
+        const err = new Error('Could not save LAST_CTB_DEVO_DATE for a contact (' + one.status + '). ' + clip(one.text));
         err.result = one;
         throw err;
       }
@@ -802,7 +804,7 @@ async function run(env, deps) {
   } catch (err) {
     const message = (err && err.message) ? err.message : String(err);
     log('Could not load the subscriber list. ' + message);
-    log('The Brevo API key needs Contacts permission to list subscribers, store TIMEZONE, and record LAST_DEVO_DATE. Until that is granted, missing time zones default to America/New_York and hourly sends cannot go out.');
+    log('The Brevo API key needs Contacts permission to list subscribers, store TIMEZONE, and record LAST_CTB_DEVO_DATE. Until that is granted, missing time zones default to America/New_York and hourly sends cannot go out.');
     if (!dry) throw err;
     if (!sampleEmail) {
       log('No devotional is written for ' + ny.key + ' (' + ny.isoDate + ').');
@@ -832,7 +834,7 @@ async function run(env, deps) {
   log(describeGroups(groups));
 
   if (dry) {
-    log('Dry run for ' + stamp + '. The counts above were loaded from the list. Nothing is sent, and LAST_DEVO_DATE is not updated.');
+    log('Dry run for ' + stamp + '. The counts above were loaded from the list. Nothing is sent, and LAST_CTB_DEVO_DATE is not updated.');
     const previewGroup = dueGroups(groups)[0];
     const previewDate = previewGroup ? previewGroup.localDate : ny.isoDate;
     const previewKey = previewGroup ? previewGroup.key : ny.key;

@@ -8,7 +8,7 @@
    day's email. The four readings and their
    links match the Bible in a Year page. Sends go through Brevo
    transactional mail, one recipient per message version, so addresses
-   are never shared on the To line. LAST_BIAY_DATE is saved after a
+   are never shared on the To line. LAST_CTB_BIAY_DATE is saved after a
    successful send so a rerun never double-sends.
 
    Brevo's {{ unsubscribe }} tag is not available in transactional mail.
@@ -22,7 +22,7 @@
         DRY_RUN=true prints counts and a sample message and does not send
         TEST_EMAIL=address sends today's readings only to that address
         through Brevo transactional mail. The list is not emailed, and
-        LAST_BIAY_DATE is not updated.
+        LAST_CTB_BIAY_DATE is not updated.
         NOW=ISO-8601 is a test clock. The workflow does not set it. */
 'use strict';
 
@@ -44,7 +44,8 @@ const FREE_DAILY_LIMIT = 300;
 const WARN_AT = 250;
 const MESSAGE_BATCH = 1000;
 const CONTACT_PAGE = 500;
-const ATTR_LAST = 'LAST_BIAY_DATE';
+const ATTR_LAST = 'LAST_CTB_BIAY_DATE';
+const ATTR_LAST_LEGACY = 'LAST_BIAY_DATE';
 const DEFAULT_LIST_ID = '6';
 const SITE_KIND = 'ctb';
 const KINDS = [['ot', 'Old Testament'], ['ps', 'Psalms'], ['pr', 'Proverbs'], ['nt', 'New Testament']];
@@ -400,7 +401,8 @@ function contactAttributes(contact) {
 }
 
 function lastSentDate(contact) {
-  const v = contactAttributes(contact)[ATTR_LAST];
+  const attrs = contactAttributes(contact);
+  const v = attrs[ATTR_LAST] || attrs[ATTR_LAST_LEGACY];
   return v ? String(v).trim() : '';
 }
 
