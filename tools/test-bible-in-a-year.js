@@ -203,4 +203,40 @@ assert.strictEqual(biay.textSource('ctb', { source: 'ctb' }, { ctbPublished: tru
 assert.strictEqual(biay.textSource('ctb', null, { ctbPublished: true }), 'ctb');
 assert.strictEqual(biay.textSource('ctb', null, { ctbPublished: false }), 'cjt');
 
+
+// Full chapters must play from the start of the file until "ended", not a verse-1
+// seek or a timing-file duration that cuts the last words and the next intro.
+const ezekMeta = { v: { '1': 3.27, '27': 300.0 }, d: 312.5, intro: 0.3 };
+const ezekSeg = { book: 'ezekiel', ch: 24, startV: 1, endV: 27, lastV: 27, fullChapter: true };
+const ezekWin = biay.playbackWindow(ezekSeg, ezekMeta);
+assert.strictEqual(ezekWin.start, 0, 'full chapter starts at 0 so the intro is heard');
+assert.strictEqual(ezekWin.end, null, 'full chapter waits for the ended event');
+assert.strictEqual(ezekWin.timed, false);
+assert.strictEqual(ezekWin.usedFullChapter, false);
+assert.strictEqual(biay.shouldAdvanceAtTime(312.46, ezekWin.end, true), false, 'must not cut a full chapter at meta.d');
+assert.strictEqual(biay.shouldAdvanceAtTime(312.5, ezekWin.end, true), false);
+
+const psSeg = { book: 'psalms', ch: 136, startV: 10, endV: 16, lastV: 26, fullChapter: false };
+const psMeta = { v: { '10': 40.1, '11': 45, '16': 70, '17': 75.5 }, d: 120 };
+const psWin = biay.playbackWindow(psSeg, psMeta);
+assert.strictEqual(psWin.start, 40.1);
+assert.strictEqual(psWin.end, 75.5);
+assert.ok(biay.shouldAdvanceAtTime(75.46, psWin.end, true), 'partial clip advances at the next verse');
+assert.ok(!biay.shouldAdvanceAtTime(74.0, psWin.end, true), 'partial clip must not advance early');
+assert.ok(!biay.shouldAdvanceAtTime(75.46, psWin.end, false), 'paused clip must not advance');
+
+const prSeg = { book: 'proverbs', ch: 28, startV: 23, endV: 24, lastV: 28, fullChapter: false };
+const prMeta = { v: { '23': 110, '24': 116, '25': 121.2 }, d: 143.56 };
+const prWin = biay.playbackWindow(prSeg, prMeta);
+assert.strictEqual(prWin.start, 110);
+assert.strictEqual(prWin.end, 121.2);
+
+const untimed = biay.playbackWindow({ startV: 10, endV: 12, fullChapter: false }, { v: {} });
+assert.strictEqual(untimed.start, 0);
+assert.strictEqual(untimed.end, null);
+assert.strictEqual(untimed.usedFullChapter, true);
+
+const janFull = janList.filter((s) => s.fullChapter).map((s) => biay.playbackWindow(s, { v: { '1': 3.1, '2': 8 }, d: 200 }));
+assert.ok(janFull.length && janFull.every((w) => w.start === 0 && w.end == null), 'whole-chapter readings play in full');
+
 console.log('bible-in-a-year tests ok');
