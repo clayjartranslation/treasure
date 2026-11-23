@@ -2,6 +2,8 @@
 /* Builds one small static page per published chapter at s/<book>/<chapter>.html.
    Each page carries Open Graph and Twitter tags so a shared verse link shows a preview,
    then sends the reader to the chapter (and verse, from ?v=) in the reader.
+   These pages are also the indexable URL for each chapter (the reader uses hash routes,
+   which search engines do not index), so they are listed in sitemap.xml and left indexable.
    Run: node tools/build-share-pages.js   (the share-pages workflow runs it when books change) */
 'use strict';
 const fs = require('fs');
@@ -43,7 +45,6 @@ for (const b of cat.books) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
-<meta name="robots" content="noindex, follow">
 <link rel="canonical" href="${esc(url)}">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="${esc(CFG.name)}">
