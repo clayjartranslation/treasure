@@ -101,13 +101,14 @@ assert.ok(secrets.missing.includes('BREVO_API_KEY'));
 
   const mixed = mail.dueRecipients([
     { email: 'a@example.com', emailBlacklisted: false, attributes: {} },
-    { email: 'b@example.com', emailBlacklisted: false, attributes: { LAST_BIAY_DATE: '2026-11-21' } },
+    { email: 'b@example.com', emailBlacklisted: false, attributes: { LAST_CTB_BIAY_DATE: '2026-11-21' } },
+    { email: 'legacy@example.com', emailBlacklisted: false, attributes: { LAST_BIAY_DATE: '2026-11-21' } },
     { email: 'c@example.com', emailBlacklisted: true, attributes: {} },
     { email: 'd@example.com', emailBlacklisted: false, attributes: {} },
   ], '2026-11-21', new Set(['d@example.com']));
   assert.strictEqual(mixed.due.length, 1);
   assert.strictEqual(mixed.due[0].email, 'a@example.com');
-  assert.strictEqual(mixed.skippedAlready, 1);
+  assert.strictEqual(mixed.skippedAlready, 2, 'the Treasure attribute and the legacy shared date both count as already sent');
   assert.strictEqual(mixed.skippedExcluded, 2);
 
 

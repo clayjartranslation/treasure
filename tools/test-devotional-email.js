@@ -65,7 +65,7 @@ check('contacts are grouped by timezone and due at or after 4 AM local', () => {
   const groups = mail.groupByTimeZone([
     { email: 'ny@example.com', emailBlacklisted: false, attributes: { TIMEZONE: 'America/New_York' } },
     { email: 'la@example.com', emailBlacklisted: false, attributes: { TIMEZONE: 'America/Los_Angeles' } },
-    { email: 'again@example.com', emailBlacklisted: false, attributes: { TIMEZONE: 'America/New_York', LAST_DEVO_DATE: '2026-11-13' } },
+    { email: 'again@example.com', emailBlacklisted: false, attributes: { TIMEZONE: 'America/New_York', LAST_CTB_DEVO_DATE: '2026-11-13' } },
     { email: 'gone@example.com', emailBlacklisted: true, attributes: { TIMEZONE: 'America/New_York' } },
     { email: 'blocked@example.com', emailBlacklisted: false, attributes: { TIMEZONE: 'America/New_York' } },
     { email: 'missing@example.com', emailBlacklisted: false, attributes: {} },
@@ -315,7 +315,7 @@ async function asyncChecks() {
         if (method === 'POST' && url.startsWith('/contacts/attributes/')) return { ok: false, status: 400, json: { message: 'Attribute already exists' }, text: 'Attribute already exists' };
         if (method === 'GET' && url.startsWith('/contacts?')) return { ok: true, status: 200, json: { contacts: [
           { email: 'due@example.com', emailBlacklisted: false, attributes: { TIMEZONE: 'America/New_York' } },
-          { email: 'done@example.com', emailBlacklisted: false, attributes: { TIMEZONE: 'America/New_York', LAST_DEVO_DATE: '2026-11-13' } },
+          { email: 'done@example.com', emailBlacklisted: false, attributes: { TIMEZONE: 'America/New_York', LAST_CTB_DEVO_DATE: '2026-11-13' } },
           { email: 'west@example.com', emailBlacklisted: false, attributes: { TIMEZONE: 'America/Los_Angeles' } },
           { email: 'left@example.com', emailBlacklisted: true, attributes: { TIMEZONE: 'America/New_York' } }
         ] }, text: '' };
@@ -326,7 +326,7 @@ async function asyncChecks() {
       }
     })
   });
-  check('hourly send emails only due recipients and records LAST_DEVO_DATE', () => {
+  check('hourly send emails only due recipients and records LAST_CTB_DEVO_DATE', () => {
     assert.strictEqual(code, 0);
     const posted = sendCalls.filter((c) => c.url === '/smtp/email');
     assert.strictEqual(posted.length, 1);
@@ -334,7 +334,7 @@ async function asyncChecks() {
     assert.ok(posted[0].body.htmlContent.includes(entry.text.split('\n')[0]));
     assert.ok(posted[0].body.messageVersions[0].htmlContent.includes(mail.unsubscribeUrl('due@example.com')));
     assert.ok(!JSON.stringify(posted[0].body).includes('west@example.com'));
-    assert.strictEqual(stored[0].contacts[0].attributes.LAST_DEVO_DATE, '2026-11-13');
+    assert.strictEqual(stored[0].contacts[0].attributes.LAST_CTB_DEVO_DATE, '2026-11-13');
     assert.match(logs.join('\n'), /Sent CTB devotional 2026-11-13 to 1 subscriber/);
     assert.ok(!logs.join('\n').includes('secret-key'));
   });
@@ -387,14 +387,14 @@ async function asyncChecks() {
         second.push({ method, url });
         if (method === 'POST' && url.startsWith('/contacts/attributes/')) return { ok: true, status: 201, json: {}, text: '' };
         if (method === 'GET' && url.startsWith('/contacts?')) return { ok: true, status: 200, json: { contacts: [
-          { email: 'due@example.com', attributes: { TIMEZONE: 'America/New_York', LAST_DEVO_DATE: '2026-11-13' } }
+          { email: 'due@example.com', attributes: { TIMEZONE: 'America/New_York', LAST_CTB_DEVO_DATE: '2026-11-13' } }
         ] }, text: '' };
         if (method === 'GET' && url.startsWith('/smtp/blockedContacts')) return { ok: true, status: 200, json: { contacts: [] }, text: '' };
         throw new Error('should not send again ' + method + ' ' + url);
       }
     })
   });
-  check('reruns do not double-send after LAST_DEVO_DATE is saved', () => {
+  check('reruns do not double-send after LAST_CTB_DEVO_DATE is saved', () => {
     assert.strictEqual(code, 0);
     assert.strictEqual(second.filter((c) => c.url === '/smtp/email').length, 0);
     assert.match(logs.join('\n'), /already received|already sent|Nothing was sent/i);
@@ -427,6 +427,39 @@ async function asyncChecks() {
   check('a later run still sends today’s email if it has not gone out', () => {
     assert.strictEqual(code, 0);
     assert.strictEqual(late.filter((c) => c.url === '/smtp/email').length, 1);
+    assert.match(logs.join('\n'), /Sent CTB devotional 2026-11-13 to 1 subscriber/);
+  });
+
+  const shared = [];
+  logs.length = 0;
+  code = await mail.run({
+    DEVOTIONAL_NOW: '2026-11-13T14:10:00Z',
+    DRY_RUN: '0',
+    BREVO_API_KEY: 'secret-key',
+    BREVO_LIST_ID: '4',
+    BREVO_SENDER_EMAIL: 'news@example.com'
+  }, {
+    log,
+    request: mockRequest({
+      '*': async (key, method, url, body) => {
+        shared.push({ method, url, body });
+        if (method === 'POST' && url.startsWith('/contacts/attributes/')) return { ok: true, status: 201, json: {}, text: '' };
+        if (method === 'GET' && url.startsWith('/contacts?')) return { ok: true, status: 200, json: { contacts: [
+          { email: 'due@example.com', emailBlacklisted: false, attributes: { TIMEZONE: 'America/New_York', LAST_DEVO_DATE: '2026-11-13' } }
+        ] }, text: '' };
+        if (method === 'GET' && url.startsWith('/smtp/blockedContacts')) return { ok: true, status: 200, json: { contacts: [] }, text: '' };
+        if (method === 'POST' && url === '/smtp/email') return { ok: true, status: 201, json: { messageIds: ['<id-shared>'] }, text: '' };
+        if (method === 'POST' && url === '/contacts/batch') return { ok: true, status: 204, json: null, text: '' };
+        throw new Error('unexpected ' + method + ' ' + url);
+      }
+    })
+  });
+  check('a Clay Jar LAST_DEVO_DATE does not block the Treasure Bible send', () => {
+    assert.strictEqual(code, 0);
+    const posted = shared.filter((c) => c.url === '/smtp/email');
+    assert.strictEqual(posted.length, 1);
+    const saved = shared.find((c) => c.url === '/contacts/batch');
+    assert.strictEqual(saved.body.contacts[0].attributes.LAST_CTB_DEVO_DATE, '2026-11-13');
     assert.match(logs.join('\n'), /Sent CTB devotional 2026-11-13 to 1 subscriber/);
   });
 
