@@ -37,7 +37,8 @@ assert.strictEqual(winter.hour, 4);
 assert.strictEqual(mail.inSendHour(winter), true);
 assert.strictEqual(mail.inSendHour(mail.nyParts(new Date('2026-11-21T08:00:00Z'))), false);
 assert.strictEqual(mail.inSendHour(mail.nyParts(new Date('2026-07-15T08:10:00Z'))), true, '08:00 UTC is 4 AM in July');
-assert.strictEqual(mail.inSendHour(mail.nyParts(new Date('2026-07-15T09:10:00Z'))), false);
+assert.strictEqual(mail.inSendHour(mail.nyParts(new Date('2026-07-15T09:10:00Z'))), true, '09:10 UTC is 5 AM in July, still due');
+assert.strictEqual(mail.inSendHour(mail.nyParts(new Date('2026-11-21T10:15:00Z'))), true, '5 AM Eastern after a missed 4 AM hour is still due');
 
 const loaded = mail.loadPlan();
 assert.strictEqual(loaded.days.length, 365);
@@ -108,6 +109,28 @@ assert.ok(secrets.missing.includes('BREVO_API_KEY'));
   assert.strictEqual(mixed.due[0].email, 'a@example.com');
   assert.strictEqual(mixed.skippedAlready, 1);
   assert.strictEqual(mixed.skippedExcluded, 2);
+
+
+  const lateLogs = [];
+  const lateSend = [];
+  const lateCode = await mail.run(
+    { DRY_RUN: 'false', BREVO_API_KEY: 'secret-key', BREVO_LIST_ID: mail.DEFAULT_LIST_ID, BREVO_SENDER_EMAIL: 'sender@example.com', NOW: '2026-11-21T14:10:00Z' },
+    {
+      log: (s) => lateLogs.push(String(s)),
+      listContacts: async () => [{ email: 'a@example.com', emailBlacklisted: false, attributes: {} }],
+      listBlocked: async () => new Set(),
+      request: async (key, method, urlPath, body) => {
+        lateSend.push({ method, urlPath, body });
+        if (String(urlPath).indexOf('/smtp/email') >= 0) return { ok: true, status: 201, json: { messageIds: ['<id-late>'] }, text: '' };
+        if (String(urlPath).indexOf('/contacts') >= 0) return { ok: true, status: 204, json: null, text: '' };
+        return { ok: true, status: 201, json: { contacts: [] }, text: '' };
+      },
+    }
+  );
+  assert.strictEqual(lateCode, 0);
+  assert.ok(lateSend.some((c) => String(c.urlPath).indexOf('/smtp/email') >= 0), 'a later Eastern Time run still sends today’s email');
+  assert.match(lateLogs.join('\n'), /4 AM Eastern Time or later/);
+  assert.match(lateLogs.join('\n'), /Sent .+ Bible in a Year 2026-11-21 to 1 subscriber/);
 
   console.log('bible-in-a-year-email tests ok');
 })().catch((err) => {
