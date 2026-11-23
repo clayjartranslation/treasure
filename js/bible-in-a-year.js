@@ -121,6 +121,28 @@
     return { start: Number(start), end: end == null || end === '' || isNaN(Number(end)) ? null : Number(end), timed: true };
   }
 
+  // Full chapters play from the start of the file (including the intro) until
+  // the audio element's native "ended" event. Using verse 1 as the start, or
+  // the timing file's duration as the end, cuts off the intro and the last
+  // words at a chapter or reading transition — especially on iPhone Safari,
+  // which also fires "ended" when the src is swapped early.
+  function playbackWindow(seg, meta) {
+    var clip = meta ? clipTimes(meta, seg.startV, seg.endV) : null;
+    var full = !!(seg && seg.fullChapter);
+    var usedFull = !full && !clip;
+    if (full || usedFull) {
+      return { start: 0, end: null, timed: false, usedFullChapter: usedFull };
+    }
+    return { start: clip.start, end: clip.end, timed: true, usedFullChapter: false };
+  }
+
+  function shouldAdvanceAtTime(currentTime, clipEnd, playing) {
+    if (!playing || clipEnd == null || clipEnd === '') return false;
+    var t = Number(currentTime), end = Number(clipEnd);
+    if (isNaN(t) || isNaN(end)) return false;
+    return t >= end - 0.05;
+  }
+
   function portionItems(meta, startV, endV) {
     var items = [];
     if (startV <= 1 && meta && meta.intro != null && meta.intro !== '') items.push({ kind: 'intro', v: 0 });
@@ -359,18 +381,16 @@
       if (!res.ok) return null;
       var meta = await res.json();
       if (meta.h !== want) return null;
-      var clip = clipTimes(meta, seg.startV, seg.endV);
-      var full = !!seg.fullChapter;
-      var usedFull = !full && !clip;
+      var win = playbackWindow(seg, meta);
       return {
         url: base + '.opus',
         meta: meta,
         voice: v,
         source: which,
-        start: clip ? clip.start : 0,
-        end: clip ? clip.end : null,
-        timed: !!(clip && !full),
-        usedFullChapter: usedFull,
+        start: win.start,
+        end: win.end,
+        timed: win.timed,
+        usedFullChapter: win.usedFullChapter,
         label: seg.label
       };
     }
@@ -533,7 +553,10 @@
         host.appendChild(a);
       }
       a.addEventListener('ended', function () {
+        // Ignore ended that fires when we swap src, or a stale ended from the
+        // previous file after the token has moved on.
         if (!player.playing || player.advancing) return;
+        if (String(a.getAttribute('data-play-token') || '') !== String(player.token)) return;
         advance(1, false);
       });
       a.addEventListener('timeupdate', function () {
@@ -545,16 +568,17 @@
           }
           return;
         }
-        if (player.playing && player.clipEnd != null && a.currentTime >= player.clipEnd - 0.05) {
+        if (shouldAdvanceAtTime(a.currentTime, player.clipEnd, player.playing)) {
           advance(1, false);
           return;
         }
         markSpeaking();
       });
       a.addEventListener('error', function () {
-        if (!player.playing || player.advancing) return;
+        if (!player.playing) return;
         var seg = player.list[player.i];
         if (seg) player.skipped.push(seg.label);
+        player.advancing = false;
         advance(1, false);
       });
       player.audio = a;
@@ -588,13 +612,17 @@
           player.times = recTimes(player.meta, portionItems(player.meta, seg.startV, seg.endV));
           player.seekPending = start > 0.15;
           if (audio.getAttribute('data-src') !== info.url) {
+            try { audio.pause(); } catch (e) {}
             audio.src = info.url;
             audio.setAttribute('data-src', info.url);
             try { audio.load(); } catch (e) {}
           }
+          audio.setAttribute('data-play-token', String(tok));
           audio.playbackRate = Number(settings.rate) || 1;
           var applySeek = function () {
             if (tok !== player.token) return;
+            // Full chapters start at 0; do not seek to verse 1 (that skips the intro).
+            if (start <= 0) return;
             try {
               if (Math.abs((audio.currentTime || 0) - start) > 0.12) audio.currentTime = start;
             } catch (e) {}
@@ -606,22 +634,32 @@
               markSpeaking();
             }
           };
+          var releaseAdvance = function () {
+            if (tok !== player.token) return;
+            player.advancing = false;
+          };
           if (audio.readyState >= 1) applySeek();
           else audio.addEventListener('loadedmetadata', applySeek, { once: true });
           audio.addEventListener('seeked', seekDone, { once: true });
           audio.addEventListener('playing', function () {
             if (tok !== player.token) return;
+            releaseAdvance();
             if (player.seekPending) applySeek();
             else markSpeaking();
           }, { once: true });
           player.playing = true;
-          player.advancing = false;
           updateUi();
           renderPortion(seg, info, tok);
           var pr = audio.play();
           if (pr && pr.then) {
-            pr.then(function () { applySeek(); }).catch(function (err) {
+            pr.then(function () {
+              if (tok !== player.token) return;
+              applySeek();
+              releaseAdvance();
+            }).catch(function (err) {
               if (err && err.name === 'AbortError') return;
+              if (tok !== player.token) return;
+              player.advancing = false;
               player.playing = false;
               updateUi();
             });
@@ -658,6 +696,8 @@
     function advance(dir, manual) {
       if (player.advancing && !manual) return;
       var next = player.i + (dir || 1);
+      player.advancing = true;
+      try { ensureAudio().pause(); } catch (e) {}
       if (next < 0) {
         var audio = ensureAudio();
         try { audio.currentTime = 0; } catch (e) {}
@@ -878,6 +918,8 @@
     dayPlaylist: dayPlaylist,
     clipTimes: clipTimes,
     clipDuration: clipDuration,
+    playbackWindow: playbackWindow,
+    shouldAdvanceAtTime: shouldAdvanceAtTime,
     portionItems: portionItems,
     recTimes: recTimes,
     itemIndexAtTime: itemIndexAtTime,
