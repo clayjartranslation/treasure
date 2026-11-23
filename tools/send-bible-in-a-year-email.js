@@ -2,9 +2,10 @@
    Eastern Time (America/New_York). Free plan. No send while Brevo
    secrets are missing (exit 0).
 
-   The job runs every hour. Each run emails confirmed subscribers only
-   when it is the 4 AM hour in America/New_York and they have not already
-   received that Eastern Time day's email. The four readings and their
+   The job runs every hour, with extra runs around 4–6 AM Eastern. Each
+   run emails confirmed subscribers only when it is 4:00 AM or later in
+   America/New_York and they have not already received that Eastern Time
+   day's email. The four readings and their
    links match the Bible in a Year page. Sends go through Brevo
    transactional mail, one recipient per message version, so addresses
    are never shared on the To line. LAST_BIAY_DATE is saved after a
@@ -119,7 +120,7 @@ function nyParts(date) {
 }
 
 function inSendHour(parts) {
-  return parts && parts.hour === SEND_HOUR;
+  return Boolean(parts) && parts.hour >= SEND_HOUR;
 }
 
 function longDate(iso) {
@@ -526,7 +527,7 @@ function clock(env, deps) {
 
 function describeList(stats, isoDate, sendHour) {
   const lines = [
-    'List ' + (stats.listId || '') + ' for ' + isoDate + (sendHour ? ' (4 AM Eastern Time hour)' : ' (not the 4 AM Eastern Time hour)'),
+    'List ' + (stats.listId || '') + ' for ' + isoDate + (sendHour ? ' (4 AM Eastern Time or later)' : ' (before 4 AM Eastern Time)'),
     '- ' + stats.total + ' contact' + (stats.total === 1 ? '' : 's'),
     '- ' + stats.due.length + ' due',
   ];
@@ -664,7 +665,7 @@ async function run(env, deps) {
   }
 
   if (!sendHour) {
-    log('It is not the 4 AM Eastern Time hour. Nothing was sent.');
+    log('It is before 4 AM Eastern Time. Nothing was sent.');
     return 0;
   }
   if (!email) {

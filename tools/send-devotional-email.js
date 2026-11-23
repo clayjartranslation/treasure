@@ -3,9 +3,10 @@
    subscriber's own time zone. Free plan. No send while Brevo secrets are
    missing (exit 0).
 
-   The job runs every hour. Each run emails only confirmed subscribers
-   whose local time is in the 4 AM hour and who have not already received
-   today's (their local date) devotional. Sends go through Brevo
+   The job runs every hour, with extra runs around 4–6 AM Eastern. Each
+   run emails only confirmed subscribers whose local time is 4:00 AM or
+   later and who have not already received today's (their local date)
+   devotional. Sends go through Brevo
    transactional mail, one recipient per message version, so addresses
    are never shared on the To line. LAST_DEVO_DATE is saved after a
    successful send so a rerun never double-sends.
@@ -19,8 +20,8 @@
    Usage: node tools/send-devotional-email.js
    Env: BREVO_API_KEY, BREVO_LIST_ID, BREVO_SENDER_EMAIL
         DRY_RUN=true prints counts and a sample message and does not send
-        EVENT_NAME=workflow_dispatch allows a manual run (still only the
-        4 AM hour, unless TEST_EMAIL is set)
+        EVENT_NAME=workflow_dispatch allows a manual run (still only after
+        4 AM local, unless TEST_EMAIL is set)
         TEST_EMAIL=address sends today's devotional only to that address
         through Brevo transactional mail. The list is not emailed, and
         LAST_DEVO_DATE is not updated.
@@ -148,7 +149,7 @@ function nyParts(date) {
 }
 
 function inSendHour(parts) {
-  return parts.hour === SEND_HOUR;
+  return Boolean(parts) && parts.hour >= SEND_HOUR;
 }
 
 function contactAttributes(contact) {
@@ -683,7 +684,7 @@ function describeGroups(groups) {
       ', ' + g.recipients.length + ' due' +
       (g.skippedAlready ? ', ' + g.skippedAlready + ' already sent' : '') +
       (g.skippedExcluded ? ', ' + g.skippedExcluded + ' unsubscribed or blocked' : '') +
-      (g.skippedWrongHour ? ', ' + g.skippedWrongHour + ' not in the 4 AM hour' : '') +
+      (g.skippedWrongHour ? ', ' + g.skippedWrongHour + ' before 4 AM local' : '') +
       (g.truncated ? ', ' + g.truncated + ' held for the daily limit' : '')
     );
   });
@@ -853,7 +854,7 @@ async function run(env, deps) {
 
   const ready = dueGroups(groups);
   if (!ready.length) {
-    log('No subscribers are in the 4 AM hour this run, or all of them have already received today’s reading. Nothing was sent.');
+    log('No subscribers are due this run (their local time is before 4 AM, or they have already received today’s reading). Nothing was sent.');
     return 0;
   }
 

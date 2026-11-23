@@ -1,10 +1,14 @@
 name: Daily Bible in a Year email
 
-# Runs every hour. The script emails the list only when it is 4 AM
-# in America/New_York, with that Eastern Time day's readings.
+# Runs every hour, plus extra times around 4–6 AM Eastern, so a delayed
+# or skipped GitHub cron still delivers today's email. The script emails
+# the list when it is 4:00 AM or later in America/New_York and today's
+# Eastern Time reading has not already gone out.
 on:
   schedule:
     - cron: '0 * * * *'
+    - cron: '5 9,10 * * *'
+    - cron: '35 9,10 * * *'
   workflow_dispatch:
     inputs:
       dry_run:

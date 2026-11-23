@@ -26,17 +26,20 @@ check('eastern standard time 09:00 UTC is 4 AM', () => {
 check('eastern standard time 08:00 UTC is 3 AM', () => {
   const parts = mail.tzParts(new Date('2026-01-15T08:00:00Z'), 'America/New_York');
   assert.strictEqual(parts.hour, 3);
+  assert.strictEqual(mail.inSendHour(parts), false);
 });
 
 check('eastern daylight time 08:00 UTC is 4 AM', () => {
   const parts = mail.tzParts(new Date('2026-07-15T08:00:00Z'), 'America/New_York');
   assert.strictEqual(parts.hour, 4);
   assert.strictEqual(parts.key, '07-15');
+  assert.strictEqual(mail.inSendHour(parts), true);
 });
 
 check('eastern daylight time 09:00 UTC is 5 AM', () => {
   const parts = mail.tzParts(new Date('2026-07-15T09:00:00Z'), 'America/New_York');
   assert.strictEqual(parts.hour, 5);
+  assert.strictEqual(mail.inSendHour(parts), true, '5 AM is still due if today’s email has not gone out');
 });
 
 check('spring-forward and fall-back mornings still have a 4 AM hour', () => {
@@ -58,7 +61,7 @@ check('other time zones resolve DST-safe local dates', () => {
   assert.strictEqual(mail.resolveTimeZone(''), 'America/New_York');
 });
 
-check('contacts are grouped by timezone and only the 4 AM hour is due', () => {
+check('contacts are grouped by timezone and due at or after 4 AM local', () => {
   const groups = mail.groupByTimeZone([
     { email: 'ny@example.com', emailBlacklisted: false, attributes: { TIMEZONE: 'America/New_York' } },
     { email: 'la@example.com', emailBlacklisted: false, attributes: { TIMEZONE: 'America/Los_Angeles' } },
@@ -211,6 +214,8 @@ check('pages and the service worker include the nav and the new files', () => {
 check('workflow runs hourly and keeps dry_run and test_email', () => {
   const yml = fs.readFileSync(path.join(root, '.github/workflows/devotional-email.yml'), 'utf8');
   assert.match(yml, /cron:\s*'0 \* \* \* \*'/);
+  assert.match(yml, /cron:\s*'5 9,10 \* \* \*'/);
+  assert.match(yml, /cron:\s*'35 9,10 \* \* \*'/);
   assert.ok(!/cron:\s*'0 8 \* \* \*'/.test(yml));
   assert.match(yml, /test_email:/);
   assert.match(yml, /TEST_EMAIL:/);
@@ -393,6 +398,36 @@ async function asyncChecks() {
     assert.strictEqual(code, 0);
     assert.strictEqual(second.filter((c) => c.url === '/smtp/email').length, 0);
     assert.match(logs.join('\n'), /already received|already sent|Nothing was sent/i);
+  });
+
+  const late = [];
+  logs.length = 0;
+  code = await mail.run({
+    DEVOTIONAL_NOW: '2026-11-13T14:10:00Z',
+    DRY_RUN: '0',
+    BREVO_API_KEY: 'secret-key',
+    BREVO_LIST_ID: '4',
+    BREVO_SENDER_EMAIL: 'news@example.com'
+  }, {
+    log,
+    request: mockRequest({
+      '*': async (key, method, url, body) => {
+        late.push({ method, url, body });
+        if (method === 'POST' && url.startsWith('/contacts/attributes/')) return { ok: true, status: 201, json: {}, text: '' };
+        if (method === 'GET' && url.startsWith('/contacts?')) return { ok: true, status: 200, json: { contacts: [
+          { email: 'due@example.com', emailBlacklisted: false, attributes: { TIMEZONE: 'America/New_York' } }
+        ] }, text: '' };
+        if (method === 'GET' && url.startsWith('/smtp/blockedContacts')) return { ok: true, status: 200, json: { contacts: [] }, text: '' };
+        if (method === 'POST' && url === '/smtp/email') return { ok: true, status: 201, json: { messageIds: ['<id-late>'] }, text: '' };
+        if (method === 'POST' && url === '/contacts/batch') return { ok: true, status: 204, json: null, text: '' };
+        throw new Error('unexpected ' + method + ' ' + url);
+      }
+    })
+  });
+  check('a later run still sends today’s email if it has not gone out', () => {
+    assert.strictEqual(code, 0);
+    assert.strictEqual(late.filter((c) => c.url === '/smtp/email').length, 1);
+    assert.match(logs.join('\n'), /Sent CTB devotional 2026-11-13 to 1 subscriber/);
   });
 
   logs.length = 0;

@@ -1,10 +1,14 @@
 name: Daily devotional email
 
-# Runs every hour. The script emails only subscribers whose local time is
-# in the 4 AM hour and who have not already received that local date's reading.
+# Runs every hour, plus extra times around 4–6 AM Eastern, so a delayed
+# or skipped GitHub cron still delivers today's email. The script emails
+# subscribers whose local time is 4:00 AM or later and who have not
+# already received today's reading.
 on:
   schedule:
     - cron: '0 * * * *'
+    - cron: '5 9,10 * * *'
+    - cron: '35 9,10 * * *'
   workflow_dispatch:
     inputs:
       dry_run:

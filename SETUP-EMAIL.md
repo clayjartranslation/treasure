@@ -85,11 +85,11 @@ The form, `listId`, and `BREVO_LIST_ID` must all point at `Treasure Bible devoti
 3. Tap **Run workflow**. Leave **Print counts and a sample email and do not send** on. Tap **Run workflow** again.
 4. Open the run and read the log. You should see a count of contacts in each time zone, today’s title, the verse, the reflection, the prayer, the copyright line, and an unsubscribe link. Nothing is sent.
 
-A live run (the print switch off) still emails only people whose local time is in the 4 AM hour. To send a one-off copy to yourself, use the **test email** box. That does not email the list.
+A live run (the print switch off) still emails only people whose local time is 4:00 AM or later and who have not already received today’s reading. To send a one-off copy to yourself, use the **test email** box. That does not email the list.
 
 ## What the daily send does
 
-GitHub starts a job at the top of every hour. The script emails only confirmed subscribers whose local time is in the 4 AM hour and who have not already received that local date’s reading. The reading itself is the one for the reader’s local date. If a time zone is missing or invalid, America/New_York is used.
+GitHub starts a job at the top of every hour, with extra runs around 4–6 AM Eastern. The script emails only confirmed subscribers whose local time is 4:00 AM or later and who have not already received that local date’s reading. The reading itself is the one for the reader’s local date. If a time zone is missing or invalid, America/New_York is used.
 
 The signup form posts a hidden `TIMEZONE` field. If the hosted Brevo form has no matching `TIMEZONE` attribute field, Brevo may ignore that value, and those readers are emailed at 4:00 Eastern until the time zone is stored. The send job creates the `TIMEZONE` and `LAST_DEVO_DATE` attributes if they are missing.
 
