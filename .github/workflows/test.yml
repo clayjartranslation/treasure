@@ -18,4 +18,4 @@ jobs:
         with:
           node-version: '20'
       - name: Run project tests
-        run: node tools/test-devotional-email.js && node tools/test-bible-in-a-year-email.js && node tools/test-bible-in-a-year.js && node tools/test-phone.js && node tools/test-sync-merge.js && node tools/test-lang.js && node tools/test-security.js && node tools/test-find-verses.js
+        run: node tools/test-devotional-email.js && node tools/test-bible-in-a-year-email.js && node tools/test-bible-in-a-year.js && node tools/test-phone.js && node tools/test-sync-merge.js && node tools/test-lang.js && node tools/test-security.js && node tools/test-find-verses.js && node tools/test-sitemap.js

@@ -1,4 +1,4 @@
-name: Rebuild share pages
+name: Rebuild share pages and sitemap
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
       - 'data/books/**'
       - 'data/books.json'
       - 'tools/build-share-pages.js'
+      - 'tools/build-sitemap.js'
       - '.github/workflows/share-pages.yml'
   workflow_dispatch:
 
@@ -25,18 +26,20 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '22'
-      - name: Build share pages
-        run: node tools/build-share-pages.js
-      - name: Commit share pages
+      - name: Build share pages and sitemap
+        run: |
+          node tools/build-share-pages.js
+          node tools/build-sitemap.js
+      - name: Commit share pages and sitemap
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A s
+          git add -A s sitemap.xml
           if git diff --cached --quiet; then
-            echo "Share pages already match the published books."
+            echo "Share pages and sitemap already match the published books."
             exit 0
           fi
-          git commit -m "Rebuild share pages"
+          git commit -m "Rebuild share pages and sitemap"
           for i in 1 2 3 4 5; do
             git pull --rebase origin main && git push && exit 0
             sleep 10
