@@ -6,6 +6,15 @@
   var host = location.hostname || '';
   if (host === 'clayjartranslation-github-io.translate.goog' || /\.translate\.goog$/i.test(host)) return;
   window.addEventListener('load', function () {
-    navigator.serviceWorker.register('sw.js', { scope: './' }).catch(function () {});
+    navigator.serviceWorker.register('sw.js', { scope: './' }).then(function (reg) {
+      try { reg.update(); } catch (e) {}
+      document.addEventListener('visibilitychange', function () { if (!document.hidden) try { reg.update(); } catch (e) {} });
+    }).catch(function () {});
+    var refreshing = false;
+    navigator.serviceWorker.addEventListener('controllerchange', function () {
+      if (refreshing) return;
+      refreshing = true;
+      location.reload();
+    });
   });
 })();

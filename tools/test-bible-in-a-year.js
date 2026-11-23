@@ -219,16 +219,17 @@ assert.strictEqual(biay.shouldAdvanceAtTime(312.5, ezekWin.end, true), false);
 const psSeg = { book: 'psalms', ch: 136, startV: 10, endV: 16, lastV: 26, fullChapter: false };
 const psMeta = { v: { '10': 40.1, '11': 45, '16': 70, '17': 75.5 }, d: 120 };
 const psWin = biay.playbackWindow(psSeg, psMeta);
-assert.strictEqual(psWin.start, 40.1);
+assert.ok(psWin.start <= 40.1 && psWin.start >= 40.1 - 0.16, 'partial clip starts with a short lead-in, got ' + psWin.start);
 assert.strictEqual(psWin.end, 75.5);
-assert.ok(biay.shouldAdvanceAtTime(75.46, psWin.end, true), 'partial clip advances at the next verse');
+assert.ok(!biay.shouldAdvanceAtTime(75.46, psWin.end, true), 'must not leave a partial clip 50ms early');
+assert.ok(biay.shouldAdvanceAtTime(75.5, psWin.end, true), 'partial clip advances at the next verse');
 assert.ok(!biay.shouldAdvanceAtTime(74.0, psWin.end, true), 'partial clip must not advance early');
-assert.ok(!biay.shouldAdvanceAtTime(75.46, psWin.end, false), 'paused clip must not advance');
+assert.ok(!biay.shouldAdvanceAtTime(75.5, psWin.end, false), 'paused clip must not advance');
 
 const prSeg = { book: 'proverbs', ch: 28, startV: 23, endV: 24, lastV: 28, fullChapter: false };
 const prMeta = { v: { '23': 110, '24': 116, '25': 121.2 }, d: 143.56 };
 const prWin = biay.playbackWindow(prSeg, prMeta);
-assert.strictEqual(prWin.start, 110);
+assert.ok(prWin.start <= 110 && prWin.start >= 110 - 0.16, 'proverbs lead-in, got ' + prWin.start);
 assert.strictEqual(prWin.end, 121.2);
 
 const untimed = biay.playbackWindow({ startV: 10, endV: 12, fullChapter: false }, { v: {} });
@@ -238,5 +239,19 @@ assert.strictEqual(untimed.usedFullChapter, true);
 
 const janFull = janList.filter((s) => s.fullChapter).map((s) => biay.playbackWindow(s, { v: { '1': 3.1, '2': 8 }, d: 200 }));
 assert.ok(janFull.length && janFull.every((w) => w.start === 0 && w.end == null), 'whole-chapter readings play in full');
+
+
+const swSrc = fs.readFileSync(path.join(__dirname, '..', 'sw.js'), 'utf8');
+assert.strictEqual(biay.CACHE_VERSION, (swSrc.match(/const VERSION = '(ctb-v\d+)'/) || [])[1], 'player version must match the service worker');
+
+const highlightMeta = { v: { '10': 40.1, '11': 45, '12': 50, '13': 55, '14': 60.5 }, d: 80 };
+for (let v = 10; v <= 13; v++) {
+  const ts = highlightMeta.v[String(v)];
+  const hit = biay.highlightForPlayback(highlightMeta, ts + 0.1, 10, 13, { clipStart: 40.1 - 0.15, clipEnd: 60.5 });
+  assert.ok(hit && hit.kind === 'verse' && hit.v === v, 'verse ' + v + ' should highlight at ' + (ts + 0.1) + ' got ' + JSON.stringify(hit));
+}
+const lastHit = biay.highlightForPlayback(highlightMeta, 60.4, 10, 13, { clipStart: 40.1 - 0.15, clipEnd: 60.5 });
+assert.ok(lastHit && lastHit.v === 13, 'last verse should stay highlighted until the next verse starts, got ' + JSON.stringify(lastHit));
+assert.strictEqual(biay.highlightForPlayback(highlightMeta, 60.5, 10, 13, { clipStart: 40.1 - 0.15, clipEnd: 60.5 }), null);
 
 console.log('bible-in-a-year tests ok');

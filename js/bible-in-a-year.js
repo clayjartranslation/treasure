@@ -17,6 +17,7 @@
   var CTB_REC = 'https://huggingface.co/datasets/pdoggjoe/clay-jar-treasure-audio/resolve/main/';
   var REC_FALLBACK = { drama_f: 'af_heart', drama_m: 'am_michael' };
   var SETTINGS_KEY = { cjt: 'cjt-settings', ctb: 'ctb-settings' };
+  var CACHE_VERSION = 'ctb-v80';
 
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function nyToday(now) {
@@ -133,14 +134,26 @@
     if (full || usedFull) {
       return { start: 0, end: null, timed: false, usedFullChapter: usedFull };
     }
-    return { start: clip.start, end: clip.end, timed: true, usedFullChapter: false };
+    // Start a short lead-in before the first verse so a late iOS seek does not
+    // clip the first word. Do not reach back into the previous verse's start.
+    var start = clip.start;
+    var lead = 0.15;
+    var prev = meta && meta.v ? meta.v[String(Number(seg.startV) - 1)] : null;
+    var floor = 0;
+    if (prev != null && prev !== '' && !isNaN(Number(prev))) {
+      floor = Number(prev) + Math.max(0.2, (clip.start - Number(prev)) * 0.7);
+    }
+    start = Math.max(floor, clip.start - lead, 0);
+    return { start: start, end: clip.end, timed: true, usedFullChapter: false };
   }
 
   function shouldAdvanceAtTime(currentTime, clipEnd, playing) {
     if (!playing || clipEnd == null || clipEnd === '') return false;
     var t = Number(currentTime), end = Number(clipEnd);
     if (isNaN(t) || isNaN(end)) return false;
-    return t >= end - 0.05;
+    // Wait until the next verse's timestamp, not 50ms early, so the last
+    // words of this portion are not cut off.
+    return t >= end;
   }
 
   function portionItems(meta, startV, endV) {
@@ -164,7 +177,10 @@
   }
 
   function itemIndexAtTime(times, currentTime) {
-    var t = Number(currentTime) + 0.05, k = -1;
+    // Verse timestamps are slightly before the audible start (about 50–70ms
+    // in the recordings). A small lookahead keeps the highlight on the verse
+    // that is actually being read.
+    var t = Number(currentTime) + 0.08, k = -1;
     if (isNaN(t)) return -1;
     for (var i = 0; i < times.length; i++) if (times[i] != null && !isNaN(times[i]) && times[i] <= t) k = i;
     return k;
@@ -190,7 +206,7 @@
     var t = Number(currentTime);
     if (isNaN(t)) return false;
     if (clipStart != null && clipStart !== '' && t < Number(clipStart) - 0.35) return false;
-    if (clipEnd != null && clipEnd !== '' && t >= Number(clipEnd) - 0.05) return false;
+    if (clipEnd != null && clipEnd !== '' && t >= Number(clipEnd)) return false;
     return true;
   }
 
@@ -464,7 +480,7 @@
       var root = scriptureEl();
       if (!root) return;
       clearSpeaking();
-      if (!player.canHighlight || player.seekPending || player.advancing) return;
+      if (!player.canHighlight || player.advancing) return;
       var seg = player.list[player.i];
       var audio = player.audio;
       if (!seg || !audio) return;
@@ -538,6 +554,34 @@
         note.textContent = bits.join(' ');
       }
       if (seg) setMediaSession(seg);
+    }
+
+    function stopClock() {
+      if (player.clock) {
+        clearInterval(player.clock);
+        player.clock = null;
+      }
+    }
+
+    function startClock() {
+      stopClock();
+      player.clock = setInterval(function () {
+        if (!player.playing || !player.audio) return;
+        var a = player.audio;
+        if (player.seekPending) {
+          if (inClipWindow(a.currentTime, player.clipStart, player.clipEnd) ||
+              Math.abs((a.currentTime || 0) - (player.clipStart || 0)) <= 0.35) {
+            player.seekPending = false;
+          } else if (!player.advancing && player.clipStart > 0.15) {
+            try { a.currentTime = player.clipStart; } catch (e) {}
+          }
+        }
+        if (shouldAdvanceAtTime(a.currentTime, player.clipEnd, player.playing && !player.advancing)) {
+          advance(1, false);
+          return;
+        }
+        markSpeaking();
+      }, 50);
     }
 
     function ensureAudio() {
@@ -615,7 +659,8 @@
             try { audio.pause(); } catch (e) {}
             audio.src = info.url;
             audio.setAttribute('data-src', info.url);
-            try { audio.load(); } catch (e) {}
+            // Do not call audio.load() here: on iPhone Safari it can drop the
+            // start of the next file when the playlist advances.
           }
           audio.setAttribute('data-play-token', String(tok));
           audio.playbackRate = Number(settings.rate) || 1;
@@ -639,7 +684,10 @@
             player.advancing = false;
           };
           if (audio.readyState >= 1) applySeek();
-          else audio.addEventListener('loadedmetadata', applySeek, { once: true });
+          else {
+            audio.addEventListener('loadedmetadata', applySeek, { once: true });
+            audio.addEventListener('canplay', applySeek, { once: true });
+          }
           audio.addEventListener('seeked', seekDone, { once: true });
           audio.addEventListener('playing', function () {
             if (tok !== player.token) return;
@@ -649,13 +697,16 @@
           }, { once: true });
           player.playing = true;
           updateUi();
-          renderPortion(seg, info, tok);
+          startClock();
+          renderPortion(seg, info, tok).then(function () { if (tok === player.token) markSpeaking(); });
           var pr = audio.play();
           if (pr && pr.then) {
             pr.then(function () {
               if (tok !== player.token) return;
               applySeek();
               releaseAdvance();
+              startClock();
+              markSpeaking();
             }).catch(function (err) {
               if (err && err.name === 'AbortError') return;
               if (tok !== player.token) return;
@@ -711,6 +762,7 @@
         player.playing = false;
         player.advancing = false;
         player.clipEnd = null;
+        stopClock();
         try { ensureAudio().pause(); } catch (e) {}
         if ('mediaSession' in navigator) { try { navigator.mediaSession.playbackState = 'none'; } catch (e) {} }
         var now = nowEl();
@@ -727,6 +779,7 @@
 
     function pausePlay() {
       player.playing = false;
+      stopClock();
       try { ensureAudio().pause(); } catch (e) {}
       if ('mediaSession' in navigator) { try { navigator.mediaSession.playbackState = 'paused'; } catch (e) {} }
       updateUi();
@@ -751,6 +804,7 @@
       player.advancing = false;
       player.clipEnd = null;
       player.seekPending = false;
+      stopClock();
       try { ensureAudio().pause(); } catch (e) {}
       if ('mediaSession' in navigator) { try { navigator.mediaSession.playbackState = 'none'; } catch (e) {} }
       clearSpeaking();
@@ -806,6 +860,7 @@
         '<audio id="biayAudio" preload="auto" playsinline hidden></audio>' +
         '<button type="button" class="btn primary" id="biayPlayDay">Play today’s readings</button>' +
         '<p class="muted" id="biayPlayHint">As the recording plays, the words of that portion appear below, and the verse being read is marked.</p>' +
+        '<p class="muted" id="biayPlayerVersion">Player ' + CACHE_VERSION + '</p>' +
         '<div class="biay-scripture" id="biayScripture" hidden></div>' +
         '<div class="biay-player-bar" id="biayPlayerBar" hidden>' +
         '<p class="player-now" id="biayNow" aria-live="polite"></p>' +
@@ -920,6 +975,7 @@
     clipDuration: clipDuration,
     playbackWindow: playbackWindow,
     shouldAdvanceAtTime: shouldAdvanceAtTime,
+    CACHE_VERSION: CACHE_VERSION,
     portionItems: portionItems,
     recTimes: recTimes,
     itemIndexAtTime: itemIndexAtTime,
