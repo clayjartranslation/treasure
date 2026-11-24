@@ -5,7 +5,7 @@
    The job runs every hour, with extra runs around 4–6 AM Eastern. Each
    run emails confirmed subscribers only when it is 4:00 AM or later in
    America/New_York and they have not already received that Eastern Time
-   day's email. The four readings and their
+   day's email. The day's readings and their
    links match the Bible in a Year page. Sends go through Brevo
    transactional mail, one recipient per message version, so addresses
    are never shared on the To line. LAST_CTB_BIAY_DATE is saved after a
@@ -48,7 +48,8 @@ const ATTR_LAST = 'LAST_CTB_BIAY_DATE';
 const ATTR_LAST_LEGACY = 'LAST_BIAY_DATE';
 const DEFAULT_LIST_ID = '6';
 const SITE_KIND = 'ctb';
-const KINDS = [['ot', 'Old Testament'], ['ps', 'Psalms'], ['pr', 'Proverbs'], ['nt', 'New Testament']];
+const biay = require('../js/bible-in-a-year.js');
+const KINDS = biay.KINDS;
 const MONTHS = [null, 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const WEEKDAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
@@ -154,7 +155,7 @@ function unsubscribeUrl(email) {
   return UNSUBSCRIBE_PAGE + '?email=' + encodeURIComponent(String(email).trim());
 }
 
-function buildEmail(day, isoDate, published, unsub, days) {
+function buildEmail(day, isoDate, published, unsub, days, catalog) {
   const key = day.date;
   const url = pageUrl(key);
   const when = longDate(isoDate);
@@ -163,17 +164,17 @@ function buildEmail(day, isoDate, published, unsub, days) {
   const subject = 'Bible in a Year · ' + when;
   const lines = [];
   const htmlParts = [];
-  KINDS.forEach(([k, label]) => {
-    const links = portionLinks(day, k, published);
+  biay.portionGroups(day, catalog).forEach((g) => {
+    const links = g.items.map((p) => readingUrl(p, published));
     const textBits = links.map((l) => l.label + (l.fallback ? ' (Clay Jar Translation)' : '') + '\n' + l.url);
-    lines.push(label + ':');
+    lines.push(g.kindLabel + ':');
     textBits.forEach((b) => lines.push(b));
     lines.push('');
     const htmlBits = links.map((l) => {
       const note = l.fallback ? ' <span style="color:#6b4a37;font-size:14px;">(Clay Jar Translation)</span>' : '';
       return '<a href="' + esc(l.url) + '" style="color:#a6522d;">' + esc(l.label) + '</a>' + note;
     }).join('; ');
-    htmlParts.push('<p style="margin:0 0 12px;"><strong>' + esc(label) + ':</strong> ' + htmlBits + '</p>');
+    htmlParts.push('<p style="margin:0 0 12px;"><strong>' + esc(g.kindLabel) + ':</strong> ' + htmlBits + '</p>');
   });
   const text = [
     SITE_NAME,
@@ -559,7 +560,7 @@ async function run(env, deps) {
   const stamp = ny.isoDate + ' ' + String(ny.hour).padStart(2, '0') + ':' + String(ny.minute).padStart(2, '0') + ' ' + DEFAULT_TZ;
   const loaded = (deps && deps.load) ? deps.load() : loadPlan();
   const day = findDay(loaded.days, ny.key);
-  const email = day ? buildEmail(day, ny.isoDate, loaded.published, unsubscribeUrl(''), loaded.days) : null;
+  const email = day ? buildEmail(day, ny.isoDate, loaded.published, unsubscribeUrl(''), loaded.days, loaded.catalog) : null;
 
   if (testing && !testTo.ok) {
     log('TEST_EMAIL is set but is not an email address.');

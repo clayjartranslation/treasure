@@ -19,36 +19,57 @@ const genesis = loadBook('genesis');
 const ezekiel = loadBook('ezekiel', stubBook('ezekiel', 'Ezekiel', { 21: 32, 22: 31 }));
 const james = loadBook('james', stubBook('james', 'James', { 5: 20 }));
 
+const catalog = JSON.parse(fs.readFileSync(path.join(root, 'data/books.json'), 'utf8'));
 const books = { psalms, proverbs, ezekiel, james, genesis };
-const nov21 = plan.days.find((d) => d.date === '11-21');
-const list = biay.dayPlaylist(nov21, books);
-assert.ok(list.length >= 4);
-assert.strictEqual(list[0].kind, 'ot');
-assert.strictEqual(list[0].book, 'ezekiel');
-assert.strictEqual(list[0].ch, 21);
-assert.strictEqual(list[0].fullChapter, true);
-const ez22 = list.find((s) => s.book === 'ezekiel' && s.ch === 22);
-assert.ok(ez22, 'Ezekiel 21–22 should expand into chapter 22');
-assert.strictEqual(ez22.fullChapter, true);
-const ps = list.find((s) => s.kind === 'ps');
-assert.strictEqual(ps.ch, 136);
-assert.strictEqual(ps.startV, 1);
-assert.strictEqual(ps.endV, 3);
-assert.strictEqual(ps.fullChapter, false);
-const pr = list.find((s) => s.kind === 'pr');
-assert.strictEqual(pr.ch, 28);
-assert.strictEqual(pr.startV, 17);
-assert.strictEqual(pr.endV, 19);
-const nt = list.filter((s) => s.kind === 'nt');
-assert.ok(nt.length >= 1);
-assert.strictEqual(nt[0].book, 'james');
-assert.strictEqual(nt[0].ch, 5);
-assert.strictEqual(list[list.length - 1].kind, 'nt');
+assert.strictEqual(plan.canonBooks, 98);
+assert.strictEqual(catalog.books.length, 98);
+const inPlan = new Set();
+for (const day of plan.days) {
+  for (const k of ['ot', 'ps', 'pr', 'nt', 'ex']) {
+    assert.ok((day[k] || []).length, day.date + ' missing ' + k);
+    for (const item of day[k]) inPlan.add(item.book);
+  }
+}
+catalog.books.forEach((b) => assert.ok(inPlan.has(b.id), 'missing ' + b.id));
+assert.strictEqual(inPlan.size, 98);
 
 const jan1 = plan.days.find((d) => d.date === '01-01');
-const janList = biay.dayPlaylist(jan1, books);
+const janList = biay.dayPlaylist(jan1, books, catalog);
 const genChs = janList.filter((s) => s.book === 'genesis').map((s) => s.ch);
 assert.deepStrictEqual(genChs, [1, 2]);
+assert.strictEqual(janList[0].kind, 'ot');
+assert.strictEqual(janList[0].book, 'genesis');
+assert.strictEqual(janList[0].ch, 1);
+assert.strictEqual(janList[0].kindLabel, 'Old Testament');
+assert.strictEqual(biay.kindLabelFor(jan1.ex[0].book, catalog), 'Apocrypha');
+
+const last = plan.days[364];
+assert.ok(/Psalm 150/.test(last.ps[last.ps.length - 1].label), 'Psalms should finish on day 365: ' + last.ps[last.ps.length - 1].label);
+assert.ok(/Proverbs 31/.test(last.pr[0].label), 'Proverbs should finish on day 365: ' + last.pr[0].label);
+assert.ok(/Revelation 22/.test(last.nt[last.nt.length - 1].label), 'NT should finish on day 365: ' + last.nt[last.nt.length - 1].label);
+assert.ok(/Aristeas/.test(last.ex[last.ex.length - 1].label), 'extras should finish on day 365: ' + last.ex[last.ex.length - 1].label);
+
+assert.strictEqual(biay.kindLabelFor('4-maccabees', catalog), 'Apocrypha');
+assert.strictEqual(biay.kindLabelFor('jubilees', catalog), 'Pseudepigrapha');
+assert.strictEqual(biay.kindLabelFor('joseph-and-aseneth', catalog), 'Pseudepigrapha');
+for (const day of plan.days) {
+  for (const g of biay.portionGroups(day, catalog)) {
+    for (const item of g.items) {
+      const want = biay.kindLabelFor(item.book, catalog);
+      assert.strictEqual(g.kindLabel, want, day.date + ' ' + item.label + ' labeled ' + g.kindLabel);
+      const div = (catalog.books.find((b) => b.id === item.book) || {}).division;
+      if (div === 'Apocrypha' || div === 'Pseudepigrapha') {
+        assert.strictEqual(g.kind, 'ex');
+        assert.ok(g.kindLabel !== 'Old Testament' && g.kindLabel !== 'New Testament');
+      }
+    }
+  }
+}
+
+const { spawnSync } = require('child_process');
+const check = spawnSync('python3', [path.join(root, 'tools/validate-bible-in-a-year.py'), root], { encoding: 'utf8' });
+assert.strictEqual(check.status, 0, check.stdout + check.stderr);
+assert.match(check.stdout, /100% coverage, no repeats, finishes in 365 days/);
 
 const timed = biay.clipTimes({ v: { '1': 0, '2': 5.5, '3': 10, '4': 14.2 } }, 1, 3);
 assert.deepStrictEqual(timed, { start: 0, end: 14.2, timed: true });

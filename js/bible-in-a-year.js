@@ -1,5 +1,5 @@
-/* Bible in a Year: today's four readings (Old Testament, Psalms, Proverbs, New Testament)
-   and the whole 365-day plan from data/bible-in-a-year.json. "Today" is the date in
+/* Bible in a Year: today's readings (Old Testament, Psalms, Proverbs, New Testament,
+   and the extra books) and the whole 365-day plan from data/bible-in-a-year.json. "Today" is the date in
    America/New_York on the reader's clock; ?d=MM-DD shows another day. February 29 uses
    the February 28 portion. Continuous play walks that day's portions in order and
    stops at the last one. No third-party scripts, no tracking. */
@@ -12,12 +12,12 @@
   'use strict';
 
   var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-  var KINDS = [['ot', 'Old Testament'], ['ps', 'Psalms'], ['pr', 'Proverbs'], ['nt', 'New Testament']];
+  var KINDS = [['ot', 'Old Testament'], ['ps', 'Psalms'], ['pr', 'Proverbs'], ['nt', 'New Testament'], ['ex', 'Extra books']];
   var CJT_REC = 'https://huggingface.co/datasets/pdoggjoe/clay-jar-translation-audio/resolve/main/';
   var CTB_REC = 'https://huggingface.co/datasets/pdoggjoe/clay-jar-treasure-audio/resolve/main/';
   var REC_FALLBACK = { drama_f: 'af_heart', drama_m: 'am_michael' };
   var SETTINGS_KEY = { cjt: 'cjt-settings', ctb: 'ctb-settings' };
-  var CACHE_VERSION = 'ctb-v80';
+  var CACHE_VERSION = 'ctb-v81';
 
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function nyToday(now) {
@@ -89,7 +89,37 @@
     return segments;
   }
 
-  function dayPlaylist(day, booksById) {
+  function kindLabelFor(bookId, catalog) {
+    if (bookId === 'psalms') return 'Psalms';
+    if (bookId === 'proverbs') return 'Proverbs';
+    var books = catalog && catalog.books;
+    if (books) {
+      for (var i = 0; i < books.length; i++) {
+        if (books[i].id === bookId) return books[i].division || '';
+      }
+    } else if (catalog && catalog[bookId]) {
+      var b = catalog[bookId];
+      if (typeof b === 'string') return b;
+      if (b && b.division) return b.division;
+    }
+    return '';
+  }
+
+  function portionGroups(day, catalog) {
+    var groups = [];
+    if (!day) return groups;
+    KINDS.forEach(function (k) {
+      (day[k[0]] || []).forEach(function (item) {
+        var label = kindLabelFor(item.book, catalog) || k[1];
+        var last = groups[groups.length - 1];
+        if (last && last.kind === k[0] && last.kindLabel === label) last.items.push(item);
+        else groups.push({ kind: k[0], kindLabel: label, items: [item] });
+      });
+    });
+    return groups;
+  }
+
+  function dayPlaylist(day, booksById, catalog) {
     var list = [];
     if (!day) return list;
     KINDS.forEach(function (k) {
@@ -97,7 +127,7 @@
         var segs = expandItem(item, booksById && booksById[item.book]);
         segs.forEach(function (s) {
           s.kind = k[0];
-          s.kindLabel = k[1];
+          s.kindLabel = kindLabelFor(s.book, catalog) || k[1];
           list.push(s);
         });
       });
@@ -914,7 +944,7 @@
         pairs.forEach(function (pair) { if (pair[1]) booksById[pair[0]] = pair[1]; });
         // For ranges that spill into a later unpublished chapter, still need verse counts from CJT.
         var extra = [];
-        var playlistPreview = dayPlaylist(day, booksById);
+        var playlistPreview = dayPlaylist(day, booksById, cat);
         if (playlistPreview.length === 0) {
           // Book files may have failed; still render the page without a playlist.
         }
@@ -922,15 +952,15 @@
           '<p class="eyebrow">' + (isToday ? 'Today' : 'Day ' + (idx + 1) + ' of 365') + '</p>' +
           '<h2 id="biayDay">' + esc(niceDate(key, now.year)) + '</h2>' +
           (key === '02-29' ? '<p class="muted">Leap day: read the February 28 portion again, or catch up on a day you missed.</p>' : '') +
-          '<ul class="biay-portions">' + KINDS.map(function (k) {
-            return '<li><strong>' + k[1] + ':</strong> ' + portion(day, k[0]) +
-              ' <button type="button" class="btn biay-play-part" data-biay-play="' + k[0] + '">Play from here</button></li>';
+          '<ul class="biay-portions">' + portionGroups(day, cat).map(function (g) {
+            return '<li><strong>' + esc(g.kindLabel) + ':</strong> ' + g.items.map(link).join('; ') +
+              ' <button type="button" class="btn biay-play-part" data-biay-play="' + g.kind + '">Play from here</button></li>';
           }).join('') + '</ul>' +
           playerMarkup() +
           '<p class="biay-nav"><a class="btn" href="?d=' + prev + '">← ' + esc(shortDate(prev)) + '</a> ' +
           (isToday ? '' : '<a class="btn" href="bible-in-a-year.html">Today</a> ') +
           '<a class="btn" href="?d=' + next + '">' + esc(shortDate(next)) + ' →</a></p></section>';
-        html += '<h2 id="biayYear">The whole year</h2><p class="muted">Each day has a reading from the Old Testament, the Psalms, Proverbs, and the New Testament. Tap a reading to open it.</p>';
+        html += '<h2 id="biayYear">The whole year</h2><p class="muted">Each day has a reading from the Old Testament, the Psalms, Proverbs, the New Testament, and the extra books in this edition (the Apocrypha and the Pseudepigrapha). Each of those sections is spread evenly over the year and finishes on December 31. Long chapters are split by verse when that keeps the days even. Labels follow this Bible’s book groups, so a book such as 4 Maccabees or Jubilees is not called Old or New Testament. Tap a reading to open it.</p>';
         for (var m = 0; m < 12; m++) {
           var mm = String(m + 1).padStart(2, '0');
           var rows = plan.days.filter(function (d) { return d.date.slice(0, 2) === mm; });
@@ -942,7 +972,7 @@
         }
         main.innerHTML = html;
         main.removeAttribute('aria-busy');
-        var playlist = dayPlaylist(day, booksById);
+        var playlist = dayPlaylist(day, booksById, cat);
         playlist.forEach(function (s) {
           s.ctbPublished = !!(done[s.book] && done[s.book][s.ch]);
         });
@@ -970,6 +1000,8 @@
     shortDate: shortDate,
     chapterVerseCount: chapterVerseCount,
     expandItem: expandItem,
+    kindLabelFor: kindLabelFor,
+    portionGroups: portionGroups,
     dayPlaylist: dayPlaylist,
     clipTimes: clipTimes,
     clipDuration: clipDuration,
