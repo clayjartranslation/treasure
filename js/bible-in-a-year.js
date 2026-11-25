@@ -17,7 +17,7 @@
   var CTB_REC = 'https://huggingface.co/datasets/pdoggjoe/clay-jar-treasure-audio/resolve/main/';
   var REC_FALLBACK = { drama_f: 'af_heart', drama_m: 'am_michael' };
   var SETTINGS_KEY = { cjt: 'cjt-settings', ctb: 'ctb-settings' };
-  var CACHE_VERSION = 'ctb-v82';
+  var CACHE_VERSION = 'ctb-v83';
 
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function nyToday(now) {
@@ -328,6 +328,32 @@
     return 'cjt';
   }
 
+  function mergeBooks(primary, fallback) {
+    if (!primary) return fallback;
+    if (!fallback) return primary;
+    var have = {};
+    (primary.chapters || []).forEach(function (c) { have[c.n] = true; });
+    var extra = (fallback.chapters || []).filter(function (c) { return !have[c.n]; });
+    if (!extra.length) return primary;
+    return {
+      id: primary.id || fallback.id,
+      name: primary.name || fallback.name,
+      chapters: (primary.chapters || []).concat(extra)
+    };
+  }
+
+  function bookNeedsFallback(bk, items) {
+    if (!bk) return true;
+    for (var i = 0; i < (items || []).length; i++) {
+      var segs = expandItem(items[i], bk);
+      var got = 0;
+      segs.forEach(function (sg) { got += (sg.endV - sg.startV + 1); });
+      var want = Number(items[i].verses) || 0;
+      if (!segs.length || (want > 0 && got < want)) return true;
+    }
+    return false;
+  }
+
   function readSettings(site) {
     try {
       var raw = JSON.parse(localStorage.getItem(SETTINGS_KEY[site] || 'cjt-settings') || '{}');
@@ -541,7 +567,7 @@
       var which = textSource(site, info, seg);
       return loadBook(which, seg.book).then(function (book) {
         if (tok !== player.token) return { stale: true };
-        if (!book && which !== 'cjt') return loadBook('cjt', seg.book).then(function (fb) {
+        if ((!book || !chapterVerseCount(book, seg.ch)) && which !== 'cjt') return loadBook('cjt', seg.book).then(function (fb) {
           return tok !== player.token ? { stale: true } : fb;
         });
         return book;
@@ -685,7 +711,8 @@
           player.canHighlight = timingsReliable(player.meta, seg.startV, seg.endV) && !info.usedFullChapter;
           player.times = recTimes(player.meta, portionItems(player.meta, seg.startV, seg.endV));
           player.seekPending = start > 0.15;
-          if (audio.getAttribute('data-src') !== info.url) {
+          var sameSrc = audio.getAttribute('data-src') === info.url;
+          if (!sameSrc) {
             try { audio.pause(); } catch (e) {}
             audio.src = info.url;
             audio.setAttribute('data-src', info.url);
@@ -697,7 +724,13 @@
           var applySeek = function () {
             if (tok !== player.token) return;
             // Full chapters start at 0; do not seek to verse 1 (that skips the intro).
-            if (start <= 0) return;
+            // Reset to 0 only when replaying the same audio element from the start.
+            if (start <= 0) {
+              if (sameSrc && fromStart !== false) {
+                try { if ((audio.currentTime || 0) > 0.2) audio.currentTime = 0; } catch (e) {}
+              }
+              return;
+            }
             try {
               if (Math.abs((audio.currentTime || 0) - start) > 0.12) audio.currentTime = start;
             } catch (e) {}
@@ -932,22 +965,27 @@
       var prev = plan.days[(idx + 364) % 365].date, next = plan.days[(idx + 1) % 365].date;
       var isToday = key === now.key;
       KINDS.forEach(function (k) {
-        (day[k[0]] || []).forEach(function (p) { needed[p.book] = true; });
+        (day[k[0]] || []).forEach(function (p) {
+          if (!needed[p.book]) needed[p.book] = [];
+          needed[p.book].push(p);
+        });
       });
       var loads = Object.keys(needed).map(function (id) {
-        return loadBook(site === 'ctb' && done[id] ? 'ctb' : (site === 'ctb' ? 'cjt' : 'cjt'), id).then(function (bk) {
-          return [id, bk];
+        var items = needed[id];
+        var hasCtb = site === 'ctb' && done[id] && Object.keys(done[id]).length > 0;
+        if (!hasCtb) {
+          return loadBook('cjt', id).then(function (bk) { return [id, bk]; });
+        }
+        return loadBook('ctb', id).then(function (ctbBk) {
+          if (!bookNeedsFallback(ctbBk, items)) return [id, ctbBk];
+          return loadBook('cjt', id).then(function (cjtBk) {
+            return [id, mergeBooks(ctbBk, cjtBk)];
+          });
         });
       });
       return Promise.all(loads).then(function (pairs) {
         var booksById = {};
         pairs.forEach(function (pair) { if (pair[1]) booksById[pair[0]] = pair[1]; });
-        // For ranges that spill into a later unpublished chapter, still need verse counts from CJT.
-        var extra = [];
-        var playlistPreview = dayPlaylist(day, booksById, cat);
-        if (playlistPreview.length === 0) {
-          // Book files may have failed; still render the page without a playlist.
-        }
         var html = '<section class="card biay-today" aria-labelledby="biayDay">' +
           '<p class="eyebrow">' + (isToday ? 'Today' : 'Day ' + (idx + 1) + ' of 365') + '</p>' +
           '<h2 id="biayDay">' + esc(niceDate(key, now.year)) + '</h2>' +
@@ -1018,6 +1056,8 @@
     verseAtTime: verseAtTime,
     speakingTarget: speakingTarget,
     textSource: textSource,
+    mergeBooks: mergeBooks,
+    bookNeedsFallback: bookNeedsFallback,
     chosenVoice: chosenVoice,
     mount: mount
   };
