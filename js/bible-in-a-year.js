@@ -17,7 +17,7 @@
   var CTB_REC = 'https://huggingface.co/datasets/pdoggjoe/clay-jar-treasure-audio/resolve/main/';
   var REC_FALLBACK = { drama_f: 'af_heart', drama_m: 'am_michael' };
   var SETTINGS_KEY = { cjt: 'cjt-settings', ctb: 'ctb-settings' };
-  var CACHE_VERSION = 'ctb-v84';
+  var CACHE_VERSION = 'ctb-v85';
 
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function nyToday(now) {

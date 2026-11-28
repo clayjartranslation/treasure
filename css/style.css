@@ -325,6 +325,8 @@ td:first-child { font-weight: 600; min-width: 8rem; }
 .foot { border-top: 1px solid var(--line); padding: 1.25rem max(1.25rem, env(safe-area-inset-right)) calc(1.5rem + env(safe-area-inset-bottom)) max(1.25rem, env(safe-area-inset-left)); text-align: center; color: var(--ink-soft); font-size: .88rem; }
 .foot p { max-width: 34rem; margin: 0 auto .4rem; }
 .foot a { display: inline-flex; align-items: center; min-height: var(--hit); padding: 0 .2rem; }
+.foot-visitors { font-variant-numeric: tabular-nums; }
+.foot-visitors[hidden] { display: none !important; }
 .foot-small { font-size: .875rem; color: var(--ink-faint); }
 
 .empty { text-align: center; color: var(--ink-faint); padding: 2rem 0; }

@@ -24,6 +24,7 @@ assert.ok(csp.includes('https://*.sibforms.com'));
 assert.ok(csp.includes('https://www.paypal.com'));
 assert.ok(csp.includes('https://translate.googleapis.com'));
 assert.ok(csp.includes('https://translate-pa.googleapis.com'));
+assert.ok(csp.includes('https://abacus.jasoncameron.dev'));
 assert.ok(csp.includes('upgrade-insecure-requests'));
 
 htmls.forEach((html, i) => {
@@ -32,6 +33,7 @@ htmls.forEach((html, i) => {
   assert.ok(!/\sstyle=/.test(html), pages[i] + ' still has a style attribute');
   assert.ok(html.includes('js/languages.js') && html.includes('js/lang.js'), pages[i]);
   assert.ok(html.includes('js/register-sw.js'), pages[i]);
+  assert.ok(html.includes('js/visitors.js') && html.includes('data-visitor-total'), pages[i]);
   assert.ok(html.includes('name="referrer" content="strict-origin-when-cross-origin"'), pages[i]);
   assert.ok(html.includes('id="langNotice"'), pages[i]);
   assert.ok(html.includes('Machine translation by Google. The English text is the official Clay Jar Treasure Bible.'), pages[i]);
@@ -49,6 +51,7 @@ const version = Number(sw.match(/const VERSION = 'ctb-v(\d+)'/)[1]);
 assert.ok(version >= 47, 'cache version should move past ctb-v46');
 assert.ok(sw.includes('js/lang.js'));
 assert.ok(sw.includes('js/languages.js'));
+assert.ok(sw.includes('js/visitors.js'));
 
 const security = fs.readFileSync(path.join(root, '.well-known/security.txt'), 'utf8');
 assert.ok(security.includes('Contact: mailto:contact.clayjar@protonmail.com'));
@@ -56,14 +59,14 @@ assert.ok(security.includes('Expires: 2027-11-14T23:59:59.000Z'));
 
 const privacy = htmls[3];
 const terms = htmls[4];
-['Google Translate', 'local storage', 'Brevo', 'double opt-in', 'unsubscribe', 'time zone', 'PayPal', 'PIPL', 'APPI', 'POPIA', 'CCPA', 'LGPD', 'PIPEDA', 'contact.clayjar@protonmail.com', 'not sold', 'Bible in a Year reading email'].forEach((phrase) => {
+['Google Translate', 'local storage', 'Brevo', 'double opt-in', 'unsubscribe', 'time zone', 'PayPal', 'PIPL', 'APPI', 'POPIA', 'CCPA', 'LGPD', 'PIPEDA', 'contact.clayjar@protonmail.com', 'not sold', 'Bible in a Year reading email', 'Abacus', 'visitor total'].forEach((phrase) => {
   assert.ok(privacy.includes(phrase), 'privacy missing ' + phrase);
 });
 ['AS IS', 'AS AVAILABLE', 'US$50', 'DMCA', 'COPPA', 'Downloads (PDF and EPUB)', 'personal reading only', 'machine-learning', 'Force majeure', 'Assignment', 'Termination', 'Donations are NOT tax-deductible', 'chapter 218, section 21', 'no arbitration', 'Plymouth County', 'small claims', 'Marshfield', 'Notice of Dispute', 'hold harmless', '17 U.S.C. § 1202', '1125(a)', 'Berne Convention', 'artificial-intelligence', 'Quoting.', 'chapter 260, section 5A', 'fullest extent permitted by law', '501(c)(3)', 'English text is the official', 'no license', 'Brevo', 'double opt-in', 'PayPal', 'Where your local law gives you rights'].forEach((phrase) => {
   assert.ok(terms.toLowerCase().includes(phrase.toLowerCase()), 'terms missing ' + phrase);
 });
-assert.ok(terms.includes('Last updated November 21, 2026'));
-assert.ok(privacy.includes('Last updated November 21, 2026'));
+assert.ok(terms.includes('Last updated November 28, 2026'));
+assert.ok(privacy.includes('Last updated November 28, 2026'));
 assert.ok(terms.includes('Email delivery is not guaranteed'));
 assert.ok(terms.includes('marked as spam by your email provider'));
 const devotional = fs.readFileSync(path.join(root, 'devotional.html'), 'utf8');
