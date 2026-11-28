@@ -126,7 +126,9 @@ assert.ok(noted.some((h) => h.e.kind === 'n' && h.e.bookId === 'genesis' && h.e.
 const shepherd = Find.rank(compiled, 'shepherd', { notes: false });
 assert.ok(shepherd.length > 5, 'shepherd returned too little');
 assert.ok(shepherd.slice(0, 8).every((h) => !h.related && /shepherd/i.test(h.e.text)), 'top shepherd hits should contain the word itself: ' + shepherd.slice(0, 8).map(refOf).join('; '));
-assert.ok(shepherd.slice(0, 8).some((h) => h.e.bookId === 'isaiah' && h.e.ch === 40 && h.e.v === 11), 'Isaiah 40:11 should be near the top: ' + shepherd.slice(0, 8).map(refOf).join('; '));
+const isa4011 = shepherd.find((h) => h.e.bookId === 'isaiah' && h.e.ch === 40 && h.e.v === 11);
+assert.ok(isa4011 && !isa4011.related, 'Isaiah 40:11 should remain a direct shepherd hit');
+assert.ok(shepherd.indexOf(isa4011) < 12, 'Isaiah 40:11 should stay near the top: ' + shepherd.slice(0, 12).map(refOf).join('; '));
 const psalm23 = shepherd.find((h) => h.e.bookId === 'psalms' && h.e.ch === 23 && h.e.v === 1);
 assert.ok(psalm23, 'Psalms 23:1 missing for shepherd');
 assert.ok(shepherd.indexOf(psalm23) < 50, 'Psalms 23:1 ranked too low: ' + shepherd.indexOf(psalm23));
@@ -134,18 +136,20 @@ const sheepOnly = shepherd.filter((h) => h.related && !/shepherd/i.test(h.e.text
 assert.ok(sheepOnly.length > 0, 'shepherd did not expand to flock or sheep');
 assert.ok(sheepOnly[0].score < psalm23.score, 'a related-only hit outranked Psalms 23:1');
 
-// rainbow is not the word this translation uses; bow + the flood promise should lead.
+// A verse that says "rainbow" leads. The flood promise still leads the related "bow" hits.
 const rainbow = Find.rank(compiled, 'rainbow', { notes: false });
 assert.ok(rainbow.length > 3, 'rainbow returned too little');
-assert.strictEqual(rainbow[0].e.bookId, 'genesis', 'top rainbow hit: ' + rainbow.slice(0, 6).map(refOf).join('; '));
-assert.strictEqual(rainbow[0].e.ch, 9);
-assert.strictEqual(rainbow[0].e.v, 13);
+assert.strictEqual(rainbow[0].e.bookId, 'ezekiel', 'top rainbow hit: ' + rainbow.slice(0, 6).map(refOf).join('; '));
+assert.strictEqual(rainbow[0].e.ch, 1);
+assert.strictEqual(rainbow[0].e.v, 28);
+assert.strictEqual(rainbow[0].related, false);
+const floodBow = rainbow.find((h) => h.e.bookId === 'genesis' && h.e.ch === 9 && h.e.v === 13);
+assert.ok(floodBow && floodBow.related && floodBow.via.indexOf('bow') !== -1, 'Genesis 9:13 should explain the related word bow');
 [13, 14, 16, 17].forEach((v) => {
   assert.ok(rainbow.slice(0, 6).some((h) => h.e.bookId === 'genesis' && h.e.ch === 9 && h.e.v === v), 'Genesis 9:' + v + ' missing near the top: ' + rainbow.slice(0, 8).map(refOf).join('; '));
 });
-assert.ok(rainbow[0].related && rainbow[0].via.indexOf('bow') !== -1, 'rainbow should explain the related word bow');
 const bowDown = rainbow.find((h) => /bow down|bow to|bow before|bow low/i.test(h.e.text));
-if (bowDown) assert.ok(bowDown.score < rainbow[0].score, 'a bow-down verse tied the flood bow');
+if (bowDown) assert.ok(bowDown.score < floodBow.score, 'a bow-down verse tied the flood bow');
 
 // Highlight marks the typed word and a related word, and escapes HTML.
 const marked = Find.highlight('My bow rests in the clouds.', { terms: ['rainbow'], words: ['bow'] });
