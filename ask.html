@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Hidden preview page: not linked from the site menus, noindex, and left out of the sitemap. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="noindex">
+  <title>Ask the Clay Jar Treasure Bible (preview)</title>
+  <meta name="theme-color" content="#fff9eb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1d1410" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ask.css">
+</head>
+<body data-site="ctb">
+  <header class="bar">
+    <a class="brand" href="./" aria-label="Clay Jar Treasure Bible home"><img src="icons/emblem-96.png" alt="" width="30" height="30"><span>CTB<span class="tm">™</span></span></a>
+    <span class="ask-tag">Preview</span>
+  </header>
+  <main class="ask-wrap" id="askApp">
+    <h1>Ask the Clay Jar Treasure Bible</h1>
+    <p class="ask-sub">Answers come only from the published books of the Clay Jar Treasure Bible. Everything runs on your device. Nothing you type is sent anywhere.</p>
+    <p class="ask-notice"><strong>AI can make mistakes.</strong> Always read the verses themselves in context. This helper is not a pastor, counselor, or doctor.</p>
+    <p class="ask-notice">If you are struggling or thinking about suicide, call or text <a href="tel:988">988</a> to reach the 988 Suicide &amp; Crisis Lifeline (US, free, 24/7). If you are in immediate danger, call <a href="tel:911">911</a>.</p>
+    <div class="ask-tabs" role="tablist" aria-label="Helper">
+      <button type="button" role="tab" data-mode="ask" aria-selected="true">Ask</button>
+      <button type="button" role="tab" data-mode="pray" aria-selected="false">Prayer</button>
+    </div>
+    <form class="ask-form" id="askForm" role="search">
+      <label for="askQ" id="askLabel">Ask a question about the Bible</label>
+      <div class="ask-row">
+        <input id="askQ" type="search" autocomplete="off" enterkeyhint="search" maxlength="300" placeholder="e.g. forgiveness, the Lord is my shepherd">
+        <button class="btn" type="submit" id="askGo">Ask</button>
+      </div>
+    </form>
+    <p class="ask-status" id="askStatus" aria-live="polite"></p>
+    <div class="ask-consent" id="askConsent" role="dialog" aria-labelledby="askConsentTitle" hidden></div>
+    <div id="askOut" aria-live="polite"></div>
+    <div class="ask-tier" id="askTier"><p>Checking what this device can run…</p></div>
+  </main>
+  <script src="js/find-verses.js"></script>
+  <script src="js/ask.js"></script>
+</body>
+</html>

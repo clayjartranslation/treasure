@@ -1,0 +1,26 @@
+/* Hidden preview page ask.html only. */
+.ask-wrap { max-width: 42rem; margin: 0 auto; padding: 1rem max(1rem, env(safe-area-inset-right)) 3rem max(1rem, env(safe-area-inset-left)); }
+.ask-wrap h1 { font: 700 1.55rem var(--serif); margin: .4rem 0 .2rem; }
+.ask-sub { color: var(--ink-soft); margin: 0 0 .9rem; font-size: .95rem; }
+.ask-tag { display: inline-block; font-size: .7rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; background: var(--brown); color: #fff9eb; border-radius: 999px; padding: .1rem .5rem; margin-left: auto; }
+.ask-tabs { display: flex; gap: .4rem; margin: 0 0 .7rem; flex-wrap: wrap; }
+.ask-tabs button { min-height: 2.75rem; padding: .4rem .9rem; border-radius: 999px; border: 1px solid var(--line); background: var(--bg-raised); color: var(--ink); cursor: pointer; font-weight: 600; }
+.ask-tabs button[aria-selected="true"] { background: var(--brown); border-color: var(--brown); color: #fff9eb; }
+.ask-form label { display: block; font-weight: 600; margin-bottom: .35rem; }
+.ask-row { display: flex; gap: .5rem; }
+.ask-row input { flex: 1; min-width: 0; min-height: 2.75rem; padding: .55rem .8rem; border: 1px solid var(--line); border-radius: 12px; background: var(--bg-raised); color: var(--ink); font-size: 16px; }
+.ask-wrap .btn { min-height: 2.75rem; padding: .5rem .95rem; border-radius: 12px; border: 1px solid var(--brown); background: var(--brown); color: #fff9eb; font-weight: 600; cursor: pointer; }
+.ask-wrap .btn.ghost { background: var(--bg-raised); color: var(--clay); border-color: var(--line); }
+.ask-status { font-size: .85rem; color: var(--ink-faint); margin: .6rem 0; min-height: 1.2em; }
+.ask-notice { font-size: .85rem; background: var(--clay-soft); border-radius: 10px; padding: .55rem .75rem; color: var(--ink); margin: .75rem 0; }
+.ask-notice a { color: var(--clay); font-weight: 600; }
+.ask-tier, .ask-consent, .ask-card { border: 1px solid var(--line); background: var(--bg-raised); border-radius: 14px; padding: .8rem .95rem; margin: .8rem 0; box-shadow: var(--shadow); }
+.ask-tier p, .ask-consent p { margin: .3rem 0; }
+.ask-consent h2, .ask-card h2 { font: 600 1rem var(--sans); margin: 0 0 .4rem; }
+.ask-prayer { font: 17px/1.6 var(--serif); margin: 0; }
+.ask-engine, .ask-note { font-size: .8rem; color: var(--ink-faint); margin: .5rem 0 0; }
+.ask-verses { list-style: none; padding: 0; margin: 0; }
+.ask-verses li { border-bottom: 1px solid var(--line); }
+.ask-verses a { display: block; padding: .65rem 0; text-decoration: none; color: var(--ink); }
+.ask-verses .ref { font-weight: 700; color: var(--clay); }
+.ask-verses .txt { display: block; font: 16px/1.5 var(--serif); margin-top: .2rem; }
