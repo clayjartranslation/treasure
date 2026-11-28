@@ -35,6 +35,8 @@ function walkHtml(dir, rel) {
 
 function isPublic(rel) {
   const base = path.basename(rel);
+  // Hidden preview pages (such as ask.html) carry robots noindex and stay out of the sitemap.
+  if (/<meta name="robots" content="noindex">/.test(fs.readFileSync(path.join(ROOT, rel), 'utf8'))) return false;
   return !/^google[0-9a-f]+\.html$/i.test(base)
     && !/^yandex_[0-9a-f]+\.html$/i.test(base);
 }
