@@ -13,7 +13,8 @@
  * Footnote markers are written inline as {a}, {b}, ... and must match a note in the same chapter.
  * The "id" must match a book id in data/books.json (lowercase name with dashes, e.g. "1-maccabees").
  * The script validates the file, copies it to data/books/<id>.json, marks its chapters as translated
- * in data/books.json, and bumps the offline cache version in sw.js so phones fetch the update.
+ * in data/books.json, and bumps the offline cache version in sw.js and the Bible in a Year
+ * player cache version together, so phones fetch the update.
  */
 const fs = require('fs');
 const path = require('path');
@@ -37,6 +38,14 @@ for (const c of book.chapters || []) {
   defined.filter((m) => !used.includes(m)).forEach((m) => errors.push(`${book.name} ${c.n}: note ${m} has no marker.`));
 }
 if (errors.length) { console.error('Not added:\n- ' + errors.join('\n- ')); process.exit(1); }
+const swPath = path.join(ROOT, 'sw.js');
+const swSrc = fs.readFileSync(swPath, 'utf8');
+const sw = swSrc.replace(/const VERSION = 'ctb-v(\d+)';/, (_, n) => `const VERSION = 'ctb-v${+n + 1}';`);
+if (sw === swSrc) { console.error('Could not bump the offline cache version.'); process.exit(1); }
+const playerPath = path.join(ROOT, 'js/bible-in-a-year.js');
+const playerSrc = fs.readFileSync(playerPath, 'utf8');
+const player = playerSrc.replace(/var CACHE_VERSION = 'ctb-v(\d+)';/, (_, n) => `var CACHE_VERSION = 'ctb-v${+n + 1}';`);
+if (player === playerSrc) { console.error('Could not bump the Bible in a Year player cache version.'); process.exit(1); }
 book.chapters.sort((a, b) => a.n - b.n);
 book.division = entry.division;
 const rel = `data/books/${book.id}.json`;
@@ -44,8 +53,7 @@ fs.writeFileSync(path.join(ROOT, rel), JSON.stringify(book, null, 1) + '\n');
 entry.translated = book.chapters.map((c) => c.n);
 entry.file = rel;
 fs.writeFileSync(catPath, JSON.stringify(cat, null, 1) + '\n');
-const swPath = path.join(ROOT, 'sw.js');
-const sw = fs.readFileSync(swPath, 'utf8').replace(/const VERSION = 'ctb-v(\d+)';/, (_, n) => `const VERSION = 'ctb-v${+n + 1}';`);
 fs.writeFileSync(swPath, sw);
+fs.writeFileSync(playerPath, player);
 const nv = book.chapters.reduce((n, c) => n + c.verses.length, 0);
 console.log(`Added ${book.name}: chapters ${entry.translated.join(', ')} (${nv} verses). Cache version bumped.`);
