@@ -1,0 +1,2294 @@
+{
+ "id": "daniel",
+ "name": "Daniel",
+ "division": "Old Testament",
+ "sourceNote": "Written freshly, thought for thought, from the oldest Hebrew, Greek, and Aramaic witnesses (the Masoretic Text with the Dead Sea Scrolls, the Septuagint, and the Samaritan Pentateuch). © 2026 Jose Santiago. All rights reserved.",
+ "chapters": [
+  {
+   "n": 1,
+   "paras": [
+    1,
+    3,
+    6,
+    8,
+    17
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "In the third year that Jehoiakim ruled Judah,{a} King Nebuchadnezzar of Babylon marched to Jerusalem and surrounded the city."
+    },
+    {
+     "v": 2,
+     "text": "The Lord let Nebuchadnezzar defeat King Jehoiakim of Judah. The king of Babylon also took some of the cups and bowls from God’s temple. He carried them to the land of Shinar{b} and put them in the treasury of his god’s temple."
+    },
+    {
+     "v": 3,
+     "text": "Then the king ordered Ashpenaz, the head of his palace officials,{c} to bring in some young Israelites from the royal family and from the noble families."
+    },
+    {
+     "v": 4,
+     "text": "They had to be healthy and handsome young men, with no physical flaws. They had to be skilled in every kind of learning, full of knowledge, quick to understand, and fit to serve in the king’s palace. Ashpenaz was to teach them to read and speak the language of the Chaldeans.{d}"
+    },
+    {
+     "v": 5,
+     "text": "Each day the king set aside part of his own rich food and wine for them. They would study for three years. Then they would take their places in the king’s presence."
+    },
+    {
+     "v": 6,
+     "text": "Four of those chosen came from Judah’s tribe: Daniel, Hananiah, Mishael, and Azariah.{e}"
+    },
+    {
+     "v": 7,
+     "text": "The chief official gave them Babylonian names. He named Daniel Belteshazzar. He named Hananiah Shadrach, Mishael Meshach, and Azariah Abednego.{f}"
+    },
+    {
+     "v": 8,
+     "text": "Daniel, however, made up his mind that the king’s rich food and wine would not defile him. He begged the chief official to excuse him from them."
+    },
+    {
+     "v": 9,
+     "text": "God had made the chief official kind to Daniel and ready to show him mercy."
+    },
+    {
+     "v": 10,
+     "text": "Still, the official told Daniel, “My master the king chose your food and drink, and I fear him. Suppose he notices that your faces look thin next to those of other boys your age. The king could have me killed for it.”"
+    },
+    {
+     "v": 11,
+     "text": "Daniel then went to the guard{g} who had been placed over him and his three friends, Hananiah, Mishael, and Azariah."
+    },
+    {
+     "v": 12,
+     "text": "“Try an experiment with us, your servants, for ten days,” he said. “Let vegetables be our meals and water our drink."
+    },
+    {
+     "v": 13,
+     "text": "Then compare our faces with the faces of the young men who eat the king’s rich food. Decide how to treat us from what you see.”"
+    },
+    {
+     "v": 14,
+     "text": "The guard agreed to this plan and tried it out for ten days."
+    },
+    {
+     "v": 15,
+     "text": "When the ten days ended, Daniel and his friends looked stronger and healthier than all the young men eating the king’s food."
+    },
+    {
+     "v": 16,
+     "text": "After that, the guard went on removing their rich food and wine and served them vegetables."
+    },
+    {
+     "v": 17,
+     "text": "To these four young men God gave knowledge and skill in all kinds of books and learning. Daniel also had the gift of understanding every sort of vision and dream."
+    },
+    {
+     "v": 18,
+     "text": "When the time set by the king was over, the chief official presented all the young men to Nebuchadnezzar."
+    },
+    {
+     "v": 19,
+     "text": "The king spoke with each of them. None was a match for Daniel, Hananiah, Mishael, and Azariah. So these four entered the king’s service."
+    },
+    {
+     "v": 20,
+     "text": "Every time the king asked a question that called for wisdom or understanding, he found these four ten times better than all the magicians and fortune tellers in his whole kingdom."
+    },
+    {
+     "v": 21,
+     "text": "Daniel was still there when King Cyrus began to rule.{h}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "1:1",
+     "text": "This is 605 BC. Jeremiah 25:1 and 46:2 say Nebuchadnezzar’s first year was Jehoiakim’s fourth year. The two ways of counting a king’s first year probably explain the difference."
+    },
+    {
+     "m": "b",
+     "ref": "1:2",
+     "text": "Shinar is an old name for Babylonia (Genesis 10:10; 11:2)."
+    },
+    {
+     "m": "c",
+     "ref": "1:3",
+     "text": "Hebrew: saris. This word often means a eunuch, but it also means a high palace official in general. The word is used the same way in the verses that follow."
+    },
+    {
+     "m": "d",
+     "ref": "1:4",
+     "text": "In Daniel, “Chaldeans” usually means a group of learned men who studied the stars and told fortunes. It also means the people of Babylonia."
+    },
+    {
+     "m": "e",
+     "ref": "1:6",
+     "text": "The Hebrew names mean: Daniel, “God is my judge”; Hananiah, “Yahweh has been kind”; Mishael, probably “Who is what God is?”; Azariah, “Yahweh has helped.”"
+    },
+    {
+     "m": "f",
+     "ref": "1:7",
+     "text": "These new names are Babylonian. Belteshazzar probably means “protect the king’s life” (Daniel 4:8 ties it to the god Bel). The meanings of Shadrach and Meshach are not certain. Abednego probably means “servant of Nabu,” a Babylonian god."
+    },
+    {
+     "m": "g",
+     "ref": "1:11",
+     "text": "Hebrew: melzar. This is probably a job title, “guard” or “steward,” and not a name."
+    },
+    {
+     "m": "h",
+     "ref": "1:21",
+     "text": "This is 539 BC, when Cyrus of Persia captured Babylon. Daniel 10:1 tells of a vision in Cyrus’s third year."
+    }
+   ],
+   "subheads": {
+    "1": "Daniel Taken to Babylon",
+    "8": "Daniel Chooses Not to Eat the King’s Food",
+    "17": "God Gives Wisdom"
+   }
+  },
+  {
+   "n": 2,
+   "paras": [
+    1,
+    14,
+    24,
+    31,
+    36,
+    46
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Nebuchadnezzar had dreams in the second year of his rule.{a} They shook him so much that sleep was gone. His mind would not rest."
+    },
+    {
+     "v": 2,
+     "text": "The king sent for his magicians, fortune tellers, sorcerers, and Chaldeans, so that they could explain what he had dreamed. They arrived and stood in front of him."
+    },
+    {
+     "v": 3,
+     "text": "“A dream has upset me,” he told them. “I cannot rest until I know what it was.”"
+    },
+    {
+     "v": 4,
+     "text": "The Chaldeans replied in Aramaic:{b} “Long live the king! Describe the dream to your servants, and we will give the meaning.”"
+    },
+    {
+     "v": 5,
+     "text": "But the king replied, “My mind is made up:{c} you must give me the dream itself and its meaning. If you fail, you will be chopped to pieces, and your homes will become heaps of rubbish."
+    },
+    {
+     "v": 6,
+     "text": "Give me both, and you will receive gifts, rewards, and high honor from me. Now name the dream and explain it.”"
+    },
+    {
+     "v": 7,
+     "text": "Once more they said, “Let the king describe the dream to his servants, and we will give its meaning.”"
+    },
+    {
+     "v": 8,
+     "text": "The king shot back, “I can see you are trying to buy time, because you know I will not change my mind."
+    },
+    {
+     "v": 9,
+     "text": "If the dream is not told to me, one punishment awaits you all. You have made a deal to feed me lies and empty words until the situation changes. Name the dream. Then I will believe you can give its meaning.”"
+    },
+    {
+     "v": 10,
+     "text": "The Chaldeans said to the king, “No person on earth can do what the king demands! Never has any king, great or strong, asked such a thing from a magician, fortune teller, or Chaldean."
+    },
+    {
+     "v": 11,
+     "text": "The king demands something very hard. Only the gods could show it to the king, and they do not live with humans.”"
+    },
+    {
+     "v": 12,
+     "text": "The king flew into a terrible rage. He ordered the death of every wise man in Babylon."
+    },
+    {
+     "v": 13,
+     "text": "The order was sent out, and the wise men were to be put to death. The king’s men also searched for Daniel and his friends, to kill them as well."
+    },
+    {
+     "v": 14,
+     "text": "Arioch commanded the king’s guard, and he was on his way to kill Babylon’s wise men. Daniel stopped him and spoke carefully and sensibly."
+    },
+    {
+     "v": 15,
+     "text": "“Why is the king’s order so harsh?” he asked the king’s officer. Arioch explained everything to Daniel."
+    },
+    {
+     "v": 16,
+     "text": "Daniel went to the king and asked for time, promising to explain the dream to him."
+    },
+    {
+     "v": 17,
+     "text": "Then Daniel went home and gave the news to his three friends. Their names were Hananiah, Mishael, and Azariah."
+    },
+    {
+     "v": 18,
+     "text": "He asked them to plead with the God of heaven to show mercy over this mystery. Then Daniel and his friends would not die along with the rest of Babylon’s wise men."
+    },
+    {
+     "v": 19,
+     "text": "During the night, the mystery was shown to Daniel in a vision. Daniel praised the God of heaven."
+    },
+    {
+     "v": 20,
+     "text": "He said:\n“May God’s name be praised\nforever and ever.\nWisdom and power belong to Him alone."
+    },
+    {
+     "v": 21,
+     "text": "He changes the times and the seasons.\nKings fall at His word, and kings rise at His word.\nTo the wise He gives wisdom,\nand to the thoughtful He gives knowledge."
+    },
+    {
+     "v": 22,
+     "text": "He lifts the cover from deep and hidden things.\nHe sees what hides in the darkness,\nand light stays with Him."
+    },
+    {
+     "v": 23,
+     "text": "You are the God of my fathers.\nI thank You and I honor You.\nYou gave me wisdom and strength.\nNow You have answered our prayer\nand shown us the king’s secret.”"
+    },
+    {
+     "v": 24,
+     "text": "Daniel then went to Arioch, whom the king had picked to kill Babylon’s wise men. He said, “Please do not kill the wise men. Take me in front of the king, and I will explain the dream.”"
+    },
+    {
+     "v": 25,
+     "text": "Arioch hurried Daniel to the king. “Among the captives from Judah,” he said, “I have found a man who can give the king the meaning.”"
+    },
+    {
+     "v": 26,
+     "text": "The king spoke to Daniel, who was also called Belteshazzar. “Do you have the power to give me the dream I saw, along with its meaning?”"
+    },
+    {
+     "v": 27,
+     "text": "Daniel said, “No wise man, sorcerer, magician, or stargazer can solve the king’s puzzle."
+    },
+    {
+     "v": 28,
+     "text": "But in heaven there is a God who makes mysteries known. He has told King Nebuchadnezzar what is going to happen in the last days. Here is the dream, and the pictures in your mind as you lay in your bed."
+    },
+    {
+     "v": 29,
+     "text": "Your Majesty, while you lay on your bed, you wondered about the future. The One who unveils mysteries has shown you what is coming."
+    },
+    {
+     "v": 30,
+     "text": "This mystery was not shown to me because I have more wisdom than anyone else living. It was shown so that the king would learn the meaning, and so that you would understand your own thoughts."
+    },
+    {
+     "v": 31,
+     "text": "“Your Majesty, you saw a huge statue standing before you. It was very tall and dazzling, and it was terrifying to look at."
+    },
+    {
+     "v": 32,
+     "text": "Pure gold formed its head. Silver formed its chest and arms. Bronze formed its belly and hips."
+    },
+    {
+     "v": 33,
+     "text": "Its legs were iron, and its feet were a mix of iron and clay.{d}"
+    },
+    {
+     "v": 34,
+     "text": "As you watched, a stone broke loose, though no hand touched it. It struck the statue on its feet of iron and clay, and they broke into pieces."
+    },
+    {
+     "v": 35,
+     "text": "Then everything fell apart at once: the iron, clay, bronze, silver, and gold. They turned into dust like the chaff that blows off a threshing floor in summer. The wind swept it all away without a trace. But the stone that struck the statue became a giant mountain, and it covered the whole earth."
+    },
+    {
+     "v": 36,
+     "text": "“So that is your dream. Now its meaning will be given to the king."
+    },
+    {
+     "v": 37,
+     "text": "Your Majesty, you rule over every other king. The God of heaven gave you your kingdom, your power, your strength, and your glory."
+    },
+    {
+     "v": 38,
+     "text": "He placed in your hands people, animals, and birds, wherever they live. You rule over all of them. You are the head of gold."
+    },
+    {
+     "v": 39,
+     "text": "After you, a different kingdom will rise that is lesser than yours. A third kingdom, of bronze, will follow and rule the whole earth."
+    },
+    {
+     "v": 40,
+     "text": "Then a fourth kingdom will come, strong as iron. Iron shatters and crushes everything. As iron smashes things, so this kingdom will shatter and crush all the others.{e}"
+    },
+    {
+     "v": 41,
+     "text": "You saw feet and toes of part clay and part iron. That means the kingdom will be split. Yet it will keep some of the toughness of iron, because you saw iron mixed with wet clay."
+    },
+    {
+     "v": 42,
+     "text": "The toes were part iron and part clay, so the kingdom will be part strong and part fragile."
+    },
+    {
+     "v": 43,
+     "text": "You saw iron mixed with wet clay. So the people will join together through marriages,{f} but they will not stay united, just as iron and clay do not stick together."
+    },
+    {
+     "v": 44,
+     "text": "In the days of those kings, the God of heaven will set up a kingdom that can never be destroyed. It will never be passed on to a different nation. It will grind all those kingdoms to nothing and end them, yet it will last forever."
+    },
+    {
+     "v": 45,
+     "text": "This is what the stone cut from the mountain without human hands means. Iron, bronze, clay, silver, and gold were all smashed by it. Our great God has now shown the king what will take place later. The dream is true, and you can trust its meaning.”"
+    },
+    {
+     "v": 46,
+     "text": "King Nebuchadnezzar then fell on his face before Daniel and paid him honor. He commanded that a gift of grain and incense be offered to Daniel."
+    },
+    {
+     "v": 47,
+     "text": "The king told Daniel, “Your God is surely the greatest God and the Lord of kings. He makes mysteries known, since you have shown me this one.”"
+    },
+    {
+     "v": 48,
+     "text": "The king gave Daniel a high rank and many rich gifts. He placed Daniel over the entire province of Babylon and made him head of all its wise men."
+    },
+    {
+     "v": 49,
+     "text": "Daniel asked the king for a favor, and the king gave Shadrach, Meshach, and Abednego charge of the province’s business. Daniel himself remained at the king’s court.{g}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "2:1",
+     "text": "This is about 603 BC. It seems to fall within the three years of training in 1:5. Part-years may have been counted as whole years. The events of 1:18 to 20 need not come after 2:1."
+    },
+    {
+     "m": "b",
+     "ref": "2:4",
+     "text": "Hebrew: aramit, “in Aramaic.” From here through 7:28 the book is written in Aramaic, the common language of the Babylonian and Persian empires. At 8:1 it returns to Hebrew."
+    },
+    {
+     "m": "c",
+     "ref": "2:5",
+     "text": "Or “The word has gone out from me.” The Aramaic word azda comes from Persian. It means “certain” or “publicly known.”"
+    },
+    {
+     "m": "d",
+     "ref": "2:33",
+     "text": "Aramaic: khasaf, which means baked clay or pottery. The same word is used in verses 34 to 45."
+    },
+    {
+     "m": "e",
+     "ref": "2:40",
+     "text": "People disagree about who the four kingdoms are. A traditional Jewish and Christian view is Babylon, Media-Persia, Greece, and Rome. Many modern scholars say Babylon, Media, Persia, and Greece."
+    },
+    {
+     "m": "f",
+     "ref": "2:43",
+     "text": "Aramaic: “by the seed of men.” It probably means marriages between ruling families (see 11:6 and 17)."
+    },
+    {
+     "m": "g",
+     "ref": "2:49",
+     "text": "Aramaic: “in the gate of the king.” The gate was the place where the king’s officials worked."
+    }
+   ],
+   "subheads": {
+    "1": "Nebuchadnezzar’s Dream",
+    "14": "Daniel Asks God for Help",
+    "24": "Daniel Tells the Dream",
+    "36": "What the Dream Means",
+    "46": "The King Honors Daniel"
+   }
+  },
+  {
+   "n": 3,
+   "paras": [
+    1,
+    8,
+    13,
+    19,
+    24,
+    28
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "King Nebuchadnezzar had a statue made of gold. It stood about 90 feet tall and measured 9 feet across.{a} He placed it on the plain of Dura in Babylon’s province."
+    },
+    {
+     "v": 2,
+     "text": "The king sent word to call together his top rulers, chiefs, governors, advisers, treasurers, judges, law officers, and all the other officials of the provinces. They were to come to the opening ceremony for the statue he had set up.{b}"
+    },
+    {
+     "v": 3,
+     "text": "So the rulers, chiefs, governors, advisers, treasurers, judges, law officers, and all the other officials of the provinces assembled for the opening of the statue. They stood in front of it."
+    },
+    {
+     "v": 4,
+     "text": "A herald shouted, “People of every nation and language, here is your order:"
+    },
+    {
+     "v": 5,
+     "text": "The moment you hear the horn, flute, lyre, zither, harp, bagpipe,{c} and music of every sort, you must kneel and worship the gold statue of King Nebuchadnezzar."
+    },
+    {
+     "v": 6,
+     "text": "Whoever refuses to kneel and worship will be tossed into a blazing furnace in that very hour.”"
+    },
+    {
+     "v": 7,
+     "text": "So when all the peoples heard the horn, flute, lyre, zither, harp, and every other kind of music, they all fell down and worshiped the gold statue. People from every nation and language did it."
+    },
+    {
+     "v": 8,
+     "text": "At that time some Chaldeans stepped forward and spoke evil against the Jews.{d}"
+    },
+    {
+     "v": 9,
+     "text": "Speaking to the king, they began, “Long may you live, O king!"
+    },
+    {
+     "v": 10,
+     "text": "Your Majesty, you issued a command. Everybody who hears the horn, flute, lyre, zither, harp, bagpipe, and music of every sort has to kneel and worship the gold statue."
+    },
+    {
+     "v": 11,
+     "text": "Anyone who refuses has to be thrown into a blazing furnace."
+    },
+    {
+     "v": 12,
+     "text": "But some Jews are in charge of the work in Babylon’s province, Your Majesty, because you put them there. Their names are Shadrach, Meshach, and Abednego. These men ignore you. Your gods get no service from them, and the gold statue you set up gets no worship from them.”"
+    },
+    {
+     "v": 13,
+     "text": "In a shaking rage, Nebuchadnezzar commanded that the three men be brought in. So they came and stood before the king."
+    },
+    {
+     "v": 14,
+     "text": "Nebuchadnezzar demanded, “Shadrach, Meshach, and Abednego, do you really refuse to serve my gods and refuse to worship the gold statue I set up?"
+    },
+    {
+     "v": 15,
+     "text": "Now listen. When the horn, flute, lyre, zither, harp, bagpipe, and every other instrument sounds, will you kneel and worship the statue I made? Then all will be well. But if you refuse, you will be thrown straight into the blazing furnace. Which god can pull you out of my hands?”"
+    },
+    {
+     "v": 16,
+     "text": "The three men answered the king, “Nebuchadnezzar, we have no reason to defend ourselves before you on this."
+    },
+    {
+     "v": 17,
+     "text": "If we are thrown in,{e} our God, whom we serve, is able to save us from the blazing furnace, and He will save us from your power, Your Majesty."
+    },
+    {
+     "v": 18,
+     "text": "Even if He does not, Your Majesty, understand this: we will never serve your gods, and the gold statue you set up will never get our worship.”"
+    },
+    {
+     "v": 19,
+     "text": "Nebuchadnezzar was boiling with fury at the three men, and his face twisted in anger. He gave an order to make the furnace seven times hotter than normal."
+    },
+    {
+     "v": 20,
+     "text": "Some of the strongest soldiers in his army were told to tie the three men up and throw them in."
+    },
+    {
+     "v": 21,
+     "text": "So the men were tied up in their robes, trousers, turbans, and other clothes,{f} and they were thrown into the blazing furnace."
+    },
+    {
+     "v": 22,
+     "text": "The king’s order was so strict, and the furnace was so hot, that the flames killed the soldiers who carried the three men."
+    },
+    {
+     "v": 23,
+     "text": "Shadrach, Meshach, and Abednego dropped, tied up, into the blazing furnace.{g}"
+    },
+    {
+     "v": 24,
+     "text": "Then King Nebuchadnezzar leaped up in shock. He asked his advisers, “We tied up three men and threw them into the fire, did we not?” “Yes, Your Majesty,” they replied."
+    },
+    {
+     "v": 25,
+     "text": "He said, “But look! Four men are walking about in the fire. They are untied, and nothing is hurting them. The fourth looks like a son of the gods!”{h}"
+    },
+    {
+     "v": 26,
+     "text": "Then Nebuchadnezzar moved close to the furnace door and called out, “Servants of the Most High God, Shadrach, Meshach, and Abednego, come out and come here!” And out of the fire they came."
+    },
+    {
+     "v": 27,
+     "text": "The rulers, chiefs, governors, and royal advisers crowded around and examined the three men. The fire had done nothing to their bodies. Their hair was not even singed. Their robes looked the same as before, and no smell of smoke clung to them."
+    },
+    {
+     "v": 28,
+     "text": "Nebuchadnezzar said, “Blessed be the God of Shadrach, Meshach, and Abednego! His angel came and rescued His servants. They put their trust in Him. They defied the king’s command and offered their lives, refusing to serve or worship any god but their own."
+    },
+    {
+     "v": 29,
+     "text": "So here is my law. Anyone from any people, nation, or language who says a word against the God of Shadrach, Meshach, and Abednego will be cut in pieces, and his house will become a heap of rubble. No other god is able to rescue people this way.”"
+    },
+    {
+     "v": 30,
+     "text": "After that, the king raised the three men to higher positions in the province of Babylon."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "3:1",
+     "text": "Aramaic: “sixty cubits high and six cubits wide” (about 27 meters by 2.7 meters). A tall and narrow shape like this may be a stone pillar or an obelisk with a statue on top."
+    },
+    {
+     "m": "b",
+     "ref": "3:2",
+     "text": "Several of these titles come from Persian, and what some of the officials did is not certain."
+    },
+    {
+     "m": "c",
+     "ref": "3:5",
+     "text": "The names of some of these instruments are not certain. Three of the names come from Greek words: qitharos, “lyre”; pesanterin, “harp”; and sumponyah, “bagpipe” or another instrument."
+    },
+    {
+     "m": "d",
+     "ref": "3:8",
+     "text": "Aramaic: “ate the pieces of the Jews.” This is a way of saying they spoke evil against them."
+    },
+    {
+     "m": "e",
+     "ref": "3:17",
+     "text": "Or “If our God whom we serve is able to save us, He will save us.” The Aramaic can be read either way."
+    },
+    {
+     "m": "f",
+     "ref": "3:21",
+     "text": "The exact meaning of these words for clothing is uncertain."
+    },
+    {
+     "m": "g",
+     "ref": "3:23",
+     "text": "At this point the Greek versions add 68 verses that are not in the Hebrew and Aramaic text. They include the Prayer of Azariah and the Song of the Three Young Men."
+    },
+    {
+     "m": "h",
+     "ref": "3:25",
+     "text": "Or “a divine being.” In Aramaic, “son of the gods” means a being of the divine kind. Verse 28 calls him an angel."
+    }
+   ],
+   "subheads": {
+    "1": "The Gold Statue",
+    "8": "Three Men Refuse to Bow",
+    "13": "Before the King",
+    "19": "The Blazing Furnace",
+    "24": "A Fourth Figure in the Fire",
+    "28": "The King Praises God"
+   }
+  },
+  {
+   "n": 4,
+   "paras": [
+    1,
+    4,
+    13,
+    19,
+    28,
+    34
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "King Nebuchadnezzar sends this letter to all peoples, nations, and languages everywhere on earth:{a} May you have much peace!"
+    },
+    {
+     "v": 2,
+     "text": "The Most High God has worked signs and wonders for me, and I am pleased to report them."
+    },
+    {
+     "v": 3,
+     "text": "How great His signs are!\nHow powerful His wonders!\nHis kingdom will never end,\nand His rule lasts from one age to the next."
+    },
+    {
+     "v": 4,
+     "text": "I, Nebuchadnezzar, was at home in my palace, relaxed and doing well."
+    },
+    {
+     "v": 5,
+     "text": "One night a dream terrified me. As I lay on my bed, the pictures in my head filled me with fear."
+    },
+    {
+     "v": 6,
+     "text": "So I gave an order that all of Babylon’s wise men be brought to me to explain the dream."
+    },
+    {
+     "v": 7,
+     "text": "The magicians, sorcerers, Chaldeans, and stargazers all came. I described my dream to them, but none could give its meaning."
+    },
+    {
+     "v": 8,
+     "text": "At last Daniel came in. His name is Belteshazzar, after my own god,{b} and the spirit of the holy gods is in him. To him I described my dream:"
+    },
+    {
+     "v": 9,
+     "text": "“Belteshazzar, chief of the magicians, I am sure the spirit of the holy gods lives in you and that no secret is too hard for you. Listen to my dream and give me its meaning."
+    },
+    {
+     "v": 10,
+     "text": "Lying on my bed, I saw this in my mind:\nIn the middle of the earth there was a tree.\nIt rose very high."
+    },
+    {
+     "v": 11,
+     "text": "That tree kept growing, large and strong.\nIts top reached the sky,\nand people at the far corners of the earth could see it."
+    },
+    {
+     "v": 12,
+     "text": "Its leaves were lovely, and it was loaded with fruit,\nenough food for all.\nWild animals rested in its shade.\nBirds made their nests in its limbs,\nand every living thing was fed from it."
+    },
+    {
+     "v": 13,
+     "text": "“As I lay on my bed, still watching the pictures in my mind, a watcher came down from heaven. He was a holy one.{c}"
+    },
+    {
+     "v": 14,
+     "text": "He cried out in a loud voice:\n‘Chop the tree down and cut its limbs off!\nShake off the leaves and scatter the fruit!\nMake the animals flee from beneath it\nand the birds leave its branches."
+    },
+    {
+     "v": 15,
+     "text": "But the stump with its roots must stay in the earth.\nPut a band of iron and bronze around it,\namong the grass of the field.\nLet him be drenched by the dew of heaven,\nand let him share the plants of the ground with the animals."
+    },
+    {
+     "v": 16,
+     "text": "Take away his human mind\nand give him the mind of an animal,\nuntil seven times{d} go by for him."
+    },
+    {
+     "v": 17,
+     "text": "The watchers have declared this verdict.\nThe holy ones have decided it,\nso that every living person will learn\nthat the Most High is ruler of human kingdoms.\nHe hands them to whomever He chooses,\neven the humblest of people.’"
+    },
+    {
+     "v": 18,
+     "text": "“That is the dream I, King Nebuchadnezzar, saw. Now you, Belteshazzar, must give its meaning. Not one of the wise men of my kingdom can do it. You alone can, since the spirit of the holy gods is in you.”"
+    },
+    {
+     "v": 19,
+     "text": "Daniel, who was also called Belteshazzar, was shocked and silent for a moment. His own thoughts frightened him. The king said, “Belteshazzar, do not let the dream or its meaning scare you.” Belteshazzar replied, “My lord, I wish this dream were about your haters, and its meaning were for your enemies!"
+    },
+    {
+     "v": 20,
+     "text": "The tree you saw was large and strong. Its top touched the sky, and everyone on earth could see it."
+    },
+    {
+     "v": 21,
+     "text": "It had lovely leaves and a great deal of fruit, food for everyone. Animals of the field lived in its shade, and birds of the sky nested in its limbs."
+    },
+    {
+     "v": 22,
+     "text": "Your Majesty, you are that tree! You have grown large and strong. Your greatness has grown up to the sky, and your rule reaches to the far ends of the earth."
+    },
+    {
+     "v": 23,
+     "text": "You saw a holy watcher coming down from heaven with this order: ‘Cut down the tree and destroy it. Leave only the stump with its roots in the earth, bound by a band of iron and bronze, among the grass of the field. Let the dew of heaven drench him, and let him share the animals’ food until seven times pass over him.’"
+    },
+    {
+     "v": 24,
+     "text": "Your Majesty, this is the meaning. The Most High has decided this, and it concerns you, my lord the king."
+    },
+    {
+     "v": 25,
+     "text": "You will be chased away from people. You will live among wild animals, eat grass as oxen do, and be soaked by the dew of heaven. Seven times will go by while this happens to you. After that, you will admit that the Most High is ruler over the kingdoms of people and hands them to anyone He chooses."
+    },
+    {
+     "v": 26,
+     "text": "The order to leave the stump and roots means your kingdom will be yours again, once you admit that Heaven{e} is the ruler."
+    },
+    {
+     "v": 27,
+     "text": "So, Your Majesty, I beg you to listen to my advice. Turn from your sins and do what is right. Turn from your evil and show kindness to the poor. Perhaps then your good fortune will last.”"
+    },
+    {
+     "v": 28,
+     "text": "All this happened to King Nebuchadnezzar."
+    },
+    {
+     "v": 29,
+     "text": "A year later, the king was strolling on the roof of his palace in Babylon."
+    },
+    {
+     "v": 30,
+     "text": "Looking over the city, he said, “Look at the great Babylon I have built! It is my royal city, made by my own mighty power to show my splendor.”"
+    },
+    {
+     "v": 31,
+     "text": "He was still speaking when a voice came from heaven: “King Nebuchadnezzar, hear this: your kingdom is gone from you!"
+    },
+    {
+     "v": 32,
+     "text": "People will chase you away. You will live among wild animals and eat grass as oxen do. Seven times will pass over you. After that, you will admit that the Most High is ruler over the kingdoms of people and hands them to anyone He chooses.”"
+    },
+    {
+     "v": 33,
+     "text": "In that same moment the words about Nebuchadnezzar came true. People chased him away. He ate grass as oxen do, and the dew of heaven drenched his body. His hair grew like eagle feathers, and his nails turned into claws like a bird’s.{f}"
+    },
+    {
+     "v": 34,
+     "text": "When the time was over, I, Nebuchadnezzar, lifted my eyes toward heaven, and my mind was clear again. I blessed the Most High. I gave praise and honor to the One who lives forever:\nHis rule never ends,\nand His kingdom goes on from age to age."
+    },
+    {
+     "v": 35,
+     "text": "All who live on earth\ncount for nothing before Him.\nHe acts as He wishes\namong the armies of heaven\nand the people of earth.\nNobody can stop Him\nor ask Him, “What are You doing?”"
+    },
+    {
+     "v": 36,
+     "text": "At that time my mind was clear again. For the sake of my kingdom, my honor and splendor came back to me. My advisers and nobles searched for me. I took my throne again, and I was made even more powerful than I had been."
+    },
+    {
+     "v": 37,
+     "text": "Now I, Nebuchadnezzar, praise the King of heaven. I honor Him and give Him glory. He is right in all He does, and fair in all His ways. He can humble anyone who lives in pride."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "4:1",
+     "text": "In the Aramaic text, verses 1 to 3 are 3:31 to 33, and verses 4 to 37 are 4:1 to 34. The Old Greek of this chapter is quite different from the Aramaic."
+    },
+    {
+     "m": "b",
+     "ref": "4:8",
+     "text": "That is, Bel (Marduk), the chief god of Babylon. The king links the name Belteshazzar to Bel because the names sound alike."
+    },
+    {
+     "m": "c",
+     "ref": "4:13",
+     "text": "Aramaic: ir, “one who stays awake.” It is a heavenly being who keeps watch. The word is used only in this chapter in the Bible."
+    },
+    {
+     "m": "d",
+     "ref": "4:16",
+     "text": "This was probably seven years, as the Old Greek says. The word means “periods of time.”"
+    },
+    {
+     "m": "e",
+     "ref": "4:26",
+     "text": "This is the only place in the Old Testament where “Heaven” stands for God. This use became common in later Jewish writing."
+    },
+    {
+     "m": "f",
+     "ref": "4:33",
+     "text": "No Babylonian record tells of this illness of Nebuchadnezzar. A broken Aramaic text found at Qumran, called the Prayer of Nabonidus, tells of a Babylonian king who was sick for seven years."
+    }
+   ],
+   "subheads": {
+    "1": "Nebuchadnezzar’s Letter",
+    "4": "The Dream of the Great Tree",
+    "19": "Daniel Explains the Dream",
+    "28": "The King Loses His Mind",
+    "34": "The King Praises the Most High"
+   }
+  },
+  {
+   "n": 5,
+   "paras": [
+    1,
+    5,
+    10,
+    13,
+    17,
+    25,
+    29
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "King Belshazzar{a} gave a huge banquet for a thousand of his nobles, and he drank wine with them all."
+    },
+    {
+     "v": 2,
+     "text": "Belshazzar was tasting his wine when he gave an order. Bring the gold and silver cups, he said, that Nebuchadnezzar his father took out of the Jerusalem temple! He wanted the king, his nobles, his wives, and the women of his palace{b} to drink from them."
+    },
+    {
+     "v": 3,
+     "text": "So the gold cups from God’s temple in Jerusalem were brought in. The king, his nobles, his wives, and the women of his palace drank from them."
+    },
+    {
+     "v": 4,
+     "text": "Wine in hand, they sang praises to idols. These gods were made of gold, silver, bronze, iron, wood, and stone."
+    },
+    {
+     "v": 5,
+     "text": "All at once, some fingers that looked like a man’s hand came out and began to write. They wrote on the white plaster of the palace wall, near the lamp stand. The king stared at the moving hand."
+    },
+    {
+     "v": 6,
+     "text": "His face turned pale, and fear filled his mind. His legs went weak, and his knees shook against each other."
+    },
+    {
+     "v": 7,
+     "text": "Calling out loudly, the king ordered the sorcerers, Chaldeans, and stargazers to come. To these Babylonian wise men he said, “Read this writing and explain it to me, and you will wear purple, get a gold chain for your neck, and rule as number three in the kingdom.”{c}"
+    },
+    {
+     "v": 8,
+     "text": "One by one the king’s wise men came in. None of them was able to read the words, and none could explain them to him."
+    },
+    {
+     "v": 9,
+     "text": "King Belshazzar grew even more frightened, and his face went pale. His nobles were confused."
+    },
+    {
+     "v": 10,
+     "text": "Hearing the king and his nobles, the queen{d} walked into the banquet hall. “May you live forever, O king!” she said. “Do not be afraid in your thoughts, and let your face keep its color."
+    },
+    {
+     "v": 11,
+     "text": "Your kingdom has a man with the spirit of the holy gods. When your father ruled, this man showed light, understanding, and wisdom like that of the gods. Your father, King Nebuchadnezzar, put him over all the magicians, sorcerers, Chaldeans, and stargazers. Yes, the king your father did that,"
+    },
+    {
+     "v": 12,
+     "text": "for Daniel, whom the king renamed Belteshazzar, had an excellent spirit. He knew how to explain dreams, solve riddles, and untie hard problems.{e} Send for Daniel, and he will give the meaning.”"
+    },
+    {
+     "v": 13,
+     "text": "They brought Daniel to the king, who asked him, “Are you the Daniel who was among the captives from Judah, the ones my father the king took away?"
+    },
+    {
+     "v": 14,
+     "text": "I have heard that the spirit of the gods is in you, and that you have light, understanding, and remarkable wisdom."
+    },
+    {
+     "v": 15,
+     "text": "Wise men and sorcerers stood here a moment ago. I wanted them to read this writing and give me its meaning, but they failed."
+    },
+    {
+     "v": 16,
+     "text": "People say you can give meanings and untie hard problems. So read the writing and explain it to me. Then you will be dressed in purple, with a gold chain on your neck, and you will rule as number three in the kingdom.”"
+    },
+    {
+     "v": 17,
+     "text": "Daniel replied to the king, “You may keep your gifts. Give your rewards to another man. Still, I will read the writing for the king and explain it."
+    },
+    {
+     "v": 18,
+     "text": "Your Majesty, the Most High God gave your father Nebuchadnezzar a kingdom, greatness, glory, and honor."
+    },
+    {
+     "v": 19,
+     "text": "Because God made him great, all peoples and languages shook with fear before him. Whoever he wished, he put to death. Whoever he wished, he let live. He promoted some people and brought others low, just as he pleased."
+    },
+    {
+     "v": 20,
+     "text": "But his heart became proud and hard, and he acted with arrogance. Then he lost his royal throne, and his glory was taken from him."
+    },
+    {
+     "v": 21,
+     "text": "People drove him away. His mind turned into the mind of an animal, and he lived among wild donkeys. Like an ox, he ate grass, and the dew of heaven drenched his body. At last he admitted that the Most High God rules the kingdoms of people and sets over them anyone He chooses."
+    },
+    {
+     "v": 22,
+     "text": "But you, Belshazzar, his son, did not make your heart humble, even though you knew all this."
+    },
+    {
+     "v": 23,
+     "text": "You made yourself great in the face of the Lord of heaven. His temple cups were carried in for you. With them you, your nobles, your wives, and the women of your palace drank wine. You gave praise to idols, to silver and gold ones, to bronze and iron ones, to wooden and stone ones. They see nothing, hear nothing, and know nothing. Yet God holds your breath in His hand and rules every path you walk, and you gave Him no honor."
+    },
+    {
+     "v": 24,
+     "text": "So God sent out that hand, and it wrote these words."
+    },
+    {
+     "v": 25,
+     "text": "Here are the words that were written: MENE, MENE, TEKEL, and PARSIN.{f}"
+    },
+    {
+     "v": 26,
+     "text": "Now hear what they mean. MENE: God has counted the days of your kingdom and ended them."
+    },
+    {
+     "v": 27,
+     "text": "TEKEL means that you have been weighed on the scales and found too light."
+    },
+    {
+     "v": 28,
+     "text": "PERES means that your kingdom is split up and given to the Medes and Persians.”"
+    },
+    {
+     "v": 29,
+     "text": "Then Belshazzar gave an order, and Daniel was dressed in purple and given a gold chain for his neck. A message was announced that he was now the third ruler in the kingdom."
+    },
+    {
+     "v": 30,
+     "text": "Belshazzar, king of the Chaldeans, was killed that same night."
+    },
+    {
+     "v": 31,
+     "text": "Darius the Mede then received the kingdom. He was about sixty-two years old.{g}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "5:1",
+     "text": "Belshazzar is the Babylonian name Bel-sharra-utsur, “Bel, protect the king.” He was the son of Nabonidus, the last king of Babylon. Belshazzar ruled in Babylon while his father was away in Arabia for many years. Nebuchadnezzar is called his “father” in the way Hebrew calls an earlier ruler a father."
+    },
+    {
+     "m": "b",
+     "ref": "5:2",
+     "text": "Aramaic: “his wives and his concubines.” A concubine was a woman who lived in the king’s house as a secondary wife."
+    },
+    {
+     "m": "c",
+     "ref": "5:7",
+     "text": "That is, third after Nabonidus and Belshazzar. Or “as one of three rulers” (see 6:2)."
+    },
+    {
+     "m": "d",
+     "ref": "5:10",
+     "text": "This was probably the queen mother, because the king’s wives were already at the feast (verses 2 and 3)."
+    },
+    {
+     "m": "e",
+     "ref": "5:12",
+     "text": "Aramaic: “loosen knots.” It may also hint at undoing spells. The same words are used in verse 16."
+    },
+    {
+     "m": "f",
+     "ref": "5:25",
+     "text": "These words are Aramaic names of weights or money: the mina (about 1¼ pounds or 570 grams), the shekel (about 0.4 ounce or 11.5 grams), and half-minas (peres, plural parsin). Daniel reads them as verbs: mene, “counted”; tekel, “weighed”; peres, “divided.” Peres also sounds like “Persians.”"
+    },
+    {
+     "m": "g",
+     "ref": "5:31",
+     "text": "This verse is 6:1 in the Aramaic text. Darius the Mede is not known from writings outside the Bible. Some identify him with Gubaru (Gobryas), the governor of Babylon under Cyrus, or with Cyrus himself."
+    }
+   ],
+   "subheads": {
+    "1": "A Feast and a Hand That Writes",
+    "10": "The Queen Remembers Daniel",
+    "17": "Daniel Reads the Writing",
+    "25": "The Words on the Wall"
+   }
+  },
+  {
+   "n": 6,
+   "paras": [
+    1,
+    4,
+    6,
+    10,
+    16,
+    19,
+    25
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Darius chose to appoint one hundred twenty governors{a} to rule across the whole kingdom."
+    },
+    {
+     "v": 2,
+     "text": "Over them he placed three administrators, and Daniel was one of the three. The governors reported to these men so that the king would not lose anything."
+    },
+    {
+     "v": 3,
+     "text": "Because Daniel had an excellent spirit, he soon did better work than the other administrators and governors. So the king was planning to give him charge over everything in the kingdom."
+    },
+    {
+     "v": 4,
+     "text": "Then the administrators and governors searched for a reason to accuse Daniel about how he ran the kingdom. But they found nothing. Daniel could be trusted, and they could not find a single mistake or fault in him."
+    },
+    {
+     "v": 5,
+     "text": "So the men said, “We will never find a charge against this Daniel. The only chance is something about the law of his God.”"
+    },
+    {
+     "v": 6,
+     "text": "The administrators and governors went to the king in a crowd{b} and said, “King Darius, may you live forever!"
+    },
+    {
+     "v": 7,
+     "text": "All the administrators, officials, governors, advisers, and rulers of the kingdom agree. The king should make a strict order. For thirty days, no one may pray to any god or person but you, O king. Whoever does will be thrown into the lions’ den."
+    },
+    {
+     "v": 8,
+     "text": "So now, O king, make the order and sign it in writing. Then it cannot be changed, as the law of the Medes and Persians says, and that law can never be canceled.”"
+    },
+    {
+     "v": 9,
+     "text": "So King Darius signed the written order."
+    },
+    {
+     "v": 10,
+     "text": "Daniel learned that the order was signed, and he went home. His upstairs room had windows facing Jerusalem. Three times each day he knelt down there, prayed, and thanked his God, just as he had always done.{c}"
+    },
+    {
+     "v": 11,
+     "text": "The men crowded in and found Daniel asking his God for help and praying."
+    },
+    {
+     "v": 12,
+     "text": "They went to the king and reminded him of his order. “Did you not sign an order?” they asked. “Anyone who prays to any god or person but you, O king, within thirty days will go into the lions’ den.” The king answered, “Yes. The order stands, since no one can cancel a law of the Medes and Persians.”"
+    },
+    {
+     "v": 13,
+     "text": "Then they told the king, “Daniel is one of the captives from Judah, yet he ignores you, O king, and the order you signed. Three times a day he still prays.”"
+    },
+    {
+     "v": 14,
+     "text": "Hearing this, the king became very troubled. He looked for some way to rescue Daniel and kept trying until sunset."
+    },
+    {
+     "v": 15,
+     "text": "But the men crowded in to the king again. “Know this, O king,” they said, “no order or law that a king makes can be changed, under the law of the Medes and Persians.”"
+    },
+    {
+     "v": 16,
+     "text": "At last the king gave the command. Daniel was brought out and dropped into the den of lions. The king told him, “Your God, whom you serve all the time, will rescue you!”"
+    },
+    {
+     "v": 17,
+     "text": "A large stone was rolled over the mouth of the den. The king stamped it with his own ring and the rings of his nobles, so that nothing could change Daniel’s fate."
+    },
+    {
+     "v": 18,
+     "text": "Back at the palace, the king ate nothing all night. He would have no entertainment{d} brought in, and sleep would not come."
+    },
+    {
+     "v": 19,
+     "text": "As soon as the sky grew light, the king rose and rushed to the den of lions."
+    },
+    {
+     "v": 20,
+     "text": "Coming close, he called out to Daniel in a sad voice. “Daniel, servant of the living God,” he said, “your God, whom you serve all the time, could He rescue you from the lions?”"
+    },
+    {
+     "v": 21,
+     "text": "Daniel answered the king, “Live forever, O king!"
+    },
+    {
+     "v": 22,
+     "text": "God sent His angel, and the angel shut the mouths of the lions. They did not hurt me, because God found me innocent. And I have done nothing wrong to you either, O king.”"
+    },
+    {
+     "v": 23,
+     "text": "The king was full of joy. He ordered Daniel to be lifted out of the den. When Daniel came up, there was no wound on him anywhere, since he had trusted his God."
+    },
+    {
+     "v": 24,
+     "text": "So the king gave a command. The men who had spoken against Daniel{e} were dragged in and thrown to the lions. Their wives and children went in with them. Before they hit the floor of the den, the lions grabbed them and crushed all their bones."
+    },
+    {
+     "v": 25,
+     "text": "Then King Darius wrote to all the peoples, nations, and languages everywhere on earth: “May you have great peace!"
+    },
+    {
+     "v": 26,
+     "text": "This is my order: in every part of my kingdom, people must tremble and fear the God of Daniel.\nHe is the living God,\nand He lasts forever.\nHis kingdom cannot be wiped out,\nand His rule has no end."
+    },
+    {
+     "v": 27,
+     "text": "He saves and rescues people.\nIn heaven and on earth,\nHe works signs and wonders.\nIt was He who rescued Daniel\nfrom the lions’ power.”"
+    },
+    {
+     "v": 28,
+     "text": "So Daniel did well while Darius was king, and also while Cyrus the Persian was king.{f}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "6:1",
+     "text": "Verses 1 to 28 are 6:2 to 29 in the Aramaic text. The number of regions under the Persian kings changed over time; compare Esther 1:1, which has 127 provinces."
+    },
+    {
+     "m": "b",
+     "ref": "6:6",
+     "text": "Or “came by agreement.” The same Aramaic word is used again in verses 11 and 15."
+    },
+    {
+     "m": "c",
+     "ref": "6:10",
+     "text": "For praying toward Jerusalem, compare 1 Kings 8:35, 44, 48. For prayer three times a day, compare Psalm 55:17."
+    },
+    {
+     "m": "d",
+     "ref": "6:18",
+     "text": "The meaning of the Aramaic word is unclear. Some think it means musicians, women of the palace, or food."
+    },
+    {
+     "m": "e",
+     "ref": "6:24",
+     "text": "Aramaic: “had eaten the pieces of Daniel,” meaning they had spoken against him. See the note at 3:8."
+    },
+    {
+     "m": "f",
+     "ref": "6:28",
+     "text": "Or “during the rule of Darius, that is, the rule of Cyrus the Persian.” See the note at 5:31."
+    }
+   ],
+   "subheads": {
+    "1": "Daniel Is Trusted",
+    "6": "The Trap",
+    "10": "Daniel Prays",
+    "16": "The Lions’ Den",
+    "25": "Darius Honors God"
+   }
+  },
+  {
+   "n": 7,
+   "paras": [
+    1,
+    9,
+    11,
+    13,
+    15,
+    19,
+    23,
+    28
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Belshazzar had been king of Babylon for one year{a} when Daniel dreamed. As he lay in bed, visions filled his mind. He wrote the dream down and gave the main points."
+    },
+    {
+     "v": 2,
+     "text": "Daniel said: “One night I looked into my vision, and the four winds of heaven were whipping up the great sea.{b}"
+    },
+    {
+     "v": 3,
+     "text": "Four huge beasts rose out of the water, and each one was different."
+    },
+    {
+     "v": 4,
+     "text": "A lion with eagle’s wings was the first. I kept looking until those wings were pulled off. Then the beast was lifted up and set on two feet, like a man, and a man’s heart was put in it."
+    },
+    {
+     "v": 5,
+     "text": "A second beast came next, and it was like a bear. One side of its body was higher than the other. Three ribs stuck out between the teeth in its mouth. A voice said to it, ‘Get up! Eat your fill of meat!’"
+    },
+    {
+     "v": 6,
+     "text": "Then another beast appeared, one that looked like a leopard. Four wings, like those of a bird, grew on its back. It also had four heads. The right to rule was handed to it."
+    },
+    {
+     "v": 7,
+     "text": "A fourth beast showed up in the night visions, too. Terror and dread came from it, and it was very strong. With big iron teeth it crushed its prey and swallowed it. Whatever was left, it trampled underfoot. It was not like the beasts before it, and it had ten horns."
+    },
+    {
+     "v": 8,
+     "text": "While I was thinking about those horns, a different horn came up among them, a little one. To make room for it, three of the older horns were torn out, roots and all. Like a man’s, this horn had eyes. It also had a mouth that bragged and boasted."
+    },
+    {
+     "v": 9,
+     "text": "“I kept watching\nas thrones were put in place.\nThe Ancient of Days{c} sat down on one.\nHe wore clothing white as snow,\nand His hair looked like clean wool.\nHis throne was made of flames,\nand its wheels were blazing fire."
+    },
+    {
+     "v": 10,
+     "text": "A stream of flames\npoured out from before Him.\nThousands and thousands were serving Him.\nTen thousand times ten thousand were standing in His presence.\nThe court sat to judge,\nand books were opened."
+    },
+    {
+     "v": 11,
+     "text": "“I went on watching, because the horn kept saying loud, proud things. Then the beast was killed. Its body was destroyed and thrown into the blazing fire."
+    },
+    {
+     "v": 12,
+     "text": "The rest of the beasts had their power to rule taken away, though each was given a little more time to live."
+    },
+    {
+     "v": 13,
+     "text": "“As the night visions went on,\nI saw a figure\nlike a son of man.{d}\nThe clouds of heaven carried Him along.\nHe walked up to the Ancient of Days,\nand they led Him in before Him."
+    },
+    {
+     "v": 14,
+     "text": "Rule, glory, and a kingdom\nwere handed to Him,\nso that all peoples, nations, and languages\nwould serve Him.\nHis rule will last forever\nand never fade.\nNo one will ever\ndestroy His kingdom."
+    },
+    {
+     "v": 15,
+     "text": "“I, Daniel, felt troubled inside me,{e} and the visions in my mind frightened me."
+    },
+    {
+     "v": 16,
+     "text": "Near me stood some attendants. I stepped up to one of them and begged him for the true meaning of all this. He told me and explained it:"
+    },
+    {
+     "v": 17,
+     "text": "‘The four huge beasts are four kings who will come up from the earth."
+    },
+    {
+     "v": 18,
+     "text": "After that, the holy people{f} of the Most High will take the kingdom. They will keep it forever, yes, forever and ever.’"
+    },
+    {
+     "v": 19,
+     "text": "“Next I wanted to learn about the fourth beast, the one unlike the rest. It was very frightening, with iron teeth and bronze claws. It crushed, ate, and trampled whatever was left."
+    },
+    {
+     "v": 20,
+     "text": "I wanted to know about its ten horns, too, and about the other horn that came up and caused three to fall. Eyes and a bragging mouth belonged to that horn, and it seemed greater than its neighbors."
+    },
+    {
+     "v": 21,
+     "text": "As I looked, this horn was fighting against God’s holy people and winning,"
+    },
+    {
+     "v": 22,
+     "text": "until the Ancient of Days came. Then the holy people of the Most High won their case, and the time came for them to receive the kingdom."
+    },
+    {
+     "v": 23,
+     "text": "“This is how he explained it:\n‘The fourth beast is a fourth kingdom to come on earth.\nUnlike every other kingdom,\nit will swallow the whole earth,\nstomp on it, and smash it to bits."
+    },
+    {
+     "v": 24,
+     "text": "The ten horns are ten kings\nthat will come out of this kingdom.\nAnother king will come after them,\nunlike the earlier ones.\nHe will bring three kings down."
+    },
+    {
+     "v": 25,
+     "text": "Against the Most High he will speak words of hatred.\nHe will wear out His holy people.\nHe will try to change the holy times and the laws,\nand for a time, times, and half a time,\nthe holy people will be in his hands.{g}"
+    },
+    {
+     "v": 26,
+     "text": "Then the court will sit,\nand he will lose his power.\nIt will be wiped out and ended for all time."
+    },
+    {
+     "v": 27,
+     "text": "Every kingdom under heaven has power and greatness.\nAll of that will be given to the holy people of the Most High.\nTheir kingdom is a kingdom without end,\nand every ruler will serve them and listen to them.’{h}"
+    },
+    {
+     "v": 28,
+     "text": "“That is the end of the matter. As for me, Daniel, my thoughts troubled me greatly, and my face turned pale. But I kept it to myself.”{i}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "7:1",
+     "text": "This was about 553 BC, if Belshazzar’s time as ruler is counted from when Nabonidus left for Teima. Chapters 7 to 12 tell visions that Daniel saw, and they are not in order of time with chapters 1 to 6."
+    },
+    {
+     "m": "b",
+     "ref": "7:2",
+     "text": "In the Bible the sea often stands for the powers of chaos that oppose God (compare Isaiah 27:1; Job 26:12)."
+    },
+    {
+     "m": "c",
+     "ref": "7:9",
+     "text": "Aramaic: “one advanced in days,” meaning an aged one. It pictures God as eternal and wise, the judge over all."
+    },
+    {
+     "m": "d",
+     "ref": "7:13",
+     "text": "Aramaic: “one like a human being.” Unlike the beasts from the sea, this one comes from heaven. Jesus often called Himself the Son of Man and pointed to this vision (compare Mark 14:62)."
+    },
+    {
+     "m": "e",
+     "ref": "7:15",
+     "text": "Aramaic: “in the middle of its sheath,” meaning inside my body."
+    },
+    {
+     "m": "f",
+     "ref": "7:18",
+     "text": "Probably God’s faithful people (compare verse 27, “the holy people of the Most High”). Some think it also includes angels."
+    },
+    {
+     "m": "g",
+     "ref": "7:25",
+     "text": "Probably three and a half years (compare 9:27; 12:7; Revelation 12:14). Aramaic: “a time, times, and half a time.”"
+    },
+    {
+     "m": "h",
+     "ref": "7:27",
+     "text": "Or “Their kingdom ... will serve and obey them,” meaning the people. The Aramaic word for “his” can also refer to the Most High."
+    },
+    {
+     "m": "i",
+     "ref": "7:28",
+     "text": "This ends the part written in Aramaic that began at 2:4. From 8:1 the book is written in Hebrew again."
+    }
+   ],
+   "subheads": {
+    "1": "Daniel’s Dream of Four Beasts",
+    "9": "The Ancient of Days",
+    "13": "One Like a Son of Man",
+    "15": "The Dream Is Explained"
+   }
+  },
+  {
+   "n": 8,
+   "paras": [
+    1,
+    5,
+    9,
+    15,
+    27
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "In the third year that King Belshazzar ruled, I, Daniel,{a} had another vision after the first one."
+    },
+    {
+     "v": 2,
+     "text": "In the vision, I was in Susa, the capital city of the land of Elam. Beside the Ulai Canal{b} I was standing."
+    },
+    {
+     "v": 3,
+     "text": "Lifting my eyes, I noticed a ram by the canal. Two long horns rose from its head. One was longer than the other, though the longer one had come up last."
+    },
+    {
+     "v": 4,
+     "text": "West, north, and south the ram pushed forward. No animal could face it, and no one could pull anything free from its power. Doing whatever it liked, it kept growing greater."
+    },
+    {
+     "v": 5,
+     "text": "While I was thinking about this, a male goat came from the west and crossed the whole earth without touching the ground. It had one large horn between its eyes."
+    },
+    {
+     "v": 6,
+     "text": "It came toward the two-horned ram that I had seen beside the canal, and it ran at the ram in a fierce rage."
+    },
+    {
+     "v": 7,
+     "text": "I saw it get close to the ram. Raging, it hit the ram and snapped both horns. The ram had no strength left to resist. Down to the ground the goat threw it, and trampled it. No one could save the ram."
+    },
+    {
+     "v": 8,
+     "text": "Very strong the goat became. Yet just when it was strongest, the large horn broke off. Four large horns grew where it had been, and they pointed in all four directions of the sky."
+    },
+    {
+     "v": 9,
+     "text": "Another horn, a little one,{c} sprang from one of those four and became huge. It spread south and east, and also toward the Beautiful Land."
+    },
+    {
+     "v": 10,
+     "text": "It rose up all the way to the heavenly army. Some of that army, and some of the stars, it flung down to earth and trampled."
+    },
+    {
+     "v": 11,
+     "text": "It made itself as great as the Prince of the army. It took away the daily burnt offering{d} that belonged to Him, and it knocked down His holy place."
+    },
+    {
+     "v": 12,
+     "text": "Because of sin, the army was handed over to the horn, along with the daily offering.{e} The horn threw truth to the ground, and it did what it wanted and succeeded."
+    },
+    {
+     "v": 13,
+     "text": "Then I heard one holy angel speaking. Another holy angel asked the one who was speaking, “How long will this vision last? It is about the daily burnt offering, the sin that brings ruin,{f} and the trampling of the holy place and the army.”"
+    },
+    {
+     "v": 14,
+     "text": "He told me,{g} “Two thousand three hundred evenings and mornings must pass. After that, the holy place will be set right.”"
+    },
+    {
+     "v": 15,
+     "text": "When I, Daniel, had watched this vision, I wanted to understand it. Right then, a figure that looked like a man was standing before me."
+    },
+    {
+     "v": 16,
+     "text": "I heard a man call out over the water of the Ulai: “Gabriel,{h} explain the vision to this man.”"
+    },
+    {
+     "v": 17,
+     "text": "Gabriel walked over to where I was standing. As he approached, terror took hold of me, and I dropped facedown on the ground. “Son of man,{i}” he said, “know this: the vision speaks of the end times.”"
+    },
+    {
+     "v": 18,
+     "text": "He was still speaking when a deep sleep came over me, and my face was in the dust. But his hand touched me and set me upright."
+    },
+    {
+     "v": 19,
+     "text": "“Let me show you,” he said, “what will come at the last stage of God’s anger. The vision is about the end, at the time God has chosen."
+    },
+    {
+     "v": 20,
+     "text": "The ram with two horns that you saw stands for the kings of Media and Persia."
+    },
+    {
+     "v": 21,
+     "text": "The shaggy goat stands for the king of Greece,{j} and the large horn between its eyes stands for the first king."
+    },
+    {
+     "v": 22,
+     "text": "The horn broke, and four took its place. This means four kingdoms will rise out of his nation, but none will have his strength."
+    },
+    {
+     "v": 23,
+     "text": "Near the end of their rule, when people have done the worst of their sin, a king will rise up. He will be fierce-looking{k} and good at tricks."
+    },
+    {
+     "v": 24,
+     "text": "Great will be his power, though it will not come from himself.{l} He will bring shocking ruin and succeed at everything he tries. Strong people will fall to him, and so will the holy people of God."
+    },
+    {
+     "v": 25,
+     "text": "Clever as he is, he will make lies work for him, and he will think he is great. Many who feel safe will be wiped out by him. He will even rise up against the Prince of princes, but his end will be a breaking that no human hand causes."
+    },
+    {
+     "v": 26,
+     "text": "The vision of the evenings and mornings that I told you about is true. But keep the vision secret, because it is about a time far away.”"
+    },
+    {
+     "v": 27,
+     "text": "I, Daniel, was worn out and sick for days. Then I got up and went back to the king’s business. But the vision left me shocked, and no one understood it.{m}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "8:1",
+     "text": "From here to the end of the book the text is in Hebrew. Old copies found at Qumran show that Daniel was read in both Hebrew and Aramaic."
+    },
+    {
+     "m": "b",
+     "ref": "8:2",
+     "text": "Or “the Ulai Gate.” Susa was the winter capital of the Persian kings (compare Nehemiah 1:1; Esther 1:2)."
+    },
+    {
+     "m": "c",
+     "ref": "8:9",
+     "text": "Most people think the little horn is Antiochus IV Epiphanes (175 to 164 BC), a Syrian-Greek king who attacked the Jews and their temple. Some also see in it a picture of later evil rulers."
+    },
+    {
+     "m": "d",
+     "ref": "8:11",
+     "text": "Hebrew: “the continual offering,” the burnt offering given each morning and evening in the temple (Exodus 29:38-42)."
+    },
+    {
+     "m": "e",
+     "ref": "8:12",
+     "text": "The Hebrew of this verse is very hard, so the meaning is uncertain."
+    },
+    {
+     "m": "f",
+     "ref": "8:13",
+     "text": "Hebrew: “the sin that makes desolate.” Compare “the hated thing that causes ruin” in 9:27, 11:31, and 12:11."
+    },
+    {
+     "m": "g",
+     "ref": "8:14",
+     "text": "Most Hebrew copies say “to me.” The Old Greek, Theodotion, and the Syriac say “to him.”"
+    },
+    {
+     "m": "h",
+     "ref": "8:16",
+     "text": "The name Gabriel means “God is my mighty one” or “man of God.” Gabriel and Michael (10:13) are the only angels named in the Old Testament."
+    },
+    {
+     "m": "i",
+     "ref": "8:17",
+     "text": "Hebrew: “son of Adam,” meaning a human being, as in Ezekiel."
+    },
+    {
+     "m": "j",
+     "ref": "8:21",
+     "text": "Hebrew: Yavan (Ionia), the usual Hebrew name for Greece. The first king is Alexander the Great (336 to 323 BC)."
+    },
+    {
+     "m": "k",
+     "ref": "8:23",
+     "text": "Hebrew: “strong of face,” meaning bold and shameless. “Good at tricks” is, word for word, “one who understands riddles.”"
+    },
+    {
+     "m": "l",
+     "ref": "8:24",
+     "text": "The words “but not by his own strength” may have been copied here by mistake from verse 22."
+    },
+    {
+     "m": "m",
+     "ref": "8:27",
+     "text": "Or “and did not understand it.”"
+    }
+   ],
+   "subheads": {
+    "1": "The Ram and the Goat",
+    "9": "The Little Horn",
+    "15": "Gabriel Explains the Vision"
+   }
+  },
+  {
+   "n": 9,
+   "paras": [
+    1,
+    3,
+    20,
+    24
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "Darius was the son of Ahasuerus.{a} By family he was a Mede, and he was made king over the land of the Chaldeans."
+    },
+    {
+     "v": 2,
+     "text": "During the first year of Darius, I, Daniel, was reading the holy books. In them I noticed the word that Yahweh gave to Jeremiah the prophet. It gave a number of years that Jerusalem would lie in ruins: seventy years.{b}"
+    },
+    {
+     "v": 3,
+     "text": "I turned to the Lord God to ask Him for help with prayer. I fasted, wore rough sackcloth, and sat in ashes."
+    },
+    {
+     "v": 4,
+     "text": "I prayed to Yahweh my God and confessed: “O Lord, You are great, and people stand in awe of You. To those who love You and obey Your commands, You keep Your promise and show Your love."
+    },
+    {
+     "v": 5,
+     "text": "We have sinned and done wrong. We have done evil and rebelled. We have walked away from Your commands and Your laws."
+    },
+    {
+     "v": 6,
+     "text": "Your servants the prophets spoke for You to everyone in the land, from kings and leaders to our fathers. But we would not listen to them."
+    },
+    {
+     "v": 7,
+     "text": "Lord, You are right, but we are covered with shame,{c} as we are today. This is true of the people of Judah, the people of Jerusalem, and all Israel, near and far, in every country where You scattered them because they were unfaithful to You."
+    },
+    {
+     "v": 8,
+     "text": "Yahweh, shame covers our faces, and the faces of our kings, our leaders, and our fathers, for we have sinned against You."
+    },
+    {
+     "v": 9,
+     "text": "Mercy and forgiveness belong to the Lord our God, even though we turned against Him."
+    },
+    {
+     "v": 10,
+     "text": "We did not obey Yahweh our God. We did not follow the teachings that He gave us by sending His servants the prophets."
+    },
+    {
+     "v": 11,
+     "text": "All Israel broke Your law. They turned away and would not listen to Your voice. So the curse and the oath written in the law of Moses, God’s servant, have fallen on us like rain,{d} because we sinned against Him."
+    },
+    {
+     "v": 12,
+     "text": "God did what He had said He would do to us and to our rulers.{e} He brought a terrible disaster on us. Nothing under all of heaven has ever been done like what was done to Jerusalem."
+    },
+    {
+     "v": 13,
+     "text": "Just as the law of Moses says, this whole disaster has come on us. Yet we have not asked Yahweh our God for His kindness. We have not turned from our sins or paid attention to Your truth."
+    },
+    {
+     "v": 14,
+     "text": "So Yahweh watched and waited, and then He sent the disaster on us. Everything Yahweh our God does is right, but we did not listen to Him."
+    },
+    {
+     "v": 15,
+     "text": "Now, Lord our God, Your strong hand brought Your people out of Egypt. You gained a famous name, and it is famous still. But we have sinned and done wrong."
+    },
+    {
+     "v": 16,
+     "text": "Lord, You always do what is right. Please turn Your hot anger away from Jerusalem, Your city and Your holy mountain. Our sins and our ancestors’ sins have made all the nations around us laugh at Jerusalem and at Your people."
+    },
+    {
+     "v": 17,
+     "text": "So now, our God, hear Your servant’s prayer and his cries for mercy. For the Lord’s sake,{f} let Your face shine on Your ruined holy place."
+    },
+    {
+     "v": 18,
+     "text": "My God, lean close and listen. Open Your eyes and see how we are ruined, and see the city that carries Your name. We do not ask You for help because we are good. We ask because Your mercy is so great."
+    },
+    {
+     "v": 19,
+     "text": "Lord, hear us! Lord, forgive us! Lord, listen and act! Do not wait, my God. Do it for Yourself, because Your city and Your people carry Your name.”"
+    },
+    {
+     "v": 20,
+     "text": "I was still speaking and praying. I told God about my sin and the sin of my people Israel. Before Yahweh my God, I begged for the holy mountain of my God."
+    },
+    {
+     "v": 21,
+     "text": "Gabriel, the man I had seen in the earlier vision, came flying quickly to me while I was still praying.{g} It was about the time of the evening offering."
+    },
+    {
+     "v": 22,
+     "text": "He helped me understand. “Daniel,” he said, “I have come to give you wisdom and understanding."
+    },
+    {
+     "v": 23,
+     "text": "An answer was given the moment you began to pray. I have come to tell you what it is, since God loves you dearly.{h} So listen to the answer and understand the vision:"
+    },
+    {
+     "v": 24,
+     "text": "“Seventy weeks{i} are set for your people and your holy city:\nto stop the rebelling,\nto put an end to sin,{j}\nto pay for the wrong,\nto bring in goodness that lasts forever,\nto seal up vision and prophecy,\nand to anoint the most holy place.{k}"
+    },
+    {
+     "v": 25,
+     "text": "Know this and understand it. Seven weeks will pass between the order to restore and rebuild Jerusalem and the coming of an anointed one, a prince.{l} For sixty-two weeks after that, the city will be built again, with streets and a ditch around it, but in hard times."
+    },
+    {
+     "v": 26,
+     "text": "An anointed one will be cut off after the sixty-two weeks and will be left with nothing.{m} The people of a coming prince will destroy the city and the holy place. Like a flood, the end will come. War will last until the end, and ruin has been decided."
+    },
+    {
+     "v": 27,
+     "text": "He will make a strong agreement with many people for one week. Halfway through the week, he will end the sacrifices and offerings. On the wing of a hated thing, one who ruins{n} will come, until the end that has been decided falls on the one who ruins.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "9:1",
+     "text": "Hebrew: Achashverosh, the name also used for Xerxes (Esther 1:1). For Darius the Mede, see the note at 5:31."
+    },
+    {
+     "m": "b",
+     "ref": "9:2",
+     "text": "See Jeremiah 25:11-12 and 29:10, and compare 2 Chronicles 36:21."
+    },
+    {
+     "m": "c",
+     "ref": "9:7",
+     "text": "Hebrew: “shame of face.” The same words are used in verse 8."
+    },
+    {
+     "m": "d",
+     "ref": "9:11",
+     "text": "See Leviticus 26:14-39 and Deuteronomy 28:15-68."
+    },
+    {
+     "m": "e",
+     "ref": "9:12",
+     "text": "Hebrew: “our judges who judged us.”"
+    },
+    {
+     "m": "f",
+     "ref": "9:17",
+     "text": "The Greek version of Theodotion says “for Your sake, Lord.”"
+    },
+    {
+     "m": "g",
+     "ref": "9:21",
+     "text": "Or “when I was very tired.” The Hebrew is unclear. The evening offering was made in the late afternoon."
+    },
+    {
+     "m": "h",
+     "ref": "9:23",
+     "text": "Hebrew: chamudot, “precious things, a treasure.” The same word is used at 10:11 and 10:19."
+    },
+    {
+     "m": "i",
+     "ref": "9:24",
+     "text": "Hebrew: shavuim shivim, “seventy sevens,” meaning seventy periods of seven. Most understand these as seven years each, which makes 490 years."
+    },
+    {
+     "m": "j",
+     "ref": "9:24",
+     "text": "The written Hebrew says “to seal up sin.” The reading tradition says “to bring sin to an end,” which is the reading used here."
+    },
+    {
+     "m": "k",
+     "ref": "9:24",
+     "text": "Or “a most holy one.” The Hebrew words qodesh qodashim, “holy of holies,” are used elsewhere for the temple’s most holy place, for the altar, and for holy things."
+    },
+    {
+     "m": "l",
+     "ref": "9:25",
+     "text": "Or “the Anointed One, the Prince” or “Messiah the Prince.” The Hebrew word mashiach means “anointed one.” Christians have long seen Jesus in this promise, though they explain the weeks in different ways."
+    },
+    {
+     "m": "m",
+     "ref": "9:26",
+     "text": "Or “and no one will be left for him.” Many see here the murder of the high priest Onias III in 171 BC. Many Christians see the death of Jesus the Messiah."
+    },
+    {
+     "m": "n",
+     "ref": "9:27",
+     "text": "Hebrew: shiqqutsim meshomem, “hated things that ruin.” Compare 11:31 and 12:11."
+    }
+   ],
+   "subheads": {
+    "1": "Daniel Reads Jeremiah",
+    "3": "Daniel’s Prayer",
+    "20": "Gabriel Brings an Answer",
+    "24": "Seventy Weeks"
+   }
+  },
+  {
+   "n": 10,
+   "paras": [
+    1,
+    2,
+    10,
+    15,
+    18
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "In the third year that Cyrus was king of Persia,{a} a message was shown to Daniel, who was called Belteshazzar. The message was true, and it was about a great struggle.{b} Daniel understood the message, and the meaning of the vision was made clear to him."
+    },
+    {
+     "v": 2,
+     "text": "At that time I, Daniel, spent three whole weeks in mourning."
+    },
+    {
+     "v": 3,
+     "text": "Rich food I never touched. Meat and wine stayed out of my mouth, and I used no oil on my skin until the three weeks ended."
+    },
+    {
+     "v": 4,
+     "text": "On April 24,{c} I was standing beside the great river, the Tigris.{d}"
+    },
+    {
+     "v": 5,
+     "text": "Lifting my eyes, I saw a man in linen clothes. Around his waist was a belt of fine gold from Uphaz.{e}"
+    },
+    {
+     "v": 6,
+     "text": "His body gleamed like a precious stone,{f} and lightning seemed to flash from his face. Blazing torches were his eyes, and his arms and legs shone like polished bronze. A roar like that of a huge crowd came with his words."
+    },
+    {
+     "v": 7,
+     "text": "Only I, Daniel, saw the vision. The men with me did not see it, but a great fear came over them, and they ran off to hide."
+    },
+    {
+     "v": 8,
+     "text": "So I was left alone to watch this great vision. My strength drained away, my face turned deathly pale,{g} and I could do nothing."
+    },
+    {
+     "v": 9,
+     "text": "I heard the sound of his words, and as I listened, deep sleep took me. I lay with my face to the earth."
+    },
+    {
+     "v": 10,
+     "text": "A hand touched me and lifted me up, shaking, onto my hands and knees."
+    },
+    {
+     "v": 11,
+     "text": "He said, “Daniel, God loves you very much. Hear the words I am about to say. Get up on your feet, for I was sent to you.” As he spoke, I rose, still shaking all over."
+    },
+    {
+     "v": 12,
+     "text": "“Daniel, you need not fear,” he said. “From the first day that you decided to understand and to humble yourself before your God, He has heard your words. Your words are why I am here."
+    },
+    {
+     "v": 13,
+     "text": "The prince over the kingdom of Persia{h} blocked my way for twenty-one days. Then Michael,{i} one of the chief princes, came to help me, since I had been held up there with the kings of Persia.{j}"
+    },
+    {
+     "v": 14,
+     "text": "Now I am here to help you understand what lies ahead for your people. The vision is about a time still to come.”"
+    },
+    {
+     "v": 15,
+     "text": "As he said these words, I lowered my face to the ground, and no words came out."
+    },
+    {
+     "v": 16,
+     "text": "Then a being with a human form touched my lips. I opened my mouth and answered the one before me. “Sir,” I said, “this vision has filled me with pain,{k} and my strength is gone."
+    },
+    {
+     "v": 17,
+     "text": "How could someone like me, your servant, talk with you, my lord? Strength is gone from me, and breath is hard to find.”"
+    },
+    {
+     "v": 18,
+     "text": "The one who looked like a man touched me once more and made me strong."
+    },
+    {
+     "v": 19,
+     "text": "“You are dearly loved, so do not be afraid,” he said. “Peace to you! Be strong, be strong!” While he spoke, I grew strong. I said, “Please speak, my lord, since you have given me strength.”"
+    },
+    {
+     "v": 20,
+     "text": "He asked, “Do you know why I came to you? I am about to go back and fight the prince of Persia. After I go, the prince of Greece will arrive."
+    },
+    {
+     "v": 21,
+     "text": "First, though, I will tell you the truth as it is written in the Book of Truth. Michael, your prince, is the only one who stands by my side against them."
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "10:1",
+     "text": "That is, 536 BC."
+    },
+    {
+     "m": "b",
+     "ref": "10:1",
+     "text": "Or “and about a great hardship.” Hebrew: tsava gadol, “a great army” or “hard service.”"
+    },
+    {
+     "m": "c",
+     "ref": "10:4",
+     "text": "Hebrew: “the first month,” Nisan, which is March to April. The fast in verses 2 and 3 took in Passover and the Feast of Unleavened Bread."
+    },
+    {
+     "m": "d",
+     "ref": "10:4",
+     "text": "Hebrew: Chiddekel. The Syriac says “the Euphrates,” which is usually called “the great river.”"
+    },
+    {
+     "m": "e",
+     "ref": "10:5",
+     "text": "An unknown place. It may be a copying mistake for Ophir (compare Jeremiah 10:9)."
+    },
+    {
+     "m": "f",
+     "ref": "10:6",
+     "text": "Hebrew: tarshish, a precious stone that is not known for sure, perhaps yellow jasper or topaz."
+    },
+    {
+     "m": "g",
+     "ref": "10:8",
+     "text": "Hebrew: “my splendor was turned on me to ruin.”"
+    },
+    {
+     "m": "h",
+     "ref": "10:13",
+     "text": "A heavenly being who stands for Persia, as Michael does for Israel (verse 21; 12:1). Compare Deuteronomy 32:8."
+    },
+    {
+     "m": "i",
+     "ref": "10:13",
+     "text": "The name Michael means “Who is like God?”"
+    },
+    {
+     "m": "j",
+     "ref": "10:13",
+     "text": "So the Hebrew. The Old Greek and Theodotion say “I left him there with the prince of the kingdom of Persia.”"
+    },
+    {
+     "m": "k",
+     "ref": "10:16",
+     "text": "Hebrew: “my pains are turned on me,” a word used for a woman’s pains in giving birth."
+    }
+   ],
+   "subheads": {
+    "1": "Daniel Sees a Heavenly Messenger",
+    "10": "The Messenger Speaks",
+    "15": "Daniel Is Made Strong"
+   }
+  },
+  {
+   "n": 11,
+   "paras": [
+    1,
+    5,
+    10,
+    21,
+    29,
+    36,
+    40
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“As for me, during the first year of Darius the Mede, I took my place beside him to back him up and keep him safe.{a}"
+    },
+    {
+     "v": 2,
+     "text": "Here is the truth, which I now reveal. Persia will have three more kings. A fourth will far outdo them in wealth, and when his money has made him strong, he will turn everyone against Greece.{b}"
+    },
+    {
+     "v": 3,
+     "text": "A mighty king will then arise, ruling an enormous kingdom and doing as he pleases.{c}"
+    },
+    {
+     "v": 4,
+     "text": "Right after he comes to power, though, his kingdom will break apart and split toward the four winds of heaven. His own children will not get it, and it will lack the power he held. Others will tear it up by the roots and take it."
+    },
+    {
+     "v": 5,
+     "text": "“Strength will come to the king of the south. One of his army leaders, however, will grow even stronger, and his own kingdom will be larger than the king’s.{d}"
+    },
+    {
+     "v": 6,
+     "text": "Years later the two sides will form an alliance. To seal a peace treaty, the daughter of the southern king will be sent to the northern king. Yet she will lose her power, and he and his strength will not last. She, her escorts, her child,{e} and the man who supported her will all be given up at that time."
+    },
+    {
+     "v": 7,
+     "text": "But a shoot from her family tree will rise in the king’s place.{f} He will attack the army, enter the northern king’s fort, and fight them, and he will win."
+    },
+    {
+     "v": 8,
+     "text": "Their gods, their metal idols, and their precious silver and gold will be carried off by him as loot to Egypt. For some years he will stay away from the northern king."
+    },
+    {
+     "v": 9,
+     "text": "After that, the northern king will invade the southern kingdom, but he will return home."
+    },
+    {
+     "v": 10,
+     "text": "“The sons of the northern king will go to war and gather a huge army. It will rush on like a flood and sweep through, then carry the fight again as far as the southern fort.{g}"
+    },
+    {
+     "v": 11,
+     "text": "The king of the south will be filled with rage and march out to fight the king of the north. The northern king will raise a huge army, but it will be handed over to his enemy.{h}"
+    },
+    {
+     "v": 12,
+     "text": "With that army hauled away, the southern king will grow proud. Thousands upon thousands he will strike down, yet he will not stay on top."
+    },
+    {
+     "v": 13,
+     "text": "The king of the north will raise another army, bigger than the first. After some years,{i} he will march out with a great army and a lot of supplies."
+    },
+    {
+     "v": 14,
+     "text": "“During those times, many will turn against the southern king. Violent men from your own people will rise up to make the vision come true, but they will trip and fall."
+    },
+    {
+     "v": 15,
+     "text": "Then the king of the north will come, build ramps against the walls, and capture a strong city. The armies of the south will not hold out. Even their best troops will have no strength to stand.{j}"
+    },
+    {
+     "v": 16,
+     "text": "The invader will do as he pleases, and no one will face him. In the Beautiful Land he will take up his position, holding destruction in his hand."
+    },
+    {
+     "v": 17,
+     "text": "Setting his mind on it, he will come with all the might of his kingdom. He will make an agreement with the southern king and give him a daughter as a wife{k} so as to ruin his kingdom.{l} Yet it will not hold or help him."
+    },
+    {
+     "v": 18,
+     "text": "Then he will turn to the lands by the sea and take many of them. But a commander will put an end to his pride and will make him pay for it.{m}"
+    },
+    {
+     "v": 19,
+     "text": "Then he will turn back toward the forts in his own country. There he will stumble and fall, and no one will find him again."
+    },
+    {
+     "v": 20,
+     "text": "“The next ruler will send out a tax collector to squeeze money from the glory of the kingdom.{n} But in a few days that ruler will be destroyed, though not in anger or in battle."
+    },
+    {
+     "v": 21,
+     "text": "“A hateful man{o} will take his place. He was never given the honor of being king. He will come when no one expects him and take the kingdom by tricks."
+    },
+    {
+     "v": 22,
+     "text": "Armies will be swept away before him like a flood and crushed, and so will the prince of the agreement.{p}"
+    },
+    {
+     "v": 23,
+     "text": "He will make a deal with someone, and then lie to him. With only a small group of people, he will grow strong."
+    },
+    {
+     "v": 24,
+     "text": "When no one is watching, he will enter the richest places in the land. He will do what neither his fathers nor his grandfathers did. He will hand out stolen goods and treasure to his followers. He will plan to attack forts, but only for a short time."
+    },
+    {
+     "v": 25,
+     "text": "“Using a large army, he will rouse his strength and courage against the king in the south. That king will fight back with a very large, mighty army, yet he will not hold out, since others will plot against him.{q}"
+    },
+    {
+     "v": 26,
+     "text": "Even those who eat at his table will destroy him. His army will be swept away, and many will fall dead."
+    },
+    {
+     "v": 27,
+     "text": "Both kings will have evil in mind. Seated at one table, they will lie to each other. Nothing will come of it, because the end waits for the time God has set."
+    },
+    {
+     "v": 28,
+     "text": "With great riches the northern king will head home. His heart will oppose the holy agreement. After carrying out his plans, he will return to his land.{r}"
+    },
+    {
+     "v": 29,
+     "text": "“At the time God has set, he will invade the south again. But this time it will not be like before."
+    },
+    {
+     "v": 30,
+     "text": "Ships from Kittim{s} will come against him, and he will lose heart and turn back. In fury he will strike out against the holy agreement. When he returns, he will favor those who have left the holy agreement."
+    },
+    {
+     "v": 31,
+     "text": "His soldiers will rise up and make the holy place, the fort of the temple, unclean. They will stop the daily burnt offering. Then they will set up the hated thing that brings ruin.{t}"
+    },
+    {
+     "v": 32,
+     "text": "By smooth talk he will lead into sin those who act wickedly against the agreement. But the people who know their God will be strong and act boldly."
+    },
+    {
+     "v": 33,
+     "text": "Many others will be taught by the wise among the people.{u} Yet for a time some of them will fall by sword and fire, or be taken captive and robbed."
+    },
+    {
+     "v": 34,
+     "text": "When they fall, they will get a little help.{v} But many will join them with false hearts."
+    },
+    {
+     "v": 35,
+     "text": "Some of the wise will fall, so that they will be tested, made clean, and made pure until the time of the end, which will still come at the time God has set."
+    },
+    {
+     "v": 36,
+     "text": "“The king will do as he pleases. He will make himself greater than every god and claim to be above all of them. Against the God of gods he will speak shocking words. He will succeed until the time of God’s anger has ended, for what has been decided must happen."
+    },
+    {
+     "v": 37,
+     "text": "The gods of his fathers mean nothing to him, and neither does the one women long for.{w} No god at all will he respect, since he will make himself greater than every one of them."
+    },
+    {
+     "v": 38,
+     "text": "Instead, he will honor a god of forts, a god his fathers never knew. To this god he will give gold and silver, jewels and costly gifts.{x}"
+    },
+    {
+     "v": 39,
+     "text": "With the help of a foreign god, he will attack the strongest forts. He will pile honor on those who accept him. He will put them in charge of many people and divide the land as a payment."
+    },
+    {
+     "v": 40,
+     "text": "“At the time of the end, the king of the south will fight him. The king of the north will rush at him with chariots, horsemen, and many ships. He will march into lands, flood over them, and sweep through.{y}"
+    },
+    {
+     "v": 41,
+     "text": "Into the Beautiful Land he will march, and many{z} will fall. But Edom, Moab, and the main part of Ammon will get away from him."
+    },
+    {
+     "v": 42,
+     "text": "He will reach out his hand against many lands, and Egypt will not escape."
+    },
+    {
+     "v": 43,
+     "text": "He will take control of the hidden gold and silver and all the precious things of Egypt. The Libyans and the Cushites{aa} will follow behind him."
+    },
+    {
+     "v": 44,
+     "text": "Reports from the east and the north will alarm him. Raging, he will go out to wipe out and destroy many."
+    },
+    {
+     "v": 45,
+     "text": "Between the sea and the beautiful holy mountain he will pitch his royal tents. Still, he will come to his end, and no one will come to his help.”"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "11:1",
+     "text": "The Hebrew is abrupt. “Him” is probably Michael (10:21). The Old Greek and Theodotion say “in the first year of Cyrus.”"
+    },
+    {
+     "m": "b",
+     "ref": "11:2",
+     "text": "The fourth king is probably Xerxes I (486 to 465 BC), who attacked Greece in 480 BC."
+    },
+    {
+     "m": "c",
+     "ref": "11:3",
+     "text": "This is Alexander the Great."
+    },
+    {
+     "m": "d",
+     "ref": "11:5",
+     "text": "This is Ptolemy I of Egypt and Seleucus I, a former general of Alexander, who started the Seleucid kingdom."
+    },
+    {
+     "m": "e",
+     "ref": "11:6",
+     "text": "So the old translations. The Hebrew says “the one who fathered her.” This is Berenice, daughter of Ptolemy II, who married Antiochus II in 252 BC."
+    },
+    {
+     "m": "f",
+     "ref": "11:7",
+     "text": "This is Ptolemy III, brother of Berenice, who invaded the Seleucid kingdom in 246 BC."
+    },
+    {
+     "m": "g",
+     "ref": "11:10",
+     "text": "These are the sons of Seleucus II: Seleucus III and Antiochus III “the Great.”"
+    },
+    {
+     "m": "h",
+     "ref": "11:11",
+     "text": "This is the battle of Raphia in 217 BC, where Ptolemy IV beat Antiochus III."
+    },
+    {
+     "m": "i",
+     "ref": "11:13",
+     "text": "Hebrew: “at the end of the times, years.”"
+    },
+    {
+     "m": "j",
+     "ref": "11:15",
+     "text": "This is probably the capture of Sidon by Antiochus III around 199 BC."
+    },
+    {
+     "m": "k",
+     "ref": "11:17",
+     "text": "Hebrew: “the daughter of women.” Antiochus III gave his daughter Cleopatra I to Ptolemy V in marriage in 193 BC."
+    },
+    {
+     "m": "l",
+     "ref": "11:17",
+     "text": "Or “to destroy him.” The Hebrew word for word is “to destroy her.”"
+    },
+    {
+     "m": "m",
+     "ref": "11:18",
+     "text": "The Roman leader Lucius Scipio beat Antiochus III at Magnesia in 190 BC. The Hebrew of the last part of this verse is not clear."
+    },
+    {
+     "m": "n",
+     "ref": "11:20",
+     "text": "This is Seleucus IV (187 to 175 BC). His officer Heliodorus tried to take the temple treasure (2 Maccabees 3)."
+    },
+    {
+     "m": "o",
+     "ref": "11:21",
+     "text": "This is Antiochus IV Epiphanes (175 to 164 BC), who took the throne from the true heir, his nephew."
+    },
+    {
+     "m": "p",
+     "ref": "11:22",
+     "text": "This is probably the high priest Onias III, who lost his office in 175 BC and was murdered in 171 BC (compare 9:26)."
+    },
+    {
+     "m": "q",
+     "ref": "11:25",
+     "text": "This is the first attack of Antiochus IV on Egypt (170 to 169 BC) against Ptolemy VI."
+    },
+    {
+     "m": "r",
+     "ref": "11:28",
+     "text": "In 169 BC Antiochus robbed the temple in Jerusalem (1 Maccabees 1:20-24)."
+    },
+    {
+     "m": "s",
+     "ref": "11:30",
+     "text": "Kittim first meant Cyprus, then the lands to the west. Here it means the Romans, whose messenger Popilius ordered Antiochus out of Egypt in 168 BC."
+    },
+    {
+     "m": "t",
+     "ref": "11:31",
+     "text": "Hebrew: hashshiqquts meshomem. See the note at 9:27, and compare 8:13; 12:11; 1 Maccabees 1:54; Matthew 24:15."
+    },
+    {
+     "m": "u",
+     "ref": "11:33",
+     "text": "Hebrew: maskilim, “those who have insight” or “who make others wise.” The same word is used in verse 35 and at 12:3 and 12:10."
+    },
+    {
+     "m": "v",
+     "ref": "11:34",
+     "text": "This is often taken as the Maccabee revolt, which began in 167 BC."
+    },
+    {
+     "m": "w",
+     "ref": "11:37",
+     "text": "This is probably the god Tammuz-Adonis (compare Ezekiel 8:14)."
+    },
+    {
+     "m": "x",
+     "ref": "11:38",
+     "text": "This is probably Olympian Zeus, whom Antiochus honored, or Jupiter Capitolinus of Rome."
+    },
+    {
+     "m": "y",
+     "ref": "11:40",
+     "text": "Verses 40 to 45 do not match any known events from the last years of Antiochus, who died in Persia in 164 BC. Many readers see here the end times."
+    },
+    {
+     "m": "z",
+     "ref": "11:41",
+     "text": "Or, with a small change in the vowels, “tens of thousands.”"
+    },
+    {
+     "m": "aa",
+     "ref": "11:43",
+     "text": "That is, the people of the upper Nile region (ancient Nubia)."
+    }
+   ],
+   "subheads": {
+    "1": "Kings of the South and the North",
+    "21": "A Cruel King Rises",
+    "36": "The King Who Exalts Himself",
+    "40": "The Time of the End"
+   }
+  },
+  {
+   "n": 12,
+   "paras": [
+    1,
+    5
+   ],
+   "verses": [
+    {
+     "v": 1,
+     "text": "“In that day Michael will stand up.\nHe is the great prince who watches over your people.\nTrouble will come,\nworse than any since nations began.\nYet in that day your people will be saved,\nall those whose names are written in the book."
+    },
+    {
+     "v": 2,
+     "text": "Many who lie sleeping in the dust of the earth will wake.\nSome will rise to endless life,\nand some to endless shame and disgrace.{a}"
+    },
+    {
+     "v": 3,
+     "text": "The wise will glow\nas brightly as the sky above,{b}\nand those who turn many to what is right\nwill glow like the stars for all time."
+    },
+    {
+     "v": 4,
+     "text": "As for you, Daniel, shut up these words and seal the book until the time of the end. People will rush about, and knowledge will grow.”{c}"
+    },
+    {
+     "v": 5,
+     "text": "Then I, Daniel, looked, and there were two others standing there. One was on this bank of the river, and one was on the other bank."
+    },
+    {
+     "v": 6,
+     "text": "One of them spoke to the man in linen, who was above the waters of the river. “How long until these amazing things come to an end?” he asked."
+    },
+    {
+     "v": 7,
+     "text": "The man in linen, who was above the river’s waters, raised both hands to heaven. Then he made an oath in the name of the One who lives forever: it would last three and a half years.{d} Once the power of the holy people has been completely broken, all these things will be over."
+    },
+    {
+     "v": 8,
+     "text": "His words reached my ears, but I could not understand them. So I asked, “My lord, how will all this turn out?”"
+    },
+    {
+     "v": 9,
+     "text": "He answered, “Go on your way, Daniel. These words are closed up and sealed until the time of the end."
+    },
+    {
+     "v": 10,
+     "text": "Many will make themselves clean and pure and will be tested. But the wicked will keep on doing wrong. None of the wicked will understand, but the wise will."
+    },
+    {
+     "v": 11,
+     "text": "After the daily burnt offering is stopped and the hated thing that brings ruin{e} is set up, 1,290 days will pass."
+    },
+    {
+     "v": 12,
+     "text": "Blessed is the one who waits and lasts until the end of 1,335 days."
+    },
+    {
+     "v": 13,
+     "text": "As for you, walk on until the end. Rest will be yours, and when the days are over, you will stand up and receive the place that is set aside for you.”{f}"
+    }
+   ],
+   "notes": [
+    {
+     "m": "a",
+     "ref": "12:2",
+     "text": "This is the clearest place in the Old Testament that speaks of the dead rising to be judged (compare Isaiah 26:19; John 5:28-29)."
+    },
+    {
+     "m": "b",
+     "ref": "12:3",
+     "text": "Hebrew: raqia, the “expanse” or “sky” of Genesis 1:6-8."
+    },
+    {
+     "m": "c",
+     "ref": "12:4",
+     "text": "The Old Greek says “until many go mad and the earth is filled with wrong.”"
+    },
+    {
+     "m": "d",
+     "ref": "12:7",
+     "text": "See the note at 7:25."
+    },
+    {
+     "m": "e",
+     "ref": "12:11",
+     "text": "See the notes at 9:27 and 11:31. The numbers 1,290 days here and 1,335 days in verse 12 are both a little longer than the 1,150 days of 8:14, and nobody knows for sure how they fit together."
+    },
+    {
+     "m": "f",
+     "ref": "12:13",
+     "text": "Here the Hebrew and Aramaic book of Daniel ends. The Greek versions add the stories of Susanna, Bel and the Dragon, and the Song of the Three Young Men, which are not part of this translation."
+    }
+   ],
+   "subheads": {
+    "1": "The End Times",
+    "5": "Sealed Until the End"
+   }
+  }
+ ]
+}
